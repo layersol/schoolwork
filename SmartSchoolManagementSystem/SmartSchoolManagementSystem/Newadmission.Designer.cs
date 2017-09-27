@@ -28,27 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Newadmission));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.lblSession = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.cbbsection = new System.Windows.Forms.ComboBox();
             this.cbbclass = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtform = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblteacherinfo = new System.Windows.Forms.Label();
+            this.lblSession = new System.Windows.Forms.Label();
             this.txtadmissiondate = new System.Windows.Forms.DateTimePicker();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btntake = new System.Windows.Forms.Button();
             this.btnup = new System.Windows.Forms.Button();
-            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtlandlin = new System.Windows.Forms.TextBox();
@@ -123,10 +119,12 @@
             this.btnnew = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.imgpicturebox = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -134,10 +132,13 @@
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -163,15 +164,6 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(84, 21);
             this.comboBox3.TabIndex = 11;
-            // 
-            // lblSession
-            // 
-            this.lblSession.AutoSize = true;
-            this.lblSession.Location = new System.Drawing.Point(756, 550);
-            this.lblSession.Name = "lblSession";
-            this.lblSession.Size = new System.Drawing.Size(41, 13);
-            this.lblSession.TabIndex = 6;
-            this.lblSession.Text = "label35";
             // 
             // label7
             // 
@@ -228,16 +220,6 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Class";
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(211, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(53, 20);
-            this.textBox2.TabIndex = 3;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -246,15 +228,6 @@
             this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 6;
             this.label6.Text = "Section";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(156, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "System ID";
             // 
             // txtform
             // 
@@ -273,26 +246,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Form #";
             // 
-            // groupBox2
+            // lblSession
             // 
-            this.groupBox2.Controls.Add(this.lblteacherinfo);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(1, -4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1183, 54);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            // 
-            // lblteacherinfo
-            // 
-            this.lblteacherinfo.AutoSize = true;
-            this.lblteacherinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblteacherinfo.Location = new System.Drawing.Point(356, 13);
-            this.lblteacherinfo.Name = "lblteacherinfo";
-            this.lblteacherinfo.Size = new System.Drawing.Size(229, 13);
-            this.lblteacherinfo.TabIndex = 7;
-            this.lblteacherinfo.Text = "STUDENT ADMISSION INFORMATION";
+            this.lblSession.AutoSize = true;
+            this.lblSession.Location = new System.Drawing.Point(756, 550);
+            this.lblSession.Name = "lblSession";
+            this.lblSession.Size = new System.Drawing.Size(41, 13);
+            this.lblSession.TabIndex = 6;
+            this.lblSession.Text = "label35";
             // 
             // txtadmissiondate
             // 
@@ -333,15 +294,6 @@
             this.btnup.Text = "Upload";
             this.btnup.UseVisualStyleBackColor = true;
             this.btnup.Click += new System.EventHandler(this.btnup_Click);
-            // 
-            // imgpicturebox
-            // 
-            this.imgpicturebox.Location = new System.Drawing.Point(6, 17);
-            this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(131, 105);
-            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgpicturebox.TabIndex = 0;
-            this.imgpicturebox.TabStop = false;
             // 
             // groupBox4
             // 
@@ -987,57 +939,67 @@
             // 
             // btnnext
             // 
+            this.btnnext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnnext.Image = ((System.Drawing.Image)(resources.GetObject("btnnext.Image")));
             this.btnnext.Location = new System.Drawing.Point(642, 13);
             this.btnnext.Name = "btnnext";
             this.btnnext.Size = new System.Drawing.Size(89, 38);
             this.btnnext.TabIndex = 10;
-            this.btnnext.Text = ">";
-            this.btnnext.UseVisualStyleBackColor = true;
+            this.btnnext.UseVisualStyleBackColor = false;
             this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
             // 
             // btnback
             // 
+            this.btnback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
             this.btnback.Location = new System.Drawing.Point(552, 13);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(89, 38);
             this.btnback.TabIndex = 9;
-            this.btnback.Text = "<";
-            this.btnback.UseVisualStyleBackColor = true;
+            this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // btnclose
             // 
+            this.btnclose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Location = new System.Drawing.Point(462, 13);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(89, 38);
             this.btnclose.TabIndex = 8;
             this.btnclose.Text = "Close";
-            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.UseVisualStyleBackColor = false;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // btnprint
             // 
+            this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Location = new System.Drawing.Point(372, 13);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(89, 38);
             this.btnprint.TabIndex = 7;
             this.btnprint.Text = "Print";
-            this.btnprint.UseVisualStyleBackColor = true;
+            this.btnprint.UseVisualStyleBackColor = false;
             this.btnprint.Click += new System.EventHandler(this.btnprint_Click);
             // 
             // btnview
             // 
+            this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnview.Location = new System.Drawing.Point(282, 13);
             this.btnview.Name = "btnview";
             this.btnview.Size = new System.Drawing.Size(89, 38);
             this.btnview.TabIndex = 6;
             this.btnview.Text = "View";
-            this.btnview.UseVisualStyleBackColor = true;
+            this.btnview.UseVisualStyleBackColor = false;
             this.btnview.Click += new System.EventHandler(this.btnview_Click);
             // 
             // btnupdate
             // 
-            this.btnupdate.BackColor = System.Drawing.Color.White;
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.Color.Black;
             this.btnupdate.Location = new System.Drawing.Point(193, 13);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(89, 38);
@@ -1048,22 +1010,28 @@
             // 
             // btnsave
             // 
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsave.Location = new System.Drawing.Point(103, 13);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(89, 38);
             this.btnsave.TabIndex = 4;
             this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnnew
             // 
+            this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnew.Location = new System.Drawing.Point(12, 13);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(89, 38);
             this.btnnew.TabIndex = 3;
             this.btnnew.Text = "New";
-            this.btnnew.UseVisualStyleBackColor = true;
+            this.btnnew.UseVisualStyleBackColor = false;
             this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // groupBox9
@@ -1083,6 +1051,46 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(197, 490);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(785, 22);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(53, 20);
+            this.textBox2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(730, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "System ID";
+            // 
+            // imgpicturebox
+            // 
+            this.imgpicturebox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgpicturebox.BackgroundImage")));
+            this.imgpicturebox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgpicturebox.Location = new System.Drawing.Point(6, 17);
+            this.imgpicturebox.Name = "imgpicturebox";
+            this.imgpicturebox.Size = new System.Drawing.Size(131, 105);
+            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpicturebox.TabIndex = 0;
+            this.imgpicturebox.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox2.Location = new System.Drawing.Point(1, -4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1183, 54);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
             // 
             // Newadmission
             // 
@@ -1107,10 +1115,7 @@
             this.Load += new System.EventHandler(this.Newadmission_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -1122,6 +1127,7 @@
             this.groupBox8.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1221,7 +1227,6 @@
         private System.Windows.Forms.Button btnnew;
         private System.Windows.Forms.DateTimePicker txtadmissiondate;
         private System.Windows.Forms.Label lblSession;
-        private System.Windows.Forms.Label lblteacherinfo;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.DataGridView dataGridView1;
     }

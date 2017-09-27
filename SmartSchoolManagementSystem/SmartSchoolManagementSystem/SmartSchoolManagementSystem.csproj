@@ -325,6 +325,7 @@
     <Content Include="images\loginbg.png" />
     <Content Include="images\shortcut.png" />
     <None Include="Resources\accounting.png" />
+    <None Include="Resources\benner.jpg" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="caacc1c6425d4535aa993bef88b7cd05" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="smartschooldbModel.TBLADDMISSION" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smartschooldbModel.Tbladmissionprint" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smartschooldbModel.Tblclass" Width="1.5" PointX="2.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smartschooldbModel.Tblclasssection" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smartschooldbModel.Tblschoolsetting" Width="1.5" PointX="2.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="smartschooldbModel.TblSection" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="smartschooldbModel.TBLSTUDENTENRROL" Width="1.5" PointX="6.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="smartschooldbModel.FeeMasterSetting" Width="1.5" PointX="5.75" PointY="6.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.StudentFeeDetail" Width="1.5" PointX="7.75" PointY="6.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.TransMaster" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.firstformview" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.TblTeacherInformation" Width="1.5" PointX="9.375" PointY="0.75" FillColor="255, 128, 0" />
+        <EntityTypeShape EntityType="smartschooldbModel.TblacadmicSession" Width="1.5" PointX="10.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

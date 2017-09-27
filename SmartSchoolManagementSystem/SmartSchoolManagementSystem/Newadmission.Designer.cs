@@ -109,24 +109,18 @@
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.btnnext = new System.Windows.Forms.Button();
-            this.btnback = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.btnview = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
             this.btnnew = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.imgpicturebox = new System.Windows.Forms.PictureBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
@@ -183,6 +177,12 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.groupBox48 = new System.Windows.Forms.GroupBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
+            this.btnnext = new System.Windows.Forms.Button();
+            this.btnback = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgpicturebox = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -192,9 +192,7 @@
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox13.SuspendLayout();
@@ -215,6 +213,8 @@
             this.groupBox46.SuspendLayout();
             this.groupBox47.SuspendLayout();
             this.groupBox48.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -730,7 +730,7 @@
             this.groupBox6.Controls.Add(this.label28);
             this.groupBox6.Controls.Add(this.txtcurrentadress);
             this.groupBox6.Controls.Add(this.label29);
-            this.groupBox6.Location = new System.Drawing.Point(14, 473);
+            this.groupBox6.Location = new System.Drawing.Point(14, 441);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(695, 182);
             this.groupBox6.TabIndex = 12;
@@ -902,7 +902,7 @@
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.Controls.Add(this.textBox25);
             this.groupBox7.Controls.Add(this.label36);
-            this.groupBox7.Location = new System.Drawing.Point(715, 475);
+            this.groupBox7.Location = new System.Drawing.Point(715, 443);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(168, 180);
             this.groupBox7.TabIndex = 12;
@@ -1014,33 +1014,11 @@
             this.groupBox8.Controls.Add(this.btnupdate);
             this.groupBox8.Controls.Add(this.btnsave);
             this.groupBox8.Controls.Add(this.btnnew);
-            this.groupBox8.Location = new System.Drawing.Point(12, 661);
+            this.groupBox8.Location = new System.Drawing.Point(12, 629);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(842, 58);
             this.groupBox8.TabIndex = 18;
             this.groupBox8.TabStop = false;
-            // 
-            // btnnext
-            // 
-            this.btnnext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnnext.Image = ((System.Drawing.Image)(resources.GetObject("btnnext.Image")));
-            this.btnnext.Location = new System.Drawing.Point(642, 13);
-            this.btnnext.Name = "btnnext";
-            this.btnnext.Size = new System.Drawing.Size(89, 38);
-            this.btnnext.TabIndex = 10;
-            this.btnnext.UseVisualStyleBackColor = false;
-            this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
-            // 
-            // btnback
-            // 
-            this.btnback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
-            this.btnback.Location = new System.Drawing.Point(552, 13);
-            this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(89, 38);
-            this.btnback.TabIndex = 9;
-            this.btnback.UseVisualStyleBackColor = false;
-            this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // btnclose
             // 
@@ -1091,20 +1069,6 @@
             this.btnupdate.UseVisualStyleBackColor = false;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
-            // btnsave
-            // 
-            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
-            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(103, 13);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(89, 38);
-            this.btnsave.TabIndex = 4;
-            this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
-            // 
             // btnnew
             // 
             this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1154,27 +1118,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "System ID";
             // 
-            // imgpicturebox
-            // 
-            this.imgpicturebox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgpicturebox.BackgroundImage")));
-            this.imgpicturebox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgpicturebox.Location = new System.Drawing.Point(6, 17);
-            this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(131, 105);
-            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgpicturebox.TabIndex = 0;
-            this.imgpicturebox.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner;
-            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox2.Location = new System.Drawing.Point(1, -4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1183, 54);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.button1);
@@ -1205,24 +1148,13 @@
             this.button2.Text = "Upload";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 105);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.groupBox27);
             this.groupBox11.Controls.Add(this.groupBox12);
             this.groupBox11.Location = new System.Drawing.Point(12, 258);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(949, 211);
+            this.groupBox11.Size = new System.Drawing.Size(949, 146);
             this.groupBox11.TabIndex = 26;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Acadmic Details of the applicant";
@@ -1248,7 +1180,7 @@
             this.groupBox12.Controls.Add(this.groupBox13);
             this.groupBox12.Location = new System.Drawing.Point(4, 16);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(945, 189);
+            this.groupBox12.Size = new System.Drawing.Size(945, 128);
             this.groupBox12.TabIndex = 27;
             this.groupBox12.TabStop = false;
             // 
@@ -1561,7 +1493,7 @@
             this.groupBox36.Controls.Add(this.textBox7);
             this.groupBox36.Location = new System.Drawing.Point(788, 39);
             this.groupBox36.Name = "groupBox36";
-            this.groupBox36.Size = new System.Drawing.Size(142, 45);
+            this.groupBox36.Size = new System.Drawing.Size(151, 45);
             this.groupBox36.TabIndex = 42;
             this.groupBox36.TabStop = false;
             // 
@@ -1650,7 +1582,7 @@
             this.groupBox44.Controls.Add(this.textBox8);
             this.groupBox44.Location = new System.Drawing.Point(787, 77);
             this.groupBox44.Name = "groupBox44";
-            this.groupBox44.Size = new System.Drawing.Size(142, 45);
+            this.groupBox44.Size = new System.Drawing.Size(152, 45);
             this.groupBox44.TabIndex = 47;
             this.groupBox44.TabStop = false;
             // 
@@ -1730,6 +1662,74 @@
             this.textBox14.Size = new System.Drawing.Size(145, 20);
             this.textBox14.TabIndex = 27;
             // 
+            // btnnext
+            // 
+            this.btnnext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnnext.Image = ((System.Drawing.Image)(resources.GetObject("btnnext.Image")));
+            this.btnnext.Location = new System.Drawing.Point(642, 13);
+            this.btnnext.Name = "btnnext";
+            this.btnnext.Size = new System.Drawing.Size(89, 38);
+            this.btnnext.TabIndex = 10;
+            this.btnnext.UseVisualStyleBackColor = false;
+            this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
+            // 
+            // btnback
+            // 
+            this.btnback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
+            this.btnback.Location = new System.Drawing.Point(552, 13);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(89, 38);
+            this.btnback.TabIndex = 9;
+            this.btnback.UseVisualStyleBackColor = false;
+            this.btnback.Click += new System.EventHandler(this.btnback_Click);
+            // 
+            // btnsave
+            // 
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsave.Location = new System.Drawing.Point(103, 13);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(89, 38);
+            this.btnsave.TabIndex = 4;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // imgpicturebox
+            // 
+            this.imgpicturebox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgpicturebox.BackgroundImage")));
+            this.imgpicturebox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgpicturebox.Location = new System.Drawing.Point(6, 17);
+            this.imgpicturebox.Name = "imgpicturebox";
+            this.imgpicturebox.Size = new System.Drawing.Size(131, 105);
+            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpicturebox.TabIndex = 0;
+            this.imgpicturebox.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox2.Location = new System.Drawing.Point(1, -4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1183, 54);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            // 
             // Newadmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1766,9 +1766,7 @@
             this.groupBox8.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
@@ -1807,6 +1805,8 @@
             this.groupBox47.PerformLayout();
             this.groupBox48.ResumeLayout(false);
             this.groupBox48.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

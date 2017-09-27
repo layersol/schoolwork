@@ -161,6 +161,16 @@ namespace SmartSchoolManagementSystem
             { MessageBox.Show(ex.Message); }
         }
 
+        private void label40_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label41_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnupdate_Click(object sender, EventArgs e)
         {
 

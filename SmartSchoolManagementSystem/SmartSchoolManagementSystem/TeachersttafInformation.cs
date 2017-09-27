@@ -88,5 +88,10 @@ namespace SmartSchoolManagementSystem
             txtcomments.Text = textInfo.ToTitleCase(txtcomments.Text);
             txtcomments.Select(txtcomments.Text.Length, 1);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

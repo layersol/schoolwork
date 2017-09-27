@@ -198,12 +198,14 @@
             // 
             // btnbrowse
             // 
+            this.btnbrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnbrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbrowse.Location = new System.Drawing.Point(7, 114);
             this.btnbrowse.Name = "btnbrowse";
             this.btnbrowse.Size = new System.Drawing.Size(116, 23);
             this.btnbrowse.TabIndex = 1;
             this.btnbrowse.Text = "Browse";
-            this.btnbrowse.UseVisualStyleBackColor = true;
+            this.btnbrowse.UseVisualStyleBackColor = false;
             this.btnbrowse.Click += new System.EventHandler(this.btnbrowse_Click);
             // 
             // imgpicturebox
@@ -295,41 +297,49 @@
             // 
             // btnnew
             // 
+            this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnew.Location = new System.Drawing.Point(17, 13);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(75, 23);
             this.btnnew.TabIndex = 3;
             this.btnnew.Text = "New";
-            this.btnnew.UseVisualStyleBackColor = true;
+            this.btnnew.UseVisualStyleBackColor = false;
             // 
             // btnview
             // 
+            this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnview.Location = new System.Drawing.Point(254, 13);
             this.btnview.Name = "btnview";
             this.btnview.Size = new System.Drawing.Size(75, 23);
             this.btnview.TabIndex = 2;
             this.btnview.Text = "View";
-            this.btnview.UseVisualStyleBackColor = true;
+            this.btnview.UseVisualStyleBackColor = false;
             this.btnview.Click += new System.EventHandler(this.btnview_Click);
             // 
             // btnupdate
             // 
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.Location = new System.Drawing.Point(173, 13);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(75, 23);
             this.btnupdate.TabIndex = 1;
             this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.UseVisualStyleBackColor = false;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btnsave
             // 
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.Location = new System.Drawing.Point(92, 13);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 23);
             this.btnsave.TabIndex = 0;
             this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // schoolsettings

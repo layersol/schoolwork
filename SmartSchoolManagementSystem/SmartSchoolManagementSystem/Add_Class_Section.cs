@@ -20,6 +20,7 @@ namespace SmartSchoolManagementSystem
         private void btnsave_Click(object sender, EventArgs e)
         {
             MessageBox.Show("helloo");
+            MessageBox.Show("GO To Office");
         }
     }
 }

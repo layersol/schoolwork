@@ -82,7 +82,7 @@ namespace SmartSchoolManagementSystem
                 objcontext.GENDER = cbbgender.Text;
                 objcontext.RELIGION = txtriligion.Text;
                 objcontext.FATHER_OCCUPATION = txtoccupation.Text;
-                objcontext.ADMISSION_DATE = Convert.ToDateTime(txtadmissiondate.Text);
+                objcontext.ADMISSION_DATE = System.DateTime.Now;
                 objcontext.DOB = Convert.ToDateTime(txtdob.Text);
                 objcontext.PLACE_BIRTH = txtpob.Text;
                 objcontext.MONTHLY_INCOM = txtincom.Text;
@@ -100,7 +100,7 @@ namespace SmartSchoolManagementSystem
                 objcontext.ADMISSION_STATUS = true;
                 objcontext.IMAGE = img;
                 objcontext.CREATED_BY = "1";
-                objcontext.CREATED_DATE =Convert.ToDateTime(txtadmissiondate.Text);
+                objcontext.CREATED_DATE =System.DateTime.Now;
                 db.TBLADDMISSIONs.Add(objcontext);
                 db.SaveChanges();
                 var qaNames = (from a in db.TBLADDMISSIONs select new { a.ID }).ToList();
@@ -131,7 +131,7 @@ namespace SmartSchoolManagementSystem
                     objEnRoll.SECTION = cbbsection.Text;
                     objEnRoll.ACADMICSESSION = lblSession.Text;
                     objEnRoll.CREATED_BY = "1";
-                    objEnRoll.CREATED_DATE = txtadmissiondate.Text;
+                    objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
                     db.TBLSTUDENTENRROLs.Add(objEnRoll);
                     db.SaveChanges();
                 }

@@ -16,5 +16,10 @@ namespace SmartSchoolManagementSystem
         {
             InitializeComponent();
         }
+
+        private void groupBox8_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

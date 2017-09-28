@@ -127,6 +127,15 @@
             this.label28 = new System.Windows.Forms.Label();
             this.txtcurrentadress = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
+            this.groupBox49 = new System.Windows.Forms.GroupBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.txtupdationby = new System.Windows.Forms.TextBox();
+            this.txtupdatedby = new System.Windows.Forms.TextBox();
+            this.txtcreationdate = new System.Windows.Forms.TextBox();
+            this.txtcreatedby = new System.Windows.Forms.TextBox();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
@@ -139,6 +148,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox49.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox10
@@ -213,11 +223,12 @@
             this.groupBox8.Controls.Add(this.btnupdate);
             this.groupBox8.Controls.Add(this.btnsave);
             this.groupBox8.Controls.Add(this.btnnew);
-            this.groupBox8.Location = new System.Drawing.Point(2, 448);
+            this.groupBox8.Location = new System.Drawing.Point(2, 532);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(842, 58);
+            this.groupBox8.Size = new System.Drawing.Size(956, 58);
             this.groupBox8.TabIndex = 36;
             this.groupBox8.TabStop = false;
+            this.groupBox8.Enter += new System.EventHandler(this.groupBox8_Enter);
             // 
             // btnnext
             // 
@@ -383,7 +394,7 @@
             this.groupBox9.Controls.Add(this.dataGridView1);
             this.groupBox9.Location = new System.Drawing.Point(977, 255);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(181, 266);
+            this.groupBox9.Size = new System.Drawing.Size(181, 335);
             this.groupBox9.TabIndex = 30;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Cureent Session Student List";
@@ -393,7 +404,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 19);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(197, 490);
+            this.dataGridView1.Size = new System.Drawing.Size(169, 309);
             this.dataGridView1.TabIndex = 0;
             // 
             // textBox2
@@ -1129,11 +1140,97 @@
             this.label29.TabIndex = 0;
             this.label29.Text = "Current Address";
             // 
+            // groupBox49
+            // 
+            this.groupBox49.Controls.Add(this.label46);
+            this.groupBox49.Controls.Add(this.label45);
+            this.groupBox49.Controls.Add(this.label44);
+            this.groupBox49.Controls.Add(this.label43);
+            this.groupBox49.Controls.Add(this.txtupdationby);
+            this.groupBox49.Controls.Add(this.txtupdatedby);
+            this.groupBox49.Controls.Add(this.txtcreationdate);
+            this.groupBox49.Controls.Add(this.txtcreatedby);
+            this.groupBox49.Location = new System.Drawing.Point(4, 448);
+            this.groupBox49.Name = "groupBox49";
+            this.groupBox49.Size = new System.Drawing.Size(954, 78);
+            this.groupBox49.TabIndex = 38;
+            this.groupBox49.TabStop = false;
+            this.groupBox49.Text = "User Information";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(305, 59);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(76, 13);
+            this.label46.TabIndex = 35;
+            this.label46.Text = "Updation Date";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(314, 26);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(63, 13);
+            this.label45.TabIndex = 34;
+            this.label45.Text = "Updated By";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(24, 59);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(72, 13);
+            this.label44.TabIndex = 33;
+            this.label44.Text = "Creation Date";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(24, 26);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(59, 13);
+            this.label43.TabIndex = 32;
+            this.label43.Text = "Created By";
+            // 
+            // txtupdationby
+            // 
+            this.txtupdationby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtupdationby.Location = new System.Drawing.Point(387, 52);
+            this.txtupdationby.Name = "txtupdationby";
+            this.txtupdationby.Size = new System.Drawing.Size(145, 20);
+            this.txtupdationby.TabIndex = 31;
+            // 
+            // txtupdatedby
+            // 
+            this.txtupdatedby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtupdatedby.Location = new System.Drawing.Point(387, 19);
+            this.txtupdatedby.Name = "txtupdatedby";
+            this.txtupdatedby.Size = new System.Drawing.Size(145, 20);
+            this.txtupdatedby.TabIndex = 30;
+            // 
+            // txtcreationdate
+            // 
+            this.txtcreationdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcreationdate.Location = new System.Drawing.Point(112, 52);
+            this.txtcreationdate.Name = "txtcreationdate";
+            this.txtcreationdate.Size = new System.Drawing.Size(145, 20);
+            this.txtcreationdate.TabIndex = 29;
+            // 
+            // txtcreatedby
+            // 
+            this.txtcreatedby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcreatedby.Location = new System.Drawing.Point(112, 19);
+            this.txtcreatedby.Name = "txtcreatedby";
+            this.txtcreatedby.Size = new System.Drawing.Size(145, 20);
+            this.txtcreatedby.TabIndex = 28;
+            // 
             // admissionformforschool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1199, 534);
+            this.ClientSize = new System.Drawing.Size(1199, 607);
+            this.Controls.Add(this.groupBox49);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox9);
@@ -1164,6 +1261,8 @@
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox49.ResumeLayout(false);
+            this.groupBox49.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1269,5 +1368,14 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox txtcurrentadress;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.GroupBox groupBox49;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.TextBox txtupdationby;
+        private System.Windows.Forms.TextBox txtupdatedby;
+        private System.Windows.Forms.TextBox txtcreationdate;
+        private System.Windows.Forms.TextBox txtcreatedby;
     }
 }

@@ -155,7 +155,7 @@ namespace SmartSchoolManagementSystem
                     objEnRoll.SECTION = cbbsection.Text;
                     objEnRoll.ACADMICSESSION = lblSession.Text;
                     objEnRoll.CREATED_BY = "1";
-                    objEnRoll.CREATED_DATE = txtadmissiondate.Text;
+                    objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
                     db.TBLSTUDENTENRROLs.Add(objEnRoll);
                     db.SaveChanges();
                 }

@@ -979,7 +979,7 @@
             // textBox27
             // 
             this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox27.Location = new System.Drawing.Point(84, 125);
+            this.textBox27.Location = new System.Drawing.Point(86, 125);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(146, 20);
             this.textBox27.TabIndex = 9;
@@ -1715,7 +1715,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1182, 741);
+            this.ClientSize = new System.Drawing.Size(1182, 753);
             this.Controls.Add(this.groupBox49);
             this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.groupBox9);

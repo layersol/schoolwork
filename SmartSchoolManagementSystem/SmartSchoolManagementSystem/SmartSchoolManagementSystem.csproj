@@ -383,6 +383,7 @@
     <None Include="Resources\save1.png" />
     <Content Include="Resources\saveicon.png" />
     <None Include="Resources\saveicon1.png" />
+    <None Include="Resources\staff banner.png" />
     <Content Include="Resources\Update.png" />
     <None Include="Resources\Update1.png" />
     <None Include="Resources\Update17.png" />

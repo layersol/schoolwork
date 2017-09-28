@@ -62,18 +62,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblteacherinfo = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.imgpicturebox = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox6.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -411,23 +409,19 @@
             this.txtid.TabIndex = 100;
             this.txtid.UseWaitCursor = true;
             // 
-            // panel1
+            // button2
             // 
-            this.panel1.Controls.Add(this.lblteacherinfo);
-            this.panel1.Location = new System.Drawing.Point(6, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(709, 29);
-            this.panel1.TabIndex = 30;
-            // 
-            // lblteacherinfo
-            // 
-            this.lblteacherinfo.AutoSize = true;
-            this.lblteacherinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblteacherinfo.Location = new System.Drawing.Point(289, 8);
-            this.lblteacherinfo.Name = "lblteacherinfo";
-            this.lblteacherinfo.Size = new System.Drawing.Size(135, 13);
-            this.lblteacherinfo.TabIndex = 0;
-            this.lblteacherinfo.Text = "STAFF INFORMATION";
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(239, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(78, 36);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "View";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // btnedit
             // 
@@ -510,26 +504,20 @@
             this.imgpicturebox.TabIndex = 6;
             this.imgpicturebox.TabStop = false;
             // 
-            // button2
+            // panel1
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(239, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 36);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "View";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.staff_banner;
+            this.panel1.Location = new System.Drawing.Point(6, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(709, 29);
+            this.panel1.TabIndex = 30;
             // 
             // TeachersttafInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(721, 371);
+            this.ClientSize = new System.Drawing.Size(721, 323);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
@@ -539,8 +527,6 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.ResumeLayout(false);
 
@@ -587,7 +573,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblteacherinfo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

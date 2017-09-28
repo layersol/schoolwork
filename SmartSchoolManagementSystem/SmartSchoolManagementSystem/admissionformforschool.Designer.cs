@@ -234,7 +234,7 @@
             // 
             this.btnnext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnnext.Image = ((System.Drawing.Image)(resources.GetObject("btnnext.Image")));
-            this.btnnext.Location = new System.Drawing.Point(642, 13);
+            this.btnnext.Location = new System.Drawing.Point(654, 13);
             this.btnnext.Name = "btnnext";
             this.btnnext.Size = new System.Drawing.Size(89, 38);
             this.btnnext.TabIndex = 10;
@@ -244,7 +244,7 @@
             // 
             this.btnback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
-            this.btnback.Location = new System.Drawing.Point(552, 13);
+            this.btnback.Location = new System.Drawing.Point(564, 13);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(89, 38);
             this.btnback.TabIndex = 9;
@@ -254,33 +254,42 @@
             // 
             this.btnclose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose.Location = new System.Drawing.Point(462, 13);
+            this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
+            this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnclose.Location = new System.Drawing.Point(474, 13);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(89, 38);
             this.btnclose.TabIndex = 8;
             this.btnclose.Text = "Close";
+            this.btnclose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnclose.UseVisualStyleBackColor = false;
             // 
             // btnprint
             // 
             this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprint.Location = new System.Drawing.Point(372, 13);
+            this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
+            this.btnprint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnprint.Location = new System.Drawing.Point(384, 13);
             this.btnprint.Name = "btnprint";
             this.btnprint.Size = new System.Drawing.Size(89, 38);
             this.btnprint.TabIndex = 7;
             this.btnprint.Text = "Print";
+            this.btnprint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnprint.UseVisualStyleBackColor = false;
             // 
             // btnview
             // 
             this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnview.Location = new System.Drawing.Point(282, 13);
+            this.btnview.Image = ((System.Drawing.Image)(resources.GetObject("btnview.Image")));
+            this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnview.Location = new System.Drawing.Point(294, 13);
             this.btnview.Name = "btnview";
             this.btnview.Size = new System.Drawing.Size(89, 38);
             this.btnview.TabIndex = 6;
             this.btnview.Text = "View";
+            this.btnview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnview.UseVisualStyleBackColor = false;
             // 
             // btnupdate
@@ -288,11 +297,14 @@
             this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.ForeColor = System.Drawing.Color.Black;
+            this.btnupdate.Image = ((System.Drawing.Image)(resources.GetObject("btnupdate.Image")));
+            this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnupdate.Location = new System.Drawing.Point(193, 13);
             this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(89, 38);
+            this.btnupdate.Size = new System.Drawing.Size(108, 38);
             this.btnupdate.TabIndex = 5;
             this.btnupdate.Text = "Update";
+            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnupdate.UseVisualStyleBackColor = false;
             // 
             // btnsave
@@ -312,11 +324,14 @@
             // 
             this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnew.Image = ((System.Drawing.Image)(resources.GetObject("btnnew.Image")));
+            this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnnew.Location = new System.Drawing.Point(12, 13);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(89, 38);
             this.btnnew.TabIndex = 3;
             this.btnnew.Text = "New";
+            this.btnnew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnnew.UseVisualStyleBackColor = false;
             // 
             // label2

@@ -66,12 +66,12 @@ namespace SmartSchoolManagementSystem
 
         private void addnewstudent_Load(object sender, EventArgs e)
         {
-            var qaNames = (from a in db.Tblclasses
-                          // where a.CLASS == cbbclass.Text
-                           select new { a.ID, Names = a.CLASSNAME, }).ToList();
-            comboclass.DataSource = qaNames.ToList();
-            comboclass.DisplayMember = "Names";
-            comboclass.ValueMember = "ID";
+            //var qaNames = (from a in db.Tblclasses
+            //              // where a.CLASS == cbbclass.Text
+            //               select new { a.ID, Names = a.CLASSNAME, }).ToList();
+            //comboclass.DataSource = qaNames.ToList();
+            //comboclass.DisplayMember = "Names";
+            //comboclass.ValueMember = "ID";
         }
 
         private void dgvnewadmission_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Newadmission));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblSession = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -182,15 +183,14 @@
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox49 = new System.Windows.Forms.GroupBox();
-            this.txtcreatedby = new System.Windows.Forms.TextBox();
-            this.txtcreationdate = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
             this.txtupdationby = new System.Windows.Forms.TextBox();
             this.txtupdatedby = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.lblSession = new System.Windows.Forms.Label();
+            this.txtcreationdate = new System.Windows.Forms.TextBox();
+            this.txtcreatedby = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
@@ -247,6 +247,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registration Information";
+            // 
+            // lblSession
+            // 
+            this.lblSession.AutoSize = true;
+            this.lblSession.Location = new System.Drawing.Point(872, 27);
+            this.lblSession.Name = "lblSession";
+            this.lblSession.Size = new System.Drawing.Size(41, 13);
+            this.lblSession.TabIndex = 12;
+            this.lblSession.Text = "label47";
             // 
             // textBox2
             // 
@@ -371,22 +380,26 @@
             // 
             // btntake
             // 
+            this.btntake.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btntake.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntake.Location = new System.Drawing.Point(138, 49);
             this.btntake.Name = "btntake";
             this.btntake.Size = new System.Drawing.Size(55, 25);
             this.btntake.TabIndex = 2;
             this.btntake.Text = "Take img";
-            this.btntake.UseVisualStyleBackColor = true;
+            this.btntake.UseVisualStyleBackColor = false;
             this.btntake.Click += new System.EventHandler(this.btntake_Click);
             // 
             // btnup
             // 
+            this.btnup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnup.Location = new System.Drawing.Point(138, 18);
             this.btnup.Name = "btnup";
             this.btnup.Size = new System.Drawing.Size(55, 25);
             this.btnup.TabIndex = 1;
             this.btnup.Text = "Upload";
-            this.btnup.UseVisualStyleBackColor = true;
+            this.btnup.UseVisualStyleBackColor = false;
             this.btnup.Click += new System.EventHandler(this.btnup_Click);
             // 
             // imgpicturebox
@@ -1756,21 +1769,41 @@
             this.groupBox49.TabStop = false;
             this.groupBox49.Text = "User Information";
             // 
-            // txtcreatedby
+            // label46
             // 
-            this.txtcreatedby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtcreatedby.Location = new System.Drawing.Point(112, 19);
-            this.txtcreatedby.Name = "txtcreatedby";
-            this.txtcreatedby.Size = new System.Drawing.Size(145, 20);
-            this.txtcreatedby.TabIndex = 28;
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(305, 59);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(76, 13);
+            this.label46.TabIndex = 35;
+            this.label46.Text = "Updation Date";
             // 
-            // txtcreationdate
+            // label45
             // 
-            this.txtcreationdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtcreationdate.Location = new System.Drawing.Point(112, 52);
-            this.txtcreationdate.Name = "txtcreationdate";
-            this.txtcreationdate.Size = new System.Drawing.Size(145, 20);
-            this.txtcreationdate.TabIndex = 29;
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(314, 26);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(63, 13);
+            this.label45.TabIndex = 34;
+            this.label45.Text = "Updated By";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(24, 59);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(72, 13);
+            this.label44.TabIndex = 33;
+            this.label44.Text = "Creation Date";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(24, 26);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(59, 13);
+            this.label43.TabIndex = 32;
+            this.label43.Text = "Created By";
             // 
             // txtupdationby
             // 
@@ -1788,50 +1821,21 @@
             this.txtupdatedby.Size = new System.Drawing.Size(145, 20);
             this.txtupdatedby.TabIndex = 30;
             // 
-            // label43
+            // txtcreationdate
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(24, 26);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(59, 13);
-            this.label43.TabIndex = 32;
-            this.label43.Text = "Created By";
+            this.txtcreationdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcreationdate.Location = new System.Drawing.Point(112, 52);
+            this.txtcreationdate.Name = "txtcreationdate";
+            this.txtcreationdate.Size = new System.Drawing.Size(145, 20);
+            this.txtcreationdate.TabIndex = 29;
             // 
-            // label44
+            // txtcreatedby
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(24, 59);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(72, 13);
-            this.label44.TabIndex = 33;
-            this.label44.Text = "Creation Date";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(314, 26);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(63, 13);
-            this.label45.TabIndex = 34;
-            this.label45.Text = "Updated By";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(305, 59);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(76, 13);
-            this.label46.TabIndex = 35;
-            this.label46.Text = "Updation Date";
-            // 
-            // lblSession
-            // 
-            this.lblSession.AutoSize = true;
-            this.lblSession.Location = new System.Drawing.Point(872, 27);
-            this.lblSession.Name = "lblSession";
-            this.lblSession.Size = new System.Drawing.Size(41, 13);
-            this.lblSession.TabIndex = 12;
-            this.lblSession.Text = "label47";
+            this.txtcreatedby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcreatedby.Location = new System.Drawing.Point(112, 19);
+            this.txtcreatedby.Name = "txtcreatedby";
+            this.txtcreatedby.Size = new System.Drawing.Size(145, 20);
+            this.txtcreatedby.TabIndex = 28;
             // 
             // Newadmission
             // 

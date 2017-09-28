@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbbgroup = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.cbbsection = new System.Windows.Forms.ComboBox();
@@ -125,8 +125,9 @@
             this.btnsave = new System.Windows.Forms.Button();
             this.btnnew = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dvgstudent = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnsearch = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
@@ -138,14 +139,15 @@
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgstudent)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnsearch);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.cbbgroup);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.cbbsection);
@@ -167,7 +169,7 @@
             this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(785, 22);
+            this.textBox2.Location = new System.Drawing.Point(890, 22);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(53, 20);
             this.textBox2.TabIndex = 3;
@@ -175,25 +177,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(730, 26);
+            this.label2.Location = new System.Drawing.Point(835, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "System ID";
             // 
-            // comboBox3
+            // cbbgroup
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(611, 18);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(84, 21);
-            this.comboBox3.TabIndex = 11;
+            this.cbbgroup.FormattingEnabled = true;
+            this.cbbgroup.Location = new System.Drawing.Point(716, 18);
+            this.cbbgroup.Name = "cbbgroup";
+            this.cbbgroup.Size = new System.Drawing.Size(84, 21);
+            this.cbbgroup.TabIndex = 11;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(569, 28);
+            this.label7.Location = new System.Drawing.Point(674, 28);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 10;
@@ -204,7 +205,7 @@
             this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(222, 22);
+            this.textBox3.Location = new System.Drawing.Point(327, 22);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(77, 20);
             this.textBox3.TabIndex = 9;
@@ -213,24 +214,24 @@
             // 
             this.cbbsection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbsection.FormattingEnabled = true;
-            this.cbbsection.Location = new System.Drawing.Point(478, 19);
+            this.cbbsection.Location = new System.Drawing.Point(583, 19);
             this.cbbsection.Name = "cbbsection";
             this.cbbsection.Size = new System.Drawing.Size(84, 21);
             this.cbbsection.TabIndex = 8;
             // 
             // cbbclass
             // 
-            this.cbbclass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbclass.FormattingEnabled = true;
-            this.cbbclass.Location = new System.Drawing.Point(345, 22);
+            this.cbbclass.Location = new System.Drawing.Point(450, 22);
             this.cbbclass.Name = "cbbclass";
             this.cbbclass.Size = new System.Drawing.Size(76, 21);
             this.cbbclass.TabIndex = 7;
+            this.cbbclass.SelectedIndexChanged += new System.EventHandler(this.cbbclass_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(173, 26);
+            this.label5.Location = new System.Drawing.Point(278, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 5;
@@ -239,7 +240,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(307, 26);
+            this.label4.Location = new System.Drawing.Point(412, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 4;
@@ -248,7 +249,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(430, 27);
+            this.label6.Location = new System.Drawing.Point(535, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 6;
@@ -1114,7 +1115,7 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.dataGridView1);
+            this.groupBox9.Controls.Add(this.dvgstudent);
             this.groupBox9.Location = new System.Drawing.Point(989, 285);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(181, 427);
@@ -1122,13 +1123,13 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Cureent Session Student List";
             // 
-            // dataGridView1
+            // dvgstudent
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(197, 490);
-            this.dataGridView1.TabIndex = 0;
+            this.dvgstudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgstudent.Location = new System.Drawing.Point(6, 19);
+            this.dvgstudent.Name = "dvgstudent";
+            this.dvgstudent.Size = new System.Drawing.Size(197, 490);
+            this.dvgstudent.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -1139,6 +1140,16 @@
             this.groupBox2.Size = new System.Drawing.Size(1183, 54);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
+            // 
+            // btnsearch
+            // 
+            this.btnsearch.Location = new System.Drawing.Point(172, 21);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.TabIndex = 12;
+            this.btnsearch.Text = "Search";
+            this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // Newadmission
             // 
@@ -1177,7 +1188,7 @@
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgstudent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1197,7 +1208,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox cbbsection;
         private System.Windows.Forms.ComboBox cbbclass;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbbgroup;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox imgpicturebox;
@@ -1278,10 +1289,11 @@
         private System.Windows.Forms.DateTimePicker txtadmissiondate;
         private System.Windows.Forms.Label lblSession;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dvgstudent;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnsearch;
     }
 }

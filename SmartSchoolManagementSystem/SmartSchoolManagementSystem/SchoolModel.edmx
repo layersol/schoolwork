@@ -69,6 +69,7 @@
           <Property Name="CAST" Type="nvarchar" MaxLength="50" />
           <Property Name="CELL_NO" Type="nvarchar" MaxLength="50" />
           <Property Name="LANDLINE" Type="nvarchar" MaxLength="50" />
+          <Property Name="CURRENTSESSION" Type="nvarchar" MaxLength="50" />
           <Property Name="OTHER_NO" Type="nvarchar" MaxLength="50" />
           <Property Name="CURRENT_ADDRESS" Type="nvarchar(max)" />
           <Property Name="PERMANENT_ADDRESS" Type="nvarchar(max)" />
@@ -112,11 +113,13 @@
           <Property Name="Maxstudent" Type="nvarchar" MaxLength="50" />
           <Property Name="FloorId" Type="nvarchar" MaxLength="50" />
           <Property Name="RoomNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fee" Type="nvarchar" MaxLength="50" />
           <Property Name="Comments" Type="nvarchar" MaxLength="50" />
           <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
           <Property Name="Createddate" Type="datetime" />
           <Property Name="Updatedby" Type="nvarchar" MaxLength="50" />
           <Property Name="Updateddate" Type="datetime" />
+          <Property Name="Acadmic_Session" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Tblschoolsetting">
           <Key>
@@ -278,6 +281,7 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="UPDATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="UPDATED_DATE" Type="DateTime" Precision="3" />
           <Property Name="IMAGE" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="CURRENTSESSION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Tbladmissionprint">
           <Key>
@@ -312,6 +316,8 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="Createddate" Type="DateTime" Precision="3" />
           <Property Name="Updatedby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Updateddate" Type="DateTime" Precision="3" />
+          <Property Name="Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Acadmic_Session" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Tblschoolsetting">
           <Key>
@@ -471,6 +477,7 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySetMapping Name="TBLADDMISSIONs">
             <EntityTypeMapping TypeName="smartschooldbModel.TBLADDMISSION">
               <MappingFragment StoreEntitySet="TBLADDMISSION">
+                <ScalarProperty Name="CURRENTSESSION" ColumnName="CURRENTSESSION" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="ADMISSION_FORM" ColumnName="ADMISSION_FORM" />
                 <ScalarProperty Name="STUDENT_NAME" ColumnName="STUDENT_NAME" />
@@ -526,6 +533,8 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySetMapping Name="Tblclasssections">
             <EntityTypeMapping TypeName="smartschooldbModel.Tblclasssection">
               <MappingFragment StoreEntitySet="Tblclasssection">
+                <ScalarProperty Name="Acadmic_Session" ColumnName="Acadmic_Session" />
+                <ScalarProperty Name="Fee" ColumnName="Fee" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Class" ColumnName="Class" />
                 <ScalarProperty Name="Section" ColumnName="Section" />

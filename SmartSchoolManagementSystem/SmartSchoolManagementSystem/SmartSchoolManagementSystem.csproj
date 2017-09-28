@@ -88,12 +88,6 @@
     <Compile Include="admissionform.Designer.cs">
       <DependentUpon>admissionform.cs</DependentUpon>
     </Compile>
-    <Compile Include="admissionformforschool.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admissionformforschool.Designer.cs">
-      <DependentUpon>admissionformforschool.cs</DependentUpon>
-    </Compile>
     <Compile Include="Classandsectiondefination.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,9 +229,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admissionform.resx">
       <DependentUpon>admissionform.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admissionformforschool.resx">
-      <DependentUpon>admissionformforschool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Classandsectiondefination.resx">
       <DependentUpon>Classandsectiondefination.cs</DependentUpon>

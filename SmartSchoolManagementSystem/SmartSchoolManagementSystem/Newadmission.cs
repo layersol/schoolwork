@@ -24,14 +24,38 @@ namespace SmartSchoolManagementSystem
             InitializeComponent();
             GetSession();
         }
+
+
+        private void Getcurrentstudent()
+        {
+             var val2 = (from u in db.TBLADDMISSIONs where u.CURRENTSESSION == "2017-2018" select u).Count() > 0;
+             if (val2 != false)
+            {
+
+                var query = from s in db.TBLADDMISSIONs
+                            where s.CURRENTSESSION == "2017-2018"
+                            select new
+                            {
+                                ProductID = s.ID,
+                                Stock = s.STUDENT_NAME,
+                            };
+                dvgstudent.DataSource = query.ToList();
+
+            }
+            else
+            {
+                MessageBox.Show("false");
+            }
+        }
+
         private void GetSession()
         {
-            //var CurrentSession = from c in db.TBLSESSIONs select new { Session = c.SESSION, };
+            var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
 
-            //foreach (var Sessionvalues in CurrentSession)
-            //{
-            //    lblSession.Text = Convert.ToString(Sessionvalues.Session);
-            //}
+            foreach (var Sessionvalues in CurrentSession)
+            {
+                lblSession.Text = Convert.ToString(Sessionvalues.Session);
+            }
         }
         private void btnup_Click(object sender, EventArgs e)
         {
@@ -169,6 +193,38 @@ namespace SmartSchoolManagementSystem
         private void label41_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            int sid = Convert.ToInt16(txtform.Text);
+            var q = (from a in db.Tbladmissionprints
+                     where a.FID ==sid
+                     select a).SingleOrDefault();
+            //PID = q.ID;
+            txtstudentname.Text = q.Name;
+            txtcell.Text = q.CellNo;
+            cbbclass.Text = q.Class;
+            cbbgroup.Text = q.Section;
+
+            // imgpicturebox.ImageLocation =Convert.ToString(q.LOGO);
+            //var qaNames = (from a in db.Tblclasses
+            //                   // where a.CLASS == cbbclass.Text
+            //               select new { a.ID, Names = a.CLASSNAME, }).ToList();
+            //cbbclass.DataSource = q.Class;
+            //cbbclass.DisplayMember = "Names";
+            //cbbclass.ValueMember = "ID";
+
+        }
+
+        private void cbbclass_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var qaNames = (from a in db.Tblclasses
+                                where a.CLASS == cbbclass.Text
+                           select new { a.ID, Names = a.CLASSNAME, }).ToList();
+            cbbclass.DataSource = q.Class;
+            cbbclass.DisplayMember = "Names";
+            cbbclass.ValueMember = "ID";
         }
 
         private void btnupdate_Click(object sender, EventArgs e)

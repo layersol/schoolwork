@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(schoolsettings));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -72,6 +73,7 @@
             this.groupBox1.Size = new System.Drawing.Size(381, 36);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label3
             // 
@@ -200,6 +202,8 @@
             // 
             this.btnbrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnbrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbrowse.Image = ((System.Drawing.Image)(resources.GetObject("btnbrowse.Image")));
+            this.btnbrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbrowse.Location = new System.Drawing.Point(7, 114);
             this.btnbrowse.Name = "btnbrowse";
             this.btnbrowse.Size = new System.Drawing.Size(116, 23);
@@ -299,22 +303,28 @@
             // 
             this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnew.Image = ((System.Drawing.Image)(resources.GetObject("btnnew.Image")));
+            this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnnew.Location = new System.Drawing.Point(17, 13);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(75, 23);
             this.btnnew.TabIndex = 3;
             this.btnnew.Text = "New";
+            this.btnnew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnnew.UseVisualStyleBackColor = false;
             // 
             // btnview
             // 
             this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnview.Image = ((System.Drawing.Image)(resources.GetObject("btnview.Image")));
+            this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnview.Location = new System.Drawing.Point(254, 13);
             this.btnview.Name = "btnview";
             this.btnview.Size = new System.Drawing.Size(75, 23);
             this.btnview.TabIndex = 2;
             this.btnview.Text = "View";
+            this.btnview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnview.UseVisualStyleBackColor = false;
             this.btnview.Click += new System.EventHandler(this.btnview_Click);
             // 
@@ -322,11 +332,14 @@
             // 
             this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.Image = ((System.Drawing.Image)(resources.GetObject("btnupdate.Image")));
+            this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnupdate.Location = new System.Drawing.Point(173, 13);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(75, 23);
             this.btnupdate.TabIndex = 1;
             this.btnupdate.Text = "Update";
+            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnupdate.UseVisualStyleBackColor = false;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
@@ -334,11 +347,14 @@
             // 
             this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsave.Location = new System.Drawing.Point(92, 13);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 23);
             this.btnsave.TabIndex = 0;
             this.btnsave.Text = "Save";
+            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 

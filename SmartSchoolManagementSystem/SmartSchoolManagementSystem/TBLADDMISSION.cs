@@ -44,5 +44,6 @@ namespace SmartSchoolManagementSystem
         public string UPDATED_BY { get; set; }
         public Nullable<System.DateTime> UPDATED_DATE { get; set; }
         public byte[] IMAGE { get; set; }
+        public string CURRENTSESSION { get; set; }
     }
 }

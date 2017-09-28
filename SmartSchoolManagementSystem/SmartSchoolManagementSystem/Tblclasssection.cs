@@ -26,5 +26,7 @@ namespace SmartSchoolManagementSystem
         public Nullable<System.DateTime> Createddate { get; set; }
         public string Updatedby { get; set; }
         public Nullable<System.DateTime> Updateddate { get; set; }
+        public string Fee { get; set; }
+        public string Acadmic_Session { get; set; }
     }
 }

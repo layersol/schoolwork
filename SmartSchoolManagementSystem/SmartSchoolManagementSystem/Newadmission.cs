@@ -106,7 +106,7 @@ namespace SmartSchoolManagementSystem
                 objcontext.GENDER = cbbgender.Text;
                 objcontext.RELIGION = txtriligion.Text;
                 objcontext.FATHER_OCCUPATION = txtoccupation.Text;
-                objcontext.ADMISSION_DATE = Convert.ToDateTime(txtadmissiondate.Text);
+                objcontext.ADMISSION_DATE = System.DateTime.Now;
                 objcontext.DOB = Convert.ToDateTime(txtdob.Text);
                 objcontext.PLACE_BIRTH = txtpob.Text;
                 objcontext.MONTHLY_INCOM = txtincom.Text;
@@ -124,7 +124,7 @@ namespace SmartSchoolManagementSystem
                 objcontext.ADMISSION_STATUS = true;
                 objcontext.IMAGE = img;
                 objcontext.CREATED_BY = "1";
-                objcontext.CREATED_DATE =Convert.ToDateTime(txtadmissiondate.Text);
+                objcontext.CREATED_DATE = System.DateTime.Now;
                 db.TBLADDMISSIONs.Add(objcontext);
                 db.SaveChanges();
                 var qaNames = (from a in db.TBLADDMISSIONs select new { a.ID }).ToList();
@@ -219,12 +219,12 @@ namespace SmartSchoolManagementSystem
 
         private void cbbclass_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var qaNames = (from a in db.Tblclasses
-                                where a.CLASS == cbbclass.Text
-                           select new { a.ID, Names = a.CLASSNAME, }).ToList();
-            cbbclass.DataSource = q.Class;
-            cbbclass.DisplayMember = "Names";
-            cbbclass.ValueMember = "ID";
+            //var qaNames = (from a in db.Tblclasses
+            //                    where a.CLASS == cbbclass.Text
+            //               select new { a.ID, Names = a.CLASSNAME, }).ToList();
+            //cbbclass.DataSource = q.Class;
+            //cbbclass.DisplayMember = "Names";
+            //cbbclass.ValueMember = "ID";
         }
 
         private void btnupdate_Click(object sender, EventArgs e)

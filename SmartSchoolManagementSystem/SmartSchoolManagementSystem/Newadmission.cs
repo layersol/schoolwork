@@ -205,7 +205,7 @@ namespace SmartSchoolManagementSystem
             txtstudentname.Text = q.Name;
             txtcell.Text = q.CellNo;
             cbbclass.Text = q.Class;
-            cbbgroup.Text = q.Section;
+           // cbbgroup.Text = q.Section;
 
             // imgpicturebox.ImageLocation =Convert.ToString(q.LOGO);
             //var qaNames = (from a in db.Tblclasses

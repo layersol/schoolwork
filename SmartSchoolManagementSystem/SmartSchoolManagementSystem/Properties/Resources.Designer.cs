@@ -233,9 +233,29 @@ namespace SmartSchoolManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap login_copy {
+            get {
+                object obj = ResourceManager.GetObject("login copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap material_icon_2155448_960_720 {
             get {
                 object obj = ResourceManager.GetObject("material-icon-2155448_960_720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_admission {
+            get {
+                object obj = ResourceManager.GetObject("new admission", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +326,16 @@ namespace SmartSchoolManagementSystem.Properties {
         internal static System.Drawing.Bitmap saveicon {
             get {
                 object obj = ResourceManager.GetObject("saveicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap school_information_settings {
+            get {
+                object obj = ResourceManager.GetObject("school information settings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

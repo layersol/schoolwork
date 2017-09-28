@@ -368,8 +368,10 @@
     <None Include="Resources\edit1.png" />
     <Content Include="Resources\file-explorer-icon.png" />
     <None Include="Resources\file-explorer-icon1.png" />
+    <None Include="Resources\login copy.png" />
     <Content Include="Resources\material-icon-2155448_960_720.png" />
     <None Include="Resources\material-icon-2155448_960_7201.png" />
+    <None Include="Resources\new admission.png" />
     <Content Include="Resources\next.png" />
     <None Include="Resources\next1.png" />
     <Content Include="Resources\pre.png" />
@@ -384,6 +386,7 @@
     <Content Include="Resources\saveicon.png" />
     <None Include="Resources\saveicon1.png" />
     <None Include="Resources\staff banner.png" />
+    <None Include="Resources\school information settings.png" />
     <Content Include="Resources\Update.png" />
     <None Include="Resources\Update1.png" />
     <None Include="Resources\Update17.png" />

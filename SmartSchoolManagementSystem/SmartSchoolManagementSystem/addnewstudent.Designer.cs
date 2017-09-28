@@ -39,9 +39,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblteacherinfo = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -49,7 +48,6 @@
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvnewadmission)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,26 +161,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.groupBox2.Controls.Add(this.lblteacherinfo);
-            this.groupBox2.Location = new System.Drawing.Point(3, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(569, 33);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            // 
-            // lblteacherinfo
-            // 
-            this.lblteacherinfo.AutoSize = true;
-            this.lblteacherinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblteacherinfo.Location = new System.Drawing.Point(202, 12);
-            this.lblteacherinfo.Name = "lblteacherinfo";
-            this.lblteacherinfo.Size = new System.Drawing.Size(109, 13);
-            this.lblteacherinfo.TabIndex = 5;
-            this.lblteacherinfo.Text = "NEW ADMISSION";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button3);
@@ -194,6 +172,14 @@
             this.groupBox3.Size = new System.Drawing.Size(569, 41);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.new_admission;
+            this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(570, 35);
+            this.panel1.TabIndex = 6;
             // 
             // button3
             // 
@@ -259,9 +245,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(576, 223);
+            this.ClientSize = new System.Drawing.Size(579, 220);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -273,8 +259,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvnewadmission)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -284,7 +268,6 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
@@ -299,6 +282,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label lblteacherinfo;
+        private System.Windows.Forms.Panel panel1;
     }
 }

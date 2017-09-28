@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(schoolsettings));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -43,8 +41,6 @@
             this.txtcontacta = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnbrowse = new System.Windows.Forms.Button();
-            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtcommnets = new System.Windows.Forms.TextBox();
@@ -57,34 +53,15 @@
             this.btnview = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.btnbrowse = new System.Windows.Forms.Button();
+            this.imgpicturebox = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(6, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(381, 36);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(69, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "School Information Settings";
             // 
             // groupBox2
             // 
@@ -197,29 +174,6 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Logo";
-            // 
-            // btnbrowse
-            // 
-            this.btnbrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnbrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbrowse.Image = global::SmartSchoolManagementSystem.Properties.Resources.Archive_Icon;
-            this.btnbrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbrowse.Location = new System.Drawing.Point(7, 114);
-            this.btnbrowse.Name = "btnbrowse";
-            this.btnbrowse.Size = new System.Drawing.Size(116, 23);
-            this.btnbrowse.TabIndex = 1;
-            this.btnbrowse.Text = "Browse";
-            this.btnbrowse.UseVisualStyleBackColor = false;
-            this.btnbrowse.Click += new System.EventHandler(this.btnbrowse_Click);
-            // 
-            // imgpicturebox
-            // 
-            this.imgpicturebox.Location = new System.Drawing.Point(7, 14);
-            this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(117, 97);
-            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgpicturebox.TabIndex = 0;
-            this.imgpicturebox.TabStop = false;
             // 
             // groupBox4
             // 
@@ -358,40 +312,66 @@
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
+            // btnbrowse
+            // 
+            this.btnbrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnbrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbrowse.Image = global::SmartSchoolManagementSystem.Properties.Resources.Archive_Icon;
+            this.btnbrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnbrowse.Location = new System.Drawing.Point(7, 114);
+            this.btnbrowse.Name = "btnbrowse";
+            this.btnbrowse.Size = new System.Drawing.Size(116, 23);
+            this.btnbrowse.TabIndex = 1;
+            this.btnbrowse.Text = "Browse";
+            this.btnbrowse.UseVisualStyleBackColor = false;
+            this.btnbrowse.Click += new System.EventHandler(this.btnbrowse_Click);
+            // 
+            // imgpicturebox
+            // 
+            this.imgpicturebox.Location = new System.Drawing.Point(7, 14);
+            this.imgpicturebox.Name = "imgpicturebox";
+            this.imgpicturebox.Size = new System.Drawing.Size(117, 97);
+            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpicturebox.TabIndex = 0;
+            this.imgpicturebox.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.school_information_settings;
+            this.panel1.Location = new System.Drawing.Point(7, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(380, 36);
+            this.panel1.TabIndex = 8;
+            // 
             // schoolsettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(390, 351);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(395, 349);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.Name = "schoolsettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "School Information Settings";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox imgpicturebox;
         private System.Windows.Forms.Button btnbrowse;
         private System.Windows.Forms.Label label6;
@@ -416,5 +396,6 @@
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnnew;
+        private System.Windows.Forms.Panel panel1;
     }
 }

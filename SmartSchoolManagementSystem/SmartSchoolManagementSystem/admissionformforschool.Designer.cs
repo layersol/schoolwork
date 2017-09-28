@@ -1507,168 +1507,21 @@
             // 
             // groupBox34
             // 
-            this.groupBox34.Controls.Add(this.textBox5);
-            this.groupBox34.Location = new System.Drawing.Point(480, 39);
-            this.groupBox34.Name = "groupBox34";
-            this.groupBox34.Size = new System.Drawing.Size(157, 45);
-            this.groupBox34.TabIndex = 40;
-            this.groupBox34.TabStop = false;
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(305, 59);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(76, 13);
+            this.label46.TabIndex = 35;
+            this.label46.Text = "Updation Date";
             // 
             // textBox5
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(6, 13);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(145, 20);
-            this.textBox5.TabIndex = 27;
-            // 
-            // groupBox26
-            // 
-            this.groupBox26.Controls.Add(this.textBox4);
-            this.groupBox26.Location = new System.Drawing.Point(326, 38);
-            this.groupBox26.Name = "groupBox26";
-            this.groupBox26.Size = new System.Drawing.Size(153, 45);
-            this.groupBox26.TabIndex = 39;
-            this.groupBox26.TabStop = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(6, 13);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(145, 20);
-            this.textBox4.TabIndex = 27;
-            // 
-            // groupBox25
-            // 
-            this.groupBox25.Controls.Add(this.textBox1);
-            this.groupBox25.Location = new System.Drawing.Point(169, 38);
-            this.groupBox25.Name = "groupBox25";
-            this.groupBox25.Size = new System.Drawing.Size(157, 45);
-            this.groupBox25.TabIndex = 38;
-            this.groupBox25.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(6, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 20);
-            this.textBox1.TabIndex = 27;
-            // 
-            // groupBox21
-            // 
-            this.groupBox21.Controls.Add(this.label39);
-            this.groupBox21.Location = new System.Drawing.Point(637, 0);
-            this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(155, 45);
-            this.groupBox21.TabIndex = 29;
-            this.groupBox21.TabStop = false;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(26, 16);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(48, 13);
-            this.label39.TabIndex = 37;
-            this.label39.Text = "Subjects";
-            // 
-            // groupBox22
-            // 
-            this.groupBox22.Controls.Add(this.label38);
-            this.groupBox22.Location = new System.Drawing.Point(481, 0);
-            this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Size = new System.Drawing.Size(157, 45);
-            this.groupBox22.TabIndex = 29;
-            this.groupBox22.TabStop = false;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(27, 16);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(80, 13);
-            this.label38.TabIndex = 37;
-            this.label38.Text = "Year of passing";
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.label37);
-            this.groupBox14.Location = new System.Drawing.Point(325, 0);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(157, 45);
-            this.groupBox14.TabIndex = 29;
-            this.groupBox14.TabStop = false;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(27, 16);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(85, 13);
-            this.label37.TabIndex = 37;
-            this.label37.Text = "Roll No & Reg.No";
-            // 
-            // groupBox20
-            // 
-            this.groupBox20.Controls.Add(this.label35);
-            this.groupBox20.Location = new System.Drawing.Point(169, 0);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(157, 45);
-            this.groupBox20.TabIndex = 29;
-            this.groupBox20.TabStop = false;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(15, 16);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(129, 13);
-            this.label35.TabIndex = 37;
-            this.label35.Text = "Board From which passed";
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Controls.Add(this.label40);
-            this.groupBox15.Location = new System.Drawing.Point(791, 0);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(152, 45);
-            this.groupBox15.TabIndex = 29;
-            this.groupBox15.TabStop = false;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(25, 16);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(80, 13);
-            this.label40.TabIndex = 37;
-            this.label40.Text = "Marks obtained";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.label3);
-            this.groupBox13.Controls.Add(this.groupBox16);
-            this.groupBox13.Controls.Add(this.groupBox24);
-            this.groupBox13.Controls.Add(this.groupBox17);
-            this.groupBox13.Controls.Add(this.groupBox23);
-            this.groupBox13.Controls.Add(this.groupBox18);
-            this.groupBox13.Controls.Add(this.groupBox19);
-            this.groupBox13.Location = new System.Drawing.Point(1, 0);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(168, 45);
-            this.groupBox13.TabIndex = 28;
-            this.groupBox13.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 13);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Examination Passed";
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(314, 26);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(63, 13);
+            this.label45.TabIndex = 34;
+            this.label45.Text = "Updated By";
             // 
             // groupBox16
             // 

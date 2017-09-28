@@ -17,7 +17,7 @@ namespace SmartSchoolManagementSystem
             InitializeComponent();
         }
 
-        private void groupBox8_Enter(object sender, EventArgs e)
+        private void btnsave_Click(object sender, EventArgs e)
         {
 
         }

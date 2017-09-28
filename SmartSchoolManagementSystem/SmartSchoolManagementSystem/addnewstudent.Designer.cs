@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addnewstudent));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvnewadmission = new System.Windows.Forms.DataGridView();
@@ -200,7 +199,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Image = global::SmartSchoolManagementSystem.Properties.Resources.Cancel;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(370, 11);
             this.button3.Name = "button3";
@@ -214,7 +213,7 @@
             // 
             this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
+            this.btnprint.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_icon;
             this.btnprint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprint.Location = new System.Drawing.Point(294, 11);
             this.btnprint.Name = "btnprint";
@@ -229,7 +228,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Image = global::SmartSchoolManagementSystem.Properties.Resources.edit;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(218, 11);
             this.button1.Name = "button1";
@@ -244,7 +243,7 @@
             // 
             this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
+            this.btnsave.Image = global::SmartSchoolManagementSystem.Properties.Resources.saveicon;
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsave.Location = new System.Drawing.Point(141, 11);
             this.btnsave.Name = "btnsave";

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_New_Session));
             this.gbsession = new System.Windows.Forms.GroupBox();
             this.txtacadmicsession = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -82,7 +81,7 @@
             // 
             this.btnclose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
+            this.btnclose.Image = global::SmartSchoolManagementSystem.Properties.Resources.Cancel;
             this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnclose.Location = new System.Drawing.Point(169, 10);
             this.btnclose.Name = "btnclose";
@@ -97,7 +96,7 @@
             // 
             this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnview.Image = ((System.Drawing.Image)(resources.GetObject("btnview.Image")));
+            this.btnview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view;
             this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnview.Location = new System.Drawing.Point(90, 10);
             this.btnview.Name = "btnview";
@@ -111,7 +110,7 @@
             // 
             this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
+            this.btnsave.Image = global::SmartSchoolManagementSystem.Properties.Resources.saveicon;
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsave.Location = new System.Drawing.Point(11, 10);
             this.btnsave.Name = "btnsave";

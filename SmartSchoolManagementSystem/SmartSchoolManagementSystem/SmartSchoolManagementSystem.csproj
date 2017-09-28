@@ -378,12 +378,14 @@
     <None Include="Resources\print-flat1.png" />
     <Content Include="Resources\Printer-icon.png" />
     <None Include="Resources\Printer-icon1.png" />
+    <None Include="Resources\Refresh.png" />
     <Content Include="Resources\save.png" />
     <None Include="Resources\save1.png" />
     <Content Include="Resources\saveicon.png" />
     <None Include="Resources\saveicon1.png" />
     <Content Include="Resources\Update.png" />
     <None Include="Resources\Update1.png" />
+    <None Include="Resources\Update17.png" />
     <Content Include="Resources\view.png" />
     <None Include="Resources\view1.png" />
     <Content Include="Resources\view2.png" />

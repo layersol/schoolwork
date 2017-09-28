@@ -202,7 +202,7 @@
             // 
             this.btnbrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnbrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbrowse.Image = ((System.Drawing.Image)(resources.GetObject("btnbrowse.Image")));
+            this.btnbrowse.Image = global::SmartSchoolManagementSystem.Properties.Resources.Archive_Icon;
             this.btnbrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbrowse.Location = new System.Drawing.Point(7, 114);
             this.btnbrowse.Name = "btnbrowse";
@@ -303,7 +303,7 @@
             // 
             this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnew.Image = ((System.Drawing.Image)(resources.GetObject("btnnew.Image")));
+            this.btnnew.Image = global::SmartSchoolManagementSystem.Properties.Resources.add18;
             this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnnew.Location = new System.Drawing.Point(17, 13);
             this.btnnew.Name = "btnnew";
@@ -317,7 +317,7 @@
             // 
             this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnview.Image = ((System.Drawing.Image)(resources.GetObject("btnview.Image")));
+            this.btnview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view;
             this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnview.Location = new System.Drawing.Point(254, 13);
             this.btnview.Name = "btnview";
@@ -332,7 +332,7 @@
             // 
             this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.Image = ((System.Drawing.Image)(resources.GetObject("btnupdate.Image")));
+            this.btnupdate.Image = global::SmartSchoolManagementSystem.Properties.Resources.Update17;
             this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnupdate.Location = new System.Drawing.Point(173, 13);
             this.btnupdate.Name = "btnupdate";

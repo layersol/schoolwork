@@ -28,14 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Classandsectiondefination));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtgroup = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cbbclass = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.cbbsection = new System.Windows.Forms.ComboBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,12 +60,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.txtgroup = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -125,6 +126,30 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // txtgroup
+            // 
+            this.txtgroup.Location = new System.Drawing.Point(85, 72);
+            this.txtgroup.Name = "txtgroup";
+            this.txtgroup.Size = new System.Drawing.Size(158, 20);
+            this.txtgroup.TabIndex = 27;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(9, 75);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 13);
+            this.label11.TabIndex = 26;
+            this.label11.Text = "Group";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Location = new System.Drawing.Point(199, 149);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(44, 20);
+            this.textBox3.TabIndex = 25;
+            // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -132,6 +157,15 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(44, 20);
             this.textBox2.TabIndex = 17;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(131, 153);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Max Student";
             // 
             // label8
             // 
@@ -151,6 +185,15 @@
             this.cbbclass.Size = new System.Drawing.Size(158, 21);
             this.cbbclass.TabIndex = 15;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(9, 154);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 13);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Exam Fee";
+            // 
             // cbbsection
             // 
             this.cbbsection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -159,6 +202,14 @@
             this.cbbsection.Name = "cbbsection";
             this.cbbsection.Size = new System.Drawing.Size(158, 21);
             this.cbbsection.TabIndex = 14;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.Location = new System.Drawing.Point(85, 153);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(41, 20);
+            this.textBox4.TabIndex = 22;
             // 
             // textBox1
             // 
@@ -280,95 +331,57 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(433, 19);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 25);
             this.button3.TabIndex = 15;
-            this.button3.Text = "Save";
+            this.button3.Text = "Close";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(352, 19);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 25);
             this.button2.TabIndex = 14;
-            this.button2.Text = "Save";
+            this.button2.Text = "View";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             // 
             // btnupdate
             // 
             this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.Image = ((System.Drawing.Image)(resources.GetObject("btnupdate.Image")));
+            this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnupdate.Location = new System.Drawing.Point(271, 19);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(75, 25);
             this.btnupdate.TabIndex = 13;
             this.btnupdate.Text = "Update";
+            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnupdate.UseVisualStyleBackColor = false;
             // 
             // btnsave
             // 
             this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsave.Location = new System.Drawing.Point(190, 19);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 25);
             this.btnsave.TabIndex = 12;
             this.btnsave.Text = "Save";
+            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsave.UseVisualStyleBackColor = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(199, 149);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(44, 20);
-            this.textBox3.TabIndex = 25;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(131, 153);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 13);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Max Student";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 154);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 13);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Exam Fee";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(85, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(41, 20);
-            this.textBox4.TabIndex = 22;
-            // 
-            // txtgroup
-            // 
-            this.txtgroup.Location = new System.Drawing.Point(85, 72);
-            this.txtgroup.Name = "txtgroup";
-            this.txtgroup.Size = new System.Drawing.Size(158, 20);
-            this.txtgroup.TabIndex = 27;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(9, 75);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(36, 13);
-            this.label11.TabIndex = 26;
-            this.label11.Text = "Group";
             // 
             // Classandsectiondefination
             // 

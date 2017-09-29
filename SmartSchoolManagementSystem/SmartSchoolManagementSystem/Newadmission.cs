@@ -50,12 +50,12 @@ namespace SmartSchoolManagementSystem
 
         private void GetSession()
         {
-            var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
+            //var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
 
-            foreach (var Sessionvalues in CurrentSession)
-            {
-                lblSession.Text = Convert.ToString(Sessionvalues.Session);
-            }
+            //foreach (var Sessionvalues in CurrentSession)
+            //{
+            //    lblSession.Text = Convert.ToString(Sessionvalues.Session);
+            //}
         }
         private void btnup_Click(object sender, EventArgs e)
         {
@@ -225,6 +225,103 @@ namespace SmartSchoolManagementSystem
             //cbbclass.DataSource = q.Class;
             //cbbclass.DisplayMember = "Names";
             //cbbclass.ValueMember = "ID";
+        }
+
+        private void txtfname_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            txtfname.Text = textInfo.ToTitleCase(txtfname.Text);
+            txtfname.Select(txtfname.Text.Length, 1);
+        }
+
+        private void txtoccupation_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            txtoccupation.Text = textInfo.ToTitleCase(txtoccupation.Text);
+            txtoccupation.Select(txtoccupation.Text.Length, 1);
+        }
+
+        private void txtpob_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            txtpob.Text = textInfo.ToTitleCase(txtpob.Text);
+            txtpob.Select(txtpob.Text.Length, 1);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            textBox1.Text = textInfo.ToTitleCase(textBox1.Text);
+            textBox1.Select(textBox1.Text.Length, 1);
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            textBox14.Text = textInfo.ToTitleCase(textBox14.Text);
+            textBox14.Select(textBox14.Text.Length, 1);
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            textBox6.Text = textInfo.ToTitleCase(textBox6.Text);
+            textBox6.Select(textBox6.Text.Length, 1);
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            textBox9.Text = textInfo.ToTitleCase(textBox9.Text);
+            textBox9.Select(textBox9.Text.Length, 1);
+        }
+
+        private void txtcurrentadress_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            txtcurrentadress.Text = textInfo.ToTitleCase(txtcurrentadress.Text);
+            txtcurrentadress.Select(txtcurrentadress.Text.Length, 1);
+        }
+
+        private void txtcast_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            txtcast.Text = textInfo.ToTitleCase(txtcast.Text);
+            txtcast.Select(txtcast.Text.Length, 1);
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            textBox13.Text = textInfo.ToTitleCase(textBox13.Text);
+            textBox13.Select(textBox13.Text.Length, 1);
+        }
+
+        private void txtpadress_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            txtpadress.Text = textInfo.ToTitleCase(txtpadress.Text);
+            txtpadress.Select(txtpadress.Text.Length, 1);
+
+        }
+
+        private void txtprevious_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            txtprevious.Text = textInfo.ToTitleCase(txtprevious.Text);
+            txtprevious.Select(txtprevious.Text.Length, 1);
         }
 
         private void btnupdate_Click(object sender, EventArgs e)

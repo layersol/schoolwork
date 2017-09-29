@@ -50,12 +50,12 @@ namespace SmartSchoolManagementSystem
 
         private void GetSession()
         {
-            //var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
+            var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
 
-            //foreach (var Sessionvalues in CurrentSession)
-            //{
-            //    lblSession.Text = Convert.ToString(Sessionvalues.Session);
-            //}
+            foreach (var Sessionvalues in CurrentSession)
+            {
+                lblSession.Text = Convert.ToString(Sessionvalues.Session);
+            }
         }
         private void btnup_Click(object sender, EventArgs e)
         {

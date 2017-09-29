@@ -324,6 +324,14 @@ namespace SmartSchoolManagementSystem
             txtprevious.Select(txtprevious.Text.Length, 1);
         }
 
+        private void textBox22_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            textBox22.Text = textInfo.ToTitleCase(textBox22.Text);
+            textBox22.Select(textBox22.Text.Length, 1);
+        }
+
         private void btnupdate_Click(object sender, EventArgs e)
         {
 

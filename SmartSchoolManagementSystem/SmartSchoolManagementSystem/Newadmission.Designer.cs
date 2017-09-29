@@ -818,6 +818,7 @@
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(590, 46);
             this.textBox22.TabIndex = 16;
+            this.textBox22.TextChanged += new System.EventHandler(this.textBox22_TextChanged);
             // 
             // label30
             // 
@@ -1692,6 +1693,7 @@
             // txtupdationby
             // 
             this.txtupdationby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtupdationby.Enabled = false;
             this.txtupdationby.Location = new System.Drawing.Point(420, 52);
             this.txtupdationby.Name = "txtupdationby";
             this.txtupdationby.Size = new System.Drawing.Size(145, 20);
@@ -1700,6 +1702,7 @@
             // txtupdatedby
             // 
             this.txtupdatedby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtupdatedby.Enabled = false;
             this.txtupdatedby.Location = new System.Drawing.Point(420, 19);
             this.txtupdatedby.Name = "txtupdatedby";
             this.txtupdatedby.Size = new System.Drawing.Size(145, 20);
@@ -1708,6 +1711,7 @@
             // txtcreationdate
             // 
             this.txtcreationdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcreationdate.Enabled = false;
             this.txtcreationdate.Location = new System.Drawing.Point(182, 52);
             this.txtcreationdate.Name = "txtcreationdate";
             this.txtcreationdate.Size = new System.Drawing.Size(145, 20);

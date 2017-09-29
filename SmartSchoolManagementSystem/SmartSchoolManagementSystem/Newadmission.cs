@@ -50,12 +50,12 @@ namespace SmartSchoolManagementSystem
 
         private void GetSession()
         {
-            //var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
+            var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
 
-            //foreach (var Sessionvalues in CurrentSession)
-            //{
-            //    lblSession.Text = Convert.ToString(Sessionvalues.Session);
-            //}
+            foreach (var Sessionvalues in CurrentSession)
+            {
+                lblSession.Text = Convert.ToString(Sessionvalues.Session);
+            }
         }
         private void btnup_Click(object sender, EventArgs e)
         {
@@ -322,6 +322,14 @@ namespace SmartSchoolManagementSystem
             TextInfo textInfo = cI.TextInfo;
             txtprevious.Text = textInfo.ToTitleCase(txtprevious.Text);
             txtprevious.Select(txtprevious.Text.Length, 1);
+        }
+
+        private void textBox22_TextChanged(object sender, EventArgs e)
+        {
+            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cI.TextInfo;
+            textBox22.Text = textInfo.ToTitleCase(textBox22.Text);
+            textBox22.Select(textBox22.Text.Length, 1);
         }
 
         private void btnupdate_Click(object sender, EventArgs e)

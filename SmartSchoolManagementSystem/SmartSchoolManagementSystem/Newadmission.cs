@@ -80,7 +80,9 @@ namespace SmartSchoolManagementSystem
 
         private void btnnew_Click(object sender, EventArgs e)
         {
-
+            txtform.Enabled = true;
+            btnsearch.Enabled = true;
+            txtcreationdate.Text = System.DateTime.Now.ToString();
         }
 
         private void btnsave_Click(object sender, EventArgs e)
@@ -330,6 +332,34 @@ namespace SmartSchoolManagementSystem
             TextInfo textInfo = cI.TextInfo;
             textBox22.Text = textInfo.ToTitleCase(textBox22.Text);
             textBox22.Select(textBox22.Text.Length, 1);
+        }
+
+        private void btnsearch_Click_1(object sender, EventArgs e)
+        {
+            if (txtform.Text !="")
+            {
+                int fid= Convert.ToInt16(txtform.Text);
+                var q = (from a in db.Tbladmissionprints
+                         where a.FID == fid
+                         select a).SingleOrDefault();
+                // PID = q.FID;
+                txtstudentname.Text = q.Name;
+
+                cbbclass.Text = q.Class;
+                cbbgroup.Text = q.Section;
+                txtcell.Text = q.CellNo;
+            }
+            else { MessageBox.Show("Please Add Correct Form No."); }
+        }
+
+        private void cbbclass_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            var qaNames = (from a in db.Tblclasses
+                               // where a.CLASS == cbbclass.Text
+                           select new { a.ID, Names = a.CLASSNAME, }).ToList();
+            cbbsection.DataSource = qaNames.ToList();
+            cbbsection.DisplayMember = "Names";
+            cbbsection.ValueMember = "ID";
         }
 
         private void btnupdate_Click(object sender, EventArgs e)

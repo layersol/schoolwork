@@ -109,11 +109,14 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Class" Type="nvarchar" MaxLength="50" />
           <Property Name="Section" Type="nvarchar" MaxLength="50" />
+          <Property Name="Group" Type="nvarchar" MaxLength="50" />
           <Property Name="Teacher" Type="nvarchar" MaxLength="50" />
           <Property Name="Maxstudent" Type="nvarchar" MaxLength="50" />
           <Property Name="FloorId" Type="nvarchar" MaxLength="50" />
           <Property Name="RoomNo" Type="nvarchar" MaxLength="50" />
-          <Property Name="Fee" Type="nvarchar" MaxLength="50" />
+          <Property Name="admissionfee" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="Fee" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="examfee" Type="numeric" Precision="18" Scale="0" />
           <Property Name="Comments" Type="nvarchar" MaxLength="50" />
           <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
           <Property Name="Createddate" Type="datetime" />
@@ -300,25 +303,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CLASSNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityType Name="Tblclasssection">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Teacher" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Maxstudent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="FloorId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="RoomNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Comments" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Createddate" Type="DateTime" Precision="3" />
-          <Property Name="Updatedby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Updateddate" Type="DateTime" Precision="3" />
-          <Property Name="Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Acadmic_Session" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
         <EntityType Name="Tblschoolsetting">
           <Key>
             <PropertyRef Name="ID" />
@@ -362,7 +346,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySet Name="TBLADDMISSIONs" EntityType="Self.TBLADDMISSION" />
           <EntitySet Name="Tbladmissionprints" EntityType="Self.Tbladmissionprint" />
           <EntitySet Name="Tblclasses" EntityType="Self.Tblclass" />
-          <EntitySet Name="Tblclasssections" EntityType="Self.Tblclasssection" />
           <EntitySet Name="Tblschoolsettings" EntityType="Self.Tblschoolsetting" />
           <EntitySet Name="TblSections" EntityType="Self.TblSection" />
           <EntitySet Name="TBLSTUDENTENRROLs" EntityType="Self.TBLSTUDENTENRROL" />
@@ -372,6 +355,7 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySet Name="firstformviews" EntityType="smartschooldbModel.firstformview" />
           <EntitySet Name="TblTeacherInformations" EntityType="smartschooldbModel.TblTeacherInformation" />
           <EntitySet Name="TblacadmicSessions" EntityType="smartschooldbModel.TblacadmicSession" />
+          <EntitySet Name="Tblclasssections" EntityType="smartschooldbModel.Tblclasssection" />
         </EntityContainer>
         <EntityType Name="FeeMasterSetting">
           <Key>
@@ -468,6 +452,28 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="AcadmicSession" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
+        <EntityType Name="Tblclasssection">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Group" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Teacher" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Maxstudent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FloorId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RoomNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="admissionfee" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Fee" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Comments" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Createddate" Type="DateTime" Precision="3" />
+          <Property Name="Updatedby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Updateddate" Type="DateTime" Precision="3" />
+          <Property Name="Acadmic_Session" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="examfee" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -527,26 +533,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
               <MappingFragment StoreEntitySet="Tblclass">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CLASSNAME" ColumnName="CLASSNAME" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Tblclasssections">
-            <EntityTypeMapping TypeName="smartschooldbModel.Tblclasssection">
-              <MappingFragment StoreEntitySet="Tblclasssection">
-                <ScalarProperty Name="Acadmic_Session" ColumnName="Acadmic_Session" />
-                <ScalarProperty Name="Fee" ColumnName="Fee" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Class" ColumnName="Class" />
-                <ScalarProperty Name="Section" ColumnName="Section" />
-                <ScalarProperty Name="Teacher" ColumnName="Teacher" />
-                <ScalarProperty Name="Maxstudent" ColumnName="Maxstudent" />
-                <ScalarProperty Name="FloorId" ColumnName="FloorId" />
-                <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
-                <ScalarProperty Name="Comments" ColumnName="Comments" />
-                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
-                <ScalarProperty Name="Updatedby" ColumnName="Updatedby" />
-                <ScalarProperty Name="Updateddate" ColumnName="Updateddate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -689,6 +675,29 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
             <EntityTypeMapping TypeName="smartschooldbModel.TblacadmicSession">
               <MappingFragment StoreEntitySet="TblacadmicSession">
                 <ScalarProperty Name="AcadmicSession" ColumnName="AcadmicSession" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tblclasssections">
+            <EntityTypeMapping TypeName="smartschooldbModel.Tblclasssection">
+              <MappingFragment StoreEntitySet="Tblclasssection">
+                <ScalarProperty Name="examfee" ColumnName="examfee" />
+                <ScalarProperty Name="Acadmic_Session" ColumnName="Acadmic_Session" />
+                <ScalarProperty Name="Updateddate" ColumnName="Updateddate" />
+                <ScalarProperty Name="Updatedby" ColumnName="Updatedby" />
+                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Fee" ColumnName="Fee" />
+                <ScalarProperty Name="admissionfee" ColumnName="admissionfee" />
+                <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
+                <ScalarProperty Name="FloorId" ColumnName="FloorId" />
+                <ScalarProperty Name="Maxstudent" ColumnName="Maxstudent" />
+                <ScalarProperty Name="Teacher" ColumnName="Teacher" />
+                <ScalarProperty Name="Group" ColumnName="Group" />
+                <ScalarProperty Name="Section" ColumnName="Section" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

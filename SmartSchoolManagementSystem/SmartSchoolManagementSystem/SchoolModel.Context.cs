@@ -28,7 +28,6 @@ namespace SmartSchoolManagementSystem
         public virtual DbSet<TBLADDMISSION> TBLADDMISSIONs { get; set; }
         public virtual DbSet<Tbladmissionprint> Tbladmissionprints { get; set; }
         public virtual DbSet<Tblclass> Tblclasses { get; set; }
-        public virtual DbSet<Tblclasssection> Tblclasssections { get; set; }
         public virtual DbSet<Tblschoolsetting> Tblschoolsettings { get; set; }
         public virtual DbSet<TblSection> TblSections { get; set; }
         public virtual DbSet<TBLSTUDENTENRROL> TBLSTUDENTENRROLs { get; set; }
@@ -38,5 +37,6 @@ namespace SmartSchoolManagementSystem
         public virtual DbSet<firstformview> firstformviews { get; set; }
         public virtual DbSet<TblTeacherInformation> TblTeacherInformations { get; set; }
         public virtual DbSet<TblacadmicSession> TblacadmicSessions { get; set; }
+        public virtual DbSet<Tblclasssection> Tblclasssections { get; set; }
     }
 }

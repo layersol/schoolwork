@@ -33,7 +33,7 @@
             this.lblSession = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbbgroup = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.cbbsection = new System.Windows.Forms.ComboBox();
@@ -179,6 +179,7 @@
             this.txtupdatedby = new System.Windows.Forms.TextBox();
             this.txtcreationdate = new System.Windows.Forms.TextBox();
             this.txtcreatedby = new System.Windows.Forms.TextBox();
+            this.btnsearch = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
@@ -206,10 +207,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnsearch);
             this.groupBox1.Controls.Add(this.lblSession);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.cbbgroup);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.cbbsection);
@@ -229,7 +231,7 @@
             // lblSession
             // 
             this.lblSession.AutoSize = true;
-            this.lblSession.Location = new System.Drawing.Point(872, 27);
+            this.lblSession.Location = new System.Drawing.Point(912, 26);
             this.lblSession.Name = "lblSession";
             this.lblSession.Size = new System.Drawing.Size(41, 13);
             this.lblSession.TabIndex = 12;
@@ -240,7 +242,7 @@
             this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(785, 22);
+            this.textBox2.Location = new System.Drawing.Point(853, 21);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(53, 20);
             this.textBox2.TabIndex = 3;
@@ -248,25 +250,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(730, 26);
+            this.label2.Location = new System.Drawing.Point(798, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "System ID";
             // 
-            // comboBox3
+            // cbbgroup
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(611, 18);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(84, 21);
-            this.comboBox3.TabIndex = 11;
+            this.cbbgroup.FormattingEnabled = true;
+            this.cbbgroup.Location = new System.Drawing.Point(710, 19);
+            this.cbbgroup.Name = "cbbgroup";
+            this.cbbgroup.Size = new System.Drawing.Size(87, 21);
+            this.cbbgroup.TabIndex = 11;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(569, 28);
+            this.label7.Location = new System.Drawing.Point(668, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 10;
@@ -277,33 +278,33 @@
             this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(222, 22);
+            this.textBox3.Location = new System.Drawing.Point(321, 23);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(77, 20);
+            this.textBox3.Size = new System.Drawing.Size(80, 20);
             this.textBox3.TabIndex = 9;
             // 
             // cbbsection
             // 
             this.cbbsection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbsection.FormattingEnabled = true;
-            this.cbbsection.Location = new System.Drawing.Point(478, 19);
+            this.cbbsection.Location = new System.Drawing.Point(577, 20);
             this.cbbsection.Name = "cbbsection";
-            this.cbbsection.Size = new System.Drawing.Size(84, 21);
+            this.cbbsection.Size = new System.Drawing.Size(87, 21);
             this.cbbsection.TabIndex = 8;
             // 
             // cbbclass
             // 
-            this.cbbclass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbclass.FormattingEnabled = true;
-            this.cbbclass.Location = new System.Drawing.Point(345, 22);
+            this.cbbclass.Location = new System.Drawing.Point(444, 23);
             this.cbbclass.Name = "cbbclass";
-            this.cbbclass.Size = new System.Drawing.Size(76, 21);
+            this.cbbclass.Size = new System.Drawing.Size(79, 21);
             this.cbbclass.TabIndex = 7;
+            this.cbbclass.SelectedIndexChanged += new System.EventHandler(this.cbbclass_SelectedIndexChanged_1);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(173, 26);
+            this.label5.Location = new System.Drawing.Point(272, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 5;
@@ -312,7 +313,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(307, 26);
+            this.label4.Location = new System.Drawing.Point(406, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 4;
@@ -321,7 +322,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(430, 27);
+            this.label6.Location = new System.Drawing.Point(529, 28);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 6;
@@ -330,6 +331,7 @@
             // txtform
             // 
             this.txtform.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtform.Enabled = false;
             this.txtform.Location = new System.Drawing.Point(56, 22);
             this.txtform.Name = "txtform";
             this.txtform.Size = new System.Drawing.Size(110, 20);
@@ -1726,12 +1728,27 @@
             this.txtcreatedby.Size = new System.Drawing.Size(145, 20);
             this.txtcreatedby.TabIndex = 28;
             // 
+            // btnsearch
+            // 
+            this.btnsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsearch.Enabled = false;
+            this.btnsearch.Image = ((System.Drawing.Image)(resources.GetObject("btnsearch.Image")));
+            this.btnsearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsearch.Location = new System.Drawing.Point(167, 21);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.TabIndex = 102;
+            this.btnsearch.Text = "Search";
+            this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click_1);
+            // 
             // Newadmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.ClientSize = new System.Drawing.Size(1182, 741);
             this.Controls.Add(this.groupBox49);
             this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.groupBox9);
@@ -1803,7 +1820,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox cbbsection;
         private System.Windows.Forms.ComboBox cbbclass;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbbgroup;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox imgpicturebox;
@@ -1941,5 +1958,6 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Button btnsearch;
     }
 }

@@ -30,7 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeachersttafInformation));
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnedit = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtposition = new System.Windows.Forms.TextBox();
             this.txtexprience = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -58,17 +64,11 @@
             this.txttname = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.imgbtn = new System.Windows.Forms.Button();
+            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.txtdtp = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnedit = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox6.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -89,6 +89,78 @@
             this.groupBox6.TabIndex = 32;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Activity";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(239, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(78, 36);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "View";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // btnedit
+            // 
+            this.btnedit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnedit.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnedit.Image = ((System.Drawing.Image)(resources.GetObject("btnedit.Image")));
+            this.btnedit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnedit.Location = new System.Drawing.Point(156, 8);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(79, 36);
+            this.btnedit.TabIndex = 18;
+            this.btnedit.Text = "Edit";
+            this.btnedit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnedit.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(404, 7);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(85, 36);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Exit";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Image = global::SmartSchoolManagementSystem.Properties.Resources.addblue;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(75, 8);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(79, 36);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Add";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btn_save
+            // 
+            this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_save.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.Image = global::SmartSchoolManagementSystem.Properties.Resources.save;
+            this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_save.Location = new System.Drawing.Point(321, 8);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(78, 36);
+            this.btn_save.TabIndex = 15;
+            this.btn_save.Text = "Save";
+            this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // groupBox1
             // 
@@ -131,6 +203,19 @@
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Teacher Information";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(199, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 101;
+            this.button1.Text = "Search";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // txtposition
             // 
@@ -197,6 +282,7 @@
             // 
             // dobdtpp
             // 
+            this.dobdtpp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dobdtpp.Location = new System.Drawing.Point(363, 98);
             this.dobdtpp.Name = "dobdtpp";
             this.dobdtpp.Size = new System.Drawing.Size(190, 20);
@@ -370,6 +456,17 @@
             this.imgbtn.TabIndex = 10;
             this.imgbtn.Text = "Browse";
             this.imgbtn.UseVisualStyleBackColor = false;
+            this.imgbtn.Click += new System.EventHandler(this.imgbtn_Click);
+            // 
+            // imgpicturebox
+            // 
+            this.imgpicturebox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgpicturebox.BackgroundImage")));
+            this.imgpicturebox.Location = new System.Drawing.Point(559, 19);
+            this.imgpicturebox.Name = "imgpicturebox";
+            this.imgpicturebox.Size = new System.Drawing.Size(140, 128);
+            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpicturebox.TabIndex = 6;
+            this.imgpicturebox.TabStop = false;
             // 
             // txtdtp
             // 
@@ -408,101 +505,6 @@
             this.txtid.Size = new System.Drawing.Size(110, 20);
             this.txtid.TabIndex = 100;
             this.txtid.UseWaitCursor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(239, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 36);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "View";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // btnedit
-            // 
-            this.btnedit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnedit.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnedit.Image = ((System.Drawing.Image)(resources.GetObject("btnedit.Image")));
-            this.btnedit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnedit.Location = new System.Drawing.Point(156, 8);
-            this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(79, 36);
-            this.btnedit.TabIndex = 18;
-            this.btnedit.Text = "Edit";
-            this.btnedit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnedit.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(404, 7);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(85, 36);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Exit";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::SmartSchoolManagementSystem.Properties.Resources.addblue;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(75, 8);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(79, 36);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Add";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // btn_save
-            // 
-            this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btn_save.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save.Image = global::SmartSchoolManagementSystem.Properties.Resources.save;
-            this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_save.Location = new System.Drawing.Point(321, 8);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(78, 36);
-            this.btn_save.TabIndex = 15;
-            this.btn_save.Text = "Save";
-            this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_save.UseVisualStyleBackColor = false;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(199, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 101;
-            this.button1.Text = "Search";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // imgpicturebox
-            // 
-            this.imgpicturebox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgpicturebox.BackgroundImage")));
-            this.imgpicturebox.Location = new System.Drawing.Point(559, 19);
-            this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(140, 128);
-            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.imgpicturebox.TabIndex = 6;
-            this.imgpicturebox.TabStop = false;
             // 
             // panel1
             // 

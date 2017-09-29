@@ -17,16 +17,19 @@ namespace SmartSchoolManagementSystem
         public int ID { get; set; }
         public string Class { get; set; }
         public string Section { get; set; }
+        public string Group { get; set; }
         public string Teacher { get; set; }
         public string Maxstudent { get; set; }
         public string FloorId { get; set; }
         public string RoomNo { get; set; }
+        public Nullable<decimal> admissionfee { get; set; }
+        public Nullable<decimal> Fee { get; set; }
         public string Comments { get; set; }
         public string CreatedBy { get; set; }
         public Nullable<System.DateTime> Createddate { get; set; }
         public string Updatedby { get; set; }
         public Nullable<System.DateTime> Updateddate { get; set; }
-        public string Fee { get; set; }
         public string Acadmic_Session { get; set; }
+        public Nullable<decimal> examfee { get; set; }
     }
 }

@@ -42,11 +42,23 @@ namespace SmartSchoolManagementSystem
             cbbsection.DisplayMember = "Section";
             cbbsection.ValueMember = "ID";
 
+            var STaff = (from b in db.TblTeacherInformations
+                               //  from b in db.TblSections
+                           select new
+                           {
+                               b.ID,
+                               staff = b.TEACHERNAME
+                           });
+
+            cbbteacher.DataSource = STaff.ToList();
+            cbbteacher.DisplayMember = "staff";
+            cbbteacher.ValueMember = "ID";
+
             //var GetTeacher = (from c in db.TblTeacherInformations
             //                   //  from b in db.TblSections
             //               select new
             //               {
-                              
+
             //               });
 
             //comboBox2.DataSource = GetTeacher.ToList();
@@ -60,9 +72,43 @@ namespace SmartSchoolManagementSystem
         private void Classandsectiondefination_Load(object sender, EventArgs e)
         {
             Getclass();
+            txtcreationdate.Text = System.DateTime.Now.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Insetrecord()
+        {
+            try
+            {
+                Tblclasssection objin = new Tblclasssection();
+                objin.Class = cbbclass.SelectedValue.ToString();
+                objin.Section = cbbsection.SelectedValue.ToString();
+                objin.Group = txtgroup.Text;
+                objin.Teacher = cbbteacher.Text;
+                objin.admissionfee = Convert.ToDecimal(txttuitionfee.Text);
+                objin.Fee = Convert.ToDecimal(txtmfee.Text);
+                objin.examfee = Convert.ToDecimal(txtexamfee.Text);
+                objin.Maxstudent = txtmaxstudent.Text;
+                objin.RoomNo = txtroom.Text;
+                objin.FloorId = txtfloor.Text;
+                objin.Acadmic_Session = "2017-2018";
+                objin.CreatedBy = "ali";
+                objin.Createddate = Convert.ToDateTime(txtcreationdate.Text);
+                db.Tblclasssections.Add(objin);
+                db.SaveChanges();
+            }
+            catch(Exception e)
+            { MessageBox.Show(e.Message); }
+        }
+        private void btnsave_Click_1(object sender, EventArgs e)
+        {
+            Insetrecord();
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
         {
 
         }

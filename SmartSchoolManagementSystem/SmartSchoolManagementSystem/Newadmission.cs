@@ -354,9 +354,19 @@ namespace SmartSchoolManagementSystem
 
         private void cbbclass_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            var qaNames = (from a in db.Tblclasses
-                               // where a.CLASS == cbbclass.Text
-                           select new { a.ID, Names = a.CLASSNAME, }).ToList();
+            var qaNames = (from a in db.Tblclasssections
+                           where a.Class == cbbclass.SelectedItem.ToString()
+                           select new { a.ID, Names = a.Section, }).ToList();
+            cbbsection.DataSource = qaNames.ToList();
+            cbbsection.DisplayMember = "Names";
+            cbbsection.ValueMember = "ID";
+        }
+
+        private void cbbclass_SelectedValueChanged(object sender, EventArgs e)
+        {
+            var qaNames = (from a in db.Tblclasssections
+                           where a.Class == cbbclass.SelectedItem.ToString()
+                           select new { a.ID, Names = a.Section, }).ToList();
             cbbsection.DataSource = qaNames.ToList();
             cbbsection.DisplayMember = "Names";
             cbbsection.ValueMember = "ID";
@@ -394,8 +404,8 @@ namespace SmartSchoolManagementSystem
 
         private void Newadmission_Load(object sender, EventArgs e)
         {
-            
-
+            txtcreatedby.Text = Login.SetValueForText;
+            txtcreationdate.Text = Convert.ToString(System.DateTime.Now);
             //    txtform.Text = dgvr.Cells[0].Value.ToString();
             //    txtstudentname.Text = dgvr.Cells[1].Value.ToString();
             //txtcell.Text = dgvr.Cells[2].Value.ToString();

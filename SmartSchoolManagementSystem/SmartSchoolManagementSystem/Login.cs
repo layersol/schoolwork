@@ -21,10 +21,11 @@ namespace SmartSchoolManagementSystem
             InitializeComponent();
            
         }
-
+        public static string SetValueForText = "";
         private void btnlogin_Click(object sender, EventArgs e)
         {
-           MDIParent objopen = new MDIParent();
+            SetValueForText =txtuser.Text;
+            MDIParent objopen = new MDIParent();
             // objopen.MdiParent = this;
             this.Hide();
             objopen.Show();

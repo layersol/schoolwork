@@ -53,6 +53,7 @@
             this.aCCOUNTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eXAMSCHEDULEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sETTINGSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.schoolInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -77,9 +78,8 @@
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsluser = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.schoolInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -265,6 +265,13 @@
             this.sETTINGSToolStripMenuItem.Name = "sETTINGSToolStripMenuItem";
             this.sETTINGSToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.sETTINGSToolStripMenuItem.Text = "SETTINGS";
+            // 
+            // schoolInformationToolStripMenuItem
+            // 
+            this.schoolInformationToolStripMenuItem.Name = "schoolInformationToolStripMenuItem";
+            this.schoolInformationToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.schoolInformationToolStripMenuItem.Text = "School Information";
+            this.schoolInformationToolStripMenuItem.Click += new System.EventHandler(this.schoolInformationToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -458,7 +465,7 @@
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
-            this.toolStripStatusLabel1});
+            this.tsluser});
             this.statusStrip.Location = new System.Drawing.Point(0, 614);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1137, 22);
@@ -471,18 +478,11 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // toolStripStatusLabel1
+            // tsluser
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-            // 
-            // schoolInformationToolStripMenuItem
-            // 
-            this.schoolInformationToolStripMenuItem.Name = "schoolInformationToolStripMenuItem";
-            this.schoolInformationToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.schoolInformationToolStripMenuItem.Text = "School Information";
-            this.schoolInformationToolStripMenuItem.Click += new System.EventHandler(this.schoolInformationToolStripMenuItem_Click);
+            this.tsluser.Name = "tsluser";
+            this.tsluser.Size = new System.Drawing.Size(118, 17);
+            this.tsluser.Text = "toolStripStatusLabel1";
             // 
             // MDIParent
             // 
@@ -536,7 +536,7 @@
         private System.Windows.Forms.ToolStripMenuItem schoolStaffToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addStaffInformationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel tsluser;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripMenuItem attendanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewAttendanceToolStripMenuItem;

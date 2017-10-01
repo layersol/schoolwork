@@ -16,7 +16,7 @@ namespace SmartSchoolManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Classandsectiondefination());
+            Application.Run(new Login());
         }
     }
 }

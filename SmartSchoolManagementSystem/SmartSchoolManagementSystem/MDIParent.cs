@@ -267,8 +267,9 @@ namespace SmartSchoolManagementSystem
 
         private void MDIParent_Load(object sender, EventArgs e)
         {
-
-           // toolStripLabel2.Text = LogIn.SetValueForText;
+            
+            tsluser.Text ="Welcome  "+ Login.SetValueForText+"  You Logged In  "+System.DateTime.Now;
+           
             var Getschool = from c in db.Tblschoolsettings
 
                             select new

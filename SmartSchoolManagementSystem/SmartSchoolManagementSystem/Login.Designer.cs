@@ -30,7 +30,7 @@
         {
             this.btnlogin = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtuser = new System.Windows.Forms.TextBox();
             this.btnclose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -58,15 +58,15 @@
             this.textBox1.TabIndex = 2;
             this.textBox1.UseSystemPasswordChar = true;
             // 
-            // textBox2
+            // txtuser
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(273, 133);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 13);
-            this.textBox2.TabIndex = 1;
+            this.txtuser.BackColor = System.Drawing.Color.White;
+            this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuser.Location = new System.Drawing.Point(273, 133);
+            this.txtuser.Name = "txtuser";
+            this.txtuser.Size = new System.Drawing.Size(179, 13);
+            this.txtuser.TabIndex = 1;
             // 
             // btnclose
             // 
@@ -90,7 +90,7 @@
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtuser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -104,7 +104,7 @@
 
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.Button btnclose;
     }
 }

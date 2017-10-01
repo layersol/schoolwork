@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Newadmission));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnsearch = new System.Windows.Forms.Button();
             this.lblSession = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -179,7 +180,6 @@
             this.txtupdatedby = new System.Windows.Forms.TextBox();
             this.txtcreationdate = new System.Windows.Forms.TextBox();
             this.txtcreatedby = new System.Windows.Forms.TextBox();
-            this.btnsearch = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
@@ -227,6 +227,21 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registration Information";
+            // 
+            // btnsearch
+            // 
+            this.btnsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsearch.Enabled = false;
+            this.btnsearch.Image = ((System.Drawing.Image)(resources.GetObject("btnsearch.Image")));
+            this.btnsearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsearch.Location = new System.Drawing.Point(167, 21);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.TabIndex = 102;
+            this.btnsearch.Text = "Search";
+            this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click_1);
             // 
             // lblSession
             // 
@@ -300,6 +315,7 @@
             this.cbbclass.Size = new System.Drawing.Size(79, 21);
             this.cbbclass.TabIndex = 7;
             this.cbbclass.SelectedIndexChanged += new System.EventHandler(this.cbbclass_SelectedIndexChanged_1);
+            this.cbbclass.SelectedValueChanged += new System.EventHandler(this.cbbclass_SelectedValueChanged);
             // 
             // label5
             // 
@@ -805,9 +821,9 @@
             this.groupBox6.Controls.Add(this.label28);
             this.groupBox6.Controls.Add(this.txtcurrentadress);
             this.groupBox6.Controls.Add(this.label29);
-            this.groupBox6.Location = new System.Drawing.Point(15, 415);
+            this.groupBox6.Location = new System.Drawing.Point(15, 385);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(695, 182);
+            this.groupBox6.Size = new System.Drawing.Size(695, 177);
             this.groupBox6.TabIndex = 12;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Other Information";
@@ -980,9 +996,9 @@
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.Controls.Add(this.textBox25);
             this.groupBox7.Controls.Add(this.label36);
-            this.groupBox7.Location = new System.Drawing.Point(716, 417);
+            this.groupBox7.Location = new System.Drawing.Point(716, 385);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(240, 180);
+            this.groupBox7.Size = new System.Drawing.Size(240, 175);
             this.groupBox7.TabIndex = 12;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Account ";
@@ -1082,7 +1098,7 @@
             this.groupBox8.Controls.Add(this.btnupdate);
             this.groupBox8.Controls.Add(this.btnsave);
             this.groupBox8.Controls.Add(this.btnnew);
-            this.groupBox8.Location = new System.Drawing.Point(12, 690);
+            this.groupBox8.Location = new System.Drawing.Point(12, 634);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(947, 58);
             this.groupBox8.TabIndex = 18;
@@ -1092,9 +1108,9 @@
             // 
             this.btnnext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnnext.Image = ((System.Drawing.Image)(resources.GetObject("btnnext.Image")));
-            this.btnnext.Location = new System.Drawing.Point(677, 13);
+            this.btnnext.Location = new System.Drawing.Point(714, 13);
             this.btnnext.Name = "btnnext";
-            this.btnnext.Size = new System.Drawing.Size(89, 38);
+            this.btnnext.Size = new System.Drawing.Size(94, 38);
             this.btnnext.TabIndex = 10;
             this.btnnext.UseVisualStyleBackColor = false;
             this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
@@ -1103,9 +1119,9 @@
             // 
             this.btnback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
-            this.btnback.Location = new System.Drawing.Point(587, 13);
+            this.btnback.Location = new System.Drawing.Point(619, 13);
             this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(89, 38);
+            this.btnback.Size = new System.Drawing.Size(94, 38);
             this.btnback.TabIndex = 9;
             this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
@@ -1116,9 +1132,9 @@
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = global::SmartSchoolManagementSystem.Properties.Resources.close;
             this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnclose.Location = new System.Drawing.Point(497, 13);
+            this.btnclose.Location = new System.Drawing.Point(524, 13);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(89, 38);
+            this.btnclose.Size = new System.Drawing.Size(94, 38);
             this.btnclose.TabIndex = 8;
             this.btnclose.Text = "Close";
             this.btnclose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1131,9 +1147,9 @@
             this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_icon;
             this.btnprint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprint.Location = new System.Drawing.Point(407, 13);
+            this.btnprint.Location = new System.Drawing.Point(429, 13);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(89, 38);
+            this.btnprint.Size = new System.Drawing.Size(94, 38);
             this.btnprint.TabIndex = 7;
             this.btnprint.Text = "Print";
             this.btnprint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1146,9 +1162,9 @@
             this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
             this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnview.Location = new System.Drawing.Point(317, 13);
+            this.btnview.Location = new System.Drawing.Point(334, 13);
             this.btnview.Name = "btnview";
-            this.btnview.Size = new System.Drawing.Size(89, 38);
+            this.btnview.Size = new System.Drawing.Size(94, 38);
             this.btnview.TabIndex = 6;
             this.btnview.Text = "View";
             this.btnview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1162,9 +1178,9 @@
             this.btnupdate.ForeColor = System.Drawing.Color.Black;
             this.btnupdate.Image = global::SmartSchoolManagementSystem.Properties.Resources.Update;
             this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnupdate.Location = new System.Drawing.Point(217, 13);
+            this.btnupdate.Location = new System.Drawing.Point(228, 13);
             this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(100, 38);
+            this.btnupdate.Size = new System.Drawing.Size(105, 38);
             this.btnupdate.TabIndex = 5;
             this.btnupdate.Text = "Update";
             this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1177,9 +1193,9 @@
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.Image = global::SmartSchoolManagementSystem.Properties.Resources.save;
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(129, 13);
+            this.btnsave.Location = new System.Drawing.Point(133, 13);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(89, 38);
+            this.btnsave.Size = new System.Drawing.Size(94, 38);
             this.btnsave.TabIndex = 4;
             this.btnsave.Text = "Save";
             this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1194,7 +1210,7 @@
             this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnnew.Location = new System.Drawing.Point(38, 13);
             this.btnnew.Name = "btnnew";
-            this.btnnew.Size = new System.Drawing.Size(89, 38);
+            this.btnnew.Size = new System.Drawing.Size(94, 38);
             this.btnnew.TabIndex = 3;
             this.btnnew.Text = "New";
             this.btnnew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1206,7 +1222,7 @@
             this.groupBox9.Controls.Add(this.dvgstudent);
             this.groupBox9.Location = new System.Drawing.Point(965, 183);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(205, 545);
+            this.groupBox9.Size = new System.Drawing.Size(205, 530);
             this.groupBox9.TabIndex = 3;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Cureent Session Student List";
@@ -1216,15 +1232,15 @@
             this.dvgstudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgstudent.Location = new System.Drawing.Point(6, 19);
             this.dvgstudent.Name = "dvgstudent";
-            this.dvgstudent.Size = new System.Drawing.Size(193, 519);
+            this.dvgstudent.Size = new System.Drawing.Size(193, 504);
             this.dvgstudent.TabIndex = 0;
             // 
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.groupBox12);
-            this.groupBox11.Location = new System.Drawing.Point(12, 258);
+            this.groupBox11.Location = new System.Drawing.Point(12, 253);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(947, 146);
+            this.groupBox11.Size = new System.Drawing.Size(947, 132);
             this.groupBox11.TabIndex = 26;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Acadmic Details of the applicant";
@@ -1247,7 +1263,7 @@
             this.groupBox12.Controls.Add(this.groupBox13);
             this.groupBox12.Location = new System.Drawing.Point(0, 16);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(947, 130);
+            this.groupBox12.Size = new System.Drawing.Size(947, 110);
             this.groupBox12.TabIndex = 27;
             this.groupBox12.TabStop = false;
             // 
@@ -1263,7 +1279,7 @@
             // textBox8
             // 
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(804, 98);
+            this.textBox8.Location = new System.Drawing.Point(804, 82);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(131, 20);
             this.textBox8.TabIndex = 51;
@@ -1281,14 +1297,14 @@
             this.groupBox25.Controls.Add(this.groupBox45);
             this.groupBox25.Location = new System.Drawing.Point(169, 38);
             this.groupBox25.Name = "groupBox25";
-            this.groupBox25.Size = new System.Drawing.Size(770, 45);
+            this.groupBox25.Size = new System.Drawing.Size(770, 39);
             this.groupBox25.TabIndex = 41;
             this.groupBox25.TabStop = false;
             // 
             // textBox7
             // 
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(635, 14);
+            this.textBox7.Location = new System.Drawing.Point(635, 10);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(132, 20);
             this.textBox7.TabIndex = 46;
@@ -1296,7 +1312,7 @@
             // textBox6
             // 
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(480, 14);
+            this.textBox6.Location = new System.Drawing.Point(480, 10);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(133, 20);
             this.textBox6.TabIndex = 45;
@@ -1305,7 +1321,7 @@
             // textBox5
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(324, 14);
+            this.textBox5.Location = new System.Drawing.Point(324, 10);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(139, 20);
             this.textBox5.TabIndex = 44;
@@ -1313,7 +1329,7 @@
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(163, 14);
+            this.textBox4.Location = new System.Drawing.Point(163, 10);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(145, 20);
             this.textBox4.TabIndex = 43;
@@ -1321,7 +1337,7 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(7, 14);
+            this.textBox1.Location = new System.Drawing.Point(7, 10);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(145, 20);
             this.textBox1.TabIndex = 42;
@@ -1362,7 +1378,7 @@
             // textBox9
             // 
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(649, 98);
+            this.textBox9.Location = new System.Drawing.Point(649, 82);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(133, 20);
             this.textBox9.TabIndex = 50;
@@ -1371,7 +1387,7 @@
             // textBox11
             // 
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Location = new System.Drawing.Point(493, 98);
+            this.textBox11.Location = new System.Drawing.Point(493, 82);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(139, 20);
             this.textBox11.TabIndex = 49;
@@ -1385,16 +1401,16 @@
             this.groupBox37.Controls.Add(this.groupBox41);
             this.groupBox37.Controls.Add(this.groupBox42);
             this.groupBox37.Controls.Add(this.groupBox43);
-            this.groupBox37.Location = new System.Drawing.Point(1, 85);
+            this.groupBox37.Location = new System.Drawing.Point(1, 77);
             this.groupBox37.Name = "groupBox37";
-            this.groupBox37.Size = new System.Drawing.Size(168, 45);
+            this.groupBox37.Size = new System.Drawing.Size(168, 33);
             this.groupBox37.TabIndex = 37;
             this.groupBox37.TabStop = false;
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(10, 17);
+            this.label42.Location = new System.Drawing.Point(10, 12);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(114, 13);
             this.label42.TabIndex = 36;
@@ -1451,7 +1467,7 @@
             // textBox12
             // 
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Location = new System.Drawing.Point(331, 98);
+            this.textBox12.Location = new System.Drawing.Point(331, 82);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(145, 20);
             this.textBox12.TabIndex = 48;
@@ -1477,7 +1493,7 @@
             // textBox14
             // 
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Location = new System.Drawing.Point(175, 98);
+            this.textBox14.Location = new System.Drawing.Point(175, 82);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(145, 20);
             this.textBox14.TabIndex = 47;
@@ -1567,7 +1583,7 @@
             this.groupBox13.Controls.Add(this.groupBox19);
             this.groupBox13.Location = new System.Drawing.Point(1, 38);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(169, 45);
+            this.groupBox13.Size = new System.Drawing.Size(169, 39);
             this.groupBox13.TabIndex = 28;
             this.groupBox13.TabStop = false;
             // 
@@ -1649,9 +1665,9 @@
             this.groupBox49.Controls.Add(this.txtupdatedby);
             this.groupBox49.Controls.Add(this.txtcreationdate);
             this.groupBox49.Controls.Add(this.txtcreatedby);
-            this.groupBox49.Location = new System.Drawing.Point(12, 612);
+            this.groupBox49.Location = new System.Drawing.Point(12, 562);
             this.groupBox49.Name = "groupBox49";
-            this.groupBox49.Size = new System.Drawing.Size(947, 78);
+            this.groupBox49.Size = new System.Drawing.Size(698, 72);
             this.groupBox49.TabIndex = 19;
             this.groupBox49.TabStop = false;
             this.groupBox49.Text = "User Information";
@@ -1659,7 +1675,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(338, 56);
+            this.label46.Location = new System.Drawing.Point(338, 48);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(76, 13);
             this.label46.TabIndex = 35;
@@ -1668,7 +1684,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(338, 23);
+            this.label45.Location = new System.Drawing.Point(338, 15);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(63, 13);
             this.label45.TabIndex = 34;
@@ -1677,7 +1693,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(105, 56);
+            this.label44.Location = new System.Drawing.Point(105, 48);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(72, 13);
             this.label44.TabIndex = 33;
@@ -1686,7 +1702,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(105, 22);
+            this.label43.Location = new System.Drawing.Point(105, 14);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(59, 13);
             this.label43.TabIndex = 32;
@@ -1696,7 +1712,7 @@
             // 
             this.txtupdationby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtupdationby.Enabled = false;
-            this.txtupdationby.Location = new System.Drawing.Point(420, 52);
+            this.txtupdationby.Location = new System.Drawing.Point(420, 44);
             this.txtupdationby.Name = "txtupdationby";
             this.txtupdationby.Size = new System.Drawing.Size(145, 20);
             this.txtupdationby.TabIndex = 31;
@@ -1705,7 +1721,7 @@
             // 
             this.txtupdatedby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtupdatedby.Enabled = false;
-            this.txtupdatedby.Location = new System.Drawing.Point(420, 19);
+            this.txtupdatedby.Location = new System.Drawing.Point(420, 11);
             this.txtupdatedby.Name = "txtupdatedby";
             this.txtupdatedby.Size = new System.Drawing.Size(145, 20);
             this.txtupdatedby.TabIndex = 30;
@@ -1714,7 +1730,7 @@
             // 
             this.txtcreationdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtcreationdate.Enabled = false;
-            this.txtcreationdate.Location = new System.Drawing.Point(182, 52);
+            this.txtcreationdate.Location = new System.Drawing.Point(182, 44);
             this.txtcreationdate.Name = "txtcreationdate";
             this.txtcreationdate.Size = new System.Drawing.Size(145, 20);
             this.txtcreationdate.TabIndex = 29;
@@ -1723,32 +1739,17 @@
             // 
             this.txtcreatedby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtcreatedby.Enabled = false;
-            this.txtcreatedby.Location = new System.Drawing.Point(182, 19);
+            this.txtcreatedby.Location = new System.Drawing.Point(182, 11);
             this.txtcreatedby.Name = "txtcreatedby";
             this.txtcreatedby.Size = new System.Drawing.Size(145, 20);
             this.txtcreatedby.TabIndex = 28;
-            // 
-            // btnsearch
-            // 
-            this.btnsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnsearch.Enabled = false;
-            this.btnsearch.Image = ((System.Drawing.Image)(resources.GetObject("btnsearch.Image")));
-            this.btnsearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsearch.Location = new System.Drawing.Point(167, 21);
-            this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(75, 23);
-            this.btnsearch.TabIndex = 102;
-            this.btnsearch.Text = "Search";
-            this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsearch.UseVisualStyleBackColor = false;
-            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click_1);
             // 
             // Newadmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1182, 741);
+            this.ClientSize = new System.Drawing.Size(1182, 721);
             this.Controls.Add(this.groupBox49);
             this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.groupBox9);

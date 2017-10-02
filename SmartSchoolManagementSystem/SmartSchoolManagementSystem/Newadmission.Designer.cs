@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Newadmission));
             this.registrartion = new System.Windows.Forms.GroupBox();
-            this.btnsearch = new System.Windows.Forms.Button();
             this.lblSession = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,12 +46,10 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btntake = new System.Windows.Forms.Button();
             this.btnup = new System.Windows.Forms.Button();
-            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtlandlin = new System.Windows.Forms.TextBox();
             this.txtcell = new System.Windows.Forms.TextBox();
@@ -116,14 +113,6 @@
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.btnnext = new System.Windows.Forms.Button();
-            this.btnback = new System.Windows.Forms.Button();
-            this.btnclose = new System.Windows.Forms.Button();
-            this.btnprint = new System.Windows.Forms.Button();
-            this.btnview = new System.Windows.Forms.Button();
-            this.btnupdate = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
-            this.btnnew = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.dvgstudent = new System.Windows.Forms.DataGridView();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
@@ -170,7 +159,6 @@
             this.groupBox23 = new System.Windows.Forms.GroupBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox49 = new System.Windows.Forms.GroupBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -180,12 +168,26 @@
             this.txtupdatedby = new System.Windows.Forms.TextBox();
             this.txtcreationdate = new System.Windows.Forms.TextBox();
             this.txtcreatedby = new System.Windows.Forms.TextBox();
+            this.btnnext = new System.Windows.Forms.Button();
+            this.btnback = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
+            this.btnprint = new System.Windows.Forms.Button();
+            this.btnview = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btnnew = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgpicturebox = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnsearch = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.registrartion.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -203,6 +205,8 @@
             this.groupBox15.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox49.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // registrartion
@@ -227,21 +231,6 @@
             this.registrartion.TabIndex = 0;
             this.registrartion.TabStop = false;
             this.registrartion.Text = "Registration Information";
-            // 
-            // btnsearch
-            // 
-            this.btnsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnsearch.Enabled = false;
-            this.btnsearch.Image = ((System.Drawing.Image)(resources.GetObject("btnsearch.Image")));
-            this.btnsearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsearch.Location = new System.Drawing.Point(167, 21);
-            this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(75, 23);
-            this.btnsearch.TabIndex = 102;
-            this.btnsearch.Text = "Search";
-            this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsearch.UseVisualStyleBackColor = false;
-            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click_1);
             // 
             // lblSession
             // 
@@ -400,17 +389,6 @@
             this.btnup.UseVisualStyleBackColor = false;
             this.btnup.Click += new System.EventHandler(this.btnup_Click);
             // 
-            // imgpicturebox
-            // 
-            this.imgpicturebox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgpicturebox.BackgroundImage")));
-            this.imgpicturebox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgpicturebox.Location = new System.Drawing.Point(6, 17);
-            this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(112, 95);
-            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgpicturebox.TabIndex = 0;
-            this.imgpicturebox.TabStop = false;
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.groupBox10);
@@ -466,17 +444,6 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Upload";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 105);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label15
             // 
@@ -807,6 +774,10 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.textBox15);
+            this.groupBox6.Controls.Add(this.label48);
+            this.groupBox6.Controls.Add(this.comboBox1);
+            this.groupBox6.Controls.Add(this.label47);
             this.groupBox6.Controls.Add(this.textBox22);
             this.groupBox6.Controls.Add(this.label30);
             this.groupBox6.Controls.Add(this.comboBox7);
@@ -825,7 +796,7 @@
             this.groupBox6.Controls.Add(this.label29);
             this.groupBox6.Location = new System.Drawing.Point(15, 385);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(695, 177);
+            this.groupBox6.Size = new System.Drawing.Size(756, 177);
             this.groupBox6.TabIndex = 12;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Other Information";
@@ -836,7 +807,7 @@
             this.textBox22.Location = new System.Drawing.Point(98, 122);
             this.textBox22.Multiline = true;
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(590, 46);
+            this.textBox22.Size = new System.Drawing.Size(652, 46);
             this.textBox22.TabIndex = 16;
             this.textBox22.TextChanged += new System.EventHandler(this.textBox22_TextChanged);
             // 
@@ -853,15 +824,15 @@
             // 
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(566, 94);
+            this.comboBox7.Location = new System.Drawing.Point(474, 95);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(120, 21);
+            this.comboBox7.Size = new System.Drawing.Size(48, 21);
             this.comboBox7.TabIndex = 13;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(520, 98);
+            this.label27.Location = new System.Drawing.Point(430, 98);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(42, 13);
             this.label27.TabIndex = 12;
@@ -870,12 +841,12 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(411, 96);
+            this.checkBox2.Location = new System.Drawing.Point(355, 97);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox2.Size = new System.Drawing.Size(100, 17);
+            this.checkBox2.Size = new System.Drawing.Size(71, 17);
             this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "Need Transport";
+            this.checkBox2.Text = "Transport";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // cbbBloodGroup
@@ -891,15 +862,15 @@
             "AB+",
             "O−\t",
             "O+"});
-            this.cbbBloodGroup.Location = new System.Drawing.Point(328, 95);
+            this.cbbBloodGroup.Location = new System.Drawing.Point(305, 95);
             this.cbbBloodGroup.Name = "cbbBloodGroup";
-            this.cbbBloodGroup.Size = new System.Drawing.Size(76, 21);
+            this.cbbBloodGroup.Size = new System.Drawing.Size(46, 21);
             this.cbbBloodGroup.TabIndex = 13;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(256, 99);
+            this.label26.Location = new System.Drawing.Point(233, 99);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(66, 13);
             this.label26.TabIndex = 12;
@@ -910,7 +881,7 @@
             this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtemail.Location = new System.Drawing.Point(98, 95);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(156, 20);
+            this.txtemail.Size = new System.Drawing.Size(130, 20);
             this.txtemail.TabIndex = 8;
             // 
             // label25
@@ -927,7 +898,7 @@
             this.txtprevious.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtprevious.Location = new System.Drawing.Point(98, 69);
             this.txtprevious.Name = "txtprevious";
-            this.txtprevious.Size = new System.Drawing.Size(588, 20);
+            this.txtprevious.Size = new System.Drawing.Size(650, 20);
             this.txtprevious.TabIndex = 6;
             this.txtprevious.TextChanged += new System.EventHandler(this.txtprevious_TextChanged);
             // 
@@ -955,7 +926,7 @@
             this.txtpadress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpadress.Location = new System.Drawing.Point(172, 44);
             this.txtpadress.Name = "txtpadress";
-            this.txtpadress.Size = new System.Drawing.Size(514, 20);
+            this.txtpadress.Size = new System.Drawing.Size(576, 20);
             this.txtpadress.TabIndex = 3;
             this.txtpadress.TextChanged += new System.EventHandler(this.txtpadress_TextChanged);
             // 
@@ -973,7 +944,7 @@
             this.txtcurrentadress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtcurrentadress.Location = new System.Drawing.Point(98, 18);
             this.txtcurrentadress.Name = "txtcurrentadress";
-            this.txtcurrentadress.Size = new System.Drawing.Size(588, 20);
+            this.txtcurrentadress.Size = new System.Drawing.Size(650, 20);
             this.txtcurrentadress.TabIndex = 1;
             this.txtcurrentadress.TextChanged += new System.EventHandler(this.txtcurrentadress_TextChanged);
             // 
@@ -998,9 +969,9 @@
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.Controls.Add(this.textBox25);
             this.groupBox7.Controls.Add(this.label36);
-            this.groupBox7.Location = new System.Drawing.Point(716, 385);
+            this.groupBox7.Location = new System.Drawing.Point(777, 385);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(240, 175);
+            this.groupBox7.Size = new System.Drawing.Size(179, 175);
             this.groupBox7.TabIndex = 12;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Account ";
@@ -1008,15 +979,15 @@
             // textBox27
             // 
             this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox27.Location = new System.Drawing.Point(86, 125);
+            this.textBox27.Location = new System.Drawing.Point(77, 125);
             this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(146, 20);
+            this.textBox27.Size = new System.Drawing.Size(93, 20);
             this.textBox27.TabIndex = 9;
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(50, 132);
+            this.label34.Location = new System.Drawing.Point(41, 132);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(28, 13);
             this.label34.TabIndex = 8;
@@ -1025,15 +996,15 @@
             // textBox26
             // 
             this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox26.Location = new System.Drawing.Point(86, 99);
+            this.textBox26.Location = new System.Drawing.Point(77, 99);
             this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(146, 20);
+            this.textBox26.Size = new System.Drawing.Size(93, 20);
             this.textBox26.TabIndex = 7;
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(47, 101);
+            this.label33.Location = new System.Drawing.Point(38, 101);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(31, 13);
             this.label33.TabIndex = 6;
@@ -1042,15 +1013,15 @@
             // textBox24
             // 
             this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox24.Location = new System.Drawing.Point(86, 73);
+            this.textBox24.Location = new System.Drawing.Point(77, 73);
             this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(146, 20);
+            this.textBox24.Size = new System.Drawing.Size(93, 20);
             this.textBox24.TabIndex = 5;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(24, 80);
+            this.label32.Location = new System.Drawing.Point(15, 80);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(54, 13);
             this.label32.TabIndex = 4;
@@ -1059,15 +1030,15 @@
             // textBox23
             // 
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox23.Location = new System.Drawing.Point(86, 47);
+            this.textBox23.Location = new System.Drawing.Point(77, 47);
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(146, 20);
+            this.textBox23.Size = new System.Drawing.Size(93, 20);
             this.textBox23.TabIndex = 3;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(20, 49);
+            this.label31.Location = new System.Drawing.Point(11, 49);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(58, 13);
             this.label31.TabIndex = 2;
@@ -1076,15 +1047,15 @@
             // textBox25
             // 
             this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox25.Location = new System.Drawing.Point(86, 21);
+            this.textBox25.Location = new System.Drawing.Point(77, 21);
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(146, 20);
+            this.textBox25.Size = new System.Drawing.Size(93, 20);
             this.textBox25.TabIndex = 1;
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(10, 25);
+            this.label36.Location = new System.Drawing.Point(1, 25);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(75, 13);
             this.label36.TabIndex = 0;
@@ -1100,124 +1071,11 @@
             this.groupBox8.Controls.Add(this.btnupdate);
             this.groupBox8.Controls.Add(this.btnsave);
             this.groupBox8.Controls.Add(this.btnnew);
-            this.groupBox8.Location = new System.Drawing.Point(12, 634);
+            this.groupBox8.Location = new System.Drawing.Point(14, 634);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(947, 58);
+            this.groupBox8.Size = new System.Drawing.Size(945, 58);
             this.groupBox8.TabIndex = 18;
             this.groupBox8.TabStop = false;
-            // 
-            // btnnext
-            // 
-            this.btnnext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnnext.Image = ((System.Drawing.Image)(resources.GetObject("btnnext.Image")));
-            this.btnnext.Location = new System.Drawing.Point(714, 13);
-            this.btnnext.Name = "btnnext";
-            this.btnnext.Size = new System.Drawing.Size(94, 38);
-            this.btnnext.TabIndex = 10;
-            this.btnnext.UseVisualStyleBackColor = false;
-            this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
-            // 
-            // btnback
-            // 
-            this.btnback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
-            this.btnback.Location = new System.Drawing.Point(619, 13);
-            this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(94, 38);
-            this.btnback.TabIndex = 9;
-            this.btnback.UseVisualStyleBackColor = false;
-            this.btnback.Click += new System.EventHandler(this.btnback_Click);
-            // 
-            // btnclose
-            // 
-            this.btnclose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose.Image = global::SmartSchoolManagementSystem.Properties.Resources.close;
-            this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnclose.Location = new System.Drawing.Point(524, 13);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(94, 38);
-            this.btnclose.TabIndex = 8;
-            this.btnclose.Text = "Close";
-            this.btnclose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnclose.UseVisualStyleBackColor = false;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
-            // 
-            // btnprint
-            // 
-            this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprint.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_icon;
-            this.btnprint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprint.Location = new System.Drawing.Point(429, 13);
-            this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(94, 38);
-            this.btnprint.TabIndex = 7;
-            this.btnprint.Text = "Print";
-            this.btnprint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnprint.UseVisualStyleBackColor = false;
-            this.btnprint.Click += new System.EventHandler(this.btnprint_Click);
-            // 
-            // btnview
-            // 
-            this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
-            this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnview.Location = new System.Drawing.Point(334, 13);
-            this.btnview.Name = "btnview";
-            this.btnview.Size = new System.Drawing.Size(94, 38);
-            this.btnview.TabIndex = 6;
-            this.btnview.Text = "View";
-            this.btnview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnview.UseVisualStyleBackColor = false;
-            this.btnview.Click += new System.EventHandler(this.btnview_Click);
-            // 
-            // btnupdate
-            // 
-            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.ForeColor = System.Drawing.Color.Black;
-            this.btnupdate.Image = global::SmartSchoolManagementSystem.Properties.Resources.Update;
-            this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnupdate.Location = new System.Drawing.Point(228, 13);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(105, 38);
-            this.btnupdate.TabIndex = 5;
-            this.btnupdate.Text = "Update";
-            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnupdate.UseVisualStyleBackColor = false;
-            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
-            // 
-            // btnsave
-            // 
-            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Image = global::SmartSchoolManagementSystem.Properties.Resources.save;
-            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(133, 13);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(94, 38);
-            this.btnsave.TabIndex = 4;
-            this.btnsave.Text = "Save";
-            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
-            // 
-            // btnnew
-            // 
-            this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnew.Image = global::SmartSchoolManagementSystem.Properties.Resources.addblue;
-            this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnew.Location = new System.Drawing.Point(38, 13);
-            this.btnnew.Name = "btnnew";
-            this.btnnew.Size = new System.Drawing.Size(94, 38);
-            this.btnnew.TabIndex = 3;
-            this.btnnew.Text = "New";
-            this.btnnew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnnew.UseVisualStyleBackColor = false;
-            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // groupBox9
             // 
@@ -1308,7 +1166,7 @@
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox7.Location = new System.Drawing.Point(635, 10);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(132, 20);
+            this.textBox7.Size = new System.Drawing.Size(131, 20);
             this.textBox7.TabIndex = 46;
             // 
             // textBox6
@@ -1647,16 +1505,6 @@
             this.groupBox19.TabIndex = 34;
             this.groupBox19.TabStop = false;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner;
-            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox2.Location = new System.Drawing.Point(1, -4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1183, 54);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            // 
             // groupBox49
             // 
             this.groupBox49.Controls.Add(this.label46);
@@ -1667,9 +1515,9 @@
             this.groupBox49.Controls.Add(this.txtupdatedby);
             this.groupBox49.Controls.Add(this.txtcreationdate);
             this.groupBox49.Controls.Add(this.txtcreatedby);
-            this.groupBox49.Location = new System.Drawing.Point(12, 562);
+            this.groupBox49.Location = new System.Drawing.Point(15, 562);
             this.groupBox49.Name = "groupBox49";
-            this.groupBox49.Size = new System.Drawing.Size(698, 72);
+            this.groupBox49.Size = new System.Drawing.Size(695, 72);
             this.groupBox49.TabIndex = 19;
             this.groupBox49.TabStop = false;
             this.groupBox49.Text = "User Information";
@@ -1746,6 +1594,201 @@
             this.txtcreatedby.Size = new System.Drawing.Size(145, 20);
             this.txtcreatedby.TabIndex = 28;
             // 
+            // btnnext
+            // 
+            this.btnnext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnnext.Image = ((System.Drawing.Image)(resources.GetObject("btnnext.Image")));
+            this.btnnext.Location = new System.Drawing.Point(714, 13);
+            this.btnnext.Name = "btnnext";
+            this.btnnext.Size = new System.Drawing.Size(94, 38);
+            this.btnnext.TabIndex = 10;
+            this.btnnext.UseVisualStyleBackColor = false;
+            this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
+            // 
+            // btnback
+            // 
+            this.btnback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
+            this.btnback.Location = new System.Drawing.Point(619, 13);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(94, 38);
+            this.btnback.TabIndex = 9;
+            this.btnback.UseVisualStyleBackColor = false;
+            this.btnback.Click += new System.EventHandler(this.btnback_Click);
+            // 
+            // btnclose
+            // 
+            this.btnclose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose.Image = global::SmartSchoolManagementSystem.Properties.Resources.close;
+            this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnclose.Location = new System.Drawing.Point(524, 13);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(94, 38);
+            this.btnclose.TabIndex = 8;
+            this.btnclose.Text = "Close";
+            this.btnclose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnclose.UseVisualStyleBackColor = false;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            // 
+            // btnprint
+            // 
+            this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprint.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_icon;
+            this.btnprint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnprint.Location = new System.Drawing.Point(429, 13);
+            this.btnprint.Name = "btnprint";
+            this.btnprint.Size = new System.Drawing.Size(94, 38);
+            this.btnprint.TabIndex = 7;
+            this.btnprint.Text = "Print";
+            this.btnprint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnprint.UseVisualStyleBackColor = false;
+            this.btnprint.Click += new System.EventHandler(this.btnprint_Click);
+            // 
+            // btnview
+            // 
+            this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
+            this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnview.Location = new System.Drawing.Point(334, 13);
+            this.btnview.Name = "btnview";
+            this.btnview.Size = new System.Drawing.Size(94, 38);
+            this.btnview.TabIndex = 6;
+            this.btnview.Text = "View";
+            this.btnview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnview.UseVisualStyleBackColor = false;
+            this.btnview.Click += new System.EventHandler(this.btnview_Click);
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.Color.Black;
+            this.btnupdate.Image = global::SmartSchoolManagementSystem.Properties.Resources.Update;
+            this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnupdate.Location = new System.Drawing.Point(228, 13);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(105, 38);
+            this.btnupdate.TabIndex = 5;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
+            // btnsave
+            // 
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Image = global::SmartSchoolManagementSystem.Properties.Resources.save;
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsave.Location = new System.Drawing.Point(133, 13);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(94, 38);
+            this.btnsave.TabIndex = 4;
+            this.btnsave.Text = "Save";
+            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // btnnew
+            // 
+            this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnew.Image = global::SmartSchoolManagementSystem.Properties.Resources.addblue;
+            this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnnew.Location = new System.Drawing.Point(38, 13);
+            this.btnnew.Name = "btnnew";
+            this.btnnew.Size = new System.Drawing.Size(94, 38);
+            this.btnnew.TabIndex = 3;
+            this.btnnew.Text = "New";
+            this.btnnew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnnew.UseVisualStyleBackColor = false;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // imgpicturebox
+            // 
+            this.imgpicturebox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgpicturebox.BackgroundImage")));
+            this.imgpicturebox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgpicturebox.Location = new System.Drawing.Point(6, 17);
+            this.imgpicturebox.Name = "imgpicturebox";
+            this.imgpicturebox.Size = new System.Drawing.Size(112, 95);
+            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpicturebox.TabIndex = 0;
+            this.imgpicturebox.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox2.Location = new System.Drawing.Point(1, -4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1183, 54);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            // 
+            // btnsearch
+            // 
+            this.btnsearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsearch.Enabled = false;
+            this.btnsearch.Image = ((System.Drawing.Image)(resources.GetObject("btnsearch.Image")));
+            this.btnsearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsearch.Location = new System.Drawing.Point(167, 21);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.TabIndex = 102;
+            this.btnsearch.Text = "Search";
+            this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click_1);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(694, 95);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(54, 21);
+            this.comboBox1.TabIndex = 18;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(656, 99);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(34, 13);
+            this.label47.TabIndex = 17;
+            this.label47.Text = "Stops";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(525, 99);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(60, 13);
+            this.label48.TabIndex = 19;
+            this.label48.Text = "Destination";
+            // 
+            // textBox15
+            // 
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox15.Location = new System.Drawing.Point(584, 96);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(69, 20);
+            this.textBox15.TabIndex = 20;
+            // 
             // Newadmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1770,11 +1813,9 @@
             this.registrartion.ResumeLayout(false);
             this.registrartion.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1805,6 +1846,8 @@
             this.groupBox13.PerformLayout();
             this.groupBox49.ResumeLayout(false);
             this.groupBox49.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1962,5 +2005,9 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Button btnsearch;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox textBox15;
     }
 }

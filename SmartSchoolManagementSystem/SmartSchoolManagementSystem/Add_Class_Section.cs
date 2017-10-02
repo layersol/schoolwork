@@ -12,6 +12,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class Add_Class_Section : Form
     {
+        smartschooldbEntities db = new smartschooldbEntities();
         public Add_Class_Section()
         {
             InitializeComponent();
@@ -19,8 +20,30 @@ namespace SmartSchoolManagementSystem
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("helloo");
-            MessageBox.Show("GO To Office");
+            Tblclass content = new Tblclass();
+            content.CLASSNAME = txtclass.Text;
+            db.Tblclasses.Add(content);
+            db.SaveChanges();
+            MessageBox.Show("your class has been successfully Add");
+            
+        }
+
+        
+
+        private void btnedit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

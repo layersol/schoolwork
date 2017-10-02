@@ -207,7 +207,13 @@ namespace SmartSchoolManagementSystem
             txtstudentname.Text = q.Name;
             txtcell.Text = q.CellNo;
             cbbclass.Text = q.Class;
-           // cbbgroup.Text = q.Section;
+
+
+
+            txtupdatedby.Text = cbbclass.Text;
+           
+
+            // cbbgroup.Text = q.Section;
 
             // imgpicturebox.ImageLocation =Convert.ToString(q.LOGO);
             //var qaNames = (from a in db.Tblclasses
@@ -350,6 +356,23 @@ namespace SmartSchoolManagementSystem
                 txtcell.Text = q.CellNo;
             }
             else { MessageBox.Show("Please Add Correct Form No."); }
+
+
+            var Ssection = (from b in db.Tblclasssections
+                                // from b in db.TblSections
+                            where b.Class == cbbclass.Text && b.Group== cbbgroup.Text
+                            select new
+                            {
+                                b.ID,
+                                Section = b.Section
+                            });
+           
+            {
+                cbbsection.DataSource = Ssection.ToList();
+                cbbsection.DisplayMember = "Section";
+                cbbsection.ValueMember = "ID";
+            }
+           
         }
 
         private void cbbclass_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -404,6 +427,8 @@ namespace SmartSchoolManagementSystem
 
         private void Newadmission_Load(object sender, EventArgs e)
         {
+
+           
             txtcreatedby.Text = Login.SetValueForText;
             txtcreationdate.Text = Convert.ToString(System.DateTime.Now);
             //    txtform.Text = dgvr.Cells[0].Value.ToString();

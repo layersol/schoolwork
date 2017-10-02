@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Newadmission));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.registrartion = new System.Windows.Forms.GroupBox();
             this.btnsearch = new System.Windows.Forms.Button();
             this.lblSession = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -99,7 +99,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.txtprevious = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chbabove = new System.Windows.Forms.CheckBox();
             this.txtpadress = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.txtcurrentadress = new System.Windows.Forms.TextBox();
@@ -180,7 +180,7 @@
             this.txtupdatedby = new System.Windows.Forms.TextBox();
             this.txtcreationdate = new System.Windows.Forms.TextBox();
             this.txtcreatedby = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.registrartion.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -205,28 +205,28 @@
             this.groupBox49.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // registrartion
             // 
-            this.groupBox1.Controls.Add(this.btnsearch);
-            this.groupBox1.Controls.Add(this.lblSession);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.cbbgroup);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.cbbsection);
-            this.groupBox1.Controls.Add(this.cbbclass);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtform);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(1, 56);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(954, 54);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Registration Information";
+            this.registrartion.Controls.Add(this.btnsearch);
+            this.registrartion.Controls.Add(this.lblSession);
+            this.registrartion.Controls.Add(this.textBox2);
+            this.registrartion.Controls.Add(this.label2);
+            this.registrartion.Controls.Add(this.cbbgroup);
+            this.registrartion.Controls.Add(this.label7);
+            this.registrartion.Controls.Add(this.textBox3);
+            this.registrartion.Controls.Add(this.cbbsection);
+            this.registrartion.Controls.Add(this.cbbclass);
+            this.registrartion.Controls.Add(this.label5);
+            this.registrartion.Controls.Add(this.label4);
+            this.registrartion.Controls.Add(this.label6);
+            this.registrartion.Controls.Add(this.txtform);
+            this.registrartion.Controls.Add(this.label1);
+            this.registrartion.Location = new System.Drawing.Point(1, 56);
+            this.registrartion.Name = "registrartion";
+            this.registrartion.Size = new System.Drawing.Size(954, 54);
+            this.registrartion.TabIndex = 0;
+            this.registrartion.TabStop = false;
+            this.registrartion.Text = "Registration Information";
             // 
             // btnsearch
             // 
@@ -246,7 +246,7 @@
             // lblSession
             // 
             this.lblSession.AutoSize = true;
-            this.lblSession.Location = new System.Drawing.Point(912, 26);
+            this.lblSession.Location = new System.Drawing.Point(889, 26);
             this.lblSession.Name = "lblSession";
             this.lblSession.Size = new System.Drawing.Size(41, 13);
             this.lblSession.TabIndex = 12;
@@ -257,7 +257,7 @@
             this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(853, 21);
+            this.textBox2.Location = new System.Drawing.Point(830, 23);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(53, 20);
             this.textBox2.TabIndex = 3;
@@ -265,7 +265,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(798, 25);
+            this.label2.Location = new System.Drawing.Point(775, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 2;
@@ -274,7 +274,7 @@
             // cbbgroup
             // 
             this.cbbgroup.FormattingEnabled = true;
-            this.cbbgroup.Location = new System.Drawing.Point(710, 19);
+            this.cbbgroup.Location = new System.Drawing.Point(687, 22);
             this.cbbgroup.Name = "cbbgroup";
             this.cbbgroup.Size = new System.Drawing.Size(87, 21);
             this.cbbgroup.TabIndex = 11;
@@ -282,7 +282,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(668, 29);
+            this.label7.Location = new System.Drawing.Point(645, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 10;
@@ -293,7 +293,7 @@
             this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(321, 23);
+            this.textBox3.Location = new System.Drawing.Point(298, 23);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(80, 20);
             this.textBox3.TabIndex = 9;
@@ -302,7 +302,9 @@
             // 
             this.cbbsection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbsection.FormattingEnabled = true;
-            this.cbbsection.Location = new System.Drawing.Point(577, 20);
+            this.cbbsection.Items.AddRange(new object[] {
+            "Section Not Exist here"});
+            this.cbbsection.Location = new System.Drawing.Point(554, 23);
             this.cbbsection.Name = "cbbsection";
             this.cbbsection.Size = new System.Drawing.Size(87, 21);
             this.cbbsection.TabIndex = 8;
@@ -310,7 +312,7 @@
             // cbbclass
             // 
             this.cbbclass.FormattingEnabled = true;
-            this.cbbclass.Location = new System.Drawing.Point(444, 23);
+            this.cbbclass.Location = new System.Drawing.Point(421, 23);
             this.cbbclass.Name = "cbbclass";
             this.cbbclass.Size = new System.Drawing.Size(79, 21);
             this.cbbclass.TabIndex = 7;
@@ -320,7 +322,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(272, 27);
+            this.label5.Location = new System.Drawing.Point(249, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 5;
@@ -329,7 +331,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(406, 27);
+            this.label4.Location = new System.Drawing.Point(383, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 4;
@@ -338,7 +340,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(529, 28);
+            this.label6.Location = new System.Drawing.Point(506, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 6;
@@ -816,7 +818,7 @@
             this.groupBox6.Controls.Add(this.label25);
             this.groupBox6.Controls.Add(this.txtprevious);
             this.groupBox6.Controls.Add(this.label24);
-            this.groupBox6.Controls.Add(this.checkBox1);
+            this.groupBox6.Controls.Add(this.chbabove);
             this.groupBox6.Controls.Add(this.txtpadress);
             this.groupBox6.Controls.Add(this.label28);
             this.groupBox6.Controls.Add(this.txtcurrentadress);
@@ -938,15 +940,15 @@
             this.label24.TabIndex = 5;
             this.label24.Text = "Previous School";
             // 
-            // checkBox1
+            // chbabove
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(109, 46);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(57, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Above";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chbabove.AutoSize = true;
+            this.chbabove.Location = new System.Drawing.Point(109, 46);
+            this.chbabove.Name = "chbabove";
+            this.chbabove.Size = new System.Drawing.Size(57, 17);
+            this.chbabove.TabIndex = 4;
+            this.chbabove.Text = "Above";
+            this.chbabove.UseVisualStyleBackColor = true;
             // 
             // txtpadress
             // 
@@ -1760,13 +1762,13 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.registrartion);
             this.Name = "Newadmission";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Admission Information";
             this.Load += new System.EventHandler(this.Newadmission_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.registrartion.ResumeLayout(false);
+            this.registrartion.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.groupBox4.ResumeLayout(false);
@@ -1809,7 +1811,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox registrartion;
         private System.Windows.Forms.TextBox txtform;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
@@ -1866,7 +1868,7 @@
         private System.Windows.Forms.TextBox txtcurrentadress;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox txtpadress;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chbabove;
         private System.Windows.Forms.TextBox txtprevious;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.ComboBox cbbBloodGroup;

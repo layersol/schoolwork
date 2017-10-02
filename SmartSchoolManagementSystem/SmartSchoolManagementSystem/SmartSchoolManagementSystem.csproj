@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addbussstops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addbussstops.Designer.cs">
+      <DependentUpon>Addbussstops.cs</DependentUpon>
+    </Compile>
     <Compile Include="addnewstudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     <Compile Include="TransMaster.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Addbussstops.resx">
+      <DependentUpon>Addbussstops.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addnewstudent.resx">
       <DependentUpon>addnewstudent.cs</DependentUpon>
     </EmbeddedResource>

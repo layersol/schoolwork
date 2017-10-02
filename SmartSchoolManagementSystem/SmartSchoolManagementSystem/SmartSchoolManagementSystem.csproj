@@ -124,6 +124,12 @@
       <DependentUpon>CrystalPrintAdmission.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="destination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="destination.Designer.cs">
+      <DependentUpon>destination.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feedefinition.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     <EmbeddedResource Include="CrystalPrintAdmission.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalPrintAdmission.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="destination.resx">
+      <DependentUpon>destination.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feedefinition.resx">
       <DependentUpon>Feedefinition.cs</DependentUpon>

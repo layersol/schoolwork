@@ -165,7 +165,7 @@ namespace SmartSchoolManagementSystem
 
         private void btnclose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void dgvclass_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)

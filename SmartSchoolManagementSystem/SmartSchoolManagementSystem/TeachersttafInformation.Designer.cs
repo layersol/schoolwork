@@ -83,7 +83,7 @@
             this.groupBox6.Controls.Add(this.button4);
             this.groupBox6.Controls.Add(this.btn_save);
             this.groupBox6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(6, 269);
+            this.groupBox6.Location = new System.Drawing.Point(13, 37);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(709, 51);
             this.groupBox6.TabIndex = 32;
@@ -197,7 +197,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtid);
-            this.groupBox1.Location = new System.Drawing.Point(6, 37);
+            this.groupBox1.Location = new System.Drawing.Point(6, 109);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(709, 230);
             this.groupBox1.TabIndex = 31;
@@ -519,7 +519,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(721, 323);
+            this.ClientSize = new System.Drawing.Size(721, 349);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);

@@ -40,11 +40,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvnewadmission)).BeginInit();
@@ -169,17 +169,9 @@
             this.groupBox3.Controls.Add(this.btnsave);
             this.groupBox3.Location = new System.Drawing.Point(3, 176);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(569, 41);
+            this.groupBox3.Size = new System.Drawing.Size(569, 60);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.new_admission;
-            this.panel1.Location = new System.Drawing.Point(2, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(570, 35);
-            this.panel1.TabIndex = 6;
             // 
             // button3
             // 
@@ -189,11 +181,12 @@
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(370, 11);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 25);
+            this.button3.Size = new System.Drawing.Size(75, 36);
             this.button3.TabIndex = 10;
             this.button3.Text = "Close";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnprint
             // 
@@ -203,7 +196,7 @@
             this.btnprint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprint.Location = new System.Drawing.Point(294, 11);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(75, 25);
+            this.btnprint.Size = new System.Drawing.Size(75, 36);
             this.btnprint.TabIndex = 9;
             this.btnprint.Text = "Print";
             this.btnprint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -218,7 +211,7 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(218, 11);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 25);
+            this.button1.Size = new System.Drawing.Size(75, 36);
             this.button1.TabIndex = 8;
             this.button1.Text = "Edit";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -233,19 +226,27 @@
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsave.Location = new System.Drawing.Point(141, 11);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(75, 25);
+            this.btnsave.Size = new System.Drawing.Size(75, 36);
             this.btnsave.TabIndex = 7;
             this.btnsave.Text = "Save";
             this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.new_admission;
+            this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(570, 35);
+            this.panel1.TabIndex = 6;
+            // 
             // addnewstudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(579, 220);
+            this.ClientSize = new System.Drawing.Size(579, 232);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);

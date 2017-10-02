@@ -73,7 +73,7 @@
             this.groupBox1.Controls.Add(this.btnsave);
             this.groupBox1.Location = new System.Drawing.Point(8, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(255, 38);
+            this.groupBox1.Size = new System.Drawing.Size(255, 54);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
@@ -85,7 +85,7 @@
             this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnclose.Location = new System.Drawing.Point(169, 10);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(75, 23);
+            this.btnclose.Size = new System.Drawing.Size(75, 36);
             this.btnclose.TabIndex = 2;
             this.btnclose.Text = "Close";
             this.btnclose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -100,7 +100,7 @@
             this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnview.Location = new System.Drawing.Point(90, 10);
             this.btnview.Name = "btnview";
-            this.btnview.Size = new System.Drawing.Size(75, 23);
+            this.btnview.Size = new System.Drawing.Size(75, 36);
             this.btnview.TabIndex = 1;
             this.btnview.Text = "View";
             this.btnview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -114,7 +114,7 @@
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsave.Location = new System.Drawing.Point(11, 10);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(75, 23);
+            this.btnsave.Size = new System.Drawing.Size(75, 36);
             this.btnsave.TabIndex = 0;
             this.btnsave.Text = "Save";
             this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -125,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 110);
+            this.ClientSize = new System.Drawing.Size(274, 122);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbsession);
             this.Name = "Add_New_Session";

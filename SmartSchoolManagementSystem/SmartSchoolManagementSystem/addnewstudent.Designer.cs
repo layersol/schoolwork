@@ -53,6 +53,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.combosection);
             this.groupBox1.Controls.Add(this.comboclass);
@@ -163,6 +164,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.btnprint);
             this.groupBox3.Controls.Add(this.button1);

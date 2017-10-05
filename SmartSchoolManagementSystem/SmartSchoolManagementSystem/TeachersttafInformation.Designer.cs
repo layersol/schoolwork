@@ -77,13 +77,14 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox6.Controls.Add(this.button2);
             this.groupBox6.Controls.Add(this.btnedit);
             this.groupBox6.Controls.Add(this.button5);
             this.groupBox6.Controls.Add(this.button4);
             this.groupBox6.Controls.Add(this.btn_save);
             this.groupBox6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(13, 37);
+            this.groupBox6.Location = new System.Drawing.Point(6, 273);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(709, 51);
             this.groupBox6.TabIndex = 32;
@@ -131,6 +132,7 @@
             this.button5.Text = "Exit";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -164,6 +166,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtposition);
             this.groupBox1.Controls.Add(this.txtexprience);
@@ -197,7 +200,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtid);
-            this.groupBox1.Location = new System.Drawing.Point(6, 109);
+            this.groupBox1.Location = new System.Drawing.Point(6, 36);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(709, 230);
             this.groupBox1.TabIndex = 31;
@@ -509,9 +512,9 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.staff_banner;
-            this.panel1.Location = new System.Drawing.Point(6, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(709, 29);
+            this.panel1.Size = new System.Drawing.Size(715, 29);
             this.panel1.TabIndex = 30;
             // 
             // TeachersttafInformation
@@ -519,7 +522,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(721, 349);
+            this.ClientSize = new System.Drawing.Size(721, 334);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);

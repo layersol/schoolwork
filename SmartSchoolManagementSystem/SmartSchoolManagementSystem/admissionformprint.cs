@@ -10,16 +10,22 @@ using System.Windows.Forms;
 
 namespace SmartSchoolManagementSystem
 {
-    public partial class Addbussstops : Form
+    public partial class admissionformprint : Form
     {
-        public Addbussstops()
+        public admissionformprint()
         {
             InitializeComponent();
         }
 
-        private void btnclose_Click(object sender, EventArgs e)
+        private void admissionformprint_Load(object sender, EventArgs e)
         {
-            this.Close();
+
+            this.reportViewer1.RefreshReport();
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

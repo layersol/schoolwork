@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbbstops = new System.Windows.Forms.ComboBox();
+            this.cbbdestination = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbbdestination = new System.Windows.Forms.ComboBox();
-            this.cbbstops = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnnew = new System.Windows.Forms.Button();
@@ -48,6 +48,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.cbbstops);
             this.groupBox1.Controls.Add(this.cbbdestination);
             this.groupBox1.Controls.Add(this.label5);
@@ -60,6 +61,22 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add bus information";
+            // 
+            // cbbstops
+            // 
+            this.cbbstops.FormattingEnabled = true;
+            this.cbbstops.Location = new System.Drawing.Point(66, 78);
+            this.cbbstops.Name = "cbbstops";
+            this.cbbstops.Size = new System.Drawing.Size(159, 21);
+            this.cbbstops.TabIndex = 32;
+            // 
+            // cbbdestination
+            // 
+            this.cbbdestination.FormattingEnabled = true;
+            this.cbbdestination.Location = new System.Drawing.Point(66, 49);
+            this.cbbdestination.Name = "cbbdestination";
+            this.cbbdestination.Size = new System.Drawing.Size(159, 21);
+            this.cbbdestination.TabIndex = 31;
             // 
             // label5
             // 
@@ -96,22 +113,6 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "Destination";
             // 
-            // cbbdestination
-            // 
-            this.cbbdestination.FormattingEnabled = true;
-            this.cbbdestination.Location = new System.Drawing.Point(66, 49);
-            this.cbbdestination.Name = "cbbdestination";
-            this.cbbdestination.Size = new System.Drawing.Size(159, 21);
-            this.cbbdestination.TabIndex = 31;
-            // 
-            // cbbstops
-            // 
-            this.cbbstops.FormattingEnabled = true;
-            this.cbbstops.Location = new System.Drawing.Point(66, 78);
-            this.cbbstops.Name = "cbbstops";
-            this.cbbstops.Size = new System.Drawing.Size(159, 21);
-            this.cbbstops.TabIndex = 32;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -122,6 +123,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.btnnew);
             this.panel1.Controls.Add(this.btnupdate);
             this.panel1.Controls.Add(this.btnclose);
@@ -172,6 +174,7 @@
             this.btnclose.Text = "Close";
             this.btnclose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnclose.UseVisualStyleBackColor = false;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // btnsave
             // 

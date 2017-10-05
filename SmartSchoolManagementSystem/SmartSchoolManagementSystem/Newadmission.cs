@@ -50,12 +50,12 @@ namespace SmartSchoolManagementSystem
 
         private void GetSession()
         {
-            var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
+            //var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
 
-            foreach (var Sessionvalues in CurrentSession)
-            {
-                lblSession.Text = Convert.ToString(Sessionvalues.Session);
-            }
+            //foreach (var Sessionvalues in CurrentSession)
+            //{
+            //    lblSession.Text = Convert.ToString(Sessionvalues.Session);
+            //}
         }
         private void btnup_Click(object sender, EventArgs e)
         {
@@ -118,11 +118,11 @@ namespace SmartSchoolManagementSystem
                 objcontext.OTHER_NO = txtgcell.Text;
                 objcontext.CURRENT_ADDRESS = txtcurrentadress.Text;
                 objcontext.PERMANENT_ADDRESS = txtpadress.Text;
-                objcontext.PREVIOUS_SCHOOL = txtprevious.Text;
+               // objcontext.PREVIOUS_SCHOOL = txtprevious.Text;
                 objcontext.OBTAIN_MARKS = "10";
                 objcontext.TOTAL_MARKS = "8";
                 objcontext.BLOODGROUP = cbbBloodGroup.Text;
-                objcontext.EMAIL_ADDRESS = txtemail.Text;
+              //  objcontext.EMAIL_ADDRESS = txtemail.Text;
                 objcontext.ADMISSION_STATUS = true;
                 objcontext.IMAGE = img;
                 objcontext.CREATED_BY = "1";
@@ -309,10 +309,10 @@ namespace SmartSchoolManagementSystem
 
         private void textBox13_TextChanged(object sender, EventArgs e)
         {
-            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
-            TextInfo textInfo = cI.TextInfo;
-            textBox13.Text = textInfo.ToTitleCase(textBox13.Text);
-            textBox13.Select(textBox13.Text.Length, 1);
+            //CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            //TextInfo textInfo = cI.TextInfo;
+            //textBox13.Text = textInfo.ToTitleCase(textBox13.Text);
+            //textBox13.Select(textBox13.Text.Length, 1);
         }
 
         private void txtpadress_TextChanged(object sender, EventArgs e)
@@ -326,10 +326,10 @@ namespace SmartSchoolManagementSystem
 
         private void txtprevious_TextChanged(object sender, EventArgs e)
         {
-            CultureInfo cI = Thread.CurrentThread.CurrentCulture;
-            TextInfo textInfo = cI.TextInfo;
-            txtprevious.Text = textInfo.ToTitleCase(txtprevious.Text);
-            txtprevious.Select(txtprevious.Text.Length, 1);
+            //CultureInfo cI = Thread.CurrentThread.CurrentCulture;
+            //TextInfo textInfo = cI.TextInfo;
+            //txtprevious.Text = textInfo.ToTitleCase(txtprevious.Text);
+            //txtprevious.Select(txtprevious.Text.Length, 1);
         }
 
         private void textBox22_TextChanged(object sender, EventArgs e)

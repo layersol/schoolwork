@@ -121,5 +121,10 @@ namespace SmartSchoolManagementSystem
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

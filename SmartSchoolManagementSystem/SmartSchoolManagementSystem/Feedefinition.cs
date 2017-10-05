@@ -66,5 +66,10 @@ namespace SmartSchoolManagementSystem
             //cbbsection.DisplayMember = "Names";
             //cbbsection.ValueMember = "ID";
         }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

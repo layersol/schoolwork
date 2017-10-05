@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace SmartSchoolManagementSystem
 {
-    public partial class Addbussstops : Form
+    public partial class studentidcard : Form
     {
-        public Addbussstops()
+        public studentidcard()
         {
             InitializeComponent();
         }
 
-        private void btnclose_Click(object sender, EventArgs e)
+        private void studentidcard_Load(object sender, EventArgs e)
         {
-            this.Close();
+
+            this.reportViewer1.RefreshReport();
         }
     }
 }

@@ -29,35 +29,36 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtdestinationid = new System.Windows.Forms.TextBox();
-            this.txtdestinationname = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtdestinationname = new System.Windows.Forms.TextBox();
+            this.txtdestinationid = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnnew = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtdestinationname);
@@ -69,19 +70,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Destination";
             // 
-            // txtdestinationid
+            // label2
             // 
-            this.txtdestinationid.Location = new System.Drawing.Point(100, 36);
-            this.txtdestinationid.Name = "txtdestinationid";
-            this.txtdestinationid.Size = new System.Drawing.Size(119, 20);
-            this.txtdestinationid.TabIndex = 0;
-            // 
-            // txtdestinationname
-            // 
-            this.txtdestinationname.Location = new System.Drawing.Point(100, 62);
-            this.txtdestinationname.Name = "txtdestinationname";
-            this.txtdestinationname.Size = new System.Drawing.Size(119, 20);
-            this.txtdestinationname.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Destination ID";
             // 
             // label1
             // 
@@ -92,17 +88,23 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Destination Nmae";
             // 
-            // label2
+            // txtdestinationname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Destination ID";
+            this.txtdestinationname.Location = new System.Drawing.Point(100, 62);
+            this.txtdestinationname.Name = "txtdestinationname";
+            this.txtdestinationname.Size = new System.Drawing.Size(119, 20);
+            this.txtdestinationname.TabIndex = 1;
+            // 
+            // txtdestinationid
+            // 
+            this.txtdestinationid.Location = new System.Drawing.Point(100, 36);
+            this.txtdestinationid.Name = "txtdestinationid";
+            this.txtdestinationid.Size = new System.Drawing.Size(119, 20);
+            this.txtdestinationid.TabIndex = 0;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.btnnew);
             this.panel1.Controls.Add(this.btnupdate);
             this.panel1.Controls.Add(this.btnclose);
@@ -170,6 +172,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(247, 12);
             this.groupBox2.Name = "groupBox2";
@@ -178,8 +181,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Destination";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(184, 205);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label4);
@@ -195,13 +207,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "user";
             // 
-            // dataGridView1
+            // label5
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(184, 205);
-            this.dataGridView1.TabIndex = 0;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Update By";
             // 
             // label3
             // 
@@ -221,29 +234,6 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Creation Date";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(100, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(119, 20);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(100, 14);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(119, 20);
-            this.textBox4.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Update By";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -252,6 +242,20 @@
             this.label6.Size = new System.Drawing.Size(76, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "Updation Date";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(100, 14);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(119, 20);
+            this.textBox4.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(100, 40);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(119, 20);
+            this.textBox3.TabIndex = 7;
             // 
             // textBox1
             // 
@@ -282,9 +286,9 @@
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

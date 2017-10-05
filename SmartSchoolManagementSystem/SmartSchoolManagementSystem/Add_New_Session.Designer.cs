@@ -41,6 +41,7 @@
             // 
             // gbsession
             // 
+            this.gbsession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.gbsession.Controls.Add(this.txtacadmicsession);
             this.gbsession.Controls.Add(this.label1);
             this.gbsession.Location = new System.Drawing.Point(8, 6);
@@ -68,6 +69,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.btnclose);
             this.groupBox1.Controls.Add(this.btnview);
             this.groupBox1.Controls.Add(this.btnsave);

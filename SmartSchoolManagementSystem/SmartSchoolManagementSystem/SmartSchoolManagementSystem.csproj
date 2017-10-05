@@ -149,11 +149,23 @@
       <DependentUpon>CrystalPrintAdmission.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="dailyfeecollectionprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dailyfeecollectionprint.Designer.cs">
+      <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
+    </Compile>
     <Compile Include="destination.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="destination.Designer.cs">
       <DependentUpon>destination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feecollectiondetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feecollectiondetail.Designer.cs">
+      <DependentUpon>Feecollectiondetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Feedefinition.cs">
       <SubType>Form</SubType>
@@ -163,6 +175,18 @@
     </Compile>
     <Compile Include="FeeMasterSetting.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Feerecipet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feerecipet.Designer.cs">
+      <DependentUpon>Feerecipet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feevouchers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feevouchers.Designer.cs">
+      <DependentUpon>Feevouchers.cs</DependentUpon>
     </Compile>
     <Compile Include="firstformview.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
@@ -219,6 +243,12 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StudentFeeDetail.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="studentfeereciept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentfeereciept.Designer.cs">
+      <DependentUpon>studentfeereciept.cs</DependentUpon>
     </Compile>
     <Compile Include="studentidcard.cs">
       <SubType>Form</SubType>
@@ -308,11 +338,23 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalPrintAdmission.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="dailyfeecollectionprint.resx">
+      <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="destination.resx">
       <DependentUpon>destination.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Feecollectiondetail.resx">
+      <DependentUpon>Feecollectiondetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Feedefinition.resx">
       <DependentUpon>Feedefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feerecipet.resx">
+      <DependentUpon>Feerecipet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feevouchers.resx">
+      <DependentUpon>Feevouchers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -335,9 +377,14 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="rptadmissionprint.rdlc" />
+    <EmbeddedResource Include="rptdailyfeecollection.rdlc" />
     <EmbeddedResource Include="rptresultcard.rdlc" />
+    <EmbeddedResource Include="rptstudentfeereciept.rdlc" />
     <EmbeddedResource Include="schoolsettings.resx">
       <DependentUpon>schoolsettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentfeereciept.resx">
+      <DependentUpon>studentfeereciept.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="studentidcard.resx">
       <DependentUpon>studentidcard.cs</DependentUpon>
@@ -422,6 +469,16 @@
     <Content Include="images\save.png" />
     <Content Include="images\saveicon.png" />
     <Content Include="images\shortcut.png" />
+    <None Include="Resources\myhumber18.png" />
+    <None Include="Resources\myhumberred20.png" />
+    <None Include="Resources\listingii.png" />
+    <None Include="Resources\yellowlist.png" />
+    <None Include="Resources\myhumberyello.png" />
+    <None Include="Resources\addyellow.png" />
+    <None Include="Resources\attendanceyellow.png" />
+    <None Include="Resources\Printer-iconyellow.png" />
+    <None Include="Resources\informationyellow.png" />
+    <None Include="Resources\Apps-Search-icon2.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -265,6 +265,11 @@ namespace SmartSchoolManagementSystem
             frm.Show();
         }
 
+        private void studentAttendanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void MDIParent_Load(object sender, EventArgs e)
         {
             

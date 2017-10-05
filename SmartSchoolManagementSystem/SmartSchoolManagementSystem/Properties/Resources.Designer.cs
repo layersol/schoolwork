@@ -133,6 +133,16 @@ namespace SmartSchoolManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addyellow {
+            get {
+                object obj = ResourceManager.GetObject("addyellow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Apps_Search_icon {
             get {
                 object obj = ResourceManager.GetObject("Apps-Search-icon", resourceCulture);
@@ -143,9 +153,29 @@ namespace SmartSchoolManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Apps_Search_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Apps-Search-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Archive_Icon {
             get {
                 object obj = ResourceManager.GetObject("Archive_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap attendanceyellow {
+            get {
+                object obj = ResourceManager.GetObject("attendanceyellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +263,26 @@ namespace SmartSchoolManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap informationyellow {
+            get {
+                object obj = ResourceManager.GetObject("informationyellow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap listingii {
+            get {
+                object obj = ResourceManager.GetObject("listingii", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login_copy {
             get {
                 object obj = ResourceManager.GetObject("login copy", resourceCulture);
@@ -246,6 +296,36 @@ namespace SmartSchoolManagementSystem.Properties {
         internal static System.Drawing.Bitmap material_icon_2155448_960_720 {
             get {
                 object obj = ResourceManager.GetObject("material-icon-2155448_960_720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap myhumber18 {
+            get {
+                object obj = ResourceManager.GetObject("myhumber18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap myhumberred20 {
+            get {
+                object obj = ResourceManager.GetObject("myhumberred20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap myhumberyello {
+            get {
+                object obj = ResourceManager.GetObject("myhumberyello", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +376,16 @@ namespace SmartSchoolManagementSystem.Properties {
         internal static System.Drawing.Bitmap Printer_icon {
             get {
                 object obj = ResourceManager.GetObject("Printer-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Printer_iconyellow {
+            get {
+                object obj = ResourceManager.GetObject("Printer-iconyellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -386,6 +476,16 @@ namespace SmartSchoolManagementSystem.Properties {
         internal static System.Drawing.Bitmap view2 {
             get {
                 object obj = ResourceManager.GetObject("view2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yellowlist {
+            get {
+                object obj = ResourceManager.GetObject("yellowlist", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

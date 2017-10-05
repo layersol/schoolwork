@@ -2491,10 +2491,41 @@
             </Style>
           </Line>
           <Rectangle Name="Rectangle28">
+            <ReportItems>
+              <Textbox Name="Textbox136">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Model Science College and School .Mula pur Road Ellahabad .Girls Campus Ghala Mandi Road Ellahabad (Kasur).Ph:00000000000. Email:abcdsgf@gmail.com</Value>
+                        <Style>
+                          <FontSize>7pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox30</rd:DefaultName>
+                <Top>0.11053in</Top>
+                <Left>0.0577in</Left>
+                <Height>0.15908in</Height>
+                <Width>7.63759in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>26.69646cm</Top>
             <Left>0cm</Left>
-            <Height>1.07125cm</Height>
+            <Height>0.9687cm</Height>
             <Width>19.78933cm</Width>
             <ZIndex>25</ZIndex>
             <Style>

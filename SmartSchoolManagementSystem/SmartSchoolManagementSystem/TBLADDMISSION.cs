@@ -45,5 +45,46 @@ namespace SmartSchoolManagementSystem
         public Nullable<System.DateTime> UPDATED_DATE { get; set; }
         public byte[] IMAGE { get; set; }
         public string CURRENTSESSION { get; set; }
+        public int SID { get; set; }
+        public string FATHER_EMAIL { get; set; }
+        public Nullable<System.DateTime> STUDENT_DOB { get; set; }
+        public string HOME_TEL { get; set; }
+        public string FATHER_CAST { get; set; }
+        public string FATHER_CELL_NO { get; set; }
+        public string OFFICE_LANDLINE { get; set; }
+        public string G_NAME { get; set; }
+        public string G_CNIC { get; set; }
+        public string G_CELL { get; set; }
+        public string G_OCCUPATION { get; set; }
+        public string G_MONTHLY_INCOM { get; set; }
+        public string G_CELL_NO { get; set; }
+        public string G_BUSINESS_ADDRESS { get; set; }
+        public string G_EMAIL { get; set; }
+        public string S_CELL_NO { get; set; }
+        public string HOME_ADDRESS { get; set; }
+        public string BUSINESS_ADDRESS { get; set; }
+        public string EDUCATION1 { get; set; }
+        public string EDUCATION2 { get; set; }
+        public string ADMISSIONNO1 { get; set; }
+        public string ADMISSIONNO2 { get; set; }
+        public string YEAR1 { get; set; }
+        public string YEAR2 { get; set; }
+        public string BOARD_INSTITUTION1 { get; set; }
+        public string BOARD_INSTITUTION2 { get; set; }
+        public string GRADE1 { get; set; }
+        public string GRADE2 { get; set; }
+        public string OBTAIN_MARKS1 { get; set; }
+        public string OBTAIN_MARKS2 { get; set; }
+        public string TOTAL_MARKS1 { get; set; }
+        public string TOTAL_MARKS2 { get; set; }
+        public string PERCENTAGE1 { get; set; }
+        public string PERCENTAGE2 { get; set; }
+        public string STUDENTNAME1 { get; set; }
+        public string STUDENTNAME2 { get; set; }
+        public string CLAS1 { get; set; }
+        public string CLAS2 { get; set; }
+        public string SCHOOLNAME1 { get; set; }
+        public string SCHOOLNAME2 { get; set; }
+        public string STUDENT_EMAIL_ADDRESS { get; set; }
     }
 }

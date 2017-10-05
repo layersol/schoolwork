@@ -38,5 +38,10 @@ namespace SmartSchoolManagementSystem
         public virtual DbSet<TblTeacherInformation> TblTeacherInformations { get; set; }
         public virtual DbSet<TblacadmicSession> TblacadmicSessions { get; set; }
         public virtual DbSet<Tblclasssection> Tblclasssections { get; set; }
+        public virtual DbSet<TbladdBus> TbladdBuses { get; set; }
+        public virtual DbSet<Tblbusdestination> Tblbusdestinations { get; set; }
+        public virtual DbSet<TBLUSER> TBLUSERs { get; set; }
+        public virtual DbSet<UserDeatil> UserDeatils { get; set; }
+        public virtual DbSet<Tblbusstop> Tblbusstops { get; set; }
     }
 }

@@ -17,15 +17,31 @@ namespace SmartSchoolManagementSystem
     {
         smartschooldbEntities db = new smartschooldbEntities();
         public DataGridViewRow dgvr;
-        int SystemID, ClassRollNo, uniqueID, admissionfee, tutionfee, otherfee, result, busfee, classid;
+        int SystemID, ClassRollNo, uniqueID=0, admissionfee=0,discount=0, tutionfee=0, otherfee=0, result=0, busfee=0, classid=0;
         string imgloc = "";
         public Newadmission()
         {
             InitializeComponent();
             GetSession();
+            Getdropdown();
         }
 
+         private void Getdropdown()
+        {
+            var Getclass = (from a in db.Tblclasses
+                           //where a.Class == cbbclass.SelectedItem.ToString()
+                           select new { a.ID, Names = a.CLASSNAME }).ToList();
+            cbbclass.DataSource = Getclass;
+            cbbclass.DisplayMember = "Names";
+            cbbclass.ValueMember = "ID";
+            var Getgroup = (from a in db.Tblclasssections
+                                //where a.Class == cbbclass.SelectedItem.ToString()
+                            select new { a.ID, Names = a.Group, }).ToList();
 
+            cbbgroup.DataSource = Getgroup.ToList();
+            cbbgroup.DisplayMember = "Names";
+            cbbgroup.ValueMember = "ID";
+        }
         private void Getcurrentstudent()
         {
              var val2 = (from u in db.TBLADDMISSIONs where u.CURRENTSESSION == "2017-2018" select u).Count() > 0;
@@ -50,12 +66,12 @@ namespace SmartSchoolManagementSystem
 
         private void GetSession()
         {
-            //var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
+            var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
 
-            //foreach (var Sessionvalues in CurrentSession)
-            //{
-            //    lblSession.Text = Convert.ToString(Sessionvalues.Session);
-            //}
+            foreach (var Sessionvalues in CurrentSession)
+            {
+                lblSession.Text = Convert.ToString(Sessionvalues.Session);
+            }
         }
         private void btnup_Click(object sender, EventArgs e)
         {
@@ -377,22 +393,89 @@ namespace SmartSchoolManagementSystem
 
         private void cbbclass_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            var qaNames = (from a in db.Tblclasssections
-                           where a.Class == cbbclass.SelectedItem.ToString()
-                           select new { a.ID, Names = a.Section, }).ToList();
-            cbbsection.DataSource = qaNames.ToList();
-            cbbsection.DisplayMember = "Names";
-            cbbsection.ValueMember = "ID";
+            //var qaNames = (from a in db.Tblclasssections
+            //               where a.Class == cbbclass.SelectedItem.ToString()
+            //               select new { a.ID, Names = a.Section, }).ToList();
+            //cbbsection.DataSource = qaNames.ToList();
+            //cbbsection.DisplayMember = "Names";
+            //cbbsection.ValueMember = "ID";
         }
 
         private void cbbclass_SelectedValueChanged(object sender, EventArgs e)
         {
-            var qaNames = (from a in db.Tblclasssections
-                           where a.Class == cbbclass.SelectedItem.ToString()
+            var Getsection= (from a in db.Tblclasssections
+                           where a.Class == cbbclass.Text
                            select new { a.ID, Names = a.Section, }).ToList();
-            cbbsection.DataSource = qaNames.ToList();
+            cbbsection.DataSource = Getsection.ToList();
             cbbsection.DisplayMember = "Names";
             cbbsection.ValueMember = "ID";
+        }
+        private void calculate()
+        {
+            //txtotherfee.Text = Convert.ToString(otherfee);
+            //txtotherfee.Text = Convert.ToString(discount);
+            
+            otherfee = Convert.ToInt32(txtotherfee.Text);
+            admissionfee = Convert.ToInt32(txtadfee.Text);
+            tutionfee = Convert.ToInt32(txttutionfee.Text);
+
+
+            txttotal.Text = Convert.ToString(admissionfee + tutionfee + otherfee);
+        }
+
+        private void txtotherfee_TextChanged(object sender, EventArgs e)
+        {
+           //  calculate();
+           // txttotal.Text = txtotherfee.Text;
+        }
+
+        private void txtdiscount_TextChanged(object sender, EventArgs e)
+        {
+            //calculate();
+        }
+
+        private void txtotherfee_Enter(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void txtotherfee_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                calculate();
+            }
+        }
+
+        private void Discount()
+        {
+            int totalval = Convert.ToInt32(txttotal.Text);
+            int discount = Convert.ToInt32(txtdiscount.Text);
+            int result= -((discount / 100) * totalval) + totalval;
+            txttotal.Text = Convert.ToString(result);
+        }
+
+        private void txtdiscount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Discount();
+            }
+        }
+
+        private void cbbmedium_SelectedValueChanged(object sender, EventArgs e)
+        {
+            var GetAccount = from c in db.Tblclasssections where c.Class==cbbclass.Text && c.Section==cbbsection.Text && c.Group==cbbgroup.Text select new { Adfee = c.admissionfee,Tution=c.Fee, };
+
+            foreach (var Sessionvalues in GetAccount)
+            {
+                txtadfee.Text = Convert.ToString(Sessionvalues.Adfee);
+                txttutionfee.Text = Convert.ToString(Sessionvalues.Tution);
+                float a, b;
+                a =float.Parse(txtadfee.Text);
+                b = float.Parse(txtadfee.Text);
+            }
+           // calculate();
         }
 
         private void btnupdate_Click(object sender, EventArgs e)

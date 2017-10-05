@@ -253,6 +253,26 @@ namespace SmartSchoolManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap myhumber18 {
+            get {
+                object obj = ResourceManager.GetObject("myhumber18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap myhumberred20 {
+            get {
+                object obj = ResourceManager.GetObject("myhumberred20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap new_admission {
             get {
                 object obj = ResourceManager.GetObject("new admission", resourceCulture);

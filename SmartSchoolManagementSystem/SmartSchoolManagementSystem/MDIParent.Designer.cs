@@ -36,15 +36,9 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentDataBankToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printAdmissionFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newAdmissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.attendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.attendanceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.schoolStaffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addStaffInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sTUDENTREPORTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aCCOUNTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,7 +74,24 @@
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.studentIDCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
+            this.printAdmissionFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newAdmissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.attendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.attendanceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addStaffInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentIDCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentListingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentListingFeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentListingToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentStreanthInClassesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentCompleteListingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vicationWorkReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> 887cd8091d9564b1e255534f90c46990d32e28f4
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -149,42 +160,10 @@
             this.studentDataBankToolStripMenuItem.Size = new System.Drawing.Size(136, 20);
             this.studentDataBankToolStripMenuItem.Text = "&STUDENT DATA BANK";
             // 
-            // printAdmissionFormToolStripMenuItem
-            // 
-            this.printAdmissionFormToolStripMenuItem.Name = "printAdmissionFormToolStripMenuItem";
-            this.printAdmissionFormToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.printAdmissionFormToolStripMenuItem.Text = "Print Admission Form";
-            this.printAdmissionFormToolStripMenuItem.Click += new System.EventHandler(this.printAdmissionFormToolStripMenuItem_Click);
-            // 
-            // newAdmissionToolStripMenuItem
-            // 
-            this.newAdmissionToolStripMenuItem.Name = "newAdmissionToolStripMenuItem";
-            this.newAdmissionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.newAdmissionToolStripMenuItem.Text = "New Admission";
-            this.newAdmissionToolStripMenuItem.Click += new System.EventHandler(this.newAdmissionToolStripMenuItem_Click);
-            // 
-            // attendanceToolStripMenuItem
-            // 
-            this.attendanceToolStripMenuItem.Name = "attendanceToolStripMenuItem";
-            this.attendanceToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.attendanceToolStripMenuItem.Text = "View Enrolled Student";
-            // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(186, 6);
-            // 
-            // attendanceToolStripMenuItem1
-            // 
-            this.attendanceToolStripMenuItem1.Name = "attendanceToolStripMenuItem1";
-            this.attendanceToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
-            this.attendanceToolStripMenuItem1.Text = "Attendance";
-            // 
-            // viewAttendanceToolStripMenuItem
-            // 
-            this.viewAttendanceToolStripMenuItem.Name = "viewAttendanceToolStripMenuItem";
-            this.viewAttendanceToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.viewAttendanceToolStripMenuItem.Text = "View Attendance";
             // 
             // toolStripSeparator7
             // 
@@ -199,13 +178,6 @@
             this.schoolStaffToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.schoolStaffToolStripMenuItem.Text = "SCHOOL STAFF";
             // 
-            // addStaffInformationToolStripMenuItem
-            // 
-            this.addStaffInformationToolStripMenuItem.Name = "addStaffInformationToolStripMenuItem";
-            this.addStaffInformationToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.addStaffInformationToolStripMenuItem.Text = "Add Staff Information";
-            this.addStaffInformationToolStripMenuItem.Click += new System.EventHandler(this.addStaffInformationToolStripMenuItem_Click);
-            // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
@@ -215,7 +187,18 @@
             // sTUDENTREPORTSToolStripMenuItem
             // 
             this.sTUDENTREPORTSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+<<<<<<< HEAD
             this.studentIDCardToolStripMenuItem});
+=======
+            this.studentIDCardToolStripMenuItem,
+            this.studentListingToolStripMenuItem,
+            this.studentListingFeeToolStripMenuItem,
+            this.studentListingToolStripMenuItem1,
+            this.studentStreanthInClassesToolStripMenuItem,
+            this.studentCompleteListingToolStripMenuItem,
+            this.studentAttendanceToolStripMenuItem,
+            this.vicationWorkReportToolStripMenuItem});
+>>>>>>> 887cd8091d9564b1e255534f90c46990d32e28f4
             this.sTUDENTREPORTSToolStripMenuItem.Name = "sTUDENTREPORTSToolStripMenuItem";
             this.sTUDENTREPORTSToolStripMenuItem.Size = new System.Drawing.Size(121, 20);
             this.sTUDENTREPORTSToolStripMenuItem.Text = "STUDENT REPORTS";
@@ -242,6 +225,7 @@
             // 
             // schoolInformationToolStripMenuItem
             // 
+            this.schoolInformationToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.informationyellow;
             this.schoolInformationToolStripMenuItem.Name = "schoolInformationToolStripMenuItem";
             this.schoolInformationToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.schoolInformationToolStripMenuItem.Text = "School Information";
@@ -487,12 +471,116 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
+<<<<<<< HEAD
             // studentIDCardToolStripMenuItem
             // 
             this.studentIDCardToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.myhumberred20;
             this.studentIDCardToolStripMenuItem.Name = "studentIDCardToolStripMenuItem";
             this.studentIDCardToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.studentIDCardToolStripMenuItem.Text = "Student ID Card";
+=======
+            // printAdmissionFormToolStripMenuItem
+            // 
+            this.printAdmissionFormToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_iconyellow;
+            this.printAdmissionFormToolStripMenuItem.Name = "printAdmissionFormToolStripMenuItem";
+            this.printAdmissionFormToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.printAdmissionFormToolStripMenuItem.Text = "Print Admission Form";
+            this.printAdmissionFormToolStripMenuItem.Click += new System.EventHandler(this.printAdmissionFormToolStripMenuItem_Click);
+            // 
+            // newAdmissionToolStripMenuItem
+            // 
+            this.newAdmissionToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.addyellow;
+            this.newAdmissionToolStripMenuItem.Name = "newAdmissionToolStripMenuItem";
+            this.newAdmissionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.newAdmissionToolStripMenuItem.Text = "New Admission";
+            this.newAdmissionToolStripMenuItem.Click += new System.EventHandler(this.newAdmissionToolStripMenuItem_Click);
+            // 
+            // attendanceToolStripMenuItem
+            // 
+            this.attendanceToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
+            this.attendanceToolStripMenuItem.Name = "attendanceToolStripMenuItem";
+            this.attendanceToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.attendanceToolStripMenuItem.Text = "View Enrolled Student";
+            // 
+            // attendanceToolStripMenuItem1
+            // 
+            this.attendanceToolStripMenuItem1.Image = global::SmartSchoolManagementSystem.Properties.Resources.attendanceyellow;
+            this.attendanceToolStripMenuItem1.Name = "attendanceToolStripMenuItem1";
+            this.attendanceToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
+            this.attendanceToolStripMenuItem1.Text = "Attendance";
+            // 
+            // viewAttendanceToolStripMenuItem
+            // 
+            this.viewAttendanceToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
+            this.viewAttendanceToolStripMenuItem.Name = "viewAttendanceToolStripMenuItem";
+            this.viewAttendanceToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.viewAttendanceToolStripMenuItem.Text = "View Attendance";
+            // 
+            // addStaffInformationToolStripMenuItem
+            // 
+            this.addStaffInformationToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.addyellow;
+            this.addStaffInformationToolStripMenuItem.Name = "addStaffInformationToolStripMenuItem";
+            this.addStaffInformationToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.addStaffInformationToolStripMenuItem.Text = "Add Staff Information";
+            this.addStaffInformationToolStripMenuItem.Click += new System.EventHandler(this.addStaffInformationToolStripMenuItem_Click);
+            // 
+            // studentIDCardToolStripMenuItem
+            // 
+            this.studentIDCardToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.myhumberyello;
+            this.studentIDCardToolStripMenuItem.Name = "studentIDCardToolStripMenuItem";
+            this.studentIDCardToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.studentIDCardToolStripMenuItem.Text = "Student ID Card";
+            // 
+            // studentListingToolStripMenuItem
+            // 
+            this.studentListingToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.yellowlist;
+            this.studentListingToolStripMenuItem.Name = "studentListingToolStripMenuItem";
+            this.studentListingToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.studentListingToolStripMenuItem.Text = "Student Listing";
+            // 
+            // studentListingFeeToolStripMenuItem
+            // 
+            this.studentListingFeeToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.yellowlist;
+            this.studentListingFeeToolStripMenuItem.Name = "studentListingFeeToolStripMenuItem";
+            this.studentListingFeeToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.studentListingFeeToolStripMenuItem.Text = "Student Listing (Fee)";
+            // 
+            // studentListingToolStripMenuItem1
+            // 
+            this.studentListingToolStripMenuItem1.Image = global::SmartSchoolManagementSystem.Properties.Resources.yellowlist;
+            this.studentListingToolStripMenuItem1.Name = "studentListingToolStripMenuItem1";
+            this.studentListingToolStripMenuItem1.Size = new System.Drawing.Size(219, 22);
+            this.studentListingToolStripMenuItem1.Text = "Student Listing (Absent)";
+            // 
+            // studentStreanthInClassesToolStripMenuItem
+            // 
+            this.studentStreanthInClassesToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.yellowlist;
+            this.studentStreanthInClassesToolStripMenuItem.Name = "studentStreanthInClassesToolStripMenuItem";
+            this.studentStreanthInClassesToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.studentStreanthInClassesToolStripMenuItem.Text = "Student Streanth in Classes";
+            // 
+            // studentCompleteListingToolStripMenuItem
+            // 
+            this.studentCompleteListingToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.yellowlist;
+            this.studentCompleteListingToolStripMenuItem.Name = "studentCompleteListingToolStripMenuItem";
+            this.studentCompleteListingToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.studentCompleteListingToolStripMenuItem.Text = "Student Complete Listing";
+            // 
+            // studentAttendanceToolStripMenuItem
+            // 
+            this.studentAttendanceToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.yellowlist;
+            this.studentAttendanceToolStripMenuItem.Name = "studentAttendanceToolStripMenuItem";
+            this.studentAttendanceToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.studentAttendanceToolStripMenuItem.Text = "Student Attendance Record";
+            this.studentAttendanceToolStripMenuItem.Click += new System.EventHandler(this.studentAttendanceToolStripMenuItem_Click);
+            // 
+            // vicationWorkReportToolStripMenuItem
+            // 
+            this.vicationWorkReportToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.yellowlist;
+            this.vicationWorkReportToolStripMenuItem.Name = "vicationWorkReportToolStripMenuItem";
+            this.vicationWorkReportToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.vicationWorkReportToolStripMenuItem.Text = "Vication Work Report";
+>>>>>>> 887cd8091d9564b1e255534f90c46990d32e28f4
             // 
             // MDIParent
             // 
@@ -575,6 +663,16 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem schoolInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studentIDCardToolStripMenuItem;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.ToolStripMenuItem studentListingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem studentListingFeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem studentListingToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem studentStreanthInClassesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem studentCompleteListingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem studentAttendanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vicationWorkReportToolStripMenuItem;
+>>>>>>> 887cd8091d9564b1e255534f90c46990d32e28f4
     }
 }
 

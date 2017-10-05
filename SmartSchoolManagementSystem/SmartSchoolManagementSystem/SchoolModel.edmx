@@ -49,35 +49,75 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AcadmicSession" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="TbladdBuses">
+          <Key>
+            <PropertyRef Name="BusID" />
+          </Key>
+          <Property Name="BusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Driver" Type="nvarchar" MaxLength="50" />
+          <Property Name="Busreg" Type="nvarchar" MaxLength="50" />
+          <Property Name="Model" Type="nvarchar" MaxLength="50" />
+          <Property Name="Vehicletype" Type="nvarchar" MaxLength="50" />
+          <Property Name="Seatcapacity" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="TBLADDMISSION">
           <Key>
-            <PropertyRef Name="ID" />
+            <PropertyRef Name="SID" />
           </Key>
-          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ADMISSION_FORM" Type="nvarchar" MaxLength="50" />
           <Property Name="STUDENT_NAME" Type="nvarchar" MaxLength="50" />
           <Property Name="FATHER_NAME" Type="nvarchar" MaxLength="50" />
           <Property Name="STUDENT_NIC" Type="nvarchar" MaxLength="50" />
+          <Property Name="FATHER_EMAIL" Type="nvarchar" MaxLength="150" />
           <Property Name="FATHER_NIC" Type="nvarchar" MaxLength="50" />
           <Property Name="GENDER" Type="nvarchar" MaxLength="50" />
           <Property Name="RELIGION" Type="nvarchar" MaxLength="50" />
           <Property Name="FATHER_OCCUPATION" Type="nvarchar" MaxLength="50" />
           <Property Name="ADMISSION_DATE" Type="datetime" />
-          <Property Name="DOB" Type="date" />
+          <Property Name="STUDENT_DOB" Type="date" />
           <Property Name="PLACE_BIRTH" Type="nvarchar" MaxLength="50" />
           <Property Name="MONTHLY_INCOM" Type="nvarchar" MaxLength="50" />
-          <Property Name="CAST" Type="nvarchar" MaxLength="50" />
-          <Property Name="CELL_NO" Type="nvarchar" MaxLength="50" />
-          <Property Name="LANDLINE" Type="nvarchar" MaxLength="50" />
+          <Property Name="HOME_TEL" Type="nvarchar" MaxLength="50" />
+          <Property Name="FATHER_CAST" Type="nvarchar" MaxLength="50" />
+          <Property Name="FATHER_CELL_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="OFFICE_LANDLINE" Type="nvarchar" MaxLength="50" />
           <Property Name="CURRENTSESSION" Type="nvarchar" MaxLength="50" />
-          <Property Name="OTHER_NO" Type="nvarchar" MaxLength="50" />
-          <Property Name="CURRENT_ADDRESS" Type="nvarchar(max)" />
-          <Property Name="PERMANENT_ADDRESS" Type="nvarchar(max)" />
-          <Property Name="PREVIOUS_SCHOOL" Type="nvarchar" MaxLength="50" />
-          <Property Name="OBTAIN_MARKS" Type="nvarchar" MaxLength="50" />
-          <Property Name="TOTAL_MARKS" Type="nvarchar" MaxLength="50" />
+          <Property Name="G_NAME" Type="nvarchar" MaxLength="350" />
+          <Property Name="G_CNIC" Type="nvarchar" MaxLength="50" />
+          <Property Name="G_CELL" Type="nvarchar" MaxLength="50" />
+          <Property Name="G_OCCUPATION" Type="nvarchar" MaxLength="250" />
+          <Property Name="G_MONTHLY_INCOM" Type="nvarchar" MaxLength="50" />
+          <Property Name="G_CELL_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="G_BUSINESS_ADDRESS" Type="nvarchar" MaxLength="450" />
+          <Property Name="G_EMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="S_CELL_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="HOME_ADDRESS" Type="nvarchar(max)" />
+          <Property Name="BUSINESS_ADDRESS" Type="nvarchar(max)" />
+          <Property Name="EDUCATION1" Type="nvarchar" MaxLength="50" />
+          <Property Name="EDUCATION2" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADMISSIONNO1" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADMISSIONNO2" Type="nvarchar" MaxLength="50" />
+          <Property Name="YEAR1" Type="nvarchar" MaxLength="50" />
+          <Property Name="YEAR2" Type="nvarchar" MaxLength="50" />
+          <Property Name="BOARD/INSTITUTION1" Type="nvarchar" MaxLength="150" />
+          <Property Name="BOARD/INSTITUTION2" Type="nvarchar" MaxLength="150" />
+          <Property Name="GRADE1" Type="nvarchar" MaxLength="50" />
+          <Property Name="GRADE2" Type="nvarchar" MaxLength="50" />
+          <Property Name="OBTAIN_MARKS1" Type="nvarchar" MaxLength="50" />
+          <Property Name="OBTAIN_MARKS2" Type="nvarchar" MaxLength="50" />
+          <Property Name="TOTAL_MARKS1" Type="nvarchar" MaxLength="50" />
+          <Property Name="TOTAL_MARKS2" Type="nvarchar" MaxLength="50" />
+          <Property Name="PERCENTAGE1" Type="nvarchar" MaxLength="50" />
+          <Property Name="PERCENTAGE2" Type="nvarchar" MaxLength="50" />
+          <Property Name="STUDENTNAME1" Type="nvarchar" MaxLength="150" />
+          <Property Name="STUDENTNAME2" Type="nvarchar" MaxLength="150" />
+          <Property Name="CLAS1" Type="nvarchar" MaxLength="50" />
+          <Property Name="CLAS2" Type="nvarchar" MaxLength="50" />
+          <Property Name="SCHOOLNAME1" Type="nvarchar" MaxLength="350" />
+          <Property Name="SCHOOLNAME2" Type="nvarchar" MaxLength="350" />
           <Property Name="BLOODGROUP" Type="nvarchar" MaxLength="50" />
-          <Property Name="EMAIL_ADDRESS" Type="nvarchar" MaxLength="50" />
+          <Property Name="STUDENT_EMAIL_ADDRESS" Type="nvarchar" MaxLength="50" />
           <Property Name="ADMISSION_STATUS" Type="bit" />
           <Property Name="CREATED_BY" Type="nvarchar" MaxLength="50" />
           <Property Name="CREATED_DATE" Type="datetime" />
@@ -94,6 +134,23 @@
           <Property Name="Class" Type="nvarchar" MaxLength="50" />
           <Property Name="Section" Type="nvarchar" MaxLength="50" />
           <Property Name="CellNo" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Tblbusdestination">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Destination" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Tblbusstop">
+          <Key>
+            <PropertyRef Name="DID" />
+          </Key>
+          <Property Name="DID" Type="int" Nullable="false" />
+          <Property Name="BusStop" Type="nvarchar" MaxLength="50" />
+          <Property Name="BussFee" Type="numeric" Precision="18" Scale="0" />
         </EntityType>
         <EntityType Name="Tblclass">
           <Key>
@@ -186,6 +243,19 @@
           <Property Name="STATUS" Type="bit" />
           <Property Name="TeachImage" Type="image" />
         </EntityType>
+        <EntityType Name="TBLUSER">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+          <Property Name="UserType" Type="nvarchar" MaxLength="50" />
+          <Property Name="RegDate" Type="datetime" />
+          <Property Name="Email" Type="nvarchar" MaxLength="250" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="Password" Type="nvarchar" MaxLength="250" />
+        </EntityType>
         <EntityType Name="TransMaster">
           <Key>
             <PropertyRef Name="TID" />
@@ -196,6 +266,14 @@
           <Property Name="TType" Type="nvarchar" MaxLength="50" />
           <Property Name="Createdby" Type="nvarchar" MaxLength="50" />
           <Property Name="Createddate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="UserDeatils">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="int" Nullable="false" />
+          <Property Name="Loginstart" Type="datetime" />
+          <Property Name="Loginend" Type="datetime" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -220,15 +298,26 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySet Name="FeeMasterSettings" EntityType="Self.FeeMasterSettings" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="StudentFeeDetails" EntityType="Self.StudentFeeDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblacadmicSession" EntityType="Self.TblacadmicSession" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TbladdBuses" EntityType="Self.TbladdBuses" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLADDMISSION" EntityType="Self.TBLADDMISSION" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbladmissionprint" EntityType="Self.Tbladmissionprint" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tblbusdestination" EntityType="Self.Tblbusdestination" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblclass" EntityType="Self.Tblclass" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblclasssection" EntityType="Self.Tblclasssection" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblschoolsetting" EntityType="Self.Tblschoolsetting" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblSection" EntityType="Self.TblSection" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLSTUDENTENRROL" EntityType="Self.TBLSTUDENTENRROL" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblTeacherInformation" EntityType="Self.TblTeacherInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLUSER" EntityType="Self.TBLUSER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TransMaster" EntityType="Self.TransMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserDeatils" EntityType="Self.UserDeatils" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tblbusstop" EntityType="Self.Tblbusstop" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Tblbusstop].[DID] AS [DID], 
+    [Tblbusstop].[BusStop] AS [BusStop], 
+    [Tblbusstop].[BussFee] AS [BussFee]
+    FROM [dbo].[Tblbusstop] AS [Tblbusstop]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="firstformview" EntityType="Self.firstformview" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [firstformview].[FID] AS [FID], 
@@ -253,6 +342,7 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
         <EntityType Name="TBLADDMISSION">
           <Key>
             <PropertyRef Name="ID" />
+            <PropertyRef Name="SID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ADMISSION_FORM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -285,6 +375,47 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="UPDATED_DATE" Type="DateTime" Precision="3" />
           <Property Name="IMAGE" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="CURRENTSESSION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FATHER_EMAIL" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="STUDENT_DOB" Type="DateTime" Precision="0" />
+          <Property Name="HOME_TEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FATHER_CAST" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FATHER_CELL_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OFFICE_LANDLINE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="G_NAME" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="G_CNIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="G_CELL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="G_OCCUPATION" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="G_MONTHLY_INCOM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="G_CELL_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="G_BUSINESS_ADDRESS" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Name="G_EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="S_CELL_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HOME_ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BUSINESS_ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EDUCATION1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EDUCATION2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADMISSIONNO1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADMISSIONNO2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="YEAR1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="YEAR2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BOARD_INSTITUTION1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="BOARD_INSTITUTION2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="GRADE1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GRADE2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OBTAIN_MARKS1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OBTAIN_MARKS2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TOTAL_MARKS1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TOTAL_MARKS2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PERCENTAGE1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PERCENTAGE2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="STUDENTNAME1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="STUDENTNAME2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="CLAS1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CLAS2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SCHOOLNAME1" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="SCHOOLNAME2" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="STUDENT_EMAIL_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Tbladmissionprint">
           <Key>
@@ -356,6 +487,11 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySet Name="TblTeacherInformations" EntityType="smartschooldbModel.TblTeacherInformation" />
           <EntitySet Name="TblacadmicSessions" EntityType="smartschooldbModel.TblacadmicSession" />
           <EntitySet Name="Tblclasssections" EntityType="smartschooldbModel.Tblclasssection" />
+          <EntitySet Name="TbladdBuses" EntityType="smartschooldbModel.TbladdBus" />
+          <EntitySet Name="Tblbusdestinations" EntityType="smartschooldbModel.Tblbusdestination" />
+          <EntitySet Name="TBLUSERs" EntityType="smartschooldbModel.TBLUSER" />
+          <EntitySet Name="UserDeatils" EntityType="smartschooldbModel.UserDeatil" />
+          <EntitySet Name="Tblbusstops" EntityType="smartschooldbModel.Tblbusstop" />
         </EntityContainer>
         <EntityType Name="FeeMasterSetting">
           <Key>
@@ -474,6 +610,53 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="Acadmic_Session" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="examfee" Type="Decimal" Precision="18" Scale="0" />
         </EntityType>
+        <EntityType Name="TbladdBus">
+          <Key>
+            <PropertyRef Name="BusID" />
+          </Key>
+          <Property Name="BusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Driver" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Busreg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Vehicletype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Seatcapacity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Tblbusdestination">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Destination" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TBLUSER">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UserType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RegDate" Type="DateTime" Precision="3" />
+          <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="Password" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="UserDeatil">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="Int32" Nullable="false" />
+          <Property Name="Loginstart" Type="DateTime" Precision="3" />
+          <Property Name="Loginend" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Tblbusstop">
+          <Key>
+            <PropertyRef Name="DID" />
+          </Key>
+          <Property Name="DID" Type="Int32" Nullable="false" />
+          <Property Name="BusStop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BussFee" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -483,8 +666,48 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySetMapping Name="TBLADDMISSIONs">
             <EntityTypeMapping TypeName="smartschooldbModel.TBLADDMISSION">
               <MappingFragment StoreEntitySet="TBLADDMISSION">
+                <ScalarProperty Name="STUDENT_EMAIL_ADDRESS" ColumnName="STUDENT_EMAIL_ADDRESS" />
+                <ScalarProperty Name="SCHOOLNAME2" ColumnName="SCHOOLNAME2" />
+                <ScalarProperty Name="SCHOOLNAME1" ColumnName="SCHOOLNAME1" />
+                <ScalarProperty Name="CLAS2" ColumnName="CLAS2" />
+                <ScalarProperty Name="CLAS1" ColumnName="CLAS1" />
+                <ScalarProperty Name="STUDENTNAME2" ColumnName="STUDENTNAME2" />
+                <ScalarProperty Name="STUDENTNAME1" ColumnName="STUDENTNAME1" />
+                <ScalarProperty Name="PERCENTAGE2" ColumnName="PERCENTAGE2" />
+                <ScalarProperty Name="PERCENTAGE1" ColumnName="PERCENTAGE1" />
+                <ScalarProperty Name="TOTAL_MARKS2" ColumnName="TOTAL_MARKS2" />
+                <ScalarProperty Name="TOTAL_MARKS1" ColumnName="TOTAL_MARKS1" />
+                <ScalarProperty Name="OBTAIN_MARKS2" ColumnName="OBTAIN_MARKS2" />
+                <ScalarProperty Name="OBTAIN_MARKS1" ColumnName="OBTAIN_MARKS1" />
+                <ScalarProperty Name="GRADE2" ColumnName="GRADE2" />
+                <ScalarProperty Name="GRADE1" ColumnName="GRADE1" />
+                <ScalarProperty Name="BOARD_INSTITUTION2" ColumnName="BOARD/INSTITUTION2" />
+                <ScalarProperty Name="BOARD_INSTITUTION1" ColumnName="BOARD/INSTITUTION1" />
+                <ScalarProperty Name="YEAR2" ColumnName="YEAR2" />
+                <ScalarProperty Name="YEAR1" ColumnName="YEAR1" />
+                <ScalarProperty Name="ADMISSIONNO2" ColumnName="ADMISSIONNO2" />
+                <ScalarProperty Name="ADMISSIONNO1" ColumnName="ADMISSIONNO1" />
+                <ScalarProperty Name="EDUCATION2" ColumnName="EDUCATION2" />
+                <ScalarProperty Name="EDUCATION1" ColumnName="EDUCATION1" />
+                <ScalarProperty Name="BUSINESS_ADDRESS" ColumnName="BUSINESS_ADDRESS" />
+                <ScalarProperty Name="HOME_ADDRESS" ColumnName="HOME_ADDRESS" />
+                <ScalarProperty Name="S_CELL_NO" ColumnName="S_CELL_NO" />
+                <ScalarProperty Name="G_EMAIL" ColumnName="G_EMAIL" />
+                <ScalarProperty Name="G_BUSINESS_ADDRESS" ColumnName="G_BUSINESS_ADDRESS" />
+                <ScalarProperty Name="G_CELL_NO" ColumnName="G_CELL_NO" />
+                <ScalarProperty Name="G_MONTHLY_INCOM" ColumnName="G_MONTHLY_INCOM" />
+                <ScalarProperty Name="G_OCCUPATION" ColumnName="G_OCCUPATION" />
+                <ScalarProperty Name="G_CELL" ColumnName="G_CELL" />
+                <ScalarProperty Name="G_CNIC" ColumnName="G_CNIC" />
+                <ScalarProperty Name="G_NAME" ColumnName="G_NAME" />
+                <ScalarProperty Name="OFFICE_LANDLINE" ColumnName="OFFICE_LANDLINE" />
+                <ScalarProperty Name="FATHER_CELL_NO" ColumnName="FATHER_CELL_NO" />
+                <ScalarProperty Name="FATHER_CAST" ColumnName="FATHER_CAST" />
+                <ScalarProperty Name="HOME_TEL" ColumnName="HOME_TEL" />
+                <ScalarProperty Name="STUDENT_DOB" ColumnName="STUDENT_DOB" />
+                <ScalarProperty Name="FATHER_EMAIL" ColumnName="FATHER_EMAIL" />
+                <ScalarProperty Name="SID" ColumnName="SID" />
                 <ScalarProperty Name="CURRENTSESSION" ColumnName="CURRENTSESSION" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="ADMISSION_FORM" ColumnName="ADMISSION_FORM" />
                 <ScalarProperty Name="STUDENT_NAME" ColumnName="STUDENT_NAME" />
                 <ScalarProperty Name="FATHER_NAME" ColumnName="FATHER_NAME" />
@@ -494,20 +717,9 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
                 <ScalarProperty Name="RELIGION" ColumnName="RELIGION" />
                 <ScalarProperty Name="FATHER_OCCUPATION" ColumnName="FATHER_OCCUPATION" />
                 <ScalarProperty Name="ADMISSION_DATE" ColumnName="ADMISSION_DATE" />
-                <ScalarProperty Name="DOB" ColumnName="DOB" />
                 <ScalarProperty Name="PLACE_BIRTH" ColumnName="PLACE_BIRTH" />
                 <ScalarProperty Name="MONTHLY_INCOM" ColumnName="MONTHLY_INCOM" />
-                <ScalarProperty Name="CAST" ColumnName="CAST" />
-                <ScalarProperty Name="CELL_NO" ColumnName="CELL_NO" />
-                <ScalarProperty Name="LANDLINE" ColumnName="LANDLINE" />
-                <ScalarProperty Name="OTHER_NO" ColumnName="OTHER_NO" />
-                <ScalarProperty Name="CURRENT_ADDRESS" ColumnName="CURRENT_ADDRESS" />
-                <ScalarProperty Name="PERMANENT_ADDRESS" ColumnName="PERMANENT_ADDRESS" />
-                <ScalarProperty Name="PREVIOUS_SCHOOL" ColumnName="PREVIOUS_SCHOOL" />
-                <ScalarProperty Name="OBTAIN_MARKS" ColumnName="OBTAIN_MARKS" />
-                <ScalarProperty Name="TOTAL_MARKS" ColumnName="TOTAL_MARKS" />
                 <ScalarProperty Name="BLOODGROUP" ColumnName="BLOODGROUP" />
-                <ScalarProperty Name="EMAIL_ADDRESS" ColumnName="EMAIL_ADDRESS" />
                 <ScalarProperty Name="ADMISSION_STATUS" ColumnName="ADMISSION_STATUS" />
                 <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
                 <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
@@ -699,6 +911,58 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
                 <ScalarProperty Name="Section" ColumnName="Section" />
                 <ScalarProperty Name="Class" ColumnName="Class" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TbladdBuses">
+            <EntityTypeMapping TypeName="smartschooldbModel.TbladdBus">
+              <MappingFragment StoreEntitySet="TbladdBuses">
+                <ScalarProperty Name="Seatcapacity" ColumnName="Seatcapacity" />
+                <ScalarProperty Name="Vehicletype" ColumnName="Vehicletype" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Busreg" ColumnName="Busreg" />
+                <ScalarProperty Name="Driver" ColumnName="Driver" />
+                <ScalarProperty Name="BusID" ColumnName="BusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tblbusdestinations">
+            <EntityTypeMapping TypeName="smartschooldbModel.Tblbusdestination">
+              <MappingFragment StoreEntitySet="Tblbusdestination">
+                <ScalarProperty Name="Destination" ColumnName="Destination" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLUSERs">
+            <EntityTypeMapping TypeName="smartschooldbModel.TBLUSER">
+              <MappingFragment StoreEntitySet="TBLUSER">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserDeatils">
+            <EntityTypeMapping TypeName="smartschooldbModel.UserDeatil">
+              <MappingFragment StoreEntitySet="UserDeatils">
+                <ScalarProperty Name="Loginend" ColumnName="Loginend" />
+                <ScalarProperty Name="Loginstart" ColumnName="Loginstart" />
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tblbusstops">
+            <EntityTypeMapping TypeName="smartschooldbModel.Tblbusstop">
+              <MappingFragment StoreEntitySet="Tblbusstop">
+                <ScalarProperty Name="BussFee" ColumnName="BussFee" />
+                <ScalarProperty Name="BusStop" ColumnName="BusStop" />
+                <ScalarProperty Name="DID" ColumnName="DID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

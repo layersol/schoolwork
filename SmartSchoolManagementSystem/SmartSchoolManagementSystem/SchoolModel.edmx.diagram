@@ -13,11 +13,16 @@
         <EntityTypeShape EntityType="smartschooldbModel.TBLSTUDENTENRROL" Width="1.5" PointX="6.75" PointY="2.125" IsExpanded="true" />
         <EntityTypeShape EntityType="smartschooldbModel.FeeMasterSetting" Width="1.5" PointX="5.75" PointY="6.75" />
         <EntityTypeShape EntityType="smartschooldbModel.StudentFeeDetail" Width="1.5" PointX="7.75" PointY="6.75" />
-        <EntityTypeShape EntityType="smartschooldbModel.TransMaster" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.TransMaster" Width="1.5" PointX="4.25" PointY="9.125" />
         <EntityTypeShape EntityType="smartschooldbModel.firstformview" Width="1.5" PointX="2.75" PointY="8.75" />
         <EntityTypeShape EntityType="smartschooldbModel.TblTeacherInformation" Width="1.5" PointX="9.375" PointY="0.75" FillColor="255, 128, 0" />
         <EntityTypeShape EntityType="smartschooldbModel.TblacadmicSession" Width="1.5" PointX="10.375" PointY="6.75" />
         <EntityTypeShape EntityType="smartschooldbModel.Tblclasssection" Width="1.5" PointX="10.375" PointY="9.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.TbladdBus" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.Tblbusdestination" Width="1.5" PointX="11.375" PointY="3.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.TBLUSER" Width="1.5" PointX="5.375" PointY="11.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.UserDeatil" Width="1.5" PointX="7.375" PointY="11.75" />
+        <EntityTypeShape EntityType="smartschooldbModel.Tblbusstop" Width="1.5" PointX="12.375" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

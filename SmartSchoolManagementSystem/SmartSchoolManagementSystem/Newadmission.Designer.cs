@@ -377,7 +377,6 @@
             // txtform
             // 
             this.txtform.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtform.Enabled = false;
             this.txtform.Location = new System.Drawing.Point(56, 19);
             this.txtform.Name = "txtform";
             this.txtform.Size = new System.Drawing.Size(110, 20);

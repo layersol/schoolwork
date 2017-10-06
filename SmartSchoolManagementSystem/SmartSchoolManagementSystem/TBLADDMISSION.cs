@@ -19,7 +19,6 @@ namespace SmartSchoolManagementSystem
         public string STUDENT_NAME { get; set; }
         public string FATHER_NAME { get; set; }
         public string STUDENT_NIC { get; set; }
-        public string FATHER_EMAIL { get; set; }
         public string FATHER_NIC { get; set; }
         public string GENDER { get; set; }
         public string RELIGION { get; set; }
@@ -40,7 +39,6 @@ namespace SmartSchoolManagementSystem
         public string G_MONTHLY_INCOM { get; set; }
         public string G_CELL_NO { get; set; }
         public string G_BUSINESS_ADDRESS { get; set; }
-        public string G_EMAIL { get; set; }
         public string S_CELL_NO { get; set; }
         public string HOME_ADDRESS { get; set; }
         public string BUSINESS_ADDRESS { get; set; }

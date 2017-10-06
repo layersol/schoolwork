@@ -1158,7 +1158,7 @@
             this.groupBox9.Controls.Add(this.dvgstudent);
             this.groupBox9.Location = new System.Drawing.Point(965, 69);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(205, 684);
+            this.groupBox9.Size = new System.Drawing.Size(266, 684);
             this.groupBox9.TabIndex = 3;
             this.groupBox9.TabStop = false;
             // 
@@ -1187,10 +1187,12 @@
             // 
             // dvgstudent
             // 
+            this.dvgstudent.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.dvgstudent.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dvgstudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgstudent.Location = new System.Drawing.Point(6, 40);
             this.dvgstudent.Name = "dvgstudent";
-            this.dvgstudent.Size = new System.Drawing.Size(193, 629);
+            this.dvgstudent.Size = new System.Drawing.Size(254, 629);
             this.dvgstudent.TabIndex = 0;
             // 
             // groupBox12
@@ -1784,11 +1786,13 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner1;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox2.Location = new System.Drawing.Point(2, -5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1181, 54);
+            this.groupBox2.Size = new System.Drawing.Size(1244, 54);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -2195,7 +2199,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1176, 733);
+            this.ClientSize = new System.Drawing.Size(1243, 733);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label2);
@@ -2215,6 +2219,7 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.registrartion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Newadmission";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Student\'s Bio Data";

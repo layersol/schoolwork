@@ -53,16 +53,16 @@ namespace SmartSchoolManagementSystem
         }
         private void Getcurrentstudent()
         {
-             var val2 = (from u in db.TBLADDMISSIONs where u.CURRENTSESSION == "2017-2018" select u).Count() > 0;
+             var val2 = (from u in db.TBLADDMISSIONs where u.CURRENTSESSION == lblSession.Text select u).Count() > 0;
              if (val2 != false)
             {
 
                 var query = from s in db.TBLADDMISSIONs
-                            where s.CURRENTSESSION == "2017-2018"
+                            where s.CURRENTSESSION == lblSession.Text
                             select new
                             {
-                                ProductID = s.SID,
-                                Stock = s.STUDENT_NAME,
+                                System_NO = s.SID,
+                                Student_Name = s.STUDENT_NAME,
                             };
                 dvgstudent.DataSource = query.ToList();
 
@@ -81,6 +81,9 @@ namespace SmartSchoolManagementSystem
             {
                 lblSession.Text = Convert.ToString(Sessionvalues.Session);
             }
+
+            Getcurrentstudent();
+
         }
         private void btnup_Click(object sender, EventArgs e)
         {
@@ -129,7 +132,7 @@ namespace SmartSchoolManagementSystem
 
 
 
-                objcontext.CURRENTSESSION = lblSession.Text;
+               
                 objcontext.STUDENT_NAME = txtstudentname.Text;
                 objcontext.STUDENT_DOB = Convert.ToDateTime(txtdob.Text);
                 objcontext.PLACE_BIRTH = txtpob.Text;
@@ -151,7 +154,7 @@ namespace SmartSchoolManagementSystem
                 objcontext.OFFICE_LANDLINE = txtofficetel.Text;
                 objcontext.FATHER_CAST = txtcast.Text;
                 objcontext.BUSINESS_ADDRESS = txtofficeadress.Text;
-                objcontext.CURRENTSESSION = "2017-2018";     ///     check this again
+                objcontext.CURRENTSESSION = lblSession.Text;   ///     check this again
                 objcontext.G_NAME = txtgname.Text;
                 objcontext.G_CNIC = txtgcnic.Text;
                 objcontext.G_CELL = txtgcell.Text;

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="smartschooldbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="smartschooldbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="FeeMasterSettings">
           <Key>
             <PropertyRef Name="FID" />
@@ -69,7 +69,6 @@
           <Property Name="STUDENT_NAME" Type="nvarchar" MaxLength="50" />
           <Property Name="FATHER_NAME" Type="nvarchar" MaxLength="50" />
           <Property Name="STUDENT_NIC" Type="nvarchar" MaxLength="50" />
-          <Property Name="FATHER_EMAIL" Type="nvarchar" MaxLength="150" />
           <Property Name="FATHER_NIC" Type="nvarchar" MaxLength="50" />
           <Property Name="GENDER" Type="nvarchar" MaxLength="50" />
           <Property Name="RELIGION" Type="nvarchar" MaxLength="50" />
@@ -90,7 +89,6 @@
           <Property Name="G_MONTHLY_INCOM" Type="nvarchar" MaxLength="50" />
           <Property Name="G_CELL_NO" Type="nvarchar" MaxLength="50" />
           <Property Name="G_BUSINESS_ADDRESS" Type="nvarchar" MaxLength="450" />
-          <Property Name="G_EMAIL" Type="nvarchar" MaxLength="50" />
           <Property Name="S_CELL_NO" Type="nvarchar" MaxLength="50" />
           <Property Name="HOME_ADDRESS" Type="nvarchar(max)" />
           <Property Name="BUSINESS_ADDRESS" Type="nvarchar(max)" />
@@ -335,8 +333,7 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
     FROM [dbo].[firstformview] AS [firstformview]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="smartschooldbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -404,7 +401,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="STUDENT_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="FATHER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="STUDENT_NIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="FATHER_EMAIL" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="FATHER_NIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GENDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="RELIGION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -425,7 +421,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="G_MONTHLY_INCOM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="G_CELL_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="G_BUSINESS_ADDRESS" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
-          <Property Name="G_EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="S_CELL_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="HOME_ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="BUSINESS_ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -718,7 +713,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
                 <ScalarProperty Name="STUDENT_NAME" ColumnName="STUDENT_NAME" />
                 <ScalarProperty Name="FATHER_NAME" ColumnName="FATHER_NAME" />
                 <ScalarProperty Name="STUDENT_NIC" ColumnName="STUDENT_NIC" />
-                <ScalarProperty Name="FATHER_EMAIL" ColumnName="FATHER_EMAIL" />
                 <ScalarProperty Name="FATHER_NIC" ColumnName="FATHER_NIC" />
                 <ScalarProperty Name="GENDER" ColumnName="GENDER" />
                 <ScalarProperty Name="RELIGION" ColumnName="RELIGION" />
@@ -739,7 +733,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
                 <ScalarProperty Name="G_MONTHLY_INCOM" ColumnName="G_MONTHLY_INCOM" />
                 <ScalarProperty Name="G_CELL_NO" ColumnName="G_CELL_NO" />
                 <ScalarProperty Name="G_BUSINESS_ADDRESS" ColumnName="G_BUSINESS_ADDRESS" />
-                <ScalarProperty Name="G_EMAIL" ColumnName="G_EMAIL" />
                 <ScalarProperty Name="S_CELL_NO" ColumnName="S_CELL_NO" />
                 <ScalarProperty Name="HOME_ADDRESS" ColumnName="HOME_ADDRESS" />
                 <ScalarProperty Name="BUSINESS_ADDRESS" ColumnName="BUSINESS_ADDRESS" />

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="smartschooldbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="smartschooldbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="FeeMasterSettings">
           <Key>
             <PropertyRef Name="FID" />
@@ -335,53 +335,89 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
     FROM [dbo].[firstformview] AS [firstformview]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="smartschooldbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="TBLADDMISSION">
+        <EntityType Name="FeeMasterSetting">
+          <Key>
+            <PropertyRef Name="FID" />
+          </Key>
+          <Property Name="FID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Month_year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Stu_Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tuition_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tuition_Fee_Percent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Bus_Fee_Percent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Late_Fee_Start" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Late_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Printing_charges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Other_fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Other_Fee_Reference" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="StudentFeeDetail">
+          <Key>
+            <PropertyRef Name="STID" />
+          </Key>
+          <Property Name="STID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TID" Type="Int32" />
+          <Property Name="FID" Type="Int32" />
+          <Property Name="Tuition_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Bus_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Printing_Charges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Other_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Late_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Total_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Discount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Amount_Payable" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Amount_Paid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Balance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Createdby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Createddate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="TblacadmicSession">
           <Key>
             <PropertyRef Name="ID" />
-            <PropertyRef Name="SID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AcadmicSession" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TbladdBus">
+          <Key>
+            <PropertyRef Name="BusID" />
+          </Key>
+          <Property Name="BusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Driver" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Busreg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Vehicletype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Seatcapacity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TBLADDMISSION">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ADMISSION_FORM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="STUDENT_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="FATHER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="STUDENT_NIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FATHER_EMAIL" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="FATHER_NIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GENDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="RELIGION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="FATHER_OCCUPATION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ADMISSION_DATE" Type="DateTime" Precision="3" />
-          <Property Name="DOB" Type="DateTime" Precision="0" />
+          <Property Name="STUDENT_DOB" Type="DateTime" Precision="0" />
           <Property Name="PLACE_BIRTH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="MONTHLY_INCOM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CAST" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CELL_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="LANDLINE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="OTHER_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CURRENT_ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="PERMANENT_ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="PREVIOUS_SCHOOL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="OBTAIN_MARKS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="TOTAL_MARKS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="BLOODGROUP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="EMAIL_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="ADMISSION_STATUS" Type="Boolean" />
-          <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CREATED_DATE" Type="DateTime" Precision="3" />
-          <Property Name="UPDATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="UPDATED_DATE" Type="DateTime" Precision="3" />
-          <Property Name="IMAGE" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <Property Name="CURRENTSESSION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="SID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="FATHER_EMAIL" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
-          <Property Name="STUDENT_DOB" Type="DateTime" Precision="0" />
           <Property Name="HOME_TEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="FATHER_CAST" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="FATHER_CELL_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="OFFICE_LANDLINE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENTSESSION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="G_NAME" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
           <Property Name="G_CNIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="G_CELL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -415,7 +451,14 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="CLAS2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="SCHOOLNAME1" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
           <Property Name="SCHOOLNAME2" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="BLOODGROUP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="STUDENT_EMAIL_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADMISSION_STATUS" Type="Boolean" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CREATED_DATE" Type="DateTime" Precision="3" />
+          <Property Name="UPDATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATED_DATE" Type="DateTime" Precision="3" />
+          <Property Name="IMAGE" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="Tbladmissionprint">
           <Key>
@@ -427,12 +470,41 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CellNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
+        <EntityType Name="Tblbusdestination">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Destination" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
         <EntityType Name="Tblclass">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CLASSNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Tblclasssection">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Group" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Teacher" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Maxstudent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FloorId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RoomNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="admissionfee" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Fee" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="examfee" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Comments" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Createddate" Type="DateTime" Precision="3" />
+          <Property Name="Updatedby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Updateddate" Type="DateTime" Precision="3" />
+          <Property Name="Acadmic_Session" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Tblschoolsetting">
           <Key>
@@ -473,91 +545,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="UPDATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="UPDATED_DATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="smartschooldbEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="TBLADDMISSIONs" EntityType="Self.TBLADDMISSION" />
-          <EntitySet Name="Tbladmissionprints" EntityType="Self.Tbladmissionprint" />
-          <EntitySet Name="Tblclasses" EntityType="Self.Tblclass" />
-          <EntitySet Name="Tblschoolsettings" EntityType="Self.Tblschoolsetting" />
-          <EntitySet Name="TblSections" EntityType="Self.TblSection" />
-          <EntitySet Name="TBLSTUDENTENRROLs" EntityType="Self.TBLSTUDENTENRROL" />
-          <EntitySet Name="FeeMasterSettings" EntityType="smartschooldbModel.FeeMasterSetting" />
-          <EntitySet Name="StudentFeeDetails" EntityType="smartschooldbModel.StudentFeeDetail" />
-          <EntitySet Name="TransMasters" EntityType="smartschooldbModel.TransMaster" />
-          <EntitySet Name="firstformviews" EntityType="smartschooldbModel.firstformview" />
-          <EntitySet Name="TblTeacherInformations" EntityType="smartschooldbModel.TblTeacherInformation" />
-          <EntitySet Name="TblacadmicSessions" EntityType="smartschooldbModel.TblacadmicSession" />
-          <EntitySet Name="Tblclasssections" EntityType="smartschooldbModel.Tblclasssection" />
-          <EntitySet Name="TbladdBuses" EntityType="smartschooldbModel.TbladdBus" />
-          <EntitySet Name="Tblbusdestinations" EntityType="smartschooldbModel.Tblbusdestination" />
-          <EntitySet Name="TBLUSERs" EntityType="smartschooldbModel.TBLUSER" />
-          <EntitySet Name="UserDeatils" EntityType="smartschooldbModel.UserDeatil" />
-          <EntitySet Name="Tblbusstops" EntityType="smartschooldbModel.Tblbusstop" />
-        </EntityContainer>
-        <EntityType Name="FeeMasterSetting">
-          <Key>
-            <PropertyRef Name="FID" />
-          </Key>
-          <Property Name="FID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Month_year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Stu_Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Tuition_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Tuition_Fee_Percent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Bus_Fee_Percent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Late_Fee_Start" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Late_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Printing_charges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Other_fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Other_Fee_Reference" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="StudentFeeDetail">
-          <Key>
-            <PropertyRef Name="STID" />
-          </Key>
-          <Property Name="STID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="TID" Type="Int32" />
-          <Property Name="FID" Type="Int32" />
-          <Property Name="Tuition_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Bus_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Printing_Charges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Other_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Late_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Total_Fee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Discount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Amount_Payable" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Amount_Paid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Balance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Createdby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Createddate" Type="DateTime" Precision="3" />
-        </EntityType>
-        <EntityType Name="TransMaster">
-          <Key>
-            <PropertyRef Name="TID" />
-          </Key>
-          <Property Name="TID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Purpose" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Amount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="TType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Createdby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Createddate" Type="DateTime" Precision="3" />
-        </EntityType>
-        <EntityType Name="firstformview">
-          <Key>
-            <PropertyRef Name="FID" />
-          </Key>
-          <Property Name="FID" Type="Int32" Nullable="false" />
-          <Property Name="SchoolName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-          <Property Name="FIRSTADDRESS" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-          <Property Name="SECONDADDRESS" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-          <Property Name="CONTACTA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CONTACTB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CONTACTC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="FIRSTEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="SECONDEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="WEBSITE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="LOGO" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <Property Name="COMMENTS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-        </EntityType>
         <EntityType Name="TblTeacherInformation">
           <Key>
             <PropertyRef Name="ID" />
@@ -581,53 +568,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="STATUS" Type="Boolean" />
           <Property Name="TeachImage" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-        <EntityType Name="TblacadmicSession">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="AcadmicSession" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="Tblclasssection">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Group" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Teacher" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Maxstudent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="FloorId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="RoomNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="admissionfee" Type="Decimal" Precision="18" Scale="0" />
-          <Property Name="Fee" Type="Decimal" Precision="18" Scale="0" />
-          <Property Name="Comments" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Createddate" Type="DateTime" Precision="3" />
-          <Property Name="Updatedby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Updateddate" Type="DateTime" Precision="3" />
-          <Property Name="Acadmic_Session" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="examfee" Type="Decimal" Precision="18" Scale="0" />
-        </EntityType>
-        <EntityType Name="TbladdBus">
-          <Key>
-            <PropertyRef Name="BusID" />
-          </Key>
-          <Property Name="BusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Driver" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Busreg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Vehicletype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Seatcapacity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="Tblbusdestination">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Destination" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
         <EntityType Name="TBLUSER">
           <Key>
             <PropertyRef Name="User_ID" />
@@ -640,6 +580,17 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Status" Type="Boolean" />
           <Property Name="Password" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TransMaster">
+          <Key>
+            <PropertyRef Name="TID" />
+          </Key>
+          <Property Name="TID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Purpose" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Amount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Createdby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Createddate" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="UserDeatil">
           <Key>
@@ -657,69 +608,165 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="BusStop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="BussFee" Type="Decimal" Precision="18" Scale="0" />
         </EntityType>
+        <EntityType Name="firstformview">
+          <Key>
+            <PropertyRef Name="FID" />
+          </Key>
+          <Property Name="FID" Type="Int32" Nullable="false" />
+          <Property Name="SchoolName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="FIRSTADDRESS" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="SECONDADDRESS" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CONTACTA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CONTACTB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CONTACTC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FIRSTEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SECONDEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WEBSITE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LOGO" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="COMMENTS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="smartschooldbEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="FeeMasterSettings" EntityType="Self.FeeMasterSetting" />
+          <EntitySet Name="StudentFeeDetails" EntityType="Self.StudentFeeDetail" />
+          <EntitySet Name="TblacadmicSessions" EntityType="Self.TblacadmicSession" />
+          <EntitySet Name="TbladdBuses" EntityType="Self.TbladdBus" />
+          <EntitySet Name="TBLADDMISSIONs" EntityType="Self.TBLADDMISSION" />
+          <EntitySet Name="Tbladmissionprints" EntityType="Self.Tbladmissionprint" />
+          <EntitySet Name="Tblbusdestinations" EntityType="Self.Tblbusdestination" />
+          <EntitySet Name="Tblclasses" EntityType="Self.Tblclass" />
+          <EntitySet Name="Tblclasssections" EntityType="Self.Tblclasssection" />
+          <EntitySet Name="Tblschoolsettings" EntityType="Self.Tblschoolsetting" />
+          <EntitySet Name="TblSections" EntityType="Self.TblSection" />
+          <EntitySet Name="TBLSTUDENTENRROLs" EntityType="Self.TBLSTUDENTENRROL" />
+          <EntitySet Name="TblTeacherInformations" EntityType="Self.TblTeacherInformation" />
+          <EntitySet Name="TBLUSERs" EntityType="Self.TBLUSER" />
+          <EntitySet Name="TransMasters" EntityType="Self.TransMaster" />
+          <EntitySet Name="UserDeatils" EntityType="Self.UserDeatil" />
+          <EntitySet Name="Tblbusstops" EntityType="Self.Tblbusstop" />
+          <EntitySet Name="firstformviews" EntityType="Self.firstformview" />
+        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="smartschooldbModelStoreContainer" CdmEntityContainer="smartschooldbEntities">
+        <EntityContainerMapping StorageEntityContainer="smartschooldbModelStoreContainer" CdmEntityContainer="smartschooldbEntities1">
+          <EntitySetMapping Name="FeeMasterSettings">
+            <EntityTypeMapping TypeName="smartschooldbModel.FeeMasterSetting">
+              <MappingFragment StoreEntitySet="FeeMasterSettings">
+                <ScalarProperty Name="FID" ColumnName="FID" />
+                <ScalarProperty Name="Month_year" ColumnName="Month_year" />
+                <ScalarProperty Name="Stu_Class" ColumnName="Stu_Class" />
+                <ScalarProperty Name="Tuition_Fee" ColumnName="Tuition_Fee" />
+                <ScalarProperty Name="Tuition_Fee_Percent" ColumnName="Tuition_Fee_Percent" />
+                <ScalarProperty Name="Bus_Fee_Percent" ColumnName="Bus_Fee_Percent" />
+                <ScalarProperty Name="Late_Fee_Start" ColumnName="Late_Fee_Start" />
+                <ScalarProperty Name="Late_Fee" ColumnName="Late_Fee" />
+                <ScalarProperty Name="Printing_charges" ColumnName="Printing_charges" />
+                <ScalarProperty Name="Other_fee" ColumnName="Other_fee" />
+                <ScalarProperty Name="Other_Fee_Reference" ColumnName="Other_Fee_Reference" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentFeeDetails">
+            <EntityTypeMapping TypeName="smartschooldbModel.StudentFeeDetail">
+              <MappingFragment StoreEntitySet="StudentFeeDetails">
+                <ScalarProperty Name="STID" ColumnName="STID" />
+                <ScalarProperty Name="TID" ColumnName="TID" />
+                <ScalarProperty Name="FID" ColumnName="FID" />
+                <ScalarProperty Name="Tuition_Fee" ColumnName="Tuition_Fee" />
+                <ScalarProperty Name="Bus_Fee" ColumnName="Bus_Fee" />
+                <ScalarProperty Name="Printing_Charges" ColumnName="Printing_Charges" />
+                <ScalarProperty Name="Other_Fee" ColumnName="Other_Fee" />
+                <ScalarProperty Name="Late_Fee" ColumnName="Late_Fee" />
+                <ScalarProperty Name="Total_Fee" ColumnName="Total_Fee" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="Amount_Payable" ColumnName="Amount_Payable" />
+                <ScalarProperty Name="Amount_Paid" ColumnName="Amount_Paid" />
+                <ScalarProperty Name="Balance" ColumnName="Balance" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Createdby" ColumnName="Createdby" />
+                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblacadmicSessions">
+            <EntityTypeMapping TypeName="smartschooldbModel.TblacadmicSession">
+              <MappingFragment StoreEntitySet="TblacadmicSession">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AcadmicSession" ColumnName="AcadmicSession" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TbladdBuses">
+            <EntityTypeMapping TypeName="smartschooldbModel.TbladdBus">
+              <MappingFragment StoreEntitySet="TbladdBuses">
+                <ScalarProperty Name="BusID" ColumnName="BusID" />
+                <ScalarProperty Name="Driver" ColumnName="Driver" />
+                <ScalarProperty Name="Busreg" ColumnName="Busreg" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Vehicletype" ColumnName="Vehicletype" />
+                <ScalarProperty Name="Seatcapacity" ColumnName="Seatcapacity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="TBLADDMISSIONs">
             <EntityTypeMapping TypeName="smartschooldbModel.TBLADDMISSION">
               <MappingFragment StoreEntitySet="TBLADDMISSION">
-                <ScalarProperty Name="STUDENT_EMAIL_ADDRESS" ColumnName="STUDENT_EMAIL_ADDRESS" />
-                <ScalarProperty Name="SCHOOLNAME2" ColumnName="SCHOOLNAME2" />
-                <ScalarProperty Name="SCHOOLNAME1" ColumnName="SCHOOLNAME1" />
-                <ScalarProperty Name="CLAS2" ColumnName="CLAS2" />
-                <ScalarProperty Name="CLAS1" ColumnName="CLAS1" />
-                <ScalarProperty Name="STUDENTNAME2" ColumnName="STUDENTNAME2" />
-                <ScalarProperty Name="STUDENTNAME1" ColumnName="STUDENTNAME1" />
-                <ScalarProperty Name="PERCENTAGE2" ColumnName="PERCENTAGE2" />
-                <ScalarProperty Name="PERCENTAGE1" ColumnName="PERCENTAGE1" />
-                <ScalarProperty Name="TOTAL_MARKS2" ColumnName="TOTAL_MARKS2" />
-                <ScalarProperty Name="TOTAL_MARKS1" ColumnName="TOTAL_MARKS1" />
-                <ScalarProperty Name="OBTAIN_MARKS2" ColumnName="OBTAIN_MARKS2" />
-                <ScalarProperty Name="OBTAIN_MARKS1" ColumnName="OBTAIN_MARKS1" />
-                <ScalarProperty Name="GRADE2" ColumnName="GRADE2" />
-                <ScalarProperty Name="GRADE1" ColumnName="GRADE1" />
-                <ScalarProperty Name="BOARD_INSTITUTION2" ColumnName="BOARD/INSTITUTION2" />
-                <ScalarProperty Name="BOARD_INSTITUTION1" ColumnName="BOARD/INSTITUTION1" />
-                <ScalarProperty Name="YEAR2" ColumnName="YEAR2" />
-                <ScalarProperty Name="YEAR1" ColumnName="YEAR1" />
-                <ScalarProperty Name="ADMISSIONNO2" ColumnName="ADMISSIONNO2" />
-                <ScalarProperty Name="ADMISSIONNO1" ColumnName="ADMISSIONNO1" />
-                <ScalarProperty Name="EDUCATION2" ColumnName="EDUCATION2" />
-                <ScalarProperty Name="EDUCATION1" ColumnName="EDUCATION1" />
-                <ScalarProperty Name="BUSINESS_ADDRESS" ColumnName="BUSINESS_ADDRESS" />
-                <ScalarProperty Name="HOME_ADDRESS" ColumnName="HOME_ADDRESS" />
-                <ScalarProperty Name="S_CELL_NO" ColumnName="S_CELL_NO" />
-                <ScalarProperty Name="G_EMAIL" ColumnName="G_EMAIL" />
-                <ScalarProperty Name="G_BUSINESS_ADDRESS" ColumnName="G_BUSINESS_ADDRESS" />
-                <ScalarProperty Name="G_CELL_NO" ColumnName="G_CELL_NO" />
-                <ScalarProperty Name="G_MONTHLY_INCOM" ColumnName="G_MONTHLY_INCOM" />
-                <ScalarProperty Name="G_OCCUPATION" ColumnName="G_OCCUPATION" />
-                <ScalarProperty Name="G_CELL" ColumnName="G_CELL" />
-                <ScalarProperty Name="G_CNIC" ColumnName="G_CNIC" />
-                <ScalarProperty Name="G_NAME" ColumnName="G_NAME" />
-                <ScalarProperty Name="OFFICE_LANDLINE" ColumnName="OFFICE_LANDLINE" />
-                <ScalarProperty Name="FATHER_CELL_NO" ColumnName="FATHER_CELL_NO" />
-                <ScalarProperty Name="FATHER_CAST" ColumnName="FATHER_CAST" />
-                <ScalarProperty Name="HOME_TEL" ColumnName="HOME_TEL" />
-                <ScalarProperty Name="STUDENT_DOB" ColumnName="STUDENT_DOB" />
-                <ScalarProperty Name="FATHER_EMAIL" ColumnName="FATHER_EMAIL" />
                 <ScalarProperty Name="SID" ColumnName="SID" />
-                <ScalarProperty Name="CURRENTSESSION" ColumnName="CURRENTSESSION" />
                 <ScalarProperty Name="ADMISSION_FORM" ColumnName="ADMISSION_FORM" />
                 <ScalarProperty Name="STUDENT_NAME" ColumnName="STUDENT_NAME" />
                 <ScalarProperty Name="FATHER_NAME" ColumnName="FATHER_NAME" />
                 <ScalarProperty Name="STUDENT_NIC" ColumnName="STUDENT_NIC" />
+                <ScalarProperty Name="FATHER_EMAIL" ColumnName="FATHER_EMAIL" />
                 <ScalarProperty Name="FATHER_NIC" ColumnName="FATHER_NIC" />
                 <ScalarProperty Name="GENDER" ColumnName="GENDER" />
                 <ScalarProperty Name="RELIGION" ColumnName="RELIGION" />
                 <ScalarProperty Name="FATHER_OCCUPATION" ColumnName="FATHER_OCCUPATION" />
                 <ScalarProperty Name="ADMISSION_DATE" ColumnName="ADMISSION_DATE" />
+                <ScalarProperty Name="STUDENT_DOB" ColumnName="STUDENT_DOB" />
                 <ScalarProperty Name="PLACE_BIRTH" ColumnName="PLACE_BIRTH" />
                 <ScalarProperty Name="MONTHLY_INCOM" ColumnName="MONTHLY_INCOM" />
+                <ScalarProperty Name="HOME_TEL" ColumnName="HOME_TEL" />
+                <ScalarProperty Name="FATHER_CAST" ColumnName="FATHER_CAST" />
+                <ScalarProperty Name="FATHER_CELL_NO" ColumnName="FATHER_CELL_NO" />
+                <ScalarProperty Name="OFFICE_LANDLINE" ColumnName="OFFICE_LANDLINE" />
+                <ScalarProperty Name="CURRENTSESSION" ColumnName="CURRENTSESSION" />
+                <ScalarProperty Name="G_NAME" ColumnName="G_NAME" />
+                <ScalarProperty Name="G_CNIC" ColumnName="G_CNIC" />
+                <ScalarProperty Name="G_CELL" ColumnName="G_CELL" />
+                <ScalarProperty Name="G_OCCUPATION" ColumnName="G_OCCUPATION" />
+                <ScalarProperty Name="G_MONTHLY_INCOM" ColumnName="G_MONTHLY_INCOM" />
+                <ScalarProperty Name="G_CELL_NO" ColumnName="G_CELL_NO" />
+                <ScalarProperty Name="G_BUSINESS_ADDRESS" ColumnName="G_BUSINESS_ADDRESS" />
+                <ScalarProperty Name="G_EMAIL" ColumnName="G_EMAIL" />
+                <ScalarProperty Name="S_CELL_NO" ColumnName="S_CELL_NO" />
+                <ScalarProperty Name="HOME_ADDRESS" ColumnName="HOME_ADDRESS" />
+                <ScalarProperty Name="BUSINESS_ADDRESS" ColumnName="BUSINESS_ADDRESS" />
+                <ScalarProperty Name="EDUCATION1" ColumnName="EDUCATION1" />
+                <ScalarProperty Name="EDUCATION2" ColumnName="EDUCATION2" />
+                <ScalarProperty Name="ADMISSIONNO1" ColumnName="ADMISSIONNO1" />
+                <ScalarProperty Name="ADMISSIONNO2" ColumnName="ADMISSIONNO2" />
+                <ScalarProperty Name="YEAR1" ColumnName="YEAR1" />
+                <ScalarProperty Name="YEAR2" ColumnName="YEAR2" />
+                <ScalarProperty Name="BOARD_INSTITUTION1" ColumnName="BOARD/INSTITUTION1" />
+                <ScalarProperty Name="BOARD_INSTITUTION2" ColumnName="BOARD/INSTITUTION2" />
+                <ScalarProperty Name="GRADE1" ColumnName="GRADE1" />
+                <ScalarProperty Name="GRADE2" ColumnName="GRADE2" />
+                <ScalarProperty Name="OBTAIN_MARKS1" ColumnName="OBTAIN_MARKS1" />
+                <ScalarProperty Name="OBTAIN_MARKS2" ColumnName="OBTAIN_MARKS2" />
+                <ScalarProperty Name="TOTAL_MARKS1" ColumnName="TOTAL_MARKS1" />
+                <ScalarProperty Name="TOTAL_MARKS2" ColumnName="TOTAL_MARKS2" />
+                <ScalarProperty Name="PERCENTAGE1" ColumnName="PERCENTAGE1" />
+                <ScalarProperty Name="PERCENTAGE2" ColumnName="PERCENTAGE2" />
+                <ScalarProperty Name="STUDENTNAME1" ColumnName="STUDENTNAME1" />
+                <ScalarProperty Name="STUDENTNAME2" ColumnName="STUDENTNAME2" />
+                <ScalarProperty Name="CLAS1" ColumnName="CLAS1" />
+                <ScalarProperty Name="CLAS2" ColumnName="CLAS2" />
+                <ScalarProperty Name="SCHOOLNAME1" ColumnName="SCHOOLNAME1" />
+                <ScalarProperty Name="SCHOOLNAME2" ColumnName="SCHOOLNAME2" />
                 <ScalarProperty Name="BLOODGROUP" ColumnName="BLOODGROUP" />
+                <ScalarProperty Name="STUDENT_EMAIL_ADDRESS" ColumnName="STUDENT_EMAIL_ADDRESS" />
                 <ScalarProperty Name="ADMISSION_STATUS" ColumnName="ADMISSION_STATUS" />
                 <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
                 <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
@@ -740,11 +787,42 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Tblbusdestinations">
+            <EntityTypeMapping TypeName="smartschooldbModel.Tblbusdestination">
+              <MappingFragment StoreEntitySet="Tblbusdestination">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Destination" ColumnName="Destination" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Tblclasses">
             <EntityTypeMapping TypeName="smartschooldbModel.Tblclass">
               <MappingFragment StoreEntitySet="Tblclass">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CLASSNAME" ColumnName="CLASSNAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tblclasssections">
+            <EntityTypeMapping TypeName="smartschooldbModel.Tblclasssection">
+              <MappingFragment StoreEntitySet="Tblclasssection">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Section" ColumnName="Section" />
+                <ScalarProperty Name="Group" ColumnName="Group" />
+                <ScalarProperty Name="Teacher" ColumnName="Teacher" />
+                <ScalarProperty Name="Maxstudent" ColumnName="Maxstudent" />
+                <ScalarProperty Name="FloorId" ColumnName="FloorId" />
+                <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
+                <ScalarProperty Name="admissionfee" ColumnName="admissionfee" />
+                <ScalarProperty Name="Fee" ColumnName="Fee" />
+                <ScalarProperty Name="examfee" ColumnName="examfee" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
+                <ScalarProperty Name="Updatedby" ColumnName="Updatedby" />
+                <ScalarProperty Name="Updateddate" ColumnName="Updateddate" />
+                <ScalarProperty Name="Acadmic_Session" ColumnName="Acadmic_Session" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -790,179 +868,89 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="FeeMasterSettings">
-            <EntityTypeMapping TypeName="smartschooldbModel.FeeMasterSetting">
-              <MappingFragment StoreEntitySet="FeeMasterSettings">
-                <ScalarProperty Name="Other_Fee_Reference" ColumnName="Other_Fee_Reference" />
-                <ScalarProperty Name="Other_fee" ColumnName="Other_fee" />
-                <ScalarProperty Name="Printing_charges" ColumnName="Printing_charges" />
-                <ScalarProperty Name="Late_Fee" ColumnName="Late_Fee" />
-                <ScalarProperty Name="Late_Fee_Start" ColumnName="Late_Fee_Start" />
-                <ScalarProperty Name="Bus_Fee_Percent" ColumnName="Bus_Fee_Percent" />
-                <ScalarProperty Name="Tuition_Fee_Percent" ColumnName="Tuition_Fee_Percent" />
-                <ScalarProperty Name="Tuition_Fee" ColumnName="Tuition_Fee" />
-                <ScalarProperty Name="Stu_Class" ColumnName="Stu_Class" />
-                <ScalarProperty Name="Month_year" ColumnName="Month_year" />
-                <ScalarProperty Name="FID" ColumnName="FID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="StudentFeeDetails">
-            <EntityTypeMapping TypeName="smartschooldbModel.StudentFeeDetail">
-              <MappingFragment StoreEntitySet="StudentFeeDetails">
-                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
-                <ScalarProperty Name="Createdby" ColumnName="Createdby" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="Balance" ColumnName="Balance" />
-                <ScalarProperty Name="Amount_Paid" ColumnName="Amount_Paid" />
-                <ScalarProperty Name="Amount_Payable" ColumnName="Amount_Payable" />
-                <ScalarProperty Name="Discount" ColumnName="Discount" />
-                <ScalarProperty Name="Total_Fee" ColumnName="Total_Fee" />
-                <ScalarProperty Name="Late_Fee" ColumnName="Late_Fee" />
-                <ScalarProperty Name="Other_Fee" ColumnName="Other_Fee" />
-                <ScalarProperty Name="Printing_Charges" ColumnName="Printing_Charges" />
-                <ScalarProperty Name="Bus_Fee" ColumnName="Bus_Fee" />
-                <ScalarProperty Name="Tuition_Fee" ColumnName="Tuition_Fee" />
-                <ScalarProperty Name="FID" ColumnName="FID" />
-                <ScalarProperty Name="TID" ColumnName="TID" />
-                <ScalarProperty Name="STID" ColumnName="STID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="TransMasters">
-            <EntityTypeMapping TypeName="smartschooldbModel.TransMaster">
-              <MappingFragment StoreEntitySet="TransMaster">
-                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
-                <ScalarProperty Name="Createdby" ColumnName="Createdby" />
-                <ScalarProperty Name="TType" ColumnName="TType" />
-                <ScalarProperty Name="Amount" ColumnName="Amount" />
-                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
-                <ScalarProperty Name="TID" ColumnName="TID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="firstformviews">
-            <EntityTypeMapping TypeName="smartschooldbModel.firstformview">
-              <MappingFragment StoreEntitySet="firstformview">
-                <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
-                <ScalarProperty Name="LOGO" ColumnName="LOGO" />
-                <ScalarProperty Name="WEBSITE" ColumnName="WEBSITE" />
-                <ScalarProperty Name="SECONDEMAIL" ColumnName="SECONDEMAIL" />
-                <ScalarProperty Name="FIRSTEMAIL" ColumnName="FIRSTEMAIL" />
-                <ScalarProperty Name="CONTACTC" ColumnName="CONTACTC" />
-                <ScalarProperty Name="CONTACTB" ColumnName="CONTACTB" />
-                <ScalarProperty Name="CONTACTA" ColumnName="CONTACTA" />
-                <ScalarProperty Name="SECONDADDRESS" ColumnName="SECONDADDRESS" />
-                <ScalarProperty Name="FIRSTADDRESS" ColumnName="FIRSTADDRESS" />
-                <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
-                <ScalarProperty Name="FID" ColumnName="FID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="TblTeacherInformations">
             <EntityTypeMapping TypeName="smartschooldbModel.TblTeacherInformation">
               <MappingFragment StoreEntitySet="TblTeacherInformation">
-                <ScalarProperty Name="TeachImage" ColumnName="TeachImage" />
-                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
-                <ScalarProperty Name="CREATIONDATE" ColumnName="CREATIONDATE" />
-                <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
-                <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
-                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
-                <ScalarProperty Name="TEACHINGEXP" ColumnName="TEACHINGEXP" />
-                <ScalarProperty Name="POSITION" ColumnName="POSITION" />
-                <ScalarProperty Name="QUALIFICATION" ColumnName="QUALIFICATION" />
-                <ScalarProperty Name="JOININGDATE" ColumnName="JOININGDATE" />
-                <ScalarProperty Name="DOB" ColumnName="DOB" />
-                <ScalarProperty Name="SALAR" ColumnName="SALAR" />
-                <ScalarProperty Name="GENDER" ColumnName="GENDER" />
-                <ScalarProperty Name="OTHERCONTACT" ColumnName="OTHERCONTACT" />
-                <ScalarProperty Name="CELLNO" ColumnName="CELLNO" />
-                <ScalarProperty Name="FATHERNAME" ColumnName="FATHERNAME" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="TEACHERNAME" ColumnName="TEACHERNAME" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="TblacadmicSessions">
-            <EntityTypeMapping TypeName="smartschooldbModel.TblacadmicSession">
-              <MappingFragment StoreEntitySet="TblacadmicSession">
-                <ScalarProperty Name="AcadmicSession" ColumnName="AcadmicSession" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Tblclasssections">
-            <EntityTypeMapping TypeName="smartschooldbModel.Tblclasssection">
-              <MappingFragment StoreEntitySet="Tblclasssection">
-                <ScalarProperty Name="examfee" ColumnName="examfee" />
-                <ScalarProperty Name="Acadmic_Session" ColumnName="Acadmic_Session" />
-                <ScalarProperty Name="Updateddate" ColumnName="Updateddate" />
-                <ScalarProperty Name="Updatedby" ColumnName="Updatedby" />
-                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
-                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-                <ScalarProperty Name="Comments" ColumnName="Comments" />
-                <ScalarProperty Name="Fee" ColumnName="Fee" />
-                <ScalarProperty Name="admissionfee" ColumnName="admissionfee" />
-                <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
-                <ScalarProperty Name="FloorId" ColumnName="FloorId" />
-                <ScalarProperty Name="Maxstudent" ColumnName="Maxstudent" />
-                <ScalarProperty Name="Teacher" ColumnName="Teacher" />
-                <ScalarProperty Name="Group" ColumnName="Group" />
-                <ScalarProperty Name="Section" ColumnName="Section" />
-                <ScalarProperty Name="Class" ColumnName="Class" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="TbladdBuses">
-            <EntityTypeMapping TypeName="smartschooldbModel.TbladdBus">
-              <MappingFragment StoreEntitySet="TbladdBuses">
-                <ScalarProperty Name="Seatcapacity" ColumnName="Seatcapacity" />
-                <ScalarProperty Name="Vehicletype" ColumnName="Vehicletype" />
-                <ScalarProperty Name="Model" ColumnName="Model" />
-                <ScalarProperty Name="Busreg" ColumnName="Busreg" />
-                <ScalarProperty Name="Driver" ColumnName="Driver" />
-                <ScalarProperty Name="BusID" ColumnName="BusID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Tblbusdestinations">
-            <EntityTypeMapping TypeName="smartschooldbModel.Tblbusdestination">
-              <MappingFragment StoreEntitySet="Tblbusdestination">
-                <ScalarProperty Name="Destination" ColumnName="Destination" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FATHERNAME" ColumnName="FATHERNAME" />
+                <ScalarProperty Name="CELLNO" ColumnName="CELLNO" />
+                <ScalarProperty Name="OTHERCONTACT" ColumnName="OTHERCONTACT" />
+                <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+                <ScalarProperty Name="SALAR" ColumnName="SALAR" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="JOININGDATE" ColumnName="JOININGDATE" />
+                <ScalarProperty Name="QUALIFICATION" ColumnName="QUALIFICATION" />
+                <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+                <ScalarProperty Name="TEACHINGEXP" ColumnName="TEACHINGEXP" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+                <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+                <ScalarProperty Name="CREATIONDATE" ColumnName="CREATIONDATE" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="TeachImage" ColumnName="TeachImage" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TBLUSERs">
             <EntityTypeMapping TypeName="smartschooldbModel.TBLUSER">
               <MappingFragment StoreEntitySet="TBLUSER">
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="RegDate" ColumnName="RegDate" />
-                <ScalarProperty Name="UserType" ColumnName="UserType" />
-                <ScalarProperty Name="LastName" ColumnName="LastName" />
-                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+                <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TransMasters">
+            <EntityTypeMapping TypeName="smartschooldbModel.TransMaster">
+              <MappingFragment StoreEntitySet="TransMaster">
+                <ScalarProperty Name="TID" ColumnName="TID" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="TType" ColumnName="TType" />
+                <ScalarProperty Name="Createdby" ColumnName="Createdby" />
+                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UserDeatils">
             <EntityTypeMapping TypeName="smartschooldbModel.UserDeatil">
               <MappingFragment StoreEntitySet="UserDeatils">
-                <ScalarProperty Name="Loginend" ColumnName="Loginend" />
-                <ScalarProperty Name="Loginstart" ColumnName="Loginstart" />
                 <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="Loginstart" ColumnName="Loginstart" />
+                <ScalarProperty Name="Loginend" ColumnName="Loginend" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Tblbusstops">
             <EntityTypeMapping TypeName="smartschooldbModel.Tblbusstop">
               <MappingFragment StoreEntitySet="Tblbusstop">
-                <ScalarProperty Name="BussFee" ColumnName="BussFee" />
-                <ScalarProperty Name="BusStop" ColumnName="BusStop" />
                 <ScalarProperty Name="DID" ColumnName="DID" />
+                <ScalarProperty Name="BusStop" ColumnName="BusStop" />
+                <ScalarProperty Name="BussFee" ColumnName="BussFee" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="firstformviews">
+            <EntityTypeMapping TypeName="smartschooldbModel.firstformview">
+              <MappingFragment StoreEntitySet="firstformview">
+                <ScalarProperty Name="FID" ColumnName="FID" />
+                <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
+                <ScalarProperty Name="FIRSTADDRESS" ColumnName="FIRSTADDRESS" />
+                <ScalarProperty Name="SECONDADDRESS" ColumnName="SECONDADDRESS" />
+                <ScalarProperty Name="CONTACTA" ColumnName="CONTACTA" />
+                <ScalarProperty Name="CONTACTB" ColumnName="CONTACTB" />
+                <ScalarProperty Name="CONTACTC" ColumnName="CONTACTC" />
+                <ScalarProperty Name="FIRSTEMAIL" ColumnName="FIRSTEMAIL" />
+                <ScalarProperty Name="SECONDEMAIL" ColumnName="SECONDEMAIL" />
+                <ScalarProperty Name="WEBSITE" ColumnName="WEBSITE" />
+                <ScalarProperty Name="LOGO" ColumnName="LOGO" />
+                <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

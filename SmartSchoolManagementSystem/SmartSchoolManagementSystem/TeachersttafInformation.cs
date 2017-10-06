@@ -15,7 +15,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class TeachersttafInformation : Form
     {
-        smartschooldbEntities db = new smartschooldbEntities();
+        smartschooldbEntities1 db = new smartschooldbEntities1();
         string imgloc = "";
         public TeachersttafInformation()
         {

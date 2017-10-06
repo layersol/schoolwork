@@ -15,7 +15,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class Newadmission : Form
     {
-        smartschooldbEntities db = new smartschooldbEntities();
+        smartschooldbEntities1 db = new smartschooldbEntities1();
         public DataGridViewRow dgvr;
         int SystemID, ClassRollNo, uniqueID=0, admissionfee=0,discount=0, tutionfee=0, otherfee=0, result=0, busfee=0, classid=0;
         string imgloc = "";
@@ -52,7 +52,7 @@ namespace SmartSchoolManagementSystem
                             where s.CURRENTSESSION == "2017-2018"
                             select new
                             {
-                                ProductID = s.ID,
+                                ProductID = s.SID,
                                 Stock = s.STUDENT_NAME,
                             };
                 dvgstudent.DataSource = query.ToList();
@@ -66,12 +66,12 @@ namespace SmartSchoolManagementSystem
 
         private void GetSession()
         {
-            var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
+            //var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
 
-            foreach (var Sessionvalues in CurrentSession)
-            {
-                lblSession.Text = Convert.ToString(Sessionvalues.Session);
-            }
+            //foreach (var Sessionvalues in CurrentSession)
+            //{
+            //    lblSession.Text = Convert.ToString(Sessionvalues.Session);
+            //}
         }
         private void btnup_Click(object sender, EventArgs e)
         {
@@ -125,18 +125,18 @@ namespace SmartSchoolManagementSystem
                 objcontext.RELIGION = txtriligion.Text;
                 objcontext.FATHER_OCCUPATION = txtoccupation.Text;
                 objcontext.ADMISSION_DATE = System.DateTime.Now;
-                objcontext.DOB = Convert.ToDateTime(txtdob.Text);
+                objcontext.STUDENT_DOB = Convert.ToDateTime(txtdob.Text);
                 objcontext.PLACE_BIRTH = txtpob.Text;
                 objcontext.MONTHLY_INCOM = txtincom.Text;
-                objcontext.CAST = txtcast.Text;
-                objcontext.CELL_NO = txtcell.Text;
-                objcontext.LANDLINE = txtlandlin.Text;
-                objcontext.OTHER_NO = txtgcell.Text;
-                objcontext.CURRENT_ADDRESS = txtcurrentadress.Text;
-                objcontext.PERMANENT_ADDRESS = txtpadress.Text;
+                objcontext.FATHER_CAST = txtcast.Text;
+                objcontext.S_CELL_NO = txtcell.Text;
+                objcontext.FATHER_CELL_NO = txtlandlin.Text;
+                objcontext.HOME_TEL = txtgcell.Text;
+                objcontext.HOME_ADDRESS = txtcurrentadress.Text;
+                objcontext.BUSINESS_ADDRESS = txtpadress.Text;
                // objcontext.PREVIOUS_SCHOOL = txtprevious.Text;
-                objcontext.OBTAIN_MARKS = "10";
-                objcontext.TOTAL_MARKS = "8";
+                objcontext.OBTAIN_MARKS1 = "10";
+                objcontext.TOTAL_MARKS1 = "8";
                 objcontext.BLOODGROUP = cbbBloodGroup.Text;
               //  objcontext.EMAIL_ADDRESS = txtemail.Text;
                 objcontext.ADMISSION_STATUS = true;
@@ -145,10 +145,10 @@ namespace SmartSchoolManagementSystem
                 objcontext.CREATED_DATE = System.DateTime.Now;
                 db.TBLADDMISSIONs.Add(objcontext);
                 db.SaveChanges();
-                var qaNames = (from a in db.TBLADDMISSIONs select new { a.ID }).ToList();
+                var qaNames = (from a in db.TBLADDMISSIONs select new { a.SID }).ToList();
                 foreach (var GetsystemIDVal in qaNames)
                 {
-                    SystemID = GetsystemIDVal.ID;
+                    SystemID = GetsystemIDVal.SID;
                 }
                 if ((from c in db.TBLSTUDENTENRROLs where c.CLASSNAME == cbbclass.Text && c.SECTION == cbbsection.Text && c.ACADMICSESSION == lblSession.Text select c).Count() > 0)
                 {

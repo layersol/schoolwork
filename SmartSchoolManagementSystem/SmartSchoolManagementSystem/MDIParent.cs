@@ -13,7 +13,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class MDIParent : Form
     {
-        smartschooldbEntities db = new smartschooldbEntities();
+        smartschooldbEntities1 db = new smartschooldbEntities1();
         private int childFormNumber = 0;
         string val1, val2;
         [DllImport("user32.dll")]
@@ -263,11 +263,6 @@ namespace SmartSchoolManagementSystem
             schoolsettings frm = new schoolsettings();
             frm.MdiParent = this;
             frm.Show();
-        }
-
-        private void studentAttendanceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void MDIParent_Load(object sender, EventArgs e)

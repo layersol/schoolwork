@@ -117,23 +117,35 @@ namespace SmartSchoolManagementSystem
 
                 TBLADDMISSION objcontext = new TBLADDMISSION();
                 objcontext.ADMISSION_FORM = txtform.Text;
+
+
+
+
                 objcontext.STUDENT_NAME = txtstudentname.Text;
-                objcontext.FATHER_NAME = txtfname.Text;
-                objcontext.STUDENT_NIC = bform.Text;
-                objcontext.FATHER_NIC = maskedTextBox1.Text;
-                objcontext.GENDER = cbbgender.Text;
-                objcontext.RELIGION = txtriligion.Text;
-                objcontext.FATHER_OCCUPATION = txtoccupation.Text;
-                objcontext.ADMISSION_DATE = System.DateTime.Now;
                 objcontext.STUDENT_DOB = Convert.ToDateTime(txtdob.Text);
                 objcontext.PLACE_BIRTH = txtpob.Text;
+                objcontext.STUDENT_NIC = bform.Text;
+                objcontext.GENDER = cbbgender.Text;
+                objcontext.RELIGION = txtriligion.Text;
+                objcontext.S_CELL_NO = txtcell.Text;
+                objcontext.STUDENT_EMAIL_ADDRESS=
+
+                objcontext.FATHER_NAME = txtfname.Text;
+                objcontext.STUDENT_NIC = bform.Text;
+                objcontext.FATHER_NIC = txtcnic.Text;
+               
+              
+                objcontext.FATHER_OCCUPATION = txtoccupation.Text;
+                objcontext.ADMISSION_DATE = System.DateTime.Now;
+                
+                
                 objcontext.MONTHLY_INCOM = txtincom.Text;
                 objcontext.FATHER_CAST = txtcast.Text;
-                objcontext.S_CELL_NO = txtcell.Text;
-                objcontext.FATHER_CELL_NO = txtlandlin.Text;
-                objcontext.HOME_TEL = txtgcell.Text;
-                objcontext.HOME_ADDRESS = txtcurrentadress.Text;
-                objcontext.BUSINESS_ADDRESS = txtpadress.Text;
+               
+                objcontext.FATHER_CELL_NO = txtsmail.Text;
+                objcontext.HOME_TEL = txtfcell.Text;
+                objcontext.HOME_ADDRESS = txthomeadress.Text;
+                objcontext.BUSINESS_ADDRESS = txtofficeadress.Text;
                // objcontext.PREVIOUS_SCHOOL = txtprevious.Text;
                 objcontext.OBTAIN_MARKS1 = "10";
                 objcontext.TOTAL_MARKS1 = "8";
@@ -282,16 +294,16 @@ namespace SmartSchoolManagementSystem
         {
             CultureInfo cI = Thread.CurrentThread.CurrentCulture;
             TextInfo textInfo = cI.TextInfo;
-            textBox1.Text = textInfo.ToTitleCase(textBox1.Text);
-            textBox1.Select(textBox1.Text.Length, 1);
+            txtadminssion1.Text = textInfo.ToTitleCase(txtadminssion1.Text);
+            txtadminssion1.Select(txtadminssion1.Text.Length, 1);
         }
 
         private void textBox14_TextChanged(object sender, EventArgs e)
         {
             CultureInfo cI = Thread.CurrentThread.CurrentCulture;
             TextInfo textInfo = cI.TextInfo;
-            textBox14.Text = textInfo.ToTitleCase(textBox14.Text);
-            textBox14.Select(textBox14.Text.Length, 1);
+            txtadmission2.Text = textInfo.ToTitleCase(txtadmission2.Text);
+            txtadmission2.Select(txtadmission2.Text.Length, 1);
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
@@ -314,8 +326,8 @@ namespace SmartSchoolManagementSystem
         {
             CultureInfo cI = Thread.CurrentThread.CurrentCulture;
             TextInfo textInfo = cI.TextInfo;
-            txtcurrentadress.Text = textInfo.ToTitleCase(txtcurrentadress.Text);
-            txtcurrentadress.Select(txtcurrentadress.Text.Length, 1);
+            txthomeadress.Text = textInfo.ToTitleCase(txthomeadress.Text);
+            txthomeadress.Select(txthomeadress.Text.Length, 1);
         }
 
         private void txtcast_TextChanged(object sender, EventArgs e)
@@ -338,8 +350,8 @@ namespace SmartSchoolManagementSystem
         {
             CultureInfo cI = Thread.CurrentThread.CurrentCulture;
             TextInfo textInfo = cI.TextInfo;
-            txtpadress.Text = textInfo.ToTitleCase(txtpadress.Text);
-            txtpadress.Select(txtpadress.Text.Length, 1);
+            txtofficeadress.Text = textInfo.ToTitleCase(txtofficeadress.Text);
+            txtofficeadress.Select(txtofficeadress.Text.Length, 1);
 
         }
 

@@ -1784,6 +1784,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner1;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox2.Location = new System.Drawing.Point(2, -5);
             this.groupBox2.Name = "groupBox2";
@@ -1940,9 +1941,9 @@
             this.label57.AutoSize = true;
             this.label57.Location = new System.Drawing.Point(6, 14);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(68, 13);
+            this.label57.Size = new System.Drawing.Size(81, 13);
             this.label57.TabIndex = 0;
-            this.label57.Text = "Father Name";
+            this.label57.Text = "Guardian Name";
             // 
             // txtgoffice
             // 

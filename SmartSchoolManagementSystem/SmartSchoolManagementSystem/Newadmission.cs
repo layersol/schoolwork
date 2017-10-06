@@ -75,12 +75,12 @@ namespace SmartSchoolManagementSystem
 
         private void GetSession()
         {
-            //var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
+            var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
 
-            //foreach (var Sessionvalues in CurrentSession)
-            //{
-            //    lblSession.Text = Convert.ToString(Sessionvalues.Session);
-            //}
+            foreach (var Sessionvalues in CurrentSession)
+            {
+                lblSession.Text = Convert.ToString(Sessionvalues.Session);
+            }
         }
         private void btnup_Click(object sender, EventArgs e)
         {
@@ -129,7 +129,7 @@ namespace SmartSchoolManagementSystem
 
 
 
-
+                objcontext.CURRENTSESSION = lblSession.Text;
                 objcontext.STUDENT_NAME = txtstudentname.Text;
                 objcontext.STUDENT_DOB = Convert.ToDateTime(txtdob.Text);
                 objcontext.PLACE_BIRTH = txtpob.Text;
@@ -192,7 +192,7 @@ namespace SmartSchoolManagementSystem
 
                 objcontext.ADMISSION_DATE = System.DateTime.Now;
                 //objcontext.IMAGE = img;
-                objcontext.CREATED_BY = "1";
+                objcontext.CREATED_BY = txtcreatedby.Text;
                 objcontext.CREATED_DATE = System.DateTime.Now;
                 db.TBLADDMISSIONs.Add(objcontext);
                 db.SaveChanges();

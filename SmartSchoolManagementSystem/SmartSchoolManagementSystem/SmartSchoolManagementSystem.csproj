@@ -113,6 +113,12 @@
     <Compile Include="Add_New_Session.Designer.cs">
       <DependentUpon>Add_New_Session.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_Student_Bio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Student_Bio.Designer.cs">
+      <DependentUpon>Add_Student_Bio.cs</DependentUpon>
+    </Compile>
     <Compile Include="admissionform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,12 @@
     </Compile>
     <Compile Include="dailyfeecollectionprint.Designer.cs">
       <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEMO.Designer.cs">
+      <DependentUpon>DEMO.cs</DependentUpon>
     </Compile>
     <Compile Include="destination.cs">
       <SubType>Form</SubType>
@@ -219,6 +231,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SchoolModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -334,6 +351,9 @@
     <EmbeddedResource Include="Add_New_Session.resx">
       <DependentUpon>Add_New_Session.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add_Student_Bio.resx">
+      <DependentUpon>Add_Student_Bio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admissionform.resx">
       <DependentUpon>admissionform.cs</DependentUpon>
     </EmbeddedResource>
@@ -356,6 +376,9 @@
     <EmbeddedResource Include="dailyfeecollectionprint.resx">
       <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DEMO.resx">
+      <DependentUpon>DEMO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="destination.resx">
       <DependentUpon>destination.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,6 +399,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent.resx">
       <DependentUpon>MDIParent.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Newadmission.resx">
       <DependentUpon>Newadmission.cs</DependentUpon>
@@ -383,14 +407,9 @@
     <EmbeddedResource Include="printstudentcard.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="rptadmissionprint.rdlc" />
     <EmbeddedResource Include="rptdailyfeecollection.rdlc" />
     <EmbeddedResource Include="rptresultcard.rdlc" />
@@ -486,8 +505,6 @@
     <Content Include="images\shortcut.png" />
     <None Include="Resources\myhumber18.png" />
     <None Include="Resources\myhumberred20.png" />
-<<<<<<< HEAD
-=======
     <None Include="Resources\listingii.png" />
     <None Include="Resources\yellowlist.png" />
     <None Include="Resources\myhumberyello.png" />
@@ -496,7 +513,16 @@
     <None Include="Resources\Printer-iconyellow.png" />
     <None Include="Resources\informationyellow.png" />
     <None Include="Resources\Apps-Search-icon2.png" />
->>>>>>> 887cd8091d9564b1e255534f90c46990d32e28f4
+    <Content Include="SchoolModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SchoolModel.edmx</DependentUpon>
+      <LastGenOutput>SchoolModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SchoolModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SchoolModel.edmx</DependentUpon>
+      <LastGenOutput>SchoolModel.cs</LastGenOutput>
+    </Content>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -568,16 +594,6 @@
     <None Include="Resources\view1.png" />
     <Content Include="Resources\view2.png" />
     <None Include="Resources\view21.png" />
-    <Content Include="SchoolModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SchoolModel.edmx</DependentUpon>
-      <LastGenOutput>SchoolModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="SchoolModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SchoolModel.edmx</DependentUpon>
-      <LastGenOutput>SchoolModel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -12,7 +12,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class Add_Class_Section : Form
     {
-        smartschooldbEntities db = new smartschooldbEntities();
+        smartschooldbEntities1 db = new smartschooldbEntities1();
         public Add_Class_Section()
         {
             InitializeComponent();

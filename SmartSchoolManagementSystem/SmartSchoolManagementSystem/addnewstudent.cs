@@ -15,7 +15,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class addnewstudent : Form
     {
-        smartschooldbEntities db = new smartschooldbEntities();
+        smartschooldbEntities1 db = new smartschooldbEntities1();
        // string getID;
         public addnewstudent()
         {

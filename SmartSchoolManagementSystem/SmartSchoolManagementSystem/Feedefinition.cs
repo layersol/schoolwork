@@ -12,7 +12,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class Feedefinition : Form
     {
-        smartschooldbEntities db = new smartschooldbEntities();
+        smartschooldbEntities1 db = new smartschooldbEntities1();
         public Feedefinition()
         {
             InitializeComponent();

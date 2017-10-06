@@ -12,7 +12,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class Add_New_Session : Form
     {
-        smartschooldbEntities db = new smartschooldbEntities();
+        smartschooldbEntities1 db = new smartschooldbEntities1();
         public Add_New_Session()
         {
             InitializeComponent();

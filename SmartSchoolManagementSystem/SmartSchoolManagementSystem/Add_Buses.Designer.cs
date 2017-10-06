@@ -195,7 +195,7 @@
             this.groupBox2.Controls.Add(this.btnview);
             this.groupBox2.Location = new System.Drawing.Point(8, 289);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(605, 73);
+            this.groupBox2.Size = new System.Drawing.Size(605, 57);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Activty";
@@ -204,9 +204,8 @@
             // 
             this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Image = global::SmartSchoolManagementSystem.Properties.Resources.save;
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(106, 19);
+            this.btnsave.Location = new System.Drawing.Point(141, 12);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(94, 38);
             this.btnsave.TabIndex = 12;
@@ -218,9 +217,8 @@
             // 
             this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnew.Image = global::SmartSchoolManagementSystem.Properties.Resources.addblue;
             this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnew.Location = new System.Drawing.Point(11, 19);
+            this.btnnew.Location = new System.Drawing.Point(46, 12);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(94, 38);
             this.btnnew.TabIndex = 11;
@@ -232,9 +230,8 @@
             // 
             this.btnclose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose.Image = global::SmartSchoolManagementSystem.Properties.Resources.close;
             this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnclose.Location = new System.Drawing.Point(407, 19);
+            this.btnclose.Location = new System.Drawing.Point(442, 12);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(94, 38);
             this.btnclose.TabIndex = 16;
@@ -248,9 +245,8 @@
             this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.ForeColor = System.Drawing.Color.Black;
-            this.btnupdate.Image = global::SmartSchoolManagementSystem.Properties.Resources.Update;
             this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnupdate.Location = new System.Drawing.Point(201, 19);
+            this.btnupdate.Location = new System.Drawing.Point(236, 12);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(105, 38);
             this.btnupdate.TabIndex = 13;
@@ -262,9 +258,8 @@
             // 
             this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
             this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnview.Location = new System.Drawing.Point(307, 19);
+            this.btnview.Location = new System.Drawing.Point(342, 12);
             this.btnview.Name = "btnview";
             this.btnview.Size = new System.Drawing.Size(94, 38);
             this.btnview.TabIndex = 14;

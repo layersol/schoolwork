@@ -16,11 +16,11 @@ namespace SmartSchoolManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
+
             Application.Run(new Login());
-=======
-            Application.Run(new Feecollectiondetail());
->>>>>>> 887cd8091d9564b1e255534f90c46990d32e28f4
+
+            
+
         }
     }
 }

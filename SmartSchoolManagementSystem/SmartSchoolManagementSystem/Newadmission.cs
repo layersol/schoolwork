@@ -310,16 +310,16 @@ namespace SmartSchoolManagementSystem
         {
             CultureInfo cI = Thread.CurrentThread.CurrentCulture;
             TextInfo textInfo = cI.TextInfo;
-            textBox6.Text = textInfo.ToTitleCase(textBox6.Text);
-            textBox6.Select(textBox6.Text.Length, 1);
+            txttmark2.Text = textInfo.ToTitleCase(txttmark2.Text);
+            txttmark2.Select(txttmark2.Text.Length, 1);
         }
 
         private void textBox9_TextChanged(object sender, EventArgs e)
         {
             CultureInfo cI = Thread.CurrentThread.CurrentCulture;
             TextInfo textInfo = cI.TextInfo;
-            textBox9.Text = textInfo.ToTitleCase(textBox9.Text);
-            textBox9.Select(textBox9.Text.Length, 1);
+            txtobtain2.Text = textInfo.ToTitleCase(txtobtain2.Text);
+            txtobtain2.Select(txtobtain2.Text.Length, 1);
         }
 
         private void txtcurrentadress_TextChanged(object sender, EventArgs e)
@@ -367,8 +367,8 @@ namespace SmartSchoolManagementSystem
         {
             CultureInfo cI = Thread.CurrentThread.CurrentCulture;
             TextInfo textInfo = cI.TextInfo;
-            textBox22.Text = textInfo.ToTitleCase(textBox22.Text);
-            textBox22.Select(textBox22.Text.Length, 1);
+            txtschoolname1.Text = textInfo.ToTitleCase(txtschoolname1.Text);
+            txtschoolname1.Select(txtschoolname1.Text.Length, 1);
         }
 
         private void btnsearch_Click_1(object sender, EventArgs e)

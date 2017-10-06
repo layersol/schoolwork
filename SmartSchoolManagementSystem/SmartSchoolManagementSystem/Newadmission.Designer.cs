@@ -118,26 +118,26 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dvgstudent = new System.Windows.Forms.DataGridView();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtpercent2 = new System.Windows.Forms.TextBox();
+            this.txtobtain2 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.txttmark2 = new System.Windows.Forms.TextBox();
+            this.cbbgrad2 = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtpercent1 = new System.Windows.Forms.TextBox();
+            this.txtobtain1 = new System.Windows.Forms.TextBox();
+            this.cbbgrad1 = new System.Windows.Forms.ComboBox();
+            this.txttmark = new System.Windows.Forms.TextBox();
+            this.txtboard1 = new System.Windows.Forms.TextBox();
             this.txtpassyear = new System.Windows.Forms.TextBox();
             this.txtadminssion1 = new System.Windows.Forms.TextBox();
             this.groupBox35 = new System.Windows.Forms.GroupBox();
             this.groupBox36 = new System.Windows.Forms.GroupBox();
             this.groupBox44 = new System.Windows.Forms.GroupBox();
             this.groupBox45 = new System.Windows.Forms.GroupBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtboard2 = new System.Windows.Forms.TextBox();
             this.groupBox37 = new System.Windows.Forms.GroupBox();
             this.cbbedu2 = new System.Windows.Forms.ComboBox();
             this.groupBox38 = new System.Windows.Forms.GroupBox();
@@ -146,7 +146,7 @@
             this.groupBox41 = new System.Windows.Forms.GroupBox();
             this.groupBox42 = new System.Windows.Forms.GroupBox();
             this.groupBox43 = new System.Windows.Forms.GroupBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtpasyear2 = new System.Windows.Forms.TextBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.label40 = new System.Windows.Forms.Label();
             this.txtadmission2 = new System.Windows.Forms.TextBox();
@@ -199,15 +199,15 @@
             this.label61 = new System.Windows.Forms.Label();
             this.groupBox51 = new System.Windows.Forms.GroupBox();
             this.label66 = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.txtstname1 = new System.Windows.Forms.TextBox();
+            this.txtstname2 = new System.Windows.Forms.TextBox();
             this.groupBox50 = new System.Windows.Forms.GroupBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.txtinwhich2 = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
-            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.txtinwhich1 = new System.Windows.Forms.TextBox();
             this.groupBox48 = new System.Windows.Forms.GroupBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.txtschoolname2 = new System.Windows.Forms.TextBox();
+            this.txtschoolname1 = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
@@ -1197,17 +1197,17 @@
             // groupBox12
             // 
             this.groupBox12.BackColor = System.Drawing.Color.MistyRose;
-            this.groupBox12.Controls.Add(this.textBox31);
-            this.groupBox12.Controls.Add(this.textBox9);
+            this.groupBox12.Controls.Add(this.txtpercent2);
+            this.groupBox12.Controls.Add(this.txtobtain2);
             this.groupBox12.Controls.Add(this.label42);
-            this.groupBox12.Controls.Add(this.textBox6);
-            this.groupBox12.Controls.Add(this.comboBox6);
+            this.groupBox12.Controls.Add(this.txttmark2);
+            this.groupBox12.Controls.Add(this.cbbgrad2);
             this.groupBox12.Controls.Add(this.label39);
             this.groupBox12.Controls.Add(this.label41);
             this.groupBox12.Controls.Add(this.groupBox25);
-            this.groupBox12.Controls.Add(this.textBox11);
+            this.groupBox12.Controls.Add(this.txtboard2);
             this.groupBox12.Controls.Add(this.groupBox37);
-            this.groupBox12.Controls.Add(this.textBox12);
+            this.groupBox12.Controls.Add(this.txtpasyear2);
             this.groupBox12.Controls.Add(this.groupBox21);
             this.groupBox12.Controls.Add(this.txtadmission2);
             this.groupBox12.Controls.Add(this.groupBox22);
@@ -1221,21 +1221,21 @@
             this.groupBox12.TabIndex = 27;
             this.groupBox12.TabStop = false;
             // 
-            // textBox31
+            // txtpercent2
             // 
-            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox31.Location = new System.Drawing.Point(819, 81);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(74, 20);
-            this.textBox31.TabIndex = 50;
+            this.txtpercent2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpercent2.Location = new System.Drawing.Point(819, 81);
+            this.txtpercent2.Name = "txtpercent2";
+            this.txtpercent2.Size = new System.Drawing.Size(74, 20);
+            this.txtpercent2.TabIndex = 50;
             // 
-            // textBox9
+            // txtobtain2
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(728, 82);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(74, 20);
-            this.textBox9.TabIndex = 49;
+            this.txtobtain2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtobtain2.Location = new System.Drawing.Point(728, 82);
+            this.txtobtain2.Name = "txtobtain2";
+            this.txtobtain2.Size = new System.Drawing.Size(74, 20);
+            this.txtobtain2.TabIndex = 49;
             // 
             // label42
             // 
@@ -1246,28 +1246,28 @@
             this.label42.TabIndex = 53;
             this.label42.Text = "Obtained Marks";
             // 
-            // textBox6
+            // txttmark2
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(643, 83);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(74, 20);
-            this.textBox6.TabIndex = 47;
+            this.txttmark2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txttmark2.Location = new System.Drawing.Point(643, 83);
+            this.txttmark2.Name = "txttmark2";
+            this.txttmark2.Size = new System.Drawing.Size(74, 20);
+            this.txttmark2.TabIndex = 47;
             // 
-            // comboBox6
+            // cbbgrad2
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.cbbgrad2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbgrad2.FormattingEnabled = true;
+            this.cbbgrad2.Items.AddRange(new object[] {
             "A+",
             "A",
             "B",
             "C",
             "D"});
-            this.comboBox6.Location = new System.Drawing.Point(562, 81);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(60, 21);
-            this.comboBox6.TabIndex = 52;
+            this.cbbgrad2.Location = new System.Drawing.Point(562, 81);
+            this.cbbgrad2.Name = "cbbgrad2";
+            this.cbbgrad2.Size = new System.Drawing.Size(60, 21);
+            this.cbbgrad2.TabIndex = 52;
             // 
             // label39
             // 
@@ -1290,11 +1290,11 @@
             // 
             // groupBox25
             // 
-            this.groupBox25.Controls.Add(this.textBox30);
-            this.groupBox25.Controls.Add(this.textBox8);
-            this.groupBox25.Controls.Add(this.comboBox5);
-            this.groupBox25.Controls.Add(this.textBox7);
-            this.groupBox25.Controls.Add(this.textBox5);
+            this.groupBox25.Controls.Add(this.txtpercent1);
+            this.groupBox25.Controls.Add(this.txtobtain1);
+            this.groupBox25.Controls.Add(this.cbbgrad1);
+            this.groupBox25.Controls.Add(this.txttmark);
+            this.groupBox25.Controls.Add(this.txtboard1);
             this.groupBox25.Controls.Add(this.txtpassyear);
             this.groupBox25.Controls.Add(this.txtadminssion1);
             this.groupBox25.Controls.Add(this.groupBox35);
@@ -1307,52 +1307,52 @@
             this.groupBox25.TabIndex = 41;
             this.groupBox25.TabStop = false;
             // 
-            // textBox30
+            // txtpercent1
             // 
-            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox30.Location = new System.Drawing.Point(650, 7);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(74, 20);
-            this.textBox30.TabIndex = 49;
+            this.txtpercent1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpercent1.Location = new System.Drawing.Point(650, 7);
+            this.txtpercent1.Name = "txtpercent1";
+            this.txtpercent1.Size = new System.Drawing.Size(74, 20);
+            this.txtpercent1.TabIndex = 49;
             // 
-            // textBox8
+            // txtobtain1
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(557, 9);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(74, 20);
-            this.textBox8.TabIndex = 48;
+            this.txtobtain1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtobtain1.Location = new System.Drawing.Point(557, 9);
+            this.txtobtain1.Name = "txtobtain1";
+            this.txtobtain1.Size = new System.Drawing.Size(74, 20);
+            this.txtobtain1.TabIndex = 48;
             // 
-            // comboBox5
+            // cbbgrad1
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cbbgrad1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbgrad1.FormattingEnabled = true;
+            this.cbbgrad1.Items.AddRange(new object[] {
             "A+",
             "A",
             "B",
             "C",
             "D"});
-            this.comboBox5.Location = new System.Drawing.Point(393, 8);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(60, 21);
-            this.comboBox5.TabIndex = 47;
+            this.cbbgrad1.Location = new System.Drawing.Point(393, 8);
+            this.cbbgrad1.Name = "cbbgrad1";
+            this.cbbgrad1.Size = new System.Drawing.Size(60, 21);
+            this.cbbgrad1.TabIndex = 47;
             // 
-            // textBox7
+            // txttmark
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(474, 8);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(74, 20);
-            this.textBox7.TabIndex = 46;
+            this.txttmark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txttmark.Location = new System.Drawing.Point(474, 8);
+            this.txttmark.Name = "txttmark";
+            this.txttmark.Size = new System.Drawing.Size(74, 20);
+            this.txttmark.TabIndex = 46;
             // 
-            // textBox5
+            // txtboard1
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(216, 9);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(139, 20);
-            this.textBox5.TabIndex = 44;
+            this.txtboard1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtboard1.Location = new System.Drawing.Point(216, 9);
+            this.txtboard1.Name = "txtboard1";
+            this.txtboard1.Size = new System.Drawing.Size(139, 20);
+            this.txtboard1.TabIndex = 44;
             // 
             // txtpassyear
             // 
@@ -1403,13 +1403,13 @@
             this.groupBox45.TabIndex = 34;
             this.groupBox45.TabStop = false;
             // 
-            // textBox11
+            // txtboard2
             // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Location = new System.Drawing.Point(385, 81);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(139, 20);
-            this.textBox11.TabIndex = 49;
+            this.txtboard2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtboard2.Location = new System.Drawing.Point(385, 81);
+            this.txtboard2.Name = "txtboard2";
+            this.txtboard2.Size = new System.Drawing.Size(139, 20);
+            this.txtboard2.TabIndex = 49;
             // 
             // groupBox37
             // 
@@ -1489,13 +1489,13 @@
             this.groupBox43.TabIndex = 34;
             this.groupBox43.TabStop = false;
             // 
-            // textBox12
+            // txtpasyear2
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Location = new System.Drawing.Point(274, 81);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(97, 20);
-            this.textBox12.TabIndex = 48;
+            this.txtpasyear2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpasyear2.Location = new System.Drawing.Point(274, 81);
+            this.txtpasyear2.Name = "txtpasyear2";
+            this.txtpasyear2.Size = new System.Drawing.Size(97, 20);
+            this.txtpasyear2.TabIndex = 48;
             // 
             // groupBox21
             // 
@@ -1995,8 +1995,8 @@
             // groupBox51
             // 
             this.groupBox51.Controls.Add(this.label66);
-            this.groupBox51.Controls.Add(this.textBox39);
-            this.groupBox51.Controls.Add(this.textBox42);
+            this.groupBox51.Controls.Add(this.txtstname1);
+            this.groupBox51.Controls.Add(this.txtstname2);
             this.groupBox51.Location = new System.Drawing.Point(0, -1);
             this.groupBox51.Name = "groupBox51";
             this.groupBox51.Size = new System.Drawing.Size(237, 102);
@@ -2012,40 +2012,40 @@
             this.label66.TabIndex = 37;
             this.label66.Text = "Student Name";
             // 
-            // textBox39
+            // txtstname1
             // 
-            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox39.Location = new System.Drawing.Point(8, 41);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(206, 20);
-            this.textBox39.TabIndex = 42;
+            this.txtstname1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtstname1.Location = new System.Drawing.Point(8, 41);
+            this.txtstname1.Name = "txtstname1";
+            this.txtstname1.Size = new System.Drawing.Size(206, 20);
+            this.txtstname1.TabIndex = 42;
             // 
-            // textBox42
+            // txtstname2
             // 
-            this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox42.Location = new System.Drawing.Point(8, 75);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(206, 20);
-            this.textBox42.TabIndex = 47;
+            this.txtstname2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtstname2.Location = new System.Drawing.Point(8, 75);
+            this.txtstname2.Name = "txtstname2";
+            this.txtstname2.Size = new System.Drawing.Size(206, 20);
+            this.txtstname2.TabIndex = 47;
             // 
             // groupBox50
             // 
-            this.groupBox50.Controls.Add(this.textBox40);
+            this.groupBox50.Controls.Add(this.txtinwhich2);
             this.groupBox50.Controls.Add(this.label65);
-            this.groupBox50.Controls.Add(this.textBox41);
+            this.groupBox50.Controls.Add(this.txtinwhich1);
             this.groupBox50.Location = new System.Drawing.Point(238, -1);
             this.groupBox50.Name = "groupBox50";
             this.groupBox50.Size = new System.Drawing.Size(241, 102);
             this.groupBox50.TabIndex = 29;
             this.groupBox50.TabStop = false;
             // 
-            // textBox40
+            // txtinwhich2
             // 
-            this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox40.Location = new System.Drawing.Point(12, 75);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(223, 20);
-            this.textBox40.TabIndex = 49;
+            this.txtinwhich2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtinwhich2.Location = new System.Drawing.Point(12, 75);
+            this.txtinwhich2.Name = "txtinwhich2";
+            this.txtinwhich2.Size = new System.Drawing.Size(223, 20);
+            this.txtinwhich2.TabIndex = 49;
             // 
             // label65
             // 
@@ -2056,18 +2056,18 @@
             this.label65.TabIndex = 37;
             this.label65.Text = "In Which Class";
             // 
-            // textBox41
+            // txtinwhich1
             // 
-            this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox41.Location = new System.Drawing.Point(12, 41);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(223, 20);
-            this.textBox41.TabIndex = 48;
+            this.txtinwhich1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtinwhich1.Location = new System.Drawing.Point(12, 41);
+            this.txtinwhich1.Name = "txtinwhich1";
+            this.txtinwhich1.Size = new System.Drawing.Size(223, 20);
+            this.txtinwhich1.TabIndex = 48;
             // 
             // groupBox48
             // 
-            this.groupBox48.Controls.Add(this.textBox32);
-            this.groupBox48.Controls.Add(this.textBox22);
+            this.groupBox48.Controls.Add(this.txtschoolname2);
+            this.groupBox48.Controls.Add(this.txtschoolname1);
             this.groupBox48.Controls.Add(this.label64);
             this.groupBox48.Location = new System.Drawing.Point(479, -1);
             this.groupBox48.Name = "groupBox48";
@@ -2075,21 +2075,21 @@
             this.groupBox48.TabIndex = 29;
             this.groupBox48.TabStop = false;
             // 
-            // textBox32
+            // txtschoolname2
             // 
-            this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox32.Location = new System.Drawing.Point(6, 75);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(456, 20);
-            this.textBox32.TabIndex = 51;
+            this.txtschoolname2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtschoolname2.Location = new System.Drawing.Point(6, 75);
+            this.txtschoolname2.Name = "txtschoolname2";
+            this.txtschoolname2.Size = new System.Drawing.Size(456, 20);
+            this.txtschoolname2.TabIndex = 51;
             // 
-            // textBox22
+            // txtschoolname1
             // 
-            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox22.Location = new System.Drawing.Point(6, 41);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(456, 20);
-            this.textBox22.TabIndex = 50;
+            this.txtschoolname1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtschoolname1.Location = new System.Drawing.Point(6, 41);
+            this.txtschoolname1.Name = "txtschoolname1";
+            this.txtschoolname1.Size = new System.Drawing.Size(456, 20);
+            this.txtschoolname1.TabIndex = 50;
             // 
             // label64
             // 
@@ -2378,16 +2378,16 @@
         private System.Windows.Forms.TextBox txtcreatedby;
         private System.Windows.Forms.Label lblSession;
         private System.Windows.Forms.GroupBox groupBox25;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txttmark;
+        private System.Windows.Forms.TextBox txtboard1;
         private System.Windows.Forms.TextBox txtpassyear;
         private System.Windows.Forms.TextBox txtadminssion1;
         private System.Windows.Forms.GroupBox groupBox35;
         private System.Windows.Forms.GroupBox groupBox36;
         private System.Windows.Forms.GroupBox groupBox44;
         private System.Windows.Forms.GroupBox groupBox45;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtboard2;
+        private System.Windows.Forms.TextBox txtpasyear2;
         private System.Windows.Forms.TextBox txtadmission2;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.ComboBox cbbmedium;
@@ -2413,14 +2413,14 @@
         private System.Windows.Forms.TextBox txtgoffice;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtpercent2;
+        private System.Windows.Forms.TextBox txtobtain2;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.TextBox txttmark2;
+        private System.Windows.Forms.ComboBox cbbgrad2;
+        private System.Windows.Forms.TextBox txtpercent1;
+        private System.Windows.Forms.TextBox txtobtain1;
+        private System.Windows.Forms.ComboBox cbbgrad1;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.TextBox textBox15;
@@ -2432,17 +2432,17 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.GroupBox groupBox51;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox txtstname1;
+        private System.Windows.Forms.TextBox txtstname2;
         private System.Windows.Forms.GroupBox groupBox50;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.GroupBox groupBox48;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.TextBox txtinwhich1;
+        private System.Windows.Forms.TextBox txtinwhich2;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox txtschoolname2;
+        private System.Windows.Forms.TextBox txtschoolname1;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label62;

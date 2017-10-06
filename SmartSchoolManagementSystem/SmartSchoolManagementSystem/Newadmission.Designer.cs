@@ -1786,7 +1786,7 @@
             // groupBox2
             // 
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox2.Location = new System.Drawing.Point(1199, 12);
+            this.groupBox2.Location = new System.Drawing.Point(856, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(33, 54);
             this.groupBox2.TabIndex = 1;
@@ -2195,7 +2195,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1275, 741);
+            this.ClientSize = new System.Drawing.Size(1176, 865);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label2);

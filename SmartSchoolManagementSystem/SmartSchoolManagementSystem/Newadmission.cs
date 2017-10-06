@@ -151,7 +151,7 @@ namespace SmartSchoolManagementSystem
                 objcontext.OFFICE_LANDLINE = txtofficetel.Text;
                 objcontext.FATHER_CAST = txtcast.Text;
                 objcontext.BUSINESS_ADDRESS = txtofficeadress.Text;
-
+                objcontext.CURRENTSESSION = "2017-2018";     ///     check this again
                 objcontext.G_NAME = txtgname.Text;
                 objcontext.G_CNIC = txtgcnic.Text;
                 objcontext.G_CELL = txtgcell.Text;
@@ -181,8 +181,8 @@ namespace SmartSchoolManagementSystem
                 objcontext.PERCENTAGE2 = txtpercent2.Text;
 
 
-                objcontext.STUDENTNAME1 = txttmark.Text;
-                objcontext.STUDENTNAME1 = txttmark2.Text;
+                objcontext.STUDENTNAME1 = txtstname1.Text;
+                objcontext.STUDENTNAME1 = txtstname2.Text;
                 objcontext.CLAS1 = txtinwhich1.Text;
                 objcontext.CLAS2 = txtinwhich2.Text;
                 objcontext.SCHOOLNAME1 = txtschoolname1.Text;
@@ -190,7 +190,7 @@ namespace SmartSchoolManagementSystem
 
 
 
-               // objcontext.ADMISSION_STATUS = true;
+                objcontext.ADMISSION_DATE = System.DateTime.Now;
                 //objcontext.IMAGE = img;
                 objcontext.CREATED_BY = "1";
                 objcontext.CREATED_DATE = System.DateTime.Now;

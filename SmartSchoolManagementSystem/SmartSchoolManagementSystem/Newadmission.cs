@@ -145,43 +145,44 @@ namespace SmartSchoolManagementSystem
                 objcontext.CREATED_DATE = System.DateTime.Now;
                 db.TBLADDMISSIONs.Add(objcontext);
                 db.SaveChanges();
-                var qaNames = (from a in db.TBLADDMISSIONs select new { a.SID }).ToList();
-                foreach (var GetsystemIDVal in qaNames)
-                {
-                    SystemID = GetsystemIDVal.SID;
-                }
-                if ((from c in db.TBLSTUDENTENRROLs where c.CLASSNAME == cbbclass.Text && c.SECTION == cbbsection.Text && c.ACADMICSESSION == lblSession.Text select c).Count() > 0)
-                {
-                    //var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs.OrderByDescending(c => c.ClassId) select new { Getsystem = c.Student_ID, };
-                    var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs select new { Getsystem = c.Student_ID, };
 
-                    foreach (var GetstudentRoll in GetStudentRollNo)
-                    {
-                        int ClassNo = Convert.ToInt16(GetstudentRoll.Getsystem);
-                        int val = 1;
-                        ClassRollNo = ClassNo + val;
-                        //  txtemail.Text = ClassRollNo.ToString();
-                    }
-                }
+                //var qaNames = (from a in db.TBLADDMISSIONs select new { a.SID }).ToList();
+                //foreach (var GetsystemIDVal in qaNames)
+                //{
+                //    SystemID = GetsystemIDVal.SID;
+                //}
+                //if ((from c in db.TBLSTUDENTENRROLs where c.CLASSNAME == cbbclass.Text && c.SECTION == cbbsection.Text && c.ACADMICSESSION == lblSession.Text select c).Count() > 0)
+                //{
+                //    //var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs.OrderByDescending(c => c.ClassId) select new { Getsystem = c.Student_ID, };
+                //    var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs select new { Getsystem = c.Student_ID, };
 
-                else { ClassRollNo = 1; }
-                TBLSTUDENTENRROL objEnRoll = new TBLSTUDENTENRROL();
-                {
-                    objEnRoll.SystemId = SystemID;
-                    objEnRoll.Student_ID = ClassRollNo;
-                    objEnRoll.CLASSNAME = cbbclass.Text;
-                    objEnRoll.SECTION = cbbsection.Text;
-                    objEnRoll.ACADMICSESSION = lblSession.Text;
-                    objEnRoll.CREATED_BY = "1";
-                    objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
-                    db.TBLSTUDENTENRROLs.Add(objEnRoll);
-                    db.SaveChanges();
-                }
-                var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
-                foreach (var GetstudentRoll in GetStudentRoll)
-                {
-                    classid = Convert.ToInt16(GetstudentRoll.Getclass);
-                }
+                //    foreach (var GetstudentRoll in GetStudentRollNo)
+                //    {
+                //        int ClassNo = Convert.ToInt16(GetstudentRoll.Getsystem);
+                //        int val = 1;
+                //        ClassRollNo = ClassNo + val;
+                //        //  txtemail.Text = ClassRollNo.ToString();
+                //    }
+                //}
+
+                //else { ClassRollNo = 1; }
+                //TBLSTUDENTENRROL objEnRoll = new TBLSTUDENTENRROL();
+                //{
+                //    objEnRoll.SystemId = SystemID;
+                //    objEnRoll.Student_ID = ClassRollNo;
+                //    objEnRoll.CLASSNAME = cbbclass.Text;
+                //    objEnRoll.SECTION = cbbsection.Text;
+                //    objEnRoll.ACADMICSESSION = lblSession.Text;
+                //    objEnRoll.CREATED_BY = "1";
+                //    objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
+                //    db.TBLSTUDENTENRROLs.Add(objEnRoll);
+                //    db.SaveChanges();
+                //}
+                //var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
+                //foreach (var GetstudentRoll in GetStudentRoll)
+                //{
+                //    classid = Convert.ToInt16(GetstudentRoll.Getclass);
+                //}
                 //TBLACCOUNT objfee = new TBLACCOUNT();
                 //{
                 //    objfee.SystemId = SystemID;
@@ -201,6 +202,8 @@ namespace SmartSchoolManagementSystem
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
+
+            MessageBox.Show("Student has been Successfully add.!");
         }
 
         private void label40_Click(object sender, EventArgs e)

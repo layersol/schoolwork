@@ -129,32 +129,37 @@ namespace SmartSchoolManagementSystem
 
         private void btnview_Click(object sender, EventArgs e)
         {
-            var q = (from a in db.Tblschoolsettings
-                     where a.ID == 1
-                     select a).SingleOrDefault();
-            PID = q.ID;
-            txtname.Text = q.SchoolName;
-
-            txtcontacta.Text = q.CONTACTA;
-            txtcontactb.Text = q.CONTACTB;
-            txtcontactb.Text = q.CONTACTC;
-            txtemail.Text = q.FIRSTEMAIL;
-            txtemail.Text = q.SECONDEMAIL;
-            txtwebsite.Text = q.WEBSITE;
-            addressa.Text = q.FIRSTADDRESS;
-            txtaddressb.Text = q.SECONDADDRESS;
-            txtcommnets.Text = q.COMMENTS;
-            // imgpicturebox.ImageLocation =Convert.ToString(q.LOGO);
-            if (q != null)
+            try
             {
-                using (var ms = new MemoryStream(q.LOGO))
+                var q = (from a in db.Tblschoolsettings
+                         where a.ID == 1
+                         select a).SingleOrDefault();
+                PID = q.ID;
+                txtname.Text = q.SchoolName;
+
+                txtcontacta.Text = q.CONTACTA;
+                txtcontactb.Text = q.CONTACTB;
+                txtcontactb.Text = q.CONTACTC;
+                txtemail.Text = q.FIRSTEMAIL;
+                txtemail.Text = q.SECONDEMAIL;
+                txtwebsite.Text = q.WEBSITE;
+                addressa.Text = q.FIRSTADDRESS;
+                txtaddressb.Text = q.SECONDADDRESS;
+                txtcommnets.Text = q.COMMENTS;
+                // imgpicturebox.ImageLocation =Convert.ToString(q.LOGO);
+                if (q != null)
                 {
-                    using (var image = Image.FromStream(ms))
+                    using (var ms = new MemoryStream(q.LOGO))
                     {
-                        imgpicturebox.Image = (Image)image.Clone();
+                        using (var image = Image.FromStream(ms))
+                        {
+                            imgpicturebox.Image = (Image)image.Clone();
+                        }
                     }
                 }
             }
+            catch(Exception ex)
+            { MessageBox.Show(ex.Message); }
         }
 
         private void btnupdate_Click(object sender, EventArgs e)

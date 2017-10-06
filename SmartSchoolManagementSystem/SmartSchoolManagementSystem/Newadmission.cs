@@ -25,8 +25,17 @@ namespace SmartSchoolManagementSystem
             GetSession();
             Getdropdown();
         }
-
-         private void Getdropdown()
+        private byte[] convertfiletobyte(string sPath)
+        {
+            byte[] data = null;
+            FileInfo finfo = new FileInfo(sPath);
+            long numBytes = finfo.Length;
+            FileStream fStream = new FileStream(sPath, FileMode.Open, FileAccess.Read);
+            BinaryReader br = new BinaryReader(fStream);
+            data = br.ReadBytes((int)numBytes);
+            return data;
+        }
+        private void Getdropdown()
         {
             var Getclass = (from a in db.Tblclasses
                            //where a.Class == cbbclass.SelectedItem.ToString()
@@ -105,12 +114,12 @@ namespace SmartSchoolManagementSystem
         {
             try
             {
-                byte[] img = null;
-                FileStream fs = new FileStream(imgloc, System.IO.FileMode.Open, System.IO.FileAccess.Read);
-                byte[] image = new byte[fs.Length];
-                fs.Read(image, 0, Convert.ToInt32(fs.Length));
-                BinaryReader br = new BinaryReader(fs);
-                img = br.ReadBytes((int)fs.Length);
+                //byte[] img = null;
+                //FileStream fs = new FileStream(imgloc, System.IO.FileMode.Open, System.IO.FileAccess.Read);
+                //byte[] image = new byte[fs.Length];
+                //fs.Read(image, 0, Convert.ToInt32(fs.Length));
+                //BinaryReader br = new BinaryReader(fs);
+                //img = br.ReadBytes((int)fs.Length);
                 // testimage ins = new testimage();
                 // ins.Photo = img;
 
@@ -128,31 +137,61 @@ namespace SmartSchoolManagementSystem
                 objcontext.GENDER = cbbgender.Text;
                 objcontext.RELIGION = txtriligion.Text;
                 objcontext.S_CELL_NO = txtcell.Text;
-                objcontext.STUDENT_EMAIL_ADDRESS=
+                objcontext.STUDENT_EMAIL_ADDRESS = txtsmail.Text;
+                objcontext.ADMISSION_STATUS = ckbstatus.Checked;
+                objcontext.HOME_ADDRESS = txthomeadress.Text;
+                objcontext.BLOODGROUP = cbbBloodGroup.Text;
+                objcontext.IMAGE= convertfiletobyte(this.imgpicturebox.ImageLocation);
 
                 objcontext.FATHER_NAME = txtfname.Text;
-                objcontext.STUDENT_NIC = bform.Text;
                 objcontext.FATHER_NIC = txtcnic.Text;
-               
-              
-                objcontext.FATHER_OCCUPATION = txtoccupation.Text;
-                objcontext.ADMISSION_DATE = System.DateTime.Now;
-                
-                
+                objcontext.FATHER_CELL_NO = txtfcell.Text;                            
+                objcontext.FATHER_OCCUPATION = txtoccupation.Text;                                
                 objcontext.MONTHLY_INCOM = txtincom.Text;
+                objcontext.OFFICE_LANDLINE = txtofficetel.Text;
                 objcontext.FATHER_CAST = txtcast.Text;
-               
-                objcontext.FATHER_CELL_NO = txtsmail.Text;
-                objcontext.HOME_TEL = txtfcell.Text;
-                objcontext.HOME_ADDRESS = txthomeadress.Text;
                 objcontext.BUSINESS_ADDRESS = txtofficeadress.Text;
-               // objcontext.PREVIOUS_SCHOOL = txtprevious.Text;
-                objcontext.OBTAIN_MARKS1 = "10";
-                objcontext.TOTAL_MARKS1 = "8";
-                objcontext.BLOODGROUP = cbbBloodGroup.Text;
-              //  objcontext.EMAIL_ADDRESS = txtemail.Text;
-                objcontext.ADMISSION_STATUS = true;
-                objcontext.IMAGE = img;
+
+                objcontext.G_NAME = txtgname.Text;
+                objcontext.G_CNIC = txtgcnic.Text;
+                objcontext.G_CELL = txtgcell.Text;
+               objcontext.G_OCCUPATION = txtgoccupatio.Text;
+                objcontext.G_MONTHLY_INCOM = txtgmonthincom.Text;
+                objcontext.G_CELL_NO =txtgcell.Text;
+                objcontext.G_BUSINESS_ADDRESS = txtgoffice.Text;
+
+
+                //objcontext.EMAIL_ADDRESS = txtemail.Text;
+                objcontext.EDUCATION1 = cbbedu1.Text;
+                objcontext.EDUCATION2 = cbbedu2.Text;
+                objcontext.ADMISSIONNO1 = txtadminssion1.Text;
+                objcontext.ADMISSIONNO2 = txtadmission2.Text;
+                objcontext.YEAR1 = txtpassyear.Text;
+                objcontext.YEAR2 = txtpasyear2.Text;
+                objcontext.BOARD_INSTITUTION1 = txtboard1.Text;
+                objcontext.BOARD_INSTITUTION2 = txtboard2.Text;
+                objcontext.BOARD_INSTITUTION2 = txtboard2.Text;
+                objcontext.GRADE1 = cbbgrad1.Text;
+                objcontext.GRADE2 = cbbgrad2.Text;
+                objcontext.TOTAL_MARKS1 = txttmark.Text;
+                objcontext.TOTAL_MARKS2 = txttmark2.Text;
+                objcontext.OBTAIN_MARKS1 = txtobtain1.Text;
+                objcontext.OBTAIN_MARKS2 = txtobtain2.Text;
+                objcontext.PERCENTAGE1 = txtpercent1.Text;
+                objcontext.PERCENTAGE2 = txtpercent2.Text;
+
+
+                objcontext.STUDENTNAME1 = txttmark.Text;
+                objcontext.STUDENTNAME1 = txttmark2.Text;
+                objcontext.CLAS1 = txtinwhich1.Text;
+                objcontext.CLAS2 = txtinwhich2.Text;
+                objcontext.SCHOOLNAME1 = txtschoolname1.Text;
+                objcontext.SCHOOLNAME2 = txtschool2.Text;
+
+
+
+               // objcontext.ADMISSION_STATUS = true;
+                //objcontext.IMAGE = img;
                 objcontext.CREATED_BY = "1";
                 objcontext.CREATED_DATE = System.DateTime.Now;
                 db.TBLADDMISSIONs.Add(objcontext);

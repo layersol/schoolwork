@@ -220,6 +220,8 @@ namespace SmartSchoolManagementSystem
                     objEnRoll.Student_ID = ClassRollNo;
                     objEnRoll.CLASSNAME = cbbclass.Text;
                     objEnRoll.SECTION = cbbsection.Text;
+                    objEnRoll.Group = cbbgroup.Text;
+                    objEnRoll.Medium = cbbmedium.Text;
                     objEnRoll.ACADMICSESSION = lblSession.Text;
                     objEnRoll.CREATED_BY = txtcreatedby.Text;
                     objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
@@ -236,16 +238,16 @@ namespace SmartSchoolManagementSystem
                 {
                     objfee.SYSTEMID = SystemID;
                     objfee.CLASSID = classid;
-                    objfee.CLASSID = ClassRollNo;
+                    objfee.CLASSROLL = ClassRollNo;
                     // objfee.ADMISSION_FEE = txtadmissionfee.Text;
                     objfee.ADMISSIONFEE =Convert.ToInt32(txtadfee.Text);
-                    objfee.TUTIONFEE = Convert.ToInt32(txtadfee.Text);
-                    objfee.OTHERFEE = Convert.ToInt32(txtadfee.Text);
-                    objfee.DISCOUNTFEE = Convert.ToInt32(txtadfee.Text);
-                    objfee.TOTALFEE = Convert.ToInt32(txtadfee.Text);
-                    objfee.PAIDFEE = Convert.ToInt32(txtadfee.Text);
+                    objfee.TUTIONFEE = Convert.ToInt32(txttutionfee.Text);
+                    objfee.OTHERFEE = Convert.ToInt32(txtotherfee.Text);
+                    objfee.DISCOUNTFEE = Convert.ToInt32(txtdiscount.Text);
+                    objfee.TOTALFEE = Convert.ToInt32(txttotal.Text);
+                    objfee.PAIDFEE = Convert.ToInt32(txtpaid.Text);
                     objfee.FEEDATE = System.DateTime.Now;
-                    objfee.SESSION = txtotherfee.Text;
+                    objfee.SESSION = lblSession.Text;
                     //objfee.Balance = "0";
                     //objfee.FEE_DATE =
                     db.TBLACCOUNTs.Add(objfee);

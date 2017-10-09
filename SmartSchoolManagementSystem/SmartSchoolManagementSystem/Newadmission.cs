@@ -560,6 +560,18 @@ namespace SmartSchoolManagementSystem
             this.Close();
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtgname.Text = txtfname.Text;
+            txtgcnic.Text = txtcnic.Text;
+            txtgcell.Text = txtfcell.Text;
+            txtgoccupatio.Text = txtoccupation.Text;
+            txtgmonthincom.Text = txtincom.Text;
+            txtofficetell.Text = txtofficetel.Text;
+            txtgcast.Text = txtcast.Text;
+            txtgoffice.Text = txtofficeadress.Text;
+        }
+
         private void btnback_Click(object sender, EventArgs e)
         {
 

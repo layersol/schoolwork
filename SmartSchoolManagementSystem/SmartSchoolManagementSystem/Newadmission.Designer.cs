@@ -216,6 +216,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.registrartion.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
@@ -2193,12 +2194,24 @@
             this.label28.TabIndex = 53;
             this.label28.Text = "STUDENT LIST";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(677, 315);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(111, 17);
+            this.checkBox1.TabIndex = 54;
+            this.checkBox1.Text = "Copy Father\'s Info";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Newadmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1243, 839);
+            this.ClientSize = new System.Drawing.Size(1243, 741);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label2);
@@ -2457,5 +2470,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.TextBox txtpaid;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

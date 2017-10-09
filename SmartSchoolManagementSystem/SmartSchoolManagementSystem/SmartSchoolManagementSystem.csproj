@@ -327,6 +327,12 @@
     <Compile Include="TBLUSER.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Teacherinfoprintform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacherinfoprintform.Designer.cs">
+      <DependentUpon>Teacherinfoprintform.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeachersttafInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -423,6 +429,7 @@
     <EmbeddedResource Include="rptdailyfeecollection.rdlc" />
     <EmbeddedResource Include="rptresultcard.rdlc" />
     <EmbeddedResource Include="rptstudentfeereciept.rdlc" />
+    <EmbeddedResource Include="rptteacherinfoform.rdlc" />
     <EmbeddedResource Include="schoolsettings.resx">
       <DependentUpon>schoolsettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -437,6 +444,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Studentresultcard.resx">
       <DependentUpon>Studentresultcard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacherinfoprintform.resx">
+      <DependentUpon>Teacherinfoprintform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeachersttafInformation.resx">
       <DependentUpon>TeachersttafInformation.cs</DependentUpon>

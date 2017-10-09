@@ -125,122 +125,122 @@ namespace SmartSchoolManagementSystem
                 //img = br.ReadBytes((int)fs.Length);
                 // testimage ins = new testimage();
                 // ins.Photo = img;
-               // TBLADDMISSION objcontext = new TBLADDMISSION();
-               // objcontext.ADMISSION_FORM = txtform.Text;              
-               // objcontext.STUDENT_NAME = txtstudentname.Text;
-               // objcontext.STUDENT_DOB = Convert.ToDateTime(txtdob.Text);
-               // objcontext.PLACE_BIRTH = txtpob.Text;
-               // objcontext.STUDENT_NIC = bform.Text;
-               // objcontext.GENDER = cbbgender.Text;
-               // objcontext.RELIGION = txtriligion.Text;
-               // objcontext.S_CELL_NO = txtcell.Text;
-               // objcontext.STUDENT_EMAIL_ADDRESS = txtsmail.Text;
-               // objcontext.ADMISSION_STATUS = ckbstatus.Checked;
-               // objcontext.HOME_ADDRESS = txthomeadress.Text;
-               // objcontext.BLOODGROUP = cbbBloodGroup.Text;
-               // objcontext.IMAGE= convertfiletobyte(this.imgpicturebox.ImageLocation);
-               // objcontext.FATHER_NAME = txtfname.Text;
-               // objcontext.FATHER_NIC = txtcnic.Text;
-               // objcontext.FATHER_CELL_NO = txtfcell.Text;                            
-               // objcontext.FATHER_OCCUPATION = txtoccupation.Text;                                
-               // objcontext.MONTHLY_INCOM = txtincom.Text;
-               // objcontext.OFFICE_LANDLINE = txtofficetel.Text;
-               // objcontext.FATHER_CAST = txtcast.Text;
-               // objcontext.BUSINESS_ADDRESS = txtofficeadress.Text;
-               // objcontext.CURRENTSESSION = lblSession.Text;   ///     check this again
-               // objcontext.G_NAME = txtgname.Text;
-               // objcontext.G_CNIC = txtgcnic.Text;
-               // objcontext.G_CELL = txtgcell.Text;
-               //objcontext.G_OCCUPATION = txtgoccupatio.Text;
-               // objcontext.G_MONTHLY_INCOM = txtgmonthincom.Text;
-               // objcontext.G_CELL_NO =txtgcell.Text;
-               // objcontext.G_BUSINESS_ADDRESS = txtgoffice.Text;
-
-
-                
-               // objcontext.EDUCATION1 = cbbedu1.Text;
-               // objcontext.EDUCATION2 = cbbedu2.Text;
-               // objcontext.ADMISSIONNO1 = txtadminssion1.Text;
-               // objcontext.ADMISSIONNO2 = txtadmission2.Text;
-               // objcontext.YEAR1 = txtpassyear.Text;
-               // objcontext.YEAR2 = txtpasyear2.Text;
-               // objcontext.BOARD_INSTITUTION1 = txtboard1.Text;
-               // objcontext.BOARD_INSTITUTION2 = txtboard2.Text;
-               // objcontext.BOARD_INSTITUTION2 = txtboard2.Text;
-               // objcontext.GRADE1 = cbbgrad1.Text;
-               // objcontext.GRADE2 = cbbgrad2.Text;
-               // objcontext.TOTAL_MARKS1 = txttmark.Text;
-               // objcontext.TOTAL_MARKS2 = txttmark2.Text;
-               // objcontext.OBTAIN_MARKS1 = txtobtain1.Text;
-               // objcontext.OBTAIN_MARKS2 = txtobtain2.Text;
-               // objcontext.PERCENTAGE1 = txtpercent1.Text;
-               // objcontext.PERCENTAGE2 = txtpercent2.Text;
-
-
-               // objcontext.STUDENTNAME1 = txtstname1.Text;
-               // objcontext.STUDENTNAME1 = txtstname2.Text;
-               // objcontext.CLAS1 = txtinwhich1.Text;
-               // objcontext.CLAS2 = txtinwhich2.Text;
-               // objcontext.SCHOOLNAME1 = txtschoolname1.Text;
-               // objcontext.SCHOOLNAME2 = txtschool2.Text;
+                TBLADDMISSION objcontext = new TBLADDMISSION();
+                objcontext.ADMISSION_FORM = txtform.Text;
+                objcontext.STUDENT_NAME = txtstudentname.Text;
+                objcontext.STUDENT_DOB = Convert.ToDateTime(txtdob.Text);
+                objcontext.PLACE_BIRTH = txtpob.Text;
+                objcontext.STUDENT_NIC = bform.Text;
+                objcontext.GENDER = cbbgender.Text;
+                objcontext.RELIGION = txtriligion.Text;
+                objcontext.S_CELL_NO = txtcell.Text;
+                objcontext.STUDENT_EMAIL_ADDRESS = txtsmail.Text;
+                objcontext.ADMISSION_STATUS = ckbstatus.Checked;
+                objcontext.HOME_ADDRESS = txthomeadress.Text;
+                objcontext.BLOODGROUP = cbbBloodGroup.Text;
+                objcontext.IMAGE = convertfiletobyte(this.imgpicturebox.ImageLocation);
+                objcontext.FATHER_NAME = txtfname.Text;
+                objcontext.FATHER_NIC = txtcnic.Text;
+                objcontext.FATHER_CELL_NO = txtfcell.Text;
+                objcontext.FATHER_OCCUPATION = txtoccupation.Text;
+                objcontext.MONTHLY_INCOM = txtincom.Text;
+                objcontext.OFFICE_LANDLINE = txtofficetel.Text;
+                objcontext.FATHER_CAST = txtcast.Text;
+                objcontext.BUSINESS_ADDRESS = txtofficeadress.Text;
+                objcontext.CURRENTSESSION = lblSession.Text;   ///     check this again
+                objcontext.G_NAME = txtgname.Text;
+                objcontext.G_CNIC = txtgcnic.Text;
+                objcontext.G_CELL = txtgcell.Text;
+                objcontext.G_OCCUPATION = txtgoccupatio.Text;
+                objcontext.G_MONTHLY_INCOM = txtgmonthincom.Text;
+                objcontext.G_CELL_NO = txtgcell.Text;
+                objcontext.G_BUSINESS_ADDRESS = txtgoffice.Text;
 
 
 
-               // objcontext.ADMISSION_DATE = System.DateTime.Now;
-               // //objcontext.IMAGE = img;
-               // objcontext.CREATED_BY = txtcreatedby.Text;
-               // objcontext.CREATED_DATE = System.DateTime.Now;
-               // db.TBLADDMISSIONs.Add(objcontext);
-               // db.SaveChanges();
-
-               // int SystemID = objcontext.SID;
-               //// var qaNames = (from a in db.TBLADDMISSIONs select new { a.SID }).ToList();
-               // //foreach (var GetsystemIDVal in qaNames)
-               // //{
-               // //    SystemID = GetsystemIDVal.SID;
-               // //}
-               // if ((from c in db.TBLSTUDENTENRROLs where c.CLASSNAME == cbbclass.Text && c.SECTION == cbbsection.Text && c.ACADMICSESSION == lblSession.Text select c).Count() > 0)
-               // {
-               //     //var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs.OrderByDescending(c => c.ClassId) select new { Getsystem = c.Student_ID, };
-               //     var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs select new { Getsystem = c.Student_ID, };
-
-               //     foreach (var GetstudentRoll in GetStudentRollNo)
-               //     {
-               //         int ClassNo = Convert.ToInt16(GetstudentRoll.Getsystem);
-               //         int val = 1;
-               //         ClassRollNo = ClassNo + val;
-               //         //  txtemail.Text = ClassRollNo.ToString();
-               //     }
-               // }
-
-               // else { ClassRollNo = 1; }
-               // TBLSTUDENTENRROL objEnRoll = new TBLSTUDENTENRROL();
-               // {
-               //     objEnRoll.SystemId = SystemID;
-               //     objEnRoll.Student_ID = ClassRollNo;
-               //     objEnRoll.CLASSNAME = cbbclass.Text;
-               //     objEnRoll.SECTION = cbbsection.Text;
-               //     objEnRoll.Group = cbbgroup.Text;
-               //     objEnRoll.Medium = cbbmedium.Text;
-               //     objEnRoll.ACADMICSESSION = lblSession.Text;
-               //     objEnRoll.CREATED_BY = txtcreatedby.Text;
-               //     objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
-               //     db.TBLSTUDENTENRROLs.Add(objEnRoll);
-               //     db.SaveChanges();
-               //     int classid = objEnRoll.ClassId;
-               // }
+                objcontext.EDUCATION1 = cbbedu1.Text;
+                objcontext.EDUCATION2 = cbbedu2.Text;
+                objcontext.ADMISSIONNO1 = txtadminssion1.Text;
+                objcontext.ADMISSIONNO2 = txtadmission2.Text;
+                objcontext.YEAR1 = txtpassyear.Text;
+                objcontext.YEAR2 = txtpasyear2.Text;
+                objcontext.BOARD_INSTITUTION1 = txtboard1.Text;
+                objcontext.BOARD_INSTITUTION2 = txtboard2.Text;
+                objcontext.BOARD_INSTITUTION2 = txtboard2.Text;
+                objcontext.GRADE1 = cbbgrad1.Text;
+                objcontext.GRADE2 = cbbgrad2.Text;
+                objcontext.TOTAL_MARKS1 = txttmark.Text;
+                objcontext.TOTAL_MARKS2 = txttmark2.Text;
+                objcontext.OBTAIN_MARKS1 = txtobtain1.Text;
+                objcontext.OBTAIN_MARKS2 = txtobtain2.Text;
+                objcontext.PERCENTAGE1 = txtpercent1.Text;
+                objcontext.PERCENTAGE2 = txtpercent2.Text;
 
 
-               // var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
-              //  foreach (var GetstudentRoll in GetStudentRoll)
-             //   {
-                   // classid = Convert.ToInt16(GetstudentRoll.Getclass);
-              //  }
+                objcontext.STUDENTNAME1 = txtstname1.Text;
+                objcontext.STUDENTNAME1 = txtstname2.Text;
+                objcontext.CLAS1 = txtinwhich1.Text;
+                objcontext.CLAS2 = txtinwhich2.Text;
+                objcontext.SCHOOLNAME1 = txtschoolname1.Text;
+                objcontext.SCHOOLNAME2 = txtschool2.Text;
+
+
+
+                objcontext.ADMISSION_DATE = System.DateTime.Now;
+                //objcontext.IMAGE = img;
+                objcontext.CREATED_BY = txtcreatedby.Text;
+                objcontext.CREATED_DATE = System.DateTime.Now;
+                db.TBLADDMISSIONs.Add(objcontext);
+                db.SaveChanges();
+
+                int SystemID = objcontext.SID;
+                // var qaNames = (from a in db.TBLADDMISSIONs select new { a.SID }).ToList();
+                //foreach (var GetsystemIDVal in qaNames)
+                //{
+                //    SystemID = GetsystemIDVal.SID;
+                //}
+                if ((from c in db.TBLSTUDENTENRROLs where c.CLASSNAME == cbbclass.Text && c.SECTION == cbbsection.Text && c.ACADMICSESSION == lblSession.Text select c).Count() > 0)
+                {
+                    //var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs.OrderByDescending(c => c.ClassId) select new { Getsystem = c.Student_ID, };
+                    var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs select new { Getsystem = c.Student_ID, };
+
+                    foreach (var GetstudentRoll in GetStudentRollNo)
+                    {
+                        int ClassNo = Convert.ToInt16(GetstudentRoll.Getsystem);
+                        int val = 1;
+                        ClassRollNo = ClassNo + val;
+                        //  txtemail.Text = ClassRollNo.ToString();
+                    }
+                }
+
+                else { ClassRollNo = 1; }
+                TBLSTUDENTENRROL objEnRoll = new TBLSTUDENTENRROL();
+                {
+                    objEnRoll.SystemId = SystemID;
+                    objEnRoll.Student_ID = ClassRollNo;
+                    objEnRoll.CLASSNAME = cbbclass.Text;
+                    objEnRoll.SECTION = cbbsection.Text;
+                    objEnRoll.Group = cbbgroup.Text;
+                    objEnRoll.Medium = cbbmedium.Text;
+                    objEnRoll.ACADMICSESSION = lblSession.Text;
+                    objEnRoll.CREATED_BY = txtcreatedby.Text;
+                    objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
+                    db.TBLSTUDENTENRROLs.Add(objEnRoll);
+                    db.SaveChanges();
+                    int classid = objEnRoll.ClassId;
+                }
+
+
+                // var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
+                //  foreach (var GetstudentRoll in GetStudentRoll)
+                //   {
+                // classid = Convert.ToInt16(GetstudentRoll.Getclass);
+                //  }
 
 
                 TBLACCOUNT objfee = new TBLACCOUNT();
                 {
-                    objfee.SYSTEMID = 2;
+                    objfee.SYSTEMID = SystemID;
                     objfee.CLASSID = classid;
                     objfee.CLASSROLL = ClassRollNo;
                     // objfee.ADMISSION_FEE = txtadmissionfee.Text;

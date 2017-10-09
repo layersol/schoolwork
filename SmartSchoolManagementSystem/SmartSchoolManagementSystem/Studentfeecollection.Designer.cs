@@ -29,36 +29,36 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbstudentid = new System.Windows.Forms.RadioButton();
+            this.rdbvoucherid = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtstudentid = new System.Windows.Forms.TextBox();
+            this.txtsrnumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtdate = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtstudentname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtfathername = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtphone = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtsection = new System.Windows.Forms.TextBox();
+            this.txtclass = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txttottal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtcurrentfee = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtpaid = new System.Windows.Forms.TextBox();
+            this.txtfine = new System.Windows.Forms.TextBox();
+            this.txtblance = new System.Windows.Forms.TextBox();
+            this.txtarreres = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -66,14 +66,14 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.btnpreview = new System.Windows.Forms.Button();
+            this.btnunpaid = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnexit = new System.Windows.Forms.Button();
+            this.cbautosms = new System.Windows.Forms.CheckBox();
+            this.btnprint = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -85,14 +85,14 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtdate);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtsrnumber);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtstudentid);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rdbvoucherid);
+            this.groupBox1.Controls.Add(this.rdbstudentid);
             this.groupBox1.Location = new System.Drawing.Point(3, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(672, 84);
@@ -100,28 +100,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criteria";
             // 
-            // radioButton1
+            // rdbstudentid
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(60, 0);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(76, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Student ID";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.rdbstudentid.AutoSize = true;
+            this.rdbstudentid.Location = new System.Drawing.Point(60, 0);
+            this.rdbstudentid.Name = "rdbstudentid";
+            this.rdbstudentid.Size = new System.Drawing.Size(76, 17);
+            this.rdbstudentid.TabIndex = 0;
+            this.rdbstudentid.TabStop = true;
+            this.rdbstudentid.Text = "Student ID";
+            this.rdbstudentid.UseVisualStyleBackColor = true;
+            this.rdbstudentid.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // rdbvoucherid
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(154, 0);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(79, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Voucher ID";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbvoucherid.AutoSize = true;
+            this.rdbvoucherid.Location = new System.Drawing.Point(154, 0);
+            this.rdbvoucherid.Name = "rdbvoucherid";
+            this.rdbvoucherid.Size = new System.Drawing.Size(79, 17);
+            this.rdbvoucherid.TabIndex = 1;
+            this.rdbvoucherid.TabStop = true;
+            this.rdbvoucherid.Text = "Voucher ID";
+            this.rdbvoucherid.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -132,20 +132,20 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Student ID";
             // 
-            // textBox1
+            // txtstudentid
             // 
-            this.textBox1.Location = new System.Drawing.Point(74, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(105, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtstudentid.Location = new System.Drawing.Point(74, 31);
+            this.txtstudentid.Name = "txtstudentid";
+            this.txtstudentid.Size = new System.Drawing.Size(105, 20);
+            this.txtstudentid.TabIndex = 3;
+            this.txtstudentid.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtsrnumber
             // 
-            this.textBox2.Location = new System.Drawing.Point(269, 31);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(105, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtsrnumber.Location = new System.Drawing.Point(269, 31);
+            this.txtsrnumber.Name = "txtsrnumber";
+            this.txtsrnumber.Size = new System.Drawing.Size(105, 20);
+            this.txtsrnumber.TabIndex = 5;
             // 
             // label2
             // 
@@ -156,12 +156,12 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Sr #,";
             // 
-            // textBox3
+            // txtdate
             // 
-            this.textBox3.Location = new System.Drawing.Point(466, 31);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(105, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtdate.Location = new System.Drawing.Point(466, 31);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(105, 20);
+            this.txtdate.TabIndex = 7;
             // 
             // label3
             // 
@@ -192,14 +192,14 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.txtsection);
+            this.groupBox2.Controls.Add(this.txtclass);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txtphone);
+            this.groupBox2.Controls.Add(this.txtfathername);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txtstudentname);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(3, 102);
             this.groupBox2.Name = "groupBox2";
@@ -208,12 +208,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Student Information";
             // 
-            // textBox4
+            // txtstudentname
             // 
-            this.textBox4.Location = new System.Drawing.Point(100, 30);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(354, 20);
-            this.textBox4.TabIndex = 9;
+            this.txtstudentname.Location = new System.Drawing.Point(100, 30);
+            this.txtstudentname.Name = "txtstudentname";
+            this.txtstudentname.Size = new System.Drawing.Size(354, 20);
+            this.txtstudentname.TabIndex = 9;
             // 
             // label4
             // 
@@ -224,12 +224,12 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Student Name";
             // 
-            // textBox5
+            // txtfathername
             // 
-            this.textBox5.Location = new System.Drawing.Point(100, 56);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(149, 20);
-            this.textBox5.TabIndex = 11;
+            this.txtfathername.Location = new System.Drawing.Point(100, 56);
+            this.txtfathername.Name = "txtfathername";
+            this.txtfathername.Size = new System.Drawing.Size(149, 20);
+            this.txtfathername.TabIndex = 11;
             // 
             // label5
             // 
@@ -240,13 +240,13 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Faher\'s Name";
             // 
-            // textBox6
+            // txtphone
             // 
-            this.textBox6.Location = new System.Drawing.Point(305, 56);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(149, 20);
-            this.textBox6.TabIndex = 12;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.txtphone.Location = new System.Drawing.Point(305, 56);
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(149, 20);
+            this.txtphone.TabIndex = 12;
+            this.txtphone.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label6
             // 
@@ -266,19 +266,19 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Section";
             // 
-            // textBox7
+            // txtsection
             // 
-            this.textBox7.Location = new System.Drawing.Point(305, 82);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(149, 20);
-            this.textBox7.TabIndex = 16;
+            this.txtsection.Location = new System.Drawing.Point(305, 82);
+            this.txtsection.Name = "txtsection";
+            this.txtsection.Size = new System.Drawing.Size(149, 20);
+            this.txtsection.TabIndex = 16;
             // 
-            // textBox8
+            // txtclass
             // 
-            this.textBox8.Location = new System.Drawing.Point(100, 82);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(149, 20);
-            this.textBox8.TabIndex = 15;
+            this.txtclass.Location = new System.Drawing.Point(100, 82);
+            this.txtclass.Name = "txtclass";
+            this.txtclass.Size = new System.Drawing.Size(149, 20);
+            this.txtclass.TabIndex = 15;
             // 
             // label8
             // 
@@ -296,13 +296,13 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.textBox16);
-            this.groupBox3.Controls.Add(this.textBox17);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.textBox14);
-            this.groupBox3.Controls.Add(this.textBox12);
+            this.groupBox3.Controls.Add(this.txtblance);
+            this.groupBox3.Controls.Add(this.txtarreres);
+            this.groupBox3.Controls.Add(this.txtpaid);
+            this.groupBox3.Controls.Add(this.txtfine);
+            this.groupBox3.Controls.Add(this.txttottal);
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.textBox13);
+            this.groupBox3.Controls.Add(this.txtcurrentfee);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Location = new System.Drawing.Point(3, 243);
             this.groupBox3.Name = "groupBox3";
@@ -311,12 +311,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Fee Information";
             // 
-            // textBox12
+            // txttottal
             // 
-            this.textBox12.Location = new System.Drawing.Point(100, 59);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(79, 20);
-            this.textBox12.TabIndex = 11;
+            this.txttottal.Location = new System.Drawing.Point(100, 59);
+            this.txttottal.Name = "txttottal";
+            this.txttottal.Size = new System.Drawing.Size(79, 20);
+            this.txttottal.TabIndex = 11;
             // 
             // label12
             // 
@@ -327,12 +327,12 @@
             this.label12.TabIndex = 10;
             this.label12.Text = "Tottal";
             // 
-            // textBox13
+            // txtcurrentfee
             // 
-            this.textBox13.Location = new System.Drawing.Point(100, 30);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(79, 20);
-            this.textBox13.TabIndex = 9;
+            this.txtcurrentfee.Location = new System.Drawing.Point(100, 30);
+            this.txtcurrentfee.Name = "txtcurrentfee";
+            this.txtcurrentfee.Size = new System.Drawing.Size(79, 20);
+            this.txtcurrentfee.TabIndex = 9;
             // 
             // label13
             // 
@@ -343,33 +343,33 @@
             this.label13.TabIndex = 8;
             this.label13.Text = "Current";
             // 
-            // textBox11
+            // txtpaid
             // 
-            this.textBox11.Location = new System.Drawing.Point(230, 59);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(79, 20);
-            this.textBox11.TabIndex = 17;
+            this.txtpaid.Location = new System.Drawing.Point(230, 59);
+            this.txtpaid.Name = "txtpaid";
+            this.txtpaid.Size = new System.Drawing.Size(79, 20);
+            this.txtpaid.TabIndex = 17;
             // 
-            // textBox14
+            // txtfine
             // 
-            this.textBox14.Location = new System.Drawing.Point(230, 30);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(79, 20);
-            this.textBox14.TabIndex = 16;
+            this.txtfine.Location = new System.Drawing.Point(230, 30);
+            this.txtfine.Name = "txtfine";
+            this.txtfine.Size = new System.Drawing.Size(79, 20);
+            this.txtfine.TabIndex = 16;
             // 
-            // textBox16
+            // txtblance
             // 
-            this.textBox16.Location = new System.Drawing.Point(375, 59);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(79, 20);
-            this.textBox16.TabIndex = 20;
+            this.txtblance.Location = new System.Drawing.Point(375, 59);
+            this.txtblance.Name = "txtblance";
+            this.txtblance.Size = new System.Drawing.Size(79, 20);
+            this.txtblance.TabIndex = 20;
             // 
-            // textBox17
+            // txtarreres
             // 
-            this.textBox17.Location = new System.Drawing.Point(375, 30);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(79, 20);
-            this.textBox17.TabIndex = 19;
+            this.txtarreres.Location = new System.Drawing.Point(375, 30);
+            this.txtarreres.Name = "txtarreres";
+            this.txtarreres.Size = new System.Drawing.Size(79, 20);
+            this.txtarreres.TabIndex = 19;
             // 
             // label9
             // 
@@ -429,59 +429,59 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.groupBox6.Controls.Add(this.button8);
-            this.groupBox6.Controls.Add(this.checkBox1);
-            this.groupBox6.Controls.Add(this.button7);
+            this.groupBox6.Controls.Add(this.btnprint);
+            this.groupBox6.Controls.Add(this.cbautosms);
+            this.groupBox6.Controls.Add(this.btnexit);
             this.groupBox6.Controls.Add(this.button6);
-            this.groupBox6.Controls.Add(this.button5);
-            this.groupBox6.Controls.Add(this.button4);
-            this.groupBox6.Controls.Add(this.button3);
-            this.groupBox6.Controls.Add(this.button2);
+            this.groupBox6.Controls.Add(this.btnunpaid);
+            this.groupBox6.Controls.Add(this.btnpreview);
+            this.groupBox6.Controls.Add(this.btncancel);
+            this.groupBox6.Controls.Add(this.btnsave);
             this.groupBox6.Location = new System.Drawing.Point(3, 404);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(666, 60);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             // 
-            // button2
+            // btnsave
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button2.Location = new System.Drawing.Point(7, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 36);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsave.Location = new System.Drawing.Point(7, 19);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(74, 36);
+            this.btnsave.TabIndex = 0;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btncancel
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button3.Location = new System.Drawing.Point(87, 19);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 36);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btncancel.Location = new System.Drawing.Point(87, 19);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(74, 36);
+            this.btncancel.TabIndex = 0;
+            this.btncancel.Text = "Cancel";
+            this.btncancel.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnpreview
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button4.Location = new System.Drawing.Point(167, 19);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(74, 36);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Preview";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnpreview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnpreview.Location = new System.Drawing.Point(167, 19);
+            this.btnpreview.Name = "btnpreview";
+            this.btnpreview.Size = new System.Drawing.Size(74, 36);
+            this.btnpreview.TabIndex = 0;
+            this.btnpreview.Text = "Preview";
+            this.btnpreview.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnunpaid
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button5.Location = new System.Drawing.Point(247, 19);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(74, 36);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Unpaid";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnunpaid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnunpaid.Location = new System.Drawing.Point(247, 19);
+            this.btnunpaid.Name = "btnunpaid";
+            this.btnunpaid.Size = new System.Drawing.Size(74, 36);
+            this.btnunpaid.TabIndex = 0;
+            this.btnunpaid.Text = "Unpaid";
+            this.btnunpaid.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
@@ -492,38 +492,38 @@
             this.button6.Text = "button2";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnexit
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button7.ForeColor = System.Drawing.Color.Red;
-            this.button7.Location = new System.Drawing.Point(326, 19);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(74, 36);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Exit";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnexit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnexit.ForeColor = System.Drawing.Color.Red;
+            this.btnexit.Location = new System.Drawing.Point(326, 19);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(74, 36);
+            this.btnexit.TabIndex = 0;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = false;
+            this.btnexit.Click += new System.EventHandler(this.button7_Click);
             // 
-            // checkBox1
+            // cbautosms
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(420, 30);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(73, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Auto SmS";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.cbautosms.AutoSize = true;
+            this.cbautosms.Location = new System.Drawing.Point(420, 30);
+            this.cbautosms.Name = "cbautosms";
+            this.cbautosms.Size = new System.Drawing.Size(73, 17);
+            this.cbautosms.TabIndex = 1;
+            this.cbautosms.Text = "Auto SmS";
+            this.cbautosms.UseVisualStyleBackColor = true;
+            this.cbautosms.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // button8
+            // btnprint
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button8.Location = new System.Drawing.Point(497, 20);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(74, 36);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Print";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnprint.Location = new System.Drawing.Point(497, 20);
+            this.btnprint.Name = "btnprint";
+            this.btnprint.Size = new System.Drawing.Size(74, 36);
+            this.btnprint.TabIndex = 2;
+            this.btnprint.Text = "Print";
+            this.btnprint.UseVisualStyleBackColor = false;
             // 
             // Studentfeecollection
             // 
@@ -555,50 +555,50 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton rdbvoucherid;
+        private System.Windows.Forms.RadioButton rdbstudentid;
+        private System.Windows.Forms.TextBox txtstudentid;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtsrnumber;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtdate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtphone;
+        private System.Windows.Forms.TextBox txtfathername;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtstudentname;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtsection;
+        private System.Windows.Forms.TextBox txtclass;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtblance;
+        private System.Windows.Forms.TextBox txtarreres;
+        private System.Windows.Forms.TextBox txtpaid;
+        private System.Windows.Forms.TextBox txtfine;
+        private System.Windows.Forms.TextBox txttottal;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtcurrentfee;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnexit;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnunpaid;
+        private System.Windows.Forms.Button btnpreview;
+        private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.CheckBox cbautosms;
+        private System.Windows.Forms.Button btnprint;
     }
 }

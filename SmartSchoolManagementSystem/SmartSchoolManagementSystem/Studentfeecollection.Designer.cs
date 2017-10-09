@@ -502,6 +502,7 @@
             this.button7.TabIndex = 0;
             this.button7.Text = "Exit";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // checkBox1
             // 

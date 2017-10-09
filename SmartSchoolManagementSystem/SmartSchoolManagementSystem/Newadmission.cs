@@ -572,6 +572,11 @@ namespace SmartSchoolManagementSystem
             txtgoffice.Text = txtofficeadress.Text;
         }
 
+        private void dvgstudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void btnback_Click(object sender, EventArgs e)
         {
 

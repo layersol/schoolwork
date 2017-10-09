@@ -1196,6 +1196,7 @@
             this.dvgstudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvgstudent.Size = new System.Drawing.Size(254, 629);
             this.dvgstudent.TabIndex = 0;
+            this.dvgstudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgstudent_CellContentClick);
             // 
             // groupBox12
             // 

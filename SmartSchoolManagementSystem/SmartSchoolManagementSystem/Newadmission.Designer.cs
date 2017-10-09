@@ -1191,7 +1191,9 @@
             this.dvgstudent.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dvgstudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgstudent.Location = new System.Drawing.Point(6, 40);
+            this.dvgstudent.MultiSelect = false;
             this.dvgstudent.Name = "dvgstudent";
+            this.dvgstudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvgstudent.Size = new System.Drawing.Size(254, 629);
             this.dvgstudent.TabIndex = 0;
             // 

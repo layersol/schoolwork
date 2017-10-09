@@ -17,7 +17,7 @@ namespace SmartSchoolManagementSystem
     {
         smartschooldbEntities1 db = new smartschooldbEntities1();
         public DataGridViewRow dgvr;
-        int  ClassRollNo, admissionfee=0, tutionfee=0, otherfee=0, classid=0;
+        int  ClassRollNo, admissionfee=0, tutionfee=0, otherfee=0, classid;
         string imgloc = "";
         public Newadmission()
         {
@@ -227,15 +227,15 @@ namespace SmartSchoolManagementSystem
                     objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
                     db.TBLSTUDENTENRROLs.Add(objEnRoll);
                     db.SaveChanges();
-                    int classid = objEnRoll.ClassId;
+                     classid = objEnRoll.ClassId;
                 }
 
 
-                // var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
-                //  foreach (var GetstudentRoll in GetStudentRoll)
-                //   {
-                // classid = Convert.ToInt16(GetstudentRoll.Getclass);
-                //  }
+                //var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
+                //foreach (var GetstudentRoll in GetStudentRoll)
+                //{
+                //    classid = Convert.ToInt16(GetstudentRoll.Getclass);
+                //}
 
 
                 TBLACCOUNT objfee = new TBLACCOUNT();

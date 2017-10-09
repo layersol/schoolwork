@@ -200,59 +200,65 @@ namespace SmartSchoolManagementSystem
                 db.TBLADDMISSIONs.Add(objcontext);
                 db.SaveChanges();
 
-                //var qaNames = (from a in db.TBLADDMISSIONs select new { a.SID }).ToList();
+                int SystemID = objcontext.SID;
+               // var qaNames = (from a in db.TBLADDMISSIONs select new { a.SID }).ToList();
                 //foreach (var GetsystemIDVal in qaNames)
                 //{
                 //    SystemID = GetsystemIDVal.SID;
                 //}
-                //if ((from c in db.TBLSTUDENTENRROLs where c.CLASSNAME == cbbclass.Text && c.SECTION == cbbsection.Text && c.ACADMICSESSION == lblSession.Text select c).Count() > 0)
-                //{
-                //    //var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs.OrderByDescending(c => c.ClassId) select new { Getsystem = c.Student_ID, };
-                //    var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs select new { Getsystem = c.Student_ID, };
+                if ((from c in db.TBLSTUDENTENRROLs where c.CLASSNAME == cbbclass.Text && c.SECTION == cbbsection.Text && c.ACADMICSESSION == lblSession.Text select c).Count() > 0)
+                {
+                    //var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs.OrderByDescending(c => c.ClassId) select new { Getsystem = c.Student_ID, };
+                    var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs select new { Getsystem = c.Student_ID, };
 
-                //    foreach (var GetstudentRoll in GetStudentRollNo)
-                //    {
-                //        int ClassNo = Convert.ToInt16(GetstudentRoll.Getsystem);
-                //        int val = 1;
-                //        ClassRollNo = ClassNo + val;
-                //        //  txtemail.Text = ClassRollNo.ToString();
-                //    }
-                //}
+                    foreach (var GetstudentRoll in GetStudentRollNo)
+                    {
+                        int ClassNo = Convert.ToInt16(GetstudentRoll.Getsystem);
+                        int val = 1;
+                        ClassRollNo = ClassNo + val;
+                        //  txtemail.Text = ClassRollNo.ToString();
+                    }
+                }
 
-                //else { ClassRollNo = 1; }
-                //TBLSTUDENTENRROL objEnRoll = new TBLSTUDENTENRROL();
-                //{
-                //    objEnRoll.SystemId = SystemID;
-                //    objEnRoll.Student_ID = ClassRollNo;
-                //    objEnRoll.CLASSNAME = cbbclass.Text;
-                //    objEnRoll.SECTION = cbbsection.Text;
-                //    objEnRoll.ACADMICSESSION = lblSession.Text;
-                //    objEnRoll.CREATED_BY = "1";
-                //    objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
-                //    db.TBLSTUDENTENRROLs.Add(objEnRoll);
-                //    db.SaveChanges();
-                //}
-                //var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
-                //foreach (var GetstudentRoll in GetStudentRoll)
-                //{
-                //    classid = Convert.ToInt16(GetstudentRoll.Getclass);
-                //}
-                //TBLACCOUNT objfee = new TBLACCOUNT();
-                //{
-                //    objfee.SystemId = SystemID;
-                //    objfee.CLASSID = classid;
-                //    objfee.SDTID = ClassRollNo;
-                //    // objfee.ADMISSION_FEE = txtadmissionfee.Text;
-                //    objfee.TUTION_FEE = txttution.Text;
-                //    objfee.TOTAL_AMOUNT = txttotal.Text;
-                //    objfee.Arrears = "0";
-                //    objfee.OTHER_FEE = txtother.Text;
-                //    objfee.Balance = "0";
-                //    objfee.FEE_DATE = Convert.ToDateTime(txtadmissiondate.Text);
-                //    db.TBLACCOUNTs.Add(objfee);
-                //    db.SaveChanges();
-                //    MessageBox.Show("Student Has Been Enrolled Successfully");
-                //}
+                else { ClassRollNo = 1; }
+                TBLSTUDENTENRROL objEnRoll = new TBLSTUDENTENRROL();
+                {
+                    objEnRoll.SystemId = SystemID;
+                    objEnRoll.Student_ID = ClassRollNo;
+                    objEnRoll.CLASSNAME = cbbclass.Text;
+                    objEnRoll.SECTION = cbbsection.Text;
+                    objEnRoll.ACADMICSESSION = lblSession.Text;
+                    objEnRoll.CREATED_BY = txtcreatedby.Text;
+                    objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
+                    db.TBLSTUDENTENRROLs.Add(objEnRoll);
+                    db.SaveChanges();
+                    int classid = objEnRoll.ClassId;
+                }
+               // var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
+              //  foreach (var GetstudentRoll in GetStudentRoll)
+             //   {
+                   // classid = Convert.ToInt16(GetstudentRoll.Getclass);
+              //  }
+                TBLACCOUNT objfee = new TBLACCOUNT();
+                {
+                    objfee.SYSTEMID = SystemID;
+                    objfee.CLASSID = classid;
+                    objfee.CLASSID = ClassRollNo;
+                    // objfee.ADMISSION_FEE = txtadmissionfee.Text;
+                    objfee.ADMISSIONFEE =Convert.ToInt32(txtadfee.Text);
+                    objfee.TUTIONFEE = Convert.ToInt32(txtadfee.Text);
+                    objfee.OTHERFEE = Convert.ToInt32(txtadfee.Text);
+                    objfee.DISCOUNTFEE = Convert.ToInt32(txtadfee.Text);
+                    objfee.TOTALFEE = Convert.ToInt32(txtadfee.Text);
+                    objfee.PAIDFEE = Convert.ToInt32(txtadfee.Text);
+                    objfee.FEEDATE = System.DateTime.Now;
+                    objfee.SESSION = txtotherfee.Text;
+                    //objfee.Balance = "0";
+                    //objfee.FEE_DATE =
+                    db.TBLACCOUNTs.Add(objfee);
+                    db.SaveChanges();
+                   // MessageBox.Show("Student Has Been Enrolled Successfully");
+                }
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }

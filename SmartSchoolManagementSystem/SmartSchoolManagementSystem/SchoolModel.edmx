@@ -49,6 +49,22 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AcadmicSession" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="TBLACCOUNT">
+          <Key>
+            <PropertyRef Name="SYSTEMID" />
+          </Key>
+          <Property Name="SYSTEMID" Type="int" Nullable="false" />
+          <Property Name="CLASSROLL" Type="int" />
+          <Property Name="CLASSID" Type="int" />
+          <Property Name="ADMISSIONFEE" Type="bigint" />
+          <Property Name="TUTIONFEE" Type="bigint" />
+          <Property Name="OTHERFEE" Type="bigint" />
+          <Property Name="DISCOUNTFEE" Type="bigint" />
+          <Property Name="TOTALFEE" Type="bigint" />
+          <Property Name="PAIDFEE" Type="bigint" />
+          <Property Name="FEEDATE" Type="datetime" />
+          <Property Name="SESSION" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="TbladdBuses">
           <Key>
             <PropertyRef Name="BusID" />
@@ -212,6 +228,8 @@ warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a prim
           <Property Name="Student ID" Type="int" />
           <Property Name="CLASSNAME" Type="nvarchar" MaxLength="50" />
           <Property Name="SECTION" Type="nvarchar" MaxLength="50" />
+          <Property Name="Group" Type="nvarchar" MaxLength="50" />
+          <Property Name="Medium" Type="nvarchar" MaxLength="50" />
           <Property Name="ACADMICSESSION" Type="nvarchar" MaxLength="50" />
           <Property Name="CREATED_BY" Type="nvarchar" MaxLength="50" />
           <Property Name="CREATED_DATE" Type="nvarchar" MaxLength="50" />
@@ -296,6 +314,7 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySet Name="FeeMasterSettings" EntityType="Self.FeeMasterSettings" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="StudentFeeDetails" EntityType="Self.StudentFeeDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblacadmicSession" EntityType="Self.TblacadmicSession" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLACCOUNT" EntityType="Self.TBLACCOUNT" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TbladdBuses" EntityType="Self.TbladdBuses" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLADDMISSION" EntityType="Self.TBLADDMISSION" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbladmissionprint" EntityType="Self.Tbladmissionprint" Schema="dbo" store:Type="Tables" />
@@ -539,6 +558,8 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="CREATED_DATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="UPDATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="UPDATED_DATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Group" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Medium" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="TblTeacherInformation">
           <Key>
@@ -639,7 +660,24 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySet Name="UserDeatils" EntityType="Self.UserDeatil" />
           <EntitySet Name="Tblbusstops" EntityType="Self.Tblbusstop" />
           <EntitySet Name="firstformviews" EntityType="Self.firstformview" />
+          <EntitySet Name="TBLACCOUNTs" EntityType="smartschooldbModel.TBLACCOUNT" />
         </EntityContainer>
+        <EntityType Name="TBLACCOUNT">
+          <Key>
+            <PropertyRef Name="SYSTEMID" />
+          </Key>
+          <Property Name="SYSTEMID" Type="Int32" Nullable="false" />
+          <Property Name="CLASSROLL" Type="Int32" />
+          <Property Name="CLASSID" Type="Int32" />
+          <Property Name="ADMISSIONFEE" Type="Int64" />
+          <Property Name="TUTIONFEE" Type="Int64" />
+          <Property Name="OTHERFEE" Type="Int64" />
+          <Property Name="DISCOUNTFEE" Type="Int64" />
+          <Property Name="TOTALFEE" Type="Int64" />
+          <Property Name="PAIDFEE" Type="Int64" />
+          <Property Name="FEEDATE" Type="DateTime" Precision="3" />
+          <Property Name="SESSION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -848,6 +886,8 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySetMapping Name="TBLSTUDENTENRROLs">
             <EntityTypeMapping TypeName="smartschooldbModel.TBLSTUDENTENRROL">
               <MappingFragment StoreEntitySet="TBLSTUDENTENRROL">
+                <ScalarProperty Name="Medium" ColumnName="Medium" />
+                <ScalarProperty Name="Group" ColumnName="Group" />
                 <ScalarProperty Name="ClassId" ColumnName="ClassId" />
                 <ScalarProperty Name="SystemId" ColumnName="SystemId" />
                 <ScalarProperty Name="Student_ID" ColumnName="Student ID" />
@@ -944,6 +984,23 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
                 <ScalarProperty Name="WEBSITE" ColumnName="WEBSITE" />
                 <ScalarProperty Name="LOGO" ColumnName="LOGO" />
                 <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLACCOUNTs">
+            <EntityTypeMapping TypeName="smartschooldbModel.TBLACCOUNT">
+              <MappingFragment StoreEntitySet="TBLACCOUNT">
+                <ScalarProperty Name="SESSION" ColumnName="SESSION" />
+                <ScalarProperty Name="FEEDATE" ColumnName="FEEDATE" />
+                <ScalarProperty Name="PAIDFEE" ColumnName="PAIDFEE" />
+                <ScalarProperty Name="TOTALFEE" ColumnName="TOTALFEE" />
+                <ScalarProperty Name="DISCOUNTFEE" ColumnName="DISCOUNTFEE" />
+                <ScalarProperty Name="OTHERFEE" ColumnName="OTHERFEE" />
+                <ScalarProperty Name="TUTIONFEE" ColumnName="TUTIONFEE" />
+                <ScalarProperty Name="ADMISSIONFEE" ColumnName="ADMISSIONFEE" />
+                <ScalarProperty Name="CLASSID" ColumnName="CLASSID" />
+                <ScalarProperty Name="CLASSROLL" ColumnName="CLASSROLL" />
+                <ScalarProperty Name="SYSTEMID" ColumnName="SYSTEMID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

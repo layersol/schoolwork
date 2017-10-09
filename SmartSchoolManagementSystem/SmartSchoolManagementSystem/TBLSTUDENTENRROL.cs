@@ -24,5 +24,7 @@ namespace SmartSchoolManagementSystem
         public string CREATED_DATE { get; set; }
         public string UPDATED_BY { get; set; }
         public string UPDATED_DATE { get; set; }
+        public string Group { get; set; }
+        public string Medium { get; set; }
     }
 }

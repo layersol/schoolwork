@@ -282,6 +282,9 @@
     <Compile Include="TblacadmicSession.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="TBLACCOUNT.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="TbladdBus.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>

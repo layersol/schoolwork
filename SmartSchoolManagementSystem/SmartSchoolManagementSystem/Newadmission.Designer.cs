@@ -1790,7 +1790,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner1;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox2.Location = new System.Drawing.Point(2, -5);
+            this.groupBox2.Location = new System.Drawing.Point(-1, -5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1244, 54);
             this.groupBox2.TabIndex = 1;

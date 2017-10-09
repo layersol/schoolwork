@@ -125,14 +125,8 @@ namespace SmartSchoolManagementSystem
                 //img = br.ReadBytes((int)fs.Length);
                 // testimage ins = new testimage();
                 // ins.Photo = img;
-
-
                 TBLADDMISSION objcontext = new TBLADDMISSION();
-                objcontext.ADMISSION_FORM = txtform.Text;
-
-
-
-               
+                objcontext.ADMISSION_FORM = txtform.Text;              
                 objcontext.STUDENT_NAME = txtstudentname.Text;
                 objcontext.STUDENT_DOB = Convert.ToDateTime(txtdob.Text);
                 objcontext.PLACE_BIRTH = txtpob.Text;
@@ -145,7 +139,6 @@ namespace SmartSchoolManagementSystem
                 objcontext.HOME_ADDRESS = txthomeadress.Text;
                 objcontext.BLOODGROUP = cbbBloodGroup.Text;
                 objcontext.IMAGE= convertfiletobyte(this.imgpicturebox.ImageLocation);
-
                 objcontext.FATHER_NAME = txtfname.Text;
                 objcontext.FATHER_NIC = txtcnic.Text;
                 objcontext.FATHER_CELL_NO = txtfcell.Text;                            

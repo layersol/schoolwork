@@ -709,7 +709,6 @@
             // txtpaid
             // 
             this.txtpaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpaid.Enabled = false;
             this.txtpaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpaid.Location = new System.Drawing.Point(192, 110);
             this.txtpaid.Multiline = true;
@@ -2199,7 +2198,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1243, 835);
+            this.ClientSize = new System.Drawing.Size(1243, 741);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label2);

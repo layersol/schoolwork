@@ -123,7 +123,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
             // 
@@ -133,14 +133,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenFile);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -148,18 +148,19 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.close;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
             // 
@@ -179,6 +180,7 @@
             // 
             // printAdmissionFormToolStripMenuItem
             // 
+            this.printAdmissionFormToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_iconyellow;
             this.printAdmissionFormToolStripMenuItem.Name = "printAdmissionFormToolStripMenuItem";
             this.printAdmissionFormToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.printAdmissionFormToolStripMenuItem.Text = "Print Admission Form";
@@ -186,6 +188,7 @@
             // 
             // newAdmissionToolStripMenuItem
             // 
+            this.newAdmissionToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.addyellow;
             this.newAdmissionToolStripMenuItem.Name = "newAdmissionToolStripMenuItem";
             this.newAdmissionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.newAdmissionToolStripMenuItem.Text = "New Admission";
@@ -193,6 +196,7 @@
             // 
             // attendanceToolStripMenuItem
             // 
+            this.attendanceToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
             this.attendanceToolStripMenuItem.Name = "attendanceToolStripMenuItem";
             this.attendanceToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.attendanceToolStripMenuItem.Text = "View Enrolled Student";
@@ -204,12 +208,14 @@
             // 
             // attendanceToolStripMenuItem1
             // 
+            this.attendanceToolStripMenuItem1.Image = global::SmartSchoolManagementSystem.Properties.Resources.informationyellow;
             this.attendanceToolStripMenuItem1.Name = "attendanceToolStripMenuItem1";
             this.attendanceToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
             this.attendanceToolStripMenuItem1.Text = "Attendance";
             // 
             // viewAttendanceToolStripMenuItem
             // 
+            this.viewAttendanceToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
             this.viewAttendanceToolStripMenuItem.Name = "viewAttendanceToolStripMenuItem";
             this.viewAttendanceToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.viewAttendanceToolStripMenuItem.Text = "View Attendance";
@@ -229,6 +235,7 @@
             // 
             // addStaffInformationToolStripMenuItem
             // 
+            this.addStaffInformationToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.addyellow;
             this.addStaffInformationToolStripMenuItem.Name = "addStaffInformationToolStripMenuItem";
             this.addStaffInformationToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.addStaffInformationToolStripMenuItem.Text = "Add Staff Information";
@@ -268,6 +275,7 @@
             // 
             // schoolInformationToolStripMenuItem
             // 
+            this.schoolInformationToolStripMenuItem.Image = global::SmartSchoolManagementSystem.Properties.Resources.settings;
             this.schoolInformationToolStripMenuItem.Name = "schoolInformationToolStripMenuItem";
             this.schoolInformationToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.schoolInformationToolStripMenuItem.Text = "School Information";

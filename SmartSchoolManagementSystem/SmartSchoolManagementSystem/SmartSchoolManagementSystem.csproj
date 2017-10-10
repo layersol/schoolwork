@@ -235,6 +235,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Newadmissionform.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Phonesetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phonesetting.Designer.cs">
+      <DependentUpon>Phonesetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -445,6 +451,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Newadmission.resx">
       <DependentUpon>Newadmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phonesetting.resx">
+      <DependentUpon>Phonesetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="printstudentcard.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">

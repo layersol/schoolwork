@@ -231,13 +231,15 @@ namespace SmartSchoolManagementSystem
                 //{
                 //    classid = Convert.ToInt16(GetstudentRoll.Getclass);
                 //}
+
+
                 TBLACCOUNT objfee = new TBLACCOUNT();
                 {
                     objfee.SYSTEMID = SystemID;
                     objfee.CLASSID = classid;
                     objfee.CLASSROLL = ClassRollNo;
                     // objfee.ADMISSION_FEE = txtadmissionfee.Text;
-                    objfee.ADMISSIONFEE =Convert.ToInt64(txtadfee.Text);
+                    objfee.ADMISSIONFEE = Convert.ToInt64(txtadfee.Text);
                     objfee.TUTIONFEE = Convert.ToInt64(txttutionfee.Text);
                     objfee.OTHERFEE = Convert.ToInt64(txtotherfee.Text);
                     objfee.DISCOUNTFEE = Convert.ToInt64(txtdiscount.Text);
@@ -249,7 +251,9 @@ namespace SmartSchoolManagementSystem
                     //objfee.FEE_DATE =
                     db.TBLACCOUNTs.Add(objfee);
                     db.SaveChanges();
-                   // MessageBox.Show("Student Has Been Enrolled Successfully");
+
+
+                    // MessageBox.Show("Student Has Been Enrolled Successfully");
                 }
             }
             catch (Exception ex)

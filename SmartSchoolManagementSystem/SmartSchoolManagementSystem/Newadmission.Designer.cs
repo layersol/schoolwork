@@ -1192,9 +1192,12 @@
             this.dvgstudent.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dvgstudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgstudent.Location = new System.Drawing.Point(6, 40);
+            this.dvgstudent.MultiSelect = false;
             this.dvgstudent.Name = "dvgstudent";
+            this.dvgstudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvgstudent.Size = new System.Drawing.Size(254, 629);
             this.dvgstudent.TabIndex = 0;
+            this.dvgstudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgstudent_CellContentClick);
             // 
             // groupBox12
             // 
@@ -2211,7 +2214,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1243, 741);
+            this.ClientSize = new System.Drawing.Size(1243, 847);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);

@@ -535,6 +535,7 @@
     <None Include="Resources\Printer-iconyellow.png" />
     <None Include="Resources\informationyellow.png" />
     <None Include="Resources\Apps-Search-icon2.png" />
+    <None Include="Resources\settings.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

@@ -221,6 +221,12 @@
     <Compile Include="MDIParent.Designer.cs">
       <DependentUpon>MDIParent.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageSender.Designer.cs">
+      <DependentUpon>MessageSender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Newadmission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -448,6 +454,9 @@
     <EmbeddedResource Include="MDIParent.resx">
       <DependentUpon>MDIParent.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageSender.resx">
+      <DependentUpon>MessageSender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Newadmission.resx">
       <DependentUpon>Newadmission.cs</DependentUpon>

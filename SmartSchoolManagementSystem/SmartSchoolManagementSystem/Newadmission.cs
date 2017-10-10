@@ -237,12 +237,12 @@ namespace SmartSchoolManagementSystem
                     objfee.CLASSID = classid;
                     objfee.CLASSROLL = ClassRollNo;
                     // objfee.ADMISSION_FEE = txtadmissionfee.Text;
-                    objfee.ADMISSIONFEE =Convert.ToInt32(txtadfee.Text);
-                    objfee.TUTIONFEE = Convert.ToInt32(txttutionfee.Text);
-                    objfee.OTHERFEE = Convert.ToInt32(txtotherfee.Text);
-                    objfee.DISCOUNTFEE = Convert.ToInt32(txtdiscount.Text);
-                    objfee.TOTALFEE = Convert.ToInt32(txttotal.Text);
-                    objfee.PAIDFEE = Convert.ToInt32(txtpaid.Text);
+                    objfee.ADMISSIONFEE =Convert.ToInt64(txtadfee.Text);
+                    objfee.TUTIONFEE = Convert.ToInt64(txttutionfee.Text);
+                    objfee.OTHERFEE = Convert.ToInt64(txtotherfee.Text);
+                    objfee.DISCOUNTFEE = Convert.ToInt64(txtdiscount.Text);
+                    objfee.TOTALFEE = Convert.ToInt64(txttotal.Text);
+                    objfee.PAIDFEE = Convert.ToInt64(txtpaid.Text);
                     objfee.FEEDATE = System.DateTime.Now;
                     objfee.SESSION = lblSession.Text;
                     //objfee.Balance = "0";
@@ -256,6 +256,7 @@ namespace SmartSchoolManagementSystem
             { MessageBox.Show(ex.Message); }
 
             MessageBox.Show("Student has been Successfully add.!");
+            Getcurrentstudent();
         }
 
         private void label40_Click(object sender, EventArgs e)

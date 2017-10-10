@@ -572,11 +572,6 @@ namespace SmartSchoolManagementSystem
             txtgoffice.Text = txtofficeadress.Text;
         }
 
-        private void txtotherfee_ModifiedChanged(object sender, EventArgs e)
-        {
-            calculate();
-        }
-
         private void btnback_Click(object sender, EventArgs e)
         {
 

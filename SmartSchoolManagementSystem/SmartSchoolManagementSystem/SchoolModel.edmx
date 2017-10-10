@@ -56,12 +56,12 @@
           <Property Name="SYSTEMID" Type="int" Nullable="false" />
           <Property Name="CLASSROLL" Type="int" />
           <Property Name="CLASSID" Type="int" />
-          <Property Name="ADMISSIONFEE" Type="bigint" />
-          <Property Name="TUTIONFEE" Type="bigint" />
-          <Property Name="OTHERFEE" Type="bigint" />
-          <Property Name="DISCOUNTFEE" Type="bigint" />
-          <Property Name="TOTALFEE" Type="bigint" />
-          <Property Name="PAIDFEE" Type="bigint" />
+          <Property Name="ADMISSIONFEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TUTIONFEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="OTHERFEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DISCOUNTFEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TOTALFEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PAIDFEE" Type="decimal" Precision="18" Scale="0" />
           <Property Name="FEEDATE" Type="datetime" />
           <Property Name="SESSION" Type="nvarchar" MaxLength="50" />
         </EntityType>
@@ -669,12 +669,12 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="SYSTEMID" Type="Int32" Nullable="false" />
           <Property Name="CLASSROLL" Type="Int32" />
           <Property Name="CLASSID" Type="Int32" />
-          <Property Name="ADMISSIONFEE" Type="Int64" />
-          <Property Name="TUTIONFEE" Type="Int64" />
-          <Property Name="OTHERFEE" Type="Int64" />
-          <Property Name="DISCOUNTFEE" Type="Int64" />
-          <Property Name="TOTALFEE" Type="Int64" />
-          <Property Name="PAIDFEE" Type="Int64" />
+          <Property Name="ADMISSIONFEE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TUTIONFEE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="OTHERFEE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DISCOUNTFEE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TOTALFEE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PAIDFEE" Type="Decimal" Precision="18" Scale="0" />
           <Property Name="FEEDATE" Type="DateTime" Precision="3" />
           <Property Name="SESSION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>

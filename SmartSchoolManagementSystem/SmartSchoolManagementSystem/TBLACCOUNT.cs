@@ -17,12 +17,12 @@ namespace SmartSchoolManagementSystem
         public int SYSTEMID { get; set; }
         public Nullable<int> CLASSROLL { get; set; }
         public Nullable<int> CLASSID { get; set; }
-        public Nullable<long> ADMISSIONFEE { get; set; }
-        public Nullable<long> TUTIONFEE { get; set; }
-        public Nullable<long> OTHERFEE { get; set; }
-        public Nullable<long> DISCOUNTFEE { get; set; }
-        public Nullable<long> TOTALFEE { get; set; }
-        public Nullable<long> PAIDFEE { get; set; }
+        public Nullable<decimal> ADMISSIONFEE { get; set; }
+        public Nullable<decimal> TUTIONFEE { get; set; }
+        public Nullable<decimal> OTHERFEE { get; set; }
+        public Nullable<decimal> DISCOUNTFEE { get; set; }
+        public Nullable<decimal> TOTALFEE { get; set; }
+        public Nullable<decimal> PAIDFEE { get; set; }
         public Nullable<System.DateTime> FEEDATE { get; set; }
         public string SESSION { get; set; }
     }

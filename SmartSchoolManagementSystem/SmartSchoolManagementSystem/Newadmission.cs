@@ -226,17 +226,17 @@ namespace SmartSchoolManagementSystem
                     db.SaveChanges();
                      classid = objEnRoll.ClassId;
                 }
-                //var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
-                //foreach (var GetstudentRoll in GetStudentRoll)
+                var GetStudentRoll =( from c in db.Tblclasssections where c.Class==cbbclass.Text && c.Section==cbbsection.Text && c.Group==cbbgroup.Text select new {id=c.ID  }).SingleOrDefault();
+                // foreach (var GetstudentRoll in GetStudentRoll)
                 //{
-                //    classid = Convert.ToInt16(GetstudentRoll.Getclass);
+                int classGEt = GetStudentRoll.id;
                 //}
 
 
                 TBLACCOUNT objfee = new TBLACCOUNT();
                 {
                     objfee.SYSTEMID = SystemID;
-                    objfee.CLASSID = classid;
+                    objfee.CLASSID = classGEt;
                     objfee.CLASSROLL = SystemID;
                     // objfee.ADMISSION_FEE = txtadmissionfee.Text;
                     objfee.ADMISSIONFEE = Convert.ToDecimal(txtadfee.Text);

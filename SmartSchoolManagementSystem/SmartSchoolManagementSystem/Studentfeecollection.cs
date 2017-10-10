@@ -51,9 +51,9 @@ namespace SmartSchoolManagementSystem
                 int val = Convert.ToInt32(txtstudentid.Text);
                 var q = (from a in db.TBLADDMISSIONs
                          join c in db.TBLSTUDENTENRROLs on a.SID equals c.SystemId
-                         join s in db.Tblclasssections on c.SystemId equals s.ID
+                         join s in db.Tblclasssections on c.Student_ID equals s.ID
                          where a.SID == val
-                         select new {a.STUDENT_NAME, a.FATHER_NAME, a.S_CELL_NO,a.IMAGE, c.CLASSNAME,c.SECTION, s.Fee}).SingleOrDefault();
+                         select new {a.STUDENT_NAME, a.FATHER_NAME, a.S_CELL_NO,a.IMAGE, c.CLASSNAME,c.SECTION,s.Fee }).SingleOrDefault();
                 //  PID = q.ID; join prod in products on category.ID equals prod.CategoryID
                 txtstudentname.Text =q.STUDENT_NAME;
 

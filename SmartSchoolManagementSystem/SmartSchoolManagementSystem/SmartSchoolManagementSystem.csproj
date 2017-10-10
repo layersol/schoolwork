@@ -221,6 +221,12 @@
     <Compile Include="MDIParent.Designer.cs">
       <DependentUpon>MDIParent.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageSender.Designer.cs">
+      <DependentUpon>MessageSender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Newadmission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,12 +241,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Newadmissionform.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Phonesetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phonesetting.Designer.cs">
+      <DependentUpon>Phonesetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registraionform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registraionform.Designer.cs">
+      <DependentUpon>Registraionform.cs</DependentUpon>
     </Compile>
     <Compile Include="SchoolModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -437,14 +455,23 @@
       <DependentUpon>MDIParent.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="MessageSender.resx">
+      <DependentUpon>MessageSender.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Newadmission.resx">
       <DependentUpon>Newadmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phonesetting.resx">
+      <DependentUpon>Phonesetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="printstudentcard.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registraionform.resx">
+      <DependentUpon>Registraionform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptadmissionprint.rdlc" />
     <EmbeddedResource Include="rptdailyfeecollection.rdlc" />

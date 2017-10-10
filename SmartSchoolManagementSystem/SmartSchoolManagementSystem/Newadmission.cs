@@ -198,23 +198,23 @@ namespace SmartSchoolManagementSystem
                 //{
                 //    SystemID = GetsystemIDVal.SID;
                 //}
-                if ((from c in db.TBLSTUDENTENRROLs where c.CLASSNAME == cbbclass.Text && c.SECTION == cbbsection.Text && c.ACADMICSESSION == lblSession.Text select c).Count() > 0)
-                {
-                    //var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs.OrderByDescending(c => c.ClassId) select new { Getsystem = c.Student_ID, };
-                    var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs select new { Getsystem = c.Student_ID, };
-                    foreach (var GetstudentRoll in GetStudentRollNo)
-                    {
-                        int ClassNo = Convert.ToInt16(GetstudentRoll.Getsystem);
-                        int val = 1;
-                        ClassRollNo = ClassNo + val;
-                        //  txtemail.Text = ClassRollNo.ToString();
-                    }
-                }
-                else { ClassRollNo = 1; }
+                //if ((from c in db.TBLSTUDENTENRROLs where c.CLASSNAME == cbbclass.Text && c.SECTION == cbbsection.Text && c.ACADMICSESSION == lblSession.Text select c).Count() > 0)
+                //{
+                //    //var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs.OrderByDescending(c => c.ClassId) select new { Getsystem = c.Student_ID, };
+                //    var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs select new { Getsystem = c.Student_ID, };
+                //    foreach (var GetstudentRoll in GetStudentRollNo)
+                //    {
+                //        int ClassNo = Convert.ToInt16(GetstudentRoll.Getsystem);
+                //        int val = 1;
+                //        ClassRollNo = ClassNo + val;
+                //        //  txtemail.Text = ClassRollNo.ToString();
+                //    }
+                //}
+                //else { ClassRollNo = 1; }
                 TBLSTUDENTENRROL objEnRoll = new TBLSTUDENTENRROL();
                 {
                     objEnRoll.SystemId = SystemID;
-                    objEnRoll.Student_ID = ClassRollNo;
+                    objEnRoll.Student_ID = SystemID;
                     objEnRoll.CLASSNAME = cbbclass.Text;
                     objEnRoll.SECTION = cbbsection.Text;
                     objEnRoll.Group = cbbgroup.Text;
@@ -237,7 +237,7 @@ namespace SmartSchoolManagementSystem
                 {
                     objfee.SYSTEMID = SystemID;
                     objfee.CLASSID = classid;
-                    objfee.CLASSROLL = ClassRollNo;
+                    objfee.CLASSROLL = SystemID;
                     // objfee.ADMISSION_FEE = txtadmissionfee.Text;
                     objfee.ADMISSIONFEE = Convert.ToDecimal(txtadfee.Text);
                     objfee.TUTIONFEE = Convert.ToDecimal(txttutionfee.Text);

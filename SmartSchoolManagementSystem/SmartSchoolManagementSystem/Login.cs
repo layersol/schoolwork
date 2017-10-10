@@ -30,7 +30,7 @@ namespace SmartSchoolManagementSystem
             
             this.Hide();
             objopen.Show();
-            MessageBox.Show("You Have been Successfully LoggedIn", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           
             
 
         }

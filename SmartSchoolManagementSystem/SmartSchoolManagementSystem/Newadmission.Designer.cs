@@ -769,6 +769,7 @@
             this.txtotherfee.Name = "txtotherfee";
             this.txtotherfee.Size = new System.Drawing.Size(70, 20);
             this.txtotherfee.TabIndex = 5;
+            this.txtotherfee.ModifiedChanged += new System.EventHandler(this.txtotherfee_ModifiedChanged);
             this.txtotherfee.TextChanged += new System.EventHandler(this.txtotherfee_TextChanged);
             this.txtotherfee.Enter += new System.EventHandler(this.txtotherfee_Enter);
             this.txtotherfee.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtotherfee_KeyPress);

@@ -69,7 +69,7 @@ namespace SmartSchoolManagementSystem
             }
             else
             {
-                MessageBox.Show("false");
+                MessageBox.Show("No Record Found at this time please click ok");
             }
         }
 
@@ -192,7 +192,6 @@ namespace SmartSchoolManagementSystem
                 objcontext.CREATED_DATE = System.DateTime.Now;
                 db.TBLADDMISSIONs.Add(objcontext);
                 db.SaveChanges();
-
                 int SystemID = objcontext.SID;
                 // var qaNames = (from a in db.TBLADDMISSIONs select new { a.SID }).ToList();
                 //foreach (var GetsystemIDVal in qaNames)
@@ -203,7 +202,6 @@ namespace SmartSchoolManagementSystem
                 {
                     //var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs.OrderByDescending(c => c.ClassId) select new { Getsystem = c.Student_ID, };
                     var GetStudentRollNo = from c in db.TBLSTUDENTENRROLs select new { Getsystem = c.Student_ID, };
-
                     foreach (var GetstudentRoll in GetStudentRollNo)
                     {
                         int ClassNo = Convert.ToInt16(GetstudentRoll.Getsystem);
@@ -212,7 +210,6 @@ namespace SmartSchoolManagementSystem
                         //  txtemail.Text = ClassRollNo.ToString();
                     }
                 }
-
                 else { ClassRollNo = 1; }
                 TBLSTUDENTENRROL objEnRoll = new TBLSTUDENTENRROL();
                 {
@@ -229,15 +226,11 @@ namespace SmartSchoolManagementSystem
                     db.SaveChanges();
                      classid = objEnRoll.ClassId;
                 }
-
-
                 //var GetStudentRoll = from c in db.TBLSTUDENTENRROLs select new { Getclass = c.ClassId, };
                 //foreach (var GetstudentRoll in GetStudentRoll)
                 //{
                 //    classid = Convert.ToInt16(GetstudentRoll.Getclass);
                 //}
-
-
                 TBLACCOUNT objfee = new TBLACCOUNT();
                 {
                     objfee.SYSTEMID = SystemID;
@@ -511,9 +504,16 @@ namespace SmartSchoolManagementSystem
 
         private void Discount()
         {
-            int totalval = Convert.ToInt32(txttotal.Text);
-            int discount = Convert.ToInt32(txtdiscount.Text);
-            int result= -((discount / 100) * totalval) + totalval;
+            //int totalval = Convert.ToInt32(txttotal.Text);
+            otherfee = Convert.ToInt32(txtotherfee.Text);
+            admissionfee = Convert.ToInt32(txtadfee.Text);
+            tutionfee = Convert.ToInt32(txttutionfee.Text);
+
+
+            decimal reslt = Convert.ToDecimal(admissionfee + tutionfee + otherfee);
+
+            decimal discount = Convert.ToDecimal(txtdiscount.Text);
+            decimal result= -((discount / 100) * reslt) + reslt;
             txttotal.Text = Convert.ToString(result);
         }
 
@@ -570,6 +570,11 @@ namespace SmartSchoolManagementSystem
             txtofficetell.Text = txtofficetel.Text;
             txtgcast.Text = txtcast.Text;
             txtgoffice.Text = txtofficeadress.Text;
+        }
+
+        private void txtotherfee_ModifiedChanged(object sender, EventArgs e)
+        {
+            calculate();
         }
 
         private void btnback_Click(object sender, EventArgs e)

@@ -29,62 +29,66 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdbstudentid = new System.Windows.Forms.RadioButton();
-            this.rdbvoucherid = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtstudentid = new System.Windows.Forms.TextBox();
-            this.txtsrnumber = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnsearch = new System.Windows.Forms.Button();
             this.txtdate = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtsrnumber = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtstudentid = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rdbvoucherid = new System.Windows.Forms.RadioButton();
+            this.rdbstudentid = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtstudentname = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtfathername = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtphone = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtsection = new System.Windows.Forms.TextBox();
             this.txtclass = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtphone = new System.Windows.Forms.TextBox();
+            this.txtfathername = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtstudentname = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtblance = new System.Windows.Forms.TextBox();
+            this.txtarreres = new System.Windows.Forms.TextBox();
+            this.txtpaid = new System.Windows.Forms.TextBox();
+            this.txtfine = new System.Windows.Forms.TextBox();
             this.txttottal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtcurrentfee = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtpaid = new System.Windows.Forms.TextBox();
-            this.txtfine = new System.Windows.Forms.TextBox();
-            this.txtblance = new System.Windows.Forms.TextBox();
-            this.txtarreres = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.btnsave = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
-            this.btnpreview = new System.Windows.Forms.Button();
-            this.btnunpaid = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.btnexit = new System.Windows.Forms.Button();
-            this.cbautosms = new System.Windows.Forms.CheckBox();
             this.btnprint = new System.Windows.Forms.Button();
+            this.cbautosms = new System.Windows.Forms.CheckBox();
+            this.btnexit = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.btnunpaid = new System.Windows.Forms.Button();
+            this.btnpreview = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnsearch);
             this.groupBox1.Controls.Add(this.txtdate);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtsrnumber);
@@ -100,61 +104,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criteria";
             // 
-            // rdbstudentid
+            // dateTimePicker1
             // 
-            this.rdbstudentid.AutoSize = true;
-            this.rdbstudentid.Location = new System.Drawing.Point(60, 0);
-            this.rdbstudentid.Name = "rdbstudentid";
-            this.rdbstudentid.Size = new System.Drawing.Size(76, 17);
-            this.rdbstudentid.TabIndex = 0;
-            this.rdbstudentid.TabStop = true;
-            this.rdbstudentid.Text = "Student ID";
-            this.rdbstudentid.UseVisualStyleBackColor = true;
-            this.rdbstudentid.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.dateTimePicker1.Location = new System.Drawing.Point(578, 31);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(88, 20);
+            this.dateTimePicker1.TabIndex = 9;
             // 
-            // rdbvoucherid
+            // btnsearch
             // 
-            this.rdbvoucherid.AutoSize = true;
-            this.rdbvoucherid.Location = new System.Drawing.Point(154, 0);
-            this.rdbvoucherid.Name = "rdbvoucherid";
-            this.rdbvoucherid.Size = new System.Drawing.Size(79, 17);
-            this.rdbvoucherid.TabIndex = 1;
-            this.rdbvoucherid.TabStop = true;
-            this.rdbvoucherid.Text = "Voucher ID";
-            this.rdbvoucherid.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Student ID";
-            // 
-            // txtstudentid
-            // 
-            this.txtstudentid.Location = new System.Drawing.Point(74, 31);
-            this.txtstudentid.Name = "txtstudentid";
-            this.txtstudentid.Size = new System.Drawing.Size(105, 20);
-            this.txtstudentid.TabIndex = 3;
-            this.txtstudentid.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtsrnumber
-            // 
-            this.txtsrnumber.Location = new System.Drawing.Point(269, 31);
-            this.txtsrnumber.Name = "txtsrnumber";
-            this.txtsrnumber.Size = new System.Drawing.Size(105, 20);
-            this.txtsrnumber.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Sr #,";
+            this.btnsearch.Image = global::SmartSchoolManagementSystem.Properties.Resources.Apps_Search_icon;
+            this.btnsearch.Location = new System.Drawing.Point(185, 30);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(47, 23);
+            this.btnsearch.TabIndex = 8;
+            this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // txtdate
             // 
@@ -172,21 +137,61 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Date";
             // 
-            // button1
+            // txtsrnumber
             // 
-            this.button1.Image = global::SmartSchoolManagementSystem.Properties.Resources.Apps_Search_icon;
-            this.button1.Location = new System.Drawing.Point(185, 30);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(47, 23);
-            this.button1.TabIndex = 8;
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtsrnumber.Location = new System.Drawing.Point(269, 31);
+            this.txtsrnumber.Name = "txtsrnumber";
+            this.txtsrnumber.Size = new System.Drawing.Size(105, 20);
+            this.txtsrnumber.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // label2
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(578, 31);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(88, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(233, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Sr #,";
+            // 
+            // txtstudentid
+            // 
+            this.txtstudentid.Location = new System.Drawing.Point(74, 31);
+            this.txtstudentid.Name = "txtstudentid";
+            this.txtstudentid.Size = new System.Drawing.Size(105, 20);
+            this.txtstudentid.TabIndex = 3;
+            this.txtstudentid.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Student ID";
+            // 
+            // rdbvoucherid
+            // 
+            this.rdbvoucherid.AutoSize = true;
+            this.rdbvoucherid.Location = new System.Drawing.Point(154, 0);
+            this.rdbvoucherid.Name = "rdbvoucherid";
+            this.rdbvoucherid.Size = new System.Drawing.Size(79, 17);
+            this.rdbvoucherid.TabIndex = 1;
+            this.rdbvoucherid.TabStop = true;
+            this.rdbvoucherid.Text = "Voucher ID";
+            this.rdbvoucherid.UseVisualStyleBackColor = true;
+            // 
+            // rdbstudentid
+            // 
+            this.rdbstudentid.AutoSize = true;
+            this.rdbstudentid.Location = new System.Drawing.Point(60, 0);
+            this.rdbstudentid.Name = "rdbstudentid";
+            this.rdbstudentid.Size = new System.Drawing.Size(76, 17);
+            this.rdbstudentid.TabIndex = 0;
+            this.rdbstudentid.TabStop = true;
+            this.rdbstudentid.Text = "Student ID";
+            this.rdbstudentid.UseVisualStyleBackColor = true;
+            this.rdbstudentid.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -207,55 +212,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Student Information";
-            // 
-            // txtstudentname
-            // 
-            this.txtstudentname.Location = new System.Drawing.Point(100, 30);
-            this.txtstudentname.Name = "txtstudentname";
-            this.txtstudentname.Size = new System.Drawing.Size(354, 20);
-            this.txtstudentname.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Student Name";
-            // 
-            // txtfathername
-            // 
-            this.txtfathername.Location = new System.Drawing.Point(100, 56);
-            this.txtfathername.Name = "txtfathername";
-            this.txtfathername.Size = new System.Drawing.Size(149, 20);
-            this.txtfathername.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 59);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Faher\'s Name";
-            // 
-            // txtphone
-            // 
-            this.txtphone.Location = new System.Drawing.Point(305, 56);
-            this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(149, 20);
-            this.txtphone.TabIndex = 12;
-            this.txtphone.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(266, 59);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Ph";
             // 
             // label7
             // 
@@ -289,6 +245,55 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Class #";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(266, 59);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(20, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Ph";
+            // 
+            // txtphone
+            // 
+            this.txtphone.Location = new System.Drawing.Point(305, 56);
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(149, 20);
+            this.txtphone.TabIndex = 12;
+            this.txtphone.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // txtfathername
+            // 
+            this.txtfathername.Location = new System.Drawing.Point(100, 56);
+            this.txtfathername.Name = "txtfathername";
+            this.txtfathername.Size = new System.Drawing.Size(149, 20);
+            this.txtfathername.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 59);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Faher\'s Name";
+            // 
+            // txtstudentname
+            // 
+            this.txtstudentname.Location = new System.Drawing.Point(100, 30);
+            this.txtstudentname.Name = "txtstudentname";
+            this.txtstudentname.Size = new System.Drawing.Size(354, 20);
+            this.txtstudentname.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Student Name";
+            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -310,6 +315,70 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Fee Information";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(323, 66);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(40, 13);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Blance";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(323, 33);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 13);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Arreres";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(191, 62);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(28, 13);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Paid";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(191, 33);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(27, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Fine";
+            // 
+            // txtblance
+            // 
+            this.txtblance.Location = new System.Drawing.Point(375, 59);
+            this.txtblance.Name = "txtblance";
+            this.txtblance.Size = new System.Drawing.Size(79, 20);
+            this.txtblance.TabIndex = 20;
+            // 
+            // txtarreres
+            // 
+            this.txtarreres.Location = new System.Drawing.Point(375, 30);
+            this.txtarreres.Name = "txtarreres";
+            this.txtarreres.Size = new System.Drawing.Size(79, 20);
+            this.txtarreres.TabIndex = 19;
+            // 
+            // txtpaid
+            // 
+            this.txtpaid.Location = new System.Drawing.Point(230, 59);
+            this.txtpaid.Name = "txtpaid";
+            this.txtpaid.Size = new System.Drawing.Size(79, 20);
+            this.txtpaid.TabIndex = 17;
+            // 
+            // txtfine
+            // 
+            this.txtfine.Location = new System.Drawing.Point(230, 30);
+            this.txtfine.Name = "txtfine";
+            this.txtfine.Size = new System.Drawing.Size(79, 20);
+            this.txtfine.TabIndex = 16;
             // 
             // txttottal
             // 
@@ -343,76 +412,13 @@
             this.label13.TabIndex = 8;
             this.label13.Text = "Current";
             // 
-            // txtpaid
-            // 
-            this.txtpaid.Location = new System.Drawing.Point(230, 59);
-            this.txtpaid.Name = "txtpaid";
-            this.txtpaid.Size = new System.Drawing.Size(79, 20);
-            this.txtpaid.TabIndex = 17;
-            // 
-            // txtfine
-            // 
-            this.txtfine.Location = new System.Drawing.Point(230, 30);
-            this.txtfine.Name = "txtfine";
-            this.txtfine.Size = new System.Drawing.Size(79, 20);
-            this.txtfine.TabIndex = 16;
-            // 
-            // txtblance
-            // 
-            this.txtblance.Location = new System.Drawing.Point(375, 59);
-            this.txtblance.Name = "txtblance";
-            this.txtblance.Size = new System.Drawing.Size(79, 20);
-            this.txtblance.TabIndex = 20;
-            // 
-            // txtarreres
-            // 
-            this.txtarreres.Location = new System.Drawing.Point(375, 30);
-            this.txtarreres.Name = "txtarreres";
-            this.txtarreres.Size = new System.Drawing.Size(79, 20);
-            this.txtarreres.TabIndex = 19;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(191, 33);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 13);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Fine";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(323, 33);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 13);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Arreres";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(191, 62);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(28, 13);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Paid";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(323, 66);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(40, 13);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "Blance";
-            // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBox4.Controls.Add(this.imgpicturebox);
             this.groupBox4.Location = new System.Drawing.Point(469, 104);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 294);
+            this.groupBox4.Size = new System.Drawing.Size(206, 153);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Identity";
@@ -429,6 +435,7 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBox6.Controls.Add(this.button2);
             this.groupBox6.Controls.Add(this.btnprint);
             this.groupBox6.Controls.Add(this.cbautosms);
             this.groupBox6.Controls.Add(this.btnexit);
@@ -439,75 +446,24 @@
             this.groupBox6.Controls.Add(this.btnsave);
             this.groupBox6.Location = new System.Drawing.Point(3, 404);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(666, 60);
+            this.groupBox6.Size = new System.Drawing.Size(672, 60);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             // 
-            // btnsave
+            // btnprint
             // 
-            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnsave.Location = new System.Drawing.Point(7, 19);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(74, 36);
-            this.btnsave.TabIndex = 0;
-            this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = false;
-            // 
-            // btncancel
-            // 
-            this.btncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btncancel.Location = new System.Drawing.Point(87, 19);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(74, 36);
-            this.btncancel.TabIndex = 0;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = false;
-            // 
-            // btnpreview
-            // 
-            this.btnpreview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnpreview.Location = new System.Drawing.Point(167, 19);
-            this.btnpreview.Name = "btnpreview";
-            this.btnpreview.Size = new System.Drawing.Size(74, 36);
-            this.btnpreview.TabIndex = 0;
-            this.btnpreview.Text = "Preview";
-            this.btnpreview.UseVisualStyleBackColor = false;
-            // 
-            // btnunpaid
-            // 
-            this.btnunpaid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnunpaid.Location = new System.Drawing.Point(247, 19);
-            this.btnunpaid.Name = "btnunpaid";
-            this.btnunpaid.Size = new System.Drawing.Size(74, 36);
-            this.btnunpaid.TabIndex = 0;
-            this.btnunpaid.Text = "Unpaid";
-            this.btnunpaid.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(327, 20);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(74, 24);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "button2";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // btnexit
-            // 
-            this.btnexit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnexit.ForeColor = System.Drawing.Color.Red;
-            this.btnexit.Location = new System.Drawing.Point(326, 19);
-            this.btnexit.Name = "btnexit";
-            this.btnexit.Size = new System.Drawing.Size(74, 36);
-            this.btnexit.TabIndex = 0;
-            this.btnexit.Text = "Exit";
-            this.btnexit.UseVisualStyleBackColor = false;
-            this.btnexit.Click += new System.EventHandler(this.button7_Click);
+            this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnprint.Location = new System.Drawing.Point(572, 16);
+            this.btnprint.Name = "btnprint";
+            this.btnprint.Size = new System.Drawing.Size(74, 36);
+            this.btnprint.TabIndex = 2;
+            this.btnprint.Text = "Print";
+            this.btnprint.UseVisualStyleBackColor = false;
             // 
             // cbautosms
             // 
             this.cbautosms.AutoSize = true;
-            this.cbautosms.Location = new System.Drawing.Point(420, 30);
+            this.cbautosms.Location = new System.Drawing.Point(495, 26);
             this.cbautosms.Name = "cbautosms";
             this.cbautosms.Size = new System.Drawing.Size(73, 17);
             this.cbautosms.TabIndex = 1;
@@ -515,15 +471,85 @@
             this.cbautosms.UseVisualStyleBackColor = true;
             this.cbautosms.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // btnprint
+            // btnexit
             // 
-            this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnprint.Location = new System.Drawing.Point(497, 20);
-            this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(74, 36);
-            this.btnprint.TabIndex = 2;
-            this.btnprint.Text = "Print";
-            this.btnprint.UseVisualStyleBackColor = false;
+            this.btnexit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnexit.ForeColor = System.Drawing.Color.Red;
+            this.btnexit.Location = new System.Drawing.Point(401, 15);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(74, 36);
+            this.btnexit.TabIndex = 0;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = false;
+            this.btnexit.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(402, 16);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(74, 24);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "button2";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // btnunpaid
+            // 
+            this.btnunpaid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnunpaid.Location = new System.Drawing.Point(322, 15);
+            this.btnunpaid.Name = "btnunpaid";
+            this.btnunpaid.Size = new System.Drawing.Size(74, 36);
+            this.btnunpaid.TabIndex = 0;
+            this.btnunpaid.Text = "Unpaid";
+            this.btnunpaid.UseVisualStyleBackColor = false;
+            // 
+            // btnpreview
+            // 
+            this.btnpreview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnpreview.Location = new System.Drawing.Point(242, 15);
+            this.btnpreview.Name = "btnpreview";
+            this.btnpreview.Size = new System.Drawing.Size(74, 36);
+            this.btnpreview.TabIndex = 0;
+            this.btnpreview.Text = "Preview";
+            this.btnpreview.UseVisualStyleBackColor = false;
+            // 
+            // btncancel
+            // 
+            this.btncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btncancel.Location = new System.Drawing.Point(162, 15);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(74, 36);
+            this.btncancel.TabIndex = 0;
+            this.btncancel.Text = "Cancel";
+            this.btncancel.UseVisualStyleBackColor = false;
+            // 
+            // btnsave
+            // 
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsave.Location = new System.Drawing.Point(82, 15);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(74, 36);
+            this.btnsave.TabIndex = 0;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button2.Location = new System.Drawing.Point(6, 16);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(74, 36);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Add";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // imgpicturebox
+            // 
+            this.imgpicturebox.Location = new System.Drawing.Point(6, 19);
+            this.imgpicturebox.Name = "imgpicturebox";
+            this.imgpicturebox.Size = new System.Drawing.Size(194, 128);
+            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpicturebox.TabIndex = 0;
+            this.imgpicturebox.TabStop = false;
             // 
             // Studentfeecollection
             // 
@@ -546,8 +572,10 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -561,7 +589,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtsrnumber;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtdate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -600,5 +628,7 @@
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.CheckBox cbautosms;
         private System.Windows.Forms.Button btnprint;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox imgpicturebox;
     }
 }

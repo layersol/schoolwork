@@ -141,7 +141,7 @@
             this.txtdate.Location = new System.Drawing.Point(407, 20);
             this.txtdate.Name = "txtdate";
             this.txtdate.Size = new System.Drawing.Size(100, 23);
-            this.txtdate.TabIndex = 3;
+            this.txtdate.TabIndex = 2;
             // 
             // label3
             // 
@@ -158,14 +158,14 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(514, 19);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(74, 23);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePicker1.TabIndex = 3;
             // 
             // txtname
             // 
             this.txtname.Location = new System.Drawing.Point(106, 66);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(243, 23);
-            this.txtname.TabIndex = 6;
+            this.txtname.TabIndex = 4;
             // 
             // label4
             // 
@@ -182,7 +182,7 @@
             this.txtfname.Location = new System.Drawing.Point(106, 92);
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(243, 23);
-            this.txtfname.TabIndex = 8;
+            this.txtfname.TabIndex = 5;
             // 
             // label5
             // 
@@ -199,7 +199,7 @@
             this.txtsalarymonth.Location = new System.Drawing.Point(106, 118);
             this.txtsalarymonth.Name = "txtsalarymonth";
             this.txtsalarymonth.Size = new System.Drawing.Size(243, 23);
-            this.txtsalarymonth.TabIndex = 10;
+            this.txtsalarymonth.TabIndex = 6;
             // 
             // label6
             // 
@@ -216,7 +216,7 @@
             this.txtsalaryamount.Location = new System.Drawing.Point(106, 144);
             this.txtsalaryamount.Name = "txtsalaryamount";
             this.txtsalaryamount.Size = new System.Drawing.Size(88, 23);
-            this.txtsalaryamount.TabIndex = 12;
+            this.txtsalaryamount.TabIndex = 7;
             // 
             // label7
             // 
@@ -233,7 +233,7 @@
             this.txtpaid.Location = new System.Drawing.Point(261, 144);
             this.txtpaid.Name = "txtpaid";
             this.txtpaid.Size = new System.Drawing.Size(88, 23);
-            this.txtpaid.TabIndex = 12;
+            this.txtpaid.TabIndex = 8;
             // 
             // label8
             // 
@@ -260,7 +260,7 @@
             this.txtupdatedby.Location = new System.Drawing.Point(106, 276);
             this.txtupdatedby.Name = "txtupdatedby";
             this.txtupdatedby.Size = new System.Drawing.Size(243, 23);
-            this.txtupdatedby.TabIndex = 18;
+            this.txtupdatedby.TabIndex = 10;
             // 
             // label9
             // 
@@ -278,7 +278,7 @@
             this.txtcreatedby.Location = new System.Drawing.Point(106, 250);
             this.txtcreatedby.Name = "txtcreatedby";
             this.txtcreatedby.Size = new System.Drawing.Size(243, 23);
-            this.txtcreatedby.TabIndex = 16;
+            this.txtcreatedby.TabIndex = 9;
             // 
             // label10
             // 
@@ -326,7 +326,7 @@
             this.btncancel.Location = new System.Drawing.Point(309, 8);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(94, 38);
-            this.btncancel.TabIndex = 12;
+            this.btncancel.TabIndex = 13;
             this.btncancel.Text = "Cancel";
             this.btncancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncancel.UseVisualStyleBackColor = false;
@@ -340,7 +340,7 @@
             this.btndelete.Location = new System.Drawing.Point(203, 8);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(105, 38);
-            this.btndelete.TabIndex = 11;
+            this.btndelete.TabIndex = 12;
             this.btndelete.Text = "Delete";
             this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndelete.UseVisualStyleBackColor = false;
@@ -353,7 +353,7 @@
             this.btnsave.Location = new System.Drawing.Point(108, 8);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(94, 38);
-            this.btnsave.TabIndex = 10;
+            this.btnsave.TabIndex = 11;
             this.btnsave.Text = "Save";
             this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsave.UseVisualStyleBackColor = false;
@@ -366,7 +366,7 @@
             this.btnadd.Location = new System.Drawing.Point(13, 8);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(94, 38);
-            this.btnadd.TabIndex = 9;
+            this.btnadd.TabIndex = 10;
             this.btnadd.Text = "Add";
             this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnadd.UseVisualStyleBackColor = false;

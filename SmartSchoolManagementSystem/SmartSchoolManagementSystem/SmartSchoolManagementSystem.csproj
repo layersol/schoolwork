@@ -173,6 +173,12 @@
     <Compile Include="destination.Designer.cs">
       <DependentUpon>destination.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExpencesRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpencesRecord.Designer.cs">
+      <DependentUpon>ExpencesRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feecollectiondetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -402,6 +408,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="destination.resx">
       <DependentUpon>destination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpencesRecord.resx">
+      <DependentUpon>ExpencesRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feecollectiondetail.resx">
       <DependentUpon>Feecollectiondetail.cs</DependentUpon>

@@ -363,6 +363,12 @@
     <Compile Include="UserDeatil.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Vacationworkcollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacationworkcollection.Designer.cs">
+      <DependentUpon>Vacationworkcollection.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Addbussstops.resx">
       <DependentUpon>Addbussstops.cs</DependentUpon>
     </EmbeddedResource>
@@ -471,6 +477,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="testform.resx">
       <DependentUpon>testform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacationworkcollection.resx">
+      <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Newadmissionform.xsc">
       <DependentUpon>Newadmissionform.xsd</DependentUpon>

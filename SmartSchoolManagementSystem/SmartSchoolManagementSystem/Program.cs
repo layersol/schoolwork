@@ -17,7 +17,7 @@ namespace SmartSchoolManagementSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new ExpencesRecord());
+            Application.Run(new Login());
 
             
 

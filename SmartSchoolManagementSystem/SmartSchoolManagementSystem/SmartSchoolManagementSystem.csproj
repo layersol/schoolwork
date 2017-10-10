@@ -173,6 +173,12 @@
     <Compile Include="destination.Designer.cs">
       <DependentUpon>destination.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExpencesRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpencesRecord.Designer.cs">
+      <DependentUpon>ExpencesRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feecollectiondetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +339,12 @@
     <Compile Include="Teacherinfoprintform.Designer.cs">
       <DependentUpon>Teacherinfoprintform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teachersalaryrecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teachersalaryrecord.Designer.cs">
+      <DependentUpon>Teachersalaryrecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeachersttafInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,6 +362,12 @@
     </Compile>
     <Compile Include="UserDeatil.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vacationworkcollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacationworkcollection.Designer.cs">
+      <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Addbussstops.resx">
       <DependentUpon>Addbussstops.cs</DependentUpon>
@@ -396,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="destination.resx">
       <DependentUpon>destination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpencesRecord.resx">
+      <DependentUpon>ExpencesRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feecollectiondetail.resx">
       <DependentUpon>Feecollectiondetail.cs</DependentUpon>
@@ -448,11 +469,17 @@
     <EmbeddedResource Include="Teacherinfoprintform.resx">
       <DependentUpon>Teacherinfoprintform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Teachersalaryrecord.resx">
+      <DependentUpon>Teachersalaryrecord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeachersttafInformation.resx">
       <DependentUpon>TeachersttafInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="testform.resx">
       <DependentUpon>testform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacationworkcollection.resx">
+      <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Newadmissionform.xsc">
       <DependentUpon>Newadmissionform.xsd</DependentUpon>

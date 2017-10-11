@@ -161,6 +161,12 @@
     <Compile Include="dailyfeecollectionprint.Designer.cs">
       <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
     </Compile>
+    <Compile Include="DefineFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefineFee.Designer.cs">
+      <DependentUpon>DefineFee.cs</DependentUpon>
+    </Compile>
     <Compile Include="DEMO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -336,6 +342,9 @@
     <Compile Include="Tblclasssection.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="TBLFEEMASTER.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Tblschoolsetting.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
@@ -346,6 +355,9 @@
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="TblTeacherInformation.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLTRANSMASTER.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="TBLUSER.cs">
@@ -426,6 +438,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dailyfeecollectionprint.resx">
       <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefineFee.resx">
+      <DependentUpon>DefineFee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DEMO.resx">
       <DependentUpon>DEMO.cs</DependentUpon>

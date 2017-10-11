@@ -26,5 +26,6 @@ namespace SmartSchoolManagementSystem
         public string UPDATED_DATE { get; set; }
         public string Group { get; set; }
         public string Medium { get; set; }
+        public Nullable<int> CID { get; set; }
     }
 }

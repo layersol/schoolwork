@@ -5,22 +5,6 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="smartschooldbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="FeeMasterSettings">
-          <Key>
-            <PropertyRef Name="FID" />
-          </Key>
-          <Property Name="FID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Month_year" Type="nvarchar" MaxLength="50" />
-          <Property Name="Stu_Class" Type="nvarchar" MaxLength="50" />
-          <Property Name="Tuition_Fee" Type="nvarchar" MaxLength="50" />
-          <Property Name="Tuition_Fee_Percent" Type="nvarchar" MaxLength="50" />
-          <Property Name="Bus_Fee_Percent" Type="nvarchar" MaxLength="50" />
-          <Property Name="Late_Fee_Start" Type="nvarchar" MaxLength="50" />
-          <Property Name="Late_Fee" Type="nvarchar" MaxLength="50" />
-          <Property Name="Printing_charges" Type="nvarchar" MaxLength="50" />
-          <Property Name="Other_fee" Type="nvarchar" MaxLength="50" />
-          <Property Name="Other_Fee_Reference" Type="nvarchar" MaxLength="50" />
-        </EntityType>
         <EntityType Name="StudentFeeDetails">
           <Key>
             <PropertyRef Name="STID" />
@@ -185,15 +169,22 @@ warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a prim
           <Property Name="Maxstudent" Type="nvarchar" MaxLength="50" />
           <Property Name="FloorId" Type="nvarchar" MaxLength="50" />
           <Property Name="RoomNo" Type="nvarchar" MaxLength="50" />
-          <Property Name="admissionfee" Type="numeric" Precision="18" Scale="0" />
-          <Property Name="Fee" Type="numeric" Precision="18" Scale="0" />
-          <Property Name="examfee" Type="numeric" Precision="18" Scale="0" />
           <Property Name="Comments" Type="nvarchar" MaxLength="50" />
-          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
-          <Property Name="Createddate" Type="datetime" />
-          <Property Name="Updatedby" Type="nvarchar" MaxLength="50" />
-          <Property Name="Updateddate" Type="datetime" />
-          <Property Name="Acadmic_Session" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TBLFEEMASTER">
+          <Key>
+            <PropertyRef Name="FID" />
+          </Key>
+          <Property Name="FID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Month_Year" Type="nvarchar" MaxLength="50" />
+          <Property Name="STU_Class" Type="int" />
+          <Property Name="TUITION_FEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TUITION_FEE_PERCENT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="BUS_FEE_PERCENT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="LATE_FEE_START" Type="date" />
+          <Property Name="LATE_FEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="OTHER_FEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="OTHER_FEE_REFERENCE" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Tblschoolsetting">
           <Key>
@@ -226,16 +217,32 @@ warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a prim
           <Property Name="ClassId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SystemId" Type="int" />
           <Property Name="Student ID" Type="int" />
-          <Property Name="CLASSNAME" Type="nvarchar" MaxLength="50" />
-          <Property Name="SECTION" Type="nvarchar" MaxLength="50" />
-          <Property Name="Group" Type="nvarchar" MaxLength="50" />
-          <Property Name="Medium" Type="nvarchar" MaxLength="50" />
+          <Property Name="CID" Type="int" />
           <Property Name="ACADMICSESSION" Type="nvarchar" MaxLength="50" />
-          <Property Name="CREATED_BY" Type="nvarchar" MaxLength="50" />
-          <Property Name="CREATED_DATE" Type="nvarchar" MaxLength="50" />
-          <Property Name="UPDATED_BY" Type="nvarchar" MaxLength="50" />
-          <Property Name="UPDATED_DATE" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'smartschooldb.dbo.TBLSTUDENTFEEDETAILS' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="TBLSTUDENTFEEDETAILS">
+          <Property Name="SFID" Type="int" />
+          <Property Name="TID" Type="int" />
+          <Property Name="FID" Type="int" />
+          <Property Name="TUITION_FEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="BUS_FEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PRINTING_CHARGES" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="OTHER_FEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="LATE_FEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TOTAL_FEE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DISCOUNT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="AMOUNT_PAYABLE" Type="nvarchar" MaxLength="50" />
+          <Property Name="AMOUNT_PAID" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="BALANCE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="STATUS" Type="nchar" MaxLength="10" />
+          <Property Name="FEE_DATE" Type="date" />
+          <Property Name="CREATEED_BY" Type="nvarchar" MaxLength="50" />
+          <Property Name="CREATED_DATE" Type="datetime" />
+          <Property Name="UPDATED_BY" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPDATED_DATE" Type="datetime" />
+        </EntityType>-->
         <EntityType Name="TblTeacherInformation">
           <Key>
             <PropertyRef Name="ID" />
@@ -259,6 +266,18 @@ warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a prim
           <Property Name="STATUS" Type="bit" />
           <Property Name="TeachImage" Type="image" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="TBLTRANSMASTER">
+          <Key>
+            <PropertyRef Name="TID" />
+          </Key>
+          <Property Name="TID" Type="int" Nullable="false" />
+          <Property Name="PURPOSE" Type="nvarchar" MaxLength="50" />
+          <Property Name="AMOUNT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TYPE" Type="nvarchar" MaxLength="50" />
+          <Property Name="CREATED" Type="date" />
+        </EntityType>
         <EntityType Name="TBLUSER">
           <Key>
             <PropertyRef Name="User_ID" />
@@ -271,17 +290,6 @@ warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a prim
           <Property Name="Email" Type="nvarchar" MaxLength="250" />
           <Property Name="Status" Type="bit" />
           <Property Name="Password" Type="nvarchar" MaxLength="250" />
-        </EntityType>
-        <EntityType Name="TransMaster">
-          <Key>
-            <PropertyRef Name="TID" />
-          </Key>
-          <Property Name="TID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Purpose" Type="nvarchar" MaxLength="50" />
-          <Property Name="Amount" Type="nvarchar" MaxLength="50" />
-          <Property Name="TType" Type="nvarchar" MaxLength="50" />
-          <Property Name="Createdby" Type="nvarchar" MaxLength="50" />
-          <Property Name="Createddate" Type="datetime" />
         </EntityType>
         <EntityType Name="UserDeatils">
           <Key>
@@ -311,7 +319,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="COMMENTS" Type="nvarchar(max)" />
         </EntityType>
         <EntityContainer Name="smartschooldbModelStoreContainer">
-          <EntitySet Name="FeeMasterSettings" EntityType="Self.FeeMasterSettings" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="StudentFeeDetails" EntityType="Self.StudentFeeDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblacadmicSession" EntityType="Self.TblacadmicSession" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLACCOUNT" EntityType="Self.TBLACCOUNT" Schema="dbo" store:Type="Tables" />
@@ -321,12 +328,12 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySet Name="Tblbusdestination" EntityType="Self.Tblbusdestination" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblclass" EntityType="Self.Tblclass" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblclasssection" EntityType="Self.Tblclasssection" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLFEEMASTER" EntityType="Self.TBLFEEMASTER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblschoolsetting" EntityType="Self.Tblschoolsetting" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblSection" EntityType="Self.TblSection" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLSTUDENTENRROL" EntityType="Self.TBLSTUDENTENRROL" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblTeacherInformation" EntityType="Self.TblTeacherInformation" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLUSER" EntityType="Self.TBLUSER" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="TransMaster" EntityType="Self.TransMaster" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserDeatils" EntityType="Self.UserDeatils" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblbusstop" EntityType="Self.Tblbusstop" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
@@ -334,6 +341,15 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
     [Tblbusstop].[BusStop] AS [BusStop], 
     [Tblbusstop].[BussFee] AS [BussFee]
     FROM [dbo].[Tblbusstop] AS [Tblbusstop]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TBLTRANSMASTER" EntityType="Self.TBLTRANSMASTER" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [TBLTRANSMASTER].[TID] AS [TID], 
+    [TBLTRANSMASTER].[PURPOSE] AS [PURPOSE], 
+    [TBLTRANSMASTER].[AMOUNT] AS [AMOUNT], 
+    [TBLTRANSMASTER].[TYPE] AS [TYPE], 
+    [TBLTRANSMASTER].[CREATED] AS [CREATED]
+    FROM [dbo].[TBLTRANSMASTER] AS [TBLTRANSMASTER]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="firstformview" EntityType="Self.firstformview" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
@@ -560,6 +576,7 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="UPDATED_DATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Group" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Medium" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CID" Type="Int32" />
         </EntityType>
         <EntityType Name="TblTeacherInformation">
           <Key>
@@ -661,6 +678,8 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySet Name="Tblbusstops" EntityType="Self.Tblbusstop" />
           <EntitySet Name="firstformviews" EntityType="Self.firstformview" />
           <EntitySet Name="TBLACCOUNTs" EntityType="smartschooldbModel.TBLACCOUNT" />
+          <EntitySet Name="TBLFEEMASTERs" EntityType="smartschooldbModel.TBLFEEMASTER" />
+          <EntitySet Name="TBLTRANSMASTERs" EntityType="smartschooldbModel.TBLTRANSMASTER" />
         </EntityContainer>
         <EntityType Name="TBLACCOUNT">
           <Key>
@@ -678,29 +697,37 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <Property Name="FEEDATE" Type="DateTime" Precision="3" />
           <Property Name="SESSION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
+        <EntityType Name="TBLFEEMASTER">
+          <Key>
+            <PropertyRef Name="FID" />
+          </Key>
+          <Property Name="FID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Month_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="STU_Class" Type="Int32" />
+          <Property Name="TUITION_FEE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TUITION_FEE_PERCENT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BUS_FEE_PERCENT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="LATE_FEE_START" Type="DateTime" Precision="0" />
+          <Property Name="LATE_FEE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="OTHER_FEE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="OTHER_FEE_REFERENCE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TBLTRANSMASTER">
+          <Key>
+            <PropertyRef Name="TID" />
+          </Key>
+          <Property Name="TID" Type="Int32" Nullable="false" />
+          <Property Name="PURPOSE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CREATED" Type="DateTime" Precision="0" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="smartschooldbModelStoreContainer" CdmEntityContainer="smartschooldbEntities1">
-          <EntitySetMapping Name="FeeMasterSettings">
-            <EntityTypeMapping TypeName="smartschooldbModel.FeeMasterSetting">
-              <MappingFragment StoreEntitySet="FeeMasterSettings">
-                <ScalarProperty Name="FID" ColumnName="FID" />
-                <ScalarProperty Name="Month_year" ColumnName="Month_year" />
-                <ScalarProperty Name="Stu_Class" ColumnName="Stu_Class" />
-                <ScalarProperty Name="Tuition_Fee" ColumnName="Tuition_Fee" />
-                <ScalarProperty Name="Tuition_Fee_Percent" ColumnName="Tuition_Fee_Percent" />
-                <ScalarProperty Name="Bus_Fee_Percent" ColumnName="Bus_Fee_Percent" />
-                <ScalarProperty Name="Late_Fee_Start" ColumnName="Late_Fee_Start" />
-                <ScalarProperty Name="Late_Fee" ColumnName="Late_Fee" />
-                <ScalarProperty Name="Printing_charges" ColumnName="Printing_charges" />
-                <ScalarProperty Name="Other_fee" ColumnName="Other_fee" />
-                <ScalarProperty Name="Other_Fee_Reference" ColumnName="Other_Fee_Reference" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="StudentFeeDetails">
             <EntityTypeMapping TypeName="smartschooldbModel.StudentFeeDetail">
               <MappingFragment StoreEntitySet="StudentFeeDetails">
@@ -845,16 +872,8 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
                 <ScalarProperty Name="Maxstudent" ColumnName="Maxstudent" />
                 <ScalarProperty Name="FloorId" ColumnName="FloorId" />
                 <ScalarProperty Name="RoomNo" ColumnName="RoomNo" />
-                <ScalarProperty Name="admissionfee" ColumnName="admissionfee" />
-                <ScalarProperty Name="Fee" ColumnName="Fee" />
-                <ScalarProperty Name="examfee" ColumnName="examfee" />
                 <ScalarProperty Name="Comments" ColumnName="Comments" />
-                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
-                <ScalarProperty Name="Updatedby" ColumnName="Updatedby" />
-                <ScalarProperty Name="Updateddate" ColumnName="Updateddate" />
-                <ScalarProperty Name="Acadmic_Session" ColumnName="Acadmic_Session" />
-              </MappingFragment>
+                </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Tblschoolsettings">
@@ -886,19 +905,12 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
           <EntitySetMapping Name="TBLSTUDENTENRROLs">
             <EntityTypeMapping TypeName="smartschooldbModel.TBLSTUDENTENRROL">
               <MappingFragment StoreEntitySet="TBLSTUDENTENRROL">
-                <ScalarProperty Name="Medium" ColumnName="Medium" />
-                <ScalarProperty Name="Group" ColumnName="Group" />
+                <ScalarProperty Name="CID" ColumnName="CID" />
                 <ScalarProperty Name="ClassId" ColumnName="ClassId" />
                 <ScalarProperty Name="SystemId" ColumnName="SystemId" />
                 <ScalarProperty Name="Student_ID" ColumnName="Student ID" />
-                <ScalarProperty Name="CLASSNAME" ColumnName="CLASSNAME" />
-                <ScalarProperty Name="SECTION" ColumnName="SECTION" />
                 <ScalarProperty Name="ACADMICSESSION" ColumnName="ACADMICSESSION" />
-                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
-                <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
-                <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
-                <ScalarProperty Name="UPDATED_DATE" ColumnName="UPDATED_DATE" />
-              </MappingFragment>
+                </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblTeacherInformations">
@@ -936,18 +948,6 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="TransMasters">
-            <EntityTypeMapping TypeName="smartschooldbModel.TransMaster">
-              <MappingFragment StoreEntitySet="TransMaster">
-                <ScalarProperty Name="TID" ColumnName="TID" />
-                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
-                <ScalarProperty Name="Amount" ColumnName="Amount" />
-                <ScalarProperty Name="TType" ColumnName="TType" />
-                <ScalarProperty Name="Createdby" ColumnName="Createdby" />
-                <ScalarProperty Name="Createddate" ColumnName="Createddate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1001,6 +1001,33 @@ warning 6002: The table/view 'smartschooldb.dbo.firstformview' does not have a p
                 <ScalarProperty Name="CLASSID" ColumnName="CLASSID" />
                 <ScalarProperty Name="CLASSROLL" ColumnName="CLASSROLL" />
                 <ScalarProperty Name="SYSTEMID" ColumnName="SYSTEMID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLFEEMASTERs">
+            <EntityTypeMapping TypeName="smartschooldbModel.TBLFEEMASTER">
+              <MappingFragment StoreEntitySet="TBLFEEMASTER">
+                <ScalarProperty Name="OTHER_FEE_REFERENCE" ColumnName="OTHER_FEE_REFERENCE" />
+                <ScalarProperty Name="OTHER_FEE" ColumnName="OTHER_FEE" />
+                <ScalarProperty Name="LATE_FEE" ColumnName="LATE_FEE" />
+                <ScalarProperty Name="LATE_FEE_START" ColumnName="LATE_FEE_START" />
+                <ScalarProperty Name="BUS_FEE_PERCENT" ColumnName="BUS_FEE_PERCENT" />
+                <ScalarProperty Name="TUITION_FEE_PERCENT" ColumnName="TUITION_FEE_PERCENT" />
+                <ScalarProperty Name="TUITION_FEE" ColumnName="TUITION_FEE" />
+                <ScalarProperty Name="STU_Class" ColumnName="STU_Class" />
+                <ScalarProperty Name="Month_Year" ColumnName="Month_Year" />
+                <ScalarProperty Name="FID" ColumnName="FID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLTRANSMASTERs">
+            <EntityTypeMapping TypeName="smartschooldbModel.TBLTRANSMASTER">
+              <MappingFragment StoreEntitySet="TBLTRANSMASTER">
+                <ScalarProperty Name="CREATED" ColumnName="CREATED" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+                <ScalarProperty Name="PURPOSE" ColumnName="PURPOSE" />
+                <ScalarProperty Name="TID" ColumnName="TID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

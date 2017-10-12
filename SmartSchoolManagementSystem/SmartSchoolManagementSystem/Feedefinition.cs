@@ -12,7 +12,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class Feedefinition : Form
     {
-        smartschooldbEntities1 db = new smartschooldbEntities1();
+        smartschooldbEntities db = new smartschooldbEntities();
         public Feedefinition()
         {
             InitializeComponent();
@@ -33,28 +33,28 @@ namespace SmartSchoolManagementSystem
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (dtp.Text !="" & txttuitionfee.Text !="" & txtfeepercent.Text !="" & txttuitionfee.Text !="")
-                {
-                    FeeMasterSetting savecontent = new FeeMasterSetting();
-                    savecontent.Month_year = dtp.Text;
-                    savecontent.Stu_Class = cbbclass.SelectedValue.ToString();
-                    savecontent.Tuition_Fee = txttuitionfee.Text;
-                    savecontent.Tuition_Fee_Percent = txtfeepercent.Text;
-                    savecontent.Bus_Fee_Percent = txtbusfee.Text;
-                    savecontent.Late_Fee_Start = txtLateFeeStart.Text;
-                    savecontent.Late_Fee = txtlatefee.Text;
-                    savecontent.Other_fee = txtotherfee.Text;
-                    db.FeeMasterSettings.Add(savecontent);
-                    db.SaveChanges();
-                }
-                else { MessageBox.Show("Please Fill all field!"); }
-            }
-            catch
-            {
+            //try
+            //{
+            //    if (dtp.Text !="" & txttuitionfee.Text !="" & txtfeepercent.Text !="" & txttuitionfee.Text !="")
+            //    {
+            //        FeeMasterSetting savecontent = new FeeMasterSetting();
+            //        savecontent.Month_year = dtp.Text;
+            //        savecontent.Stu_Class = cbbclass.SelectedValue.ToString();
+            //        savecontent.Tuition_Fee = txttuitionfee.Text;
+            //        savecontent.Tuition_Fee_Percent = txtfeepercent.Text;
+            //        savecontent.Bus_Fee_Percent = txtbusfee.Text;
+            //        savecontent.Late_Fee_Start = txtLateFeeStart.Text;
+            //        savecontent.Late_Fee = txtlatefee.Text;
+            //        savecontent.Other_fee = txtotherfee.Text;
+            //        db.FeeMasterSettings.Add(savecontent);
+            //        db.SaveChanges();
+            //    }
+            //    else { MessageBox.Show("Please Fill all field!"); }
+            //}
+            //catch
+            //{
 
-            }
+            //}
         }
 
         private void cbbclass_SelectedIndexChanged(object sender, EventArgs e)

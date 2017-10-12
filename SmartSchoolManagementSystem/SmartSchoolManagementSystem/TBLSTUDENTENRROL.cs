@@ -17,15 +17,7 @@ namespace SmartSchoolManagementSystem
         public int ClassId { get; set; }
         public Nullable<int> SystemId { get; set; }
         public Nullable<int> Student_ID { get; set; }
-        public string CLASSNAME { get; set; }
-        public string SECTION { get; set; }
-        public string ACADMICSESSION { get; set; }
-        public string CREATED_BY { get; set; }
-        public string CREATED_DATE { get; set; }
-        public string UPDATED_BY { get; set; }
-        public string UPDATED_DATE { get; set; }
-        public string Group { get; set; }
-        public string Medium { get; set; }
         public Nullable<int> CID { get; set; }
+        public string ACADMICSESSION { get; set; }
     }
 }

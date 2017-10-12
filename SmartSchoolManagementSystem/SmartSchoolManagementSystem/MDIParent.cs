@@ -13,7 +13,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class MDIParent : Form
     {
-        smartschooldbEntities1 db = new smartschooldbEntities1();
+        smartschooldbEntities db = new smartschooldbEntities();
         private int childFormNumber = 0;
         string val1, val2;
         [DllImport("user32.dll")]

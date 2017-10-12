@@ -12,7 +12,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class Classandsectiondefination : Form
     {
-        smartschooldbEntities1 db = new smartschooldbEntities1();
+        smartschooldbEntities db = new smartschooldbEntities();
         string dgv;
         public Classandsectiondefination()
         {
@@ -91,15 +91,15 @@ namespace SmartSchoolManagementSystem
                 objin.Section = cbbsection.Text;
                 objin.Group = txtgroup.Text;
                 objin.Teacher = cbbteacher.Text;
-                objin.admissionfee = Convert.ToDecimal(txttuitionfee.Text);
-                objin.Fee = Convert.ToDecimal(txtmfee.Text);
-                objin.examfee = Convert.ToDecimal(txtexamfee.Text);
+              //  objin.admissionfee = Convert.ToDecimal(txttuitionfee.Text);
+               // objin.Fee = Convert.ToDecimal(txtmfee.Text);
+               // objin.examfee = Convert.ToDecimal(txtexamfee.Text);
                 objin.Maxstudent = txtmaxstudent.Text;
                 objin.RoomNo = txtroom.Text;
                 objin.FloorId = txtfloor.Text;
-                objin.Acadmic_Session = "2017-2018";
-                objin.CreatedBy = "ali";
-                objin.Createddate = Convert.ToDateTime(txtcreationdate.Text);
+               // objin.ac = "2017-2018";
+              //  objin.CreatedBy = "ali";
+              //  objin.Createddate = Convert.ToDateTime(txtcreationdate.Text);
                 db.Tblclasssections.Add(objin);
                 db.SaveChanges();
             }
@@ -141,10 +141,10 @@ namespace SmartSchoolManagementSystem
                                 //Fee=s.Fee,
                                 //examfee=s.examfee,
 
-                                CreatedBy = s.CreatedBy,
-                                CreationDate = s.Createddate,
-                                Updatedby = s.Updatedby,
-                                Updateddate = s.Updateddate,
+                                //CreatedBy = s.CreatedBy,
+                                //CreationDate = s.Createddate,
+                                //Updatedby = s.Updatedby,
+                                //Updateddate = s.Updateddate,
 
                             };
                 dgvclass.DataSource = query.ToList();
@@ -185,15 +185,15 @@ namespace SmartSchoolManagementSystem
                 cbbsection.Text = q.Section;
                 txtgroup.Text = q.Group;
                 cbbteacher.Text = q.Teacher;
-                txttuitionfee.Text = Convert.ToString(q.admissionfee);
-                txtmfee.Text = Convert.ToString(q.Fee);
-                txtexamfee.Text = Convert.ToString(q.examfee);
+              //  txttuitionfee.Text = Convert.ToString(q.admissionfee);
+              //  txtmfee.Text = Convert.ToString(q.Fee);
+               // txtexamfee.Text = Convert.ToString(q.examfee);
                 txtmaxstudent.Text = q.Maxstudent;
                 txtroom.Text = q.RoomNo;
                 txtfloor.Text = q.FloorId;
-                q.Acadmic_Session = "2017-2018";
-                txtcreatedby.Text = q.CreatedBy;
-                txtcreationdate.Text = Convert.ToString(q.Createddate);
+              //  q.Acadmic_Session = "2017-2018";
+               // txtcreatedby.Text = q.CreatedBy;
+              //  txtcreationdate.Text = Convert.ToString(q.Createddate);
             }
             else { }
         }
@@ -235,17 +235,17 @@ namespace SmartSchoolManagementSystem
                 objin.Section = cbbsection.Text;
                 objin.Group = txtgroup.Text;
                 objin.Teacher = cbbteacher.Text;
-                objin.admissionfee = Convert.ToDecimal(txttuitionfee.Text);
-                objin.Fee = Convert.ToDecimal(txtmfee.Text);
-                objin.examfee = Convert.ToDecimal(txtexamfee.Text);
+             //   objin.admissionfee = Convert.ToDecimal(txttuitionfee.Text);
+              //  objin.Fee = Convert.ToDecimal(txtmfee.Text);
+              //  objin.examfee = Convert.ToDecimal(txtexamfee.Text);
                 objin.Maxstudent = txtmaxstudent.Text;
                 objin.RoomNo = txtroom.Text;
                 objin.FloorId = txtfloor.Text;
-                objin.Acadmic_Session = "0000";
+               // objin.Acadmic_Session = "0000";
                 //  objin.CreatedBy = "ali";
                 // objin.Createddate = Convert.ToDateTime(txtcreationdate.Text);
-                objin.Updatedby = txtupdatedby.Text;
-                objin.Updateddate = Convert.ToDateTime(txtupdationby.Text);
+              //  objin.Updatedby = txtupdatedby.Text;
+              //  objin.Updateddate = Convert.ToDateTime(txtupdationby.Text);
                 db.SaveChanges();
                 MessageBox.Show("Updated", "Attention");
             }

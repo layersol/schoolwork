@@ -15,7 +15,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class Newadmission : Form
     {
-        smartschooldbEntities1 db = new smartschooldbEntities1();
+        smartschooldbEntities db = new smartschooldbEntities();
         public DataGridViewRow dgvr;
         int  ClassRollNo, admissionfee=0, tutionfee=0, otherfee=0, classid;
         string imgloc = "";
@@ -213,18 +213,18 @@ namespace SmartSchoolManagementSystem
                 //else { ClassRollNo = 1; }
                 TBLSTUDENTENRROL objEnRoll = new TBLSTUDENTENRROL();
                 {
-                    objEnRoll.SystemId = SystemID;
-                    objEnRoll.Student_ID = SystemID;
-                    objEnRoll.CLASSNAME = cbbclass.Text;
-                    objEnRoll.SECTION = cbbsection.Text;
-                    objEnRoll.Group = cbbgroup.Text;
-                    objEnRoll.Medium = cbbmedium.Text;
-                    objEnRoll.ACADMICSESSION = lblSession.Text;
-                    objEnRoll.CREATED_BY = txtcreatedby.Text;
-                    objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
-                    db.TBLSTUDENTENRROLs.Add(objEnRoll);
-                    db.SaveChanges();
-                     classid = objEnRoll.ClassId;
+                    //objEnRoll.SystemId = SystemID;
+                    //objEnRoll.Student_ID = SystemID;
+                    //objEnRoll.CLASSNAME = cbbclass.Text;
+                    //objEnRoll.SECTION = cbbsection.Text;
+                    ////objEnRoll.Group = cbbgroup.Text;
+                    //objEnRoll.Medium = cbbmedium.Text;
+                    //objEnRoll.ACADMICSESSION = lblSession.Text;
+                    //objEnRoll.CREATED_BY = txtcreatedby.Text;
+                    //objEnRoll.CREATED_DATE = System.DateTime.Now.ToString();
+                    //db.TBLSTUDENTENRROLs.Add(objEnRoll);
+                    //db.SaveChanges();
+                    // classid = objEnRoll.ClassId;
                 }
                 var GetStudentRoll =( from c in db.Tblclasssections where c.Class==cbbclass.Text && c.Section==cbbsection.Text && c.Group==cbbgroup.Text select new {id=c.ID  }).SingleOrDefault();
                 // foreach (var GetstudentRoll in GetStudentRoll)
@@ -233,28 +233,28 @@ namespace SmartSchoolManagementSystem
                 //}
 
 
-                TBLACCOUNT objfee = new TBLACCOUNT();
-                {
-                    objfee.SYSTEMID = SystemID;
-                    objfee.CLASSID = classGEt;
-                    objfee.CLASSROLL = SystemID;
-                    // objfee.ADMISSION_FEE = txtadmissionfee.Text;
-                    objfee.ADMISSIONFEE = Convert.ToDecimal(txtadfee.Text);
-                    objfee.TUTIONFEE = Convert.ToDecimal(txttutionfee.Text);
-                    objfee.OTHERFEE = Convert.ToDecimal(txtotherfee.Text);
-                    objfee.DISCOUNTFEE = Convert.ToDecimal(txtdiscount.Text);
-                    objfee.TOTALFEE = Convert.ToDecimal(txttotal.Text);
-                    objfee.PAIDFEE = Convert.ToDecimal(txtpaid.Text);
-                    objfee.FEEDATE = System.DateTime.Now;
-                    objfee.SESSION = lblSession.Text;
-                    //objfee.Balance = "0";
-                    //objfee.FEE_DATE =
-                    db.TBLACCOUNTs.Add(objfee);
-                    db.SaveChanges();
+                //TBLACCOUNT objfee = new TBLACCOUNT();
+                //{
+                //    objfee.SYSTEMID = SystemID;
+                //    objfee.CLASSID = classGEt;
+                //    objfee.CLASSROLL = SystemID;
+                //    // objfee.ADMISSION_FEE = txtadmissionfee.Text;
+                //    objfee.ADMISSIONFEE = Convert.ToDecimal(txtadfee.Text);
+                //    objfee.TUTIONFEE = Convert.ToDecimal(txttutionfee.Text);
+                //    objfee.OTHERFEE = Convert.ToDecimal(txtotherfee.Text);
+                //    objfee.DISCOUNTFEE = Convert.ToDecimal(txtdiscount.Text);
+                //    objfee.TOTALFEE = Convert.ToDecimal(txttotal.Text);
+                //    objfee.PAIDFEE = Convert.ToDecimal(txtpaid.Text);
+                //    objfee.FEEDATE = System.DateTime.Now;
+                //    objfee.SESSION = lblSession.Text;
+                //    //objfee.Balance = "0";
+                //    //objfee.FEE_DATE =
+                //    db.TBLSTUDENTENRROLs.Add(objfee);
+                //    db.SaveChanges();
 
 
                     // MessageBox.Show("Student Has Been Enrolled Successfully");
-                }
+               // }
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
@@ -532,16 +532,16 @@ namespace SmartSchoolManagementSystem
 
         private void cbbmedium_SelectedValueChanged(object sender, EventArgs e)
         {
-            var GetAccount = from c in db.Tblclasssections where c.Class==cbbclass.Text && c.Section==cbbsection.Text && c.Group==cbbgroup.Text select new { Adfee = c.admissionfee,Tution=c.Fee, };
+            //var GetAccount = from c in db.Tblclassections where c.Class==cbbclass.Text && c.Section==cbbsection.Text && c.Group==cbbgroup.Text select new { Adfee = c.admissionfee,Tution=c.Fee, };
 
-            foreach (var Sessionvalues in GetAccount)
-            {
-                txtadfee.Text = Convert.ToString(Sessionvalues.Adfee);
-                txttutionfee.Text = Convert.ToString(Sessionvalues.Tution);
-                float a, b;
-                a =float.Parse(txtadfee.Text);
-                b = float.Parse(txtadfee.Text);
-            }
+            //foreach (var Sessionvalues in GetAccount)
+            //{
+            //    txtadfee.Text = Convert.ToString(Sessionvalues.Adfee);
+            //    txttutionfee.Text = Convert.ToString(Sessionvalues.Tution);
+            //    float a, b;
+            //    a =float.Parse(txtadfee.Text);
+            //    b = float.Parse(txtadfee.Text);
+            //}
            // calculate();
         }
 

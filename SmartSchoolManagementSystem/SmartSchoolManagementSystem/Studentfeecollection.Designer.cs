@@ -64,8 +64,19 @@
             this.txtcurrentfee = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.circularprogressbar1 = new SmartSchoolManagementSystem.Control.Circularprogressbar();
+            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtother = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtbusfee = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtdiscount = new System.Windows.Forms.TextBox();
+            this.txtpayabe = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnadd = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.cbautosms = new System.Windows.Forms.CheckBox();
             this.btnexit = new System.Windows.Forms.Button();
@@ -74,14 +85,13 @@
             this.btnpreview = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -208,7 +218,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(3, 102);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(460, 135);
+            this.groupBox2.Size = new System.Drawing.Size(460, 96);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Student Information";
@@ -216,7 +226,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(258, 85);
+            this.label7.Location = new System.Drawing.Point(258, 72);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 17;
@@ -224,14 +234,14 @@
             // 
             // txtsection
             // 
-            this.txtsection.Location = new System.Drawing.Point(305, 82);
+            this.txtsection.Location = new System.Drawing.Point(305, 69);
             this.txtsection.Name = "txtsection";
             this.txtsection.Size = new System.Drawing.Size(149, 20);
             this.txtsection.TabIndex = 16;
             // 
             // txtclass
             // 
-            this.txtclass.Location = new System.Drawing.Point(100, 82);
+            this.txtclass.Location = new System.Drawing.Point(100, 69);
             this.txtclass.Name = "txtclass";
             this.txtclass.Size = new System.Drawing.Size(149, 20);
             this.txtclass.TabIndex = 15;
@@ -239,7 +249,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 85);
+            this.label8.Location = new System.Drawing.Point(9, 72);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 13);
             this.label8.TabIndex = 14;
@@ -248,7 +258,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(266, 59);
+            this.label6.Location = new System.Drawing.Point(266, 46);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(20, 13);
             this.label6.TabIndex = 13;
@@ -256,7 +266,7 @@
             // 
             // txtphone
             // 
-            this.txtphone.Location = new System.Drawing.Point(305, 56);
+            this.txtphone.Location = new System.Drawing.Point(305, 43);
             this.txtphone.Name = "txtphone";
             this.txtphone.Size = new System.Drawing.Size(149, 20);
             this.txtphone.TabIndex = 12;
@@ -264,7 +274,7 @@
             // 
             // txtfathername
             // 
-            this.txtfathername.Location = new System.Drawing.Point(100, 56);
+            this.txtfathername.Location = new System.Drawing.Point(100, 43);
             this.txtfathername.Name = "txtfathername";
             this.txtfathername.Size = new System.Drawing.Size(149, 20);
             this.txtfathername.TabIndex = 11;
@@ -272,7 +282,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 59);
+            this.label5.Location = new System.Drawing.Point(9, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 13);
             this.label5.TabIndex = 10;
@@ -280,7 +290,7 @@
             // 
             // txtstudentname
             // 
-            this.txtstudentname.Location = new System.Drawing.Point(100, 30);
+            this.txtstudentname.Location = new System.Drawing.Point(100, 17);
             this.txtstudentname.Name = "txtstudentname";
             this.txtstudentname.Size = new System.Drawing.Size(354, 20);
             this.txtstudentname.TabIndex = 9;
@@ -288,7 +298,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 33);
+            this.label4.Location = new System.Drawing.Point(9, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 13);
             this.label4.TabIndex = 8;
@@ -309,7 +319,7 @@
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.txtcurrentfee);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Location = new System.Drawing.Point(3, 243);
+            this.groupBox3.Location = new System.Drawing.Point(3, 202);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(460, 98);
             this.groupBox3.TabIndex = 2;
@@ -372,6 +382,7 @@
             this.txtpaid.Name = "txtpaid";
             this.txtpaid.Size = new System.Drawing.Size(79, 20);
             this.txtpaid.TabIndex = 17;
+            this.txtpaid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpaid_KeyPress);
             // 
             // txtfine
             // 
@@ -415,27 +426,116 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBox4.Controls.Add(this.circularprogressbar1);
             this.groupBox4.Controls.Add(this.imgpicturebox);
             this.groupBox4.Location = new System.Drawing.Point(469, 104);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(206, 153);
+            this.groupBox4.Size = new System.Drawing.Size(206, 250);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Identity";
             // 
+            // circularprogressbar1
+            // 
+            this.circularprogressbar1.Location = new System.Drawing.Point(29, 35);
+            this.circularprogressbar1.Name = "circularprogressbar1";
+            this.circularprogressbar1.Size = new System.Drawing.Size(150, 150);
+            this.circularprogressbar1.TabIndex = 1;
+            // 
+            // imgpicturebox
+            // 
+            this.imgpicturebox.Location = new System.Drawing.Point(6, 19);
+            this.imgpicturebox.Name = "imgpicturebox";
+            this.imgpicturebox.Size = new System.Drawing.Size(194, 224);
+            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpicturebox.TabIndex = 0;
+            this.imgpicturebox.TabStop = false;
+            // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.groupBox5.Location = new System.Drawing.Point(3, 348);
+            this.groupBox5.Controls.Add(this.txtother);
+            this.groupBox5.Controls.Add(this.label18);
+            this.groupBox5.Controls.Add(this.txtbusfee);
+            this.groupBox5.Controls.Add(this.label17);
+            this.groupBox5.Controls.Add(this.txtdiscount);
+            this.groupBox5.Controls.Add(this.txtpayabe);
+            this.groupBox5.Controls.Add(this.label15);
+            this.groupBox5.Controls.Add(this.label16);
+            this.groupBox5.Location = new System.Drawing.Point(3, 304);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(460, 50);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             // 
+            // txtother
+            // 
+            this.txtother.Location = new System.Drawing.Point(305, 30);
+            this.txtother.Name = "txtother";
+            this.txtother.Size = new System.Drawing.Size(79, 20);
+            this.txtother.TabIndex = 29;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(258, 33);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(42, 13);
+            this.label18.TabIndex = 28;
+            this.label18.Text = "bus fee";
+            // 
+            // txtbusfee
+            // 
+            this.txtbusfee.Location = new System.Drawing.Point(305, 6);
+            this.txtbusfee.Name = "txtbusfee";
+            this.txtbusfee.Size = new System.Drawing.Size(79, 20);
+            this.txtbusfee.TabIndex = 27;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(258, 9);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(42, 13);
+            this.label17.TabIndex = 26;
+            this.label17.Text = "bus fee";
+            // 
+            // txtdiscount
+            // 
+            this.txtdiscount.Location = new System.Drawing.Point(110, 30);
+            this.txtdiscount.Name = "txtdiscount";
+            this.txtdiscount.Size = new System.Drawing.Size(79, 20);
+            this.txtdiscount.TabIndex = 25;
+            // 
+            // txtpayabe
+            // 
+            this.txtpayabe.Location = new System.Drawing.Point(110, 6);
+            this.txtpayabe.Name = "txtpayabe";
+            this.txtpayabe.Size = new System.Drawing.Size(79, 20);
+            this.txtpayabe.TabIndex = 23;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(19, 30);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(49, 13);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "Discount";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(19, 9);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(45, 13);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "Payable";
+            // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.groupBox6.Controls.Add(this.button2);
+            this.groupBox6.Controls.Add(this.btnadd);
             this.groupBox6.Controls.Add(this.btnprint);
             this.groupBox6.Controls.Add(this.cbautosms);
             this.groupBox6.Controls.Add(this.btnexit);
@@ -444,11 +544,22 @@
             this.groupBox6.Controls.Add(this.btnpreview);
             this.groupBox6.Controls.Add(this.btncancel);
             this.groupBox6.Controls.Add(this.btnsave);
-            this.groupBox6.Location = new System.Drawing.Point(3, 404);
+            this.groupBox6.Location = new System.Drawing.Point(3, 360);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(672, 60);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
+            // 
+            // btnadd
+            // 
+            this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnadd.Location = new System.Drawing.Point(6, 16);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(74, 36);
+            this.btnadd.TabIndex = 3;
+            this.btnadd.Text = "Add";
+            this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // btnprint
             // 
@@ -531,25 +642,7 @@
             this.btnsave.TabIndex = 0;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button2.Location = new System.Drawing.Point(6, 16);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 36);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // imgpicturebox
-            // 
-            this.imgpicturebox.Location = new System.Drawing.Point(6, 19);
-            this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(194, 128);
-            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgpicturebox.TabIndex = 0;
-            this.imgpicturebox.TabStop = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // Studentfeecollection
             // 
@@ -573,9 +666,11 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -628,7 +723,16 @@
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.CheckBox cbautosms;
         private System.Windows.Forms.Button btnprint;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.PictureBox imgpicturebox;
+        private System.Windows.Forms.TextBox txtdiscount;
+        private System.Windows.Forms.TextBox txtpayabe;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtbusfee;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtother;
+        private System.Windows.Forms.Label label18;
+        private Control.Circularprogressbar circularprogressbar1;
     }
 }

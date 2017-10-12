@@ -16,7 +16,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class schoolsettings : Form
     {
-        smartschooldbEntities1 db = new smartschooldbEntities1();
+        smartschooldbEntities db = new smartschooldbEntities();
         string imgloc = "";
         int PID;
         public schoolsettings()

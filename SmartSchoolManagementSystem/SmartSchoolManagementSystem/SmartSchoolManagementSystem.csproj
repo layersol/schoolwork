@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
@@ -81,6 +84,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Addbussstops.cs">
@@ -143,6 +149,12 @@
     <Compile Include="ClassesSetting.Designer.cs">
       <DependentUpon>ClassesSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\Circularprogressbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Circularprogressbar.Designer.cs">
+      <DependentUpon>Circularprogressbar.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +191,11 @@
     <Compile Include="destination.Designer.cs">
       <DependentUpon>destination.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTSTUDENTREMAINBLNC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTSTUDENTREMAINBLNC.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ExpencesRecord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,9 +214,6 @@
     <Compile Include="Feedefinition.Designer.cs">
       <DependentUpon>Feedefinition.cs</DependentUpon>
     </Compile>
-    <Compile Include="FeeMasterSetting.cs">
-      <DependentUpon>SchoolModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Feerecipet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,9 +225,6 @@
     </Compile>
     <Compile Include="Feevouchers.Designer.cs">
       <DependentUpon>Feevouchers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="firstformview.cs">
-      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -253,6 +264,12 @@
     <Compile Include="Phonesetting.Designer.cs">
       <DependentUpon>Phonesetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrintRemainingBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintRemainingBalance.Designer.cs">
+      <DependentUpon>PrintRemainingBalance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -288,14 +305,17 @@
       <DependentUpon>schoolsettings.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="StudentAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAccount.Designer.cs">
+      <DependentUpon>StudentAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Studentfeecollection.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Studentfeecollection.Designer.cs">
       <DependentUpon>Studentfeecollection.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StudentFeeDetail.cs">
-      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="studentfeereciept.cs">
       <SubType>Form</SubType>
@@ -316,9 +336,6 @@
       <DependentUpon>Studentresultcard.cs</DependentUpon>
     </Compile>
     <Compile Include="TblacadmicSession.cs">
-      <DependentUpon>SchoolModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TBLACCOUNT.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="TbladdBus.cs">
@@ -354,6 +371,9 @@
     <Compile Include="TBLSTUDENTENRROL.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="TBLSTUDENTFEEDETAIL.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="TblTeacherInformation.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
@@ -386,9 +406,6 @@
     </Compile>
     <Compile Include="testform.Designer.cs">
       <DependentUpon>testform.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TransMaster.cs">
-      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UserDeatil.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
@@ -428,6 +445,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClassesSetting.resx">
       <DependentUpon>ClassesSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Circularprogressbar.resx">
+      <DependentUpon>Circularprogressbar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateUser.resx">
       <DependentUpon>CreateUser.cs</DependentUpon>
@@ -479,6 +499,9 @@
     <EmbeddedResource Include="Phonesetting.resx">
       <DependentUpon>Phonesetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PrintRemainingBalance.resx">
+      <DependentUpon>PrintRemainingBalance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="printstudentcard.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -488,6 +511,7 @@
     <EmbeddedResource Include="Registraionform.resx">
       <DependentUpon>Registraionform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reports\RPTSTUDENTREMAING.rdlc" />
     <EmbeddedResource Include="rptadmissionprint.rdlc" />
     <EmbeddedResource Include="rptdailyfeecollection.rdlc" />
     <EmbeddedResource Include="rptresultcard.rdlc" />
@@ -495,6 +519,9 @@
     <EmbeddedResource Include="rptteacherinfoform.rdlc" />
     <EmbeddedResource Include="schoolsettings.resx">
       <DependentUpon>schoolsettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAccount.resx">
+      <DependentUpon>StudentAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Studentfeecollection.resx">
       <DependentUpon>Studentfeecollection.cs</DependentUpon>
@@ -523,6 +550,17 @@
     <EmbeddedResource Include="Vacationworkcollection.resx">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DTSTUDENTREMAINBLNC.xsc">
+      <DependentUpon>DTSTUDENTREMAINBLNC.xsd</DependentUpon>
+    </None>
+    <None Include="DTSTUDENTREMAINBLNC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DTSTUDENTREMAINBLNC.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTSTUDENTREMAINBLNC.xss">
+      <DependentUpon>DTSTUDENTREMAINBLNC.xsd</DependentUpon>
+    </None>
     <None Include="Newadmissionform.xsc">
       <DependentUpon>Newadmissionform.xsd</DependentUpon>
     </None>
@@ -565,7 +603,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AllReports\" />
-    <Folder Include="reports\" />
+    <Folder Include="Dataset\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\123.png" />

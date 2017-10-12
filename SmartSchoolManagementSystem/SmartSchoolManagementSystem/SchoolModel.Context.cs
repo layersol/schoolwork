@@ -13,10 +13,10 @@ namespace SmartSchoolManagementSystem
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class smartschooldbEntities1 : DbContext
+    public partial class smartschooldbEntities : DbContext
     {
-        public smartschooldbEntities1()
-            : base("name=smartschooldbEntities1")
+        public smartschooldbEntities()
+            : base("name=smartschooldbEntities")
         {
         }
     
@@ -25,8 +25,6 @@ namespace SmartSchoolManagementSystem
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<FeeMasterSetting> FeeMasterSettings { get; set; }
-        public virtual DbSet<StudentFeeDetail> StudentFeeDetails { get; set; }
         public virtual DbSet<TblacadmicSession> TblacadmicSessions { get; set; }
         public virtual DbSet<TbladdBus> TbladdBuses { get; set; }
         public virtual DbSet<TBLADDMISSION> TBLADDMISSIONs { get; set; }
@@ -34,17 +32,15 @@ namespace SmartSchoolManagementSystem
         public virtual DbSet<Tblbusdestination> Tblbusdestinations { get; set; }
         public virtual DbSet<Tblclass> Tblclasses { get; set; }
         public virtual DbSet<Tblclasssection> Tblclasssections { get; set; }
+        public virtual DbSet<TBLFEEMASTER> TBLFEEMASTERs { get; set; }
         public virtual DbSet<Tblschoolsetting> Tblschoolsettings { get; set; }
         public virtual DbSet<TblSection> TblSections { get; set; }
         public virtual DbSet<TBLSTUDENTENRROL> TBLSTUDENTENRROLs { get; set; }
+        public virtual DbSet<TBLSTUDENTFEEDETAIL> TBLSTUDENTFEEDETAILS { get; set; }
         public virtual DbSet<TblTeacherInformation> TblTeacherInformations { get; set; }
         public virtual DbSet<TBLUSER> TBLUSERs { get; set; }
-        public virtual DbSet<TransMaster> TransMasters { get; set; }
         public virtual DbSet<UserDeatil> UserDeatils { get; set; }
         public virtual DbSet<Tblbusstop> Tblbusstops { get; set; }
-        public virtual DbSet<firstformview> firstformviews { get; set; }
-        public virtual DbSet<TBLACCOUNT> TBLACCOUNTs { get; set; }
-        public virtual DbSet<TBLFEEMASTER> TBLFEEMASTERs { get; set; }
         public virtual DbSet<TBLTRANSMASTER> TBLTRANSMASTERs { get; set; }
     }
 }

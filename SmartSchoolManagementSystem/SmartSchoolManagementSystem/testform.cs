@@ -12,7 +12,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class testform : Form
     {
-        smartschooldbEntities1 db = new smartschooldbEntities1();
+        smartschooldbEntities db = new smartschooldbEntities();
         public testform()
         {
             InitializeComponent();

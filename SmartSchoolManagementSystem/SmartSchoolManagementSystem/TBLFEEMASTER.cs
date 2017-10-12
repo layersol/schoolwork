@@ -20,7 +20,7 @@ namespace SmartSchoolManagementSystem
         public Nullable<decimal> TUITION_FEE { get; set; }
         public Nullable<decimal> TUITION_FEE_PERCENT { get; set; }
         public Nullable<decimal> BUS_FEE_PERCENT { get; set; }
-        public Nullable<System.DateTime> LATE_FEE_START { get; set; }
+        public Nullable<decimal> LATE_FEE_START { get; set; }
         public Nullable<decimal> LATE_FEE { get; set; }
         public Nullable<decimal> OTHER_FEE { get; set; }
         public string OTHER_FEE_REFERENCE { get; set; }

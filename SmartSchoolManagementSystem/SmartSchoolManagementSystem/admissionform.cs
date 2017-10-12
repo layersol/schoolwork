@@ -14,7 +14,7 @@ namespace SmartSchoolManagementSystem
 {
     public partial class admissionform : Form
     {
-        smartschooldbEntities1 db = new smartschooldbEntities1();
+        smartschooldbEntities db = new smartschooldbEntities();
         String schoolname, address, schoolemail, phno, cellno ;
         //Int16 Showlogo;
        

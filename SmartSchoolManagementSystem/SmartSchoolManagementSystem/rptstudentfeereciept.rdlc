@@ -634,7 +634,6 @@
                 <ReportItems>
                   <Line Name="Line1">
                     <Top>0.36641in</Top>
-                    <Left>0in</Left>
                     <Height>0in</Height>
                     <Width>3.31301in</Width>
                     <Style>
@@ -875,8 +874,7 @@
         <Width>3.55957in</Width>
         <Style>
           <Border>
-            <Style>Dotted</Style>
-            <Width>2pt</Width>
+            <Style>Solid</Style>
           </Border>
           <BackgroundImage>
             <Source>Embedded</Source>

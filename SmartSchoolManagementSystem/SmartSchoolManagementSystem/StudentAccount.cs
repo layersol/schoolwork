@@ -22,6 +22,12 @@ namespace SmartSchoolManagementSystem
             obj.Show();
         }
 
+        private void StudentAccount_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
+
         public StudentAccount()
         {
             InitializeComponent();

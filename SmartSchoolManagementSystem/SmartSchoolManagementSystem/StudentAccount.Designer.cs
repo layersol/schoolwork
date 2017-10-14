@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblarreres = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -50,23 +51,20 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtstudentid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnsearch = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnadd = new System.Windows.Forms.Button();
             this.btnexit = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.btnunpaid = new System.Windows.Forms.Button();
             this.btnpreview = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
-            this.imgpicturebox = new System.Windows.Forms.PictureBox();
-            this.btnsearch = new System.Windows.Forms.Button();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox4
@@ -79,6 +77,15 @@
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Photo";
+            // 
+            // imgpicturebox
+            // 
+            this.imgpicturebox.Location = new System.Drawing.Point(6, 19);
+            this.imgpicturebox.Name = "imgpicturebox";
+            this.imgpicturebox.Size = new System.Drawing.Size(145, 129);
+            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpicturebox.TabIndex = 0;
+            this.imgpicturebox.TabStop = false;
             // 
             // groupBox3
             // 
@@ -210,7 +217,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(266, 46);
+            this.label6.Location = new System.Drawing.Point(263, 46);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(20, 13);
             this.label6.TabIndex = 13;
@@ -283,19 +290,28 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Student ID";
             // 
+            // btnsearch
+            // 
+            this.btnsearch.Image = global::SmartSchoolManagementSystem.Properties.Resources.Apps_Search_icon;
+            this.btnsearch.Location = new System.Drawing.Point(185, 11);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(47, 23);
+            this.btnsearch.TabIndex = 8;
+            this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
+            // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox6.Controls.Add(this.btnadd);
             this.groupBox6.Controls.Add(this.btnexit);
-            this.groupBox6.Controls.Add(this.button6);
             this.groupBox6.Controls.Add(this.btnunpaid);
             this.groupBox6.Controls.Add(this.btnpreview);
             this.groupBox6.Controls.Add(this.btnprint);
             this.groupBox6.Controls.Add(this.btnsave);
             this.groupBox6.Location = new System.Drawing.Point(12, 229);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(481, 60);
+            this.groupBox6.Size = new System.Drawing.Size(623, 60);
             this.groupBox6.TabIndex = 10;
             this.groupBox6.TabStop = false;
             // 
@@ -313,21 +329,12 @@
             // 
             this.btnexit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnexit.ForeColor = System.Drawing.Color.Red;
-            this.btnexit.Location = new System.Drawing.Point(401, 15);
+            this.btnexit.Location = new System.Drawing.Point(402, 15);
             this.btnexit.Name = "btnexit";
             this.btnexit.Size = new System.Drawing.Size(74, 36);
             this.btnexit.TabIndex = 0;
             this.btnexit.Text = "Exit";
             this.btnexit.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(402, 16);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(74, 24);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "button2";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // btnunpaid
             // 
@@ -346,8 +353,9 @@
             this.btnpreview.Name = "btnpreview";
             this.btnpreview.Size = new System.Drawing.Size(74, 36);
             this.btnpreview.TabIndex = 0;
-            this.btnpreview.Text = "Preview";
+            this.btnpreview.Text = " All Fee List";
             this.btnpreview.UseVisualStyleBackColor = false;
+            this.btnpreview.Click += new System.EventHandler(this.btnpreview_Click);
             // 
             // btnprint
             // 
@@ -370,41 +378,11 @@
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
             // 
-            // imgpicturebox
-            // 
-            this.imgpicturebox.Location = new System.Drawing.Point(6, 19);
-            this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(145, 129);
-            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgpicturebox.TabIndex = 0;
-            this.imgpicturebox.TabStop = false;
-            // 
-            // btnsearch
-            // 
-            this.btnsearch.Image = global::SmartSchoolManagementSystem.Properties.Resources.Apps_Search_icon;
-            this.btnsearch.Location = new System.Drawing.Point(185, 11);
-            this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(47, 23);
-            this.btnsearch.TabIndex = 8;
-            this.btnsearch.UseVisualStyleBackColor = true;
-            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.DocumentMapWidth = 55;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SmartSchoolManagementSystem.reports.RPTSTUDENTREMAING.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(509, 235);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(103, 47);
-            this.reportViewer1.TabIndex = 4;
-            // 
             // StudentAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(643, 294);
-            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -415,6 +393,7 @@
             this.Text = "Student Account Details";
             this.Load += new System.EventHandler(this.StudentAccount_Load);
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -422,7 +401,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,7 +430,6 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.Button btnexit;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnunpaid;
         private System.Windows.Forms.Button btnpreview;
         private System.Windows.Forms.Button btnprint;
@@ -460,6 +437,5 @@
         private System.Windows.Forms.Label lblpayable;
         private System.Windows.Forms.Label lblarreres;
         private System.Windows.Forms.Label label11;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

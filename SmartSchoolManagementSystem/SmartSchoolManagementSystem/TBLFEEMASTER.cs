@@ -24,5 +24,6 @@ namespace SmartSchoolManagementSystem
         public Nullable<decimal> LATE_FEE { get; set; }
         public Nullable<decimal> OTHER_FEE { get; set; }
         public string OTHER_FEE_REFERENCE { get; set; }
+        public Nullable<decimal> ADMISSION_FEE { get; set; }
     }
 }

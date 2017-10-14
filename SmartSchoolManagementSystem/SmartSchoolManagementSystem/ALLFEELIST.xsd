@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ALLFEELIST" targetNamespace="http://tempuri.org/ALLFEELIST.xsd" xmlns:mstns="http://tempuri.org/ALLFEELIST.xsd" xmlns="http://tempuri.org/ALLFEELIST.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ALLFEELIST" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ALLFEELIST" msprop:Generator_UserDSName="ALLFEELIST">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TBLSTUDENTFEEDETAILS" msprop:Generator_TableClassName="TBLSTUDENTFEEDETAILSDataTable" msprop:Generator_TableVarName="tableTBLSTUDENTFEEDETAILS" msprop:Generator_TablePropName="TBLSTUDENTFEEDETAILS" msprop:Generator_RowDeletingName="TBLSTUDENTFEEDETAILSRowDeleting" msprop:Generator_RowChangingName="TBLSTUDENTFEEDETAILSRowChanging" msprop:Generator_RowEvHandlerName="TBLSTUDENTFEEDETAILSRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLSTUDENTFEEDETAILSRowDeleted" msprop:Generator_UserTableName="TBLSTUDENTFEEDETAILS" msprop:Generator_RowChangedName="TBLSTUDENTFEEDETAILSRowChanged" msprop:Generator_RowEvArgName="TBLSTUDENTFEEDETAILSRowChangeEvent" msprop:Generator_RowClassName="TBLSTUDENTFEEDETAILSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FID" msprop:Generator_ColumnVarNameInTable="columnFID" msprop:Generator_ColumnPropNameInRow="FID" msprop:Generator_ColumnPropNameInTable="FIDColumn" msprop:Generator_UserColumnName="FID" type="xs:string" minOccurs="0" />
+              <xs:element name="STUDENT_NAME" msprop:Generator_ColumnVarNameInTable="columnSTUDENT_NAME" msprop:Generator_ColumnPropNameInRow="STUDENT_NAME" msprop:Generator_ColumnPropNameInTable="STUDENT_NAMEColumn" msprop:Generator_UserColumnName="STUDENT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="S_CELL_NO" msprop:Generator_ColumnVarNameInTable="columnS_CELL_NO" msprop:Generator_ColumnPropNameInRow="S_CELL_NO" msprop:Generator_ColumnPropNameInTable="S_CELL_NOColumn" msprop:Generator_UserColumnName="S_CELL_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="TUITION_FEE" msprop:Generator_ColumnVarNameInTable="columnTUITION_FEE" msprop:Generator_ColumnPropNameInRow="TUITION_FEE" msprop:Generator_ColumnPropNameInTable="TUITION_FEEColumn" msprop:Generator_UserColumnName="TUITION_FEE" type="xs:string" minOccurs="0" />
+              <xs:element name="Class" msprop:Generator_ColumnVarNameInTable="columnClass" msprop:Generator_ColumnPropNameInRow="Class" msprop:Generator_ColumnPropNameInTable="ClassColumn" msprop:Generator_UserColumnName="Class" type="xs:string" minOccurs="0" />
+              <xs:element name="Section" msprop:Generator_ColumnVarNameInTable="columnSection" msprop:Generator_ColumnPropNameInRow="Section" msprop:Generator_ColumnPropNameInTable="SectionColumn" msprop:Generator_UserColumnName="Section" type="xs:string" minOccurs="0" />
+              <xs:element name="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" msprop:Generator_UserColumnName="Group" type="xs:string" minOccurs="0" />
+              <xs:element name="FEE_DATE" msprop:Generator_ColumnVarNameInTable="columnFEE_DATE" msprop:Generator_ColumnPropNameInRow="FEE_DATE" msprop:Generator_ColumnPropNameInTable="FEE_DATEColumn" msprop:Generator_UserColumnName="FEE_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="BALANCE" msprop:Generator_ColumnVarNameInTable="columnBALANCE" msprop:Generator_ColumnPropNameInRow="BALANCE" msprop:Generator_ColumnPropNameInTable="BALANCEColumn" msprop:Generator_UserColumnName="BALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="AMOUNT_PAID" msprop:Generator_ColumnVarNameInTable="columnAMOUNT_PAID" msprop:Generator_ColumnPropNameInRow="AMOUNT_PAID" msprop:Generator_ColumnPropNameInTable="AMOUNT_PAIDColumn" msprop:Generator_UserColumnName="AMOUNT_PAID" type="xs:string" minOccurs="0" />
+              <xs:element name="IMAGE" msprop:Generator_ColumnVarNameInTable="columnIMAGE" msprop:Generator_ColumnPropNameInRow="IMAGE" msprop:Generator_ColumnPropNameInTable="IMAGEColumn" msprop:Generator_UserColumnName="IMAGE" type="xs:string" minOccurs="0" />
+              <xs:element name="Student_ID" msprop:Generator_ColumnVarNameInTable="columnStudent_ID" msprop:Generator_ColumnPropNameInRow="Student_ID" msprop:Generator_ColumnPropNameInTable="Student_IDColumn" msprop:Generator_UserColumnName="Student_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="FATHER_NAME" msprop:Generator_ColumnVarNameInTable="columnFATHER_NAME" msprop:Generator_ColumnPropNameInRow="FATHER_NAME" msprop:Generator_ColumnPropNameInTable="FATHER_NAMEColumn" msprop:Generator_UserColumnName="FATHER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SID" msprop:Generator_ColumnVarNameInTable="columnSID" msprop:Generator_ColumnPropNameInRow="SID" msprop:Generator_ColumnPropNameInTable="SIDColumn" msprop:Generator_UserColumnName="SID" type="xs:string" minOccurs="0" />
+              <xs:element name="LATE_FEE" msprop:Generator_ColumnVarNameInTable="columnLATE_FEE" msprop:Generator_ColumnPropNameInRow="LATE_FEE" msprop:Generator_ColumnPropNameInTable="LATE_FEEColumn" msprop:Generator_UserColumnName="LATE_FEE" type="xs:string" minOccurs="0" />
+              <xs:element name="SFID" msprop:Generator_ColumnVarNameInTable="columnSFID" msprop:Generator_ColumnPropNameInRow="SFID" msprop:Generator_ColumnPropNameInTable="SFIDColumn" msprop:Generator_UserColumnName="SFID" type="xs:string" minOccurs="0" />
+              <xs:element name="AMOUNT_PAYABLE" msprop:Generator_ColumnVarNameInTable="columnAMOUNT_PAYABLE" msprop:Generator_ColumnPropNameInRow="AMOUNT_PAYABLE" msprop:Generator_ColumnPropNameInTable="AMOUNT_PAYABLEColumn" msprop:Generator_UserColumnName="AMOUNT_PAYABLE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

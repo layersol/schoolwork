@@ -15,7 +15,6 @@ namespace SmartSchoolManagementSystem
     public partial class TBLSTUDENTFEEDETAIL
     {
         public int SFID { get; set; }
-        public Nullable<int> TID { get; set; }
         public Nullable<int> FID { get; set; }
         public Nullable<decimal> TUITION_FEE { get; set; }
         public Nullable<decimal> BUS_FEE { get; set; }
@@ -33,5 +32,7 @@ namespace SmartSchoolManagementSystem
         public Nullable<System.DateTime> CREATED_DATE { get; set; }
         public string UPDATED_BY { get; set; }
         public Nullable<System.DateTime> UPDATED_DATE { get; set; }
+        public Nullable<int> SYSID { get; set; }
+        public Nullable<decimal> ADMISSION_FEE { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SmartSchoolManagementSystem
 {
-    partial class PrintRemainingBalance
+    partial class StudentFeeList
     {
         /// <summary>
         /// Required designer variable.
@@ -34,22 +34,22 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SmartSchoolManagementSystem.reports.RPTSTUDENTREMAING.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SmartSchoolManagementSystem.reports.Studentfeelist.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(614, 130);
+            this.reportViewer1.Size = new System.Drawing.Size(732, 465);
             this.reportViewer1.TabIndex = 0;
             // 
-            // PrintRemainingBalance
+            // StudentFeeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 130);
+            this.ClientSize = new System.Drawing.Size(732, 465);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "PrintRemainingBalance";
-            this.Text = "Print Remaining Balance";
-            this.Load += new System.EventHandler(this.PrintRemainingBalance_Load);
+            this.Name = "StudentFeeList";
+            this.Text = "StudentFeeList";
+            this.Load += new System.EventHandler(this.StudentFeeList_Load);
             this.ResumeLayout(false);
 
         }

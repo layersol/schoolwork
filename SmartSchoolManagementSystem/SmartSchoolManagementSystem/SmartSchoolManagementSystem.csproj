@@ -137,6 +137,14 @@
     <Compile Include="admissionformprint.Designer.cs">
       <DependentUpon>admissionformprint.cs</DependentUpon>
     </Compile>
+    <Compile Include="ALLFEELIST.cs">
+      <DependentUpon>ALLFEELIST.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ALLFEELIST.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALLFEELIST.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Classandsectiondefination.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +291,11 @@
     <Compile Include="Registraionform.Designer.cs">
       <DependentUpon>Registraionform.cs</DependentUpon>
     </Compile>
+    <Compile Include="SchoolInformation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolInformation.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SchoolModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -316,6 +329,20 @@
     </Compile>
     <Compile Include="Studentfeecollection.Designer.cs">
       <DependentUpon>Studentfeecollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFeeList.Designer.cs">
+      <DependentUpon>StudentFeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TBLSTUDENTFEEDETAILS.cs">
+      <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLSTUDENTFEEDETAILS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
     </Compile>
     <Compile Include="studentfeereciept.cs">
       <SubType>Form</SubType>
@@ -512,6 +539,7 @@
       <DependentUpon>Registraionform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reports\RPTSTUDENTREMAING.rdlc" />
+    <EmbeddedResource Include="reports\Studentfeelist.rdlc" />
     <EmbeddedResource Include="rptadmissionprint.rdlc" />
     <EmbeddedResource Include="rptdailyfeecollection.rdlc" />
     <EmbeddedResource Include="rptresultcard.rdlc" />
@@ -525,6 +553,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Studentfeecollection.resx">
       <DependentUpon>Studentfeecollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFeeList.resx">
+      <DependentUpon>StudentFeeList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="studentfeereciept.resx">
       <DependentUpon>studentfeereciept.cs</DependentUpon>
@@ -550,6 +581,17 @@
     <EmbeddedResource Include="Vacationworkcollection.resx">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ALLFEELIST.xsc">
+      <DependentUpon>ALLFEELIST.xsd</DependentUpon>
+    </None>
+    <None Include="ALLFEELIST.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ALLFEELIST.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ALLFEELIST.xss">
+      <DependentUpon>ALLFEELIST.xsd</DependentUpon>
+    </None>
     <None Include="DTSTUDENTREMAINBLNC.xsc">
       <DependentUpon>DTSTUDENTREMAINBLNC.xsd</DependentUpon>
     </None>
@@ -588,8 +630,30 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>SchoolModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="SchoolInformation.xsc">
+      <DependentUpon>SchoolInformation.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolInformation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolInformation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SchoolInformation.xss">
+      <DependentUpon>SchoolInformation.xsd</DependentUpon>
+    </None>
     <None Include="SchoolModel.edmx.diagram">
       <DependentUpon>SchoolModel.edmx</DependentUpon>
+    </None>
+    <None Include="TBLSTUDENTFEEDETAILS.xsc">
+      <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
+    </None>
+    <None Include="TBLSTUDENTFEEDETAILS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TBLSTUDENTFEEDETAILS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TBLSTUDENTFEEDETAILS.xss">
+      <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

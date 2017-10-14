@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="smartschooldbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="smartschooldbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="TblacadmicSession">
           <Key>
             <PropertyRef Name="ID" />
@@ -141,6 +141,7 @@ warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a prim
           <Property Name="FID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Month_Year" Type="nvarchar" MaxLength="50" />
           <Property Name="STU_Class" Type="int" />
+          <Property Name="ADMISSION_FEE" Type="decimal" Precision="18" Scale="0" />
           <Property Name="TUITION_FEE" Type="decimal" Precision="18" Scale="0" />
           <Property Name="TUITION_FEE_PERCENT" Type="decimal" Precision="18" Scale="0" />
           <Property Name="BUS_FEE_PERCENT" Type="decimal" Precision="18" Scale="0" />
@@ -188,8 +189,9 @@ warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a prim
             <PropertyRef Name="SFID" />
           </Key>
           <Property Name="SFID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="TID" Type="int" />
+          <Property Name="SYSID" Type="int" />
           <Property Name="FID" Type="int" />
+          <Property Name="ADMISSION_FEE" Type="decimal" Precision="18" Scale="0" />
           <Property Name="TUITION_FEE" Type="decimal" Precision="18" Scale="0" />
           <Property Name="BUS_FEE" Type="decimal" Precision="18" Scale="0" />
           <Property Name="PRINTING_CHARGES" Type="decimal" Precision="18" Scale="0" />
@@ -296,8 +298,7 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
     FROM [dbo].[TBLTRANSMASTER] AS [TBLTRANSMASTER]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="smartschooldbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -434,6 +435,7 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <Property Name="LATE_FEE" Type="Decimal" Precision="18" Scale="0" />
           <Property Name="OTHER_FEE" Type="Decimal" Precision="18" Scale="0" />
           <Property Name="OTHER_FEE_REFERENCE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADMISSION_FEE" Type="Decimal" Precision="18" Scale="0" />
         </EntityType>
         <EntityType Name="Tblschoolsetting">
           <Key>
@@ -474,7 +476,6 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
             <PropertyRef Name="SFID" />
           </Key>
           <Property Name="SFID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="TID" Type="Int32" />
           <Property Name="FID" Type="Int32" />
           <Property Name="TUITION_FEE" Type="Decimal" Precision="18" Scale="0" />
           <Property Name="BUS_FEE" Type="Decimal" Precision="18" Scale="0" />
@@ -492,6 +493,8 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <Property Name="CREATED_DATE" Type="DateTime" Precision="3" />
           <Property Name="UPDATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="UPDATED_DATE" Type="DateTime" Precision="3" />
+          <Property Name="SYSID" Type="Int32" />
+          <Property Name="ADMISSION_FEE" Type="Decimal" Precision="18" Scale="0" />
         </EntityType>
         <EntityType Name="TblTeacherInformation">
           <Key>
@@ -709,6 +712,7 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <EntitySetMapping Name="TBLFEEMASTERs">
             <EntityTypeMapping TypeName="smartschooldbModel.TBLFEEMASTER">
               <MappingFragment StoreEntitySet="TBLFEEMASTER">
+                <ScalarProperty Name="ADMISSION_FEE" ColumnName="ADMISSION_FEE" />
                 <ScalarProperty Name="FID" ColumnName="FID" />
                 <ScalarProperty Name="Month_Year" ColumnName="Month_Year" />
                 <ScalarProperty Name="STU_Class" ColumnName="STU_Class" />
@@ -762,8 +766,9 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <EntitySetMapping Name="TBLSTUDENTFEEDETAILS">
             <EntityTypeMapping TypeName="smartschooldbModel.TBLSTUDENTFEEDETAIL">
               <MappingFragment StoreEntitySet="TBLSTUDENTFEEDETAILS">
+                <ScalarProperty Name="ADMISSION_FEE" ColumnName="ADMISSION_FEE" />
+                <ScalarProperty Name="SYSID" ColumnName="SYSID" />
                 <ScalarProperty Name="SFID" ColumnName="SFID" />
-                <ScalarProperty Name="TID" ColumnName="TID" />
                 <ScalarProperty Name="FID" ColumnName="FID" />
                 <ScalarProperty Name="TUITION_FEE" ColumnName="TUITION_FEE" />
                 <ScalarProperty Name="BUS_FEE" ColumnName="BUS_FEE" />

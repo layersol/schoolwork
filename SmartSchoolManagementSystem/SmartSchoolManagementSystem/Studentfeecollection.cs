@@ -148,7 +148,7 @@ namespace SmartSchoolManagementSystem
             try
             {
                 TBLSTUDENTFEEDETAIL context = new TBLSTUDENTFEEDETAIL();
-                context.TID = STUDENTID;
+                context.SYSID = STUDENTID;
                 context.FID = BID;
                 context.TUITION_FEE = Convert.ToDecimal(txtcurrentfee.Text);
                 context.BUS_FEE = Convert.ToDecimal(txtbusfee.Text);

@@ -192,14 +192,14 @@ namespace SmartSchoolManagementSystem
                         objEnRoll.ACADMICSESSION = lblSession.Text;
                         db.TBLSTUDENTENRROLs.Add(objEnRoll);
                         db.SaveChanges();
-                        classid = objEnRoll.ClassId;
+                       // classid = objEnRoll.ClassId;
                     }
 
 
                     TBLSTUDENTFEEDETAIL objfee = new TBLSTUDENTFEEDETAIL();
                     {
                         objfee.SYSID = SystemID;
-                        objfee.FID = classid;
+                        objfee.FID = Classid;
                         objfee.ADMISSION_FEE = Convert.ToDecimal(txtadfee.Text);
                         objfee.TUITION_FEE = Convert.ToDecimal(txttutionfee.Text);
                         objfee.OTHER_FEE = Convert.ToDecimal(txtotherfee.Text);

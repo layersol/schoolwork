@@ -437,7 +437,7 @@
             // 
             // circularprogressbar1
             // 
-            this.circularprogressbar1.Location = new System.Drawing.Point(29, 35);
+            this.circularprogressbar1.Location = new System.Drawing.Point(6, 46);
             this.circularprogressbar1.Name = "circularprogressbar1";
             this.circularprogressbar1.Size = new System.Drawing.Size(150, 150);
             this.circularprogressbar1.TabIndex = 1;

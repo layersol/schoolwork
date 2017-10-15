@@ -2171,6 +2171,20 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Rectangle Name="Rectangle3">
+            <KeepTogether>true</KeepTogether>
+            <Top>3.45284cm</Top>
+            <Left>0.13104cm</Left>
+            <Height>0.18943cm</Height>
+            <Width>19.415cm</Width>
+            <ZIndex>24</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>Red</BackgroundColor>
+            </Style>
+          </Rectangle>
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>0.16167in</Top>

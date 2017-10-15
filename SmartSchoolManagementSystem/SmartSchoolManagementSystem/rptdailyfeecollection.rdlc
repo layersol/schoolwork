@@ -125,6 +125,7 @@
                         <Value>Date</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -143,6 +144,7 @@
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <BackgroundColor>Black</BackgroundColor>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox2">
@@ -155,6 +157,7 @@
                         <Value>Rec</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -173,6 +176,7 @@
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <BackgroundColor>Black</BackgroundColor>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox3">
@@ -185,6 +189,7 @@
                         <Value>ID</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -203,6 +208,7 @@
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <BackgroundColor>Black</BackgroundColor>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox4">
@@ -215,6 +221,7 @@
                         <Value>Name</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -233,6 +240,7 @@
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <BackgroundColor>Black</BackgroundColor>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox5">
@@ -245,6 +253,7 @@
                         <Value>Father's Name</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -263,6 +272,7 @@
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <BackgroundColor>Black</BackgroundColor>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox6">
@@ -275,6 +285,7 @@
                         <Value>Amount</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -293,6 +304,7 @@
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <BackgroundColor>Black</BackgroundColor>
                 </Style>
               </Textbox>
               <Textbox Name="Textbox7">
@@ -305,6 +317,7 @@
                         <Value>Class</Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -323,11 +336,12 @@
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <BackgroundColor>Black</BackgroundColor>
                 </Style>
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>1.89611in</Top>
+            <Top>1.64611in</Top>
             <Left>0.24534in</Left>
             <Height>6.91667in</Height>
             <Width>7.15625in</Width>
@@ -337,65 +351,65 @@
               </Border>
             </Style>
           </Rectangle>
-          <Image Name="Image1">
-            <Source>Embedded</Source>
-            <Value>logo2</Value>
-            <Sizing>FitProportional</Sizing>
-            <Top>0.04112in</Top>
-            <Left>0.04742in</Left>
-            <Height>1.40461in</Height>
-            <Width>1.2829in</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Image>
-          <Textbox Name="Textbox16">
+          <Textbox Name="Textbox8">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>      Model Science College &amp; School</Value>
+                    <Value>Model Science College &amp; School</Value>
                     <Style>
                       <FontSize>16pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Mulapur Road Ellahabad.Ta,Chunain.Dist,Kasur</Value>
-                    <Style>
-                      <FontSize>14pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Ph:03000000000. Email:mscs@gmail.com</Value>
-                    <Style>
-                      <FontSize>14pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Top>0.15077in</Top>
-            <Left>2.01096in</Left>
-            <Height>0.88377in</Height>
-            <Width>4.99067in</Width>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0in</Top>
+            <Left>1.4311in</Left>
+            <Height>0.25in</Height>
+            <Width>4.22221in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox9">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Ellahabad</Value>
+                    <Style>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>0.27083in</Top>
+            <Left>1.43109in</Left>
+            <Height>0.25in</Height>
+            <Width>4.22222in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -407,16 +421,16 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Textbox8">
+          <Textbox Name="Textbox10">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Fee Collection</Value>
+                    <Value>Mobile:03044001614</Value>
                     <Style>
-                      <FontSize>14pt</FontSize>
+                      <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -426,27 +440,140 @@
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.50466in</Top>
-            <Left>2.57073in</Left>
-            <Height>0.25712in</Height>
-            <Width>3.01425in</Width>
+            <rd:DefaultName>Textbox6</rd:DefaultName>
+            <Top>0.59027in</Top>
+            <Left>1.43109in</Left>
+            <Height>0.25in</Height>
+            <Width>4.22222in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Image Name="Image2">
+            <Source>Embedded</Source>
+            <Value>logo2</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.125in</Top>
+            <Left>0.03698in</Left>
+            <Height>1.18056in</Height>
+            <Width>1.18925in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Textbox Name="Textbox11">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Daily Fee Collection Report</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox9</rd:DefaultName>
+            <Top>0.93056in</Top>
+            <Left>2.66919in</Left>
+            <Height>0.25in</Height>
+            <Width>2.1875in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Rectangle Name="Rectangle3">
+            <ReportItems>
+              <Textbox Name="Textbox12">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Photo</Value>
+                        <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox8</rd:DefaultName>
+                <Top>0.58854in</Top>
+                <Left>0.21875in</Left>
+                <Height>0.25in</Height>
+                <Width>1in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.125in</Top>
+            <Left>6.26096in</Left>
+            <Height>1.18056in</Height>
+            <Width>1.21875in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>1.5pt</Width>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle4">
+            <KeepTogether>true</KeepTogether>
+            <Top>3.51011cm</Top>
+            <Left>0.09393cm</Left>
+            <Height>0.18943cm</Height>
+            <Width>19.25724cm</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>Red</BackgroundColor>
+            </Style>
+          </Rectangle>
         </ReportItems>
         <KeepTogether>true</KeepTogether>
-        <Top>0.14912in</Top>
-        <Left>0.108in</Left>
-        <Height>9.55263in</Height>
-        <Width>7.64693in</Width>
+        <Top>0.27412in</Top>
+        <Left>0.233in</Left>
+        <Height>9.54542in</Height>
+        <Width>7.73058in</Width>
         <Style>
           <Border>
-            <Style>Dashed</Style>
+            <Style>Solid</Style>
             <Width>1.5pt</Width>
           </Border>
           <BackgroundImage>
@@ -458,11 +585,72 @@
         </Style>
       </Rectangle>
     </ReportItems>
-    <Height>9.87445in</Height>
-    <Style />
+    <Height>9.92035in</Height>
+    <Style>
+      <Border>
+        <Style>None</Style>
+      </Border>
+    </Style>
   </Body>
-  <Width>7.90077in</Width>
+  <Width>8.1328in</Width>
   <Page>
+    <PageFooter>
+      <Height>0.39214in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Rectangle Name="Rectangle5">
+          <ReportItems>
+            <Textbox Name="Textbox13">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Mola Pur Road Ellahabd Chunian Kasur   Phone: 03044001614   Email:MSCS@gmail.com</Value>
+                      <Style>
+                        <Color>White</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox13</rd:DefaultName>
+              <Top>0.06944in</Top>
+              <Left>1.14498in</Left>
+              <Height>0.19391in</Height>
+              <Width>6.27644in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <KeepTogether>true</KeepTogether>
+          <Top>0.02778in</Top>
+          <Height>0.36436in</Height>
+          <Width>8.1328in</Width>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <BackgroundColor>Black</BackgroundColor>
+          </Style>
+        </Rectangle>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
     <PageHeight>11.69in</PageHeight>
     <PageWidth>8.27in</PageWidth>
     <Style />

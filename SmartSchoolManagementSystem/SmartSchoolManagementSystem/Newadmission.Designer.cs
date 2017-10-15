@@ -69,6 +69,11 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.txtcell = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.txtbusfee = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.txttotal = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
             this.txtpaid = new System.Windows.Forms.TextBox();
             this.txtpayable = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
@@ -216,11 +221,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.txttotal = new System.Windows.Forms.TextBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.txtbusfee = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
             this.registrartion.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
@@ -705,6 +705,51 @@
             this.groupBox7.Size = new System.Drawing.Size(281, 163);
             this.groupBox7.TabIndex = 12;
             this.groupBox7.TabStop = false;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(146, 61);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(31, 13);
+            this.label63.TabIndex = 17;
+            this.label63.Text = "Total";
+            // 
+            // txtbusfee
+            // 
+            this.txtbusfee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbusfee.Location = new System.Drawing.Point(205, 35);
+            this.txtbusfee.Name = "txtbusfee";
+            this.txtbusfee.Size = new System.Drawing.Size(70, 20);
+            this.txtbusfee.TabIndex = 16;
+            this.txtbusfee.Text = "0";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(140, 39);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(46, 13);
+            this.label68.TabIndex = 15;
+            this.label68.Text = "Bus Fee";
+            // 
+            // txttotal
+            // 
+            this.txttotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txttotal.Location = new System.Drawing.Point(204, 57);
+            this.txttotal.Name = "txttotal";
+            this.txttotal.Size = new System.Drawing.Size(70, 20);
+            this.txttotal.TabIndex = 14;
+            this.txttotal.Text = "0";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(118, 97);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(66, 13);
+            this.label67.TabIndex = 13;
+            this.label67.Text = "Payable Fee";
             // 
             // txtpaid
             // 
@@ -2207,57 +2252,12 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // txttotal
-            // 
-            this.txttotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txttotal.Location = new System.Drawing.Point(204, 57);
-            this.txttotal.Name = "txttotal";
-            this.txttotal.Size = new System.Drawing.Size(70, 20);
-            this.txttotal.TabIndex = 14;
-            this.txttotal.Text = "0";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(118, 97);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(66, 13);
-            this.label67.TabIndex = 13;
-            this.label67.Text = "Payable Fee";
-            // 
-            // txtbusfee
-            // 
-            this.txtbusfee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbusfee.Location = new System.Drawing.Point(205, 35);
-            this.txtbusfee.Name = "txtbusfee";
-            this.txtbusfee.Size = new System.Drawing.Size(70, 20);
-            this.txtbusfee.TabIndex = 16;
-            this.txtbusfee.Text = "0";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(140, 39);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(46, 13);
-            this.label68.TabIndex = 15;
-            this.label68.Text = "Bus Fee";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(146, 61);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(31, 13);
-            this.label63.TabIndex = 17;
-            this.label63.Text = "Total";
-            // 
             // Newadmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1243, 745);
+            this.ClientSize = new System.Drawing.Size(1243, 845);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);

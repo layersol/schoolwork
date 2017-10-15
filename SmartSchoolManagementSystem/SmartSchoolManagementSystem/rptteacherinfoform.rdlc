@@ -2171,36 +2171,20 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="FID">
-            <CanGrow>true</CanGrow>
+          <Rectangle Name="Rectangle3">
             <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=First(Fields!FID.Value, "ADMISSIONFORMNO")</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>FID</rd:DefaultName>
-            <Top>1.29486in</Top>
-            <Left>1.15951in</Left>
-            <Height>0.25in</Height>
-            <Width>1in</Width>
+            <Top>3.45284cm</Top>
+            <Left>0.13104cm</Left>
+            <Height>0.18943cm</Height>
+            <Width>19.415cm</Width>
             <ZIndex>24</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
+              <BackgroundColor>Red</BackgroundColor>
             </Style>
-          </Textbox>
+          </Rectangle>
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>0.16167in</Top>

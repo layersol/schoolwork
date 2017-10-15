@@ -80,6 +80,12 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsluser = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.feeCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.feeRecipetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iDCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resultCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.feeListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.remainingFeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -249,6 +255,13 @@
             // 
             // sTUDENTREPORTSToolStripMenuItem
             // 
+            this.sTUDENTREPORTSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.feeCollectionToolStripMenuItem,
+            this.feeRecipetToolStripMenuItem,
+            this.iDCardToolStripMenuItem,
+            this.resultCardToolStripMenuItem,
+            this.feeListToolStripMenuItem,
+            this.remainingFeeToolStripMenuItem});
             this.sTUDENTREPORTSToolStripMenuItem.Name = "sTUDENTREPORTSToolStripMenuItem";
             this.sTUDENTREPORTSToolStripMenuItem.Size = new System.Drawing.Size(121, 20);
             this.sTUDENTREPORTSToolStripMenuItem.Text = "STUDENT REPORTS";
@@ -492,6 +505,42 @@
             this.tsluser.Size = new System.Drawing.Size(118, 17);
             this.tsluser.Text = "toolStripStatusLabel1";
             // 
+            // feeCollectionToolStripMenuItem
+            // 
+            this.feeCollectionToolStripMenuItem.Name = "feeCollectionToolStripMenuItem";
+            this.feeCollectionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.feeCollectionToolStripMenuItem.Text = "Fee Collection";
+            // 
+            // feeRecipetToolStripMenuItem
+            // 
+            this.feeRecipetToolStripMenuItem.Name = "feeRecipetToolStripMenuItem";
+            this.feeRecipetToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.feeRecipetToolStripMenuItem.Text = "Fee Recipet";
+            // 
+            // iDCardToolStripMenuItem
+            // 
+            this.iDCardToolStripMenuItem.Name = "iDCardToolStripMenuItem";
+            this.iDCardToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iDCardToolStripMenuItem.Text = "ID Card";
+            // 
+            // resultCardToolStripMenuItem
+            // 
+            this.resultCardToolStripMenuItem.Name = "resultCardToolStripMenuItem";
+            this.resultCardToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.resultCardToolStripMenuItem.Text = "Result Card";
+            // 
+            // feeListToolStripMenuItem
+            // 
+            this.feeListToolStripMenuItem.Name = "feeListToolStripMenuItem";
+            this.feeListToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.feeListToolStripMenuItem.Text = "Fee List";
+            // 
+            // remainingFeeToolStripMenuItem
+            // 
+            this.remainingFeeToolStripMenuItem.Name = "remainingFeeToolStripMenuItem";
+            this.remainingFeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.remainingFeeToolStripMenuItem.Text = "Remaining Fee";
+            // 
             // MDIParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -572,6 +621,12 @@
         private System.Windows.Forms.ToolStripMenuItem sETTINGSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem schoolInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem feeCollectionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem feeRecipetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iDCardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resultCardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem feeListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem remainingFeeToolStripMenuItem;
     }
 }
 

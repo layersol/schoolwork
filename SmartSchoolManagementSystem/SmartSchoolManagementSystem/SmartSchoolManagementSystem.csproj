@@ -162,6 +162,12 @@
     <Compile Include="ClassesSetting.Designer.cs">
       <DependentUpon>ClassesSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConfiguarFingerPrints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfiguarFingerPrints.Designer.cs">
+      <DependentUpon>ConfiguarFingerPrints.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\Circularprogressbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +185,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalPrintAdmission.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DailyAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyAttendance.Designer.cs">
+      <DependentUpon>DailyAttendance.cs</DependentUpon>
     </Compile>
     <Compile Include="dailyfeecollectionprint.cs">
       <SubType>Form</SubType>
@@ -341,6 +353,12 @@
     <Compile Include="StudentFeeList.Designer.cs">
       <DependentUpon>StudentFeeList.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentIdCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentIdCardForm.Designer.cs">
+      <DependentUpon>StudentIdCardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TBLSTUDENTFEEDETAILS.cs">
       <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
     </Compile>
@@ -448,6 +466,18 @@
     <Compile Include="Vacationworkcollection.Designer.cs">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAttendance.Designer.cs">
+      <DependentUpon>ViewAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEnrolledStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEnrolledStudents.Designer.cs">
+      <DependentUpon>ViewEnrolledStudents.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Addbussstops.resx">
       <DependentUpon>Addbussstops.cs</DependentUpon>
     </EmbeddedResource>
@@ -478,6 +508,9 @@
     <EmbeddedResource Include="ClassesSetting.resx">
       <DependentUpon>ClassesSetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConfiguarFingerPrints.resx">
+      <DependentUpon>ConfiguarFingerPrints.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control\Circularprogressbar.resx">
       <DependentUpon>Circularprogressbar.cs</DependentUpon>
     </EmbeddedResource>
@@ -487,6 +520,9 @@
     <EmbeddedResource Include="CrystalPrintAdmission.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalPrintAdmission.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyAttendance.resx">
+      <DependentUpon>DailyAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dailyfeecollectionprint.resx">
       <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
@@ -568,6 +604,9 @@
     <EmbeddedResource Include="studentidcard.resx">
       <DependentUpon>studentidcard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentIdCardForm.resx">
+      <DependentUpon>StudentIdCardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Studentresultcard.resx">
       <DependentUpon>Studentresultcard.cs</DependentUpon>
     </EmbeddedResource>
@@ -585,6 +624,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vacationworkcollection.resx">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAttendance.resx">
+      <DependentUpon>ViewAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEnrolledStudents.resx">
+      <DependentUpon>ViewEnrolledStudents.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="AdmissionFormNo.xsc">
       <DependentUpon>AdmissionFormNo.xsd</DependentUpon>

@@ -118,7 +118,7 @@ namespace SmartSchoolManagementSystem
 
         private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void CutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -173,17 +173,22 @@ namespace SmartSchoolManagementSystem
 
         private void printAdmissionFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            addnewstudent _obj_atten = new addnewstudent();
-            _obj_atten.MdiParent = this;
-            _obj_atten.Show();
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "addnewstudent") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+            addnewstudent frm = new addnewstudent();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void newAdmissionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // Newadmission obj_open = new Newadmission();
-           // obj_open.MdiParent = this;
-            //obj_open.Show();
-
+         
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
                 if (item.Name == "Newadmission") // check by form name if it's opened
@@ -191,10 +196,7 @@ namespace SmartSchoolManagementSystem
                     item.BringToFront(); // bring it front
                     return; //exit
                 }
-            }
-
-            // if MyForm is not opened
-            // you know what it is
+            }       
             Newadmission frm = new Newadmission();
             frm.MdiParent = this;
             frm.Show();
@@ -261,6 +263,149 @@ namespace SmartSchoolManagementSystem
             // if MyForm is not opened
             // you know what it is
             schoolsettings frm = new schoolsettings();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void feeCollectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viaSmSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void arrearsAndBalenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StudentAccount obj = new StudentAccount();
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
+        private void attendanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ViewEnrolledStudents") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+
+            // if MyForm is not opened
+            // you know what it is
+            ViewEnrolledStudents frm = new ViewEnrolledStudents();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void attendanceToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "DailyAttendance") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+
+            // if MyForm is not opened
+            // you know what it is
+            DailyAttendance frm = new DailyAttendance();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void viewAttendanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ViewAttendance") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+
+            // if MyForm is not opened
+            // you know what it is
+            ViewAttendance frm = new ViewAttendance();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void studentIDCardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "StudentIdCardForm") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+
+            // if MyForm is not opened
+            // you know what it is
+            StudentIdCardForm frm = new StudentIdCardForm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void configuarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ConfiguarFingerPrints") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+
+            // if MyForm is not opened
+            // you know what it is
+            ConfiguarFingerPrints frm = new ConfiguarFingerPrints();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void submitVacationWorkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "Vacationworkcollection") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+
+            // if MyForm is not opened
+            // you know what it is
+            Vacationworkcollection frm = new Vacationworkcollection();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void printJoiningFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "Teacherinfoprintform") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+
+            // if MyForm is not opened
+            // you know what it is
+            Teacherinfoprintform frm = new Teacherinfoprintform();
             frm.MdiParent = this;
             frm.Show();
         }

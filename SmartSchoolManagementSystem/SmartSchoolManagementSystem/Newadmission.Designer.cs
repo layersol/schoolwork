@@ -2282,6 +2282,7 @@
             this.Name = "Newadmission";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Student\'s Bio Data";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Newadmission_Load);
             this.registrartion.ResumeLayout(false);
             this.registrartion.PerformLayout();

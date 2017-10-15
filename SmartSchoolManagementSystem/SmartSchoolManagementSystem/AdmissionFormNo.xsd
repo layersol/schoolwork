@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AdmissionFormNo" targetNamespace="http://tempuri.org/AdmissionFormNo.xsd" xmlns:mstns="http://tempuri.org/AdmissionFormNo.xsd" xmlns="http://tempuri.org/AdmissionFormNo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AdmissionFormNo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AdmissionFormNo" msprop:Generator_UserDSName="AdmissionFormNo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AdmissionFornNo" msprop:Generator_TableClassName="AdmissionFornNoDataTable" msprop:Generator_TableVarName="tableAdmissionFornNo" msprop:Generator_TablePropName="AdmissionFornNo" msprop:Generator_RowDeletingName="AdmissionFornNoRowDeleting" msprop:Generator_RowChangingName="AdmissionFornNoRowChanging" msprop:Generator_RowEvHandlerName="AdmissionFornNoRowChangeEventHandler" msprop:Generator_RowDeletedName="AdmissionFornNoRowDeleted" msprop:Generator_UserTableName="AdmissionFornNo" msprop:Generator_RowChangedName="AdmissionFornNoRowChanged" msprop:Generator_RowEvArgName="AdmissionFornNoRowChangeEvent" msprop:Generator_RowClassName="AdmissionFornNoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FID" msprop:Generator_ColumnVarNameInTable="columnFID" msprop:Generator_ColumnPropNameInRow="FID" msprop:Generator_ColumnPropNameInTable="FIDColumn" msprop:Generator_UserColumnName="FID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

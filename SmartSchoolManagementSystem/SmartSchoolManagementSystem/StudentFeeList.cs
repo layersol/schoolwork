@@ -38,6 +38,10 @@ namespace SmartSchoolManagementSystem
         private void StudentFeeList_Load(object sender, EventArgs e)
         {
             this.reportViewer1.RefreshReport();
+            List<Tblschoolsetting> schooldata = new List<Tblschoolsetting>();
+             schooldata =  db.Tblschoolsettings.ToList();
+
+
             var reportQuery = (
                 from a in db.TBLADDMISSIONs
                 join c in db.TBLSTUDENTENRROLs on a.SID equals c.SystemId
@@ -66,8 +70,10 @@ namespace SmartSchoolManagementSystem
                 }).ToList();
             reportViewer1.LocalReport.DataSources.Clear();
             ReportDataSource datasource = new ReportDataSource("STUDENTFEELIST", reportQuery);
+            ReportDataSource datasource2 = new ReportDataSource("SchoolIformation", schooldata);
 
             reportViewer1.LocalReport.DataSources.Add(datasource);
+            reportViewer1.LocalReport.DataSources.Add(datasource2);
             this.reportViewer1.RefreshReport();
 
            

@@ -112,7 +112,7 @@
             <Source>Embedded</Source>
             <Value>logo2</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>0.10938in</Top>
+            <Top>0.10765in</Top>
             <Left>0.11633in</Left>
             <Height>1.18056in</Height>
             <Width>1.18925in</Width>
@@ -193,7 +193,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>0.10765in</Top>
             <Left>6.46531in</Left>
-            <Height>1.29167in</Height>
+            <Height>1.18056in</Height>
             <Width>1.21875in</Width>
             <ZIndex>5</ZIndex>
             <Style>
@@ -220,7 +220,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox30</rd:DefaultName>
-            <Top>1.46694in</Top>
+            <Top>1.59194in</Top>
             <Left>2.18746in</Left>
             <Height>0.19687in</Height>
             <Width>1.54167in</Width>
@@ -250,7 +250,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>1.46694in</Top>
+            <Top>1.59194in</Top>
             <Left>0.10933in</Left>
             <Height>0.17in</Height>
             <Width>2.03646in</Width>
@@ -626,7 +626,7 @@
               </Line>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>1.70639in</Top>
+            <Top>1.83139in</Top>
             <Left>0.10933in</Left>
             <Height>0.43569in</Height>
             <Width>7.58859in</Width>
@@ -656,7 +656,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>2.21153in</Top>
+            <Top>2.33653in</Top>
             <Left>0.10933in</Left>
             <Height>0.17in</Height>
             <Width>2.03646in</Width>
@@ -1193,7 +1193,7 @@
               </Line>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>2.45184in</Top>
+            <Top>2.57684in</Top>
             <Left>0.08833in</Left>
             <Height>2.18481cm</Height>
             <Width>7.60959in</Width>
@@ -1223,7 +1223,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>3.38143in</Top>
+            <Top>3.50643in</Top>
             <Left>0.08833in</Left>
             <Height>0.17in</Height>
             <Width>2.03646in</Width>
@@ -1707,7 +1707,7 @@
               </Line>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>3.62455in</Top>
+            <Top>3.74955in</Top>
             <Left>0.0787in</Left>
             <Height>0.70798in</Height>
             <Width>7.61659in</Width>
@@ -1737,7 +1737,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>4.416in</Top>
+            <Top>4.541in</Top>
             <Left>0.08133in</Left>
             <Height>0.17in</Height>
             <Width>2.03646in</Width>
@@ -2167,7 +2167,7 @@
               </Line>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>4.57657in</Top>
+            <Top>4.70157in</Top>
             <Left>0.07433in</Left>
             <Height>0.73666in</Height>
             <Width>7.61659in</Width>
@@ -2197,7 +2197,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>5.38268in</Top>
+            <Top>5.50768in</Top>
             <Left>0.0857in</Left>
             <Height>0.17in</Height>
             <Width>2.03646in</Width>
@@ -2229,7 +2229,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>6.41346in</Top>
+            <Top>6.53846in</Top>
             <Left>0.08133in</Left>
             <Height>0.17in</Height>
             <Width>2.03646in</Width>
@@ -2261,7 +2261,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>7.50249in</Top>
+            <Top>7.69809in</Top>
             <Left>0.05159in</Left>
             <Height>0.17in</Height>
             <Width>3.67127in</Width>
@@ -2866,7 +2866,7 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>5.62212in</Top>
+            <Top>5.74712in</Top>
             <Left>0.0857in</Left>
             <Height>0.7219in</Height>
             <Width>7.61222in</Width>
@@ -3003,7 +3003,7 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>6.65291in</Top>
+            <Top>6.77791in</Top>
             <Left>0.08133in</Left>
             <Height>0.72125in</Height>
             <Width>7.61659in</Width>
@@ -3032,7 +3032,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox30</rd:DefaultName>
-            <Top>7.50249in</Top>
+            <Top>7.69809in</Top>
             <Left>5.85133in</Left>
             <Height>0.15625in</Height>
             <Width>1.11574in</Width>
@@ -3045,7 +3045,7 @@
           </Textbox>
           <Rectangle Name="Rectangle31">
             <KeepTogether>true</KeepTogether>
-            <Top>7.50249in</Top>
+            <Top>7.69809in</Top>
             <Left>7.21479in</Left>
             <Height>0.17in</Height>
             <Width>0.16867in</Width>
@@ -3054,6 +3054,20 @@
               <Border>
                 <Style>Solid</Style>
               </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle3">
+            <KeepTogether>true</KeepTogether>
+            <Top>3.46604cm</Top>
+            <Left>0.29548cm</Left>
+            <Height>0.18943cm</Height>
+            <Width>19.25724cm</Width>
+            <ZIndex>30</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>Red</BackgroundColor>
             </Style>
           </Rectangle>
         </ReportItems>
@@ -3098,6 +3112,37 @@
     </Style>
   </Page>
   <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="AdmissionFormNo">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>348f912a-c09b-4d51-a036-55e38d81b190</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ADMISSIONFORMID">
+      <Query>
+        <DataSourceName>AdmissionFormNo</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="FID">
+          <DataField>FID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>AdmissionFormNo</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\qaise\Source\Repos\schoolwork\SmartSchoolManagementSystem\SmartSchoolManagementSystem\AdmissionFormNo.xsd</rd:SchemaPath>
+        <rd:TableName>AdmissionFornNo</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
   <EmbeddedImages>
     <EmbeddedImage Name="logo2">
       <MIMEType>image/png</MIMEType>

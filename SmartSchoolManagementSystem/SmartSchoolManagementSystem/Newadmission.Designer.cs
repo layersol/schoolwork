@@ -1240,6 +1240,7 @@
             this.dvgstudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvgstudent.Size = new System.Drawing.Size(254, 629);
             this.dvgstudent.TabIndex = 0;
+            this.dvgstudent.RowHeaderCellChanged += new System.Windows.Forms.DataGridViewRowEventHandler(this.dvgstudent_RowHeaderCellChanged);
             // 
             // groupBox12
             // 

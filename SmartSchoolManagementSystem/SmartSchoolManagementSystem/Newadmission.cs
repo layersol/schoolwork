@@ -192,14 +192,12 @@ namespace SmartSchoolManagementSystem
                         objEnRoll.ACADMICSESSION = lblSession.Text;
                         db.TBLSTUDENTENRROLs.Add(objEnRoll);
                         db.SaveChanges();
-                        classid = objEnRoll.ClassId;
+                       // classid = objEnRoll.ClassId;
                     }
-
-
                     TBLSTUDENTFEEDETAIL objfee = new TBLSTUDENTFEEDETAIL();
                     {
                         objfee.SYSID = SystemID;
-                        objfee.FID = classid;
+                        objfee.FID = Classid;
                         objfee.ADMISSION_FEE = Convert.ToDecimal(txtadfee.Text);
                         objfee.TUITION_FEE = Convert.ToDecimal(txttutionfee.Text);
                         objfee.OTHER_FEE = Convert.ToDecimal(txtotherfee.Text);
@@ -554,6 +552,33 @@ namespace SmartSchoolManagementSystem
         private void cbbgroup_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dvgstudent_RowHeaderCellChanged(object sender, DataGridViewRowEventArgs e)
+        {
+            if (cbbclass.Text != "" && cbbsection.Text != "" && cbbgroup.Text != "")
+            {
+                try
+                {
+                    var GetAccount = from c in db.TBLFEEMASTERs
+                                     where c.STU_Class == classid
+                                     select new { c.ADMISSION_FEE, c.TUITION_FEE, c.TUITION_FEE_PERCENT, c };
+
+                    foreach (var Sessionvalues in GetAccount)
+                    {
+                        txtadfee.Text = Convert.ToString(Sessionvalues.ADMISSION_FEE);
+                        txttutionfee.Text = Convert.ToString(Sessionvalues.TUITION_FEE);
+                        txtdiscount.Text = Convert.ToString(Sessionvalues.TUITION_FEE_PERCENT);
+                        txttutionfee.Text = Convert.ToString(Sessionvalues.TUITION_FEE);
+                        float a, b;
+                        a = float.Parse(txtadfee.Text);
+                        b = float.Parse(txtadfee.Text);
+                    }
+                    calculate();
+                }
+                catch (Exception ex)
+                { }
+            }
         }
 
         private void btnback_Click(object sender, EventArgs e)

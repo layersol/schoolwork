@@ -131,6 +131,11 @@
     <Compile Include="admissionform.Designer.cs">
       <DependentUpon>admissionform.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdmissionFormNo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdmissionFormNo.xsd</DependentUpon>
+    </Compile>
     <Compile Include="admissionformprint.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -581,6 +586,17 @@
     <EmbeddedResource Include="Vacationworkcollection.resx">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="AdmissionFormNo.xsc">
+      <DependentUpon>AdmissionFormNo.xsd</DependentUpon>
+    </None>
+    <None Include="AdmissionFormNo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdmissionFormNo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AdmissionFormNo.xss">
+      <DependentUpon>AdmissionFormNo.xsd</DependentUpon>
+    </None>
     <None Include="ALLFEELIST.xsc">
       <DependentUpon>ALLFEELIST.xsd</DependentUpon>
     </None>

@@ -168,26 +168,29 @@ namespace SmartSchoolManagementSystem
             //var val2 = (from u in db.tblstockins where u.PID == PID select u).Count() > 0;
             //if (val2 != false)
             //{
-
-            Tblschoolsetting product = db.Tblschoolsettings.Single(p => p.ID == PID);
-            // decimal qty = Convert.ToDecimal(product.quentity);
-
-            if (product != null)
+            try
             {
-                product.SchoolName = txtname.Text;
-                product.CONTACTA = txtcontacta.Text;
-                product.CONTACTB = txtcontactb.Text;
-                product.CONTACTC = txtcontactb.Text;
-                product.FIRSTEMAIL = txtemail.Text;
-                product.SECONDEMAIL = txtemail.Text;
-                product.WEBSITE = txtwebsite.Text;
-                product.FIRSTADDRESS = addressa.Text;
-                product.SECONDADDRESS = txtaddressb.Text;
-                product.COMMENTS = txtcommnets.Text;
-                product.LOGO = convertfiletobyte(this.imgpicturebox.ImageLocation);
-                db.SaveChanges();
-                MessageBox.Show("Updated", "Attention");
+                Tblschoolsetting product = db.Tblschoolsettings.Single(p => p.ID == PID);
+                // decimal qty = Convert.ToDecimal(product.quentity);
+
+                if (product != null)
+                {
+                    product.SchoolName = txtname.Text;
+                    product.CONTACTA = txtcontacta.Text;
+                    product.CONTACTB = txtcontactb.Text;
+                    product.CONTACTC = txtcontactb.Text;
+                    product.FIRSTEMAIL = txtemail.Text;
+                    product.SECONDEMAIL = txtemail.Text;
+                    product.WEBSITE = txtwebsite.Text;
+                    product.FIRSTADDRESS = addressa.Text;
+                    product.SECONDADDRESS = txtaddressb.Text;
+                    product.COMMENTS = txtcommnets.Text;
+                    product.LOGO = convertfiletobyte(this.imgpicturebox.ImageLocation);
+                    db.SaveChanges();
+                    MessageBox.Show("Updated", "Attention");
+                }
             }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
 
         }
 

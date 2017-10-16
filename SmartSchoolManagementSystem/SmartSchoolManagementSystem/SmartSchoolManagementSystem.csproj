@@ -125,6 +125,12 @@
     <Compile Include="Add_Student_Bio.Designer.cs">
       <DependentUpon>Add_Student_Bio.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdmissionFeeCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmissionFeeCollection.Designer.cs">
+      <DependentUpon>AdmissionFeeCollection.cs</DependentUpon>
+    </Compile>
     <Compile Include="admissionform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ALLFEELIST.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArrearsAndBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrearsAndBalance.Designer.cs">
+      <DependentUpon>ArrearsAndBalance.cs</DependentUpon>
     </Compile>
     <Compile Include="AssignClass.cs">
       <SubType>Form</SubType>
@@ -257,11 +269,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DTSTUDENTREMAINBLNC.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EditFeeReocrd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditFeeReocrd.Designer.cs">
+      <DependentUpon>EditFeeReocrd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenceRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenceRecord.Designer.cs">
+      <DependentUpon>ExpenceRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExpencesRecord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ExpencesRecord.Designer.cs">
       <DependentUpon>ExpencesRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeeCollection%28UserConsolidate%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeeCollection%28UserConsolidate%29.Designer.cs">
+      <DependentUpon>FeeCollection%28UserConsolidate%29.cs</DependentUpon>
     </Compile>
     <Compile Include="FeeCollection.cs">
       <SubType>Form</SubType>
@@ -298,6 +328,18 @@
     </Compile>
     <Compile Include="Feevouchers.Designer.cs">
       <DependentUpon>Feevouchers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FundDefaulters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FundDefaulters.Designer.cs">
+      <DependentUpon>FundDefaulters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FundProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FundProcess.Designer.cs">
+      <DependentUpon>FundProcess.cs</DependentUpon>
     </Compile>
     <Compile Include="IDCard.cs">
       <SubType>Form</SubType>
@@ -362,6 +404,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RecievePayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecievePayments.Designer.cs">
+      <DependentUpon>RecievePayments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registraionform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -418,6 +466,12 @@
     </Compile>
     <Compile Include="StaffAttendance.Designer.cs">
       <DependentUpon>StaffAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffSalary.Designer.cs">
+      <DependentUpon>StaffSalary.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentAccount.cs">
       <SubType>Form</SubType>
@@ -598,11 +652,17 @@
     <EmbeddedResource Include="Add_Student_Bio.resx">
       <DependentUpon>Add_Student_Bio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdmissionFeeCollection.resx">
+      <DependentUpon>AdmissionFeeCollection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admissionform.resx">
       <DependentUpon>admissionform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="admissionformprint.resx">
       <DependentUpon>admissionformprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrearsAndBalance.resx">
+      <DependentUpon>ArrearsAndBalance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AssignClass.resx">
       <DependentUpon>AssignClass.cs</DependentUpon>
@@ -656,8 +716,17 @@
     <EmbeddedResource Include="destination.resx">
       <DependentUpon>destination.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditFeeReocrd.resx">
+      <DependentUpon>EditFeeReocrd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenceRecord.resx">
+      <DependentUpon>ExpenceRecord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExpencesRecord.resx">
       <DependentUpon>ExpencesRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeeCollection%28UserConsolidate%29.resx">
+      <DependentUpon>FeeCollection%28UserConsolidate%29.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FeeCollection.resx">
       <DependentUpon>FeeCollection.cs</DependentUpon>
@@ -676,6 +745,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Feevouchers.resx">
       <DependentUpon>Feevouchers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FundDefaulters.resx">
+      <DependentUpon>FundDefaulters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FundProcess.resx">
+      <DependentUpon>FundProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IDCard.resx">
       <DependentUpon>IDCard.cs</DependentUpon>
@@ -708,6 +783,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RecievePayments.resx">
+      <DependentUpon>RecievePayments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registraionform.resx">
       <DependentUpon>Registraionform.cs</DependentUpon>
     </EmbeddedResource>
@@ -732,6 +810,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StaffAttendance.resx">
       <DependentUpon>StaffAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffSalary.resx">
+      <DependentUpon>StaffSalary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentAccount.resx">
       <DependentUpon>StudentAccount.cs</DependentUpon>

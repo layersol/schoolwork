@@ -298,9 +298,20 @@ namespace SmartSchoolManagementSystem
 
         private void arrearsAndBalenceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StudentAccount obj = new StudentAccount();
-            obj.MdiParent = this;
-            obj.Show();
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "StudentAccount") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+
+            // if MyForm is not opened
+            // you know what it is
+            StudentAccount frm = new StudentAccount();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void attendanceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -717,6 +728,142 @@ namespace SmartSchoolManagementSystem
             // if Myform is not opened
             // you know what it is
             ChracterCertificate frm = new ChracterCertificate();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void expenceRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ExpenceRecord") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ExpenceRecord frm = new ExpenceRecord();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void staffSalaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "StaffSalary") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            StaffSalary frm = new StaffSalary();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void fundProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "FundProcess") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            FundProcess frm = new FundProcess();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void editFeeRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "EditFeeReocrd") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            EditFeeReocrd frm = new EditFeeReocrd();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void feeCollectionUserConsolidateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "FeeCollectionUserConsolidate") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            FeeCollectionUserConsolidate frm = new FeeCollectionUserConsolidate();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void recievePaymentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "RecievePayments") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            RecievePayments frm = new RecievePayments();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void admissionFeeCollectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "AdmissionFeeCollection") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            AdmissionFeeCollection frm = new AdmissionFeeCollection();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void fundDefualtersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "FundDefaulters") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            FundDefaulters frm = new FundDefaulters();
             frm.MdiParent = this;
             frm.Show();
         }

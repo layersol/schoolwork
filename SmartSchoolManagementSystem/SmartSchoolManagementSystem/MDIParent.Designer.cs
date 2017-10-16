@@ -71,7 +71,6 @@
             this.editFeeRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feeCollectionUserConsolidateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recievePaymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editFeeRecordToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.admissionFeeCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fundDefualtersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arrearsAndBalenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -441,7 +440,6 @@
             this.editFeeRecordToolStripMenuItem,
             this.feeCollectionUserConsolidateToolStripMenuItem,
             this.recievePaymentsToolStripMenuItem,
-            this.editFeeRecordToolStripMenuItem1,
             this.admissionFeeCollectionToolStripMenuItem,
             this.fundDefualtersToolStripMenuItem,
             this.arrearsAndBalenceToolStripMenuItem});
@@ -454,60 +452,62 @@
             this.expenceRecordToolStripMenuItem.Name = "expenceRecordToolStripMenuItem";
             this.expenceRecordToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.expenceRecordToolStripMenuItem.Text = "Expence Record";
+            this.expenceRecordToolStripMenuItem.Click += new System.EventHandler(this.expenceRecordToolStripMenuItem_Click);
             // 
             // staffSalaryToolStripMenuItem
             // 
             this.staffSalaryToolStripMenuItem.Name = "staffSalaryToolStripMenuItem";
             this.staffSalaryToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.staffSalaryToolStripMenuItem.Text = "Staff Salary";
+            this.staffSalaryToolStripMenuItem.Click += new System.EventHandler(this.staffSalaryToolStripMenuItem_Click);
             // 
             // fundProcessToolStripMenuItem
             // 
             this.fundProcessToolStripMenuItem.Name = "fundProcessToolStripMenuItem";
             this.fundProcessToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.fundProcessToolStripMenuItem.Text = "Fund Process";
+            this.fundProcessToolStripMenuItem.Click += new System.EventHandler(this.fundProcessToolStripMenuItem_Click);
             // 
             // editFeeRecordToolStripMenuItem
             // 
             this.editFeeRecordToolStripMenuItem.Name = "editFeeRecordToolStripMenuItem";
             this.editFeeRecordToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.editFeeRecordToolStripMenuItem.Text = "Edit Fee Record";
+            this.editFeeRecordToolStripMenuItem.Click += new System.EventHandler(this.editFeeRecordToolStripMenuItem_Click);
             // 
             // feeCollectionUserConsolidateToolStripMenuItem
             // 
             this.feeCollectionUserConsolidateToolStripMenuItem.Name = "feeCollectionUserConsolidateToolStripMenuItem";
             this.feeCollectionUserConsolidateToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.feeCollectionUserConsolidateToolStripMenuItem.Text = "Fee Collection (User Consolidate)";
+            this.feeCollectionUserConsolidateToolStripMenuItem.Click += new System.EventHandler(this.feeCollectionUserConsolidateToolStripMenuItem_Click);
             // 
             // recievePaymentsToolStripMenuItem
             // 
             this.recievePaymentsToolStripMenuItem.Name = "recievePaymentsToolStripMenuItem";
             this.recievePaymentsToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.recievePaymentsToolStripMenuItem.Text = "Recieve Payments";
-            // 
-            // editFeeRecordToolStripMenuItem1
-            // 
-            this.editFeeRecordToolStripMenuItem1.Name = "editFeeRecordToolStripMenuItem1";
-            this.editFeeRecordToolStripMenuItem1.Size = new System.Drawing.Size(249, 22);
-            this.editFeeRecordToolStripMenuItem1.Text = "Edit Fee Record";
+            this.recievePaymentsToolStripMenuItem.Click += new System.EventHandler(this.recievePaymentsToolStripMenuItem_Click);
             // 
             // admissionFeeCollectionToolStripMenuItem
             // 
             this.admissionFeeCollectionToolStripMenuItem.Name = "admissionFeeCollectionToolStripMenuItem";
             this.admissionFeeCollectionToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.admissionFeeCollectionToolStripMenuItem.Text = "Admission Fee Collection";
+            this.admissionFeeCollectionToolStripMenuItem.Click += new System.EventHandler(this.admissionFeeCollectionToolStripMenuItem_Click);
             // 
             // fundDefualtersToolStripMenuItem
             // 
             this.fundDefualtersToolStripMenuItem.Name = "fundDefualtersToolStripMenuItem";
             this.fundDefualtersToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.fundDefualtersToolStripMenuItem.Text = "Fund Defualters";
+            this.fundDefualtersToolStripMenuItem.Text = "Fund Defaulters";
+            this.fundDefualtersToolStripMenuItem.Click += new System.EventHandler(this.fundDefualtersToolStripMenuItem_Click);
             // 
             // arrearsAndBalenceToolStripMenuItem
             // 
             this.arrearsAndBalenceToolStripMenuItem.Name = "arrearsAndBalenceToolStripMenuItem";
             this.arrearsAndBalenceToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.arrearsAndBalenceToolStripMenuItem.Text = "Arrears And Balence";
+            this.arrearsAndBalenceToolStripMenuItem.Text = "Arrears And Balance";
             this.arrearsAndBalenceToolStripMenuItem.Click += new System.EventHandler(this.arrearsAndBalenceToolStripMenuItem_Click);
             // 
             // eXAMSCHEDULEToolStripMenuItem
@@ -1229,7 +1229,6 @@
         private System.Windows.Forms.ToolStripMenuItem editFeeRecordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem feeCollectionUserConsolidateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recievePaymentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editFeeRecordToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem admissionFeeCollectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem schoolLeavingCertificateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chracterCertificateToolStripMenuItem;

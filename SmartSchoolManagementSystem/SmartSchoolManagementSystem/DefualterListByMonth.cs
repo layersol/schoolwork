@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SmartSchoolManagementSystem
 {
-    public partial class FeeRecipet : Form
+    public partial class DefualterListByMonth : Form
     {
-        public FeeRecipet()
+        public DefualterListByMonth()
         {
             InitializeComponent();
-        }
-
-        private void btnclose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

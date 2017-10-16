@@ -156,6 +156,12 @@
     <Compile Include="AssignClass.Designer.cs">
       <DependentUpon>AssignClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChracterCertificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChracterCertificate.Designer.cs">
+      <DependentUpon>ChracterCertificate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classandsectiondefination.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,11 +210,35 @@
     <Compile Include="dailyfeecollectionprint.Designer.cs">
       <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
     </Compile>
+    <Compile Include="DefaulterListByStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefaulterListByStudent.Designer.cs">
+      <DependentUpon>DefaulterListByStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="DefineFee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DefineFee.Designer.cs">
       <DependentUpon>DefineFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefualerListByClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefualerListByClass.Designer.cs">
+      <DependentUpon>DefualerListByClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefualterListByMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefualterListByMonth.Designer.cs">
+      <DependentUpon>DefualterListByMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefualterListBySession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefualterListBySession.Designer.cs">
+      <DependentUpon>DefualterListBySession.cs</DependentUpon>
     </Compile>
     <Compile Include="DEMO.cs">
       <SubType>Form</SubType>
@@ -233,6 +263,12 @@
     <Compile Include="ExpencesRecord.Designer.cs">
       <DependentUpon>ExpencesRecord.cs</DependentUpon>
     </Compile>
+    <Compile Include="FeeCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeeCollection.Designer.cs">
+      <DependentUpon>FeeCollection.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feecollectiondetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +281,12 @@
     <Compile Include="Feedefinition.Designer.cs">
       <DependentUpon>Feedefinition.cs</DependentUpon>
     </Compile>
+    <Compile Include="FeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeeList.Designer.cs">
+      <DependentUpon>FeeList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feerecipet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +298,12 @@
     </Compile>
     <Compile Include="Feevouchers.Designer.cs">
       <DependentUpon>Feevouchers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDCard.Designer.cs">
+      <DependentUpon>IDCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -320,10 +368,28 @@
     <Compile Include="Registraionform.Designer.cs">
       <DependentUpon>Registraionform.cs</DependentUpon>
     </Compile>
+    <Compile Include="RemainingFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemainingFee.Designer.cs">
+      <DependentUpon>RemainingFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultCard.Designer.cs">
+      <DependentUpon>ResultCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="SchoolInformation.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolInformation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolLeavingCertificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolLeavingCertificate.Designer.cs">
+      <DependentUpon>SchoolLeavingCertificate.cs</DependentUpon>
     </Compile>
     <Compile Include="SchoolModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -541,6 +607,9 @@
     <EmbeddedResource Include="AssignClass.resx">
       <DependentUpon>AssignClass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChracterCertificate.resx">
+      <DependentUpon>ChracterCertificate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Classandsectiondefination.resx">
       <DependentUpon>Classandsectiondefination.cs</DependentUpon>
     </EmbeddedResource>
@@ -566,8 +635,20 @@
     <EmbeddedResource Include="dailyfeecollectionprint.resx">
       <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DefaulterListByStudent.resx">
+      <DependentUpon>DefaulterListByStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DefineFee.resx">
       <DependentUpon>DefineFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefualerListByClass.resx">
+      <DependentUpon>DefualerListByClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefualterListByMonth.resx">
+      <DependentUpon>DefualterListByMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefualterListBySession.resx">
+      <DependentUpon>DefualterListBySession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DEMO.resx">
       <DependentUpon>DEMO.cs</DependentUpon>
@@ -578,17 +659,26 @@
     <EmbeddedResource Include="ExpencesRecord.resx">
       <DependentUpon>ExpencesRecord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FeeCollection.resx">
+      <DependentUpon>FeeCollection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Feecollectiondetail.resx">
       <DependentUpon>Feecollectiondetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feedefinition.resx">
       <DependentUpon>Feedefinition.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FeeList.resx">
+      <DependentUpon>FeeList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Feerecipet.resx">
       <DependentUpon>Feerecipet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feevouchers.resx">
       <DependentUpon>Feevouchers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDCard.resx">
+      <DependentUpon>IDCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -621,13 +711,22 @@
     <EmbeddedResource Include="Registraionform.resx">
       <DependentUpon>Registraionform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RemainingFee.resx">
+      <DependentUpon>RemainingFee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="reports\RPTSTUDENTREMAING.rdlc" />
     <EmbeddedResource Include="reports\Studentfeelist.rdlc" />
+    <EmbeddedResource Include="ResultCard.resx">
+      <DependentUpon>ResultCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptadmissionprint.rdlc" />
     <EmbeddedResource Include="rptdailyfeecollection.rdlc" />
     <EmbeddedResource Include="rptresultcard.rdlc" />
     <EmbeddedResource Include="rptstudentfeereciept.rdlc" />
     <EmbeddedResource Include="rptteacherinfoform.rdlc" />
+    <EmbeddedResource Include="SchoolLeavingCertificate.resx">
+      <DependentUpon>SchoolLeavingCertificate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="schoolsettings.resx">
       <DependentUpon>schoolsettings.cs</DependentUpon>
     </EmbeddedResource>

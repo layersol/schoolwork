@@ -452,12 +452,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="RecievePayments.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RecievePayments.Designer.cs">
-      <DependentUpon>RecievePayments.cs</DependentUpon>
-    </Compile>
     <Compile Include="Registraionform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -878,9 +872,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RecievePayments.resx">
-      <DependentUpon>RecievePayments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registraionform.resx">
       <DependentUpon>Registraionform.cs</DependentUpon>

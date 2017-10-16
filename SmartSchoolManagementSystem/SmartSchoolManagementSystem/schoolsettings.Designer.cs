@@ -74,7 +74,7 @@
             this.groupBox2.Controls.Add(this.txtcontactb);
             this.groupBox2.Controls.Add(this.txtcontacta);
             this.groupBox2.Controls.Add(this.txtname);
-            this.groupBox2.Location = new System.Drawing.Point(6, 39);
+            this.groupBox2.Location = new System.Drawing.Point(0, 39);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(246, 143);
             this.groupBox2.TabIndex = 1;
@@ -167,9 +167,9 @@
             // 
             this.groupBox3.Controls.Add(this.btnbrowse);
             this.groupBox3.Controls.Add(this.imgpicturebox);
-            this.groupBox3.Location = new System.Drawing.Point(255, 39);
+            this.groupBox3.Location = new System.Drawing.Point(249, 39);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(132, 143);
+            this.groupBox3.Size = new System.Drawing.Size(126, 143);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Logo";
@@ -180,9 +180,9 @@
             this.btnbrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbrowse.Image = global::SmartSchoolManagementSystem.Properties.Resources.Archive_Icon;
             this.btnbrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbrowse.Location = new System.Drawing.Point(7, 114);
+            this.btnbrowse.Location = new System.Drawing.Point(11, 114);
             this.btnbrowse.Name = "btnbrowse";
-            this.btnbrowse.Size = new System.Drawing.Size(116, 23);
+            this.btnbrowse.Size = new System.Drawing.Size(101, 23);
             this.btnbrowse.TabIndex = 1;
             this.btnbrowse.Text = "Browse";
             this.btnbrowse.UseVisualStyleBackColor = false;
@@ -190,9 +190,9 @@
             // 
             // imgpicturebox
             // 
-            this.imgpicturebox.Location = new System.Drawing.Point(7, 14);
+            this.imgpicturebox.Location = new System.Drawing.Point(11, 14);
             this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(117, 97);
+            this.imgpicturebox.Size = new System.Drawing.Size(101, 97);
             this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgpicturebox.TabIndex = 0;
             this.imgpicturebox.TabStop = false;
@@ -205,9 +205,9 @@
             this.groupBox4.Controls.Add(this.txtaddressb);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.addressa);
-            this.groupBox4.Location = new System.Drawing.Point(6, 183);
+            this.groupBox4.Location = new System.Drawing.Point(0, 183);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(381, 121);
+            this.groupBox4.Size = new System.Drawing.Size(375, 121);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             // 
@@ -225,7 +225,7 @@
             this.txtcommnets.Location = new System.Drawing.Point(92, 73);
             this.txtcommnets.Multiline = true;
             this.txtcommnets.Name = "txtcommnets";
-            this.txtcommnets.Size = new System.Drawing.Size(280, 41);
+            this.txtcommnets.Size = new System.Drawing.Size(275, 41);
             this.txtcommnets.TabIndex = 16;
             this.txtcommnets.TextChanged += new System.EventHandler(this.txtcommnets_TextChanged);
             // 
@@ -242,7 +242,7 @@
             // 
             this.txtaddressb.Location = new System.Drawing.Point(92, 47);
             this.txtaddressb.Name = "txtaddressb";
-            this.txtaddressb.Size = new System.Drawing.Size(280, 20);
+            this.txtaddressb.Size = new System.Drawing.Size(275, 20);
             this.txtaddressb.TabIndex = 12;
             this.txtaddressb.TextChanged += new System.EventHandler(this.txtaddressb_TextChanged);
             // 
@@ -259,7 +259,7 @@
             // 
             this.addressa.Location = new System.Drawing.Point(92, 21);
             this.addressa.Name = "addressa";
-            this.addressa.Size = new System.Drawing.Size(280, 20);
+            this.addressa.Size = new System.Drawing.Size(275, 20);
             this.addressa.TabIndex = 10;
             this.addressa.TextChanged += new System.EventHandler(this.addressa_TextChanged);
             // 
@@ -268,7 +268,7 @@
             this.groupBox5.Controls.Add(this.btnview);
             this.groupBox5.Controls.Add(this.btnupdate);
             this.groupBox5.Controls.Add(this.btnsave);
-            this.groupBox5.Location = new System.Drawing.Point(6, 304);
+            this.groupBox5.Location = new System.Drawing.Point(0, 303);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(381, 42);
             this.groupBox5.TabIndex = 6;
@@ -322,7 +322,7 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.school_information_settings;
-            this.panel1.Location = new System.Drawing.Point(7, 0);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(380, 36);
             this.panel1.TabIndex = 8;
@@ -332,7 +332,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(395, 349);
+            this.ClientSize = new System.Drawing.Size(379, 348);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);

@@ -735,6 +735,7 @@
             this.expencesDefinationToolStripMenuItem.Name = "expencesDefinationToolStripMenuItem";
             this.expencesDefinationToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.expencesDefinationToolStripMenuItem.Text = "Expences Defination";
+            this.expencesDefinationToolStripMenuItem.Click += new System.EventHandler(this.expencesDefinationToolStripMenuItem_Click);
             // 
             // classMapingToolStripMenuItem
             // 
@@ -760,66 +761,77 @@
             this.addSectionsToolStripMenuItem.Name = "addSectionsToolStripMenuItem";
             this.addSectionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addSectionsToolStripMenuItem.Text = "Add Sections";
+            this.addSectionsToolStripMenuItem.Click += new System.EventHandler(this.addSectionsToolStripMenuItem_Click);
             // 
             // classMapingToolStripMenuItem1
             // 
             this.classMapingToolStripMenuItem1.Name = "classMapingToolStripMenuItem1";
             this.classMapingToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.classMapingToolStripMenuItem1.Text = "Class Maping";
+            this.classMapingToolStripMenuItem1.Click += new System.EventHandler(this.classMapingToolStripMenuItem1_Click);
             // 
             // classFeeDefinationToolStripMenuItem
             // 
             this.classFeeDefinationToolStripMenuItem.Name = "classFeeDefinationToolStripMenuItem";
             this.classFeeDefinationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.classFeeDefinationToolStripMenuItem.Text = "Class Fee Defination";
+            this.classFeeDefinationToolStripMenuItem.Click += new System.EventHandler(this.classFeeDefinationToolStripMenuItem_Click);
             // 
             // subjectDefinationToolStripMenuItem
             // 
             this.subjectDefinationToolStripMenuItem.Name = "subjectDefinationToolStripMenuItem";
             this.subjectDefinationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.subjectDefinationToolStripMenuItem.Text = "Subject Defination";
+            this.subjectDefinationToolStripMenuItem.Click += new System.EventHandler(this.subjectDefinationToolStripMenuItem_Click);
             // 
             // sessionSettingToolStripMenuItem
             // 
             this.sessionSettingToolStripMenuItem.Name = "sessionSettingToolStripMenuItem";
             this.sessionSettingToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.sessionSettingToolStripMenuItem.Text = "Session Setting";
+            this.sessionSettingToolStripMenuItem.Click += new System.EventHandler(this.sessionSettingToolStripMenuItem_Click);
             // 
             // mobilePhoneSettingsToolStripMenuItem
             // 
             this.mobilePhoneSettingsToolStripMenuItem.Name = "mobilePhoneSettingsToolStripMenuItem";
             this.mobilePhoneSettingsToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.mobilePhoneSettingsToolStripMenuItem.Text = "Mobile Phone Settings";
+            this.mobilePhoneSettingsToolStripMenuItem.Click += new System.EventHandler(this.mobilePhoneSettingsToolStripMenuItem_Click);
             // 
             // exportContactsListToolStripMenuItem
             // 
             this.exportContactsListToolStripMenuItem.Name = "exportContactsListToolStripMenuItem";
             this.exportContactsListToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.exportContactsListToolStripMenuItem.Text = "Export Contacts List";
+            this.exportContactsListToolStripMenuItem.Click += new System.EventHandler(this.exportContactsListToolStripMenuItem_Click);
             // 
             // exportContactSelectiveToolStripMenuItem
             // 
             this.exportContactSelectiveToolStripMenuItem.Name = "exportContactSelectiveToolStripMenuItem";
             this.exportContactSelectiveToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.exportContactSelectiveToolStripMenuItem.Text = "Export Contacts (Selective)";
+            this.exportContactSelectiveToolStripMenuItem.Click += new System.EventHandler(this.exportContactSelectiveToolStripMenuItem_Click);
             // 
             // backupToolStripMenuItem
             // 
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
             this.backupToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.backupToolStripMenuItem.Text = "Backup";
+            this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
             // factoryRestoreToolStripMenuItem
             // 
             this.factoryRestoreToolStripMenuItem.Name = "factoryRestoreToolStripMenuItem";
             this.factoryRestoreToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.factoryRestoreToolStripMenuItem.Text = "Factory Restore";
+            this.factoryRestoreToolStripMenuItem.Click += new System.EventHandler(this.factoryRestoreToolStripMenuItem_Click);
             // 
             // userAndRightsToolStripMenuItem
             // 
             this.userAndRightsToolStripMenuItem.Name = "userAndRightsToolStripMenuItem";
             this.userAndRightsToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.userAndRightsToolStripMenuItem.Text = "User And Rights";
+            this.userAndRightsToolStripMenuItem.Click += new System.EventHandler(this.userAndRightsToolStripMenuItem_Click);
             // 
             // communicationToolStripMenuItem
             // 
@@ -829,14 +841,15 @@
             this.viaCallToolStripMenuItem,
             this.sMSDateSheetToolStripMenuItem});
             this.communicationToolStripMenuItem.Name = "communicationToolStripMenuItem";
-            this.communicationToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
-            this.communicationToolStripMenuItem.Text = "Communication";
+            this.communicationToolStripMenuItem.Size = new System.Drawing.Size(121, 20);
+            this.communicationToolStripMenuItem.Text = "COMMUNICATION";
             // 
             // viaEmailToolStripMenuItem
             // 
             this.viaEmailToolStripMenuItem.Name = "viaEmailToolStripMenuItem";
             this.viaEmailToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.viaEmailToolStripMenuItem.Text = "Via Email";
+            this.viaEmailToolStripMenuItem.Click += new System.EventHandler(this.viaEmailToolStripMenuItem_Click);
             // 
             // viaSmSToolStripMenuItem
             // 
@@ -850,12 +863,14 @@
             this.viaCallToolStripMenuItem.Name = "viaCallToolStripMenuItem";
             this.viaCallToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.viaCallToolStripMenuItem.Text = "Via Call";
+            this.viaCallToolStripMenuItem.Click += new System.EventHandler(this.viaCallToolStripMenuItem_Click);
             // 
             // sMSDateSheetToolStripMenuItem
             // 
             this.sMSDateSheetToolStripMenuItem.Name = "sMSDateSheetToolStripMenuItem";
             this.sMSDateSheetToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.sMSDateSheetToolStripMenuItem.Text = "SMS Date Sheet";
+            this.sMSDateSheetToolStripMenuItem.Click += new System.EventHandler(this.sMSDateSheetToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -874,30 +889,35 @@
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
             this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.sendFeedbackToolStripMenuItem.Text = "Send Feedback";
+            this.sendFeedbackToolStripMenuItem.Click += new System.EventHandler(this.sendFeedbackToolStripMenuItem_Click);
             // 
             // registerProductToolStripMenuItem
             // 
             this.registerProductToolStripMenuItem.Name = "registerProductToolStripMenuItem";
             this.registerProductToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.registerProductToolStripMenuItem.Text = "Register Product";
+            this.registerProductToolStripMenuItem.Click += new System.EventHandler(this.registerProductToolStripMenuItem_Click);
             // 
             // technicalSupportToolStripMenuItem
             // 
             this.technicalSupportToolStripMenuItem.Name = "technicalSupportToolStripMenuItem";
             this.technicalSupportToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.technicalSupportToolStripMenuItem.Text = "Technical Support";
+            this.technicalSupportToolStripMenuItem.Click += new System.EventHandler(this.technicalSupportToolStripMenuItem_Click);
             // 
             // keyboardAccessibilityToolStripMenuItem
             // 
             this.keyboardAccessibilityToolStripMenuItem.Name = "keyboardAccessibilityToolStripMenuItem";
             this.keyboardAccessibilityToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.keyboardAccessibilityToolStripMenuItem.Text = "Keyboard Accessibility";
+            this.keyboardAccessibilityToolStripMenuItem.Click += new System.EventHandler(this.keyboardAccessibilityToolStripMenuItem_Click);
             // 
             // aboutSSMSToolStripMenuItem
             // 
             this.aboutSSMSToolStripMenuItem.Name = "aboutSSMSToolStripMenuItem";
             this.aboutSSMSToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.aboutSSMSToolStripMenuItem.Text = "About SSMS";
+            this.aboutSSMSToolStripMenuItem.Click += new System.EventHandler(this.aboutSSMSToolStripMenuItem_Click);
             // 
             // toolStrip
             // 

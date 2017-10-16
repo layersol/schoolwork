@@ -1,6 +1,6 @@
 ﻿namespace SmartSchoolManagementSystem
 {
-    partial class Add_Class_Section
+    partial class Add_Class
     {
         /// <summary>
         /// Required designer variable.
@@ -241,7 +241,7 @@
             this.panel1.Size = new System.Drawing.Size(362, 58);
             this.panel1.TabIndex = 7;
             // 
-            // Add_Class_Section
+            // Add_Class
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -250,8 +250,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Add_Class_Section";
-            this.Text = "Add Class Section";
+            this.Name = "Add_Class";
+            this.Text = "Add Class";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

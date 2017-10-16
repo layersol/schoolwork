@@ -305,12 +305,6 @@
     <Compile Include="ExamPaperHeader.Designer.cs">
       <DependentUpon>ExamPaperHeader.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExpenceRecord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExpenceRecord.Designer.cs">
-      <DependentUpon>ExpenceRecord.cs</DependentUpon>
-    </Compile>
     <Compile Include="ExpencesRecord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -805,9 +799,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ExamPaperHeader.resx">
       <DependentUpon>ExamPaperHeader.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ExpenceRecord.resx">
-      <DependentUpon>ExpenceRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExpencesRecord.resx">
       <DependentUpon>ExpencesRecord.cs</DependentUpon>

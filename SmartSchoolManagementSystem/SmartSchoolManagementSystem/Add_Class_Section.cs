@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace SmartSchoolManagementSystem
 {
-    public partial class Add_Class_Section : Form
+    public partial class Add_Class : Form
     {
         smartschooldbEntities db = new smartschooldbEntities();
-        public Add_Class_Section()
+        public Add_Class()
         {
             InitializeComponent();
         }

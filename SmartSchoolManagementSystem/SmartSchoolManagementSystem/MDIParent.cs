@@ -736,7 +736,7 @@ namespace SmartSchoolManagementSystem
         {
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
-                if (item.Name == "ExpenceRecord") // check by form name if it's opene
+                if (item.Name == "ExpencesRecord") // check by form name if it's opene
                 {
                     item.BringToFront(); // bring to front
                     return; //exit
@@ -744,7 +744,7 @@ namespace SmartSchoolManagementSystem
             }
             // if Myform is not opened
             // you know what it is
-            ExpenceRecord frm = new ExpenceRecord();
+            ExpencesRecord frm = new ExpencesRecord();
             frm.MdiParent = this;
             frm.Show();
         }
@@ -1068,6 +1068,23 @@ namespace SmartSchoolManagementSystem
             // if Myform is not opened
             // you know what it is
             PaperFunds frm = new PaperFunds();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void addClassesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "Add_Class") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            Add_Class frm = new Add_Class();
             frm.MdiParent = this;
             frm.Show();
         }

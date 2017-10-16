@@ -35,7 +35,7 @@
             this.btnsearch = new System.Windows.Forms.Button();
             this.cbbgroup = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtsystem = new System.Windows.Forms.TextBox();
             this.cbbsection = new System.Windows.Forms.ComboBox();
             this.cbbclass = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -254,7 +254,7 @@
             this.registrartion.Controls.Add(this.btnsearch);
             this.registrartion.Controls.Add(this.cbbgroup);
             this.registrartion.Controls.Add(this.label7);
-            this.registrartion.Controls.Add(this.textBox3);
+            this.registrartion.Controls.Add(this.txtsystem);
             this.registrartion.Controls.Add(this.cbbsection);
             this.registrartion.Controls.Add(this.cbbclass);
             this.registrartion.Controls.Add(this.label5);
@@ -322,15 +322,15 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Group";
             // 
-            // textBox3
+            // txtsystem
             // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(298, 20);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(80, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtsystem.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtsystem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsystem.Enabled = false;
+            this.txtsystem.Location = new System.Drawing.Point(298, 20);
+            this.txtsystem.Name = "txtsystem";
+            this.txtsystem.Size = new System.Drawing.Size(80, 20);
+            this.txtsystem.TabIndex = 9;
             // 
             // cbbsection
             // 
@@ -1240,6 +1240,7 @@
             this.dvgstudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvgstudent.Size = new System.Drawing.Size(254, 629);
             this.dvgstudent.TabIndex = 0;
+            this.dvgstudent.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvgstudent_RowHeaderMouseClick);
             this.dvgstudent.RowHeaderCellChanged += new System.Windows.Forms.DataGridViewRowEventHandler(this.dvgstudent_RowHeaderCellChanged);
             // 
             // groupBox12
@@ -2257,7 +2258,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1243, 845);
+            this.ClientSize = new System.Drawing.Size(1243, 745);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);
@@ -2338,7 +2339,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtsystem;
         private System.Windows.Forms.ComboBox cbbsection;
         private System.Windows.Forms.ComboBox cbbclass;
         private System.Windows.Forms.ComboBox cbbgroup;

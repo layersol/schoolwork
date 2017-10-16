@@ -18,7 +18,7 @@ namespace SmartSchoolManagementSystem
         smartschooldbEntities db = new smartschooldbEntities();
         public DataGridViewRow dgvr;
         int  ClassRollNo, admissionfee=0, tutionfee=0, otherfee=0, classid;
-        string imgloc = "";
+        string imgloc = "",dgv;
         public Newadmission()
         {
             InitializeComponent();
@@ -61,8 +61,8 @@ namespace SmartSchoolManagementSystem
                             where s.CURRENTSESSION == lblSession.Text
                             select new
                             {
-                                System_NO = s.SID,
-                                Student_Name = s.STUDENT_NAME,
+                                NO = s.SID,
+                                StudentName = s.STUDENT_NAME,
                             };
                 dvgstudent.DataSource = query.ToList();
 
@@ -579,6 +579,91 @@ namespace SmartSchoolManagementSystem
                 catch (Exception ex)
                 { MessageBox.Show(ex.Message); }
             }
+        }
+
+        private void dvgstudent_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dvgstudent.Rows[e.RowIndex];
+                if (row != null)
+                dgv = row.Cells["NO"].Value.ToString();
+                int dgva = Convert.ToInt16(dgv);
+                var q = (from a in db.TBLADDMISSIONs
+                where a.SID == dgva
+                select a).SingleOrDefault();
+                txtsystem.Text =Convert.ToString(q.SID);
+                txtform.Text=q.ADMISSION_FORM;
+                txtstudentname.Text=q.STUDENT_NAME ;
+                txtdob.Text =Convert.ToString(q.STUDENT_DOB);
+                txtpob.Text = q.PLACE_BIRTH ;
+                bform.Text= q.STUDENT_NIC  ;
+                cbbgender.Text=q.GENDER;
+                txtriligion.Text = q.RELIGION  ;
+                txtcell.Text=q.S_CELL_NO;
+                txtsmail.Text=q.STUDENT_EMAIL_ADDRESS;
+                if (q.ADMISSION_STATUS != null)
+                {
+                    ckbstatus.Checked = true;
+                }
+                else { ckbstatus.Checked = false; }
+                txthomeadress.Text= q.HOME_ADDRESS;
+                cbbBloodGroup.Text= q.BLOODGROUP;
+                if (q != null)
+                {
+                    using (var ms = new MemoryStream(q.IMAGE))
+                    {
+                        using (var image = Image.FromStream(ms))
+                        {
+                            imgpicturebox.Image = (Image)image.Clone();
+                        }
+                    }
+                }
+                // q.IMAGE = convertfiletobyte(this.imgpicturebox.ImageLocation);
+                txtfname.Text= q.FATHER_NAME ;
+                txtcnic.Text= q.FATHER_NIC ;
+                txtfcell.Text= q.FATHER_CELL_NO  ;
+                txtoccupation.Text= q.FATHER_OCCUPATION ;
+                txtincom.Text= q.MONTHLY_INCOM ;
+                txtofficetel.Text= q.OFFICE_LANDLINE;
+                txtcast.Text= q.FATHER_CAST;
+                txtofficeadress.Text= q.BUSINESS_ADDRESS;
+                lblSession.Text= q.CURRENTSESSION;   ///     check this again
+                txtgname.Text= q.G_NAME;
+                txtgcnic.Text=q.G_CNIC;
+                txtgcell.Text=q.G_CELL;
+                txtgoccupatio.Text=q.G_OCCUPATION;
+                txtgmonthincom.Text=q.G_MONTHLY_INCOM;
+                txtgcell.Text=q.G_CELL_NO;
+                txtgoffice.Text=q.G_BUSINESS_ADDRESS;
+                cbbedu1.Text= q.EDUCATION1;
+                cbbedu2.Text=q.EDUCATION2;
+                txtadminssion1.Text=q.ADMISSIONNO1;
+                txtadmission2.Text=q.ADMISSIONNO2;
+                txtpassyear.Text=q.YEAR1;
+                txtpasyear2.Text=q.YEAR2;
+                txtboard1.Text=q.BOARD_INSTITUTION1;
+                txtboard2.Text=q.BOARD_INSTITUTION2;
+                txtboard2.Text=q.BOARD_INSTITUTION2;
+                cbbgrad1.Text=q.GRADE1;
+                cbbgrad2.Text=q.GRADE2;
+                txttmark.Text=q.TOTAL_MARKS1 ;
+                txttmark2.Text=q.TOTAL_MARKS2  ;
+                txtobtain1.Text=q.OBTAIN_MARKS1  ;
+                txtobtain2.Text=q.OBTAIN_MARKS2  ;
+                txtpercent1.Text=q.PERCENTAGE1  ;
+                txtpercent2.Text=q.PERCENTAGE2  ;
+                txtstname1.Text= q.STUDENTNAME1  ;
+                txtstname2.Text= q.STUDENTNAME1  ;
+                txtinwhich1.Text=q.CLAS1  ;
+                txtinwhich2.Text=q.CLAS2  ;
+                txtschoolname1.Text= q.SCHOOLNAME1  ;
+                txtschool2.Text= q.SCHOOLNAME2 ;
+                //q.ADMISSION_DATE = System.DateTime.Now;
+                //q.CREATED_BY = txtcreatedby.Text;
+                //q.CREATED_DATE = System.DateTime.Now;
+            }
+            else { }
         }
 
         private void btnback_Click(object sender, EventArgs e)

@@ -277,6 +277,7 @@
             this.viewStaffInformationToolStripMenuItem.Name = "viewStaffInformationToolStripMenuItem";
             this.viewStaffInformationToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.viewStaffInformationToolStripMenuItem.Text = "View Employees";
+            this.viewStaffInformationToolStripMenuItem.Click += new System.EventHandler(this.viewStaffInformationToolStripMenuItem_Click);
             // 
             // toolStripSeparator17
             // 
@@ -288,12 +289,14 @@
             this.staffAttendanceToolStripMenuItem.Name = "staffAttendanceToolStripMenuItem";
             this.staffAttendanceToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.staffAttendanceToolStripMenuItem.Text = "Staff Attendance";
+            this.staffAttendanceToolStripMenuItem.Click += new System.EventHandler(this.staffAttendanceToolStripMenuItem_Click);
             // 
             // viewAttendanceToolStripMenuItem1
             // 
             this.viewAttendanceToolStripMenuItem1.Name = "viewAttendanceToolStripMenuItem1";
             this.viewAttendanceToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
             this.viewAttendanceToolStripMenuItem1.Text = "View Attendance";
+            this.viewAttendanceToolStripMenuItem1.Click += new System.EventHandler(this.viewAttendanceToolStripMenuItem1_Click);
             // 
             // toolStripSeparator16
             // 
@@ -305,12 +308,14 @@
             this.assignClassesToolStripMenuItem.Name = "assignClassesToolStripMenuItem";
             this.assignClassesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.assignClassesToolStripMenuItem.Text = "Assign Classes";
+            this.assignClassesToolStripMenuItem.Click += new System.EventHandler(this.assignClassesToolStripMenuItem_Click);
             // 
             // viewClassesToolStripMenuItem
             // 
             this.viewClassesToolStripMenuItem.Name = "viewClassesToolStripMenuItem";
             this.viewClassesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.viewClassesToolStripMenuItem.Text = "View Classes";
+            this.viewClassesToolStripMenuItem.Click += new System.EventHandler(this.viewClassesToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
@@ -322,6 +327,7 @@
             this.printStaffCardToolStripMenuItem.Name = "printStaffCardToolStripMenuItem";
             this.printStaffCardToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.printStaffCardToolStripMenuItem.Text = "Print Staff Card";
+            this.printStaffCardToolStripMenuItem.Click += new System.EventHandler(this.printStaffCardToolStripMenuItem_Click);
             // 
             // sTUDENTREPORTSToolStripMenuItem
             // 
@@ -354,66 +360,77 @@
             this.iDCardToolStripMenuItem.Name = "iDCardToolStripMenuItem";
             this.iDCardToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.iDCardToolStripMenuItem.Text = "ID Card";
+            this.iDCardToolStripMenuItem.Click += new System.EventHandler(this.iDCardToolStripMenuItem_Click);
             // 
             // resultCardToolStripMenuItem
             // 
             this.resultCardToolStripMenuItem.Name = "resultCardToolStripMenuItem";
             this.resultCardToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.resultCardToolStripMenuItem.Text = "Result Card";
+            this.resultCardToolStripMenuItem.Click += new System.EventHandler(this.resultCardToolStripMenuItem_Click);
             // 
             // feeListToolStripMenuItem
             // 
             this.feeListToolStripMenuItem.Name = "feeListToolStripMenuItem";
             this.feeListToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.feeListToolStripMenuItem.Text = "Fee List";
+            this.feeListToolStripMenuItem.Click += new System.EventHandler(this.feeListToolStripMenuItem_Click);
             // 
             // remainingFeeToolStripMenuItem
             // 
             this.remainingFeeToolStripMenuItem.Name = "remainingFeeToolStripMenuItem";
             this.remainingFeeToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.remainingFeeToolStripMenuItem.Text = "Remaining Fee";
+            this.remainingFeeToolStripMenuItem.Click += new System.EventHandler(this.remainingFeeToolStripMenuItem_Click);
             // 
             // defualterListToolStripMenuItem
             // 
             this.defualterListToolStripMenuItem.Name = "defualterListToolStripMenuItem";
             this.defualterListToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.defualterListToolStripMenuItem.Text = "Defualter List By Student";
+            this.defualterListToolStripMenuItem.Text = "Defaulter List By Student";
+            this.defualterListToolStripMenuItem.Click += new System.EventHandler(this.defualterListToolStripMenuItem_Click);
             // 
             // defualterListByClassToolStripMenuItem
             // 
             this.defualterListByClassToolStripMenuItem.Name = "defualterListByClassToolStripMenuItem";
             this.defualterListByClassToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.defualterListByClassToolStripMenuItem.Text = "Defualter list By Class";
+            this.defualterListByClassToolStripMenuItem.Text = "Defaulter list By Class";
+            this.defualterListByClassToolStripMenuItem.Click += new System.EventHandler(this.defualterListByClassToolStripMenuItem_Click);
             // 
             // defualterListByMonthToolStripMenuItem
             // 
             this.defualterListByMonthToolStripMenuItem.Name = "defualterListByMonthToolStripMenuItem";
             this.defualterListByMonthToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.defualterListByMonthToolStripMenuItem.Text = "Defualter List By Month";
+            this.defualterListByMonthToolStripMenuItem.Text = "Defaulter List By Month";
+            this.defualterListByMonthToolStripMenuItem.Click += new System.EventHandler(this.defualterListByMonthToolStripMenuItem_Click);
             // 
             // defualterListBySessionToolStripMenuItem
             // 
             this.defualterListBySessionToolStripMenuItem.Name = "defualterListBySessionToolStripMenuItem";
             this.defualterListBySessionToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.defualterListBySessionToolStripMenuItem.Text = "Defualter List By Session";
+            this.defualterListBySessionToolStripMenuItem.Text = "Defaulter List By Session";
+            this.defualterListBySessionToolStripMenuItem.Click += new System.EventHandler(this.defualterListBySessionToolStripMenuItem_Click);
             // 
             // schoolLeavingCertificateToolStripMenuItem
             // 
             this.schoolLeavingCertificateToolStripMenuItem.Name = "schoolLeavingCertificateToolStripMenuItem";
             this.schoolLeavingCertificateToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.schoolLeavingCertificateToolStripMenuItem.Text = "School Leaving Certificate";
+            this.schoolLeavingCertificateToolStripMenuItem.Click += new System.EventHandler(this.schoolLeavingCertificateToolStripMenuItem_Click);
             // 
             // chracterCertificateToolStripMenuItem
             // 
             this.chracterCertificateToolStripMenuItem.Name = "chracterCertificateToolStripMenuItem";
             this.chracterCertificateToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.chracterCertificateToolStripMenuItem.Text = "Chracter Certificate";
+            this.chracterCertificateToolStripMenuItem.Click += new System.EventHandler(this.chracterCertificateToolStripMenuItem_Click);
             // 
             // printFeeRecipetToolStripMenuItem
             // 
             this.printFeeRecipetToolStripMenuItem.Name = "printFeeRecipetToolStripMenuItem";
             this.printFeeRecipetToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.printFeeRecipetToolStripMenuItem.Text = "Print Fee Recipet";
+            this.printFeeRecipetToolStripMenuItem.Click += new System.EventHandler(this.printFeeRecipetToolStripMenuItem_Click);
             // 
             // aCCOUNTSToolStripMenuItem
             // 

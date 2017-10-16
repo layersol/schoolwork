@@ -718,7 +718,7 @@
             // txtbusfee
             // 
             this.txtbusfee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbusfee.Location = new System.Drawing.Point(205, 35);
+            this.txtbusfee.Location = new System.Drawing.Point(204, 35);
             this.txtbusfee.Name = "txtbusfee";
             this.txtbusfee.Size = new System.Drawing.Size(70, 20);
             this.txtbusfee.TabIndex = 16;
@@ -1754,9 +1754,10 @@
             this.groupBox49.Controls.Add(this.btnnew);
             this.groupBox49.Controls.Add(this.txtcreationdate);
             this.groupBox49.Controls.Add(this.txtcreatedby);
-            this.groupBox49.Location = new System.Drawing.Point(8, 776);
+            this.groupBox49.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox49.Location = new System.Drawing.Point(0, 777);
             this.groupBox49.Name = "groupBox49";
-            this.groupBox49.Size = new System.Drawing.Size(1162, 68);
+            this.groupBox49.Size = new System.Drawing.Size(1243, 68);
             this.groupBox49.TabIndex = 19;
             this.groupBox49.TabStop = false;
             // 
@@ -2258,7 +2259,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1243, 745);
+            this.ClientSize = new System.Drawing.Size(1243, 845);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);

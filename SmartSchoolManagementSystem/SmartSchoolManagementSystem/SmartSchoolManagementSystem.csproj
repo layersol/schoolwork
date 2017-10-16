@@ -168,6 +168,12 @@
     <Compile Include="AssignClass.Designer.cs">
       <DependentUpon>AssignClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangeClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeClass.Designer.cs">
+      <DependentUpon>ChangeClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChracterCertificate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,12 @@
     </Compile>
     <Compile Include="CreateUser.Designer.cs">
       <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatExamPaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatExamPaper.Designer.cs">
+      <DependentUpon>CreatExamPaper.cs</DependentUpon>
     </Compile>
     <Compile Include="CrystalPrintAdmission.cs">
       <AutoGen>True</AutoGen>
@@ -274,6 +286,24 @@
     </Compile>
     <Compile Include="EditFeeReocrd.Designer.cs">
       <DependentUpon>EditFeeReocrd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExaminationRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExaminationRecord.Designer.cs">
+      <DependentUpon>ExaminationRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExaminationTerms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExaminationTerms.Designer.cs">
+      <DependentUpon>ExaminationTerms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamPaperHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamPaperHeader.Designer.cs">
+      <DependentUpon>ExamPaperHeader.cs</DependentUpon>
     </Compile>
     <Compile Include="ExpenceRecord.cs">
       <SubType>Form</SubType>
@@ -353,6 +383,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MakeDateSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeDateSheet.Designer.cs">
+      <DependentUpon>MakeDateSheet.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIParent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -379,6 +415,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Newadmissionform.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PaperFunds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaperFunds.Designer.cs">
+      <DependentUpon>PaperFunds.cs</DependentUpon>
+    </Compile>
     <Compile Include="Phonesetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -398,6 +440,12 @@
       <DependentUpon>PrintStaffCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgressReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressReport.Designer.cs">
+      <DependentUpon>ProgressReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -427,6 +475,18 @@
     </Compile>
     <Compile Include="ResultCard.Designer.cs">
       <DependentUpon>ResultCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RollNoSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RollNoSlip.Designer.cs">
+      <DependentUpon>RollNoSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveQuestions.Designer.cs">
+      <DependentUpon>SaveQuestions.cs</DependentUpon>
     </Compile>
     <Compile Include="SchoolInformation.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -459,6 +519,12 @@
     </Compile>
     <Compile Include="schoolsettings.Designer.cs">
       <DependentUpon>schoolsettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendResult.Designer.cs">
+      <DependentUpon>SendResult.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StaffAttendance.cs">
@@ -604,6 +670,12 @@
     <Compile Include="Vacationworkcollection.Designer.cs">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </Compile>
+    <Compile Include="VacationWorkProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacationWorkProcess.Designer.cs">
+      <DependentUpon>VacationWorkProcess.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewAssignedClasses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -667,6 +739,9 @@
     <EmbeddedResource Include="AssignClass.resx">
       <DependentUpon>AssignClass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChangeClass.resx">
+      <DependentUpon>ChangeClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChracterCertificate.resx">
       <DependentUpon>ChracterCertificate.cs</DependentUpon>
     </EmbeddedResource>
@@ -684,6 +759,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateUser.resx">
       <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatExamPaper.resx">
+      <DependentUpon>CreatExamPaper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalPrintAdmission.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -718,6 +796,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditFeeReocrd.resx">
       <DependentUpon>EditFeeReocrd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExaminationRecord.resx">
+      <DependentUpon>ExaminationRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExaminationTerms.resx">
+      <DependentUpon>ExaminationTerms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamPaperHeader.resx">
+      <DependentUpon>ExamPaperHeader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExpenceRecord.resx">
       <DependentUpon>ExpenceRecord.cs</DependentUpon>
@@ -758,6 +845,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MakeDateSheet.resx">
+      <DependentUpon>MakeDateSheet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDIParent.resx">
       <DependentUpon>MDIParent.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -767,6 +857,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Newadmission.resx">
       <DependentUpon>Newadmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaperFunds.resx">
+      <DependentUpon>PaperFunds.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phonesetting.resx">
       <DependentUpon>Phonesetting.cs</DependentUpon>
@@ -778,6 +871,9 @@
       <DependentUpon>PrintStaffCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="printstudentcard.rdlc" />
+    <EmbeddedResource Include="ProgressReport.resx">
+      <DependentUpon>ProgressReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -797,16 +893,25 @@
     <EmbeddedResource Include="ResultCard.resx">
       <DependentUpon>ResultCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RollNoSlip.resx">
+      <DependentUpon>RollNoSlip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptadmissionprint.rdlc" />
     <EmbeddedResource Include="rptdailyfeecollection.rdlc" />
     <EmbeddedResource Include="rptresultcard.rdlc" />
     <EmbeddedResource Include="rptstudentfeereciept.rdlc" />
     <EmbeddedResource Include="rptteacherinfoform.rdlc" />
+    <EmbeddedResource Include="SaveQuestions.resx">
+      <DependentUpon>SaveQuestions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SchoolLeavingCertificate.resx">
       <DependentUpon>SchoolLeavingCertificate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="schoolsettings.resx">
       <DependentUpon>schoolsettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendResult.resx">
+      <DependentUpon>SendResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffAttendance.resx">
       <DependentUpon>StaffAttendance.cs</DependentUpon>
@@ -849,6 +954,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vacationworkcollection.resx">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacationWorkProcess.resx">
+      <DependentUpon>VacationWorkProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAssignedClasses.resx">
       <DependentUpon>ViewAssignedClasses.cs</DependentUpon>

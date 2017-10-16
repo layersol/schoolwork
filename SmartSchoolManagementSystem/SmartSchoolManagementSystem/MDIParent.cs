@@ -868,6 +868,210 @@ namespace SmartSchoolManagementSystem
             frm.Show();
         }
 
+        private void rollNoSlipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "RollNoSlip") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            RollNoSlip frm = new RollNoSlip();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void changeClassToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ChangeClass") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ChangeClass frm = new ChangeClass();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void exmainationTermsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ExaminationTerms") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ExaminationTerms frm = new ExaminationTerms();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void vacationWorkProcessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "VacationWorkProcess") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            VacationWorkProcess frm = new VacationWorkProcess();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void makeDateSheetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "MakeDateSheet") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            MakeDateSheet frm = new MakeDateSheet();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void examinationRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ExaminationRecord") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ExaminationRecord frm = new ExaminationRecord();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void progressReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ProgressReport") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ProgressReport frm = new ProgressReport();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void sendResaultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "SendResult") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            SendResult frm = new SendResult();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void examPaperHeaderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ExamPaperHeader") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ExamPaperHeader frm = new ExamPaperHeader();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void createExamPaperToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "CreatExamPaper") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            CreatExamPaper frm = new CreatExamPaper();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void saveQuestionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "SaveQuestions") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            SaveQuestions frm = new SaveQuestions();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void paperFundsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "PaperFunds") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            PaperFunds frm = new PaperFunds();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
         private void MDIParent_Load(object sender, EventArgs e)
         {
 

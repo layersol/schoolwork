@@ -53,24 +53,29 @@ namespace SmartSchoolManagementSystem
         }
         private void Getcurrentstudent()
         {
-             var val2 = (from u in db.TBLADDMISSIONs where u.CURRENTSESSION == lblSession.Text select u).Count() > 0;
-             if (val2 != false)
+            try
             {
+                var val2 = (from u in db.TBLADDMISSIONs where u.CURRENTSESSION == lblSession.Text select u).Count() > 0;
+                if (val2 != false)
+                {
 
-                var query = from s in db.TBLADDMISSIONs
-                            where s.CURRENTSESSION == lblSession.Text
-                            select new
-                            {
-                                NO = s.SID,
-                                StudentName = s.STUDENT_NAME,
-                            };
-                dvgstudent.DataSource = query.ToList();
+                    var query = from s in db.TBLADDMISSIONs
+                                where s.CURRENTSESSION == lblSession.Text
+                                select new
+                                {
+                                    NO = s.SID,
+                                    StudentName = s.STUDENT_NAME,
+                                };
+                    dvgstudent.DataSource = query.ToList();
 
+                }
+                else
+                {
+                    MessageBox.Show("No Record Found at this time please click ok");
+                }
             }
-            else
-            {
-                MessageBox.Show("No Record Found at this time please click ok");
-            }
+            catch( Exception ex)
+            { MessageBox.Show(ex.Message); }
         }
 
         private void GetSession()
@@ -627,6 +632,7 @@ namespace SmartSchoolManagementSystem
                 txtincom.Text= q.MONTHLY_INCOM ;
                 txtofficetel.Text= q.OFFICE_LANDLINE;
                 txtcast.Text= q.FATHER_CAST;
+                txtgcast.Text=q.FATHER_CAST;
                 txtofficeadress.Text= q.BUSINESS_ADDRESS;
                 lblSession.Text= q.CURRENTSESSION;   ///     check this again
                 txtgname.Text= q.G_NAME;

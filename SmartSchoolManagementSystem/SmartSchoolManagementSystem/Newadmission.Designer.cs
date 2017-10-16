@@ -1755,7 +1755,7 @@
             this.groupBox49.Controls.Add(this.txtcreationdate);
             this.groupBox49.Controls.Add(this.txtcreatedby);
             this.groupBox49.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox49.Location = new System.Drawing.Point(0, 777);
+            this.groupBox49.Location = new System.Drawing.Point(0, 677);
             this.groupBox49.Name = "groupBox49";
             this.groupBox49.Size = new System.Drawing.Size(1243, 68);
             this.groupBox49.TabIndex = 19;
@@ -2259,7 +2259,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1243, 845);
+            this.ClientSize = new System.Drawing.Size(1243, 745);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);

@@ -89,6 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutSSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutSSMS.Designer.cs">
+      <DependentUpon>AboutSSMS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Addbussstops.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     </Compile>
     <Compile Include="addnewstudent.Designer.cs">
       <DependentUpon>addnewstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSection.Designer.cs">
+      <DependentUpon>AddSection.cs</DependentUpon>
     </Compile>
     <Compile Include="Add_Buses.cs">
       <SubType>Form</SubType>
@@ -168,6 +180,12 @@
     <Compile Include="AssignClass.Designer.cs">
       <DependentUpon>AssignClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangeClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +209,18 @@
     </Compile>
     <Compile Include="ClassesSetting.Designer.cs">
       <DependentUpon>ClassesSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassFeeDefination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassFeeDefination.Designer.cs">
+      <DependentUpon>ClassFeeDefination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMaping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassMaping.Designer.cs">
+      <DependentUpon>ClassMaping.cs</DependentUpon>
     </Compile>
     <Compile Include="ConfiguarFingerPrints.cs">
       <SubType>Form</SubType>
@@ -305,11 +335,35 @@
     <Compile Include="ExamPaperHeader.Designer.cs">
       <DependentUpon>ExamPaperHeader.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExpencesDefination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpencesDefination.Designer.cs">
+      <DependentUpon>ExpencesDefination.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExpencesRecord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ExpencesRecord.Designer.cs">
       <DependentUpon>ExpencesRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportContactsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportContactsList.Designer.cs">
+      <DependentUpon>ExportContactsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportContactsSelective.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportContactsSelective.Designer.cs">
+      <DependentUpon>ExportContactsSelective.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FactoryRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FactoryRestore.Designer.cs">
+      <DependentUpon>FactoryRestore.cs</DependentUpon>
     </Compile>
     <Compile Include="FeeCollection%28UserConsolidate%29.cs">
       <SubType>Form</SubType>
@@ -370,6 +424,12 @@
     </Compile>
     <Compile Include="IDCard.Designer.cs">
       <DependentUpon>IDCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyboardAccessibility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyboardAccessibility.Designer.cs">
+      <DependentUpon>KeyboardAccessibility.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -452,6 +512,12 @@
     <Compile Include="RecievePayment.Designer.cs">
       <DependentUpon>RecievePayment.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegisterProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterProduct.Designer.cs">
+      <DependentUpon>RegisterProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registraionform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -514,11 +580,29 @@
     <Compile Include="schoolsettings.Designer.cs">
       <DependentUpon>schoolsettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="SendFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendFeedback.Designer.cs">
+      <DependentUpon>SendFeedback.cs</DependentUpon>
+    </Compile>
     <Compile Include="SendResult.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SendResult.Designer.cs">
       <DependentUpon>SendResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SessionSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessionSetting.Designer.cs">
+      <DependentUpon>SessionSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDateSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSDateSheet.Designer.cs">
+      <DependentUpon>SMSDateSheet.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StaffAttendance.cs">
@@ -556,6 +640,12 @@
     </Compile>
     <Compile Include="StudentIdCardForm.Designer.cs">
       <DependentUpon>StudentIdCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectDefination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectDefination.Designer.cs">
+      <DependentUpon>SubjectDefination.cs</DependentUpon>
     </Compile>
     <Compile Include="TBLSTUDENTFEEDETAILS.cs">
       <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
@@ -649,11 +739,23 @@
     <Compile Include="TeachersttafInformation.Designer.cs">
       <DependentUpon>TeachersttafInformation.cs</DependentUpon>
     </Compile>
+    <Compile Include="TechnicalSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicalSupport.Designer.cs">
+      <DependentUpon>TechnicalSupport.cs</DependentUpon>
+    </Compile>
     <Compile Include="testform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="testform.Designer.cs">
       <DependentUpon>testform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAndRights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAndRights.Designer.cs">
+      <DependentUpon>UserAndRights.cs</DependentUpon>
     </Compile>
     <Compile Include="UserDeatil.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
@@ -669,6 +771,24 @@
     </Compile>
     <Compile Include="VacationWorkProcess.Designer.cs">
       <DependentUpon>VacationWorkProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViaCall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViaCall.Designer.cs">
+      <DependentUpon>ViaCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViaEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViaEmail.Designer.cs">
+      <DependentUpon>ViaEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViaSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViaSMS.Designer.cs">
+      <DependentUpon>ViaSMS.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewAssignedClasses.cs">
       <SubType>Form</SubType>
@@ -700,11 +820,17 @@
     <Compile Include="ViewStaffInformation.Designer.cs">
       <DependentUpon>ViewStaffInformation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutSSMS.resx">
+      <DependentUpon>AboutSSMS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Addbussstops.resx">
       <DependentUpon>Addbussstops.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addnewstudent.resx">
       <DependentUpon>addnewstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSection.resx">
+      <DependentUpon>AddSection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Buses.resx">
       <DependentUpon>Add_Buses.cs</DependentUpon>
@@ -733,6 +859,9 @@
     <EmbeddedResource Include="AssignClass.resx">
       <DependentUpon>AssignClass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangeClass.resx">
       <DependentUpon>ChangeClass.cs</DependentUpon>
     </EmbeddedResource>
@@ -744,6 +873,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClassesSetting.resx">
       <DependentUpon>ClassesSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassFeeDefination.resx">
+      <DependentUpon>ClassFeeDefination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassMaping.resx">
+      <DependentUpon>ClassMaping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfiguarFingerPrints.resx">
       <DependentUpon>ConfiguarFingerPrints.cs</DependentUpon>
@@ -800,8 +935,20 @@
     <EmbeddedResource Include="ExamPaperHeader.resx">
       <DependentUpon>ExamPaperHeader.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExpencesDefination.resx">
+      <DependentUpon>ExpencesDefination.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExpencesRecord.resx">
       <DependentUpon>ExpencesRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportContactsList.resx">
+      <DependentUpon>ExportContactsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportContactsSelective.resx">
+      <DependentUpon>ExportContactsSelective.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactoryRestore.resx">
+      <DependentUpon>FactoryRestore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FeeCollection%28UserConsolidate%29.resx">
       <DependentUpon>FeeCollection%28UserConsolidate%29.cs</DependentUpon>
@@ -832,6 +979,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IDCard.resx">
       <DependentUpon>IDCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyboardAccessibility.resx">
+      <DependentUpon>KeyboardAccessibility.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -873,6 +1023,9 @@
     <EmbeddedResource Include="RecievePayment.resx">
       <DependentUpon>RecievePayment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RegisterProduct.resx">
+      <DependentUpon>RegisterProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registraionform.resx">
       <DependentUpon>Registraionform.cs</DependentUpon>
     </EmbeddedResource>
@@ -901,8 +1054,17 @@
     <EmbeddedResource Include="schoolsettings.resx">
       <DependentUpon>schoolsettings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SendFeedback.resx">
+      <DependentUpon>SendFeedback.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SendResult.resx">
       <DependentUpon>SendResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessionSetting.resx">
+      <DependentUpon>SessionSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMSDateSheet.resx">
+      <DependentUpon>SMSDateSheet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffAttendance.resx">
       <DependentUpon>StaffAttendance.cs</DependentUpon>
@@ -931,6 +1093,9 @@
     <EmbeddedResource Include="Studentresultcard.resx">
       <DependentUpon>Studentresultcard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubjectDefination.resx">
+      <DependentUpon>SubjectDefination.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Teacherinfoprintform.resx">
       <DependentUpon>Teacherinfoprintform.cs</DependentUpon>
     </EmbeddedResource>
@@ -940,14 +1105,29 @@
     <EmbeddedResource Include="TeachersttafInformation.resx">
       <DependentUpon>TeachersttafInformation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TechnicalSupport.resx">
+      <DependentUpon>TechnicalSupport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="testform.resx">
       <DependentUpon>testform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAndRights.resx">
+      <DependentUpon>UserAndRights.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vacationworkcollection.resx">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VacationWorkProcess.resx">
       <DependentUpon>VacationWorkProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViaCall.resx">
+      <DependentUpon>ViaCall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViaEmail.resx">
+      <DependentUpon>ViaEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViaSMS.resx">
+      <DependentUpon>ViaSMS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAssignedClasses.resx">
       <DependentUpon>ViewAssignedClasses.cs</DependentUpon>

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SmartSchoolManagementSystem
 {
-    public partial class CreateUser : Form
+    public partial class ClassFeeDefination : Form
     {
-        public CreateUser()
+        public ClassFeeDefination()
         {
             InitializeComponent();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

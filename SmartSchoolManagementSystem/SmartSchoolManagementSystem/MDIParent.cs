@@ -293,7 +293,20 @@ namespace SmartSchoolManagementSystem
 
         private void viaSmSToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ViaSMS") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
 
+            // if MyForm is not opened
+            // you know what it is
+            ViaSMS frm = new ViaSMS();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void arrearsAndBalenceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1085,6 +1098,346 @@ namespace SmartSchoolManagementSystem
             // if Myform is not opened
             // you know what it is
             Add_Class frm = new Add_Class();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void mobilePhoneSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "Phonesetting") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            Phonesetting frm = new Phonesetting();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void expencesDefinationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ExpencesDefination") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ExpencesDefination frm = new ExpencesDefination();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void addSectionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "AddSection") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            AddSection frm = new AddSection();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void classMapingToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ClassMaping") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ClassMaping frm = new ClassMaping();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void classFeeDefinationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ClassFeeDefination") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ClassFeeDefination frm = new ClassFeeDefination();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void subjectDefinationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "SubjectDefination") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            SubjectDefination frm = new SubjectDefination();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void sessionSettingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "SessionSetting") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            SessionSetting frm = new SessionSetting();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void exportContactsListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ExportContactsList") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ExportContactsList frm = new ExportContactsList();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void exportContactSelectiveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ExportContactsSelective") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ExportContactsSelective frm = new ExportContactsSelective();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "Backup") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            Backup frm = new Backup();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void factoryRestoreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "FactoryRestore") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            FactoryRestore frm = new FactoryRestore();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void userAndRightsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "UserAndRights") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            UserAndRights frm = new UserAndRights();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void viaEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ViaEmail") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ViaEmail frm = new ViaEmail();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void viaCallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "ViaCall") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            ViaCall frm = new ViaCall();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void sMSDateSheetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "SMSDateSheet") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            SMSDateSheet frm = new SMSDateSheet();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void sendFeedbackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "SendFeedback") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            SendFeedback frm = new SendFeedback();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void registerProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "RegisterProduct") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            RegisterProduct frm = new RegisterProduct();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void technicalSupportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "TechnicalSupport") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            TechnicalSupport frm = new TechnicalSupport();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void keyboardAccessibilityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "KeyboardAccessibility") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            KeyboardAccessibility frm = new KeyboardAccessibility();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void aboutSSMSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "AboutSSMS") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            AboutSSMS frm = new AboutSSMS();
             frm.MdiParent = this;
             frm.Show();
         }

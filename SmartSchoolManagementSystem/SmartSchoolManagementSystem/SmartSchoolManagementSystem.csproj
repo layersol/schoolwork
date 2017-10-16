@@ -150,6 +150,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ALLFEELIST.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AssignClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignClass.Designer.cs">
+      <DependentUpon>AssignClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classandsectiondefination.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +301,12 @@
     <Compile Include="PrintRemainingBalance.Designer.cs">
       <DependentUpon>PrintRemainingBalance.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrintStaffCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintStaffCard.Designer.cs">
+      <DependentUpon>PrintStaffCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -335,6 +347,12 @@
       <DependentUpon>schoolsettings.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="StaffAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffAttendance.Designer.cs">
+      <DependentUpon>StaffAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -466,6 +484,12 @@
     <Compile Include="Vacationworkcollection.Designer.cs">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewAssignedClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAssignedClasses.Designer.cs">
+      <DependentUpon>ViewAssignedClasses.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewAttendance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -477,6 +501,18 @@
     </Compile>
     <Compile Include="ViewEnrolledStudents.Designer.cs">
       <DependentUpon>ViewEnrolledStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStaffAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStaffAttendance.Designer.cs">
+      <DependentUpon>ViewStaffAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStaffInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStaffInformation.Designer.cs">
+      <DependentUpon>ViewStaffInformation.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Addbussstops.resx">
       <DependentUpon>Addbussstops.cs</DependentUpon>
@@ -501,6 +537,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admissionformprint.resx">
       <DependentUpon>admissionformprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignClass.resx">
+      <DependentUpon>AssignClass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Classandsectiondefination.resx">
       <DependentUpon>Classandsectiondefination.cs</DependentUpon>
@@ -570,6 +609,9 @@
     <EmbeddedResource Include="PrintRemainingBalance.resx">
       <DependentUpon>PrintRemainingBalance.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PrintStaffCard.resx">
+      <DependentUpon>PrintStaffCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="printstudentcard.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -588,6 +630,9 @@
     <EmbeddedResource Include="rptteacherinfoform.rdlc" />
     <EmbeddedResource Include="schoolsettings.resx">
       <DependentUpon>schoolsettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffAttendance.resx">
+      <DependentUpon>StaffAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentAccount.resx">
       <DependentUpon>StudentAccount.cs</DependentUpon>
@@ -625,11 +670,20 @@
     <EmbeddedResource Include="Vacationworkcollection.resx">
       <DependentUpon>Vacationworkcollection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewAssignedClasses.resx">
+      <DependentUpon>ViewAssignedClasses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewAttendance.resx">
       <DependentUpon>ViewAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEnrolledStudents.resx">
       <DependentUpon>ViewEnrolledStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStaffAttendance.resx">
+      <DependentUpon>ViewStaffAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStaffInformation.resx">
+      <DependentUpon>ViewStaffInformation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="AdmissionFormNo.xsc">
       <DependentUpon>AdmissionFormNo.xsd</DependentUpon>

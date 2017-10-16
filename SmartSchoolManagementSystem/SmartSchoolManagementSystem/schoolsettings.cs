@@ -25,6 +25,7 @@ namespace SmartSchoolManagementSystem
         }
         private byte[] convertfiletobyte(string sPath)
         {
+           
             byte[] data = null;
             FileInfo finfo = new FileInfo(sPath);
             long numBytes = finfo.Length;
@@ -37,6 +38,7 @@ namespace SmartSchoolManagementSystem
         {
             try
             {
+
 
                 if (txtname.Text != "" && txtcontacta.Text != "" && txtcontactb.Text != "")
                 {
@@ -126,11 +128,19 @@ namespace SmartSchoolManagementSystem
             if (!(Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back)))
                 e.Handled = true;
         }
-
+        public Image ByteArrayToImage(byte[] byteArrayIn)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArrayIn))
+            {
+                Image returnImage = Image.FromStream(ms);
+                return returnImage;
+            }
+        }
         private void btnview_Click(object sender, EventArgs e)
         {
             try
             {
+              
                 var q = (from a in db.Tblschoolsettings
                          where a.ID == 1
                          select a).SingleOrDefault();
@@ -154,6 +164,7 @@ namespace SmartSchoolManagementSystem
                         using (var image = Image.FromStream(ms))
                         {
                             imgpicturebox.Image = (Image)image.Clone();
+                           
                         }
                     }
                 }
@@ -170,25 +181,30 @@ namespace SmartSchoolManagementSystem
             //{
             try
             {
-                Tblschoolsetting product = db.Tblschoolsettings.Single(p => p.ID == PID);
-                // decimal qty = Convert.ToDecimal(product.quentity);
+                MemoryStream ms = new MemoryStream();
+                imgpicturebox.Image.Save(ms, imgpicturebox.Image.RawFormat);
+                byte[] img = ms.ToArray();
 
-                if (product != null)
-                {
-                    product.SchoolName = txtname.Text;
-                    product.CONTACTA = txtcontacta.Text;
-                    product.CONTACTB = txtcontactb.Text;
-                    product.CONTACTC = txtcontactb.Text;
-                    product.FIRSTEMAIL = txtemail.Text;
-                    product.SECONDEMAIL = txtemail.Text;
-                    product.WEBSITE = txtwebsite.Text;
-                    product.FIRSTADDRESS = addressa.Text;
-                    product.SECONDADDRESS = txtaddressb.Text;
-                    product.COMMENTS = txtcommnets.Text;
-                    product.LOGO = convertfiletobyte(this.imgpicturebox.ImageLocation);
-                    db.SaveChanges();
-                    MessageBox.Show("Updated", "Attention");
-                }
+                Tblschoolsetting product = db.Tblschoolsettings.Single(p => p.ID == PID);
+
+
+                    if (product != null)
+                    {
+                        product.SchoolName = txtname.Text;
+                        product.CONTACTA = txtcontacta.Text;
+                        product.CONTACTB = txtcontactb.Text;
+                        product.CONTACTC = txtcontactb.Text;
+                        product.FIRSTEMAIL = txtemail.Text;
+                        product.SECONDEMAIL = txtemail.Text;
+                        product.WEBSITE = txtwebsite.Text;
+                        product.FIRSTADDRESS = addressa.Text;
+                        product.SECONDADDRESS = txtaddressb.Text;
+                        product.COMMENTS = txtcommnets.Text;
+                        product.LOGO = img;
+                        db.SaveChanges();
+                        MessageBox.Show("Updated", "Attention");
+                    }
+               
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
 
@@ -197,6 +213,26 @@ namespace SmartSchoolManagementSystem
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void schoolsettings_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                var val = db.Tblschoolsettings.ToList();
+                if (val!=null)
+                {
+                    btnsave.Enabled = true;
+                    
+                }
+                else
+                { this.btnsave.Enabled = false;
+
+                }
+                this.Refresh();
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
         }
     }
 }

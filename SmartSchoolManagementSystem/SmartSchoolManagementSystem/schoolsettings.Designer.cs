@@ -41,6 +41,8 @@
             this.txtcontacta = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnbrowse = new System.Windows.Forms.Button();
+            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtcommnets = new System.Windows.Forms.TextBox();
@@ -49,18 +51,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.addressa = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btnnew = new System.Windows.Forms.Button();
             this.btnview = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
-            this.btnbrowse = new System.Windows.Forms.Button();
-            this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -175,6 +174,29 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Logo";
             // 
+            // btnbrowse
+            // 
+            this.btnbrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnbrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbrowse.Image = global::SmartSchoolManagementSystem.Properties.Resources.Archive_Icon;
+            this.btnbrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnbrowse.Location = new System.Drawing.Point(7, 114);
+            this.btnbrowse.Name = "btnbrowse";
+            this.btnbrowse.Size = new System.Drawing.Size(116, 23);
+            this.btnbrowse.TabIndex = 1;
+            this.btnbrowse.Text = "Browse";
+            this.btnbrowse.UseVisualStyleBackColor = false;
+            this.btnbrowse.Click += new System.EventHandler(this.btnbrowse_Click);
+            // 
+            // imgpicturebox
+            // 
+            this.imgpicturebox.Location = new System.Drawing.Point(7, 14);
+            this.imgpicturebox.Name = "imgpicturebox";
+            this.imgpicturebox.Size = new System.Drawing.Size(117, 97);
+            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpicturebox.TabIndex = 0;
+            this.imgpicturebox.TabStop = false;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label5);
@@ -243,7 +265,6 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.btnnew);
             this.groupBox5.Controls.Add(this.btnview);
             this.groupBox5.Controls.Add(this.btnupdate);
             this.groupBox5.Controls.Add(this.btnsave);
@@ -253,27 +274,13 @@
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             // 
-            // btnnew
-            // 
-            this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnew.Image = global::SmartSchoolManagementSystem.Properties.Resources.add18;
-            this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnew.Location = new System.Drawing.Point(17, 13);
-            this.btnnew.Name = "btnnew";
-            this.btnnew.Size = new System.Drawing.Size(75, 23);
-            this.btnnew.TabIndex = 3;
-            this.btnnew.Text = "New";
-            this.btnnew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnnew.UseVisualStyleBackColor = false;
-            // 
             // btnview
             // 
             this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnview.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view;
             this.btnview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnview.Location = new System.Drawing.Point(254, 13);
+            this.btnview.Location = new System.Drawing.Point(210, 10);
             this.btnview.Name = "btnview";
             this.btnview.Size = new System.Drawing.Size(75, 23);
             this.btnview.TabIndex = 2;
@@ -288,7 +295,7 @@
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.Image = global::SmartSchoolManagementSystem.Properties.Resources.Update17;
             this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnupdate.Location = new System.Drawing.Point(173, 13);
+            this.btnupdate.Location = new System.Drawing.Point(129, 10);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(75, 23);
             this.btnupdate.TabIndex = 1;
@@ -303,7 +310,7 @@
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(92, 13);
+            this.btnsave.Location = new System.Drawing.Point(48, 10);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 23);
             this.btnsave.TabIndex = 0;
@@ -311,29 +318,6 @@
             this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
-            // 
-            // btnbrowse
-            // 
-            this.btnbrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnbrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbrowse.Image = global::SmartSchoolManagementSystem.Properties.Resources.Archive_Icon;
-            this.btnbrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbrowse.Location = new System.Drawing.Point(7, 114);
-            this.btnbrowse.Name = "btnbrowse";
-            this.btnbrowse.Size = new System.Drawing.Size(116, 23);
-            this.btnbrowse.TabIndex = 1;
-            this.btnbrowse.Text = "Browse";
-            this.btnbrowse.UseVisualStyleBackColor = false;
-            this.btnbrowse.Click += new System.EventHandler(this.btnbrowse_Click);
-            // 
-            // imgpicturebox
-            // 
-            this.imgpicturebox.Location = new System.Drawing.Point(7, 14);
-            this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(117, 97);
-            this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgpicturebox.TabIndex = 0;
-            this.imgpicturebox.TabStop = false;
             // 
             // panel1
             // 
@@ -358,13 +342,14 @@
             this.Name = "schoolsettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "School Information Settings";
+            this.Load += new System.EventHandler(this.schoolsettings_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -395,7 +380,6 @@
         private System.Windows.Forms.Button btnview;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnsave;
-        private System.Windows.Forms.Button btnnew;
         private System.Windows.Forms.Panel panel1;
     }
 }

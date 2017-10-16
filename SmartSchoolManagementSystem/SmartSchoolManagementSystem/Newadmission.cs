@@ -509,7 +509,7 @@ namespace SmartSchoolManagementSystem
                     calculate();
                 }
                 catch (Exception ex)
-                { }
+                { MessageBox.Show(ex.Message); }
             }
         }
         private void btnupdate_Click(object sender, EventArgs e)
@@ -577,7 +577,7 @@ namespace SmartSchoolManagementSystem
                     calculate();
                 }
                 catch (Exception ex)
-                { }
+                { MessageBox.Show(ex.Message); }
             }
         }
 

@@ -66,12 +66,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(5, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(699, 341);
+            this.groupBox1.Size = new System.Drawing.Size(699, 270);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fee Defination";
@@ -84,9 +83,9 @@
             this.groupBox4.Controls.Add(this.btnclose);
             this.groupBox4.Controls.Add(this.btnsave);
             this.groupBox4.Controls.Add(this.btnrefresh);
-            this.groupBox4.Location = new System.Drawing.Point(7, 265);
+            this.groupBox4.Location = new System.Drawing.Point(5, 279);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(686, 70);
+            this.groupBox4.Size = new System.Drawing.Size(699, 55);
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             // 
@@ -96,7 +95,7 @@
             this.btnnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnew.Image = global::SmartSchoolManagementSystem.Properties.Resources.addblue;
             this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnew.Location = new System.Drawing.Point(0, 19);
+            this.btnnew.Location = new System.Drawing.Point(25, 12);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(78, 36);
             this.btnnew.TabIndex = 12;
@@ -110,7 +109,7 @@
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.Image = global::SmartSchoolManagementSystem.Properties.Resources.Update;
             this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnupdate.Location = new System.Drawing.Point(168, 19);
+            this.btnupdate.Location = new System.Drawing.Point(193, 12);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(96, 36);
             this.btnupdate.TabIndex = 9;
@@ -124,7 +123,7 @@
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.Image = global::SmartSchoolManagementSystem.Properties.Resources.close;
             this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnclose.Location = new System.Drawing.Point(387, 20);
+            this.btnclose.Location = new System.Drawing.Point(412, 13);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(86, 36);
             this.btnclose.TabIndex = 11;
@@ -139,7 +138,7 @@
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.Image = global::SmartSchoolManagementSystem.Properties.Resources.save;
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(84, 18);
+            this.btnsave.Location = new System.Drawing.Point(109, 11);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(78, 36);
             this.btnsave.TabIndex = 8;
@@ -154,7 +153,7 @@
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrefresh.Image = global::SmartSchoolManagementSystem.Properties.Resources.Refresh;
             this.btnrefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnrefresh.Location = new System.Drawing.Point(270, 19);
+            this.btnrefresh.Location = new System.Drawing.Point(295, 12);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(111, 38);
             this.btnrefresh.TabIndex = 10;
@@ -370,7 +369,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(710, 356);
+            this.ClientSize = new System.Drawing.Size(709, 340);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.Name = "Feedefinition";

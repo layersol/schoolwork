@@ -659,7 +659,7 @@
             // 
             this.addClassesToolStripMenuItem.Name = "addClassesToolStripMenuItem";
             this.addClassesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addClassesToolStripMenuItem.Text = "Add Classes";
+            this.addClassesToolStripMenuItem.Text = "Add Class";
             // 
             // addSectionsToolStripMenuItem
             // 

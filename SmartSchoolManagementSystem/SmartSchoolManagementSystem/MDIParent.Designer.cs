@@ -71,7 +71,6 @@
             this.editFeeRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feeCollectionUserConsolidateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recievePaymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editFeeRecordToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.admissionFeeCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fundDefualtersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arrearsAndBalenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,7 +81,6 @@
             this.vacationWorkProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.makeDateSheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.examinationRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resultCardToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.progressReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendResaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.makeExamsPapersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -441,7 +439,6 @@
             this.editFeeRecordToolStripMenuItem,
             this.feeCollectionUserConsolidateToolStripMenuItem,
             this.recievePaymentsToolStripMenuItem,
-            this.editFeeRecordToolStripMenuItem1,
             this.admissionFeeCollectionToolStripMenuItem,
             this.fundDefualtersToolStripMenuItem,
             this.arrearsAndBalenceToolStripMenuItem});
@@ -454,60 +451,62 @@
             this.expenceRecordToolStripMenuItem.Name = "expenceRecordToolStripMenuItem";
             this.expenceRecordToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.expenceRecordToolStripMenuItem.Text = "Expence Record";
+            this.expenceRecordToolStripMenuItem.Click += new System.EventHandler(this.expenceRecordToolStripMenuItem_Click);
             // 
             // staffSalaryToolStripMenuItem
             // 
             this.staffSalaryToolStripMenuItem.Name = "staffSalaryToolStripMenuItem";
             this.staffSalaryToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.staffSalaryToolStripMenuItem.Text = "Staff Salary";
+            this.staffSalaryToolStripMenuItem.Click += new System.EventHandler(this.staffSalaryToolStripMenuItem_Click);
             // 
             // fundProcessToolStripMenuItem
             // 
             this.fundProcessToolStripMenuItem.Name = "fundProcessToolStripMenuItem";
             this.fundProcessToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.fundProcessToolStripMenuItem.Text = "Fund Process";
+            this.fundProcessToolStripMenuItem.Click += new System.EventHandler(this.fundProcessToolStripMenuItem_Click);
             // 
             // editFeeRecordToolStripMenuItem
             // 
             this.editFeeRecordToolStripMenuItem.Name = "editFeeRecordToolStripMenuItem";
             this.editFeeRecordToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.editFeeRecordToolStripMenuItem.Text = "Edit Fee Record";
+            this.editFeeRecordToolStripMenuItem.Click += new System.EventHandler(this.editFeeRecordToolStripMenuItem_Click);
             // 
             // feeCollectionUserConsolidateToolStripMenuItem
             // 
             this.feeCollectionUserConsolidateToolStripMenuItem.Name = "feeCollectionUserConsolidateToolStripMenuItem";
             this.feeCollectionUserConsolidateToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.feeCollectionUserConsolidateToolStripMenuItem.Text = "Fee Collection (User Consolidate)";
+            this.feeCollectionUserConsolidateToolStripMenuItem.Click += new System.EventHandler(this.feeCollectionUserConsolidateToolStripMenuItem_Click);
             // 
             // recievePaymentsToolStripMenuItem
             // 
             this.recievePaymentsToolStripMenuItem.Name = "recievePaymentsToolStripMenuItem";
             this.recievePaymentsToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.recievePaymentsToolStripMenuItem.Text = "Recieve Payments";
-            // 
-            // editFeeRecordToolStripMenuItem1
-            // 
-            this.editFeeRecordToolStripMenuItem1.Name = "editFeeRecordToolStripMenuItem1";
-            this.editFeeRecordToolStripMenuItem1.Size = new System.Drawing.Size(249, 22);
-            this.editFeeRecordToolStripMenuItem1.Text = "Edit Fee Record";
+            this.recievePaymentsToolStripMenuItem.Click += new System.EventHandler(this.recievePaymentsToolStripMenuItem_Click);
             // 
             // admissionFeeCollectionToolStripMenuItem
             // 
             this.admissionFeeCollectionToolStripMenuItem.Name = "admissionFeeCollectionToolStripMenuItem";
             this.admissionFeeCollectionToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.admissionFeeCollectionToolStripMenuItem.Text = "Admission Fee Collection";
+            this.admissionFeeCollectionToolStripMenuItem.Click += new System.EventHandler(this.admissionFeeCollectionToolStripMenuItem_Click);
             // 
             // fundDefualtersToolStripMenuItem
             // 
             this.fundDefualtersToolStripMenuItem.Name = "fundDefualtersToolStripMenuItem";
             this.fundDefualtersToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.fundDefualtersToolStripMenuItem.Text = "Fund Defualters";
+            this.fundDefualtersToolStripMenuItem.Text = "Fund Defaulters";
+            this.fundDefualtersToolStripMenuItem.Click += new System.EventHandler(this.fundDefualtersToolStripMenuItem_Click);
             // 
             // arrearsAndBalenceToolStripMenuItem
             // 
             this.arrearsAndBalenceToolStripMenuItem.Name = "arrearsAndBalenceToolStripMenuItem";
             this.arrearsAndBalenceToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.arrearsAndBalenceToolStripMenuItem.Text = "Arrears And Balence";
+            this.arrearsAndBalenceToolStripMenuItem.Text = "Arrears And Balance";
             this.arrearsAndBalenceToolStripMenuItem.Click += new System.EventHandler(this.arrearsAndBalenceToolStripMenuItem_Click);
             // 
             // eXAMSCHEDULEToolStripMenuItem
@@ -519,7 +518,6 @@
             this.vacationWorkProcessToolStripMenuItem,
             this.makeDateSheetToolStripMenuItem,
             this.examinationRecordToolStripMenuItem,
-            this.resultCardToolStripMenuItem1,
             this.progressReportToolStripMenuItem,
             this.sendResaultToolStripMenuItem,
             this.makeExamsPapersToolStripMenuItem,
@@ -533,54 +531,56 @@
             this.rollNoSlipToolStripMenuItem.Name = "rollNoSlipToolStripMenuItem";
             this.rollNoSlipToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.rollNoSlipToolStripMenuItem.Text = "Roll No.Slip";
+            this.rollNoSlipToolStripMenuItem.Click += new System.EventHandler(this.rollNoSlipToolStripMenuItem_Click);
             // 
             // changeClassToolStripMenuItem
             // 
             this.changeClassToolStripMenuItem.Name = "changeClassToolStripMenuItem";
             this.changeClassToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.changeClassToolStripMenuItem.Text = "Change Class";
+            this.changeClassToolStripMenuItem.Click += new System.EventHandler(this.changeClassToolStripMenuItem_Click);
             // 
             // exmainationTermsToolStripMenuItem
             // 
             this.exmainationTermsToolStripMenuItem.Name = "exmainationTermsToolStripMenuItem";
             this.exmainationTermsToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.exmainationTermsToolStripMenuItem.Text = "Exmaination Terms";
+            this.exmainationTermsToolStripMenuItem.Click += new System.EventHandler(this.exmainationTermsToolStripMenuItem_Click);
             // 
             // vacationWorkProcessToolStripMenuItem
             // 
             this.vacationWorkProcessToolStripMenuItem.Name = "vacationWorkProcessToolStripMenuItem";
             this.vacationWorkProcessToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.vacationWorkProcessToolStripMenuItem.Text = "Vacation Work Process";
+            this.vacationWorkProcessToolStripMenuItem.Click += new System.EventHandler(this.vacationWorkProcessToolStripMenuItem_Click);
             // 
             // makeDateSheetToolStripMenuItem
             // 
             this.makeDateSheetToolStripMenuItem.Name = "makeDateSheetToolStripMenuItem";
             this.makeDateSheetToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.makeDateSheetToolStripMenuItem.Text = "Make Date Sheet";
+            this.makeDateSheetToolStripMenuItem.Click += new System.EventHandler(this.makeDateSheetToolStripMenuItem_Click);
             // 
             // examinationRecordToolStripMenuItem
             // 
             this.examinationRecordToolStripMenuItem.Name = "examinationRecordToolStripMenuItem";
             this.examinationRecordToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.examinationRecordToolStripMenuItem.Text = "Examination Record";
-            // 
-            // resultCardToolStripMenuItem1
-            // 
-            this.resultCardToolStripMenuItem1.Name = "resultCardToolStripMenuItem1";
-            this.resultCardToolStripMenuItem1.Size = new System.Drawing.Size(193, 22);
-            this.resultCardToolStripMenuItem1.Text = "Result Card";
+            this.examinationRecordToolStripMenuItem.Click += new System.EventHandler(this.examinationRecordToolStripMenuItem_Click);
             // 
             // progressReportToolStripMenuItem
             // 
             this.progressReportToolStripMenuItem.Name = "progressReportToolStripMenuItem";
             this.progressReportToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.progressReportToolStripMenuItem.Text = "Progress Report";
+            this.progressReportToolStripMenuItem.Click += new System.EventHandler(this.progressReportToolStripMenuItem_Click);
             // 
             // sendResaultToolStripMenuItem
             // 
             this.sendResaultToolStripMenuItem.Name = "sendResaultToolStripMenuItem";
             this.sendResaultToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.sendResaultToolStripMenuItem.Text = "Send Resault";
+            this.sendResaultToolStripMenuItem.Click += new System.EventHandler(this.sendResaultToolStripMenuItem_Click);
             // 
             // makeExamsPapersToolStripMenuItem
             // 
@@ -597,24 +597,28 @@
             this.examPaperHeaderToolStripMenuItem.Name = "examPaperHeaderToolStripMenuItem";
             this.examPaperHeaderToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.examPaperHeaderToolStripMenuItem.Text = "Exam Paper Header";
+            this.examPaperHeaderToolStripMenuItem.Click += new System.EventHandler(this.examPaperHeaderToolStripMenuItem_Click);
             // 
             // createExamPaperToolStripMenuItem
             // 
             this.createExamPaperToolStripMenuItem.Name = "createExamPaperToolStripMenuItem";
             this.createExamPaperToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.createExamPaperToolStripMenuItem.Text = "Create Exam Paper";
+            this.createExamPaperToolStripMenuItem.Click += new System.EventHandler(this.createExamPaperToolStripMenuItem_Click);
             // 
             // saveQuestionsToolStripMenuItem
             // 
             this.saveQuestionsToolStripMenuItem.Name = "saveQuestionsToolStripMenuItem";
             this.saveQuestionsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.saveQuestionsToolStripMenuItem.Text = "Save Questions";
+            this.saveQuestionsToolStripMenuItem.Click += new System.EventHandler(this.saveQuestionsToolStripMenuItem_Click);
             // 
             // paperFundsToolStripMenuItem
             // 
             this.paperFundsToolStripMenuItem.Name = "paperFundsToolStripMenuItem";
             this.paperFundsToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.paperFundsToolStripMenuItem.Text = "Paper Funds";
+            this.paperFundsToolStripMenuItem.Click += new System.EventHandler(this.paperFundsToolStripMenuItem_Click);
             // 
             // sETTINGSToolStripMenuItem
             // 
@@ -1229,7 +1233,6 @@
         private System.Windows.Forms.ToolStripMenuItem editFeeRecordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem feeCollectionUserConsolidateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recievePaymentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editFeeRecordToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem admissionFeeCollectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem schoolLeavingCertificateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chracterCertificateToolStripMenuItem;
@@ -1241,7 +1244,6 @@
         private System.Windows.Forms.ToolStripMenuItem makeDateSheetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sMSDateSheetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem examinationRecordToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem resultCardToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem progressReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sendResaultToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem makeExamsPapersToolStripMenuItem;

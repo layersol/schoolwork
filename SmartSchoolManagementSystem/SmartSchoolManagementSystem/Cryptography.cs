@@ -10,6 +10,7 @@ namespace SmartSchoolManagementSystem
 {
     class Cryptography
     {
+
         public static string Encrypt(string encryptString)
         {
             string EncryptionKey = "0ram@1234xxxxxxxxxxtttttuuuuuiiiiio";  //we can change the code converstion key as per our requirement    

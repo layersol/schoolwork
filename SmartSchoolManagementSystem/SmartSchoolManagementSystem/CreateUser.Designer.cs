@@ -1,6 +1,6 @@
 ﻿namespace SmartSchoolManagementSystem
 {
-    partial class CreateUser
+    partial class CreateNEWUser
     {
         /// <summary>
         /// Required designer variable.
@@ -44,8 +44,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.txttype = new System.Windows.Forms.ComboBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.txtdate = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtrepassword = new System.Windows.Forms.TextBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.btnsave = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -199,17 +216,167 @@
             this.label7.Text = "Add New User";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // CreateUser
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnsave);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.txtrepassword);
+            this.groupBox1.Controls.Add(this.txtpassword);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.txtdate);
+            this.groupBox1.Controls.Add(this.txtemail);
+            this.groupBox1.Controls.Add(this.txtusername);
+            this.groupBox1.Controls.Add(this.txttype);
+            this.groupBox1.Controls.Add(this.txtname);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Location = new System.Drawing.Point(7, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(350, 416);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(17, 41);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(54, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Full Name";
+            // 
+            // txtname
+            // 
+            this.txtname.Location = new System.Drawing.Point(100, 41);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(216, 20);
+            this.txtname.TabIndex = 1;
+            // 
+            // txttype
+            // 
+            this.txttype.FormattingEnabled = true;
+            this.txttype.Location = new System.Drawing.Point(100, 93);
+            this.txttype.Name = "txttype";
+            this.txttype.Size = new System.Drawing.Size(216, 21);
+            this.txttype.TabIndex = 2;
+            // 
+            // txtusername
+            // 
+            this.txtusername.Location = new System.Drawing.Point(100, 67);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(216, 20);
+            this.txtusername.TabIndex = 3;
+            // 
+            // txtdate
+            // 
+            this.txtdate.Location = new System.Drawing.Point(100, 146);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(216, 20);
+            this.txtdate.TabIndex = 5;
+            // 
+            // txtemail
+            // 
+            this.txtemail.Location = new System.Drawing.Point(100, 120);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(216, 20);
+            this.txtemail.TabIndex = 4;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(17, 70);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(60, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "User Name";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(17, 96);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 13);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "User Type";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(17, 127);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(32, 13);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Email";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(17, 153);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(30, 13);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Date";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(17, 205);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(66, 13);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Repassword";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(17, 179);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 13);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Password";
+            // 
+            // txtrepassword
+            // 
+            this.txtrepassword.Location = new System.Drawing.Point(100, 198);
+            this.txtrepassword.Name = "txtrepassword";
+            this.txtrepassword.Size = new System.Drawing.Size(216, 20);
+            this.txtrepassword.TabIndex = 11;
+            // 
+            // txtpassword
+            // 
+            this.txtpassword.Location = new System.Drawing.Point(100, 172);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(216, 20);
+            this.txtpassword.TabIndex = 10;
+            // 
+            // btnsave
+            // 
+            this.btnsave.Location = new System.Drawing.Point(100, 291);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(121, 37);
+            this.btnsave.TabIndex = 14;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // CreateNEWUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 256);
-            this.Name = "CreateUser";
+            this.ClientSize = new System.Drawing.Size(932, 457);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "CreateNEWUser";
             this.Text = "Create User";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -232,5 +399,21 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.ComboBox txttype;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtdate;
+        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtrepassword;
+        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnsave;
     }
 }

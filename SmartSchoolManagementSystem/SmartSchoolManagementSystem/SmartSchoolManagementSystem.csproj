@@ -246,6 +246,7 @@
     <Compile Include="CreatExamPaper.Designer.cs">
       <DependentUpon>CreatExamPaper.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cryptography.cs" />
     <Compile Include="CrystalPrintAdmission.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

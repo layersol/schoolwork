@@ -263,6 +263,26 @@ namespace SmartSchoolManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imageicon {
+            get {
+                object obj = ResourceManager.GetObject("imageicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageicongery {
+            get {
+                object obj = ResourceManager.GetObject("imageicongery", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap informationyellow {
             get {
                 object obj = ResourceManager.GetObject("informationyellow", resourceCulture);
@@ -346,6 +366,16 @@ namespace SmartSchoolManagementSystem.Properties {
         internal static System.Drawing.Bitmap next {
             get {
                 object obj = ResourceManager.GetObject("next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_1103595_960_720 {
+            get {
+                object obj = ResourceManager.GetObject("photo-1103595_960_720", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

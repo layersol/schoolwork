@@ -219,17 +219,17 @@ namespace SmartSchoolManagementSystem
         {
             try
             {
-                var val = db.Tblschoolsettings.ToList();
-                if (val!=null)
-                {
-                    btnsave.Enabled = true;
+                //var val = db.Tblschoolsettings.ToList();
+                //if (val!=null)
+                //{
+                //    btnsave.Enabled = true;
                     
-                }
-                else
-                { this.btnsave.Enabled = false;
+                //}
+                //else
+                //{ this.btnsave.Enabled = false;
 
-                }
-                this.Refresh();
+                //}
+                //this.Refresh();
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }

@@ -37,20 +37,26 @@ namespace SmartSchoolManagementSystem
         }
         private void Getdropdown()
         {
-            var Getclass = (from a in db.Tblclasses
-                           //where a.Class == cbbclass.SelectedItem.ToString()
-                           select new { a.ID, Names = a.CLASSNAME }).ToList();
-            cbbclass.DataSource = Getclass;
-            cbbclass.DisplayMember = "Names";
-            cbbclass.ValueMember = "ID";
-            var Getgroup = (from a in db.Tblclasssections
-                                //where a.Class == cbbclass.SelectedItem.ToString()
-                            select new { a.ID, Names = a.Group, }).ToList();
+            try {
+                var Getclass = (from a in db.Tblclasses
+                                    //where a.Class == cbbclass.SelectedItem.ToString()
+                                select new { a.ID, Names = a.CLASSNAME }).ToList();
+                cbbclass.DataSource = Getclass;
+                cbbclass.DisplayMember = "Names";
+                cbbclass.ValueMember = "ID";
+                var Getgroup = (from a in db.Tblclasssections
+                                    //where a.Class == cbbclass.SelectedItem.ToString()
+                                select new { a.ID, Names = a.Group, }).ToList();
 
-            cbbgroup.DataSource = Getgroup.ToList();
-            cbbgroup.DisplayMember = "Names";
-            cbbgroup.ValueMember = "ID";
-        }
+                cbbgroup.DataSource = Getgroup.ToList();
+                cbbgroup.DisplayMember = "Names";
+                cbbgroup.ValueMember = "ID";
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
+            
+            }
+
         private void Getcurrentstudent()
         {
             try
@@ -80,15 +86,18 @@ namespace SmartSchoolManagementSystem
 
         private void GetSession()
         {
-            var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
-
-            foreach (var Sessionvalues in CurrentSession)
+            try
             {
-                lblSession.Text = Convert.ToString(Sessionvalues.Session);
+                var CurrentSession = from c in db.TblacadmicSessions select new { Session = c.AcadmicSession, };
+
+                foreach (var Sessionvalues in CurrentSession)
+                {
+                    lblSession.Text = Convert.ToString(Sessionvalues.Session);
+                }
+
+                Getcurrentstudent();
             }
-
-            Getcurrentstudent();
-
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
         private void btnup_Click(object sender, EventArgs e)
         {

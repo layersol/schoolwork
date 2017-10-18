@@ -187,6 +187,9 @@
   <data name="pre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pre1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imageicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imageicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,13 +244,19 @@
   <data name="accounting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\accounting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="photo-1103595_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1103595_960_720.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="addblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addblue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="benner1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\benner1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imageicongery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imageicongery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

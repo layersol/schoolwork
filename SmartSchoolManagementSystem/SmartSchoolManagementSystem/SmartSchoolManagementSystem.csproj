@@ -1282,6 +1282,9 @@
     <None Include="Resources\informationyellow.png" />
     <None Include="Resources\Apps-Search-icon2.png" />
     <None Include="Resources\settings.png" />
+    <None Include="Resources\photo-1103595_960_720.png" />
+    <None Include="Resources\imageicon.png" />
+    <None Include="Resources\imageicongery.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

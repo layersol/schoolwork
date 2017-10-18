@@ -16,5 +16,20 @@ namespace SmartSchoolManagementSystem
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

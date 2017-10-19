@@ -1299,6 +1299,10 @@
     <None Include="Resources\vsta.png" />
     <None Include="Resources\asigncls.png" />
     <None Include="Resources\exp.png" />
+    <None Include="Resources\vac.png" />
+    <None Include="Resources\stafsalary.png" />
+    <None Include="Resources\img.png" />
+    <None Include="Resources\imageicon1.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

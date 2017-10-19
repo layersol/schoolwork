@@ -42,6 +42,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgdassignview = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgdassignview)).BeginInit();
@@ -64,10 +66,12 @@
             this.panel2.Controls.Add(this.btnassigncancel);
             this.panel2.Controls.Add(this.btnassign);
             this.panel2.Controls.Add(this.cbbtsection);
+            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.cbbtclass);
             this.panel2.Controls.Add(this.txttname);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txttid);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
@@ -80,7 +84,7 @@
             // 
             this.btnassigncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnassigncancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnassigncancel.Location = new System.Drawing.Point(370, 82);
+            this.btnassigncancel.Location = new System.Drawing.Point(370, 69);
             this.btnassigncancel.Name = "btnassigncancel";
             this.btnassigncancel.Size = new System.Drawing.Size(90, 31);
             this.btnassigncancel.TabIndex = 5;
@@ -91,7 +95,7 @@
             // 
             this.btnassign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnassign.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnassign.Location = new System.Drawing.Point(278, 82);
+            this.btnassign.Location = new System.Drawing.Point(278, 69);
             this.btnassign.Name = "btnassign";
             this.btnassign.Size = new System.Drawing.Size(90, 31);
             this.btnassign.TabIndex = 5;
@@ -186,6 +190,24 @@
             this.dgdassignview.Size = new System.Drawing.Size(462, 338);
             this.dgdassignview.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Medium";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(83, 75);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(80, 21);
+            this.comboBox1.TabIndex = 4;
+            // 
             // AssignClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,5 +242,7 @@
         private System.Windows.Forms.Button btnassign;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgdassignview;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

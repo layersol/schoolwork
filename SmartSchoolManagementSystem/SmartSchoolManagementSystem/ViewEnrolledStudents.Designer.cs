@@ -201,11 +201,13 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel4.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.enrolled;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Location = new System.Drawing.Point(4, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(953, 47);
             this.panel4.TabIndex = 4;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // ViewEnrolledStudents
             // 

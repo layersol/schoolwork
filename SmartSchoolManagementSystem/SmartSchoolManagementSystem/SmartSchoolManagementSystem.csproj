@@ -1285,6 +1285,20 @@
     <None Include="Resources\photo-1103595_960_720.png" />
     <None Include="Resources\imageicon.png" />
     <None Include="Resources\imageicongery.png" />
+    <None Include="Resources\dt.png" />
+    <None Include="Resources\dt1.png" />
+    <None Include="Resources\enrolled.png" />
+    <None Include="Resources\stdv.png" />
+    <None Include="Resources\stcd.png" />
+    <None Include="Resources\cnfp.png" />
+    <None Include="Resources\df.png" />
+    <None Include="Resources\df1.png" />
+    <None Include="Resources\vwc.png" />
+    <None Include="Resources\vst.png" />
+    <None Include="Resources\stan.png" />
+    <None Include="Resources\vsta.png" />
+    <None Include="Resources\asigncls.png" />
+    <None Include="Resources\exp.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

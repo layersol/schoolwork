@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbbidcardclass = new System.Windows.Forms.ComboBox();
             this.cbbidcardsection = new System.Windows.Forms.ComboBox();
+            this.cbbidcardclass = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnidview = new System.Windows.Forms.Button();
-            this.btnidprint = new System.Windows.Forms.Button();
-            this.btnidpreview = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.btnidpreview = new System.Windows.Forms.Button();
+            this.btnidprint = new System.Windows.Forms.Button();
+            this.btnidview = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -49,20 +50,26 @@
             this.panel1.Controls.Add(this.cbbidcardclass);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 46);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(320, 125);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // cbbidcardsection
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Class";
+            this.cbbidcardsection.FormattingEnabled = true;
+            this.cbbidcardsection.Location = new System.Drawing.Point(81, 45);
+            this.cbbidcardsection.Name = "cbbidcardsection";
+            this.cbbidcardsection.Size = new System.Drawing.Size(229, 21);
+            this.cbbidcardsection.TabIndex = 1;
+            // 
+            // cbbidcardclass
+            // 
+            this.cbbidcardclass.FormattingEnabled = true;
+            this.cbbidcardclass.Location = new System.Drawing.Point(81, 17);
+            this.cbbidcardclass.Name = "cbbidcardclass";
+            this.cbbidcardclass.Size = new System.Drawing.Size(229, 21);
+            this.cbbidcardclass.TabIndex = 1;
             // 
             // label2
             // 
@@ -74,21 +81,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Section";
             // 
-            // cbbidcardclass
+            // label1
             // 
-            this.cbbidcardclass.FormattingEnabled = true;
-            this.cbbidcardclass.Location = new System.Drawing.Point(81, 17);
-            this.cbbidcardclass.Name = "cbbidcardclass";
-            this.cbbidcardclass.Size = new System.Drawing.Size(229, 21);
-            this.cbbidcardclass.TabIndex = 1;
-            // 
-            // cbbidcardsection
-            // 
-            this.cbbidcardsection.FormattingEnabled = true;
-            this.cbbidcardsection.Location = new System.Drawing.Point(81, 45);
-            this.cbbidcardsection.Name = "cbbidcardsection";
-            this.cbbidcardsection.Size = new System.Drawing.Size(229, 21);
-            this.cbbidcardsection.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Class";
             // 
             // groupBox1
             // 
@@ -98,43 +99,12 @@
             this.groupBox1.Controls.Add(this.btnidprint);
             this.groupBox1.Controls.Add(this.btnidview);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(2, 135);
+            this.groupBox1.Location = new System.Drawing.Point(2, 174);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(320, 62);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Report Mode";
-            // 
-            // btnidview
-            // 
-            this.btnidview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnidview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view;
-            this.btnidview.Location = new System.Drawing.Point(11, 19);
-            this.btnidview.Name = "btnidview";
-            this.btnidview.Size = new System.Drawing.Size(54, 35);
-            this.btnidview.TabIndex = 0;
-            this.btnidview.UseVisualStyleBackColor = false;
-            // 
-            // btnidprint
-            // 
-            this.btnidprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnidprint.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_icon;
-            this.btnidprint.Location = new System.Drawing.Point(71, 19);
-            this.btnidprint.Name = "btnidprint";
-            this.btnidprint.Size = new System.Drawing.Size(54, 35);
-            this.btnidprint.TabIndex = 0;
-            this.btnidprint.UseVisualStyleBackColor = false;
-            // 
-            // btnidpreview
-            // 
-            this.btnidpreview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnidpreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnidpreview.Location = new System.Drawing.Point(131, 19);
-            this.btnidpreview.Name = "btnidpreview";
-            this.btnidpreview.Size = new System.Drawing.Size(89, 35);
-            this.btnidpreview.TabIndex = 0;
-            this.btnidpreview.Text = "Preview";
-            this.btnidpreview.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -149,11 +119,52 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // btnidpreview
+            // 
+            this.btnidpreview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnidpreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnidpreview.Location = new System.Drawing.Point(131, 19);
+            this.btnidpreview.Name = "btnidpreview";
+            this.btnidpreview.Size = new System.Drawing.Size(89, 35);
+            this.btnidpreview.TabIndex = 0;
+            this.btnidpreview.Text = "Preview";
+            this.btnidpreview.UseVisualStyleBackColor = false;
+            // 
+            // btnidprint
+            // 
+            this.btnidprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnidprint.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_icon;
+            this.btnidprint.Location = new System.Drawing.Point(71, 19);
+            this.btnidprint.Name = "btnidprint";
+            this.btnidprint.Size = new System.Drawing.Size(54, 35);
+            this.btnidprint.TabIndex = 0;
+            this.btnidprint.UseVisualStyleBackColor = false;
+            // 
+            // btnidview
+            // 
+            this.btnidview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnidview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view;
+            this.btnidview.Location = new System.Drawing.Point(11, 19);
+            this.btnidview.Name = "btnidview";
+            this.btnidview.Size = new System.Drawing.Size(54, 35);
+            this.btnidview.TabIndex = 0;
+            this.btnidview.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.stcd;
+            this.panel2.Location = new System.Drawing.Point(2, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(320, 40);
+            this.panel2.TabIndex = 2;
+            // 
             // StudentIdCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 208);
+            this.ClientSize = new System.Drawing.Size(325, 238);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -179,5 +190,6 @@
         private System.Windows.Forms.Button btnidpreview;
         private System.Windows.Forms.Button btnidprint;
         private System.Windows.Forms.Button btnidview;
+        private System.Windows.Forms.Panel panel2;
     }
 }

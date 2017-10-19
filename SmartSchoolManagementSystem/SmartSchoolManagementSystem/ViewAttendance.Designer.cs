@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdbstudent = new System.Windows.Forms.RadioButton();
-            this.rdbclass = new System.Windows.Forms.RadioButton();
             this.rdbblankregister = new System.Windows.Forms.RadioButton();
+            this.rdbclass = new System.Windows.Forms.RadioButton();
+            this.rdbstudent = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtstudentid = new System.Windows.Forms.TextBox();
-            this.txtyear = new System.Windows.Forms.TextBox();
-            this.txtclass = new System.Windows.Forms.TextBox();
-            this.txtsection = new System.Windows.Forms.TextBox();
             this.cbbfeemonth = new System.Windows.Forms.ComboBox();
+            this.txtsection = new System.Windows.Forms.TextBox();
+            this.txtclass = new System.Windows.Forms.TextBox();
+            this.txtyear = new System.Windows.Forms.TextBox();
+            this.txtstudentid = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnview = new System.Windows.Forms.Button();
-            this.btnprint = new System.Windows.Forms.Button();
-            this.btnpreview = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.btnpreview = new System.Windows.Forms.Button();
+            this.btnprint = new System.Windows.Forms.Button();
+            this.btnview = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -68,16 +68,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Report Mode";
             // 
-            // rdbstudent
+            // rdbblankregister
             // 
-            this.rdbstudent.AutoSize = true;
-            this.rdbstudent.Location = new System.Drawing.Point(10, 36);
-            this.rdbstudent.Name = "rdbstudent";
-            this.rdbstudent.Size = new System.Drawing.Size(82, 21);
-            this.rdbstudent.TabIndex = 0;
-            this.rdbstudent.TabStop = true;
-            this.rdbstudent.Text = "Student";
-            this.rdbstudent.UseVisualStyleBackColor = true;
+            this.rdbblankregister.AutoSize = true;
+            this.rdbblankregister.Location = new System.Drawing.Point(189, 36);
+            this.rdbblankregister.Name = "rdbblankregister";
+            this.rdbblankregister.Size = new System.Drawing.Size(132, 21);
+            this.rdbblankregister.TabIndex = 0;
+            this.rdbblankregister.TabStop = true;
+            this.rdbblankregister.Text = "Blank Register";
+            this.rdbblankregister.UseVisualStyleBackColor = true;
             // 
             // rdbclass
             // 
@@ -90,20 +90,21 @@
             this.rdbclass.Text = "Class";
             this.rdbclass.UseVisualStyleBackColor = true;
             // 
-            // rdbblankregister
+            // rdbstudent
             // 
-            this.rdbblankregister.AutoSize = true;
-            this.rdbblankregister.Location = new System.Drawing.Point(189, 36);
-            this.rdbblankregister.Name = "rdbblankregister";
-            this.rdbblankregister.Size = new System.Drawing.Size(132, 21);
-            this.rdbblankregister.TabIndex = 0;
-            this.rdbblankregister.TabStop = true;
-            this.rdbblankregister.Text = "Blank Register";
-            this.rdbblankregister.UseVisualStyleBackColor = true;
+            this.rdbstudent.AutoSize = true;
+            this.rdbstudent.Location = new System.Drawing.Point(10, 36);
+            this.rdbstudent.Name = "rdbstudent";
+            this.rdbstudent.Size = new System.Drawing.Size(82, 21);
+            this.rdbstudent.TabIndex = 0;
+            this.rdbstudent.TabStop = true;
+            this.rdbstudent.Text = "Student";
+            this.rdbstudent.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.stdv;
             this.panel1.Location = new System.Drawing.Point(3, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(366, 42);
@@ -127,84 +128,6 @@
             this.panel2.Size = new System.Drawing.Size(366, 163);
             this.panel2.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Student Id";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Fee Month";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 69);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 17);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Year";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Class";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 122);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 17);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Section";
-            // 
-            // txtstudentid
-            // 
-            this.txtstudentid.Location = new System.Drawing.Point(108, 15);
-            this.txtstudentid.Name = "txtstudentid";
-            this.txtstudentid.Size = new System.Drawing.Size(212, 20);
-            this.txtstudentid.TabIndex = 1;
-            // 
-            // txtyear
-            // 
-            this.txtyear.Location = new System.Drawing.Point(108, 66);
-            this.txtyear.Name = "txtyear";
-            this.txtyear.Size = new System.Drawing.Size(212, 20);
-            this.txtyear.TabIndex = 1;
-            // 
-            // txtclass
-            // 
-            this.txtclass.Location = new System.Drawing.Point(108, 92);
-            this.txtclass.Name = "txtclass";
-            this.txtclass.Size = new System.Drawing.Size(212, 20);
-            this.txtclass.TabIndex = 1;
-            // 
-            // txtsection
-            // 
-            this.txtsection.Location = new System.Drawing.Point(108, 122);
-            this.txtsection.Name = "txtsection";
-            this.txtsection.Size = new System.Drawing.Size(212, 20);
-            this.txtsection.TabIndex = 1;
-            // 
             // cbbfeemonth
             // 
             this.cbbfeemonth.FormattingEnabled = true;
@@ -226,6 +149,84 @@
             this.cbbfeemonth.Size = new System.Drawing.Size(212, 21);
             this.cbbfeemonth.TabIndex = 2;
             // 
+            // txtsection
+            // 
+            this.txtsection.Location = new System.Drawing.Point(108, 122);
+            this.txtsection.Name = "txtsection";
+            this.txtsection.Size = new System.Drawing.Size(212, 20);
+            this.txtsection.TabIndex = 1;
+            // 
+            // txtclass
+            // 
+            this.txtclass.Location = new System.Drawing.Point(108, 92);
+            this.txtclass.Name = "txtclass";
+            this.txtclass.Size = new System.Drawing.Size(212, 20);
+            this.txtclass.TabIndex = 1;
+            // 
+            // txtyear
+            // 
+            this.txtyear.Location = new System.Drawing.Point(108, 66);
+            this.txtyear.Name = "txtyear";
+            this.txtyear.Size = new System.Drawing.Size(212, 20);
+            this.txtyear.TabIndex = 1;
+            // 
+            // txtstudentid
+            // 
+            this.txtstudentid.Location = new System.Drawing.Point(108, 15);
+            this.txtstudentid.Name = "txtstudentid";
+            this.txtstudentid.Size = new System.Drawing.Size(212, 20);
+            this.txtstudentid.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(9, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 17);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Section";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 17);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Class";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Year";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(9, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Fee Month";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(11, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Student Id";
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -237,37 +238,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(366, 49);
             this.panel3.TabIndex = 3;
-            // 
-            // btnview
-            // 
-            this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
-            this.btnview.Location = new System.Drawing.Point(3, 8);
-            this.btnview.Name = "btnview";
-            this.btnview.Size = new System.Drawing.Size(49, 33);
-            this.btnview.TabIndex = 0;
-            this.btnview.UseVisualStyleBackColor = false;
-            // 
-            // btnprint
-            // 
-            this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnprint.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_icon;
-            this.btnprint.Location = new System.Drawing.Point(55, 8);
-            this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(49, 33);
-            this.btnprint.TabIndex = 0;
-            this.btnprint.UseVisualStyleBackColor = false;
-            // 
-            // btnpreview
-            // 
-            this.btnpreview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnpreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpreview.Location = new System.Drawing.Point(132, 8);
-            this.btnpreview.Name = "btnpreview";
-            this.btnpreview.Size = new System.Drawing.Size(94, 33);
-            this.btnpreview.TabIndex = 1;
-            this.btnpreview.Text = "Preview";
-            this.btnpreview.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -281,6 +251,37 @@
             this.button4.Text = "Close";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnpreview
+            // 
+            this.btnpreview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnpreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpreview.Location = new System.Drawing.Point(132, 8);
+            this.btnpreview.Name = "btnpreview";
+            this.btnpreview.Size = new System.Drawing.Size(94, 33);
+            this.btnpreview.TabIndex = 1;
+            this.btnpreview.Text = "Preview";
+            this.btnpreview.UseVisualStyleBackColor = false;
+            // 
+            // btnprint
+            // 
+            this.btnprint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnprint.Image = global::SmartSchoolManagementSystem.Properties.Resources.Printer_icon;
+            this.btnprint.Location = new System.Drawing.Point(55, 8);
+            this.btnprint.Name = "btnprint";
+            this.btnprint.Size = new System.Drawing.Size(49, 33);
+            this.btnprint.TabIndex = 0;
+            this.btnprint.UseVisualStyleBackColor = false;
+            // 
+            // btnview
+            // 
+            this.btnview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnview.Image = global::SmartSchoolManagementSystem.Properties.Resources.view2;
+            this.btnview.Location = new System.Drawing.Point(3, 8);
+            this.btnview.Name = "btnview";
+            this.btnview.Size = new System.Drawing.Size(49, 33);
+            this.btnview.TabIndex = 0;
+            this.btnview.UseVisualStyleBackColor = false;
             // 
             // ViewAttendance
             // 

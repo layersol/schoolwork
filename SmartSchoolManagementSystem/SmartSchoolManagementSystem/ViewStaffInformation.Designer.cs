@@ -43,8 +43,6 @@
             this.cbbtsearchbyclass = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgdview)).BeginInit();
             this.panel2.SuspendLayout();
@@ -55,8 +53,8 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel4.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.vst;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(953, 47);
@@ -209,18 +207,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Class";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(371, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 26);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Staff Information";
-            // 
             // ViewStaffInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,8 +219,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "ViewStaffInformation";
             this.Text = "View Staff Information";
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgdview)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -249,7 +233,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgdview;
         private System.Windows.Forms.Panel panel2;

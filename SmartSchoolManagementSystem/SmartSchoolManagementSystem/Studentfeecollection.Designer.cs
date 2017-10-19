@@ -64,7 +64,6 @@
             this.txtcurrentfee = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.circularprogressbar1 = new SmartSchoolManagementSystem.Control.Circularprogressbar();
             this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtother = new System.Windows.Forms.TextBox();
@@ -109,16 +108,17 @@
             this.groupBox1.Controls.Add(this.rdbstudentid);
             this.groupBox1.Location = new System.Drawing.Point(3, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(672, 84);
+            this.groupBox1.Size = new System.Drawing.Size(672, 61);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criteria";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(578, 31);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(572, 31);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(88, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(94, 20);
             this.dateTimePicker1.TabIndex = 9;
             // 
             // btnsearch
@@ -133,7 +133,7 @@
             // 
             // txtdate
             // 
-            this.txtdate.Location = new System.Drawing.Point(466, 31);
+            this.txtdate.Location = new System.Drawing.Point(291, 5);
             this.txtdate.Name = "txtdate";
             this.txtdate.Size = new System.Drawing.Size(105, 20);
             this.txtdate.TabIndex = 7;
@@ -141,7 +141,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(430, 34);
+            this.label3.Location = new System.Drawing.Point(255, 8);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 6;
@@ -216,7 +216,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtstudentname);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(3, 102);
+            this.groupBox2.Location = new System.Drawing.Point(3, 77);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(460, 96);
             this.groupBox2.TabIndex = 1;
@@ -311,17 +311,21 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.txtdiscount);
             this.groupBox3.Controls.Add(this.txtblance);
+            this.groupBox3.Controls.Add(this.txtpayabe);
+            this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.txtarreres);
+            this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.txtpaid);
             this.groupBox3.Controls.Add(this.txtfine);
             this.groupBox3.Controls.Add(this.txttottal);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.txtcurrentfee);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Location = new System.Drawing.Point(3, 202);
+            this.groupBox3.Location = new System.Drawing.Point(3, 177);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(460, 98);
+            this.groupBox3.Size = new System.Drawing.Size(460, 133);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Fee Information";
@@ -329,7 +333,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(323, 66);
+            this.label14.Location = new System.Drawing.Point(323, 54);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(40, 13);
             this.label14.TabIndex = 21;
@@ -338,7 +342,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(323, 33);
+            this.label10.Location = new System.Drawing.Point(323, 21);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 13);
             this.label10.TabIndex = 21;
@@ -347,7 +351,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(191, 62);
+            this.label11.Location = new System.Drawing.Point(191, 50);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(28, 13);
             this.label11.TabIndex = 21;
@@ -356,7 +360,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(191, 33);
+            this.label9.Location = new System.Drawing.Point(191, 21);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(27, 13);
             this.label9.TabIndex = 21;
@@ -364,21 +368,21 @@
             // 
             // txtblance
             // 
-            this.txtblance.Location = new System.Drawing.Point(375, 59);
+            this.txtblance.Location = new System.Drawing.Point(375, 47);
             this.txtblance.Name = "txtblance";
             this.txtblance.Size = new System.Drawing.Size(79, 20);
             this.txtblance.TabIndex = 20;
             // 
             // txtarreres
             // 
-            this.txtarreres.Location = new System.Drawing.Point(375, 30);
+            this.txtarreres.Location = new System.Drawing.Point(375, 18);
             this.txtarreres.Name = "txtarreres";
             this.txtarreres.Size = new System.Drawing.Size(79, 20);
             this.txtarreres.TabIndex = 19;
             // 
             // txtpaid
             // 
-            this.txtpaid.Location = new System.Drawing.Point(230, 59);
+            this.txtpaid.Location = new System.Drawing.Point(230, 47);
             this.txtpaid.Name = "txtpaid";
             this.txtpaid.Size = new System.Drawing.Size(79, 20);
             this.txtpaid.TabIndex = 17;
@@ -386,14 +390,14 @@
             // 
             // txtfine
             // 
-            this.txtfine.Location = new System.Drawing.Point(230, 30);
+            this.txtfine.Location = new System.Drawing.Point(230, 18);
             this.txtfine.Name = "txtfine";
             this.txtfine.Size = new System.Drawing.Size(79, 20);
             this.txtfine.TabIndex = 16;
             // 
             // txttottal
             // 
-            this.txttottal.Location = new System.Drawing.Point(100, 59);
+            this.txttottal.Location = new System.Drawing.Point(100, 47);
             this.txttottal.Name = "txttottal";
             this.txttottal.Size = new System.Drawing.Size(79, 20);
             this.txttottal.TabIndex = 11;
@@ -401,7 +405,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 59);
+            this.label12.Location = new System.Drawing.Point(53, 51);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(34, 13);
             this.label12.TabIndex = 10;
@@ -409,7 +413,7 @@
             // 
             // txtcurrentfee
             // 
-            this.txtcurrentfee.Location = new System.Drawing.Point(100, 30);
+            this.txtcurrentfee.Location = new System.Drawing.Point(100, 18);
             this.txtcurrentfee.Name = "txtcurrentfee";
             this.txtcurrentfee.Size = new System.Drawing.Size(79, 20);
             this.txtcurrentfee.TabIndex = 9;
@@ -417,7 +421,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(9, 33);
+            this.label13.Location = new System.Drawing.Point(53, 22);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(41, 13);
             this.label13.TabIndex = 8;
@@ -426,21 +430,13 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.groupBox4.Controls.Add(this.circularprogressbar1);
             this.groupBox4.Controls.Add(this.imgpicturebox);
-            this.groupBox4.Location = new System.Drawing.Point(469, 104);
+            this.groupBox4.Location = new System.Drawing.Point(469, 79);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(206, 250);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Identity";
-            // 
-            // circularprogressbar1
-            // 
-            this.circularprogressbar1.Location = new System.Drawing.Point(6, 46);
-            this.circularprogressbar1.Name = "circularprogressbar1";
-            this.circularprogressbar1.Size = new System.Drawing.Size(150, 150);
-            this.circularprogressbar1.TabIndex = 1;
             // 
             // imgpicturebox
             // 
@@ -458,19 +454,15 @@
             this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Controls.Add(this.txtbusfee);
             this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Controls.Add(this.txtdiscount);
-            this.groupBox5.Controls.Add(this.txtpayabe);
-            this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Controls.Add(this.label16);
-            this.groupBox5.Location = new System.Drawing.Point(3, 304);
+            this.groupBox5.Location = new System.Drawing.Point(3, 316);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(460, 50);
+            this.groupBox5.Size = new System.Drawing.Size(460, 71);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             // 
             // txtother
             // 
-            this.txtother.Location = new System.Drawing.Point(305, 30);
+            this.txtother.Location = new System.Drawing.Point(291, 43);
             this.txtother.Name = "txtother";
             this.txtother.Size = new System.Drawing.Size(79, 20);
             this.txtother.TabIndex = 29;
@@ -478,7 +470,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(258, 33);
+            this.label18.Location = new System.Drawing.Point(244, 46);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(42, 13);
             this.label18.TabIndex = 28;
@@ -486,7 +478,7 @@
             // 
             // txtbusfee
             // 
-            this.txtbusfee.Location = new System.Drawing.Point(305, 6);
+            this.txtbusfee.Location = new System.Drawing.Point(291, 19);
             this.txtbusfee.Name = "txtbusfee";
             this.txtbusfee.Size = new System.Drawing.Size(79, 20);
             this.txtbusfee.TabIndex = 27;
@@ -494,7 +486,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(258, 9);
+            this.label17.Location = new System.Drawing.Point(244, 22);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(42, 13);
             this.label17.TabIndex = 26;
@@ -502,14 +494,14 @@
             // 
             // txtdiscount
             // 
-            this.txtdiscount.Location = new System.Drawing.Point(110, 30);
+            this.txtdiscount.Location = new System.Drawing.Point(100, 97);
             this.txtdiscount.Name = "txtdiscount";
             this.txtdiscount.Size = new System.Drawing.Size(79, 20);
             this.txtdiscount.TabIndex = 25;
             // 
             // txtpayabe
             // 
-            this.txtpayabe.Location = new System.Drawing.Point(110, 6);
+            this.txtpayabe.Location = new System.Drawing.Point(100, 73);
             this.txtpayabe.Name = "txtpayabe";
             this.txtpayabe.Size = new System.Drawing.Size(79, 20);
             this.txtpayabe.TabIndex = 23;
@@ -517,7 +509,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(19, 30);
+            this.label15.Location = new System.Drawing.Point(9, 97);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(49, 13);
             this.label15.TabIndex = 24;
@@ -526,7 +518,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(19, 9);
+            this.label16.Location = new System.Drawing.Point(9, 76);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(45, 13);
             this.label16.TabIndex = 22;
@@ -544,7 +536,7 @@
             this.groupBox6.Controls.Add(this.btnpreview);
             this.groupBox6.Controls.Add(this.btncancel);
             this.groupBox6.Controls.Add(this.btnsave);
-            this.groupBox6.Location = new System.Drawing.Point(3, 360);
+            this.groupBox6.Location = new System.Drawing.Point(3, 393);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(672, 60);
             this.groupBox6.TabIndex = 5;
@@ -659,6 +651,7 @@
             this.Name = "Studentfeecollection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Studentfeecollection";
+            this.Load += new System.EventHandler(this.Studentfeecollection_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -733,6 +726,5 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtother;
         private System.Windows.Forms.Label label18;
-        private Control.Circularprogressbar circularprogressbar1;
     }
 }

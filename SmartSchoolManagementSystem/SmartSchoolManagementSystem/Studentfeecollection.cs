@@ -133,6 +133,11 @@ namespace SmartSchoolManagementSystem
 
         }
 
+        private void Studentfeecollection_Load(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnsearch;
+        }
+
         private void txtpaid_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)

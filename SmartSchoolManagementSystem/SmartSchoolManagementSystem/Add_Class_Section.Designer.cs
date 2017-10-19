@@ -35,7 +35,7 @@
             this.btnedit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DGVclass = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -47,7 +47,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVclass)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,7 @@
             this.txtclass.Name = "txtclass";
             this.txtclass.Size = new System.Drawing.Size(178, 20);
             this.txtclass.TabIndex = 1;
+            this.txtclass.TextChanged += new System.EventHandler(this.txtclass_TextChanged);
             // 
             // label1
             // 
@@ -85,7 +86,7 @@
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.Image = global::SmartSchoolManagementSystem.Properties.Resources.save;
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(7, 13);
+            this.btnsave.Location = new System.Drawing.Point(48, 4);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 36);
             this.btnsave.TabIndex = 1;
@@ -100,7 +101,7 @@
             this.btnedit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnedit.Image = global::SmartSchoolManagementSystem.Properties.Resources.edit;
             this.btnedit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnedit.Location = new System.Drawing.Point(88, 13);
+            this.btnedit.Location = new System.Drawing.Point(129, 4);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(75, 36);
             this.btnedit.TabIndex = 2;
@@ -115,7 +116,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::SmartSchoolManagementSystem.Properties.Resources.close;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(252, 13);
+            this.button1.Location = new System.Drawing.Point(293, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 36);
             this.button1.TabIndex = 4;
@@ -130,7 +131,7 @@
             this.btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.Image = global::SmartSchoolManagementSystem.Properties.Resources.Update;
             this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnupdate.Location = new System.Drawing.Point(166, 13);
+            this.btnupdate.Location = new System.Drawing.Point(207, 4);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(80, 36);
             this.btnupdate.TabIndex = 3;
@@ -139,13 +140,14 @@
             this.btnupdate.UseVisualStyleBackColor = false;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
-            // dataGridView1
+            // DGVclass
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(253, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(116, 226);
-            this.dataGridView1.TabIndex = 5;
+            this.DGVclass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVclass.Location = new System.Drawing.Point(253, 12);
+            this.DGVclass.Name = "DGVclass";
+            this.DGVclass.Size = new System.Drawing.Size(197, 204);
+            this.DGVclass.TabIndex = 5;
+            this.DGVclass.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGVclass_RowHeaderMouseClick);
             // 
             // groupBox2
             // 
@@ -158,7 +160,7 @@
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Location = new System.Drawing.Point(7, 104);
+            this.groupBox2.Location = new System.Drawing.Point(7, 82);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(240, 134);
             this.groupBox2.TabIndex = 6;
@@ -236,25 +238,26 @@
             this.panel1.Controls.Add(this.btnedit);
             this.panel1.Controls.Add(this.btnupdate);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(7, 265);
+            this.panel1.Location = new System.Drawing.Point(7, 222);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(362, 58);
+            this.panel1.Size = new System.Drawing.Size(443, 45);
             this.panel1.TabIndex = 7;
             // 
             // Add_Class
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(378, 327);
+            this.ClientSize = new System.Drawing.Size(458, 272);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DGVclass);
             this.Controls.Add(this.groupBox1);
             this.Name = "Add_Class";
             this.Text = "Add Class";
+            this.Load += new System.EventHandler(this.Add_Class_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVclass)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -271,7 +274,7 @@
         private System.Windows.Forms.Button btnedit;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnupdate;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DGVclass;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox4;

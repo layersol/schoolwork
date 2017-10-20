@@ -54,11 +54,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.cbbgender = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtdestination = new System.Windows.Forms.TextBox();
             this.bform = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbcity = new System.Windows.Forms.ComboBox();
             this.label47 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtsmail = new System.Windows.Forms.TextBox();
@@ -460,11 +460,11 @@
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.cbbgender);
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.textBox15);
+            this.groupBox4.Controls.Add(this.txtdestination);
             this.groupBox4.Controls.Add(this.bform);
             this.groupBox4.Controls.Add(this.label48);
             this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.comboBox1);
+            this.groupBox4.Controls.Add(this.cbbcity);
             this.groupBox4.Controls.Add(this.label47);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.txtsmail);
@@ -548,13 +548,13 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Gender";
             // 
-            // textBox15
+            // txtdestination
             // 
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Location = new System.Drawing.Point(292, 137);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(69, 20);
-            this.textBox15.TabIndex = 46;
+            this.txtdestination.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdestination.Location = new System.Drawing.Point(292, 137);
+            this.txtdestination.Name = "txtdestination";
+            this.txtdestination.Size = new System.Drawing.Size(69, 20);
+            this.txtdestination.TabIndex = 46;
             // 
             // bform
             // 
@@ -582,14 +582,17 @@
             this.label12.TabIndex = 2;
             this.label12.Text = "CNIC";
             // 
-            // comboBox1
+            // cbbcity
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(412, 136);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(72, 21);
-            this.comboBox1.TabIndex = 44;
+            this.cbbcity.FormattingEnabled = true;
+            this.cbbcity.Items.AddRange(new object[] {
+            "Select City"});
+            this.cbbcity.Location = new System.Drawing.Point(412, 136);
+            this.cbbcity.Name = "cbbcity";
+            this.cbbcity.Size = new System.Drawing.Size(72, 21);
+            this.cbbcity.TabIndex = 44;
+            this.cbbcity.SelectedIndexChanged += new System.EventHandler(this.cbbcity_SelectedIndexChanged);
+            this.cbbcity.SelectedValueChanged += new System.EventHandler(this.cbbcity_SelectedValueChanged);
             // 
             // label47
             // 
@@ -621,7 +624,7 @@
             // 
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(145, 137);
+            this.comboBox7.Location = new System.Drawing.Point(151, 137);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(66, 21);
             this.comboBox7.TabIndex = 41;
@@ -629,7 +632,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(99, 142);
+            this.label27.Location = new System.Drawing.Point(105, 142);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(42, 13);
             this.label27.TabIndex = 40;
@@ -665,13 +668,14 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(26, 140);
+            this.checkBox2.Location = new System.Drawing.Point(28, 140);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox2.Size = new System.Drawing.Size(71, 17);
             this.checkBox2.TabIndex = 42;
             this.checkBox2.Text = "Transport";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // txtcell
             // 
@@ -1755,7 +1759,7 @@
             this.groupBox49.Controls.Add(this.txtcreationdate);
             this.groupBox49.Controls.Add(this.txtcreatedby);
             this.groupBox49.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox49.Location = new System.Drawing.Point(0, 776);
+            this.groupBox49.Location = new System.Drawing.Point(0, 677);
             this.groupBox49.Name = "groupBox49";
             this.groupBox49.Size = new System.Drawing.Size(1243, 68);
             this.groupBox49.TabIndex = 19;
@@ -2259,7 +2263,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1243, 844);
+            this.ClientSize = new System.Drawing.Size(1243, 745);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label20);
@@ -2490,9 +2494,9 @@
         private System.Windows.Forms.ComboBox cbbgrad1;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtdestination;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbcity;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.Label label27;

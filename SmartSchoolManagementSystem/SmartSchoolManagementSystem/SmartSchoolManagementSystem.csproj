@@ -647,6 +647,12 @@
     <Compile Include="SubjectDefination.Designer.cs">
       <DependentUpon>SubjectDefination.cs</DependentUpon>
     </Compile>
+    <Compile Include="TBLBUSSESMAPPING.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblexpensename.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="TBLSTUDENTFEEDETAILS.cs">
       <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
     </Compile>

@@ -18,6 +18,7 @@
           </Key>
           <Property Name="BusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Driver" Type="nvarchar" MaxLength="50" />
+          <Property Name="BussName" Type="nvarchar" MaxLength="50" />
           <Property Name="Busreg" Type="nvarchar" MaxLength="50" />
           <Property Name="Model" Type="nvarchar" MaxLength="50" />
           <Property Name="Vehicletype" Type="nvarchar" MaxLength="50" />
@@ -103,6 +104,16 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Destination" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="TBLBUSSESMAPPING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BUSID" Type="int" />
+          <Property Name="BUSDESTINATION" Type="int" />
+          <Property Name="BUSSTOP" Type="int" />
+          <Property Name="OTHER" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Tblbusstop">
@@ -133,6 +144,13 @@ warning 6002: The table/view 'smartschooldb.dbo.Tblbusstop' does not have a prim
           <Property Name="FloorId" Type="nvarchar" MaxLength="50" />
           <Property Name="RoomNo" Type="nvarchar" MaxLength="50" />
           <Property Name="Comments" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblexpensename">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExpenseName" Type="nvarchar" MaxLength="250" />
         </EntityType>
         <EntityType Name="TBLFEEMASTER">
           <Key>
@@ -271,8 +289,10 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <EntitySet Name="TBLADDMISSION" EntityType="Self.TBLADDMISSION" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbladmissionprint" EntityType="Self.Tbladmissionprint" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblbusdestination" EntityType="Self.Tblbusdestination" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLBUSSESMAPPING" EntityType="Self.TBLBUSSESMAPPING" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblclass" EntityType="Self.Tblclass" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblclasssection" EntityType="Self.Tblclasssection" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblexpensename" EntityType="Self.tblexpensename" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLFEEMASTER" EntityType="Self.TBLFEEMASTER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblschoolsetting" EntityType="Self.Tblschoolsetting" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblSection" EntityType="Self.TblSection" Schema="dbo" store:Type="Tables" />
@@ -319,6 +339,7 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Vehicletype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Seatcapacity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BussName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="TBLADDMISSION">
           <Key>
@@ -576,7 +597,26 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <EntitySet Name="UserDeatils" EntityType="Self.UserDeatil" />
           <EntitySet Name="Tblbusstops" EntityType="Self.Tblbusstop" />
           <EntitySet Name="TBLTRANSMASTERs" EntityType="Self.TBLTRANSMASTER" />
+          <EntitySet Name="TBLBUSSESMAPPINGs" EntityType="smartschooldbModel.TBLBUSSESMAPPING" />
+          <EntitySet Name="tblexpensenames" EntityType="smartschooldbModel.tblexpensename" />
         </EntityContainer>
+        <EntityType Name="TBLBUSSESMAPPING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BUSID" Type="Int32" />
+          <Property Name="BUSDESTINATION" Type="Int32" />
+          <Property Name="BUSSTOP" Type="Int32" />
+          <Property Name="OTHER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblexpensename">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExpenseName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -594,6 +634,7 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <EntitySetMapping Name="TbladdBuses">
             <EntityTypeMapping TypeName="smartschooldbModel.TbladdBus">
               <MappingFragment StoreEntitySet="TbladdBuses">
+                <ScalarProperty Name="BussName" ColumnName="BussName" />
                 <ScalarProperty Name="BusID" ColumnName="BusID" />
                 <ScalarProperty Name="Driver" ColumnName="Driver" />
                 <ScalarProperty Name="Busreg" ColumnName="Busreg" />
@@ -853,6 +894,25 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
                 <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
                 <ScalarProperty Name="TYPE" ColumnName="TYPE" />
                 <ScalarProperty Name="CREATED" ColumnName="CREATED" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLBUSSESMAPPINGs">
+            <EntityTypeMapping TypeName="smartschooldbModel.TBLBUSSESMAPPING">
+              <MappingFragment StoreEntitySet="TBLBUSSESMAPPING">
+                <ScalarProperty Name="OTHER" ColumnName="OTHER" />
+                <ScalarProperty Name="BUSSTOP" ColumnName="BUSSTOP" />
+                <ScalarProperty Name="BUSDESTINATION" ColumnName="BUSDESTINATION" />
+                <ScalarProperty Name="BUSID" ColumnName="BUSID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblexpensenames">
+            <EntityTypeMapping TypeName="smartschooldbModel.tblexpensename">
+              <MappingFragment StoreEntitySet="tblexpensename">
+                <ScalarProperty Name="ExpenseName" ColumnName="ExpenseName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -15,7 +15,7 @@ namespace SmartSchoolManagementSystem
     {
         smartschooldbEntities db = new smartschooldbEntities();
         int val;
-        string sess, Customadd;
+        string sess, Customadd, schooladd=" Address :";
         public admissionformprint()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace SmartSchoolManagementSystem
 
                                  select new
                                  {
-                                     Address = "&Address& : " + c.FIRSTADDRESS+". Phone : "+c.CONTACTA+". Email : "+c.FIRSTEMAIL+". Website : "+c.WEBSITE
+                                     Address = "Address : " + c.FIRSTADDRESS+". Phone : "+c.CONTACTA+". Email : "+c.FIRSTEMAIL+". Website : "+c.WEBSITE
 
                                  };
                 foreach (var GetsessionInfo in Combind)

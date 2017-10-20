@@ -30,12 +30,12 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lkladd = new System.Windows.Forms.LinkLabel();
             this.txtdescription = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cbbexpencename = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtexpenceby = new System.Windows.Forms.TextBox();
-            this.txtdate = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtamount = new System.Windows.Forms.TextBox();
@@ -60,6 +60,7 @@
             this.btncancel = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -81,12 +82,13 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.lkladd);
             this.panel2.Controls.Add(this.txtdescription);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.cbbexpencename);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtexpenceby);
-            this.panel2.Controls.Add(this.txtdate);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtamount);
@@ -97,6 +99,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(387, 138);
             this.panel2.TabIndex = 1;
+            // 
+            // lkladd
+            // 
+            this.lkladd.AutoSize = true;
+            this.lkladd.Location = new System.Drawing.Point(326, 40);
+            this.lkladd.Name = "lkladd";
+            this.lkladd.Size = new System.Drawing.Size(26, 13);
+            this.lkladd.TabIndex = 8;
+            this.lkladd.TabStop = true;
+            this.lkladd.Text = "Add";
+            this.lkladd.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkladd_LinkClicked);
             // 
             // txtdescription
             // 
@@ -119,7 +132,7 @@
             this.cbbexpencename.FormattingEnabled = true;
             this.cbbexpencename.Location = new System.Drawing.Point(97, 37);
             this.cbbexpencename.Name = "cbbexpencename";
-            this.cbbexpencename.Size = new System.Drawing.Size(281, 21);
+            this.cbbexpencename.Size = new System.Drawing.Size(226, 21);
             this.cbbexpencename.TabIndex = 5;
             // 
             // label4
@@ -138,13 +151,6 @@
             this.txtexpenceby.Size = new System.Drawing.Size(145, 20);
             this.txtexpenceby.TabIndex = 3;
             // 
-            // txtdate
-            // 
-            this.txtdate.Location = new System.Drawing.Point(233, 8);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.Size = new System.Drawing.Size(145, 20);
-            this.txtdate.TabIndex = 3;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -157,7 +163,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(179, 11);
+            this.label3.Location = new System.Drawing.Point(252, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 2;
@@ -372,6 +378,7 @@
             this.btnsave.Text = "Save";
             this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnadd
             // 
@@ -386,6 +393,14 @@
             this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnadd.UseVisualStyleBackColor = false;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(288, 6);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(90, 20);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
             // ExpencesRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,6 +412,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ExpencesRecord";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expense Record";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -414,7 +430,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtdate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtexpencid;
         private System.Windows.Forms.Label label2;
@@ -443,5 +458,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnexpencedescription;
         private System.Windows.Forms.Button btnid;
+        private System.Windows.Forms.LinkLabel lkladd;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

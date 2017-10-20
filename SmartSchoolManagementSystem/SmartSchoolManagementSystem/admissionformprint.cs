@@ -15,6 +15,7 @@ namespace SmartSchoolManagementSystem
     {
         smartschooldbEntities db = new smartschooldbEntities();
         int val;
+        string sess, Customadd;
         public admissionformprint()
         {
             InitializeComponent();
@@ -28,6 +29,26 @@ namespace SmartSchoolManagementSystem
                 List<Tblschoolsetting> schooldata = new List<Tblschoolsetting>();
                 schooldata = db.Tblschoolsettings.ToList();
 
+                var Combind = from c in db.Tblschoolsettings
+
+                                 select new
+                                 {
+                                     Address = "&Address& : " + c.FIRSTADDRESS+". Phone : "+c.CONTACTA+". Email : "+c.FIRSTEMAIL+". Website : "+c.WEBSITE
+
+                                 };
+                foreach (var GetsessionInfo in Combind)
+                {
+                    //String CompanyName = "Layer Solution Software Development Company LMT";
+                    Customadd = GetsessionInfo.Address;
+
+
+
+                }
+
+
+
+
+                var Acadmicsession= db.TblacadmicSessions.ToList();
                 Tbladmissionprint objcon = new Tbladmissionprint();
                 objcon.Name = "abc";
                 db.Tbladmissionprints.Add(objcon);
@@ -35,11 +56,29 @@ namespace SmartSchoolManagementSystem
                 int val = objcon.FID;
 
                 string val2 = val.ToString();
+                var GetSession = from c in db.TblacadmicSessions
 
-            ReportParameter[] parms = new ReportParameter[1];
+                                 select new
+                                 {
+                                     Session =c.AcadmicSession,
+
+                                 };
+                foreach (var GetsessionInfo in GetSession)
+                {
+                    //String CompanyName = "Layer Solution Software Development Company LMT";
+                     sess = GetsessionInfo.Session;
+                 
+
+
+                }
+
+
+                ReportParameter[] parms = new ReportParameter[3];
             parms[0] = new ReportParameter("FID", val2);
+                parms[1] = new ReportParameter("AcadmicSession", sess);
+                parms[2] = new ReportParameter("Customadd", Customadd);
 
-            this.reportViewer1.LocalReport.SetParameters(parms);
+                this.reportViewer1.LocalReport.SetParameters(parms);
                 ReportDataSource datasource = new ReportDataSource("SCHOOLINFO", schooldata);
                 reportViewer1.LocalReport.DataSources.Add(datasource);
                 this.reportViewer1.RefreshReport();
@@ -47,26 +86,6 @@ namespace SmartSchoolManagementSystem
             catch (Exception ex) { MessageBox.Show(ex.Message); }
 
 
-
-            //assign parameters to parameter array
-
-            //allPar[0] = a;
-
-            //reportViewer1.LocalReport.SetParameters(allPar); // set parameter array
-            //this.reportViewer1.RefreshReport();
-            //db.Tbladmissionprints .Last(0);
-            //reportViewer1.LocalReport.DataSources.Clear();
-            //ReportDataSource datasource = new ReportDataSource("ADMISSIONFORMID", Forprint);       
-            //reportViewer1.LocalReport.DataSources.Add(datasource);          
-            //this.reportViewer1.RefreshReport();
-            //try
-            //{
-            //    Tbladmissionprint objcon = new Tbladmissionprint();
-            //    objcon.Name = "abc";
-            //        db.Tbladmissionprints.Add(objcon);
-            //    db.SaveChanges();
-            //}
-            //catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)

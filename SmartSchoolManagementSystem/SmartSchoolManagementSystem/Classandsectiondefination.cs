@@ -14,68 +14,94 @@ namespace SmartSchoolManagementSystem
     {
         smartschooldbEntities db = new smartschooldbEntities();
         string dgv;
+        int dgva;
         public Classandsectiondefination()
         {
             InitializeComponent();
         }
         private void Getclass()
         {
-            var qaNames = (from a in db.Tblclasses
-                               //  from b in db.TblSections
-                           select new
-                           {
-                               a.ID,
-                               Classname = a.CLASSNAME,
+            try
+            {
+                var qaNames = (from a in db.Tblclasses
+                                   //  from b in db.TblSections
+                               select new
+                               {
+                                   a.ID,
+                                   Classname = a.CLASSNAME,
 
-                           });
-            cbbclass.DataSource = qaNames.ToList();
-            cbbclass.DisplayMember = "Classname";
-            cbbclass.ValueMember = "ID";
+                               });
+                cbbclass.DataSource = qaNames.ToList();
+                cbbclass.DisplayMember = "Classname";
+                cbbclass.ValueMember = "ID";
 
-            var Section = (from b in db.TblSections
-                               //  from b in db.TblSections
-                           select new
-                           {
-                               b.ID,
-                               Section = b.Section
-                           });
+                var Section = (from b in db.TblSections
+                                   //  from b in db.TblSections
+                               select new
+                               {
+                                   b.ID,
+                                   Section = b.Section
+                               });
 
-            cbbsection.DataSource = Section.ToList();
-            cbbsection.DisplayMember = "Section";
-            cbbsection.ValueMember = "ID";
+                cbbsection.DataSource = Section.ToList();
+                cbbsection.DisplayMember = "Section";
+                cbbsection.ValueMember = "ID";
 
-            var STaff = (from b in db.TblTeacherInformations
-                             //  from b in db.TblSections
-                         select new
-                         {
-                             b.ID,
-                             staff = b.TEACHERNAME
-                         });
+                var STaff = (from b in db.TblTeacherInformations
+                                 //  from b in db.TblSections
+                             select new
+                             {
+                                 b.ID,
+                                 staff = b.TEACHERNAME
+                             });
 
-            cbbteacher.DataSource = STaff.ToList();
-            cbbteacher.DisplayMember = "staff";
-            cbbteacher.ValueMember = "ID";
+                cbbteacher.DataSource = STaff.ToList();
+                cbbteacher.DisplayMember = "staff";
+                cbbteacher.ValueMember = "ID";
 
-            //var GetTeacher = (from c in db.TblTeacherInformations
-            //                   //  from b in db.TblSections
-            //               select new
-            //               {
+                //var GetTeacher = (from c in db.TblTeacherInformations
+                //                   //  from b in db.TblSections
+                //               select new
+                //               {
 
-            //               });
+                //               });
 
-            //comboBox2.DataSource = GetTeacher.ToList();
-            //comboBox2.DisplayMember = "Section";
-            //comboBox2.ValueMember = "ID";
+                //comboBox2.DataSource = GetTeacher.ToList();
+                //comboBox2.DisplayMember = "Section";
+                //comboBox2.ValueMember = "ID";
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
         }
         private void btnsave_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void getmapping()
+        {
+            try
+            {
+                var mapping = db.Tblclasssections.ToList();
+                dgvclass.DataSource = mapping.ToList();
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
+        }
+
+
+
         private void Classandsectiondefination_Load(object sender, EventArgs e)
         {
-            Getclass();
-            txtcreationdate.Text = System.DateTime.Now.ToString();
-            txtupdationby.Text = System.DateTime.Now.ToString();
+            try
+            {
+                Getclass();
+                getmapping();
+                txtcreationdate.Text = System.DateTime.Now.ToString();
+                txtupdationby.Text = System.DateTime.Now.ToString();
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -86,22 +112,26 @@ namespace SmartSchoolManagementSystem
         {
             try
             {
-                Tblclasssection objin = new Tblclasssection();
-                objin.Class = cbbclass.Text;
-                objin.Section = cbbsection.Text;
-                objin.Group = txtgroup.Text;
-                objin.Teacher = cbbteacher.Text;
-              //  objin.admissionfee = Convert.ToDecimal(txttuitionfee.Text);
-               // objin.Fee = Convert.ToDecimal(txtmfee.Text);
-               // objin.examfee = Convert.ToDecimal(txtexamfee.Text);
-                objin.Maxstudent = txtmaxstudent.Text;
-                objin.RoomNo = txtroom.Text;
-                objin.FloorId = txtfloor.Text;
-               // objin.ac = "2017-2018";
-              //  objin.CreatedBy = "ali";
-              //  objin.Createddate = Convert.ToDateTime(txtcreationdate.Text);
-                db.Tblclasssections.Add(objin);
-                db.SaveChanges();
+                var alreadyInDb = (from p in db.Tblclasssections where p.Class == cbbclass.Text && p.Section == cbbsection.Text && p.Teacher == cbbteacher.Text select p).Count() > 0;
+
+                if (alreadyInDb == false)
+                {
+                    Tblclasssection objin = new Tblclasssection();
+                    objin.Class = cbbclass.Text;
+                    objin.Section = cbbsection.Text;
+                    objin.Group = cbbgroup.Text;
+                    objin.Comments = cbbmedium.Text;
+                    objin.Teacher = cbbteacher.Text;
+
+                    objin.Maxstudent = txtmaxstudent.Text;
+                    objin.RoomNo = txtroom.Text;
+                    objin.FloorId = txtfloor.Text;
+
+                    db.Tblclasssections.Add(objin);
+                    db.SaveChanges();
+                }
+                else { MessageBox.Show("This Class Already exist"); }
+                getmapping();
             }
             catch (Exception e)
             { MessageBox.Show(e.Message); }
@@ -176,24 +206,25 @@ namespace SmartSchoolManagementSystem
                 if (row != null)
 
 
-                    dgv = row.Cells["SrNo"].Value.ToString();
-                int dgva = Convert.ToInt16(dgv);
+                    dgv = row.Cells["ID"].Value.ToString();
+                dgva = Convert.ToInt16(dgv);
                 var q = (from a in db.Tblclasssections
                          where a.ID == dgva
                          select a).SingleOrDefault();
                 cbbclass.Text = q.Class;
                 cbbsection.Text = q.Section;
-                txtgroup.Text = q.Group;
+                cbbgroup.Text = q.Group;
+                cbbmedium.Text = q.Comments;
                 cbbteacher.Text = q.Teacher;
-              //  txttuitionfee.Text = Convert.ToString(q.admissionfee);
-              //  txtmfee.Text = Convert.ToString(q.Fee);
-               // txtexamfee.Text = Convert.ToString(q.examfee);
+                //  txttuitionfee.Text = Convert.ToString(q.admissionfee);
+                //  txtmfee.Text = Convert.ToString(q.Fee);
+                // txtexamfee.Text = Convert.ToString(q.examfee);
                 txtmaxstudent.Text = q.Maxstudent;
                 txtroom.Text = q.RoomNo;
                 txtfloor.Text = q.FloorId;
-              //  q.Acadmic_Session = "2017-2018";
-               // txtcreatedby.Text = q.CreatedBy;
-              //  txtcreationdate.Text = Convert.ToString(q.Createddate);
+                //  q.Acadmic_Session = "2017-2018";
+                // txtcreatedby.Text = q.CreatedBy;
+                //  txtcreationdate.Text = Convert.ToString(q.Createddate);
             }
             else { }
         }
@@ -223,33 +254,36 @@ namespace SmartSchoolManagementSystem
             DataGridViewRow row = this.dgvclass.Rows[0];
             if (row != null)
 
-
-                dgv = row.Cells["SrNo"].Value.ToString();
-            int dgva = Convert.ToInt16(dgv);
-            Tblclasssection objin = db.Tblclasssections.Single(p => p.ID == dgva);
-            // decimal qty = Convert.ToDecimal(product.quentity);
-
-            if (objin != null)
             {
-                objin.Class = cbbclass.Text;
-                objin.Section = cbbsection.Text;
-                objin.Group = txtgroup.Text;
-                objin.Teacher = cbbteacher.Text;
-             //   objin.admissionfee = Convert.ToDecimal(txttuitionfee.Text);
-              //  objin.Fee = Convert.ToDecimal(txtmfee.Text);
-              //  objin.examfee = Convert.ToDecimal(txtexamfee.Text);
-                objin.Maxstudent = txtmaxstudent.Text;
-                objin.RoomNo = txtroom.Text;
-                objin.FloorId = txtfloor.Text;
-               // objin.Acadmic_Session = "0000";
-                //  objin.CreatedBy = "ali";
-                // objin.Createddate = Convert.ToDateTime(txtcreationdate.Text);
-              //  objin.Updatedby = txtupdatedby.Text;
-              //  objin.Updateddate = Convert.ToDateTime(txtupdationby.Text);
-                db.SaveChanges();
-                MessageBox.Show("Updated", "Attention");
+                //    dgv = row.Cells["ID"].Value.ToString();
+                //int dgva = Convert.ToInt16(dgv);
+                Tblclasssection objin = db.Tblclasssections.Single(p => p.ID == dgva);
+                // decimal qty = Convert.ToDecimal(product.quentity);
+
+                if (objin != null)
+                {
+                    objin.Class = cbbclass.Text;
+                    objin.Section = cbbsection.Text;
+                    objin.Group = cbbgroup.Text;
+                    objin.Comments = cbbmedium.Text;
+                    objin.Teacher = cbbteacher.Text;
+                    //   objin.admissionfee = Convert.ToDecimal(txttuitionfee.Text);
+                    //  objin.Fee = Convert.ToDecimal(txtmfee.Text);
+                    //  objin.examfee = Convert.ToDecimal(txtexamfee.Text);
+                    objin.Maxstudent = txtmaxstudent.Text;
+                    objin.RoomNo = txtroom.Text;
+                    objin.FloorId = txtfloor.Text;
+                    // objin.Acadmic_Session = "0000";
+                    //  objin.CreatedBy = "ali";
+                    // objin.Createddate = Convert.ToDateTime(txtcreationdate.Text);
+                    //  objin.Updatedby = txtupdatedby.Text;
+                    //  objin.Updateddate = Convert.ToDateTime(txtupdationby.Text);
+                    db.SaveChanges();
+                    MessageBox.Show("Updated", "Attention");
+                    getmapping();
+                }
+                else { }
             }
-            else { }
         }
     }
 }

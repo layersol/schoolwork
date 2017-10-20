@@ -175,13 +175,13 @@ namespace SmartSchoolManagementSystem
         {
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
-                if (item.Name == "addnewstudent") // check by form name if it's opened
+                if (item.Name == "admissionformprint") // check by form name if it's opened
                 {
                     item.BringToFront(); // bring it front
                     return; //exit
                 }
             }
-            addnewstudent frm = new addnewstudent();
+            admissionformprint frm = new admissionformprint();
             frm.MdiParent = this;
             frm.Show();
         }
@@ -1157,7 +1157,7 @@ namespace SmartSchoolManagementSystem
         {
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
-                if (item.Name == "ClassMaping") // check by form name if it's opene
+                if (item.Name == "Classandsectiondefination") // check by form name if it's opene
                 {
                     item.BringToFront(); // bring to front
                     return; //exit
@@ -1165,7 +1165,7 @@ namespace SmartSchoolManagementSystem
             }
             // if Myform is not opened
             // you know what it is
-            ClassMaping frm = new ClassMaping();
+            Classandsectiondefination frm = new Classandsectiondefination();
             frm.MdiParent = this;
             frm.Show();
         }
@@ -1208,7 +1208,7 @@ namespace SmartSchoolManagementSystem
         {
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
-                if (item.Name == "SessionSetting") // check by form name if it's opene
+                if (item.Name == "Add_New_Session") // check by form name if it's opene
                 {
                     item.BringToFront(); // bring to front
                     return; //exit
@@ -1216,7 +1216,7 @@ namespace SmartSchoolManagementSystem
             }
             // if Myform is not opened
             // you know what it is
-            SessionSetting frm = new SessionSetting();
+            Add_New_Session frm = new Add_New_Session();
             frm.MdiParent = this;
             frm.Show();
         }

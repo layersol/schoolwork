@@ -88,7 +88,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Admission Form For 2018,2019</Value>
+                        <Value>Admission Form For </Value>
                         <Style>
                           <FontWeight>Bold</FontWeight>
                         </Style>
@@ -101,7 +101,7 @@
                 <Top>1.03994in</Top>
                 <Left>2.46182in</Left>
                 <Height>0.25in</Height>
-                <Width>2.1875in</Width>
+                <Width>1.41663in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -850,7 +850,7 @@
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>Textbox30</rd:DefaultName>
-                            <Top>0.02332in</Top>
+                            <Top>0.03374in</Top>
                             <Left>0.03499in</Left>
                             <Height>0.15625in</Height>
                             <Width>0.92711in</Width>
@@ -878,7 +878,7 @@
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>Textbox30</rd:DefaultName>
-                            <Top>0.02332in</Top>
+                            <Top>0.03374in</Top>
                             <Left>4.79686in</Left>
                             <Height>0.15625in</Height>
                             <Width>0.50526in</Width>
@@ -896,7 +896,7 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Home Tel</Value>
+                                    <Value>Need Transports</Value>
                                     <Style>
                                       <FontSize>8pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -907,10 +907,10 @@
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>Textbox30</rd:DefaultName>
-                            <Top>0.02332in</Top>
+                            <Top>0.03374in</Top>
                             <Left>2.68404in</Left>
                             <Height>0.15625in</Height>
-                            <Width>0.57809in</Width>
+                            <Width>1.23809in</Width>
                             <ZIndex>2</ZIndex>
                             <Style>
                               <Border>
@@ -962,7 +962,7 @@
                               </Line>
                             </ReportItems>
                             <KeepTogether>true</KeepTogether>
-                            <Top>0.21347in</Top>
+                            <Top>0.22389in</Top>
                             <Height>0.21in</Height>
                             <Width>7.60959in</Width>
                             <ZIndex>3</ZIndex>
@@ -973,7 +973,7 @@
                             </Style>
                           </Rectangle>
                           <Line Name="Line8">
-                            <Top>0cm</Top>
+                            <Top>0.02646cm</Top>
                             <Left>2.58485cm</Left>
                             <Height>0.21in</Height>
                             <Width>0cm</Width>
@@ -985,7 +985,7 @@
                             </Style>
                           </Line>
                           <Line Name="Line17">
-                            <Top>0cm</Top>
+                            <Top>0.02646cm</Top>
                             <Left>6.67634cm</Left>
                             <Height>0.21in</Height>
                             <Width>0cm</Width>
@@ -997,8 +997,8 @@
                             </Style>
                           </Line>
                           <Line Name="Line18">
-                            <Top>0.00881cm</Top>
-                            <Left>8.46219cm</Left>
+                            <Top>0cm</Top>
+                            <Left>10.47735cm</Left>
                             <Height>0.21in</Height>
                             <Width>0cm</Width>
                             <ZIndex>6</ZIndex>
@@ -1009,7 +1009,7 @@
                             </Style>
                           </Line>
                           <Line Name="Line19">
-                            <Top>0cm</Top>
+                            <Top>0.02646cm</Top>
                             <Left>12.07819cm</Left>
                             <Height>0.21in</Height>
                             <Width>0cm</Width>
@@ -1021,7 +1021,7 @@
                             </Style>
                           </Line>
                           <Line Name="Line20">
-                            <Top>0cm</Top>
+                            <Top>0.02646cm</Top>
                             <Left>13.57322cm</Left>
                             <Height>0.21in</Height>
                             <Width>0cm</Width>
@@ -1032,10 +1032,23 @@
                               </Border>
                             </Style>
                           </Line>
+                          <Rectangle Name="Rectangle31">
+                            <KeepTogether>true</KeepTogether>
+                            <Top>0.02611in</Top>
+                            <Left>4.33127in</Left>
+                            <Height>0.17in</Height>
+                            <Width>0.16867in</Width>
+                            <ZIndex>9</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Rectangle>
                         </ReportItems>
                         <KeepTogether>true</KeepTogether>
-                        <Top>0.20463in</Top>
-                        <Height>0.42347in</Height>
+                        <Top>0.19421in</Top>
+                        <Height>0.43389in</Height>
                         <Width>7.60959in</Width>
                         <ZIndex>3</ZIndex>
                         <Style>
@@ -1059,7 +1072,7 @@
                       <Line Name="Line12">
                         <Top>0.01453cm</Top>
                         <Left>8.86789cm</Left>
-                        <Height>0.21in</Height>
+                        <Height>0.18403in</Height>
                         <Width>0cm</Width>
                         <ZIndex>5</ZIndex>
                         <Style>
@@ -1071,7 +1084,7 @@
                       <Line Name="Line13">
                         <Top>0.00484cm</Top>
                         <Left>10.96009cm</Left>
-                        <Height>0.21in</Height>
+                        <Height>0.18784in</Height>
                         <Width>0cm</Width>
                         <ZIndex>6</ZIndex>
                         <Style>
@@ -1083,7 +1096,7 @@
                       <Line Name="Line14">
                         <Top>0cm</Top>
                         <Left>14.91434cm</Left>
-                        <Height>0.21in</Height>
+                        <Height>0.18975in</Height>
                         <Width>0cm</Width>
                         <ZIndex>7</ZIndex>
                         <Style>
@@ -2482,17 +2495,15 @@
               </Line>
               <Rectangle Name="Rectangle28">
                 <ReportItems>
-                  <Textbox Name="Textbox136">
+                  <Textbox Name="Customadd">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Model Science College and School .Mula pur Road Ellahabad .Girls Campus Ghala Mandi Road Ellahabad (Kasur).Ph:00000000000. Email:abcdsgf@gmail.com</Value>
+                            <Value>=Parameters!Customadd.Value</Value>
                             <Style>
-                              <FontSize>7pt</FontSize>
-                              <FontWeight>Bold</FontWeight>
                               <Color>White</Color>
                             </Style>
                           </TextRun>
@@ -2500,22 +2511,26 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox30</rd:DefaultName>
-                    <Top>0.11053in</Top>
-                    <Left>0.0577in</Left>
-                    <Height>0.15908in</Height>
-                    <Width>7.63759in</Width>
+                    <rd:DefaultName>Customadd</rd:DefaultName>
+                    <Top>0.07672cm</Top>
+                    <Left>0cm</Left>
+                    <Height>0.6cm</Height>
+                    <Width>19.78933cm</Width>
                     <Style>
                       <Border>
                         <Style>None</Style>
                       </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>26.69646cm</Top>
+                <Top>26.96104cm</Top>
                 <Left>0cm</Left>
-                <Height>0.9687cm</Height>
+                <Height>0.78255cm</Height>
                 <Width>19.78933cm</Width>
                 <ZIndex>21</ZIndex>
                 <Style>
@@ -3004,55 +3019,13 @@
                   </Border>
                 </Style>
               </Rectangle>
-              <Textbox Name="Textbox135">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Need Transports</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>7.69809in</Top>
-                <Left>5.85133in</Left>
-                <Height>0.15625in</Height>
-                <Width>1.11574in</Width>
-                <ZIndex>24</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-              <Rectangle Name="Rectangle31">
-                <KeepTogether>true</KeepTogether>
-                <Top>7.69809in</Top>
-                <Left>7.21479in</Left>
-                <Height>0.17in</Height>
-                <Width>0.16867in</Width>
-                <ZIndex>25</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Rectangle>
               <Rectangle Name="Rectangle3">
                 <KeepTogether>true</KeepTogether>
                 <Top>3.46604cm</Top>
                 <Left>0.29548cm</Left>
                 <Height>0.18943cm</Height>
                 <Width>19.25724cm</Width>
-                <ZIndex>26</ZIndex>
+                <ZIndex>24</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3069,7 +3042,7 @@
                 <Left>0.34846cm</Left>
                 <Height>2.99862cm</Height>
                 <Width>2.96771cm</Width>
-                <ZIndex>27</ZIndex>
+                <ZIndex>25</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3085,7 +3058,7 @@
                       <TextRun>
                         <Value>=First(Fields!SchoolName.Value, "SCHOOLINFO")</Value>
                         <Style>
-                          <FontSize>16pt</FontSize>
+                          <FontSize>15pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -3098,39 +3071,7 @@
                 <Left>3.93102cm</Left>
                 <Height>0.6cm</Height>
                 <Width>12.18368cm</Width>
-                <ZIndex>28</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-              <Textbox Name="FIRSTADDRESS">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>=First(Fields!FIRSTADDRESS.Value, "SCHOOLINFO")</Value>
-                        <Style>
-                          <FontStyle>Italic</FontStyle>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>FIRSTADDRESS</rd:DefaultName>
-                <Top>0.99633cm</Top>
-                <Left>3.93102cm</Left>
-                <Height>0.6cm</Height>
-                <Width>12.18368cm</Width>
-                <ZIndex>29</ZIndex>
+                <ZIndex>26</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3146,35 +3087,33 @@
                 <Left>3.93102cm</Left>
                 <Height>0cm</Height>
                 <Width>12.18368cm</Width>
-                <ZIndex>30</ZIndex>
+                <ZIndex>27</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
                   </Border>
                 </Style>
               </Line>
-              <Textbox Name="CONTACTA">
+              <Textbox Name="AcadmicSession">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
                 <Paragraphs>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>=First(Fields!CONTACTA.Value, "SCHOOLINFO")</Value>
-                        <Style>
-                          <FontStyle>Italic</FontStyle>
-                        </Style>
+                        <Value>=Parameters!AcadmicSession.Value</Value>
+                        <Style />
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
-                <rd:DefaultName>CONTACTA</rd:DefaultName>
-                <Top>1.70216cm</Top>
-                <Left>3.93102cm</Left>
+                <rd:DefaultName>AcadmicSession</rd:DefaultName>
+                <Top>2.64145cm</Top>
+                <Left>9.95709cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
-                <ZIndex>31</ZIndex>
+                <ZIndex>28</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3185,28 +3124,26 @@
                   <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
-              <Textbox Name="FIRSTEMAIL">
+              <Textbox Name="Customadd1">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
                 <Paragraphs>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>=First(Fields!FIRSTEMAIL.Value, "SCHOOLINFO")</Value>
-                        <Style>
-                          <FontStyle>Italic</FontStyle>
-                        </Style>
+                        <Value>=Parameters!Customadd.Value</Value>
+                        <Style />
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
-                <rd:DefaultName>FIRSTEMAIL</rd:DefaultName>
-                <Top>1.70216cm</Top>
-                <Left>6.57213cm</Left>
-                <Height>0.6cm</Height>
-                <Width>2.5cm</Width>
-                <ZIndex>32</ZIndex>
+                <rd:DefaultName>Customadd1</rd:DefaultName>
+                <Top>0.99633cm</Top>
+                <Left>3.93102cm</Left>
+                <Height>1.407cm</Height>
+                <Width>12.18368cm</Width>
+                <ZIndex>29</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3219,10 +3156,10 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>0.28in</Top>
-            <Left>0.23833in</Left>
+            <Top>0.08313in</Top>
+            <Left>0.09247in</Left>
             <Height>11.078in</Height>
-            <Width>7.80184in</Width>
+            <Width>7.79107in</Width>
             <Style>
               <Border>
                 <Style>Dotted</Style>
@@ -3240,7 +3177,7 @@
           </BackgroundImage>
         </Style>
       </Body>
-      <Width>20.66016cm</Width>
+      <Width>20.0242cm</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -3265,6 +3202,14 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="AcadmicSession">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Customadd">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -3275,6 +3220,16 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>FID</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>AcadmicSession</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Customadd</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

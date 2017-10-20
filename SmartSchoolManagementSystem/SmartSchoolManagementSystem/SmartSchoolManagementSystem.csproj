@@ -95,11 +95,18 @@
     <Compile Include="AboutSSMS.Designer.cs">
       <DependentUpon>AboutSSMS.cs</DependentUpon>
     </Compile>
+    <Compile Include="AcadmicSession.cs" />
     <Compile Include="Addbussstops.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Addbussstops.Designer.cs">
       <DependentUpon>Addbussstops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddExpenseName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddExpenseName.Designer.cs">
+      <DependentUpon>AddExpenseName.cs</DependentUpon>
     </Compile>
     <Compile Include="addnewstudent.cs">
       <SubType>Form</SubType>
@@ -593,12 +600,6 @@
     <Compile Include="SendResult.Designer.cs">
       <DependentUpon>SendResult.cs</DependentUpon>
     </Compile>
-    <Compile Include="SessionSetting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SessionSetting.Designer.cs">
-      <DependentUpon>SessionSetting.cs</DependentUpon>
-    </Compile>
     <Compile Include="SMSDateSheet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -826,6 +827,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Addbussstops.resx">
       <DependentUpon>Addbussstops.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddExpenseName.resx">
+      <DependentUpon>AddExpenseName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addnewstudent.resx">
       <DependentUpon>addnewstudent.cs</DependentUpon>
@@ -1060,9 +1064,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SendResult.resx">
       <DependentUpon>SendResult.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SessionSetting.resx">
-      <DependentUpon>SessionSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SMSDateSheet.resx">
       <DependentUpon>SMSDateSheet.cs</DependentUpon>

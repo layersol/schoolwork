@@ -594,7 +594,9 @@
     <Compile Include="SendFeedback.Designer.cs">
       <DependentUpon>SendFeedback.cs</DependentUpon>
     </Compile>
-    <Compile Include="SendResult.cs" />
+    <Compile Include="SendResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SendResult.Designer.cs">
       <DependentUpon>SendResult.cs</DependentUpon>
     </Compile>
@@ -1319,6 +1321,7 @@
     <None Include="Resources\exmination.png" />
     <None Include="Resources\resultcards.png" />
     <None Include="Resources\sendresult.png" />
+    <None Include="Resources\sendresult1.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

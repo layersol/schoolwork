@@ -752,35 +752,35 @@
             // addClassesToolStripMenuItem
             // 
             this.addClassesToolStripMenuItem.Name = "addClassesToolStripMenuItem";
-            this.addClassesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addClassesToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.addClassesToolStripMenuItem.Text = "Add Class";
             this.addClassesToolStripMenuItem.Click += new System.EventHandler(this.addClassesToolStripMenuItem_Click);
             // 
             // addSectionsToolStripMenuItem
             // 
             this.addSectionsToolStripMenuItem.Name = "addSectionsToolStripMenuItem";
-            this.addSectionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addSectionsToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.addSectionsToolStripMenuItem.Text = "Add Sections";
             this.addSectionsToolStripMenuItem.Click += new System.EventHandler(this.addSectionsToolStripMenuItem_Click);
             // 
             // classMapingToolStripMenuItem1
             // 
             this.classMapingToolStripMenuItem1.Name = "classMapingToolStripMenuItem1";
-            this.classMapingToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.classMapingToolStripMenuItem1.Text = "Class Maping";
+            this.classMapingToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
+            this.classMapingToolStripMenuItem1.Text = "Class & Teacher Maping";
             this.classMapingToolStripMenuItem1.Click += new System.EventHandler(this.classMapingToolStripMenuItem1_Click);
             // 
             // classFeeDefinationToolStripMenuItem
             // 
             this.classFeeDefinationToolStripMenuItem.Name = "classFeeDefinationToolStripMenuItem";
-            this.classFeeDefinationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.classFeeDefinationToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.classFeeDefinationToolStripMenuItem.Text = "Class Fee Defination";
             this.classFeeDefinationToolStripMenuItem.Click += new System.EventHandler(this.classFeeDefinationToolStripMenuItem_Click);
             // 
             // subjectDefinationToolStripMenuItem
             // 
             this.subjectDefinationToolStripMenuItem.Name = "subjectDefinationToolStripMenuItem";
-            this.subjectDefinationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.subjectDefinationToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.subjectDefinationToolStripMenuItem.Text = "Subject Defination";
             this.subjectDefinationToolStripMenuItem.Click += new System.EventHandler(this.subjectDefinationToolStripMenuItem_Click);
             // 

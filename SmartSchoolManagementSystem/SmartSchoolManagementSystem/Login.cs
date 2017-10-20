@@ -25,19 +25,34 @@ namespace SmartSchoolManagementSystem
         public static string SetValueForText = "";
         private void btnlogin_Click(object sender, EventArgs e)
         {
+
+
+            MDIParent objopen = new MDIParent();
+            this.Hide();
+            objopen.Show();
+           // usersecurity();
+
+
+
+
+        }
+
+
+        private void usersecurity()
+        {
             try
             {
                 var q = (from a in db.TBLUSERs
-                      //   where a.LastName == txtuser.Text
+                             //   where a.LastName == txtuser.Text
                          select a).SingleOrDefault();
                 string password = q.Password;
                 string user = q.LastName;
 
-                if (user==txtuser.Text)  //if record exis in db , it will return true, otherwise it will return false  
+                if (user == txtuser.Text)  //if record exis in db , it will return true, otherwise it will return false  
                 {
                     if (Cryptography.Decrypt(password).Equals(txtPassword.Text))
                     {
-                       // MessageBox.Show("Login Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // MessageBox.Show("Login Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         //  Form1 frm1 = new Form1();
                         //   frm1.ShowDialog();
 
@@ -60,13 +75,7 @@ namespace SmartSchoolManagementSystem
                     MessageBox.Show("Please enter the valid credentials", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch(Exception ex) { MessageBox.Show(ex.Message); }
-
-
-
-           
-            
-
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
         private bool IsvalidUser(string userName)
         {

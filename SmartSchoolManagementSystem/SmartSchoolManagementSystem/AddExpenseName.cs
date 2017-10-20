@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace SmartSchoolManagementSystem
 {
-    public partial class SessionSetting : Form
+    public partial class AddExpenseName : Form
     {
-        public SessionSetting()
+        public AddExpenseName()
         {
             InitializeComponent();
+           // Form = this;
+        }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+           
+
+
         }
     }
 }

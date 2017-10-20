@@ -1304,6 +1304,9 @@
     <None Include="Resources\img.png" />
     <None Include="Resources\imageicon1.png" />
     <None Include="Resources\roll.png" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\stfid.png" />
+    <None Include="Resources\imageicon121.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

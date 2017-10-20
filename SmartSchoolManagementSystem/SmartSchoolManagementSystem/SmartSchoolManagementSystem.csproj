@@ -95,6 +95,7 @@
     <Compile Include="AboutSSMS.Designer.cs">
       <DependentUpon>AboutSSMS.cs</DependentUpon>
     </Compile>
+    <Compile Include="AcadmicSession.cs" />
     <Compile Include="Addbussstops.cs">
       <SubType>Form</SubType>
     </Compile>

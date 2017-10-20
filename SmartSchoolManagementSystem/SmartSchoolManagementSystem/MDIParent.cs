@@ -175,13 +175,13 @@ namespace SmartSchoolManagementSystem
         {
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
-                if (item.Name == "addnewstudent") // check by form name if it's opened
+                if (item.Name == "admissionformprint") // check by form name if it's opened
                 {
                     item.BringToFront(); // bring it front
                     return; //exit
                 }
             }
-            addnewstudent frm = new addnewstudent();
+            admissionformprint frm = new admissionformprint();
             frm.MdiParent = this;
             frm.Show();
         }

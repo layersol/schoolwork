@@ -42,5 +42,7 @@ namespace SmartSchoolManagementSystem
         public virtual DbSet<UserDeatil> UserDeatils { get; set; }
         public virtual DbSet<Tblbusstop> Tblbusstops { get; set; }
         public virtual DbSet<TBLTRANSMASTER> TBLTRANSMASTERs { get; set; }
+        public virtual DbSet<TBLBUSSESMAPPING> TBLBUSSESMAPPINGs { get; set; }
+        public virtual DbSet<tblexpensename> tblexpensenames { get; set; }
     }
 }

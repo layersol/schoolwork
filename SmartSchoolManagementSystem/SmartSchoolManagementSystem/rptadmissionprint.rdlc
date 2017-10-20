@@ -2504,6 +2504,7 @@
                           <TextRun>
                             <Value>=Parameters!Customadd.Value</Value>
                             <Style>
+                              <FontSize>8pt</FontSize>
                               <Color>White</Color>
                             </Style>
                           </TextRun>

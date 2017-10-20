@@ -595,6 +595,88 @@ namespace SmartSchoolManagementSystem
             }
         }
 
+         private void getcity()
+        {
+             try {
+                var GetCity = (from a in db.Tblbusstops
+                                    //where a.Class == cbbclass.SelectedItem.ToString()
+                                select new { DID = a.DID, Names = a.BusStop }).ToList();
+                
+                cbbcity.DisplayMember = "Names";
+                cbbcity.ValueMember = "DID";
+                cbbcity.DataSource = GetCity;
+                //cbbcity.Text = "Select City";
+                //var Getgroup = (from a in db.Tblclasssections
+                //                    //where a.Class == cbbclass.SelectedItem.ToString()
+                //                select new { a.ID, Names = a.Group, }).ToList();
+
+                //cbbgroup.DataSource = Getgroup.ToList();
+                //cbbgroup.DisplayMember = "Names";
+                //cbbgroup.ValueMember = "ID";
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
+
+}
+        
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == true)
+            {
+                getcity();
+                
+            }
+            else { }
+        }
+
+        private void cbbcity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            txtdestination.Text = cbbcity.SelectedValue.ToString();
+
+            //try
+            //{
+            //    int val = Convert.ToInt16(cbbcity.SelectedValue);
+            //     txtdestination.Text = val.ToString();
+            //    //var getbus = from c in db.TBLBUSSESMAPPINGs
+            //    //             join a in db.TbladdBuses on c.BUSID equals a.BusID
+            //    //             where c.BUSSTOP == val
+            //    //             select new
+            //    //             {
+            //    //                 a.BussName
+            //    //             };
+            //    //foreach (var Sbuss in getbus)
+            //    //{
+            //    //    txtdestination.Text = Sbuss.BussName;
+            //    //}
+            //}
+            //catch { }
+        }
+
+        private void cbbcity_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                //int val = Convert.ToInt16(cbbcity.Text);
+                //txtdestination.Text = val.ToString();
+
+
+                txtdestination.Text =Convert.ToString(cbbcity.SelectedValue);
+                //var getbus = from c in db.TBLBUSSESMAPPINGs
+                //             join a in db.TbladdBuses on c.BUSID equals a.BusID
+                //             where c.BUSSTOP == val
+                //             select new
+                //             {
+                //                 a.BussName
+                //             };
+                //foreach (var Sbuss in getbus)
+                //{
+                //    txtdestination.Text = Sbuss.BussName;
+                //}
+            }
+            catch { }
+        }
+
         private void dvgstudent_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.RowIndex >= 0)

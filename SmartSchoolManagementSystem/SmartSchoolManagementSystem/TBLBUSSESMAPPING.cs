@@ -12,14 +12,12 @@ namespace SmartSchoolManagementSystem
     using System;
     using System.Collections.Generic;
     
-    public partial class TbladdBus
+    public partial class TBLBUSSESMAPPING
     {
-        public int BusID { get; set; }
-        public string Driver { get; set; }
-        public string Busreg { get; set; }
-        public string Model { get; set; }
-        public string Vehicletype { get; set; }
-        public string Seatcapacity { get; set; }
-        public string BussName { get; set; }
+        public int ID { get; set; }
+        public Nullable<int> BUSID { get; set; }
+        public Nullable<int> BUSDESTINATION { get; set; }
+        public Nullable<int> BUSSTOP { get; set; }
+        public string OTHER { get; set; }
     }
 }

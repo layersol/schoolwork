@@ -42,7 +42,6 @@
             this.btnview = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgdview = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -186,35 +185,23 @@
             this.panel3.Controls.Add(this.dgdview);
             this.panel3.Location = new System.Drawing.Point(316, 55);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(641, 255);
+            this.panel3.Size = new System.Drawing.Size(956, 343);
             this.panel3.TabIndex = 3;
             // 
             // dgdview
             // 
             this.dgdview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgdview.Location = new System.Drawing.Point(3, 2);
+            this.dgdview.Location = new System.Drawing.Point(3, 3);
             this.dgdview.Name = "dgdview";
-            this.dgdview.Size = new System.Drawing.Size(633, 248);
+            this.dgdview.Size = new System.Drawing.Size(948, 335);
             this.dgdview.TabIndex = 0;
             this.dgdview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel4.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.enrolled;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(4, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(953, 47);
-            this.panel4.TabIndex = 4;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // ViewEnrolledStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 318);
-            this.Controls.Add(this.panel4);
+            this.ClientSize = new System.Drawing.Size(1272, 501);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
@@ -249,6 +236,5 @@
         private System.Windows.Forms.Button btnview;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgdview;
-        private System.Windows.Forms.Panel panel4;
     }
 }

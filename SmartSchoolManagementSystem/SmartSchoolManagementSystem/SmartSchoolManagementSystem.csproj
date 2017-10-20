@@ -1308,6 +1308,11 @@
     <None Include="Resources\bg.jpg" />
     <None Include="Resources\stfid.png" />
     <None Include="Resources\imageicon121.png" />
+    <None Include="Resources\feecst.png" />
+    <None Include="Resources\prtstid.png" />
+    <None Include="Resources\bgsoftware.jpg" />
+    <None Include="Resources\smsd.png" />
+    <None Include="Resources\exmination.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

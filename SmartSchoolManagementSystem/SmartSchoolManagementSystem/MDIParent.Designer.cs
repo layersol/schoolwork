@@ -1129,6 +1129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.bgsoftware;
             this.ClientSize = new System.Drawing.Size(1137, 636);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);

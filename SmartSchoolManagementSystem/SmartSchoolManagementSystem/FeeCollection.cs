@@ -16,5 +16,25 @@ namespace SmartSchoolManagementSystem
         {
             InitializeComponent();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FeeCollection_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblshow_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

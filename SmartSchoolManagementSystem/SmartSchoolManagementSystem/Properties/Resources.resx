@@ -184,6 +184,9 @@
   <data name="accounting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\accounting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="resultcards" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resultcards.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="prtstid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prtstid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -295,6 +298,9 @@
   <data name="add18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add181.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exmination" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exmination.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="myhumberyello" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\myhumberyello.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -337,7 +343,7 @@
   <data name="benner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\benner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exmination" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exmination.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sendresult" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sendresult.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

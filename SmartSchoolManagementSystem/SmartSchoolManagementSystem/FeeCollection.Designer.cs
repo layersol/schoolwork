@@ -183,7 +183,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "FeeCollection";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fee Collection";
             this.Load += new System.EventHandler(this.FeeCollection_Load);
             this.panel2.ResumeLayout(false);

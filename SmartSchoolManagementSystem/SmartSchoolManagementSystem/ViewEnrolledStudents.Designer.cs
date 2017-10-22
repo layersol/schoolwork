@@ -38,9 +38,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbclass = new System.Windows.Forms.RadioButton();
             this.rdball = new System.Windows.Forms.RadioButton();
-            this.chkaddress = new System.Windows.Forms.CheckBox();
-            this.chkphone = new System.Windows.Forms.CheckBox();
-            this.chkdateofbirth = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btncancel = new System.Windows.Forms.Button();
             this.btnview = new System.Windows.Forms.Button();
@@ -65,7 +62,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(4, 108);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 161);
+            this.panel1.Size = new System.Drawing.Size(294, 242);
             this.panel1.TabIndex = 0;
             // 
             // txtsession
@@ -120,7 +117,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(4, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
+            this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Class";
             // 
@@ -162,46 +159,13 @@
             this.rdball.UseVisualStyleBackColor = true;
             this.rdball.CheckedChanged += new System.EventHandler(this.rdball_CheckedChanged);
             // 
-            // chkaddress
-            // 
-            this.chkaddress.AutoSize = true;
-            this.chkaddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkaddress.Location = new System.Drawing.Point(208, 42);
-            this.chkaddress.Name = "chkaddress";
-            this.chkaddress.Size = new System.Drawing.Size(79, 21);
-            this.chkaddress.TabIndex = 0;
-            this.chkaddress.Text = "Address";
-            this.chkaddress.UseVisualStyleBackColor = true;
-            // 
-            // chkphone
-            // 
-            this.chkphone.AutoSize = true;
-            this.chkphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkphone.Location = new System.Drawing.Point(127, 42);
-            this.chkphone.Name = "chkphone";
-            this.chkphone.Size = new System.Drawing.Size(68, 21);
-            this.chkphone.TabIndex = 0;
-            this.chkphone.Text = "Phone";
-            this.chkphone.UseVisualStyleBackColor = true;
-            // 
-            // chkdateofbirth
-            // 
-            this.chkdateofbirth.AutoSize = true;
-            this.chkdateofbirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkdateofbirth.Location = new System.Drawing.Point(4, 42);
-            this.chkdateofbirth.Name = "chkdateofbirth";
-            this.chkdateofbirth.Size = new System.Drawing.Size(106, 21);
-            this.chkdateofbirth.TabIndex = 0;
-            this.chkdateofbirth.Text = "Date of Birth";
-            this.chkdateofbirth.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btncancel);
             this.panel2.Controls.Add(this.btnview);
-            this.panel2.Location = new System.Drawing.Point(540, 404);
+            this.panel2.Location = new System.Drawing.Point(4, 356);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(294, 42);
             this.panel2.TabIndex = 2;
@@ -254,10 +218,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1272, 501);
-            this.Controls.Add(this.chkaddress);
-            this.Controls.Add(this.chkphone);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.chkdateofbirth);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
@@ -273,7 +234,6 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgdview)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -285,9 +245,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox chkaddress;
-        private System.Windows.Forms.CheckBox chkphone;
-        private System.Windows.Forms.CheckBox chkdateofbirth;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Button btnview;

@@ -1442,6 +1442,23 @@ namespace SmartSchoolManagementSystem
             frm.Show();
         }
 
+        private void studentAccountDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "StudentAccount") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            StudentAccount frm = new StudentAccount();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
         private void MDIParent_Load(object sender, EventArgs e)
         {
 

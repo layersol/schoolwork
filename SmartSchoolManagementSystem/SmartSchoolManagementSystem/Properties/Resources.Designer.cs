@@ -633,6 +633,16 @@ namespace SmartSchoolManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ponesettings {
+            get {
+                object obj = ResourceManager.GetObject("ponesettings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pre {
             get {
                 object obj = ResourceManager.GetObject("pre", resourceCulture);
@@ -836,6 +846,16 @@ namespace SmartSchoolManagementSystem.Properties {
         internal static System.Drawing.Bitmap stfid {
             get {
                 object obj = ResourceManager.GetObject("stfid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap studentaccountdetails {
+            get {
+                object obj = ResourceManager.GetObject("studentaccountdetails", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

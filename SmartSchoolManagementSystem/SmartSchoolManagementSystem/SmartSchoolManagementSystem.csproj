@@ -1335,6 +1335,8 @@
     <None Include="Resources\teachersalary.png" />
     <None Include="Resources\bgsoftware1.jpg" />
     <None Include="Resources\studentfund.png" />
+    <None Include="Resources\studentaccountdetails.png" />
+    <None Include="Resources\ponesettings.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

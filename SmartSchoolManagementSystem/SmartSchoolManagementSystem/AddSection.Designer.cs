@@ -46,6 +46,7 @@
             this.txtsection = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVclass)).BeginInit();
@@ -59,7 +60,7 @@
             this.panel1.Controls.Add(this.btnedit);
             this.panel1.Controls.Add(this.btnupdate);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(7, 217);
+            this.panel1.Location = new System.Drawing.Point(7, 268);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(443, 45);
             this.panel1.TabIndex = 11;
@@ -121,6 +122,7 @@
             this.button1.Text = "Close";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -193,7 +195,7 @@
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Location = new System.Drawing.Point(7, 77);
+            this.groupBox2.Location = new System.Drawing.Point(7, 128);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(240, 134);
             this.groupBox2.TabIndex = 10;
@@ -210,7 +212,7 @@
             // DGVclass
             // 
             this.DGVclass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVclass.Location = new System.Drawing.Point(253, 7);
+            this.DGVclass.Location = new System.Drawing.Point(253, 58);
             this.DGVclass.Name = "DGVclass";
             this.DGVclass.Size = new System.Drawing.Size(197, 204);
             this.DGVclass.TabIndex = 9;
@@ -238,17 +240,27 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.txtsection);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(7, 7);
+            this.groupBox1.Location = new System.Drawing.Point(7, 58);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(240, 45);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.addsection;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(7, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(443, 50);
+            this.panel2.TabIndex = 12;
+            // 
             // AddSection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 271);
+            this.ClientSize = new System.Drawing.Size(455, 318);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.DGVclass);
@@ -288,5 +300,6 @@
         private System.Windows.Forms.TextBox txtsection;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

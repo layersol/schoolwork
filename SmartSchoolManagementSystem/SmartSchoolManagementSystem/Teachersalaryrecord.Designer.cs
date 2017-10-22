@@ -29,63 +29,49 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtsr = new System.Windows.Forms.TextBox();
-            this.txtdate = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtname = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtfname = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtsalarymonth = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtsalaryamount = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtpaid = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.txtupdatedby = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtcreatedby = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.teacherDataGridView = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtpaid = new System.Windows.Forms.TextBox();
+            this.txtsalaryamount = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtsalarymonth = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtfname = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtdate = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtsr = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnclose = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
-            this.teacherDataGridView = new System.Windows.Forms.DataGridView();
-            this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teacherDataGridView)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.teachersalary;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, -3);
+            this.panel1.Location = new System.Drawing.Point(2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(609, 74);
+            this.panel1.Size = new System.Drawing.Size(609, 50);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(148, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Teacher Salary Record";
             // 
             // groupBox1
             // 
@@ -111,148 +97,12 @@
             this.groupBox1.Controls.Add(this.txtsr);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(2, 78);
+            this.groupBox1.Location = new System.Drawing.Point(2, 54);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(609, 309);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Teacher Information";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Sr No.";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // txtsr
-            // 
-            this.txtsr.Location = new System.Drawing.Point(106, 20);
-            this.txtsr.Name = "txtsr";
-            this.txtsr.Size = new System.Drawing.Size(100, 23);
-            this.txtsr.TabIndex = 1;
-            // 
-            // txtdate
-            // 
-            this.txtdate.Location = new System.Drawing.Point(407, 20);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.Size = new System.Drawing.Size(100, 23);
-            this.txtdate.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(357, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Date";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(514, 19);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(74, 23);
-            this.dateTimePicker1.TabIndex = 3;
-            // 
-            // txtname
-            // 
-            this.txtname.Location = new System.Drawing.Point(106, 66);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(243, 23);
-            this.txtname.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 69);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Name";
-            // 
-            // txtfname
-            // 
-            this.txtfname.Location = new System.Drawing.Point(106, 92);
-            this.txtfname.Name = "txtfname";
-            this.txtfname.Size = new System.Drawing.Size(243, 23);
-            this.txtfname.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Father\'s Name";
-            // 
-            // txtsalarymonth
-            // 
-            this.txtsalarymonth.Location = new System.Drawing.Point(106, 118);
-            this.txtsalarymonth.Name = "txtsalarymonth";
-            this.txtsalarymonth.Size = new System.Drawing.Size(243, 23);
-            this.txtsalarymonth.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 121);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Salary Month";
-            // 
-            // txtsalaryamount
-            // 
-            this.txtsalaryamount.Location = new System.Drawing.Point(106, 144);
-            this.txtsalaryamount.Name = "txtsalaryamount";
-            this.txtsalaryamount.Size = new System.Drawing.Size(88, 23);
-            this.txtsalaryamount.TabIndex = 7;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 147);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 13);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Salary Amount";
-            // 
-            // txtpaid
-            // 
-            this.txtpaid.Location = new System.Drawing.Point(261, 144);
-            this.txtpaid.Name = "txtpaid";
-            this.txtpaid.Size = new System.Drawing.Size(88, 23);
-            this.txtpaid.TabIndex = 8;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(212, 149);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 13);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Paid";
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.teacherDataGridView);
-            this.panel2.Location = new System.Drawing.Point(401, 45);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 251);
-            this.panel2.TabIndex = 14;
             // 
             // txtupdatedby
             // 
@@ -265,10 +115,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(7, 279);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 13);
+            this.label9.Size = new System.Drawing.Size(82, 17);
             this.label9.TabIndex = 17;
             this.label9.Text = "Updated By";
             // 
@@ -283,12 +133,156 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(7, 253);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 13);
+            this.label10.Size = new System.Drawing.Size(80, 17);
             this.label10.TabIndex = 15;
             this.label10.Text = "Created BY";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.teacherDataGridView);
+            this.panel2.Location = new System.Drawing.Point(401, 45);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 251);
+            this.panel2.TabIndex = 14;
+            // 
+            // teacherDataGridView
+            // 
+            this.teacherDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.teacherDataGridView.Location = new System.Drawing.Point(3, 4);
+            this.teacherDataGridView.Name = "teacherDataGridView";
+            this.teacherDataGridView.Size = new System.Drawing.Size(192, 242);
+            this.teacherDataGridView.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(212, 149);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(36, 17);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Paid";
+            // 
+            // txtpaid
+            // 
+            this.txtpaid.Location = new System.Drawing.Point(261, 144);
+            this.txtpaid.Name = "txtpaid";
+            this.txtpaid.Size = new System.Drawing.Size(88, 23);
+            this.txtpaid.TabIndex = 8;
+            // 
+            // txtsalaryamount
+            // 
+            this.txtsalaryamount.Location = new System.Drawing.Point(106, 144);
+            this.txtsalaryamount.Name = "txtsalaryamount";
+            this.txtsalaryamount.Size = new System.Drawing.Size(88, 23);
+            this.txtsalaryamount.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(7, 147);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 17);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Salary Amount";
+            // 
+            // txtsalarymonth
+            // 
+            this.txtsalarymonth.Location = new System.Drawing.Point(106, 118);
+            this.txtsalarymonth.Name = "txtsalarymonth";
+            this.txtsalarymonth.Size = new System.Drawing.Size(243, 23);
+            this.txtsalarymonth.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(7, 121);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 17);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Salary Month";
+            // 
+            // txtfname
+            // 
+            this.txtfname.Location = new System.Drawing.Point(106, 92);
+            this.txtfname.Name = "txtfname";
+            this.txtfname.Size = new System.Drawing.Size(243, 23);
+            this.txtfname.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(7, 95);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 17);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Father\'s Name";
+            // 
+            // txtname
+            // 
+            this.txtname.Location = new System.Drawing.Point(106, 66);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(243, 23);
+            this.txtname.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(7, 69);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 17);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Name";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(514, 19);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(74, 23);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // txtdate
+            // 
+            this.txtdate.Location = new System.Drawing.Point(407, 20);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(100, 23);
+            this.txtdate.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(357, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Date";
+            // 
+            // txtsr
+            // 
+            this.txtsr.Location = new System.Drawing.Point(106, 20);
+            this.txtsr.Name = "txtsr";
+            this.txtsr.Size = new System.Drawing.Size(100, 23);
+            this.txtsr.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(10, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Sr No.";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel3
             // 
@@ -299,7 +293,7 @@
             this.panel3.Controls.Add(this.btndelete);
             this.panel3.Controls.Add(this.btnsave);
             this.panel3.Controls.Add(this.btnadd);
-            this.panel3.Location = new System.Drawing.Point(2, 383);
+            this.panel3.Location = new System.Drawing.Point(2, 359);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(609, 57);
             this.panel3.TabIndex = 2;
@@ -371,31 +365,21 @@
             this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnadd.UseVisualStyleBackColor = false;
             // 
-            // teacherDataGridView
-            // 
-            this.teacherDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.teacherDataGridView.Location = new System.Drawing.Point(3, 4);
-            this.teacherDataGridView.Name = "teacherDataGridView";
-            this.teacherDataGridView.Size = new System.Drawing.Size(192, 242);
-            this.teacherDataGridView.TabIndex = 0;
-            // 
             // Teachersalaryrecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(615, 452);
+            this.ClientSize = new System.Drawing.Size(615, 421);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Teachersalaryrecord";
-            this.Text = "Teachersalaryrecord";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Text = "Teacher Salary Record";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.teacherDataGridView)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -403,7 +387,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtdate;
         private System.Windows.Forms.Label label3;

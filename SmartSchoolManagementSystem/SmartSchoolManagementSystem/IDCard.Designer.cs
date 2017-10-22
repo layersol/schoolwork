@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBoxstdpic = new System.Windows.Forms.PictureBox();
             this.txtstdphone = new System.Windows.Forms.TextBox();
             this.txtstddob = new System.Windows.Forms.TextBox();
             this.txtstdfname = new System.Windows.Forms.TextBox();
@@ -45,7 +46,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBoxstdpic = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -127,6 +127,15 @@
             this.panel3.Size = new System.Drawing.Size(132, 132);
             this.panel3.TabIndex = 2;
             // 
+            // pictureBoxstdpic
+            // 
+            this.pictureBoxstdpic.Image = global::SmartSchoolManagementSystem.Properties.Resources.imageicon121;
+            this.pictureBoxstdpic.Location = new System.Drawing.Point(4, 4);
+            this.pictureBoxstdpic.Name = "pictureBoxstdpic";
+            this.pictureBoxstdpic.Size = new System.Drawing.Size(121, 123);
+            this.pictureBoxstdpic.TabIndex = 0;
+            this.pictureBoxstdpic.TabStop = false;
+            // 
             // txtstdphone
             // 
             this.txtstdphone.Location = new System.Drawing.Point(90, 116);
@@ -158,10 +167,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 116);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 17);
+            this.label5.Size = new System.Drawing.Size(49, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "Phone";
             // 
@@ -175,40 +184,40 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 17);
+            this.label4.Size = new System.Drawing.Size(46, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "D.O.B";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 61);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 17);
+            this.label3.Size = new System.Drawing.Size(57, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "F/Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 17);
+            this.label2.Size = new System.Drawing.Size(45, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(2, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 17);
+            this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Student ID";
             // 
@@ -222,15 +231,6 @@
             this.panel1.Size = new System.Drawing.Size(403, 50);
             this.panel1.TabIndex = 5;
             // 
-            // pictureBoxstdpic
-            // 
-            this.pictureBoxstdpic.Image = global::SmartSchoolManagementSystem.Properties.Resources.imageicon121;
-            this.pictureBoxstdpic.Location = new System.Drawing.Point(4, 4);
-            this.pictureBoxstdpic.Name = "pictureBoxstdpic";
-            this.pictureBoxstdpic.Size = new System.Drawing.Size(121, 123);
-            this.pictureBoxstdpic.TabIndex = 0;
-            this.pictureBoxstdpic.TabStop = false;
-            // 
             // IDCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,7 +239,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
+            this.MaximizeBox = false;
             this.Name = "IDCard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ID Card";
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

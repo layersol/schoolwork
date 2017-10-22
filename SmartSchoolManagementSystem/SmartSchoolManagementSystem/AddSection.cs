@@ -102,5 +102,10 @@ namespace SmartSchoolManagementSystem
             txtsection.Text = textInfo.ToTitleCase(txtsection.Text);
             txtsection.Select(txtsection.Text.Length, 1);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

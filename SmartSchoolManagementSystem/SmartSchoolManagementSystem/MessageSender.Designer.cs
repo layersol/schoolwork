@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtmobile = new System.Windows.Forms.TextBox();
+            this.btncancelsms = new System.Windows.Forms.Button();
+            this.btnsendsms = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtmsg = new System.Windows.Forms.TextBox();
             this.txtsecond = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnsendsms = new System.Windows.Forms.Button();
-            this.btncancelsms = new System.Windows.Forms.Button();
+            this.txtmobile = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,33 +59,48 @@
             this.panel1.Size = new System.Drawing.Size(300, 285);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // btncancelsms
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mobile";
+            this.btncancelsms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btncancelsms.Location = new System.Drawing.Point(187, 249);
+            this.btncancelsms.Name = "btncancelsms";
+            this.btncancelsms.Size = new System.Drawing.Size(75, 31);
+            this.btncancelsms.TabIndex = 4;
+            this.btncancelsms.Text = "Cancel";
+            this.btncancelsms.UseVisualStyleBackColor = false;
+            this.btncancelsms.Click += new System.EventHandler(this.btncancelsms_Click);
             // 
-            // label2
+            // btnsendsms
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Message";
+            this.btnsendsms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsendsms.Location = new System.Drawing.Point(106, 249);
+            this.btnsendsms.Name = "btnsendsms";
+            this.btnsendsms.Size = new System.Drawing.Size(75, 31);
+            this.btnsendsms.TabIndex = 4;
+            this.btnsendsms.Text = "Send SMS";
+            this.btnsendsms.UseVisualStyleBackColor = false;
             // 
-            // txtmobile
+            // label4
             // 
-            this.txtmobile.Enabled = false;
-            this.txtmobile.Location = new System.Drawing.Point(87, 7);
-            this.txtmobile.Name = "txtmobile";
-            this.txtmobile.Size = new System.Drawing.Size(203, 20);
-            this.txtmobile.TabIndex = 1;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(8, 249);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Seconds";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(12, 206);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Puase";
             // 
             // txtmsg
             // 
@@ -103,48 +118,33 @@
             this.txtsecond.Size = new System.Drawing.Size(53, 20);
             this.txtsecond.TabIndex = 1;
             // 
-            // label3
+            // txtmobile
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(12, 206);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Puase";
+            this.txtmobile.Enabled = false;
+            this.txtmobile.Location = new System.Drawing.Point(87, 7);
+            this.txtmobile.Name = "txtmobile";
+            this.txtmobile.Size = new System.Drawing.Size(203, 20);
+            this.txtmobile.TabIndex = 1;
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(8, 249);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Seconds";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Message";
             // 
-            // btnsendsms
+            // label1
             // 
-            this.btnsendsms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnsendsms.Location = new System.Drawing.Point(106, 249);
-            this.btnsendsms.Name = "btnsendsms";
-            this.btnsendsms.Size = new System.Drawing.Size(75, 31);
-            this.btnsendsms.TabIndex = 4;
-            this.btnsendsms.Text = "Send SMS";
-            this.btnsendsms.UseVisualStyleBackColor = false;
-            // 
-            // btncancelsms
-            // 
-            this.btncancelsms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btncancelsms.Location = new System.Drawing.Point(187, 249);
-            this.btncancelsms.Name = "btncancelsms";
-            this.btncancelsms.Size = new System.Drawing.Size(75, 31);
-            this.btncancelsms.TabIndex = 4;
-            this.btncancelsms.Text = "Cancel";
-            this.btncancelsms.UseVisualStyleBackColor = false;
-            this.btncancelsms.Click += new System.EventHandler(this.btncancelsms_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mobile";
             // 
             // MessageSender
             // 

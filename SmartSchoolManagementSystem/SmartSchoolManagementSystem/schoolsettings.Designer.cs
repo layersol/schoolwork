@@ -64,6 +64,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label4);
@@ -165,6 +166,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox3.Controls.Add(this.btnbrowse);
             this.groupBox3.Controls.Add(this.imgpicturebox);
             this.groupBox3.Location = new System.Drawing.Point(249, 39);
@@ -199,6 +201,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.txtcommnets);
             this.groupBox4.Controls.Add(this.label8);
@@ -265,6 +268,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox5.Controls.Add(this.btnview);
             this.groupBox5.Controls.Add(this.btnupdate);
             this.groupBox5.Controls.Add(this.btnsave);

@@ -79,10 +79,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(11, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 17);
+            this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Student ID";
             // 
@@ -119,10 +119,10 @@
             // lblshow
             // 
             this.lblshow.AutoSize = true;
-            this.lblshow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblshow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblshow.Location = new System.Drawing.Point(11, 3);
             this.lblshow.Name = "lblshow";
-            this.lblshow.Size = new System.Drawing.Size(115, 17);
+            this.lblshow.Size = new System.Drawing.Size(103, 17);
             this.lblshow.TabIndex = 0;
             this.lblshow.Text = "Show Message";
             this.lblshow.Click += new System.EventHandler(this.lblshow_Click);
@@ -183,7 +183,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "FeeCollection";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fee Collection";
             this.Load += new System.EventHandler(this.FeeCollection_Load);
             this.panel2.ResumeLayout(false);

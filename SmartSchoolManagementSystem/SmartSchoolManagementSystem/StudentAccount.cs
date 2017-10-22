@@ -41,6 +41,11 @@ namespace SmartSchoolManagementSystem
             obj.Show();
         }
 
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void btnprint_Click(object sender, EventArgs e)
         {
             try

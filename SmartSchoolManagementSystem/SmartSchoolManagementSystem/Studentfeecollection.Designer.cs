@@ -55,8 +55,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtdiscount = new System.Windows.Forms.TextBox();
             this.txtblance = new System.Windows.Forms.TextBox();
+            this.txtpayabe = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.txtarreres = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.txtpaid = new System.Windows.Forms.TextBox();
             this.txtfine = new System.Windows.Forms.TextBox();
             this.txttottal = new System.Windows.Forms.TextBox();
@@ -70,10 +74,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.txtbusfee = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.txtdiscount = new System.Windows.Forms.TextBox();
-            this.txtpayabe = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnadd = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
@@ -84,6 +84,7 @@
             this.btnpreview = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -106,7 +107,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.rdbvoucherid);
             this.groupBox1.Controls.Add(this.rdbstudentid);
-            this.groupBox1.Location = new System.Drawing.Point(3, 12);
+            this.groupBox1.Location = new System.Drawing.Point(3, 57);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(672, 61);
             this.groupBox1.TabIndex = 0;
@@ -216,7 +217,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtstudentname);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(3, 77);
+            this.groupBox2.Location = new System.Drawing.Point(3, 122);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(460, 96);
             this.groupBox2.TabIndex = 1;
@@ -323,7 +324,7 @@
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.txtcurrentfee);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Location = new System.Drawing.Point(3, 177);
+            this.groupBox3.Location = new System.Drawing.Point(3, 222);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(460, 133);
             this.groupBox3.TabIndex = 2;
@@ -366,6 +367,13 @@
             this.label9.TabIndex = 21;
             this.label9.Text = "Fine";
             // 
+            // txtdiscount
+            // 
+            this.txtdiscount.Location = new System.Drawing.Point(100, 97);
+            this.txtdiscount.Name = "txtdiscount";
+            this.txtdiscount.Size = new System.Drawing.Size(79, 20);
+            this.txtdiscount.TabIndex = 25;
+            // 
             // txtblance
             // 
             this.txtblance.Location = new System.Drawing.Point(375, 47);
@@ -373,12 +381,37 @@
             this.txtblance.Size = new System.Drawing.Size(79, 20);
             this.txtblance.TabIndex = 20;
             // 
+            // txtpayabe
+            // 
+            this.txtpayabe.Location = new System.Drawing.Point(100, 73);
+            this.txtpayabe.Name = "txtpayabe";
+            this.txtpayabe.Size = new System.Drawing.Size(79, 20);
+            this.txtpayabe.TabIndex = 23;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(9, 97);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(49, 13);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "Discount";
+            // 
             // txtarreres
             // 
             this.txtarreres.Location = new System.Drawing.Point(375, 18);
             this.txtarreres.Name = "txtarreres";
             this.txtarreres.Size = new System.Drawing.Size(79, 20);
             this.txtarreres.TabIndex = 19;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(9, 76);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(45, 13);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "Payable";
             // 
             // txtpaid
             // 
@@ -431,7 +464,7 @@
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox4.Controls.Add(this.imgpicturebox);
-            this.groupBox4.Location = new System.Drawing.Point(469, 79);
+            this.groupBox4.Location = new System.Drawing.Point(469, 128);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(206, 250);
             this.groupBox4.TabIndex = 3;
@@ -454,7 +487,7 @@
             this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Controls.Add(this.txtbusfee);
             this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Location = new System.Drawing.Point(3, 316);
+            this.groupBox5.Location = new System.Drawing.Point(3, 361);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(460, 71);
             this.groupBox5.TabIndex = 4;
@@ -492,38 +525,6 @@
             this.label17.TabIndex = 26;
             this.label17.Text = "bus fee";
             // 
-            // txtdiscount
-            // 
-            this.txtdiscount.Location = new System.Drawing.Point(100, 97);
-            this.txtdiscount.Name = "txtdiscount";
-            this.txtdiscount.Size = new System.Drawing.Size(79, 20);
-            this.txtdiscount.TabIndex = 25;
-            // 
-            // txtpayabe
-            // 
-            this.txtpayabe.Location = new System.Drawing.Point(100, 73);
-            this.txtpayabe.Name = "txtpayabe";
-            this.txtpayabe.Size = new System.Drawing.Size(79, 20);
-            this.txtpayabe.TabIndex = 23;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(9, 97);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(49, 13);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "Discount";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(9, 76);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(45, 13);
-            this.label16.TabIndex = 22;
-            this.label16.Text = "Payable";
-            // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -536,7 +537,7 @@
             this.groupBox6.Controls.Add(this.btnpreview);
             this.groupBox6.Controls.Add(this.btncancel);
             this.groupBox6.Controls.Add(this.btnsave);
-            this.groupBox6.Location = new System.Drawing.Point(3, 393);
+            this.groupBox6.Location = new System.Drawing.Point(3, 438);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(672, 60);
             this.groupBox6.TabIndex = 5;
@@ -636,11 +637,22 @@
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.feeuser;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(672, 50);
+            this.panel1.TabIndex = 6;
+            // 
             // Studentfeecollection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(687, 475);
+            this.ClientSize = new System.Drawing.Size(687, 501);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -650,7 +662,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Studentfeecollection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Studentfeecollection";
+            this.Text = "Student fee collection User Consolidate";
             this.Load += new System.EventHandler(this.Studentfeecollection_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -726,5 +738,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtother;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Panel panel1;
     }
 }

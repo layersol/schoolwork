@@ -35,6 +35,7 @@
             this.btnclose = new System.Windows.Forms.Button();
             this.btnview = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.gbsession.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +45,7 @@
             this.gbsession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.gbsession.Controls.Add(this.txtacadmicsession);
             this.gbsession.Controls.Add(this.label1);
-            this.gbsession.Location = new System.Drawing.Point(8, 6);
+            this.gbsession.Location = new System.Drawing.Point(8, 55);
             this.gbsession.Name = "gbsession";
             this.gbsession.Size = new System.Drawing.Size(255, 56);
             this.gbsession.TabIndex = 0;
@@ -73,7 +74,7 @@
             this.groupBox1.Controls.Add(this.btnclose);
             this.groupBox1.Controls.Add(this.btnview);
             this.groupBox1.Controls.Add(this.btnsave);
-            this.groupBox1.Location = new System.Drawing.Point(8, 63);
+            this.groupBox1.Location = new System.Drawing.Point(8, 112);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(255, 54);
             this.groupBox1.TabIndex = 2;
@@ -123,11 +124,21 @@
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.addnewsession1;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(8, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 50);
+            this.panel1.TabIndex = 3;
+            // 
             // Add_New_Session
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 122);
+            this.ClientSize = new System.Drawing.Size(274, 171);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbsession);
             this.Name = "Add_New_Session";
@@ -149,5 +160,6 @@
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btnview;
         private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Panel panel1;
     }
 }

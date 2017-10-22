@@ -208,6 +208,7 @@
             this.dgdview.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgdview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgdview.Location = new System.Drawing.Point(13, 3);
+            this.dgdview.MultiSelect = false;
             this.dgdview.Name = "dgdview";
             this.dgdview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgdview.Size = new System.Drawing.Size(938, 335);

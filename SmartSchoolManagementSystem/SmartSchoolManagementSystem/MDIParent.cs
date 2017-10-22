@@ -1293,7 +1293,7 @@ namespace SmartSchoolManagementSystem
         {
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
-                if (item.Name == "UserAndRights") // check by form name if it's opene
+                if (item.Name == "CreateNEWUser") // check by form name if it's opene
                 {
                     item.BringToFront(); // bring to front
                     return; //exit
@@ -1301,7 +1301,7 @@ namespace SmartSchoolManagementSystem
             }
             // if Myform is not opened
             // you know what it is
-            UserAndRights frm = new UserAndRights();
+            CreateNEWUser frm = new CreateNEWUser();
             frm.MdiParent = this;
             frm.Show();
         }

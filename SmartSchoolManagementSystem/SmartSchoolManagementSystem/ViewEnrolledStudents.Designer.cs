@@ -81,20 +81,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
+            this.label2.Size = new System.Drawing.Size(55, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Section";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(4, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Class";
             // 
@@ -115,10 +115,10 @@
             // chkaddress
             // 
             this.chkaddress.AutoSize = true;
-            this.chkaddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkaddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkaddress.Location = new System.Drawing.Point(208, 42);
             this.chkaddress.Name = "chkaddress";
-            this.chkaddress.Size = new System.Drawing.Size(86, 21);
+            this.chkaddress.Size = new System.Drawing.Size(79, 21);
             this.chkaddress.TabIndex = 0;
             this.chkaddress.Text = "Address";
             this.chkaddress.UseVisualStyleBackColor = true;
@@ -126,10 +126,10 @@
             // chkphone
             // 
             this.chkphone.AutoSize = true;
-            this.chkphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkphone.Location = new System.Drawing.Point(127, 42);
             this.chkphone.Name = "chkphone";
-            this.chkphone.Size = new System.Drawing.Size(73, 21);
+            this.chkphone.Size = new System.Drawing.Size(68, 21);
             this.chkphone.TabIndex = 0;
             this.chkphone.Text = "Phone";
             this.chkphone.UseVisualStyleBackColor = true;
@@ -137,10 +137,10 @@
             // chkdateofbirth
             // 
             this.chkdateofbirth.AutoSize = true;
-            this.chkdateofbirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkdateofbirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkdateofbirth.Location = new System.Drawing.Point(4, 42);
             this.chkdateofbirth.Name = "chkdateofbirth";
-            this.chkdateofbirth.Size = new System.Drawing.Size(119, 21);
+            this.chkdateofbirth.Size = new System.Drawing.Size(106, 21);
             this.chkdateofbirth.TabIndex = 0;
             this.chkdateofbirth.Text = "Date of Birth";
             this.chkdateofbirth.UseVisualStyleBackColor = true;

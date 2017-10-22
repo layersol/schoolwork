@@ -907,6 +907,7 @@
             // 
             // statusStrip
             // 
+            this.statusStrip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
             this.tsluser});

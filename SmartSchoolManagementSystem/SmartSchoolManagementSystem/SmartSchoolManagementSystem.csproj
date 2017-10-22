@@ -1322,6 +1322,19 @@
     <None Include="Resources\resultcards.png" />
     <None Include="Resources\sendresult.png" />
     <None Include="Resources\sendresult1.png" />
+    <None Include="Resources\addbusses.png" />
+    <None Include="Resources\addclass.png" />
+    <None Include="Resources\addexpensename.png" />
+    <None Include="Resources\addnewsession.png" />
+    <None Include="Resources\addnewsession1.png" />
+    <None Include="Resources\addsection.png" />
+    <None Include="Resources\feereceipt.png" />
+    <None Include="Resources\view fee list.png" />
+    <None Include="Resources\creatuser.png" />
+    <None Include="Resources\feeuser.png" />
+    <None Include="Resources\teachersalary.png" />
+    <None Include="Resources\bgsoftware1.jpg" />
+    <None Include="Resources\studentfund.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

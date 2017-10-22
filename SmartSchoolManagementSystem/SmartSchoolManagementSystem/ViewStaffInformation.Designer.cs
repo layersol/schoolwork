@@ -128,10 +128,10 @@
             // chkaddresst
             // 
             this.chkaddresst.AutoSize = true;
-            this.chkaddresst.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkaddresst.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkaddresst.Location = new System.Drawing.Point(208, 42);
             this.chkaddresst.Name = "chkaddresst";
-            this.chkaddresst.Size = new System.Drawing.Size(86, 21);
+            this.chkaddresst.Size = new System.Drawing.Size(79, 21);
             this.chkaddresst.TabIndex = 0;
             this.chkaddresst.Text = "Address";
             this.chkaddresst.UseVisualStyleBackColor = true;
@@ -139,10 +139,10 @@
             // chkphonet
             // 
             this.chkphonet.AutoSize = true;
-            this.chkphonet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkphonet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkphonet.Location = new System.Drawing.Point(127, 42);
             this.chkphonet.Name = "chkphonet";
-            this.chkphonet.Size = new System.Drawing.Size(73, 21);
+            this.chkphonet.Size = new System.Drawing.Size(68, 21);
             this.chkphonet.TabIndex = 0;
             this.chkphonet.Text = "Phone";
             this.chkphonet.UseVisualStyleBackColor = true;
@@ -150,10 +150,10 @@
             // chkdateofbirtht
             // 
             this.chkdateofbirtht.AutoSize = true;
-            this.chkdateofbirtht.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkdateofbirtht.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkdateofbirtht.Location = new System.Drawing.Point(4, 42);
             this.chkdateofbirtht.Name = "chkdateofbirtht";
-            this.chkdateofbirtht.Size = new System.Drawing.Size(119, 21);
+            this.chkdateofbirtht.Size = new System.Drawing.Size(106, 21);
             this.chkdateofbirtht.TabIndex = 0;
             this.chkdateofbirtht.Text = "Date of Birth";
             this.chkdateofbirtht.UseVisualStyleBackColor = true;
@@ -190,20 +190,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
+            this.label2.Size = new System.Drawing.Size(55, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Section";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(4, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Class";
             // 

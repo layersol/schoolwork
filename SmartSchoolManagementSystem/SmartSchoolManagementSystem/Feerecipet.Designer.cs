@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -42,30 +41,17 @@
             this.btnclose = new System.Windows.Forms.Button();
             this.btnview = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(88, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fee Recipet";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.feereceipt;
             this.panel1.Location = new System.Drawing.Point(6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 54);
+            this.panel1.Size = new System.Drawing.Size(343, 50);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -78,7 +64,7 @@
             this.panel2.Controls.Add(this.btnsearch);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(6, 61);
+            this.panel2.Location = new System.Drawing.Point(6, 59);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(343, 218);
             this.panel2.TabIndex = 2;
@@ -143,10 +129,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 17);
+            this.label2.Size = new System.Drawing.Size(74, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Student ID";
             // 
@@ -156,7 +142,7 @@
             this.panel3.Controls.Add(this.btnclose);
             this.panel3.Controls.Add(this.btnview);
             this.panel3.Controls.Add(this.btnprint);
-            this.panel3.Location = new System.Drawing.Point(6, 285);
+            this.panel3.Location = new System.Drawing.Point(6, 283);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(343, 59);
             this.panel3.TabIndex = 3;
@@ -208,14 +194,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 349);
+            this.ClientSize = new System.Drawing.Size(352, 345);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FeeRecipet";
             this.Text = "Fee Receipet";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -224,8 +208,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox1;

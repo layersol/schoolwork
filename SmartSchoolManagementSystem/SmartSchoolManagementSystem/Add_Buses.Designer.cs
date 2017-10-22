@@ -58,6 +58,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -80,7 +81,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(8, 2);
+            this.groupBox1.Location = new System.Drawing.Point(6, 53);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(298, 153);
             this.groupBox1.TabIndex = 0;
@@ -193,7 +194,7 @@
             this.groupBox2.Controls.Add(this.btnclose);
             this.groupBox2.Controls.Add(this.btnupdate);
             this.groupBox2.Controls.Add(this.btnview);
-            this.groupBox2.Location = new System.Drawing.Point(8, 289);
+            this.groupBox2.Location = new System.Drawing.Point(6, 340);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(605, 57);
             this.groupBox2.TabIndex = 1;
@@ -271,7 +272,7 @@
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Location = new System.Drawing.Point(312, 2);
+            this.groupBox3.Location = new System.Drawing.Point(310, 53);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(301, 281);
             this.groupBox3.TabIndex = 1;
@@ -297,7 +298,7 @@
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.textBox6);
-            this.groupBox4.Location = new System.Drawing.Point(8, 155);
+            this.groupBox4.Location = new System.Drawing.Point(6, 206);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(298, 128);
             this.groupBox4.TabIndex = 2;
@@ -372,11 +373,21 @@
             this.textBox6.Size = new System.Drawing.Size(159, 20);
             this.textBox6.TabIndex = 25;
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.addbusses;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(6, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(605, 50);
+            this.panel1.TabIndex = 3;
+            // 
             // Add_Buses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 374);
+            this.ClientSize = new System.Drawing.Size(614, 402);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -426,5 +437,6 @@
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnview;
+        private System.Windows.Forms.Panel panel1;
     }
 }

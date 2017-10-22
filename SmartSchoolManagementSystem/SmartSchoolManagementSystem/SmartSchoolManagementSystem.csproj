@@ -457,6 +457,7 @@
     <Compile Include="MDIParent.Designer.cs">
       <DependentUpon>MDIParent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Messagebox.cs" />
     <Compile Include="MessageSender.cs">
       <SubType>Form</SubType>
     </Compile>

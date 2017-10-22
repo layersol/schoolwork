@@ -1459,6 +1459,23 @@ namespace SmartSchoolManagementSystem
             frm.Show();
         }
 
+        private void searchBloodGroupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "Bloodgroupsearch") // check by form name if it's opene
+                {
+                    item.BringToFront(); // bring to front
+                    return; //exit
+                }
+            }
+            // if Myform is not opened
+            // you know what it is
+            Bloodgroupsearch frm = new Bloodgroupsearch();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
         private void MDIParent_Load(object sender, EventArgs e)
         {
 

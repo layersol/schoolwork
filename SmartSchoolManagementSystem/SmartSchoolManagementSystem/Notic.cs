@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SmartSchoolManagementSystem
 {
-    public partial class SchoolLeavingCertificate : Form
+    public partial class Notic : Form
     {
-        public SchoolLeavingCertificate()
+        public Notic()
         {
             InitializeComponent();
         }

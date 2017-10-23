@@ -49,6 +49,7 @@
             this.studentIDCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.submitVacationWorkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchBloodGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.schoolStaffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStaffInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printJoiningFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -151,7 +152,7 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsluser = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.searchBloodGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.makeNoticeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -324,6 +325,13 @@
             this.submitVacationWorkToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.submitVacationWorkToolStripMenuItem.Text = "Submit Vacation Work";
             this.submitVacationWorkToolStripMenuItem.Click += new System.EventHandler(this.submitVacationWorkToolStripMenuItem_Click);
+            // 
+            // searchBloodGroupToolStripMenuItem
+            // 
+            this.searchBloodGroupToolStripMenuItem.Name = "searchBloodGroupToolStripMenuItem";
+            this.searchBloodGroupToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.searchBloodGroupToolStripMenuItem.Text = "Search Blood Group";
+            this.searchBloodGroupToolStripMenuItem.Click += new System.EventHandler(this.searchBloodGroupToolStripMenuItem_Click);
             // 
             // schoolStaffToolStripMenuItem
             // 
@@ -728,7 +736,8 @@
             this.exportContactSelectiveToolStripMenuItem,
             this.backupToolStripMenuItem,
             this.factoryRestoreToolStripMenuItem,
-            this.userAndRightsToolStripMenuItem});
+            this.userAndRightsToolStripMenuItem,
+            this.makeNoticeToolStripMenuItem});
             this.sETTINGSToolStripMenuItem.Name = "sETTINGSToolStripMenuItem";
             this.sETTINGSToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.sETTINGSToolStripMenuItem.Text = "SE&TTINGS";
@@ -1136,12 +1145,12 @@
             this.tsluser.Size = new System.Drawing.Size(118, 17);
             this.tsluser.Text = "toolStripStatusLabel1";
             // 
-            // searchBloodGroupToolStripMenuItem
+            // makeNoticeToolStripMenuItem
             // 
-            this.searchBloodGroupToolStripMenuItem.Name = "searchBloodGroupToolStripMenuItem";
-            this.searchBloodGroupToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.searchBloodGroupToolStripMenuItem.Text = "Search Blood Group";
-            this.searchBloodGroupToolStripMenuItem.Click += new System.EventHandler(this.searchBloodGroupToolStripMenuItem_Click);
+            this.makeNoticeToolStripMenuItem.Name = "makeNoticeToolStripMenuItem";
+            this.makeNoticeToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.makeNoticeToolStripMenuItem.Text = "Make Notice";
+            this.makeNoticeToolStripMenuItem.Click += new System.EventHandler(this.makeNoticeToolStripMenuItem_Click);
             // 
             // MDIParent
             // 
@@ -1296,6 +1305,7 @@
         private System.Windows.Forms.ToolStripMenuItem arrearsAndBalenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studentAccountDetailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchBloodGroupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem makeNoticeToolStripMenuItem;
     }
 }
 

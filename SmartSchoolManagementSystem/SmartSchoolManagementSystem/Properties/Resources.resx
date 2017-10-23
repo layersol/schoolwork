@@ -124,8 +124,8 @@
   <data name="pre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pre1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Archive_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Archive_Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="addclass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addclass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imageicon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageicon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,11 +178,11 @@
   <data name="Update17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Update17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="addexpensename" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\addexpensename.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="new admission" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new admission.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Archive_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Archive_Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cancel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -207,6 +207,9 @@
   </data>
   <data name="prtstid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prtstid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="deflistsession" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deflistsession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,8 +322,8 @@
   <data name="feecst" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\feecst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="addclass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\addclass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="addexpensename" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addexpensename.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,6 +403,9 @@
   <data name="sendresult1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sendresult1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="subj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="asigncls" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\asigncls.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -421,7 +427,7 @@
   <data name="benner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\benner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="subj" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\subj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="notice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

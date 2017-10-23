@@ -187,6 +187,12 @@
     <Compile Include="AssignClass.Designer.cs">
       <DependentUpon>AssignClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Attendanceall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendanceall.Designer.cs">
+      <DependentUpon>Attendanceall.cs</DependentUpon>
+    </Compile>
     <Compile Include="Backup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -427,6 +433,7 @@
     <Compile Include="FundProcess.Designer.cs">
       <DependentUpon>FundProcess.cs</DependentUpon>
     </Compile>
+    <Compile Include="GETCLASSES.cs" />
     <Compile Include="IDCard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -650,6 +657,9 @@
     <Compile Include="SubjectDefination.Designer.cs">
       <DependentUpon>SubjectDefination.cs</DependentUpon>
     </Compile>
+    <Compile Include="TBLAttendance.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="TBLBUSSESMAPPING.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
@@ -870,6 +880,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AssignClass.resx">
       <DependentUpon>AssignClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendanceall.resx">
+      <DependentUpon>Attendanceall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>

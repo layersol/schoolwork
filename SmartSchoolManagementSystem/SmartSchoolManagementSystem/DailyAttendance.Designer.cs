@@ -30,7 +30,7 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btngap = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -38,7 +38,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnadd = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -63,7 +63,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btngap);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,15 +85,16 @@
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btngap
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(399, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Go All Present";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btngap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btngap.Location = new System.Drawing.Point(399, 22);
+            this.btngap.Name = "btngap";
+            this.btngap.Size = new System.Drawing.Size(135, 23);
+            this.btngap.TabIndex = 1;
+            this.btngap.Text = "Go All Present";
+            this.btngap.UseVisualStyleBackColor = false;
+            this.btngap.Click += new System.EventHandler(this.btngap_Click);
             // 
             // textBox2
             // 
@@ -142,7 +143,7 @@
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.btnadd);
             this.panel2.Location = new System.Drawing.Point(0, 205);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(306, 47);
@@ -179,15 +180,16 @@
             this.button6.Text = "Edit";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnadd
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button5.Location = new System.Drawing.Point(1, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 34);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Add";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnadd.Location = new System.Drawing.Point(1, 5);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(75, 34);
+            this.btnadd.TabIndex = 0;
+            this.btnadd.Text = "Add";
+            this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // textBox7
             // 
@@ -336,7 +338,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btngap;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -357,6 +359,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnadd;
     }
 }

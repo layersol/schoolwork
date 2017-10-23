@@ -97,6 +97,20 @@
           <Property Name="Section" Type="nvarchar" MaxLength="50" />
           <Property Name="CellNo" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="TBLAttendance">
+          <Key>
+            <PropertyRef Name="AID" />
+          </Key>
+          <Property Name="AID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SYSID" Type="int" />
+          <Property Name="STDID" Type="int" />
+          <Property Name="ClassID" Type="int" />
+          <Property Name="TimeIn" Type="datetime" />
+          <Property Name="TimeOut" Type="datetime" />
+          <Property Name="Attendance" Type="nvarchar" MaxLength="50" />
+          <Property Name="DATE" Type="date" />
+          <Property Name="Session" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="Tblbusdestination">
           <Key>
             <PropertyRef Name="ID" />
@@ -288,6 +302,7 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <EntitySet Name="TbladdBuses" EntityType="Self.TbladdBuses" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLADDMISSION" EntityType="Self.TBLADDMISSION" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbladmissionprint" EntityType="Self.Tbladmissionprint" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLAttendance" EntityType="Self.TBLAttendance" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblbusdestination" EntityType="Self.Tblbusdestination" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLBUSSESMAPPING" EntityType="Self.TBLBUSSESMAPPING" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tblclass" EntityType="Self.Tblclass" Schema="dbo" store:Type="Tables" />
@@ -599,6 +614,7 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           <EntitySet Name="TBLTRANSMASTERs" EntityType="Self.TBLTRANSMASTER" />
           <EntitySet Name="TBLBUSSESMAPPINGs" EntityType="smartschooldbModel.TBLBUSSESMAPPING" />
           <EntitySet Name="tblexpensenames" EntityType="smartschooldbModel.tblexpensename" />
+          <EntitySet Name="TBLAttendances" EntityType="smartschooldbModel.TBLAttendance" />
         </EntityContainer>
         <EntityType Name="TBLBUSSESMAPPING">
           <Key>
@@ -616,6 +632,20 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ExpenseName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TBLAttendance">
+          <Key>
+            <PropertyRef Name="AID" />
+          </Key>
+          <Property Name="AID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SYSID" Type="Int32" />
+          <Property Name="STDID" Type="Int32" />
+          <Property Name="ClassID" Type="Int32" />
+          <Property Name="TimeIn" Type="DateTime" Precision="3" />
+          <Property Name="TimeOut" Type="DateTime" Precision="3" />
+          <Property Name="Attendance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DATE" Type="DateTime" Precision="0" />
+          <Property Name="Session" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -913,6 +943,21 @@ warning 6002: The table/view 'smartschooldb.dbo.TBLTRANSMASTER' does not have a 
               <MappingFragment StoreEntitySet="tblexpensename">
                 <ScalarProperty Name="ExpenseName" ColumnName="ExpenseName" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLAttendances">
+            <EntityTypeMapping TypeName="smartschooldbModel.TBLAttendance">
+              <MappingFragment StoreEntitySet="TBLAttendance">
+                <ScalarProperty Name="Session" ColumnName="Session" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="Attendance" ColumnName="Attendance" />
+                <ScalarProperty Name="TimeOut" ColumnName="TimeOut" />
+                <ScalarProperty Name="TimeIn" ColumnName="TimeIn" />
+                <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+                <ScalarProperty Name="STDID" ColumnName="STDID" />
+                <ScalarProperty Name="SYSID" ColumnName="SYSID" />
+                <ScalarProperty Name="AID" ColumnName="AID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

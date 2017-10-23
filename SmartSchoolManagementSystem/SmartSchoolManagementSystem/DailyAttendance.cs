@@ -31,5 +31,16 @@ namespace SmartSchoolManagementSystem
         {
             this.Close();
         }
+
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            TBLAttendance context = new TBLAttendance();
+        }
+
+        private void btngap_Click(object sender, EventArgs e)
+        {
+            Attendanceall obj = new Attendanceall();
+            obj.Show();
+        }
     }
 }

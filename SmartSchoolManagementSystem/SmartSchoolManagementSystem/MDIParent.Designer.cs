@@ -75,6 +75,7 @@
             this.chracterCertificateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printFeeRecipetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aCCOUNTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentAccountDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.expenceRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.staffSalaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fundProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -150,7 +151,7 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsluser = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.studentAccountDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchBloodGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -247,7 +248,8 @@
             this.toolStripSeparator7,
             this.studentIDCardToolStripMenuItem,
             this.configuarToolStripMenuItem,
-            this.submitVacationWorkToolStripMenuItem});
+            this.submitVacationWorkToolStripMenuItem,
+            this.searchBloodGroupToolStripMenuItem});
             this.studentDataBankToolStripMenuItem.Name = "studentDataBankToolStripMenuItem";
             this.studentDataBankToolStripMenuItem.Size = new System.Drawing.Size(136, 20);
             this.studentDataBankToolStripMenuItem.Text = "&STUDENT DATA BANK";
@@ -532,6 +534,13 @@
             this.aCCOUNTSToolStripMenuItem.Name = "aCCOUNTSToolStripMenuItem";
             this.aCCOUNTSToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.aCCOUNTSToolStripMenuItem.Text = "&ACCOUNTS";
+            // 
+            // studentAccountDetailsToolStripMenuItem
+            // 
+            this.studentAccountDetailsToolStripMenuItem.Name = "studentAccountDetailsToolStripMenuItem";
+            this.studentAccountDetailsToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
+            this.studentAccountDetailsToolStripMenuItem.Text = "Student Account Details";
+            this.studentAccountDetailsToolStripMenuItem.Click += new System.EventHandler(this.studentAccountDetailsToolStripMenuItem_Click);
             // 
             // expenceRecordToolStripMenuItem
             // 
@@ -1127,12 +1136,12 @@
             this.tsluser.Size = new System.Drawing.Size(118, 17);
             this.tsluser.Text = "toolStripStatusLabel1";
             // 
-            // studentAccountDetailsToolStripMenuItem
+            // searchBloodGroupToolStripMenuItem
             // 
-            this.studentAccountDetailsToolStripMenuItem.Name = "studentAccountDetailsToolStripMenuItem";
-            this.studentAccountDetailsToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
-            this.studentAccountDetailsToolStripMenuItem.Text = "Student Account Details";
-            this.studentAccountDetailsToolStripMenuItem.Click += new System.EventHandler(this.studentAccountDetailsToolStripMenuItem_Click);
+            this.searchBloodGroupToolStripMenuItem.Name = "searchBloodGroupToolStripMenuItem";
+            this.searchBloodGroupToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.searchBloodGroupToolStripMenuItem.Text = "Search Blood Group";
+            this.searchBloodGroupToolStripMenuItem.Click += new System.EventHandler(this.searchBloodGroupToolStripMenuItem_Click);
             // 
             // MDIParent
             // 
@@ -1286,6 +1295,7 @@
         private System.Windows.Forms.ToolStripMenuItem fundDefualtersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arrearsAndBalenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studentAccountDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchBloodGroupToolStripMenuItem;
     }
 }
 

@@ -208,7 +208,9 @@
             this.dgdview.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgdview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgdview.Location = new System.Drawing.Point(13, 3);
+            this.dgdview.MultiSelect = false;
             this.dgdview.Name = "dgdview";
+            this.dgdview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgdview.Size = new System.Drawing.Size(938, 335);
             this.dgdview.TabIndex = 0;
             this.dgdview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -217,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1272, 501);
+            this.ClientSize = new System.Drawing.Size(1272, 402);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);

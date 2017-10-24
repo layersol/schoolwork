@@ -54,32 +54,29 @@
             this.label10 = new System.Windows.Forms.Label();
             this.cbbgender = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtdestination = new System.Windows.Forms.TextBox();
             this.bform = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.cbbcity = new System.Windows.Forms.ComboBox();
             this.label47 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtsmail = new System.Windows.Forms.TextBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.cbbBloodGroup = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.txtcell = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label63 = new System.Windows.Forms.Label();
+            this.txtotherfee = new System.Windows.Forms.TextBox();
+            this.txtpaid = new System.Windows.Forms.TextBox();
+            this.txtdiscount = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.btncalculate = new System.Windows.Forms.Button();
             this.txtbusfee = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
             this.txttotal = new System.Windows.Forms.TextBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.txtpaid = new System.Windows.Forms.TextBox();
             this.txtpayable = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.txtdiscount = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.txtotherfee = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.txttutionfee = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
@@ -88,7 +85,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtpob = new System.Windows.Forms.TextBox();
-            this.txtdob = new System.Windows.Forms.TextBox();
             this.txthomeadress = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -221,6 +217,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtdob = new System.Windows.Forms.TextBox();
             this.registrartion.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
@@ -239,6 +236,7 @@
             this.groupBox15.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox49.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox51.SuspendLayout();
             this.groupBox50.SuspendLayout();
@@ -400,7 +398,7 @@
             // lblSession
             // 
             this.lblSession.AutoSize = true;
-            this.lblSession.Location = new System.Drawing.Point(14, 106);
+            this.lblSession.Location = new System.Drawing.Point(922, 23);
             this.lblSession.Name = "lblSession";
             this.lblSession.Size = new System.Drawing.Size(13, 13);
             this.lblSession.TabIndex = 12;
@@ -411,9 +409,9 @@
             this.groupBox3.Controls.Add(this.btntake);
             this.groupBox3.Controls.Add(this.btnup);
             this.groupBox3.Controls.Add(this.imgpicturebox);
-            this.groupBox3.Location = new System.Drawing.Point(498, -1);
+            this.groupBox3.Location = new System.Drawing.Point(490, -1);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(165, 163);
+            this.groupBox3.Size = new System.Drawing.Size(141, 163);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             // 
@@ -421,7 +419,7 @@
             // 
             this.btntake.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btntake.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntake.Location = new System.Drawing.Point(76, 129);
+            this.btntake.Location = new System.Drawing.Point(73, 131);
             this.btntake.Name = "btntake";
             this.btntake.Size = new System.Drawing.Size(55, 25);
             this.btntake.TabIndex = 2;
@@ -433,7 +431,7 @@
             // 
             this.btnup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnup.Location = new System.Drawing.Point(16, 129);
+            this.btnup.Location = new System.Drawing.Point(13, 131);
             this.btnup.Name = "btnup";
             this.btnup.Size = new System.Drawing.Size(55, 25);
             this.btnup.TabIndex = 1;
@@ -445,9 +443,9 @@
             // 
             this.imgpicturebox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgpicturebox.BackgroundImage")));
             this.imgpicturebox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgpicturebox.Location = new System.Drawing.Point(11, 10);
+            this.imgpicturebox.Location = new System.Drawing.Point(8, 12);
             this.imgpicturebox.Name = "imgpicturebox";
-            this.imgpicturebox.Size = new System.Drawing.Size(134, 109);
+            this.imgpicturebox.Size = new System.Drawing.Size(121, 109);
             this.imgpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgpicturebox.TabIndex = 0;
             this.imgpicturebox.TabStop = false;
@@ -455,21 +453,18 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.MistyRose;
+            this.groupBox4.Controls.Add(this.txtdob);
             this.groupBox4.Controls.Add(this.ckbstatus);
             this.groupBox4.Controls.Add(this.txtriligion);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.cbbgender);
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.txtdestination);
             this.groupBox4.Controls.Add(this.bform);
-            this.groupBox4.Controls.Add(this.label48);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.cbbcity);
             this.groupBox4.Controls.Add(this.label47);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.txtsmail);
-            this.groupBox4.Controls.Add(this.comboBox7);
-            this.groupBox4.Controls.Add(this.label27);
             this.groupBox4.Controls.Add(this.cbbBloodGroup);
             this.groupBox4.Controls.Add(this.label26);
             this.groupBox4.Controls.Add(this.checkBox2);
@@ -478,7 +473,6 @@
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.txtpob);
-            this.groupBox4.Controls.Add(this.txtdob);
             this.groupBox4.Controls.Add(this.groupBox3);
             this.groupBox4.Controls.Add(this.txthomeadress);
             this.groupBox4.Controls.Add(this.label29);
@@ -548,14 +542,6 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Gender";
             // 
-            // txtdestination
-            // 
-            this.txtdestination.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtdestination.Location = new System.Drawing.Point(292, 137);
-            this.txtdestination.Name = "txtdestination";
-            this.txtdestination.Size = new System.Drawing.Size(69, 20);
-            this.txtdestination.TabIndex = 46;
-            // 
             // bform
             // 
             this.bform.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -563,15 +549,6 @@
             this.bform.Name = "bform";
             this.bform.Size = new System.Drawing.Size(141, 20);
             this.bform.TabIndex = 3;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(228, 141);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(60, 13);
-            this.label48.TabIndex = 45;
-            this.label48.Text = "Destination";
             // 
             // label12
             // 
@@ -587,7 +564,7 @@
             this.cbbcity.FormattingEnabled = true;
             this.cbbcity.Items.AddRange(new object[] {
             "Select City"});
-            this.cbbcity.Location = new System.Drawing.Point(412, 136);
+            this.cbbcity.Location = new System.Drawing.Point(306, 137);
             this.cbbcity.Name = "cbbcity";
             this.cbbcity.Size = new System.Drawing.Size(72, 21);
             this.cbbcity.TabIndex = 44;
@@ -597,11 +574,11 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(372, 140);
+            this.label47.Location = new System.Drawing.Point(110, 141);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(34, 13);
+            this.label47.Size = new System.Drawing.Size(194, 13);
             this.label47.TabIndex = 43;
-            this.label47.Text = "Stops";
+            this.label47.Text = "Bus Stop Where student Pick and Drop";
             // 
             // label15
             // 
@@ -619,24 +596,6 @@
             this.txtsmail.Name = "txtsmail";
             this.txtsmail.Size = new System.Drawing.Size(117, 20);
             this.txtsmail.TabIndex = 23;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(151, 137);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(66, 21);
-            this.comboBox7.TabIndex = 41;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(105, 142);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(42, 13);
-            this.label27.TabIndex = 40;
-            this.label27.Text = "Bus No";
             // 
             // cbbBloodGroup
             // 
@@ -687,51 +646,107 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.label63);
+            this.groupBox7.Controls.Add(this.txtotherfee);
+            this.groupBox7.Controls.Add(this.txtpaid);
+            this.groupBox7.Controls.Add(this.txtdiscount);
+            this.groupBox7.Controls.Add(this.label48);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Controls.Add(this.btncalculate);
             this.groupBox7.Controls.Add(this.txtbusfee);
             this.groupBox7.Controls.Add(this.label68);
             this.groupBox7.Controls.Add(this.txttotal);
-            this.groupBox7.Controls.Add(this.label67);
-            this.groupBox7.Controls.Add(this.lblSession);
-            this.groupBox7.Controls.Add(this.txtpaid);
             this.groupBox7.Controls.Add(this.txtpayable);
             this.groupBox7.Controls.Add(this.label34);
-            this.groupBox7.Controls.Add(this.txtdiscount);
             this.groupBox7.Controls.Add(this.label33);
-            this.groupBox7.Controls.Add(this.txtotherfee);
             this.groupBox7.Controls.Add(this.label32);
             this.groupBox7.Controls.Add(this.txttutionfee);
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.Controls.Add(this.txtadfee);
             this.groupBox7.Controls.Add(this.label36);
-            this.groupBox7.Location = new System.Drawing.Point(670, -1);
+            this.groupBox7.Location = new System.Drawing.Point(637, -1);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(281, 163);
+            this.groupBox7.Size = new System.Drawing.Size(314, 163);
             this.groupBox7.TabIndex = 12;
             this.groupBox7.TabStop = false;
             // 
-            // label63
+            // txtotherfee
             // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(146, 61);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(31, 13);
-            this.label63.TabIndex = 17;
-            this.label63.Text = "Total";
+            this.txtotherfee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtotherfee.Location = new System.Drawing.Point(68, 86);
+            this.txtotherfee.Name = "txtotherfee";
+            this.txtotherfee.Size = new System.Drawing.Size(69, 20);
+            this.txtotherfee.TabIndex = 26;
+            this.txtotherfee.Text = "0";
+            this.txtotherfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtpaid
+            // 
+            this.txtpaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpaid.Enabled = false;
+            this.txtpaid.Location = new System.Drawing.Point(225, 84);
+            this.txtpaid.Name = "txtpaid";
+            this.txtpaid.Size = new System.Drawing.Size(83, 20);
+            this.txtpaid.TabIndex = 25;
+            this.txtpaid.Text = "0";
+            this.txtpaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtdiscount
+            // 
+            this.txtdiscount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdiscount.Enabled = false;
+            this.txtdiscount.Location = new System.Drawing.Point(67, 60);
+            this.txtdiscount.Name = "txtdiscount";
+            this.txtdiscount.Size = new System.Drawing.Size(69, 20);
+            this.txtdiscount.TabIndex = 24;
+            this.txtdiscount.Text = "0";
+            this.txtdiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(184, 35);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(39, 15);
+            this.label48.TabIndex = 20;
+            this.label48.Text = "Total";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(163, 59);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(58, 15);
+            this.label27.TabIndex = 19;
+            this.label27.Text = "Payable";
+            // 
+            // btncalculate
+            // 
+            this.btncalculate.Location = new System.Drawing.Point(7, 134);
+            this.btncalculate.Name = "btncalculate";
+            this.btncalculate.Size = new System.Drawing.Size(303, 23);
+            this.btncalculate.TabIndex = 18;
+            this.btncalculate.Text = "Calculate";
+            this.btncalculate.UseVisualStyleBackColor = true;
+            this.btncalculate.Click += new System.EventHandler(this.btncalculate_Click);
             // 
             // txtbusfee
             // 
             this.txtbusfee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbusfee.Location = new System.Drawing.Point(204, 35);
+            this.txtbusfee.Enabled = false;
+            this.txtbusfee.Location = new System.Drawing.Point(225, 9);
             this.txtbusfee.Name = "txtbusfee";
-            this.txtbusfee.Size = new System.Drawing.Size(70, 20);
+            this.txtbusfee.Size = new System.Drawing.Size(83, 20);
             this.txtbusfee.TabIndex = 16;
             this.txtbusfee.Text = "0";
+            this.txtbusfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtbusfee.TextChanged += new System.EventHandler(this.txtbusfee_TextChanged);
             // 
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(140, 39);
+            this.label68.Location = new System.Drawing.Point(175, 13);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(46, 13);
             this.label68.TabIndex = 15;
@@ -740,40 +755,24 @@
             // txttotal
             // 
             this.txttotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txttotal.Location = new System.Drawing.Point(204, 57);
+            this.txttotal.Enabled = false;
+            this.txttotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttotal.Location = new System.Drawing.Point(225, 34);
             this.txttotal.Name = "txttotal";
-            this.txttotal.Size = new System.Drawing.Size(70, 20);
+            this.txttotal.Size = new System.Drawing.Size(83, 20);
             this.txttotal.TabIndex = 14;
             this.txttotal.Text = "0";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(118, 97);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(66, 13);
-            this.label67.TabIndex = 13;
-            this.label67.Text = "Payable Fee";
-            // 
-            // txtpaid
-            // 
-            this.txtpaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpaid.Location = new System.Drawing.Point(192, 120);
-            this.txtpaid.Name = "txtpaid";
-            this.txtpaid.Size = new System.Drawing.Size(83, 35);
-            this.txtpaid.TabIndex = 10;
-            this.txtpaid.Text = "0";
-            this.txtpaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txttotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtpayable
             // 
             this.txtpayable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpayable.Enabled = false;
-            this.txtpayable.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpayable.Location = new System.Drawing.Point(192, 83);
+            this.txtpayable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpayable.Location = new System.Drawing.Point(225, 58);
+            this.txtpayable.Multiline = true;
             this.txtpayable.Name = "txtpayable";
-            this.txtpayable.Size = new System.Drawing.Size(83, 35);
+            this.txtpayable.Size = new System.Drawing.Size(83, 20);
             this.txtpayable.TabIndex = 9;
             this.txtpayable.Text = "0";
             this.txtpayable.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -781,50 +780,26 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(126, 123);
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(179, 86);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(62, 29);
+            this.label34.Size = new System.Drawing.Size(36, 15);
             this.label34.TabIndex = 8;
             this.label34.Text = "Paid";
-            // 
-            // txtdiscount
-            // 
-            this.txtdiscount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtdiscount.Location = new System.Drawing.Point(62, 62);
-            this.txtdiscount.Name = "txtdiscount";
-            this.txtdiscount.Size = new System.Drawing.Size(70, 20);
-            this.txtdiscount.TabIndex = 7;
-            this.txtdiscount.Text = "0";
-            this.txtdiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtdiscount.TextChanged += new System.EventHandler(this.txtdiscount_TextChanged);
-            this.txtdiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdiscount_KeyPress);
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(0, 67);
+            this.label33.Location = new System.Drawing.Point(4, 64);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(60, 13);
             this.label33.TabIndex = 6;
             this.label33.Text = "Discount %";
             // 
-            // txtotherfee
-            // 
-            this.txtotherfee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtotherfee.Location = new System.Drawing.Point(204, 10);
-            this.txtotherfee.Name = "txtotherfee";
-            this.txtotherfee.Size = new System.Drawing.Size(70, 20);
-            this.txtotherfee.TabIndex = 5;
-            this.txtotherfee.Text = "0";
-            this.txtotherfee.TextChanged += new System.EventHandler(this.txtotherfee_TextChanged);
-            this.txtotherfee.Enter += new System.EventHandler(this.txtotherfee_Enter);
-            this.txtotherfee.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtotherfee_KeyPress);
-            // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(139, 15);
+            this.label32.Location = new System.Drawing.Point(4, 89);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(54, 13);
             this.label32.TabIndex = 4;
@@ -833,9 +808,10 @@
             // txttutionfee
             // 
             this.txttutionfee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txttutionfee.Location = new System.Drawing.Point(62, 37);
+            this.txttutionfee.Enabled = false;
+            this.txttutionfee.Location = new System.Drawing.Point(67, 35);
             this.txttutionfee.Name = "txttutionfee";
-            this.txttutionfee.Size = new System.Drawing.Size(70, 20);
+            this.txttutionfee.Size = new System.Drawing.Size(69, 20);
             this.txttutionfee.TabIndex = 3;
             this.txttutionfee.Text = "0";
             this.txttutionfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -843,7 +819,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(1, 42);
+            this.label31.Location = new System.Drawing.Point(4, 38);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(58, 13);
             this.label31.TabIndex = 2;
@@ -852,9 +828,10 @@
             // txtadfee
             // 
             this.txtadfee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtadfee.Location = new System.Drawing.Point(62, 11);
+            this.txtadfee.Enabled = false;
+            this.txtadfee.Location = new System.Drawing.Point(67, 11);
             this.txtadfee.Name = "txtadfee";
-            this.txtadfee.Size = new System.Drawing.Size(70, 20);
+            this.txtadfee.Size = new System.Drawing.Size(69, 20);
             this.txtadfee.TabIndex = 1;
             this.txtadfee.Text = "0";
             this.txtadfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -862,7 +839,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(1, 13);
+            this.label36.Location = new System.Drawing.Point(4, 16);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(56, 13);
             this.label36.TabIndex = 0;
@@ -871,7 +848,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(228, 42);
+            this.label14.Location = new System.Drawing.Point(228, 39);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 13);
             this.label14.TabIndex = 21;
@@ -894,14 +871,6 @@
             this.txtpob.Size = new System.Drawing.Size(192, 20);
             this.txtpob.TabIndex = 19;
             this.txtpob.TextChanged += new System.EventHandler(this.txtpob_TextChanged);
-            // 
-            // txtdob
-            // 
-            this.txtdob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtdob.Location = new System.Drawing.Point(86, 35);
-            this.txtdob.Name = "txtdob";
-            this.txtdob.Size = new System.Drawing.Size(141, 20);
-            this.txtdob.TabIndex = 15;
             // 
             // txthomeadress
             // 
@@ -1843,6 +1812,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner1;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox2.Controls.Add(this.lblSession);
             this.groupBox2.Location = new System.Drawing.Point(-1, -5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1244, 54);
@@ -1877,7 +1847,7 @@
             // txtgcast
             // 
             this.txtgcast.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtgcast.Location = new System.Drawing.Point(336, 95);
+            this.txtgcast.Location = new System.Drawing.Point(336, 92);
             this.txtgcast.Name = "txtgcast";
             this.txtgcast.Size = new System.Drawing.Size(113, 20);
             this.txtgcast.TabIndex = 25;
@@ -1945,7 +1915,7 @@
             // txtofficetell
             // 
             this.txtofficetell.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtofficetell.Location = new System.Drawing.Point(87, 95);
+            this.txtofficetell.Location = new System.Drawing.Point(87, 92);
             this.txtofficetell.Name = "txtofficetell";
             this.txtofficetell.Size = new System.Drawing.Size(161, 20);
             this.txtofficetell.TabIndex = 23;
@@ -1962,7 +1932,7 @@
             // txtgcnic
             // 
             this.txtgcnic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtgcnic.Location = new System.Drawing.Point(87, 37);
+            this.txtgcnic.Location = new System.Drawing.Point(87, 39);
             this.txtgcnic.Name = "txtgcnic";
             this.txtgcnic.Size = new System.Drawing.Size(161, 20);
             this.txtgcnic.TabIndex = 3;
@@ -1979,7 +1949,7 @@
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(6, 126);
+            this.label56.Location = new System.Drawing.Point(6, 123);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(76, 13);
             this.label56.TabIndex = 5;
@@ -2005,7 +1975,7 @@
             // txtgoffice
             // 
             this.txtgoffice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtgoffice.Location = new System.Drawing.Point(87, 121);
+            this.txtgoffice.Location = new System.Drawing.Point(87, 119);
             this.txtgoffice.Name = "txtgoffice";
             this.txtgoffice.Size = new System.Drawing.Size(362, 20);
             this.txtgoffice.TabIndex = 3;
@@ -2258,6 +2228,14 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // txtdob
+            // 
+            this.txtdob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdob.Location = new System.Drawing.Point(86, 35);
+            this.txtdob.Name = "txtdob";
+            this.txtdob.Size = new System.Drawing.Size(141, 20);
+            this.txtdob.TabIndex = 46;
+            // 
             // Newadmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2319,6 +2297,8 @@
             this.groupBox13.ResumeLayout(false);
             this.groupBox49.ResumeLayout(false);
             this.groupBox49.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox51.ResumeLayout(false);
@@ -2360,7 +2340,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox txtriligion;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtdob;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label11;
@@ -2392,9 +2371,7 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TextBox txtadfee;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox txtdiscount;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox txtotherfee;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox txttutionfee;
         private System.Windows.Forms.Label label31;
@@ -2492,12 +2469,8 @@
         private System.Windows.Forms.ComboBox cbbgrad1;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.TextBox txtdestination;
-        private System.Windows.Forms.Label label48;
         private System.Windows.Forms.ComboBox cbbcity;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.GroupBox groupBox51;
         private System.Windows.Forms.Label label66;
@@ -2520,12 +2493,16 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox txtpaid;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox txttotal;
-        private System.Windows.Forms.Label label67;
         private System.Windows.Forms.TextBox txtbusfee;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Button btncalculate;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox txtotherfee;
+        private System.Windows.Forms.TextBox txtpaid;
+        private System.Windows.Forms.TextBox txtdiscount;
+        private System.Windows.Forms.TextBox txtdob;
     }
 }

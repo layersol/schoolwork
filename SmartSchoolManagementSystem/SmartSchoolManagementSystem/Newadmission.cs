@@ -17,8 +17,9 @@ namespace SmartSchoolManagementSystem
     {
         smartschooldbEntities db = new smartschooldbEntities();
         public DataGridViewRow dgvr;
-        int  ClassRollNo, admissionfee=0, tutionfee=0, otherfee=0, classid;
-        string imgloc = "",dgv;
+        decimal y, z, x;
+        int classid;
+        string imgloc = "", dgv;
         public Newadmission()
         {
             InitializeComponent();
@@ -37,7 +38,8 @@ namespace SmartSchoolManagementSystem
         }
         private void Getdropdown()
         {
-            try {
+            try
+            {
                 var Getclass = (from a in db.Tblclasses
                                     //where a.Class == cbbclass.SelectedItem.ToString()
                                 select new { a.ID, Names = a.CLASSNAME }).ToList();
@@ -54,8 +56,8 @@ namespace SmartSchoolManagementSystem
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
-            
-            }
+
+        }
 
         private void Getcurrentstudent()
         {
@@ -80,7 +82,7 @@ namespace SmartSchoolManagementSystem
                     MessageBox.Show("No Record Found at this time please click ok");
                 }
             }
-            catch( Exception ex)
+            catch (Exception ex)
             { MessageBox.Show(ex.Message); }
         }
 
@@ -206,7 +208,7 @@ namespace SmartSchoolManagementSystem
                         objEnRoll.ACADMICSESSION = lblSession.Text;
                         db.TBLSTUDENTENRROLs.Add(objEnRoll);
                         db.SaveChanges();
-                       // classid = objEnRoll.ClassId;
+                        // classid = objEnRoll.ClassId;
                     }
                     TBLSTUDENTFEEDETAIL objfee = new TBLSTUDENTFEEDETAIL();
                     {
@@ -223,11 +225,12 @@ namespace SmartSchoolManagementSystem
                         objfee.BUS_FEE = Convert.ToDecimal(txtpaid.Text);
                         db.TBLSTUDENTFEEDETAILS.Add(objfee);
                         db.SaveChanges();
-                    } }
+                    }
+                }
                 else { MessageBox.Show("Select Class"); }
 
-                    //  MessageBox.Show("Student Has Been Enrolled Successfully");
-                
+                //  MessageBox.Show("Student Has Been Enrolled Successfully");
+
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
@@ -250,24 +253,14 @@ namespace SmartSchoolManagementSystem
         {
             int sid = Convert.ToInt16(txtform.Text);
             var q = (from a in db.Tbladmissionprints
-                     where a.FID ==sid
+                     where a.FID == sid
                      select a).SingleOrDefault();
             //PID = q.ID;
             txtstudentname.Text = q.Name;
             txtcell.Text = q.CellNo;
             cbbclass.Text = q.Class;
             txtupdatedby.Text = cbbclass.Text;
-           
 
-            // cbbgroup.Text = q.Section;
-
-            // imgpicturebox.ImageLocation =Convert.ToString(q.LOGO);
-            //var qaNames = (from a in db.Tblclasses
-            //                   // where a.CLASS == cbbclass.Text
-            //               select new { a.ID, Names = a.CLASSNAME, }).ToList();
-            //cbbclass.DataSource = q.Class;
-            //cbbclass.DisplayMember = "Names";
-            //cbbclass.ValueMember = "ID";
 
         }
 
@@ -412,13 +405,13 @@ namespace SmartSchoolManagementSystem
             //                    b.ID,
             //                    Section = b.Section
             //                });
-           
+
             //{
             //    cbbsection.DataSource = Ssection.ToList();
             //    cbbsection.DisplayMember = "Section";
             //    cbbsection.ValueMember = "ID";
             //}
-           
+
         }
 
         private void cbbclass_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -433,62 +426,83 @@ namespace SmartSchoolManagementSystem
 
         private void cbbclass_SelectedValueChanged(object sender, EventArgs e)
         {
-            var Getsection= (from a in db.Tblclasssections
-                           where a.Class == cbbclass.Text
-                           select new { a.ID, Names = a.Section, }).ToList();
+            var Getsection = (from a in db.Tblclasssections
+                              where a.Class == cbbclass.Text
+                              select new { a.ID, Names = a.Section, }).ToList();
             cbbsection.DataSource = Getsection.ToList();
             cbbsection.DisplayMember = "Names";
             cbbsection.ValueMember = "ID";
         }
         private void calculate()
         {
-            //txtotherfee.Text = Convert.ToString(otherfee);
-            //txtotherfee.Text = Convert.ToString(discount);
-            
-            otherfee = Convert.ToInt32(txtotherfee.Text);
-            admissionfee = Convert.ToInt32(txtadfee.Text);
-            tutionfee = Convert.ToInt32(txttutionfee.Text);
+            decimal x = 0, y = 0, z = 0, m=0;
+            if (x != 0)
+            {
+                x = Convert.ToInt32(txtotherfee.Text);
+                y = Convert.ToInt32(txtadfee.Text);
+                z = Convert.ToInt32(txttutionfee.Text);
+                m = Convert.ToInt32(txtbusfee.Text);
 
+                txtpayable.Text = Convert.ToString(y + z + x + m);
+            }
+            else
+            {
+                x = 0;
+                y = Convert.ToInt32(txtadfee.Text);
+                z = Convert.ToInt32(txttutionfee.Text);
+                txttotal.Text = Convert.ToString(y + z + x);
+                // txtpayable.Text = Convert.ToString(y + z + x);
+            }
 
-            txtpayable.Text = Convert.ToString(admissionfee + tutionfee + otherfee);
         }
+        //==============================================================
+   
 
         private void txtotherfee_TextChanged(object sender, EventArgs e)
         {
-           //  calculate();
-           // txttotal.Text = txtotherfee.Text;
+          //  calculate();
+          //  txttotal.Text = txtotherfee.Text;
         }
 
         private void txtdiscount_TextChanged(object sender, EventArgs e)
         {
-            //calculate();
+         //   calculate();
         }
 
         private void txtotherfee_Enter(object sender, EventArgs e)
         {
-          
+
         }
 
         private void txtotherfee_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                calculate();
+               // calculate();
             }
         }
 
         private void Discount()
         {
+            decimal a, b, c,d = 0;
+
+            a = Convert.ToInt32(txtotherfee.Text);
+            b = Convert.ToInt32(txtadfee.Text);
+            c = Convert.ToInt32(txttutionfee.Text);
+            d = Convert.ToInt32(txtbusfee.Text);
+          //  e = Convert.ToInt32(txtadfee.Text);
+          //  c = Convert.ToInt32(txttutionfee.Text);
+
             //int totalval = Convert.ToInt32(txttotal.Text);
-            otherfee = Convert.ToInt32(txtotherfee.Text);
-            admissionfee = Convert.ToInt32(txtadfee.Text);
-            tutionfee = Convert.ToInt32(txttutionfee.Text);
+            //otherfee = a;
+            //admissionfee = b;
+            //tutionfee = c;
 
 
-            decimal reslt = Convert.ToDecimal(admissionfee + tutionfee + otherfee);
+            decimal reslt = Convert.ToDecimal(b + c + a+d);
 
             decimal discount = Convert.ToDecimal(txtdiscount.Text);
-            decimal result= -((discount / 100) * reslt) + reslt;
+            decimal result = -((discount / 100) * reslt) + reslt;
             txtpayable.Text = Convert.ToString(result);
         }
 
@@ -496,36 +510,49 @@ namespace SmartSchoolManagementSystem
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                Discount();
+              //  Discount();
             }
         }
 
+        private void getallfee()
+        {
+
+            try
+            {
+                var val2 = (from u in db.Tblclasssections where u.Class == cbbclass.Text && u.Section == cbbsection.Text && u.Group == cbbgroup.Text && u.Comments == cbbmedium.Text select u).Count() > 0;
+
+                if (val2 != false)
+                {
+                    if (cbbclass.Text != "" && cbbsection.Text != "" && cbbgroup.Text != "" && cbbmedium.Text != "")
+                    {
+
+                        var q = (from a in db.Tblclasssections
+                                 where a.Class == cbbclass.Text && a.Section == cbbsection.Text && a.Group == cbbgroup.Text && a.Comments == cbbmedium.Text
+                                 select a).SingleOrDefault();
+                        int Clasid = q.ID;
+
+                        var GetAccount = from c in db.TBLFEEMASTERs
+                                         where c.STU_Class == Clasid
+                                         select new { c.ADMISSION_FEE, c.TUITION_FEE, c.TUITION_FEE_PERCENT, c };
+
+                        foreach (var Sessionvalues in GetAccount)
+                        {
+                            txtadfee.Text = Convert.ToString(Sessionvalues.ADMISSION_FEE);
+                            txttutionfee.Text = Convert.ToString(Sessionvalues.TUITION_FEE);
+                            txtdiscount.Text = Convert.ToString(Sessionvalues.TUITION_FEE_PERCENT);
+                        }
+                    }
+                }
+                else { Messagebox.show(); }
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
+
+        }
         private void cbbmedium_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (cbbclass.Text != "" && cbbsection.Text != "" && cbbgroup.Text != "" )
-            {
-                try
-                {
-                    var GetAccount = from c in db.TBLFEEMASTERs
-                                     where c.STU_Class == classid
-                                     select new { c.ADMISSION_FEE,c.TUITION_FEE,c.TUITION_FEE_PERCENT,c };
-
-                    foreach (var Sessionvalues in GetAccount)
-                    {
-                        txtadfee.Text = Convert.ToString(Sessionvalues.ADMISSION_FEE);
-                        txttutionfee.Text = Convert.ToString(Sessionvalues.TUITION_FEE);
-                        txtdiscount.Text = Convert.ToString(Sessionvalues.TUITION_FEE_PERCENT);
-                        txttutionfee.Text = Convert.ToString(Sessionvalues.TUITION_FEE);
-                        float a, b;
-                        a = float.Parse(txtadfee.Text);
-                        b = float.Parse(txtadfee.Text);
-                    }
-                    calculate();
-                }
-                catch (Exception ex)
-                { MessageBox.Show(ex.Message); }
-            }
-        }
+            getallfee();
+        } 
         private void btnupdate_Click(object sender, EventArgs e)
         {
 
@@ -560,7 +587,7 @@ namespace SmartSchoolManagementSystem
 
         private void txtotherfee_ModifiedChanged(object sender, EventArgs e)
         {
-            calculate();
+            //calculate();
         }
 
         private void cbbgroup_SelectedIndexChanged(object sender, EventArgs e)
@@ -570,49 +597,42 @@ namespace SmartSchoolManagementSystem
 
         private void dvgstudent_RowHeaderCellChanged(object sender, DataGridViewRowEventArgs e)
         {
-            if (cbbclass.Text != "" && cbbsection.Text != "" && cbbgroup.Text != "")
-            {
-                try
-                {
-                    var GetAccount = from c in db.TBLFEEMASTERs
-                                     where c.STU_Class == classid
-                                     select new { c.ADMISSION_FEE, c.TUITION_FEE, c.TUITION_FEE_PERCENT, c };
+            //if (cbbclass.Text != "" && cbbsection.Text != "" && cbbgroup.Text != "")
+            //{
+            //    try
+            //    {
+            //        var GetAccount = from c in db.TBLFEEMASTERs
+            //                         where c.STU_Class == classid
+            //                         select new { c.ADMISSION_FEE, c.TUITION_FEE, c.TUITION_FEE_PERCENT, c };
 
-                    foreach (var Sessionvalues in GetAccount)
-                    {
-                        txtadfee.Text = Convert.ToString(Sessionvalues.ADMISSION_FEE);
-                        txttutionfee.Text = Convert.ToString(Sessionvalues.TUITION_FEE);
-                        txtdiscount.Text = Convert.ToString(Sessionvalues.TUITION_FEE_PERCENT);
-                        txttutionfee.Text = Convert.ToString(Sessionvalues.TUITION_FEE);
-                        float a, b;
-                        a = float.Parse(txtadfee.Text);
-                        b = float.Parse(txtadfee.Text);
-                    }
-                    calculate();
-                }
-                catch (Exception ex)
-                { MessageBox.Show(ex.Message); }
-            }
+            //        foreach (var Sessionvalues in GetAccount)
+            //        {
+            //            txtadfee.Text = Convert.ToString(Sessionvalues.ADMISSION_FEE);
+            //            txttutionfee.Text = Convert.ToString(Sessionvalues.TUITION_FEE);
+            //            txtdiscount.Text = Convert.ToString(Sessionvalues.TUITION_FEE_PERCENT);
+            //            txttutionfee.Text = Convert.ToString(Sessionvalues.TUITION_FEE);
+            //            float a, b;
+            //            a = float.Parse(txtadfee.Text);
+            //            b = float.Parse(txtadfee.Text);
+            //        }
+            //      //  calculate();
+            //    }
+            //    catch (Exception ex)
+            //    { MessageBox.Show(ex.Message); }
+            //}
         }
 
          private void getcity()
         {
              try {
                 var GetCity = (from a in db.Tblbusstops
-                                    //where a.Class == cbbclass.SelectedItem.ToString()
+                             
                                 select new { DID = a.DID, Names = a.BusStop }).ToList();
                 
                 cbbcity.DisplayMember = "Names";
                 cbbcity.ValueMember = "DID";
                 cbbcity.DataSource = GetCity;
-                //cbbcity.Text = "Select City";
-                //var Getgroup = (from a in db.Tblclasssections
-                //                    //where a.Class == cbbclass.SelectedItem.ToString()
-                //                select new { a.ID, Names = a.Group, }).ToList();
-
-                //cbbgroup.DataSource = Getgroup.ToList();
-                //cbbgroup.DisplayMember = "Names";
-                //cbbgroup.ValueMember = "ID";
+               
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
@@ -624,57 +644,66 @@ namespace SmartSchoolManagementSystem
             if (checkBox2.Checked == true)
             {
                 getcity();
-                
+                cbbcity.Enabled = true;
+
             }
-            else { }
+            else
+            { cbbcity.Text = null;
+                cbbcity.Enabled = false;
+                txtbusfee.Text = 0.ToString();
+            }
         }
 
         private void cbbcity_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            txtdestination.Text = cbbcity.SelectedValue.ToString();
-
-            //try
-            //{
-            //    int val = Convert.ToInt16(cbbcity.SelectedValue);
-            //     txtdestination.Text = val.ToString();
-            //    //var getbus = from c in db.TBLBUSSESMAPPINGs
-            //    //             join a in db.TbladdBuses on c.BUSID equals a.BusID
-            //    //             where c.BUSSTOP == val
-            //    //             select new
-            //    //             {
-            //    //                 a.BussName
-            //    //             };
-            //    //foreach (var Sbuss in getbus)
-            //    //{
-            //    //    txtdestination.Text = Sbuss.BussName;
-            //    //}
-            //}
-            //catch { }
-        }
-
-        private void cbbcity_SelectedValueChanged(object sender, EventArgs e)
-        {
             try
             {
                 //int val = Convert.ToInt16(cbbcity.Text);
                 //txtdestination.Text = val.ToString();
 
-
-                txtdestination.Text =Convert.ToString(cbbcity.SelectedValue);
-                //var getbus = from c in db.TBLBUSSESMAPPINGs
-                //             join a in db.TbladdBuses on c.BUSID equals a.BusID
-                //             where c.BUSSTOP == val
-                //             select new
-                //             {
-                //                 a.BussName
-                //             };
-                //foreach (var Sbuss in getbus)
-                //{
-                //    txtdestination.Text = Sbuss.BussName;
-                //}
+               
+                int bid = Convert.ToInt16(cbbcity.SelectedValue);
+                var getbus = from c in db.Tblbusstops
+                             //   join a in db.Tblbusstops on c.BUSSTOP equals a.DID
+                             where c.DID == bid
+                             select new
+                             {
+                                 c.BussFee,
+                                // a.BUSID
+                             };
+                foreach (var Sbuss in getbus)
+                {
+                    txtbusfee.Text = Sbuss.BussFee.ToString();
+                //   txtdestination.Text=Sbuss.BussFee.ToString();
+                }
+                Thread.Sleep(2000);
             }
             catch { }
+        }
+
+        private void cbbcity_SelectedValueChanged(object sender, EventArgs e)
+        {
+            //try
+            //{
+            //    //int val = Convert.ToInt16(cbbcity.Text);
+            //    //txtdestination.Text = val.ToString();
+
+
+            //    txtdestination.Text =Convert.ToString(cbbcity.SelectedValue);
+            //    var getbus = from c in db.Tblbusstops
+            //                 join a in db.TBLBUSSESMAPPINGs on c.DID equals a.BUSSTOP
+            //                 where c.BusStop== cbbcity.Text
+            //                 select new
+            //                 {
+            //                     c.BussFee
+            //                 };
+            //    foreach (var Sbuss in getbus)
+            //    {
+            //        txtbusfee.Text = Sbuss.BussFee.ToString();
+            //    }
+            //}
+            //catch { }
         }
 
         private void dvgstudent_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -766,6 +795,55 @@ namespace SmartSchoolManagementSystem
         }
 
         private void btnback_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbusfee_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncalculate_Click(object sender, EventArgs e)
+        {
+          
+                decimal x = 0, y = 0, z = 0, m = 0;
+                if (x != 0 && m!=0)
+                {
+                    x = Convert.ToInt32(txtotherfee.Text);
+                    y = Convert.ToInt32(txtadfee.Text);
+                    z = Convert.ToInt32(txttutionfee.Text);
+                    m = Convert.ToInt32(txtbusfee.Text);
+                txtpayable.Text = Convert.ToString(y + z + x + m);
+                decimal reslt = Convert.ToDecimal(x + y + z + m);
+                txttotal.Text = reslt.ToString();
+                decimal discount = Convert.ToDecimal(txtdiscount.Text);
+                decimal result = -((discount / 100) * reslt) + reslt;
+                txtpayable.Text = Convert.ToString(result);
+
+                
+                }
+               
+            else 
+            {
+                x = Convert.ToInt32(txtotherfee.Text);
+                y = Convert.ToInt32(txtadfee.Text);
+                z = Convert.ToInt32(txttutionfee.Text);
+                m = Convert.ToInt32(txtbusfee.Text);
+
+                txtpayable.Text = Convert.ToString(y + z + x + m);
+                decimal reslt = Convert.ToDecimal(x + y + z + m);
+                txttotal.Text = reslt.ToString();
+                decimal discount = Convert.ToDecimal(txtdiscount.Text);
+                decimal result = -((discount / 100) * reslt) + reslt;
+                txtpayable.Text = Convert.ToString(result);
+
+            }
+
+            
+        }
+
+        private void txtdiscount_KeyPress_1(object sender, KeyPressEventArgs e)
         {
 
         }

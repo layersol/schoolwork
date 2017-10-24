@@ -49,6 +49,7 @@
             this.studentIDCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.submitVacationWorkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchBloodGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.schoolStaffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStaffInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printJoiningFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -131,11 +132,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.tsbfeecollection = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.btnidcard = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.Accounts = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
@@ -151,7 +152,6 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsluser = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.searchBloodGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -324,6 +324,13 @@
             this.submitVacationWorkToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.submitVacationWorkToolStripMenuItem.Text = "Submit Vacation Work";
             this.submitVacationWorkToolStripMenuItem.Click += new System.EventHandler(this.submitVacationWorkToolStripMenuItem_Click);
+            // 
+            // searchBloodGroupToolStripMenuItem
+            // 
+            this.searchBloodGroupToolStripMenuItem.Name = "searchBloodGroupToolStripMenuItem";
+            this.searchBloodGroupToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.searchBloodGroupToolStripMenuItem.Text = "Search Blood Group";
+            this.searchBloodGroupToolStripMenuItem.Click += new System.EventHandler(this.searchBloodGroupToolStripMenuItem_Click);
             // 
             // schoolStaffToolStripMenuItem
             // 
@@ -937,11 +944,11 @@
             this.toolStripSeparator1,
             this.printToolStripButton,
             this.toolStripSeparator2,
-            this.toolStripButton1,
+            this.tsbfeecollection,
             this.toolStripSeparator8,
             this.toolStripButton3,
             this.toolStripSeparator10,
-            this.toolStripButton2,
+            this.btnidcard,
             this.toolStripSeparator9,
             this.Accounts,
             this.toolStripSeparator11,
@@ -991,15 +998,16 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 69);
             // 
-            // toolStripButton1
+            // tsbfeecollection
             // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(86, 66);
-            this.toolStripButton1.Text = "&Fee Collection";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbfeecollection.Image = ((System.Drawing.Image)(resources.GetObject("tsbfeecollection.Image")));
+            this.tsbfeecollection.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbfeecollection.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbfeecollection.Name = "tsbfeecollection";
+            this.tsbfeecollection.Size = new System.Drawing.Size(86, 66);
+            this.tsbfeecollection.Text = "&Fee Collection";
+            this.tsbfeecollection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbfeecollection.Click += new System.EventHandler(this.tsbfeecollection_Click);
             // 
             // toolStripSeparator8
             // 
@@ -1021,15 +1029,15 @@
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(6, 69);
             // 
-            // toolStripButton2
+            // btnidcard
             // 
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(89, 66);
-            this.toolStripButton2.Text = "      ID Card       ";
-            this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnidcard.Image = ((System.Drawing.Image)(resources.GetObject("btnidcard.Image")));
+            this.btnidcard.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnidcard.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnidcard.Name = "btnidcard";
+            this.btnidcard.Size = new System.Drawing.Size(89, 66);
+            this.btnidcard.Text = "      ID Card       ";
+            this.btnidcard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator9
             // 
@@ -1136,13 +1144,6 @@
             this.tsluser.Size = new System.Drawing.Size(118, 17);
             this.tsluser.Text = "toolStripStatusLabel1";
             // 
-            // searchBloodGroupToolStripMenuItem
-            // 
-            this.searchBloodGroupToolStripMenuItem.Name = "searchBloodGroupToolStripMenuItem";
-            this.searchBloodGroupToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.searchBloodGroupToolStripMenuItem.Text = "Search Blood Group";
-            this.searchBloodGroupToolStripMenuItem.Click += new System.EventHandler(this.searchBloodGroupToolStripMenuItem_Click);
-            // 
             // MDIParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1202,9 +1203,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripMenuItem attendanceToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sTUDENTREPORTSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton tsbfeecollection;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton btnidcard;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripButton Accounts;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;

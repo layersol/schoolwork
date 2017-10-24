@@ -1476,6 +1476,25 @@ namespace SmartSchoolManagementSystem
             frm.Show();
         }
 
+        private void tsbfeecollection_Click(object sender, EventArgs e)
+        {
+
+            foreach (Form item in this.MdiChildren) // check all opened forms
+            {
+                if (item.Name == "FeeCollection") // check by form name if it's opened
+                {
+                    item.BringToFront(); // bring it front
+                    return; //exit
+                }
+            }
+
+            // if MyForm is not opened
+            // you know what it is
+            FeeCollection frm = new FeeCollection();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
         private void MDIParent_Load(object sender, EventArgs e)
         {
 

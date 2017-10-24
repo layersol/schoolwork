@@ -1476,21 +1476,19 @@ namespace SmartSchoolManagementSystem
             frm.Show();
         }
 
-        private void tsbfeecollection_Click(object sender, EventArgs e)
+        private void makeNoticeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
-                if (item.Name == "FeeCollection") // check by form name if it's opened
+                if (item.Name == "Notic") // check by form name if it's opene
                 {
-                    item.BringToFront(); // bring it front
+                    item.BringToFront(); // bring to front
                     return; //exit
                 }
             }
-
-            // if MyForm is not opened
+            // if Myform is not opened
             // you know what it is
-            FeeCollection frm = new FeeCollection();
+            Notic frm = new Notic();
             frm.MdiParent = this;
             frm.Show();
         }

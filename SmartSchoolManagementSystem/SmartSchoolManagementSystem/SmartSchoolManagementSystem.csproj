@@ -491,6 +491,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Newadmissionform.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Notic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notic.Designer.cs">
+      <DependentUpon>Notic.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaperFunds.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1033,6 +1039,9 @@
     <EmbeddedResource Include="Newadmission.resx">
       <DependentUpon>Newadmission.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Notic.resx">
+      <DependentUpon>Notic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PaperFunds.resx">
       <DependentUpon>PaperFunds.cs</DependentUpon>
     </EmbeddedResource>
@@ -1361,6 +1370,17 @@
     <None Include="Resources\studentaccountdetails.png" />
     <None Include="Resources\ponesettings.png" />
     <None Include="Resources\blood.png" />
+    <None Include="Resources\viewallenrolled.png" />
+    <None Include="Resources\remainingfee.png" />
+    <None Include="Resources\deflistclass.png" />
+    <None Include="Resources\deflistmonth.png" />
+    <None Include="Resources\deflistsession.png" />
+    <None Include="Resources\defstd.png" />
+    <None Include="Resources\charater certificate.png" />
+    <None Include="Resources\Exampaperheader.png" />
+    <None Include="Resources\subj.png" />
+    <None Include="Resources\scl.png" />
+    <None Include="Resources\notice.png" />
     <Content Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolModel.edmx</DependentUpon>

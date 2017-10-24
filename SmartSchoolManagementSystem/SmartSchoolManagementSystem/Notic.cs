@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace SmartSchoolManagementSystem
 {
-    public partial class SubjectDefination : Form
+    public partial class Notic : Form
     {
-        public SubjectDefination()
+        public Notic()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }

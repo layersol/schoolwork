@@ -43,6 +43,7 @@
             this.btnview = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgdview = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -76,10 +77,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 80);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 17);
+            this.label3.Size = new System.Drawing.Size(58, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Session";
             // 
@@ -114,10 +115,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 6);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Class";
             // 
@@ -137,9 +138,10 @@
             // rdbclass
             // 
             this.rdbclass.AutoSize = true;
-            this.rdbclass.Location = new System.Drawing.Point(181, 19);
+            this.rdbclass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbclass.Location = new System.Drawing.Point(181, 20);
             this.rdbclass.Name = "rdbclass";
-            this.rdbclass.Size = new System.Drawing.Size(104, 17);
+            this.rdbclass.Size = new System.Drawing.Size(113, 21);
             this.rdbclass.TabIndex = 5;
             this.rdbclass.TabStop = true;
             this.rdbclass.Text = "View By Class";
@@ -150,9 +152,10 @@
             // 
             this.rdball.AutoSize = true;
             this.rdball.Checked = true;
-            this.rdball.Location = new System.Drawing.Point(65, 19);
+            this.rdball.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdball.Location = new System.Drawing.Point(63, 19);
             this.rdball.Name = "rdball";
-            this.rdball.Size = new System.Drawing.Size(110, 17);
+            this.rdball.Size = new System.Drawing.Size(116, 21);
             this.rdball.TabIndex = 4;
             this.rdball.TabStop = true;
             this.rdball.Text = "View All Active";
@@ -215,11 +218,21 @@
             this.dgdview.TabIndex = 0;
             this.dgdview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.viewallenrolled;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Location = new System.Drawing.Point(4, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1268, 50);
+            this.panel4.TabIndex = 4;
+            // 
             // ViewEnrolledStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1272, 402);
+            this.ClientSize = new System.Drawing.Size(1268, 402);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
@@ -256,5 +269,6 @@
         private System.Windows.Forms.TextBox txtsession;
         private System.Windows.Forms.RadioButton rdbclass;
         private System.Windows.Forms.RadioButton rdball;
+        private System.Windows.Forms.Panel panel4;
     }
 }

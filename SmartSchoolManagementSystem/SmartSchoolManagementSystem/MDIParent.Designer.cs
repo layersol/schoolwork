@@ -1009,7 +1009,7 @@
             this.tsbfeecollection.Size = new System.Drawing.Size(86, 66);
             this.tsbfeecollection.Text = "&Fee Collection";
             this.tsbfeecollection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsbfeecollection.Click += new System.EventHandler(this.tsbfeecollection_Click);
+        //    this.tsbfeecollection.Click += new System.EventHandler(this.tsbfeecollection_Click);
             // 
             // toolStripSeparator8
             // 

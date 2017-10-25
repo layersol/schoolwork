@@ -79,7 +79,7 @@ namespace SmartSchoolManagementSystem
                 }
                 else
                 {
-                    MessageBox.Show("No Record Found at this time please click ok");
+                  //  MessageBox.Show("No Record Found at this time please click ok");
                 }
             }
             catch (Exception ex)
@@ -846,6 +846,21 @@ namespace SmartSchoolManagementSystem
         private void txtdiscount_KeyPress_1(object sender, KeyPressEventArgs e)
         {
 
+        }
+
+        private void txtstudentname_Validated(object sender, EventArgs e)
+        {
+            //if (string.IsNullOrWhiteSpace(txtstudentname.Text))
+            //{
+            //   // e.Cancel = true;
+            //    txtstudentname.Focus();
+            //    errorProvider1.SetError(txtstudentname, "Name should not be left blank!");
+            //}
+            //else
+            //{
+            //  //  e.Cancel = false;
+            //    errorProvider1.SetError(txtstudentname, "");
+            //}
         }
 
         private void btnnext_Click(object sender, EventArgs e)

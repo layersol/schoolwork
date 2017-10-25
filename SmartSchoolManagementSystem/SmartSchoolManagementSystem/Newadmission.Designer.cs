@@ -49,6 +49,7 @@
             this.btnup = new System.Windows.Forms.Button();
             this.imgpicturebox = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtdob = new System.Windows.Forms.TextBox();
             this.ckbstatus = new System.Windows.Forms.CheckBox();
             this.txtriligion = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -111,7 +112,6 @@
             this.btnprint = new System.Windows.Forms.Button();
             this.btnview = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
             this.btnnew = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -177,6 +177,7 @@
             this.txtcreationdate = new System.Windows.Forms.TextBox();
             this.txtcreatedby = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnsave = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtgcast = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
@@ -217,7 +218,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.txtdob = new System.Windows.Forms.TextBox();
             this.registrartion.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpicturebox)).BeginInit();
@@ -485,12 +485,20 @@
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             // 
+            // txtdob
+            // 
+            this.txtdob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdob.Location = new System.Drawing.Point(86, 35);
+            this.txtdob.Name = "txtdob";
+            this.txtdob.Size = new System.Drawing.Size(141, 20);
+            this.txtdob.TabIndex = 46;
+            // 
             // ckbstatus
             // 
             this.ckbstatus.AutoSize = true;
             this.ckbstatus.Checked = true;
             this.ckbstatus.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbstatus.Location = new System.Drawing.Point(428, 88);
+            this.ckbstatus.Location = new System.Drawing.Point(409, 90);
             this.ckbstatus.Name = "ckbstatus";
             this.ckbstatus.Size = new System.Drawing.Size(56, 17);
             this.ckbstatus.TabIndex = 17;
@@ -506,15 +514,15 @@
             "Hinduism",
             "Christianity",
             "Other"});
-            this.txtriligion.Location = new System.Drawing.Point(421, 61);
+            this.txtriligion.Location = new System.Drawing.Point(399, 61);
             this.txtriligion.Name = "txtriligion";
-            this.txtriligion.Size = new System.Drawing.Size(63, 21);
+            this.txtriligion.Size = new System.Drawing.Size(66, 21);
             this.txtriligion.TabIndex = 18;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(372, 64);
+            this.label10.Location = new System.Drawing.Point(350, 64);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 13);
             this.label10.TabIndex = 16;
@@ -530,7 +538,7 @@
             "Other"});
             this.cbbgender.Location = new System.Drawing.Point(292, 60);
             this.cbbgender.Name = "cbbgender";
-            this.cbbgender.Size = new System.Drawing.Size(76, 21);
+            this.cbbgender.Size = new System.Drawing.Size(50, 21);
             this.cbbgender.TabIndex = 12;
             // 
             // label8
@@ -594,7 +602,7 @@
             this.txtsmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtsmail.Location = new System.Drawing.Point(292, 86);
             this.txtsmail.Name = "txtsmail";
-            this.txtsmail.Size = new System.Drawing.Size(117, 20);
+            this.txtsmail.Size = new System.Drawing.Size(111, 20);
             this.txtsmail.TabIndex = 23;
             // 
             // cbbBloodGroup
@@ -612,7 +620,7 @@
             "O+"});
             this.cbbBloodGroup.Location = new System.Drawing.Point(413, 110);
             this.cbbBloodGroup.Name = "cbbBloodGroup";
-            this.cbbBloodGroup.Size = new System.Drawing.Size(71, 21);
+            this.cbbBloodGroup.Size = new System.Drawing.Size(52, 21);
             this.cbbBloodGroup.TabIndex = 13;
             // 
             // label26
@@ -674,7 +682,7 @@
             this.txtotherfee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtotherfee.Location = new System.Drawing.Point(68, 86);
             this.txtotherfee.Name = "txtotherfee";
-            this.txtotherfee.Size = new System.Drawing.Size(69, 20);
+            this.txtotherfee.Size = new System.Drawing.Size(87, 20);
             this.txtotherfee.TabIndex = 26;
             this.txtotherfee.Text = "0";
             this.txtotherfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -696,7 +704,7 @@
             this.txtdiscount.Enabled = false;
             this.txtdiscount.Location = new System.Drawing.Point(67, 60);
             this.txtdiscount.Name = "txtdiscount";
-            this.txtdiscount.Size = new System.Drawing.Size(69, 20);
+            this.txtdiscount.Size = new System.Drawing.Size(87, 20);
             this.txtdiscount.TabIndex = 24;
             this.txtdiscount.Text = "0";
             this.txtdiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -811,7 +819,7 @@
             this.txttutionfee.Enabled = false;
             this.txttutionfee.Location = new System.Drawing.Point(67, 35);
             this.txttutionfee.Name = "txttutionfee";
-            this.txttutionfee.Size = new System.Drawing.Size(69, 20);
+            this.txttutionfee.Size = new System.Drawing.Size(87, 20);
             this.txttutionfee.TabIndex = 3;
             this.txttutionfee.Text = "0";
             this.txttutionfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -831,7 +839,7 @@
             this.txtadfee.Enabled = false;
             this.txtadfee.Location = new System.Drawing.Point(67, 11);
             this.txtadfee.Name = "txtadfee";
-            this.txtadfee.Size = new System.Drawing.Size(69, 20);
+            this.txtadfee.Size = new System.Drawing.Size(87, 20);
             this.txtadfee.TabIndex = 1;
             this.txtadfee.Text = "0";
             this.txtadfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -868,7 +876,7 @@
             this.txtpob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpob.Location = new System.Drawing.Point(292, 35);
             this.txtpob.Name = "txtpob";
-            this.txtpob.Size = new System.Drawing.Size(192, 20);
+            this.txtpob.Size = new System.Drawing.Size(173, 20);
             this.txtpob.TabIndex = 19;
             this.txtpob.TextChanged += new System.EventHandler(this.txtpob_TextChanged);
             // 
@@ -904,9 +912,10 @@
             this.txtstudentname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtstudentname.Location = new System.Drawing.Point(86, 11);
             this.txtstudentname.Name = "txtstudentname";
-            this.txtstudentname.Size = new System.Drawing.Size(398, 20);
+            this.txtstudentname.Size = new System.Drawing.Size(379, 20);
             this.txtstudentname.TabIndex = 1;
             this.txtstudentname.TextChanged += new System.EventHandler(this.txtstudentname_TextChanged);
+            this.txtstudentname.Validated += new System.EventHandler(this.txtstudentname_Validated);
             // 
             // label13
             // 
@@ -1138,20 +1147,6 @@
             this.btnupdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnupdate.UseVisualStyleBackColor = false;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
-            // 
-            // btnsave
-            // 
-            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(566, 15);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(94, 38);
-            this.btnsave.TabIndex = 4;
-            this.btnsave.Text = "Save";
-            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnnew
             // 
@@ -1722,12 +1717,12 @@
             this.groupBox49.Controls.Add(this.label43);
             this.groupBox49.Controls.Add(this.btnupdate);
             this.groupBox49.Controls.Add(this.txtupdationby);
-            this.groupBox49.Controls.Add(this.btnsave);
             this.groupBox49.Controls.Add(this.txtupdatedby);
             this.groupBox49.Controls.Add(this.btnnew);
             this.groupBox49.Controls.Add(this.txtcreationdate);
             this.groupBox49.Controls.Add(this.txtcreatedby);
             this.groupBox49.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox49.Enabled = false;
             this.groupBox49.Location = new System.Drawing.Point(0, 677);
             this.groupBox49.Name = "groupBox49";
             this.groupBox49.Size = new System.Drawing.Size(1243, 68);
@@ -1812,12 +1807,26 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.benner1;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox2.Controls.Add(this.btnsave);
             this.groupBox2.Controls.Add(this.lblSession);
             this.groupBox2.Location = new System.Drawing.Point(-1, -5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1244, 54);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
+            // 
+            // btnsave
+            // 
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsave.Location = new System.Drawing.Point(575, 8);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(94, 38);
+            this.btnsave.TabIndex = 13;
+            this.btnsave.Text = "Save";
+            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsave.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -2010,9 +2019,10 @@
             // 
             this.label61.AutoSize = true;
             this.label61.BackColor = System.Drawing.Color.Black;
+            this.label61.Enabled = false;
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label61.Location = new System.Drawing.Point(5, 621);
+            this.label61.Location = new System.Drawing.Point(4, 619);
             this.label61.Name = "label61";
             this.label61.Padding = new System.Windows.Forms.Padding(2);
             this.label61.Size = new System.Drawing.Size(176, 17);
@@ -2133,7 +2143,8 @@
             this.groupBox6.Controls.Add(this.groupBox48);
             this.groupBox6.Controls.Add(this.groupBox50);
             this.groupBox6.Controls.Add(this.groupBox51);
-            this.groupBox6.Location = new System.Drawing.Point(8, 643);
+            this.groupBox6.Enabled = false;
+            this.groupBox6.Location = new System.Drawing.Point(7, 641);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(947, 110);
             this.groupBox6.TabIndex = 47;
@@ -2227,14 +2238,6 @@
             this.checkBox1.Text = "Copy Father\'s Info";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // txtdob
-            // 
-            this.txtdob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtdob.Location = new System.Drawing.Point(86, 35);
-            this.txtdob.Name = "txtdob";
-            this.txtdob.Size = new System.Drawing.Size(141, 20);
-            this.txtdob.TabIndex = 46;
             // 
             // Newadmission
             // 
@@ -2382,7 +2385,6 @@
         private System.Windows.Forms.Button btnprint;
         private System.Windows.Forms.Button btnview;
         private System.Windows.Forms.Button btnupdate;
-        private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnnew;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.DataGridView dvgstudent;
@@ -2504,5 +2506,6 @@
         private System.Windows.Forms.TextBox txtpaid;
         private System.Windows.Forms.TextBox txtdiscount;
         private System.Windows.Forms.TextBox txtdob;
+        private System.Windows.Forms.Button btnsave;
     }
 }

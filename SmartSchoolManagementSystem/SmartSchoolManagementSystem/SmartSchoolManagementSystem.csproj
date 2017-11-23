@@ -114,11 +114,23 @@
     <Compile Include="addnewstudent.Designer.cs">
       <DependentUpon>addnewstudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddQuestions.Designer.cs">
+      <DependentUpon>AddQuestions.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddSection.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddSection.Designer.cs">
       <DependentUpon>AddSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addsubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addsubject.Designer.cs">
+      <DependentUpon>Addsubject.cs</DependentUpon>
     </Compile>
     <Compile Include="Add_Buses.cs">
       <SubType>Form</SubType>
@@ -138,12 +150,6 @@
     <Compile Include="Add_New_Session.Designer.cs">
       <DependentUpon>Add_New_Session.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add_Student_Bio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Add_Student_Bio.Designer.cs">
-      <DependentUpon>Add_Student_Bio.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdmissionFeeCollection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,7 +162,13 @@
     <Compile Include="admissionform.Designer.cs">
       <DependentUpon>admissionform.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdmissionFormNo.Designer.cs">
+    <Compile Include="AllStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStaff.Designer.cs">
+      <DependentUpon>AllStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\AdmissionFormNo.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AdmissionFormNo.xsd</DependentUpon>
@@ -167,10 +179,10 @@
     <Compile Include="admissionformprint.Designer.cs">
       <DependentUpon>admissionformprint.cs</DependentUpon>
     </Compile>
-    <Compile Include="ALLFEELIST.cs">
+    <Compile Include="Dataset\ALLFEELIST.cs">
       <DependentUpon>ALLFEELIST.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ALLFEELIST.Designer.cs">
+    <Compile Include="Dataset\ALLFEELIST.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ALLFEELIST.xsd</DependentUpon>
@@ -284,6 +296,9 @@
     <Compile Include="dailyfeecollectionprint.Designer.cs">
       <DependentUpon>dailyfeecollectionprint.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\PRINTSTUDENTCARD.cs">
+      <DependentUpon>PRINTSTUDENTCARD.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DefaulterListByStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -326,7 +341,7 @@
     <Compile Include="destination.Designer.cs">
       <DependentUpon>destination.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTSTUDENTREMAINBLNC.Designer.cs">
+    <Compile Include="Dataset\DTSTUDENTREMAINBLNC.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DTSTUDENTREMAINBLNC.xsd</DependentUpon>
@@ -483,10 +498,10 @@
     <Compile Include="Newadmission.Designer.cs">
       <DependentUpon>Newadmission.cs</DependentUpon>
     </Compile>
-    <Compile Include="Newadmissionform.cs">
+    <Compile Include="Dataset\Newadmissionform.cs">
       <DependentUpon>Newadmissionform.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Newadmissionform.Designer.cs">
+    <Compile Include="Dataset\Newadmissionform.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Newadmissionform.xsd</DependentUpon>
@@ -558,6 +573,11 @@
     <Compile Include="RemainingFee.Designer.cs">
       <DependentUpon>RemainingFee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\PRINTSTUDENTCARD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRINTSTUDENTCARD.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ResultCard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -576,7 +596,7 @@
     <Compile Include="SaveQuestions.Designer.cs">
       <DependentUpon>SaveQuestions.cs</DependentUpon>
     </Compile>
-    <Compile Include="SchoolInformation.Designer.cs">
+    <Compile Include="Dataset\SchoolInformation.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolInformation.xsd</DependentUpon>
@@ -669,6 +689,12 @@
     <Compile Include="SubjectDefination.Designer.cs">
       <DependentUpon>SubjectDefination.cs</DependentUpon>
     </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbladdsubject.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="TBLAttendance.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
@@ -678,10 +704,16 @@
     <Compile Include="tblexpensename.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TBLSTUDENTFEEDETAILS.cs">
+    <Compile Include="tblgroupname.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblmedium.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\TBLSTUDENTFEEDETAILS.cs">
       <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
     </Compile>
-    <Compile Include="TBLSTUDENTFEEDETAILS.Designer.cs">
+    <Compile Include="Dataset\TBLSTUDENTFEEDETAILS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
@@ -737,10 +769,16 @@
     <Compile Include="TblSection.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="TBLStaffAttendance.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="TBLSTUDENTENRROL.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="TBLSTUDENTFEEDETAIL.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tblsubjectiondefination.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="TblTeacherInformation.cs">
@@ -851,6 +889,12 @@
     <Compile Include="ViewStaffInformation.Designer.cs">
       <DependentUpon>ViewStaffInformation.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSubject.Designer.cs">
+      <DependentUpon>ViewSubject.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutSSMS.resx">
       <DependentUpon>AboutSSMS.cs</DependentUpon>
     </EmbeddedResource>
@@ -863,8 +907,14 @@
     <EmbeddedResource Include="addnewstudent.resx">
       <DependentUpon>addnewstudent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddQuestions.resx">
+      <DependentUpon>AddQuestions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddSection.resx">
       <DependentUpon>AddSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addsubject.resx">
+      <DependentUpon>Addsubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Buses.resx">
       <DependentUpon>Add_Buses.cs</DependentUpon>
@@ -875,9 +925,6 @@
     <EmbeddedResource Include="Add_New_Session.resx">
       <DependentUpon>Add_New_Session.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add_Student_Bio.resx">
-      <DependentUpon>Add_Student_Bio.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdmissionFeeCollection.resx">
       <DependentUpon>AdmissionFeeCollection.cs</DependentUpon>
     </EmbeddedResource>
@@ -886,6 +933,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admissionformprint.resx">
       <DependentUpon>admissionformprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStaff.resx">
+      <DependentUpon>AllStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ArrearsAndBalance.resx">
       <DependentUpon>ArrearsAndBalance.cs</DependentUpon>
@@ -1054,7 +1104,6 @@
     <EmbeddedResource Include="PrintStaffCard.resx">
       <DependentUpon>PrintStaffCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="printstudentcard.rdlc" />
     <EmbeddedResource Include="ProgressReport.resx">
       <DependentUpon>ProgressReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -1077,6 +1126,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="reports\RPTSTUDENTREMAING.rdlc" />
     <EmbeddedResource Include="reports\Studentfeelist.rdlc" />
+    <EmbeddedResource Include="reports\StudentIDCard.rdlc" />
     <EmbeddedResource Include="ResultCard.resx">
       <DependentUpon>ResultCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -1084,10 +1134,10 @@
       <DependentUpon>RollNoSlip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptadmissionprint.rdlc" />
-    <EmbeddedResource Include="rptdailyfeecollection.rdlc" />
-    <EmbeddedResource Include="rptresultcard.rdlc" />
-    <EmbeddedResource Include="rptstudentfeereciept.rdlc" />
-    <EmbeddedResource Include="rptteacherinfoform.rdlc" />
+    <EmbeddedResource Include="reports\rptdailyfeecollection.rdlc" />
+    <EmbeddedResource Include="reports\rptresultcard.rdlc" />
+    <EmbeddedResource Include="reports\rptstudentfeereciept.rdlc" />
+    <EmbeddedResource Include="reports\rptteacherinfoform.rdlc" />
     <EmbeddedResource Include="SaveQuestions.resx">
       <DependentUpon>SaveQuestions.cs</DependentUpon>
     </EmbeddedResource>
@@ -1184,48 +1234,51 @@
     <EmbeddedResource Include="ViewStaffInformation.resx">
       <DependentUpon>ViewStaffInformation.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="AdmissionFormNo.xsc">
+    <EmbeddedResource Include="ViewSubject.resx">
+      <DependentUpon>ViewSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Dataset\AdmissionFormNo.xsc">
       <DependentUpon>AdmissionFormNo.xsd</DependentUpon>
     </None>
-    <None Include="AdmissionFormNo.xsd">
+    <None Include="Dataset\AdmissionFormNo.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>AdmissionFormNo.Designer.cs</LastGenOutput>
     </None>
-    <None Include="AdmissionFormNo.xss">
+    <None Include="Dataset\AdmissionFormNo.xss">
       <DependentUpon>AdmissionFormNo.xsd</DependentUpon>
     </None>
-    <None Include="ALLFEELIST.xsc">
+    <None Include="Dataset\ALLFEELIST.xsc">
       <DependentUpon>ALLFEELIST.xsd</DependentUpon>
     </None>
-    <None Include="ALLFEELIST.xsd">
+    <None Include="Dataset\ALLFEELIST.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ALLFEELIST.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ALLFEELIST.xss">
+    <None Include="Dataset\ALLFEELIST.xss">
       <DependentUpon>ALLFEELIST.xsd</DependentUpon>
     </None>
-    <None Include="DTSTUDENTREMAINBLNC.xsc">
+    <None Include="Dataset\DTSTUDENTREMAINBLNC.xsc">
       <DependentUpon>DTSTUDENTREMAINBLNC.xsd</DependentUpon>
     </None>
-    <None Include="DTSTUDENTREMAINBLNC.xsd">
+    <None Include="Dataset\DTSTUDENTREMAINBLNC.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DTSTUDENTREMAINBLNC.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DTSTUDENTREMAINBLNC.xss">
+    <None Include="Dataset\DTSTUDENTREMAINBLNC.xss">
       <DependentUpon>DTSTUDENTREMAINBLNC.xsd</DependentUpon>
     </None>
-    <None Include="Newadmissionform.xsc">
+    <None Include="Dataset\Newadmissionform.xsc">
       <DependentUpon>Newadmissionform.xsd</DependentUpon>
     </None>
-    <None Include="Newadmissionform.xsd">
+    <None Include="Dataset\Newadmissionform.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>Newadmissionform.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Newadmissionform.xss">
+    <None Include="Dataset\Newadmissionform.xss">
       <DependentUpon>Newadmissionform.xsd</DependentUpon>
     </None>
     <None Include="packages.config">
@@ -1244,29 +1297,40 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>SchoolModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="SchoolInformation.xsc">
+    <None Include="Dataset\PRINTSTUDENTCARD.xsc">
+      <DependentUpon>PRINTSTUDENTCARD.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\PRINTSTUDENTCARD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRINTSTUDENTCARD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\PRINTSTUDENTCARD.xss">
+      <DependentUpon>PRINTSTUDENTCARD.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\SchoolInformation.xsc">
       <DependentUpon>SchoolInformation.xsd</DependentUpon>
     </None>
-    <None Include="SchoolInformation.xsd">
+    <None Include="Dataset\SchoolInformation.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>SchoolInformation.Designer.cs</LastGenOutput>
     </None>
-    <None Include="SchoolInformation.xss">
+    <None Include="Dataset\SchoolInformation.xss">
       <DependentUpon>SchoolInformation.xsd</DependentUpon>
     </None>
     <None Include="SchoolModel.edmx.diagram">
       <DependentUpon>SchoolModel.edmx</DependentUpon>
     </None>
-    <None Include="TBLSTUDENTFEEDETAILS.xsc">
+    <None Include="Dataset\TBLSTUDENTFEEDETAILS.xsc">
       <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
     </None>
-    <None Include="TBLSTUDENTFEEDETAILS.xsd">
+    <None Include="Dataset\TBLSTUDENTFEEDETAILS.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>TBLSTUDENTFEEDETAILS.Designer.cs</LastGenOutput>
     </None>
-    <None Include="TBLSTUDENTFEEDETAILS.xss">
+    <None Include="Dataset\TBLSTUDENTFEEDETAILS.xss">
       <DependentUpon>TBLSTUDENTFEEDETAILS.xsd</DependentUpon>
     </None>
   </ItemGroup>
@@ -1281,7 +1345,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AllReports\" />
-    <Folder Include="Dataset\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\123.png" />

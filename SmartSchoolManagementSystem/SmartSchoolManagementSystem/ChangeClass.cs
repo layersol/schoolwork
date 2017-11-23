@@ -16,5 +16,10 @@ namespace SmartSchoolManagementSystem
         {
             InitializeComponent();
         }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

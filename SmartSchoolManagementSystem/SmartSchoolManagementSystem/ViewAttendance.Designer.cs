@@ -63,7 +63,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(3, 49);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(366, 84);
+            this.groupBox1.Size = new System.Drawing.Size(367, 66);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Report Mode";
@@ -72,7 +72,7 @@
             // 
             this.rdbblankregister.AutoSize = true;
             this.rdbblankregister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbblankregister.Location = new System.Drawing.Point(189, 36);
+            this.rdbblankregister.Location = new System.Drawing.Point(243, 22);
             this.rdbblankregister.Name = "rdbblankregister";
             this.rdbblankregister.Size = new System.Drawing.Size(118, 21);
             this.rdbblankregister.TabIndex = 0;
@@ -84,7 +84,7 @@
             // 
             this.rdbclass.AutoSize = true;
             this.rdbclass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbclass.Location = new System.Drawing.Point(109, 36);
+            this.rdbclass.Location = new System.Drawing.Point(176, 22);
             this.rdbclass.Name = "rdbclass";
             this.rdbclass.Size = new System.Drawing.Size(60, 21);
             this.rdbclass.TabIndex = 0;
@@ -96,7 +96,7 @@
             // 
             this.rdbstudent.AutoSize = true;
             this.rdbstudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbstudent.Location = new System.Drawing.Point(10, 36);
+            this.rdbstudent.Location = new System.Drawing.Point(91, 22);
             this.rdbstudent.Name = "rdbstudent";
             this.rdbstudent.Size = new System.Drawing.Size(75, 21);
             this.rdbstudent.TabIndex = 0;
@@ -126,7 +126,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(4, 135);
+            this.panel2.Location = new System.Drawing.Point(4, 121);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(366, 163);
             this.panel2.TabIndex = 2;
@@ -237,7 +237,7 @@
             this.panel3.Controls.Add(this.btnpreview);
             this.panel3.Controls.Add(this.btnprint);
             this.panel3.Controls.Add(this.btnview);
-            this.panel3.Location = new System.Drawing.Point(3, 304);
+            this.panel3.Location = new System.Drawing.Point(4, 290);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(366, 49);
             this.panel3.TabIndex = 3;
@@ -290,7 +290,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 363);
+            this.ClientSize = new System.Drawing.Size(374, 343);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

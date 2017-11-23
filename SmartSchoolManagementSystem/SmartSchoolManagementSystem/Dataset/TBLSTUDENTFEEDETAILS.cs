@@ -1,4 +1,4 @@
-﻿namespace SmartSchoolManagementSystem
+﻿namespace SmartSchoolManagementSystem.Dataset
 {
 
 

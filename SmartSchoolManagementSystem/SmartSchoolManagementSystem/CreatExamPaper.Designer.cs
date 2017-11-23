@@ -34,9 +34,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 349);
+            this.ClientSize = new System.Drawing.Size(795, 472);
             this.Name = "CreatExamPaper";
-            this.Text = "Creat Exam Paper";
+            this.Text = "Create Exam Paper";
             this.ResumeLayout(false);
 
         }

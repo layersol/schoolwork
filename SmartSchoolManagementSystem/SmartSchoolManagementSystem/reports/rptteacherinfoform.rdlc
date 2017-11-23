@@ -1,301 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
-  <Body>
-    <ReportItems>
-      <Rectangle Name="Rectangle1">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="AdmissionFormNo">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>f97faa15-0432-4f76-8960-490c0088add4</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="Newadmissionform">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>f53f14f7-5249-4c26-9165-b1a8d2bbe8c7</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="SchoolInformation">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>876142f8-928c-427a-9380-5e106c814462</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="SCHOOLINFO">
+      <Query>
+        <DataSourceName>SchoolInformation</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="SchoolName">
+          <DataField>SchoolName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LOGO">
+          <DataField>LOGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FIRSTADDRESS">
+          <DataField>FIRSTADDRESS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SECONDADDRESS">
+          <DataField>SECONDADDRESS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONTACTA">
+          <DataField>CONTACTA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONTACTB">
+          <DataField>CONTACTB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONTACTC">
+          <DataField>CONTACTC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FIRSTEMAIL">
+          <DataField>FIRSTEMAIL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SECONDEMAIL">
+          <DataField>SECONDEMAIL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WEBSITE">
+          <DataField>WEBSITE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>SchoolInformation</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\qaise\Source\Repos\schoolwork\SmartSchoolManagementSystem\SmartSchoolManagementSystem\SchoolInformation.xsd</rd:SchemaPath>
+        <rd:TableName>SchoolIformation</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
         <ReportItems>
-          <Textbox Name="Textbox1">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Model Science College &amp; School</Value>
-                    <Style>
-                      <FontSize>16pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.10765in</Top>
-            <Left>1.51045in</Left>
-            <Height>0.25in</Height>
-            <Width>4.22221in</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox2">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Ellahabad</Value>
-                    <Style>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>0.37848in</Top>
-            <Left>1.51044in</Left>
-            <Height>0.25in</Height>
-            <Width>4.22222in</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox6">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Mobile:03044001614</Value>
-                    <Style>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>0.69792in</Top>
-            <Left>1.51044in</Left>
-            <Height>0.25in</Height>
-            <Width>4.22222in</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Image Name="Image2">
-            <Source>Embedded</Source>
-            <Value>logo2</Value>
-            <Sizing>FitProportional</Sizing>
-            <Top>0.10938in</Top>
-            <Left>0.11633in</Left>
-            <Height>1.18056in</Height>
-            <Width>1.18925in</Width>
-            <ZIndex>3</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Image>
-          <Rectangle Name="Rectangle2">
+          <Rectangle Name="Rectangle1">
             <ReportItems>
-              <Textbox Name="Textbox8">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Photo</Value>
-                        <Style>
-                          <FontSize>12pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox8</rd:DefaultName>
-                <Top>0.58854in</Top>
-                <Left>0.21875in</Left>
-                <Height>0.25in</Height>
-                <Width>1in</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                  <PaddingLeft>2pt</PaddingLeft>
-                  <PaddingRight>2pt</PaddingRight>
-                  <PaddingTop>2pt</PaddingTop>
-                  <PaddingBottom>2pt</PaddingBottom>
-                </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>0.10765in</Top>
-            <Left>6.46531in</Left>
-            <Height>1.18229in</Height>
-            <Width>1.21875in</Width>
-            <ZIndex>4</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-                <Width>1.5pt</Width>
-              </Border>
-            </Style>
-          </Rectangle>
-          <Textbox Name="Textbox16">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>TEACHER'S BIO DATA</Value>
-                    <Style>
-                      <FontSize>9pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>White</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>1.58653in</Top>
-            <Left>0.10933in</Left>
-            <Height>0.17in</Height>
-            <Width>2.03646in</Width>
-            <ZIndex>5</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>Black</BackgroundColor>
-              <PaddingLeft>2pt</PaddingLeft>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle9">
-            <ReportItems>
-              <Textbox Name="Textbox76">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Date of Birth</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.05375in</Top>
-                <Left>3.91512in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.97401in</Width>
+              <Image Name="Image2">
+                <Source>Embedded</Source>
+                <Value>logo2</Value>
+                <Sizing>FitProportional</Sizing>
+                <Top>0.10938in</Top>
+                <Left>0.11633in</Left>
+                <Height>1.18056in</Height>
+                <Width>1.18925in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
                 </Style>
-              </Textbox>
-              <Textbox Name="Textbox77">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Place of Birth</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.04944in</Top>
-                <Left>6.04189in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.79518in</Width>
-                <ZIndex>1</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-              <Line Name="Line1">
-                <Top>0cm</Top>
-                <Left>2.58479cm</Left>
-                <Height>0.24209in</Height>
-                <Width>0cm</Width>
-                <ZIndex>2</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line5">
-                <Top>0cm</Top>
-                <Left>17.47199cm</Left>
-                <Height>0.61491cm</Height>
-                <Width>0cm</Width>
-                <ZIndex>3</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Rectangle Name="Rectangle10">
+              </Image>
+              <Rectangle Name="Rectangle2">
                 <ReportItems>
-                  <Textbox Name="Textbox78">
+                  <Textbox Name="Textbox8">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value> CNIC Number</Value>
+                            <Value>Photo</Value>
+                            <Style>
+                              <FontSize>12pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox8</rd:DefaultName>
+                    <Top>0.58854in</Top>
+                    <Left>0.21875in</Left>
+                    <Height>0.25in</Height>
+                    <Width>1in</Width>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </ReportItems>
+                <KeepTogether>true</KeepTogether>
+                <Top>0.10765in</Top>
+                <Left>6.46531in</Left>
+                <Height>1.18229in</Height>
+                <Width>1.21875in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                    <Width>1.5pt</Width>
+                  </Border>
+                </Style>
+              </Rectangle>
+              <Textbox Name="Textbox16">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>TEACHER'S BIO DATA</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox11</rd:DefaultName>
+                <Top>1.58653in</Top>
+                <Left>0.10933in</Left>
+                <Height>0.17in</Height>
+                <Width>2.03646in</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <BackgroundColor>Black</BackgroundColor>
+                  <PaddingLeft>2pt</PaddingLeft>
+                </Style>
+              </Textbox>
+              <Rectangle Name="Rectangle9">
+                <ReportItems>
+                  <Textbox Name="Textbox76">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Date of Birth</Value>
                             <Style>
                               <FontSize>8pt</FontSize>
                               <FontWeight>Bold</FontWeight>
@@ -306,24 +202,24 @@
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox30</rd:DefaultName>
-                    <Top>0.0335in</Top>
-                    <Left>0.035in</Left>
+                    <Top>0.05375in</Top>
+                    <Left>3.91512in</Left>
                     <Height>0.15625in</Height>
-                    <Width>0.92711in</Width>
+                    <Width>0.97401in</Width>
                     <Style>
                       <Border>
                         <Style>None</Style>
                       </Border>
                     </Style>
                   </Textbox>
-                  <Textbox Name="Textbox81">
+                  <Textbox Name="Textbox77">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Religion</Value>
+                            <Value>Place of Birth</Value>
                             <Style>
                               <FontSize>8pt</FontSize>
                               <FontWeight>Bold</FontWeight>
@@ -334,10 +230,10 @@
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox30</rd:DefaultName>
-                    <Top>0.0335in</Top>
-                    <Left>5.94986in</Left>
+                    <Top>0.04944in</Top>
+                    <Left>6.04189in</Left>
                     <Height>0.15625in</Height>
-                    <Width>0.50526in</Width>
+                    <Width>0.79518in</Width>
                     <ZIndex>1</ZIndex>
                     <Style>
                       <Border>
@@ -345,45 +241,40 @@
                       </Border>
                     </Style>
                   </Textbox>
-                  <Textbox Name="Textbox80">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Gender</Value>
-                            <Style>
-                              <FontSize>8pt</FontSize>
-                              <FontWeight>Bold</FontWeight>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox30</rd:DefaultName>
-                    <Top>0.0335in</Top>
-                    <Left>3.54685in</Left>
-                    <Height>0.15625in</Height>
-                    <Width>0.57809in</Width>
+                  <Line Name="Line1">
+                    <Top>0cm</Top>
+                    <Left>2.58479cm</Left>
+                    <Height>0.24209in</Height>
+                    <Width>0cm</Width>
                     <ZIndex>2</ZIndex>
                     <Style>
                       <Border>
-                        <Style>None</Style>
+                        <Style>Solid</Style>
                       </Border>
                     </Style>
-                  </Textbox>
-                  <Rectangle Name="Rectangle11">
+                  </Line>
+                  <Line Name="Line5">
+                    <Top>0cm</Top>
+                    <Left>17.47199cm</Left>
+                    <Height>0.61491cm</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>3</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Rectangle Name="Rectangle10">
                     <ReportItems>
-                      <Textbox Name="Textbox82">
+                      <Textbox Name="Textbox78">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Cell # for sms</Value>
+                                <Value> CNIC Number</Value>
                                 <Style>
                                   <FontSize>8pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
@@ -394,8 +285,8 @@
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox30</rd:DefaultName>
-                        <Top>0.02332in</Top>
-                        <Left>0.03499in</Left>
+                        <Top>0.0335in</Top>
+                        <Left>0.035in</Left>
                         <Height>0.15625in</Height>
                         <Width>0.92711in</Width>
                         <Style>
@@ -404,14 +295,14 @@
                           </Border>
                         </Style>
                       </Textbox>
-                      <Textbox Name="Textbox83">
+                      <Textbox Name="Textbox81">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Email</Value>
+                                <Value>Religion</Value>
                                 <Style>
                                   <FontSize>8pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
@@ -422,8 +313,8 @@
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox30</rd:DefaultName>
-                        <Top>0.02332in</Top>
-                        <Left>4.79686in</Left>
+                        <Top>0.0335in</Top>
+                        <Left>5.94986in</Left>
                         <Height>0.15625in</Height>
                         <Width>0.50526in</Width>
                         <ZIndex>1</ZIndex>
@@ -433,14 +324,14 @@
                           </Border>
                         </Style>
                       </Textbox>
-                      <Textbox Name="Textbox84">
+                      <Textbox Name="Textbox80">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Home Tel</Value>
+                                <Value>Gender</Value>
                                 <Style>
                                   <FontSize>8pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
@@ -451,8 +342,8 @@
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox30</rd:DefaultName>
-                        <Top>0.02332in</Top>
-                        <Left>2.68404in</Left>
+                        <Top>0.0335in</Top>
+                        <Left>3.54685in</Left>
                         <Height>0.15625in</Height>
                         <Width>0.57809in</Width>
                         <ZIndex>2</ZIndex>
@@ -462,16 +353,16 @@
                           </Border>
                         </Style>
                       </Textbox>
-                      <Rectangle Name="Rectangle12">
+                      <Rectangle Name="Rectangle11">
                         <ReportItems>
-                          <Textbox Name="Textbox85">
+                          <Textbox Name="Textbox82">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Home Address</Value>
+                                    <Value>Cell # for sms</Value>
                                     <Style>
                                       <FontSize>8pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -482,8 +373,8 @@
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>Textbox30</rd:DefaultName>
-                            <Top>0.02166in</Top>
-                            <Left>0.028in</Left>
+                            <Top>0.02332in</Top>
+                            <Left>0.03499in</Left>
                             <Height>0.15625in</Height>
                             <Width>0.92711in</Width>
                             <Style>
@@ -492,12 +383,172 @@
                               </Border>
                             </Style>
                           </Textbox>
-                          <Line Name="Line11">
+                          <Textbox Name="Textbox83">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Email</Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox30</rd:DefaultName>
+                            <Top>0.02332in</Top>
+                            <Left>4.79686in</Left>
+                            <Height>0.15625in</Height>
+                            <Width>0.50526in</Width>
+                            <ZIndex>1</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>None</Style>
+                              </Border>
+                            </Style>
+                          </Textbox>
+                          <Textbox Name="Textbox84">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Home Tel</Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox30</rd:DefaultName>
+                            <Top>0.02332in</Top>
+                            <Left>2.68404in</Left>
+                            <Height>0.15625in</Height>
+                            <Width>0.57809in</Width>
+                            <ZIndex>2</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>None</Style>
+                              </Border>
+                            </Style>
+                          </Textbox>
+                          <Rectangle Name="Rectangle12">
+                            <ReportItems>
+                              <Textbox Name="Textbox85">
+                                <CanGrow>true</CanGrow>
+                                <KeepTogether>true</KeepTogether>
+                                <Paragraphs>
+                                  <Paragraph>
+                                    <TextRuns>
+                                      <TextRun>
+                                        <Value>Home Address</Value>
+                                        <Style>
+                                          <FontSize>8pt</FontSize>
+                                          <FontWeight>Bold</FontWeight>
+                                        </Style>
+                                      </TextRun>
+                                    </TextRuns>
+                                    <Style />
+                                  </Paragraph>
+                                </Paragraphs>
+                                <rd:DefaultName>Textbox30</rd:DefaultName>
+                                <Top>0.02166in</Top>
+                                <Left>0.028in</Left>
+                                <Height>0.15625in</Height>
+                                <Width>0.92711in</Width>
+                                <Style>
+                                  <Border>
+                                    <Style>None</Style>
+                                  </Border>
+                                </Style>
+                              </Textbox>
+                              <Line Name="Line11">
+                                <Top>0cm</Top>
+                                <Left>2.58485cm</Left>
+                                <Height>0.21in</Height>
+                                <Width>0cm</Width>
+                                <ZIndex>1</ZIndex>
+                                <Style>
+                                  <Border>
+                                    <Style>Solid</Style>
+                                  </Border>
+                                </Style>
+                              </Line>
+                            </ReportItems>
+                            <KeepTogether>true</KeepTogether>
+                            <Top>0.21347in</Top>
+                            <Height>0.21in</Height>
+                            <Width>7.60959in</Width>
+                            <ZIndex>3</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Rectangle>
+                          <Line Name="Line8">
                             <Top>0cm</Top>
                             <Left>2.58485cm</Left>
                             <Height>0.21in</Height>
                             <Width>0cm</Width>
-                            <ZIndex>1</ZIndex>
+                            <ZIndex>4</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Line>
+                          <Line Name="Line17">
+                            <Top>0cm</Top>
+                            <Left>6.67634cm</Left>
+                            <Height>0.21in</Height>
+                            <Width>0cm</Width>
+                            <ZIndex>5</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Line>
+                          <Line Name="Line18">
+                            <Top>0.00881cm</Top>
+                            <Left>8.46219cm</Left>
+                            <Height>0.21in</Height>
+                            <Width>0cm</Width>
+                            <ZIndex>6</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Line>
+                          <Line Name="Line19">
+                            <Top>0cm</Top>
+                            <Left>12.07819cm</Left>
+                            <Height>0.21in</Height>
+                            <Width>0cm</Width>
+                            <ZIndex>7</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Line>
+                          <Line Name="Line20">
+                            <Top>0cm</Top>
+                            <Left>13.57322cm</Left>
+                            <Height>0.21in</Height>
+                            <Width>0cm</Width>
+                            <ZIndex>8</ZIndex>
                             <Style>
                               <Border>
                                 <Style>Solid</Style>
@@ -506,8 +557,8 @@
                           </Line>
                         </ReportItems>
                         <KeepTogether>true</KeepTogether>
-                        <Top>0.21347in</Top>
-                        <Height>0.21in</Height>
+                        <Top>0.20463in</Top>
+                        <Height>0.42347in</Height>
                         <Width>7.60959in</Width>
                         <ZIndex>3</ZIndex>
                         <Style>
@@ -516,8 +567,8 @@
                           </Border>
                         </Style>
                       </Rectangle>
-                      <Line Name="Line8">
-                        <Top>0cm</Top>
+                      <Line Name="Line6">
+                        <Top>0.01453cm</Top>
                         <Left>2.58485cm</Left>
                         <Height>0.21in</Height>
                         <Width>0cm</Width>
@@ -528,9 +579,9 @@
                           </Border>
                         </Style>
                       </Line>
-                      <Line Name="Line17">
-                        <Top>0cm</Top>
-                        <Left>6.67634cm</Left>
+                      <Line Name="Line12">
+                        <Top>0.01453cm</Top>
+                        <Left>8.86789cm</Left>
                         <Height>0.21in</Height>
                         <Width>0cm</Width>
                         <ZIndex>5</ZIndex>
@@ -540,9 +591,9 @@
                           </Border>
                         </Style>
                       </Line>
-                      <Line Name="Line18">
-                        <Top>0.00881cm</Top>
-                        <Left>8.46219cm</Left>
+                      <Line Name="Line13">
+                        <Top>0.00484cm</Top>
+                        <Left>10.96009cm</Left>
                         <Height>0.21in</Height>
                         <Width>0cm</Width>
                         <ZIndex>6</ZIndex>
@@ -552,9 +603,9 @@
                           </Border>
                         </Style>
                       </Line>
-                      <Line Name="Line19">
+                      <Line Name="Line14">
                         <Top>0cm</Top>
-                        <Left>12.07819cm</Left>
+                        <Left>14.91434cm</Left>
                         <Height>0.21in</Height>
                         <Width>0cm</Width>
                         <ZIndex>7</ZIndex>
@@ -564,10 +615,10 @@
                           </Border>
                         </Style>
                       </Line>
-                      <Line Name="Line20">
-                        <Top>0cm</Top>
-                        <Left>13.57322cm</Left>
-                        <Height>0.21in</Height>
+                      <Line Name="Line31">
+                        <Top>0.01453cm</Top>
+                        <Left>16.53711cm</Left>
+                        <Height>0.20428in</Height>
                         <Width>0cm</Width>
                         <ZIndex>8</ZIndex>
                         <Style>
@@ -578,44 +629,49 @@
                       </Line>
                     </ReportItems>
                     <KeepTogether>true</KeepTogether>
-                    <Top>0.20463in</Top>
-                    <Height>0.42347in</Height>
+                    <Top>0.23206in</Top>
+                    <Height>0.6281in</Height>
                     <Width>7.60959in</Width>
-                    <ZIndex>3</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                      </Border>
-                    </Style>
-                  </Rectangle>
-                  <Line Name="Line6">
-                    <Top>0.01453cm</Top>
-                    <Left>2.58485cm</Left>
-                    <Height>0.21in</Height>
-                    <Width>0cm</Width>
                     <ZIndex>4</ZIndex>
                     <Style>
                       <Border>
                         <Style>Solid</Style>
                       </Border>
                     </Style>
-                  </Line>
-                  <Line Name="Line12">
-                    <Top>0.01453cm</Top>
-                    <Left>8.86789cm</Left>
-                    <Height>0.21in</Height>
-                    <Width>0cm</Width>
+                  </Rectangle>
+                  <Textbox Name="Textbox117">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Teacher Name</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.04944in</Top>
+                    <Left>0.028in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.92711in</Width>
                     <ZIndex>5</ZIndex>
                     <Style>
                       <Border>
-                        <Style>Solid</Style>
+                        <Style>None</Style>
                       </Border>
                     </Style>
-                  </Line>
-                  <Line Name="Line13">
-                    <Top>0.00484cm</Top>
-                    <Left>10.96009cm</Left>
-                    <Height>0.21in</Height>
+                  </Textbox>
+                  <Line Name="Line15">
+                    <Top>0cm</Top>
+                    <Left>15.20528cm</Left>
+                    <Height>0.24209in</Height>
                     <Width>0cm</Width>
                     <ZIndex>6</ZIndex>
                     <Style>
@@ -624,10 +680,10 @@
                       </Border>
                     </Style>
                   </Line>
-                  <Line Name="Line14">
+                  <Line Name="Line16">
                     <Top>0cm</Top>
-                    <Left>14.91434cm</Left>
-                    <Height>0.21in</Height>
+                    <Left>12.52422cm</Left>
+                    <Height>0.24209in</Height>
                     <Width>0cm</Width>
                     <ZIndex>7</ZIndex>
                     <Style>
@@ -636,10 +692,10 @@
                       </Border>
                     </Style>
                   </Line>
-                  <Line Name="Line31">
-                    <Top>0.01453cm</Top>
-                    <Left>16.53711cm</Left>
-                    <Height>0.20428in</Height>
+                  <Line Name="Line30">
+                    <Top>0cm</Top>
+                    <Left>9.6269cm</Left>
+                    <Height>0.21in</Height>
                     <Width>0cm</Width>
                     <ZIndex>8</ZIndex>
                     <Style>
@@ -650,528 +706,10 @@
                   </Line>
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>0.23206in</Top>
-                <Height>0.6281in</Height>
+                <Top>1.82684in</Top>
+                <Left>0.08833in</Left>
+                <Height>2.18481cm</Height>
                 <Width>7.60959in</Width>
-                <ZIndex>4</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Rectangle>
-              <Textbox Name="Textbox117">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Teacher Name</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.04944in</Top>
-                <Left>0.028in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.92711in</Width>
-                <ZIndex>5</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-              <Line Name="Line15">
-                <Top>0cm</Top>
-                <Left>15.20528cm</Left>
-                <Height>0.24209in</Height>
-                <Width>0cm</Width>
-                <ZIndex>6</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line16">
-                <Top>0cm</Top>
-                <Left>12.52422cm</Left>
-                <Height>0.24209in</Height>
-                <Width>0cm</Width>
-                <ZIndex>7</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line30">
-                <Top>0cm</Top>
-                <Left>9.6269cm</Left>
-                <Height>0.21in</Height>
-                <Width>0cm</Width>
-                <ZIndex>8</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>1.82684in</Top>
-            <Left>0.08833in</Left>
-            <Height>2.18481cm</Height>
-            <Width>7.60959in</Width>
-            <ZIndex>6</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Rectangle>
-          <Textbox Name="Textbox17">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>FATHER'S INFORMATION</Value>
-                    <Style>
-                      <FontSize>9pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>White</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>2.75643in</Top>
-            <Left>0.08833in</Left>
-            <Height>0.17in</Height>
-            <Width>2.03646in</Width>
-            <ZIndex>7</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>Black</BackgroundColor>
-              <PaddingLeft>2pt</PaddingLeft>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle13">
-            <ReportItems>
-              <Textbox Name="Textbox86">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Father's Name</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.01566in</Top>
-                <Left>0.014in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.92711in</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox87">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Father Cell</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.01566in</Top>
-                <Left>5.17886in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.84118in</Width>
-                <ZIndex>1</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox88">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Faher's CNIC</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.01566in</Top>
-                <Left>2.52701in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.74912in</Width>
-                <ZIndex>2</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-              <Rectangle Name="Rectangle14">
-                <ReportItems>
-                  <Textbox Name="Textbox90">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Office Tel No.</Value>
-                            <Style>
-                              <FontSize>8pt</FontSize>
-                              <FontWeight>Bold</FontWeight>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox30</rd:DefaultName>
-                    <Top>0.03541in</Top>
-                    <Left>4.79686in</Left>
-                    <Height>0.15625in</Height>
-                    <Width>0.9037in</Width>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox91">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Monthly Incom</Value>
-                            <Style>
-                              <FontSize>8pt</FontSize>
-                              <FontWeight>Bold</FontWeight>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox30</rd:DefaultName>
-                    <Top>0.03541in</Top>
-                    <Left>2.67715in</Left>
-                    <Height>0.15625in</Height>
-                    <Width>0.95049in</Width>
-                    <ZIndex>1</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                    </Style>
-                  </Textbox>
-                  <Textbox Name="Textbox89">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Father's Occupation</Value>
-                            <Style>
-                              <FontSize>8pt</FontSize>
-                              <FontWeight>Bold</FontWeight>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox30</rd:DefaultName>
-                    <Top>0.03541in</Top>
-                    <Left>0.021in</Left>
-                    <Height>0.15625in</Height>
-                    <Width>1.51044in</Width>
-                    <ZIndex>2</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>None</Style>
-                      </Border>
-                    </Style>
-                  </Textbox>
-                  <Rectangle Name="Rectangle15">
-                    <ReportItems>
-                      <Textbox Name="Textbox92">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value>Cast</Value>
-                                <Style>
-                                  <FontSize>8pt</FontSize>
-                                  <FontWeight>Bold</FontWeight>
-                                </Style>
-                              </TextRun>
-                            </TextRuns>
-                            <Style />
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox30</rd:DefaultName>
-                        <Top>0.0382in</Top>
-                        <Left>0.007in</Left>
-                        <Height>0.15625in</Height>
-                        <Width>0.33336in</Width>
-                        <Style>
-                          <Border>
-                            <Style>None</Style>
-                          </Border>
-                        </Style>
-                      </Textbox>
-                      <Textbox Name="Textbox93">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value>Email</Value>
-                                <Style>
-                                  <FontSize>8pt</FontSize>
-                                  <FontWeight>Bold</FontWeight>
-                                </Style>
-                              </TextRun>
-                            </TextRuns>
-                            <Style />
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox30</rd:DefaultName>
-                        <Top>0.0382in</Top>
-                        <Left>5.29686in</Left>
-                        <Height>0.15625in</Height>
-                        <Width>0.50526in</Width>
-                        <ZIndex>1</ZIndex>
-                        <Style>
-                          <Border>
-                            <Style>None</Style>
-                          </Border>
-                        </Style>
-                      </Textbox>
-                      <Textbox Name="Textbox94">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value>Address of Business / Employer</Value>
-                                <Style>
-                                  <FontSize>8pt</FontSize>
-                                  <FontWeight>Bold</FontWeight>
-                                </Style>
-                              </TextRun>
-                            </TextRuns>
-                            <Style />
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox30</rd:DefaultName>
-                        <Top>0.0382in</Top>
-                        <Left>1.14325in</Left>
-                        <Height>0.15625in</Height>
-                        <Width>1.88976in</Width>
-                        <ZIndex>2</ZIndex>
-                        <Style>
-                          <Border>
-                            <Style>None</Style>
-                          </Border>
-                        </Style>
-                      </Textbox>
-                      <Line Name="Line34">
-                        <Top>0.0113cm</Top>
-                        <Left>1.0409cm</Left>
-                        <Height>0.2593in</Height>
-                        <Width>0cm</Width>
-                        <ZIndex>3</ZIndex>
-                        <Style>
-                          <Border>
-                            <Style>Solid</Style>
-                          </Border>
-                        </Style>
-                      </Line>
-                      <Line Name="Line35">
-                        <Top>0.0113cm</Top>
-                        <Left>2.72748cm</Left>
-                        <Height>0.2593in</Height>
-                        <Width>0cm</Width>
-                        <ZIndex>4</ZIndex>
-                        <Style>
-                          <Border>
-                            <Style>Solid</Style>
-                          </Border>
-                        </Style>
-                      </Line>
-                      <Line Name="Line36">
-                        <Top>0.0113cm</Top>
-                        <Left>7.81022cm</Left>
-                        <Height>0.2593in</Height>
-                        <Width>0cm</Width>
-                        <ZIndex>5</ZIndex>
-                        <Style>
-                          <Border>
-                            <Style>Solid</Style>
-                          </Border>
-                        </Style>
-                      </Line>
-                      <Line Name="Line37">
-                        <Top>0.0113cm</Top>
-                        <Left>13.27764cm</Left>
-                        <Height>0.2593in</Height>
-                        <Width>0cm</Width>
-                        <ZIndex>6</ZIndex>
-                        <Style>
-                          <Border>
-                            <Style>Solid</Style>
-                          </Border>
-                        </Style>
-                      </Line>
-                      <Line Name="Line46">
-                        <Top>0.0113cm</Top>
-                        <Left>14.84322cm</Left>
-                        <Height>0.2593in</Height>
-                        <Width>0cm</Width>
-                        <ZIndex>7</ZIndex>
-                        <Style>
-                          <Border>
-                            <Style>Solid</Style>
-                          </Border>
-                        </Style>
-                      </Line>
-                    </ReportItems>
-                    <KeepTogether>true</KeepTogether>
-                    <Top>0.24721in</Top>
-                    <Left>0.007in</Left>
-                    <Height>0.66993cm</Height>
-                    <Width>7.60959in</Width>
-                    <ZIndex>3</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                      </Border>
-                    </Style>
-                  </Rectangle>
-                  <Line Name="Line33">
-                    <Top>0cm</Top>
-                    <Left>4.04847cm</Left>
-                    <Height>0.25287in</Height>
-                    <Width>0cm</Width>
-                    <ZIndex>4</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                      </Border>
-                    </Style>
-                  </Line>
-                  <Line Name="Line38">
-                    <Top>0cm</Top>
-                    <Left>6.69413cm</Left>
-                    <Height>0.25287in</Height>
-                    <Width>0cm</Width>
-                    <ZIndex>5</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                      </Border>
-                    </Style>
-                  </Line>
-                  <Line Name="Line41">
-                    <Top>0cm</Top>
-                    <Left>9.35531cm</Left>
-                    <Height>0.25287in</Height>
-                    <Width>0cm</Width>
-                    <ZIndex>6</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                      </Border>
-                    </Style>
-                  </Line>
-                  <Line Name="Line43">
-                    <Top>0cm</Top>
-                    <Left>12.11347cm</Left>
-                    <Height>0.25287in</Height>
-                    <Width>0cm</Width>
-                    <ZIndex>7</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                      </Border>
-                    </Style>
-                  </Line>
-                  <Line Name="Line45">
-                    <Top>0cm</Top>
-                    <Left>14.6558cm</Left>
-                    <Height>0.25287in</Height>
-                    <Width>0cm</Width>
-                    <ZIndex>8</ZIndex>
-                    <Style>
-                      <Border>
-                        <Style>Solid</Style>
-                      </Border>
-                    </Style>
-                  </Line>
-                </ReportItems>
-                <KeepTogether>true</KeepTogether>
-                <Top>0.19702in</Top>
-                <Height>0.51096in</Height>
-                <Width>7.61659in</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
@@ -1179,416 +717,16 @@
                   </Border>
                 </Style>
               </Rectangle>
-              <Line Name="Line32">
-                <Top>0cm</Top>
-                <Left>2.60264cm</Left>
-                <Height>0.19687in</Height>
-                <Width>0cm</Width>
-                <ZIndex>4</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line39">
-                <Top>0cm</Top>
-                <Left>6.34804cm</Left>
-                <Height>0.19687in</Height>
-                <Width>0cm</Width>
-                <ZIndex>5</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line40">
-                <Top>0cm</Top>
-                <Left>8.47998cm</Left>
-                <Height>0.19687in</Height>
-                <Width>0cm</Width>
-                <ZIndex>6</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line42">
-                <Top>0cm</Top>
-                <Left>13.01319cm</Left>
-                <Height>0.19687in</Height>
-                <Width>0cm</Width>
-                <ZIndex>7</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line44">
-                <Top>0cm</Top>
-                <Left>15.39672cm</Left>
-                <Height>0.19687in</Height>
-                <Width>0cm</Width>
-                <ZIndex>8</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>2.99955in</Top>
-            <Left>0.0787in</Left>
-            <Height>0.70798in</Height>
-            <Width>7.61659in</Width>
-            <ZIndex>8</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Rectangle>
-          <Textbox Name="Textbox20">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>EDUCATIONAL INFORMATION</Value>
-                    <Style>
-                      <FontSize>9pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>White</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style>
-                      <FontSize>9pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>White</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>3.75768in</Top>
-            <Left>0.0857in</Left>
-            <Height>0.17in</Height>
-            <Width>2.03646in</Width>
-            <ZIndex>9</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>Black</BackgroundColor>
-              <PaddingLeft>2pt</PaddingLeft>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox21">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>EXPERIENCE</Value>
-                    <Style>
-                      <FontSize>9pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>White</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>4.78846in</Top>
-            <Left>0.08133in</Left>
-            <Height>0.17in</Height>
-            <Width>2.03646in</Width>
-            <ZIndex>10</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>Black</BackgroundColor>
-              <PaddingLeft>2pt</PaddingLeft>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox22">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Required Documents At the time of Interview</Value>
-                    <Style>
-                      <FontSize>9pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>White</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>5.87749in</Top>
-            <Left>0.05159in</Left>
-            <Height>0.17in</Height>
-            <Width>3.67127in</Width>
-            <ZIndex>11</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>Black</BackgroundColor>
-              <PaddingLeft>2pt</PaddingLeft>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox140">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>1.Child Passport Size Photographs.       2.NADRA Birth Certificate.</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>3.Father's CNIC Copy.                           4.Copy of B Form.</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>5.Spelling of the Child's name will not be CHANGED later.</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>6.Any change in the contact numbers or in the address should be notified to the school immediatly.</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>7.Before signing the admission form ,Please note the following:</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>   a.School fee is payable in adavnce Bi-monthly.</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>   b.Fee is increased annually in the month of August.</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>   c.Fee for summer vacations is payable before the collection of result.</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox140</rd:DefaultName>
-            <Top>15.99856cm</Top>
-            <Left>0.15324cm</Left>
-            <Height>3.69562cm</Height>
-            <Width>19.33504cm</Width>
-            <ZIndex>12</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox101">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Father's Signature</Value>
-                    <Style>
-                      <FontSize>8pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox30</rd:DefaultName>
-            <Top>8.6402in</Top>
-            <Left>0.26219in</Left>
-            <Height>0.15625in</Height>
-            <Width>1.16839in</Width>
-            <ZIndex>13</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Textbox>
-          <Line Name="Line7">
-            <Top>21.84028cm</Top>
-            <Left>0.34166cm</Left>
-            <Height>0cm</Height>
-            <Width>3.74129cm</Width>
-            <ZIndex>14</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Textbox Name="Textbox104">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Thumb</Value>
-                    <Style>
-                      <FontSize>8pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox30</rd:DefaultName>
-            <Top>8.6402in</Top>
-            <Left>2.07442in</Left>
-            <Height>0.15625in</Height>
-            <Width>0.56422in</Width>
-            <ZIndex>15</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Textbox>
-          <Line Name="Line9">
-            <Top>21.84028cm</Top>
-            <Left>4.60486cm</Left>
-            <Height>0cm</Height>
-            <Width>2.41478cm</Width>
-            <ZIndex>16</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Textbox Name="Textbox105">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Principal Signature</Value>
-                    <Style>
-                      <FontSize>8pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox30</rd:DefaultName>
-            <Top>8.6402in</Top>
-            <Left>6.03819in</Left>
-            <Height>0.15625in</Height>
-            <Width>1.16839in</Width>
-            <ZIndex>17</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Textbox>
-          <Line Name="Line10">
-            <Top>21.84028cm</Top>
-            <Left>15.0127cm</Left>
-            <Height>0cm</Height>
-            <Width>3.74129cm</Width>
-            <ZIndex>18</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Rectangle Name="Rectangle28">
-            <ReportItems>
-              <Textbox Name="Textbox136">
+              <Textbox Name="Textbox17">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
                 <Paragraphs>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Model Science College and School .Mula pur Road Ellahabad .Girls Campus Ghala Mandi Road Ellahabad (Kasur).Ph:00000000000. Email:abcdsgf@gmail.com</Value>
+                        <Value>FATHER'S INFORMATION</Value>
                         <Style>
-                          <FontSize>7pt</FontSize>
+                          <FontSize>9pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                           <Color>White</Color>
                         </Style>
@@ -1597,194 +735,712 @@
                     <Style />
                   </Paragraph>
                 </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.11053in</Top>
-                <Left>0.0577in</Left>
-                <Height>0.15908in</Height>
-                <Width>7.63759in</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>22.88646cm</Top>
-            <Left>0cm</Left>
-            <Height>0.9687cm</Height>
-            <Width>19.78933cm</Width>
-            <ZIndex>19</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>Black</BackgroundColor>
-            </Style>
-          </Rectangle>
-          <Rectangle Name="Rectangle29">
-            <ReportItems>
-              <Rectangle Name="Rectangle30">
-                <KeepTogether>true</KeepTogether>
-                <Top>0.26125in</Top>
-                <Height>0.23in</Height>
-                <Width>7.61222in</Width>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Rectangle>
-              <Line Name="Line69">
-                <Top>0cm</Top>
-                <Left>2.44987cm</Left>
-                <Height>0.72125in</Height>
-                <Width>0cm</Width>
-                <ZIndex>1</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line70">
-                <Top>0cm</Top>
-                <Left>6.02586cm</Left>
-                <Height>0.72125in</Height>
-                <Width>0cm</Width>
-                <ZIndex>2</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Textbox Name="Textbox127">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Admission No.</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.06333in</Top>
-                <Left>1.23234in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.9456in</Width>
-                <ZIndex>3</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox128">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Education</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.06333in</Top>
-                <Left>0.17649in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.7369in</Width>
+                <rd:DefaultName>Textbox11</rd:DefaultName>
+                <Top>2.75643in</Top>
+                <Left>0.08833in</Left>
+                <Height>0.17in</Height>
+                <Width>2.03646in</Width>
                 <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <BackgroundColor>Black</BackgroundColor>
+                  <PaddingLeft>2pt</PaddingLeft>
                 </Style>
               </Textbox>
-              <Line Name="Line71">
-                <Top>0cm</Top>
-                <Left>8.01003cm</Left>
-                <Height>0.72125in</Height>
-                <Width>0cm</Width>
+              <Rectangle Name="Rectangle13">
+                <ReportItems>
+                  <Textbox Name="Textbox86">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Father's Name</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.01566in</Top>
+                    <Left>0.014in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.92711in</Width>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox87">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Father Cell</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.01566in</Top>
+                    <Left>5.17886in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.84118in</Width>
+                    <ZIndex>1</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox88">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Faher's CNIC</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.01566in</Top>
+                    <Left>2.52701in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.74912in</Width>
+                    <ZIndex>2</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Rectangle Name="Rectangle14">
+                    <ReportItems>
+                      <Textbox Name="Textbox90">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Office Tel No.</Value>
+                                <Style>
+                                  <FontSize>8pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox30</rd:DefaultName>
+                        <Top>0.03541in</Top>
+                        <Left>4.79686in</Left>
+                        <Height>0.15625in</Height>
+                        <Width>0.9037in</Width>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox91">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Monthly Incom</Value>
+                                <Style>
+                                  <FontSize>8pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox30</rd:DefaultName>
+                        <Top>0.03541in</Top>
+                        <Left>2.67715in</Left>
+                        <Height>0.15625in</Height>
+                        <Width>0.95049in</Width>
+                        <ZIndex>1</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                        </Style>
+                      </Textbox>
+                      <Textbox Name="Textbox89">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Father's Occupation</Value>
+                                <Style>
+                                  <FontSize>8pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox30</rd:DefaultName>
+                        <Top>0.03541in</Top>
+                        <Left>0.021in</Left>
+                        <Height>0.15625in</Height>
+                        <Width>1.51044in</Width>
+                        <ZIndex>2</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                        </Style>
+                      </Textbox>
+                      <Rectangle Name="Rectangle15">
+                        <ReportItems>
+                          <Textbox Name="Textbox92">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Cast</Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox30</rd:DefaultName>
+                            <Top>0.0382in</Top>
+                            <Left>0.007in</Left>
+                            <Height>0.15625in</Height>
+                            <Width>0.33336in</Width>
+                            <Style>
+                              <Border>
+                                <Style>None</Style>
+                              </Border>
+                            </Style>
+                          </Textbox>
+                          <Textbox Name="Textbox93">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Email</Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox30</rd:DefaultName>
+                            <Top>0.0382in</Top>
+                            <Left>5.29686in</Left>
+                            <Height>0.15625in</Height>
+                            <Width>0.50526in</Width>
+                            <ZIndex>1</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>None</Style>
+                              </Border>
+                            </Style>
+                          </Textbox>
+                          <Textbox Name="Textbox94">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Address of Business / Employer</Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox30</rd:DefaultName>
+                            <Top>0.0382in</Top>
+                            <Left>1.14325in</Left>
+                            <Height>0.15625in</Height>
+                            <Width>1.88976in</Width>
+                            <ZIndex>2</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>None</Style>
+                              </Border>
+                            </Style>
+                          </Textbox>
+                          <Line Name="Line34">
+                            <Top>0.0113cm</Top>
+                            <Left>1.0409cm</Left>
+                            <Height>0.2593in</Height>
+                            <Width>0cm</Width>
+                            <ZIndex>3</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Line>
+                          <Line Name="Line35">
+                            <Top>0.0113cm</Top>
+                            <Left>2.72748cm</Left>
+                            <Height>0.2593in</Height>
+                            <Width>0cm</Width>
+                            <ZIndex>4</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Line>
+                          <Line Name="Line36">
+                            <Top>0.0113cm</Top>
+                            <Left>7.81022cm</Left>
+                            <Height>0.2593in</Height>
+                            <Width>0cm</Width>
+                            <ZIndex>5</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Line>
+                          <Line Name="Line37">
+                            <Top>0.0113cm</Top>
+                            <Left>13.27764cm</Left>
+                            <Height>0.2593in</Height>
+                            <Width>0cm</Width>
+                            <ZIndex>6</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Line>
+                          <Line Name="Line46">
+                            <Top>0.0113cm</Top>
+                            <Left>14.84322cm</Left>
+                            <Height>0.2593in</Height>
+                            <Width>0cm</Width>
+                            <ZIndex>7</ZIndex>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                            </Style>
+                          </Line>
+                        </ReportItems>
+                        <KeepTogether>true</KeepTogether>
+                        <Top>0.24721in</Top>
+                        <Left>0.007in</Left>
+                        <Height>0.66993cm</Height>
+                        <Width>7.60959in</Width>
+                        <ZIndex>3</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                      </Rectangle>
+                      <Line Name="Line33">
+                        <Top>0cm</Top>
+                        <Left>4.04847cm</Left>
+                        <Height>0.25287in</Height>
+                        <Width>0cm</Width>
+                        <ZIndex>4</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                      </Line>
+                      <Line Name="Line38">
+                        <Top>0cm</Top>
+                        <Left>6.69413cm</Left>
+                        <Height>0.25287in</Height>
+                        <Width>0cm</Width>
+                        <ZIndex>5</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                      </Line>
+                      <Line Name="Line41">
+                        <Top>0cm</Top>
+                        <Left>9.35531cm</Left>
+                        <Height>0.25287in</Height>
+                        <Width>0cm</Width>
+                        <ZIndex>6</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                      </Line>
+                      <Line Name="Line43">
+                        <Top>0cm</Top>
+                        <Left>12.11347cm</Left>
+                        <Height>0.25287in</Height>
+                        <Width>0cm</Width>
+                        <ZIndex>7</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                      </Line>
+                      <Line Name="Line45">
+                        <Top>0cm</Top>
+                        <Left>14.6558cm</Left>
+                        <Height>0.25287in</Height>
+                        <Width>0cm</Width>
+                        <ZIndex>8</ZIndex>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                      </Line>
+                    </ReportItems>
+                    <KeepTogether>true</KeepTogether>
+                    <Top>0.19702in</Top>
+                    <Height>0.51096in</Height>
+                    <Width>7.61659in</Width>
+                    <ZIndex>3</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Rectangle>
+                  <Line Name="Line32">
+                    <Top>0cm</Top>
+                    <Left>2.60264cm</Left>
+                    <Height>0.19687in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>4</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line39">
+                    <Top>0cm</Top>
+                    <Left>6.34804cm</Left>
+                    <Height>0.19687in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>5</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line40">
+                    <Top>0cm</Top>
+                    <Left>8.47998cm</Left>
+                    <Height>0.19687in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>6</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line42">
+                    <Top>0cm</Top>
+                    <Left>13.01319cm</Left>
+                    <Height>0.19687in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>7</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line44">
+                    <Top>0cm</Top>
+                    <Left>15.39672cm</Left>
+                    <Height>0.19687in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>8</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                </ReportItems>
+                <KeepTogether>true</KeepTogether>
+                <Top>2.99955in</Top>
+                <Left>0.0787in</Left>
+                <Height>0.70798in</Height>
+                <Width>7.61659in</Width>
                 <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
                   </Border>
                 </Style>
-              </Line>
-              <Line Name="Line72">
-                <Top>0cm</Top>
-                <Left>11.59159cm</Left>
-                <Height>0.72125in</Height>
-                <Width>0cm</Width>
-                <ZIndex>6</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line73">
-                <Top>0cm</Top>
-                <Left>13.1432cm</Left>
-                <Height>0.72125in</Height>
-                <Width>0cm</Width>
-                <ZIndex>7</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line74">
-                <Top>0cm</Top>
-                <Left>15.23408cm</Left>
-                <Height>0.72125in</Height>
-                <Width>0cm</Width>
-                <ZIndex>8</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Line Name="Line75">
-                <Top>0cm</Top>
-                <Left>17.79617cm</Left>
-                <Height>0.72125in</Height>
-                <Width>0cm</Width>
-                <ZIndex>9</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Textbox Name="Textbox129">
+              </Rectangle>
+              <Textbox Name="Textbox20">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
                 <Paragraphs>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Year</Value>
+                        <Value>EDUCATIONAL INFORMATION</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox11</rd:DefaultName>
+                <Top>3.75768in</Top>
+                <Left>0.0857in</Left>
+                <Height>0.17in</Height>
+                <Width>2.03646in</Width>
+                <ZIndex>6</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <BackgroundColor>Black</BackgroundColor>
+                  <PaddingLeft>2pt</PaddingLeft>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox21">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>EXPERIENCE</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox11</rd:DefaultName>
+                <Top>4.78846in</Top>
+                <Left>0.08133in</Left>
+                <Height>0.17in</Height>
+                <Width>2.03646in</Width>
+                <ZIndex>7</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <BackgroundColor>Black</BackgroundColor>
+                  <PaddingLeft>2pt</PaddingLeft>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox22">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Required Documents At the time of Interview</Value>
+                        <Style>
+                          <FontSize>9pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox11</rd:DefaultName>
+                <Top>5.87749in</Top>
+                <Left>0.05159in</Left>
+                <Height>0.17in</Height>
+                <Width>3.67127in</Width>
+                <ZIndex>8</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <BackgroundColor>Black</BackgroundColor>
+                  <PaddingLeft>2pt</PaddingLeft>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox140">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>1.Child Passport Size Photographs.       2.NADRA Birth Certificate.</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>3.Father's CNIC Copy.                           4.Copy of B Form.</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>5.Spelling of the Child's name will not be CHANGED later.</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>6.Any change in the contact numbers or in the address should be notified to the school immediatly.</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>7.Before signing the admission form ,Please note the following:</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>   a.School fee is payable in adavnce Bi-monthly.</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>   b.Fee is increased annually in the month of August.</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>   c.Fee for summer vacations is payable before the collection of result.</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox140</rd:DefaultName>
+                <Top>15.99856cm</Top>
+                <Left>0.15324cm</Left>
+                <Height>3.69562cm</Height>
+                <Width>19.33504cm</Width>
+                <ZIndex>9</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox101">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Father's Signature</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -1795,10 +1451,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.06333in</Top>
-                <Left>2.5973in</Left>
+                <Top>8.6402in</Top>
+                <Left>0.26219in</Left>
                 <Height>0.15625in</Height>
-                <Width>0.43834in</Width>
+                <Width>1.16839in</Width>
                 <ZIndex>10</ZIndex>
                 <Style>
                   <Border>
@@ -1806,43 +1462,26 @@
                   </Border>
                 </Style>
               </Textbox>
-              <Textbox Name="Textbox130">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Board / Institution</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.06333in</Top>
-                <Left>3.30576in</Left>
-                <Height>0.15625in</Height>
-                <Width>1.01187in</Width>
+              <Line Name="Line7">
+                <Top>21.84028cm</Top>
+                <Left>0.34166cm</Left>
+                <Height>0cm</Height>
+                <Width>3.74129cm</Width>
                 <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
                 </Style>
-              </Textbox>
-              <Textbox Name="Textbox131">
+              </Line>
+              <Textbox Name="Textbox104">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
                 <Paragraphs>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Grade</Value>
+                        <Value>Thumb</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -1853,10 +1492,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.06333in</Top>
-                <Left>4.61918in</Left>
+                <Top>8.6402in</Top>
+                <Left>2.07442in</Left>
                 <Height>0.15625in</Height>
-                <Width>0.43834in</Width>
+                <Width>0.56422in</Width>
                 <ZIndex>12</ZIndex>
                 <Style>
                   <Border>
@@ -1864,43 +1503,26 @@
                   </Border>
                 </Style>
               </Textbox>
-              <Textbox Name="Textbox132">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>T.Marks</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.06333in</Top>
-                <Left>5.28532in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.67068in</Width>
+              <Line Name="Line9">
+                <Top>21.84028cm</Top>
+                <Left>4.60486cm</Left>
+                <Height>0cm</Height>
+                <Width>2.41478cm</Width>
                 <ZIndex>13</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
                 </Style>
-              </Textbox>
-              <Textbox Name="Textbox133">
+              </Line>
+              <Textbox Name="Textbox105">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
                 <Paragraphs>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Obtained Marks</Value>
+                        <Value>Principal Signature</Value>
                         <Style>
                           <FontSize>8pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -1911,10 +1533,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.07722in</Top>
-                <Left>6.03299in</Left>
+                <Top>8.6402in</Top>
+                <Left>6.03819in</Left>
                 <Height>0.15625in</Height>
-                <Width>0.9456in</Width>
+                <Width>1.16839in</Width>
                 <ZIndex>14</ZIndex>
                 <Style>
                   <Border>
@@ -1922,329 +1544,768 @@
                   </Border>
                 </Style>
               </Textbox>
-              <Textbox Name="Textbox134">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Per%</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.06333in</Top>
-                <Left>7.07581in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.43834in</Width>
+              <Line Name="Line10">
+                <Top>21.84028cm</Top>
+                <Left>15.0127cm</Left>
+                <Height>0cm</Height>
+                <Width>3.74129cm</Width>
                 <ZIndex>15</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Line>
+              <Rectangle Name="Rectangle28">
+                <ReportItems>
+                  <Textbox Name="Textbox136">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Model Science College and School .Mula pur Road Ellahabad .Girls Campus Ghala Mandi Road Ellahabad (Kasur).Ph:00000000000. Email:abcdsgf@gmail.com</Value>
+                            <Style>
+                              <FontSize>7pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                              <Color>White</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.11053in</Top>
+                    <Left>0.0577in</Left>
+                    <Height>0.15908in</Height>
+                    <Width>7.63759in</Width>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                </ReportItems>
+                <KeepTogether>true</KeepTogether>
+                <Top>22.88646cm</Top>
+                <Left>0cm</Left>
+                <Height>0.9687cm</Height>
+                <Width>19.78933cm</Width>
+                <ZIndex>16</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
                   </Border>
+                  <BackgroundColor>Black</BackgroundColor>
                 </Style>
-              </Textbox>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>3.99712in</Top>
-            <Left>0.0857in</Left>
-            <Height>0.7219in</Height>
-            <Width>7.61222in</Width>
-            <ZIndex>20</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Rectangle>
-          <Rectangle Name="Rectangle26">
-            <ReportItems>
-              <Rectangle Name="Rectangle27">
+              </Rectangle>
+              <Rectangle Name="Rectangle29">
+                <ReportItems>
+                  <Rectangle Name="Rectangle30">
+                    <KeepTogether>true</KeepTogether>
+                    <Top>0.26125in</Top>
+                    <Height>0.23in</Height>
+                    <Width>7.61222in</Width>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Rectangle>
+                  <Line Name="Line69">
+                    <Top>0cm</Top>
+                    <Left>2.44987cm</Left>
+                    <Height>0.72125in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>1</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line70">
+                    <Top>0cm</Top>
+                    <Left>6.02586cm</Left>
+                    <Height>0.72125in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>2</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Textbox Name="Textbox127">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Admission No.</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.06333in</Top>
+                    <Left>1.23234in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.9456in</Width>
+                    <ZIndex>3</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox128">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Education</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.06333in</Top>
+                    <Left>0.17649in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.7369in</Width>
+                    <ZIndex>4</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Line Name="Line71">
+                    <Top>0cm</Top>
+                    <Left>8.01003cm</Left>
+                    <Height>0.72125in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>5</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line72">
+                    <Top>0cm</Top>
+                    <Left>11.59159cm</Left>
+                    <Height>0.72125in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>6</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line73">
+                    <Top>0cm</Top>
+                    <Left>13.1432cm</Left>
+                    <Height>0.72125in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>7</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line74">
+                    <Top>0cm</Top>
+                    <Left>15.23408cm</Left>
+                    <Height>0.72125in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>8</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line75">
+                    <Top>0cm</Top>
+                    <Left>17.79617cm</Left>
+                    <Height>0.72125in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>9</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Textbox Name="Textbox129">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Year</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.06333in</Top>
+                    <Left>2.5973in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.43834in</Width>
+                    <ZIndex>10</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox130">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Board / Institution</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.06333in</Top>
+                    <Left>3.30576in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>1.01187in</Width>
+                    <ZIndex>11</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox131">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Grade</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.06333in</Top>
+                    <Left>4.61918in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.43834in</Width>
+                    <ZIndex>12</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox132">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>T.Marks</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.06333in</Top>
+                    <Left>5.28532in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.67068in</Width>
+                    <ZIndex>13</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox133">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Obtained Marks</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.07722in</Top>
+                    <Left>6.03299in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.9456in</Width>
+                    <ZIndex>14</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox134">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Per%</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.06333in</Top>
+                    <Left>7.07581in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.43834in</Width>
+                    <ZIndex>15</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                </ReportItems>
                 <KeepTogether>true</KeepTogether>
-                <Top>0.26125in</Top>
-                <Height>0.23in</Height>
-                <Width>7.61659in</Width>
+                <Top>3.99712in</Top>
+                <Left>0.0857in</Left>
+                <Height>0.7219in</Height>
+                <Width>7.61222in</Width>
+                <ZIndex>17</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
                   </Border>
                 </Style>
               </Rectangle>
-              <Line Name="Line67">
-                <Top>0cm</Top>
-                <Left>5.50309cm</Left>
+              <Rectangle Name="Rectangle26">
+                <ReportItems>
+                  <Rectangle Name="Rectangle27">
+                    <KeepTogether>true</KeepTogether>
+                    <Top>0.26125in</Top>
+                    <Height>0.23in</Height>
+                    <Width>7.61659in</Width>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Rectangle>
+                  <Line Name="Line67">
+                    <Top>0cm</Top>
+                    <Left>5.50309cm</Left>
+                    <Height>0.72125in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>1</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Line Name="Line68">
+                    <Top>0cm</Top>
+                    <Left>11.00001cm</Left>
+                    <Height>0.72125in</Height>
+                    <Width>0cm</Width>
+                    <ZIndex>2</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                    </Style>
+                  </Line>
+                  <Textbox Name="Textbox125">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Experience</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.04944in</Top>
+                    <Left>2.98353in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>0.9456in</Width>
+                    <ZIndex>3</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox124">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>School / College Name</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.04944in</Top>
+                    <Left>0.4238in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>1.28559in</Width>
+                    <ZIndex>4</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                  <Textbox Name="Textbox126">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>School /College Address</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox30</rd:DefaultName>
+                    <Top>0.04944in</Top>
+                    <Left>5.18586in</Left>
+                    <Height>0.15625in</Height>
+                    <Width>1.65821in</Width>
+                    <ZIndex>5</ZIndex>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Textbox>
+                </ReportItems>
+                <KeepTogether>true</KeepTogether>
+                <Top>5.02791in</Top>
+                <Left>0.08133in</Left>
                 <Height>0.72125in</Height>
-                <Width>0cm</Width>
-                <ZIndex>1</ZIndex>
+                <Width>7.61659in</Width>
+                <ZIndex>18</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Rectangle>
+              <Textbox Name="Textbox7">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Teacher Information Form</Value>
+                        <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox6</rd:DefaultName>
+                <Top>1.00348in</Top>
+                <Left>1.51044in</Left>
+                <Height>0.25in</Height>
+                <Width>4.22222in</Width>
+                <ZIndex>19</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox9">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Form Submition Date</Value>
+                        <Style>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox6</rd:DefaultName>
+                <Top>1.57503in</Top>
+                <Left>2.26574in</Left>
+                <Height>0.25in</Height>
+                <Width>2.13358in</Width>
+                <ZIndex>20</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Rectangle Name="Rectangle3">
+                <KeepTogether>true</KeepTogether>
+                <Top>3.45284cm</Top>
+                <Left>0.13104cm</Left>
+                <Height>0.18943cm</Height>
+                <Width>19.415cm</Width>
+                <ZIndex>21</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <BackgroundColor>Red</BackgroundColor>
+                </Style>
+              </Rectangle>
+              <Textbox Name="SchoolName">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=First(Fields!SchoolName.Value, "SCHOOLINFO")</Value>
+                        <Style>
+                          <FontSize>15pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>SchoolName</rd:DefaultName>
+                <Top>0.10938in</Top>
+                <Left>1.51044in</Left>
+                <Height>0.25in</Height>
+                <Width>4.8368in</Width>
+                <ZIndex>22</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Customadd">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!Customadd.Value</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Customadd</rd:DefaultName>
+                <Top>0.41494in</Top>
+                <Left>1.51044in</Left>
+                <Height>0.42708in</Height>
+                <Width>4.8368in</Width>
+                <ZIndex>23</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Line Name="Line2">
+                <Top>0.40105in</Top>
+                <Left>1.51044in</Left>
+                <Height>0in</Height>
+                <Width>4.8368in</Width>
+                <ZIndex>24</ZIndex>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
                   </Border>
                 </Style>
               </Line>
-              <Line Name="Line68">
-                <Top>0cm</Top>
-                <Left>11.00001cm</Left>
-                <Height>0.72125in</Height>
-                <Width>0cm</Width>
-                <ZIndex>2</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>Solid</Style>
-                  </Border>
-                </Style>
-              </Line>
-              <Textbox Name="Textbox125">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>Experience</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.04944in</Top>
-                <Left>2.98353in</Left>
-                <Height>0.15625in</Height>
-                <Width>0.9456in</Width>
-                <ZIndex>3</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox124">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>School / College Name</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.04944in</Top>
-                <Left>0.4238in</Left>
-                <Height>0.15625in</Height>
-                <Width>1.28559in</Width>
-                <ZIndex>4</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
-              <Textbox Name="Textbox126">
-                <CanGrow>true</CanGrow>
-                <KeepTogether>true</KeepTogether>
-                <Paragraphs>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>School /College Address</Value>
-                        <Style>
-                          <FontSize>8pt</FontSize>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                </Paragraphs>
-                <rd:DefaultName>Textbox30</rd:DefaultName>
-                <Top>0.04944in</Top>
-                <Left>5.18586in</Left>
-                <Height>0.15625in</Height>
-                <Width>1.65821in</Width>
-                <ZIndex>5</ZIndex>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>5.02791in</Top>
-            <Left>0.08133in</Left>
-            <Height>0.72125in</Height>
-            <Width>7.61659in</Width>
-            <ZIndex>21</ZIndex>
+            <Top>0.16167in</Top>
+            <Left>0.13396in</Left>
+            <Height>9.49466in</Height>
+            <Width>7.80184in</Width>
             <Style>
               <Border>
-                <Style>Solid</Style>
+                <Style>Dotted</Style>
+                <Width>2pt</Width>
               </Border>
-            </Style>
-          </Rectangle>
-          <Textbox Name="Textbox7">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Teacher Information Form</Value>
-                    <Style>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>1.00348in</Top>
-            <Left>1.51044in</Left>
-            <Height>0.25in</Height>
-            <Width>4.22222in</Width>
-            <ZIndex>22</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox9">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Form Submition Date</Value>
-                    <Style>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>1.57503in</Top>
-            <Left>2.26574in</Left>
-            <Height>0.25in</Height>
-            <Width>2.13358in</Width>
-            <ZIndex>23</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Rectangle Name="Rectangle3">
-            <KeepTogether>true</KeepTogether>
-            <Top>3.45284cm</Top>
-            <Left>0.13104cm</Left>
-            <Height>0.18943cm</Height>
-            <Width>19.415cm</Width>
-            <ZIndex>24</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>Red</BackgroundColor>
             </Style>
           </Rectangle>
         </ReportItems>
-        <KeepTogether>true</KeepTogether>
-        <Top>0.16167in</Top>
-        <Left>0.13396in</Left>
-        <Height>9.49466in</Height>
-        <Width>7.80184in</Width>
+        <Height>9.80717in</Height>
         <Style>
-          <Border>
-            <Style>Dotted</Style>
-            <Width>2pt</Width>
-          </Border>
+          <BackgroundImage>
+            <Source>Embedded</Source>
+            <Value>fbg1</Value>
+          </BackgroundImage>
         </Style>
-      </Rectangle>
-    </ReportItems>
-    <Height>9.80717in</Height>
-    <Style>
-      <BackgroundImage>
-        <Source>Embedded</Source>
-        <Value>fbg1</Value>
-      </BackgroundImage>
-    </Style>
-  </Body>
-  <Width>8.01017in</Width>
-  <Page>
-    <PageHeight>11.69in</PageHeight>
-    <PageWidth>8.27in</PageWidth>
-    <Style />
-  </Page>
-  <AutoRefresh>0</AutoRefresh>
-  <DataSources>
-    <DataSource Name="AdmissionFormNo">
-      <ConnectionProperties>
-        <DataProvider>System.Data.DataSet</DataProvider>
-        <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
-      <rd:DataSourceID>f97faa15-0432-4f76-8960-490c0088add4</rd:DataSourceID>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="ADMISSIONFORMNO">
-      <Query>
-        <DataSourceName>AdmissionFormNo</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="FID">
-          <DataField>FID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>AdmissionFormNo</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\qaise\Source\Repos\schoolwork\SmartSchoolManagementSystem\SmartSchoolManagementSystem\AdmissionFormNo.xsd</rd:SchemaPath>
-        <rd:TableName>AdmissionFornNo</rd:TableName>
-        <rd:TableAdapterFillMethod />
-        <rd:TableAdapterGetDataMethod />
-        <rd:TableAdapterName />
-      </rd:DataSetInfo>
-    </DataSet>
-  </DataSets>
+      </Body>
+      <Width>8.01017in</Width>
+      <Page>
+        <PageHeight>11.69in</PageHeight>
+        <PageWidth>8.27in</PageWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="FID">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AcadmicSession">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Customadd">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>FID</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>AcadmicSession</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Customadd</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <EmbeddedImages>
     <EmbeddedImage Name="logo2">
       <MIMEType>image/png</MIMEType>

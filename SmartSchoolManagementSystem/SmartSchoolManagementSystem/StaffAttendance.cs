@@ -16,5 +16,12 @@ namespace SmartSchoolManagementSystem
         {
             InitializeComponent();
         }
+
+        private void btnall_Click(object sender, EventArgs e)
+        {
+            AllStaff obj = new AllStaff();
+           // obj.MdiParent = this;
+            obj.Show();
+        }
     }
 }

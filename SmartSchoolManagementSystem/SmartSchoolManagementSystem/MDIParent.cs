@@ -277,7 +277,7 @@ namespace SmartSchoolManagementSystem
         {
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
-                if (item.Name == "FeeCollection") // check by form name if it's opened
+                if (item.Name == "Studentfeecollection") // check by form name if it's opened
                 {
                     item.BringToFront(); // bring it front
                     return; //exit
@@ -286,7 +286,7 @@ namespace SmartSchoolManagementSystem
 
             // if MyForm is not opened
             // you know what it is
-            FeeCollection frm = new FeeCollection();
+            Studentfeecollection frm = new Studentfeecollection();
             frm.MdiParent = this;
             frm.Show();
         }
@@ -1174,7 +1174,7 @@ namespace SmartSchoolManagementSystem
         {
             foreach (Form item in this.MdiChildren) // check all opened forms
             {
-                if (item.Name == "ClassFeeDefination") // check by form name if it's opene
+                if (item.Name == "Feedefinition") // check by form name if it's opene
                 {
                     item.BringToFront(); // bring to front
                     return; //exit
@@ -1182,7 +1182,7 @@ namespace SmartSchoolManagementSystem
             }
             // if Myform is not opened
             // you know what it is
-            ClassFeeDefination frm = new ClassFeeDefination();
+            Feedefinition frm = new Feedefinition();
             frm.MdiParent = this;
             frm.Show();
         }
@@ -1493,6 +1493,13 @@ namespace SmartSchoolManagementSystem
             frm.Show();
         }
 
+        private void btnidcard_Click(object sender, EventArgs e)
+        {
+            studentidcard ob = new studentidcard();
+            ob.MdiParent = this;
+            ob.Show();
+        }
+
         private void MDIParent_Load(object sender, EventArgs e)
         {
 
@@ -1512,7 +1519,8 @@ namespace SmartSchoolManagementSystem
                 foreach (var GetSchoolInfo in Getschool)
                 {
                     //String CompanyName = "Layer Solution Software Development Company LMT";
-                    val1 = Convert.ToString(GetSchoolInfo.Getschool + " ( " + GetSchoolInfo.Getaddress + " " + GetSchoolInfo.GETAdress + " ) ");
+                    val1 = Convert.ToString(GetSchoolInfo.Getschool );
+                  //  val1 = Convert.ToString(GetSchoolInfo.Getschool + " ( " + GetSchoolInfo.Getaddress + " " + GetSchoolInfo.GETAdress + " ) ");
 
 
                 }
@@ -1529,6 +1537,7 @@ namespace SmartSchoolManagementSystem
                     string sess = "ACADMIC SESSION :";
                     val2 = Convert.ToString(GetsessionInfo.Session).ToUpper();
                     this.Text = val1 + " : : " + sess + " " + val2 + "";
+                    //this.Text = val1 + " : : " + sess + " " + val2 + "";
 
 
                 }

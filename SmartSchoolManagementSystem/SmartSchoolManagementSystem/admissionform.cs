@@ -38,47 +38,16 @@ namespace SmartSchoolManagementSystem
             cr.SetDataSource(result);
             this.crystalReportViewer1.ReportSource = cr;
            
-            
-            //var result = db.Tblschoolsettings.Select(c => new
-            //{
-            //    ID = c.ID,
-            //    SchoolName = c.SchoolName,
-            //    LOGO=c.LOGO,
-
-
-            //}).ToList();
-            //CrystalPrintAdmission cr = new CrystalPrintAdmission();
-            //cr.SetDataSource(result);
-            //this.crystalReportViewer1.ReportSource = cr;
+     
         }
-
-
-
-        // Convert_To_Image(this.imgpicturebox.ImageLocation);
-        //private Image Convert_To_Image(object _ImageValue)
-        //{
-        //    if (_ImageValue == null)
-        //    {
-        //        return null;
-        //    }
-        //    byte[] imgArray = (byte[])_ImageValue;
-        //    MemoryStream mem = new MemoryStream(imgArray);
-
-        //    pictureBox1.Image= Image.FromStream(mem);
-        //}
-
-
 
 
         private void getschooldetails()
         {
-            // var query = (from s in db.SCHOOLINFORMATIONs where s.ID == 2 select new
+
             var Getschool =  db.Tblschoolsettings.Select(c => new
 
-            //join cs in db.TBLADDMISSIONs on c.ID equals cs.ID
-            //join os in db.TBLSTUDENTENRROLs on c.ID equals os.SystemId
-            //where cs.ID == 1
-
+   
             {
                 Getschool = c.SchoolName,
                 Getadrs = c.FIRSTADDRESS,

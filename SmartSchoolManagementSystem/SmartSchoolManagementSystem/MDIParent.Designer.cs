@@ -116,6 +116,7 @@
             this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.factoryRestoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userAndRightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.makeNoticeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.communicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viaEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viaSmSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -152,7 +153,6 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsluser = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.makeNoticeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -853,6 +853,11 @@
             this.userAndRightsToolStripMenuItem.Text = "User And Rights";
             this.userAndRightsToolStripMenuItem.Click += new System.EventHandler(this.userAndRightsToolStripMenuItem_Click);
             // 
+            // makeNoticeToolStripMenuItem
+            // 
+            this.makeNoticeToolStripMenuItem.Name = "makeNoticeToolStripMenuItem";
+            this.makeNoticeToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            // 
             // communicationToolStripMenuItem
             // 
             this.communicationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1009,7 +1014,6 @@
             this.tsbfeecollection.Size = new System.Drawing.Size(86, 66);
             this.tsbfeecollection.Text = "&Fee Collection";
             this.tsbfeecollection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-        //    this.tsbfeecollection.Click += new System.EventHandler(this.tsbfeecollection_Click);
             // 
             // toolStripSeparator8
             // 
@@ -1040,6 +1044,7 @@
             this.btnidcard.Size = new System.Drawing.Size(89, 66);
             this.btnidcard.Text = "      ID Card       ";
             this.btnidcard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnidcard.Click += new System.EventHandler(this.btnidcard_Click);
             // 
             // toolStripSeparator9
             // 
@@ -1145,13 +1150,6 @@
             this.tsluser.Name = "tsluser";
             this.tsluser.Size = new System.Drawing.Size(118, 17);
             this.tsluser.Text = "toolStripStatusLabel1";
-            // 
-            // searchBloodGroupToolStripMenuItem
-            // 
-            this.searchBloodGroupToolStripMenuItem.Name = "searchBloodGroupToolStripMenuItem";
-            this.searchBloodGroupToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.searchBloodGroupToolStripMenuItem.Text = "Search Blood Group";
-            this.searchBloodGroupToolStripMenuItem.Click += new System.EventHandler(this.searchBloodGroupToolStripMenuItem_Click);
             // 
             // MDIParent
             // 

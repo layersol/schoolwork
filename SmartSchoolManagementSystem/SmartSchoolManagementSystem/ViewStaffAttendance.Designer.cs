@@ -59,19 +59,19 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(1, 55);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(463, 115);
+            this.panel2.Size = new System.Drawing.Size(463, 71);
             this.panel2.TabIndex = 1;
             // 
             // txtstaffname
             // 
-            this.txtstaffname.Location = new System.Drawing.Point(275, 57);
+            this.txtstaffname.Location = new System.Drawing.Point(275, 37);
             this.txtstaffname.Name = "txtstaffname";
             this.txtstaffname.Size = new System.Drawing.Size(183, 20);
             this.txtstaffname.TabIndex = 5;
             // 
             // txtstaffid
             // 
-            this.txtstaffid.Location = new System.Drawing.Point(92, 58);
+            this.txtstaffid.Location = new System.Drawing.Point(92, 38);
             this.txtstaffid.Name = "txtstaffid";
             this.txtstaffid.Size = new System.Drawing.Size(117, 20);
             this.txtstaffid.TabIndex = 5;
@@ -80,7 +80,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 58);
+            this.label4.Location = new System.Drawing.Point(10, 39);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 17);
             this.label4.TabIndex = 4;
@@ -97,7 +97,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(220, 58);
+            this.label5.Location = new System.Drawing.Point(220, 38);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 17);
             this.label5.TabIndex = 2;
@@ -125,7 +125,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 9);
+            this.label2.Location = new System.Drawing.Point(10, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 0;
@@ -136,7 +136,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.dgdstaffattendance);
-            this.panel3.Location = new System.Drawing.Point(2, 173);
+            this.panel3.Location = new System.Drawing.Point(1, 130);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(463, 255);
             this.panel3.TabIndex = 2;
@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 430);
+            this.ClientSize = new System.Drawing.Size(467, 388);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

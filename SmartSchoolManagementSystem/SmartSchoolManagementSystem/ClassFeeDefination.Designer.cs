@@ -189,7 +189,7 @@
             this.groupBox5.Controls.Add(this.txtcreatedby);
             this.groupBox5.Location = new System.Drawing.Point(8, 234);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(618, 80);
+            this.groupBox5.Size = new System.Drawing.Size(863, 80);
             this.groupBox5.TabIndex = 20;
             this.groupBox5.TabStop = false;
             // 
@@ -377,7 +377,7 @@
             this.groupBox4.Controls.Add(this.btnsave);
             this.groupBox4.Location = new System.Drawing.Point(7, 315);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(619, 62);
+            this.groupBox4.Size = new System.Drawing.Size(864, 62);
             this.groupBox4.TabIndex = 18;
             this.groupBox4.TabStop = false;
             // 
@@ -467,7 +467,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 493);
+            this.ClientSize = new System.Drawing.Size(880, 385);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);

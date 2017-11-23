@@ -133,6 +133,19 @@ namespace SmartSchoolManagementSystem
         {
             try
             {
+                var q = (from a in db.TBLADDMISSIONs
+                         where a.ADMISSION_FORM == txtform.Text
+                         select a).SingleOrDefault();
+                if (q.ADMISSION_FORM!=txtform.Text)
+                { savestudentdata(); }
+                else { MessageBox.Show("This form Already Exist"); }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
+        private void savestudentdata()
+        {
+            try
+            {
                 if (cbbclass.Text != "" && cbbsection.Text != "" && cbbgroup.Text != "")
                 {
                     var q = (from a in db.Tblclasssections
@@ -237,7 +250,10 @@ namespace SmartSchoolManagementSystem
 
             MessageBox.Show("Student has been Successfully add.!");
             Getcurrentstudent();
+
         }
+
+     
 
         private void label40_Click(object sender, EventArgs e)
         {

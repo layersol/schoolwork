@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbbidcardsection = new System.Windows.Forms.ComboBox();
-            this.cbbidcardclass = new System.Windows.Forms.ComboBox();
+            this.cbbsection = new System.Windows.Forms.ComboBox();
+            this.cbbclass = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -39,6 +39,8 @@
             this.btnidprint = new System.Windows.Forms.Button();
             this.btnidview = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbbmedium = new System.Windows.Forms.ComboBox();
+            this.cbbgroup = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -46,30 +48,33 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.cbbidcardsection);
-            this.panel1.Controls.Add(this.cbbidcardclass);
+            this.panel1.Controls.Add(this.cbbmedium);
+            this.panel1.Controls.Add(this.cbbgroup);
+            this.panel1.Controls.Add(this.cbbsection);
+            this.panel1.Controls.Add(this.cbbclass);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 46);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(320, 125);
+            this.panel1.Size = new System.Drawing.Size(320, 122);
             this.panel1.TabIndex = 0;
             // 
-            // cbbidcardsection
+            // cbbsection
             // 
-            this.cbbidcardsection.FormattingEnabled = true;
-            this.cbbidcardsection.Location = new System.Drawing.Point(81, 45);
-            this.cbbidcardsection.Name = "cbbidcardsection";
-            this.cbbidcardsection.Size = new System.Drawing.Size(229, 21);
-            this.cbbidcardsection.TabIndex = 1;
+            this.cbbsection.FormattingEnabled = true;
+            this.cbbsection.Location = new System.Drawing.Point(81, 32);
+            this.cbbsection.Name = "cbbsection";
+            this.cbbsection.Size = new System.Drawing.Size(229, 21);
+            this.cbbsection.TabIndex = 1;
             // 
-            // cbbidcardclass
+            // cbbclass
             // 
-            this.cbbidcardclass.FormattingEnabled = true;
-            this.cbbidcardclass.Location = new System.Drawing.Point(81, 17);
-            this.cbbidcardclass.Name = "cbbidcardclass";
-            this.cbbidcardclass.Size = new System.Drawing.Size(229, 21);
-            this.cbbidcardclass.TabIndex = 1;
+            this.cbbclass.FormattingEnabled = true;
+            this.cbbclass.Location = new System.Drawing.Point(81, 6);
+            this.cbbclass.Name = "cbbclass";
+            this.cbbclass.Size = new System.Drawing.Size(229, 21);
+            this.cbbclass.TabIndex = 1;
+            this.cbbclass.SelectedValueChanged += new System.EventHandler(this.cbbclass_SelectedValueChanged);
             // 
             // label2
             // 
@@ -139,6 +144,7 @@
             this.btnidprint.Size = new System.Drawing.Size(54, 35);
             this.btnidprint.TabIndex = 0;
             this.btnidprint.UseVisualStyleBackColor = false;
+            this.btnidprint.Click += new System.EventHandler(this.btnidprint_Click);
             // 
             // btnidview
             // 
@@ -154,23 +160,41 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel2.BackgroundImage = global::SmartSchoolManagementSystem.Properties.Resources.stcd;
-            this.panel2.Location = new System.Drawing.Point(2, 4);
+            this.panel2.Location = new System.Drawing.Point(2, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(320, 40);
             this.panel2.TabIndex = 2;
+            // 
+            // cbbmedium
+            // 
+            this.cbbmedium.FormattingEnabled = true;
+            this.cbbmedium.Location = new System.Drawing.Point(81, 86);
+            this.cbbmedium.Name = "cbbmedium";
+            this.cbbmedium.Size = new System.Drawing.Size(229, 21);
+            this.cbbmedium.TabIndex = 2;
+            // 
+            // cbbgroup
+            // 
+            this.cbbgroup.FormattingEnabled = true;
+            this.cbbgroup.Location = new System.Drawing.Point(81, 59);
+            this.cbbgroup.Name = "cbbgroup";
+            this.cbbgroup.Size = new System.Drawing.Size(229, 21);
+            this.cbbgroup.TabIndex = 3;
             // 
             // StudentIdCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 238);
+            this.ClientSize = new System.Drawing.Size(324, 251);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "StudentIdCardForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Id Card Form";
+            this.Load += new System.EventHandler(this.StudentIdCardForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -181,8 +205,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cbbidcardsection;
-        private System.Windows.Forms.ComboBox cbbidcardclass;
+        private System.Windows.Forms.ComboBox cbbsection;
+        private System.Windows.Forms.ComboBox cbbclass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -191,5 +215,7 @@
         private System.Windows.Forms.Button btnidprint;
         private System.Windows.Forms.Button btnidview;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox cbbmedium;
+        private System.Windows.Forms.ComboBox cbbgroup;
     }
 }

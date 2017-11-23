@@ -34,7 +34,7 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SmartSchoolManagementSystem.printstudentcard.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SmartSchoolManagementSystem.reports.StudentIDCard.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -48,6 +48,7 @@
             this.ClientSize = new System.Drawing.Size(621, 444);
             this.Controls.Add(this.reportViewer1);
             this.Name = "studentidcard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "studentidcard";
             this.Load += new System.EventHandler(this.studentidcard_Load);
             this.ResumeLayout(false);

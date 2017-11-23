@@ -610,13 +610,13 @@
             this.cbbBloodGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbBloodGroup.FormattingEnabled = true;
             this.cbbBloodGroup.Items.AddRange(new object[] {
-            "A−\t",
-            "A+\t",
-            "B−\t",
-            "B+\t",
-            "AB−\t",
+            "A−",
+            "A+",
+            "B−",
+            "B+",
+            "AB−",
             "AB+",
-            "O−\t",
+            "O−",
             "O+"});
             this.cbbBloodGroup.Location = new System.Drawing.Point(413, 110);
             this.cbbBloodGroup.Name = "cbbBloodGroup";

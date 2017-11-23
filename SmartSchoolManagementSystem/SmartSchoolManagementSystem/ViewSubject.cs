@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SmartSchoolManagementSystem
 {
-    public partial class Add_Student_Bio : Form
+    public partial class ViewSubject : Form
     {
-        public Add_Student_Bio()
+        public ViewSubject()
         {
             InitializeComponent();
         }

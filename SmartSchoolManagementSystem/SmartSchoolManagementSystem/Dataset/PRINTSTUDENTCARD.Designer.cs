@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace SmartSchoolManagementSystem {
+namespace SmartSchoolManagementSystem.Dataset {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace SmartSchoolManagementSystem {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("SchoolInformation")]
+    [global::System.Xml.Serialization.XmlRootAttribute("PRINTSTUDENTCARD")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class SchoolInformation : global::System.Data.DataSet {
+    public partial class PRINTSTUDENTCARD : global::System.Data.DataSet {
         
-        private SchoolIformationDataTable tableSchoolIformation;
+        private PrintStudentCardDataTable tablePrintStudentCard;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public SchoolInformation() {
+        public PRINTSTUDENTCARD() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace SmartSchoolManagementSystem {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected SchoolInformation(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected PRINTSTUDENTCARD(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace SmartSchoolManagementSystem {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["SchoolIformation"] != null)) {
-                    base.Tables.Add(new SchoolIformationDataTable(ds.Tables["SchoolIformation"]));
+                if ((ds.Tables["PrintStudentCard"] != null)) {
+                    base.Tables.Add(new PrintStudentCardDataTable(ds.Tables["PrintStudentCard"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace SmartSchoolManagementSystem {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SchoolIformationDataTable SchoolIformation {
+        public PrintStudentCardDataTable PrintStudentCard {
             get {
-                return this.tableSchoolIformation;
+                return this.tablePrintStudentCard;
             }
         }
         
@@ -127,7 +127,7 @@ namespace SmartSchoolManagementSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            SchoolInformation cln = ((SchoolInformation)(base.Clone()));
+            PRINTSTUDENTCARD cln = ((PRINTSTUDENTCARD)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace SmartSchoolManagementSystem {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["SchoolIformation"] != null)) {
-                    base.Tables.Add(new SchoolIformationDataTable(ds.Tables["SchoolIformation"]));
+                if ((ds.Tables["PrintStudentCard"] != null)) {
+                    base.Tables.Add(new PrintStudentCardDataTable(ds.Tables["PrintStudentCard"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace SmartSchoolManagementSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableSchoolIformation = ((SchoolIformationDataTable)(base.Tables["SchoolIformation"]));
+            this.tablePrintStudentCard = ((PrintStudentCardDataTable)(base.Tables["PrintStudentCard"]));
             if ((initTable == true)) {
-                if ((this.tableSchoolIformation != null)) {
-                    this.tableSchoolIformation.InitVars();
+                if ((this.tablePrintStudentCard != null)) {
+                    this.tablePrintStudentCard.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace SmartSchoolManagementSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "SchoolInformation";
+            this.DataSetName = "PRINTSTUDENTCARD";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/SchoolInformation.xsd";
+            this.Namespace = "http://tempuri.org/PRINTSTUDENTCARD.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableSchoolIformation = new SchoolIformationDataTable();
-            base.Tables.Add(this.tableSchoolIformation);
+            this.tablePrintStudentCard = new PrintStudentCardDataTable();
+            base.Tables.Add(this.tablePrintStudentCard);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeSchoolIformation() {
+        private bool ShouldSerializePrintStudentCard() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace SmartSchoolManagementSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            SchoolInformation ds = new SchoolInformation();
+            PRINTSTUDENTCARD ds = new PRINTSTUDENTCARD();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,39 +270,37 @@ namespace SmartSchoolManagementSystem {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void SchoolIformationRowChangeEventHandler(object sender, SchoolIformationRowChangeEvent e);
+        public delegate void PrintStudentCardRowChangeEventHandler(object sender, PrintStudentCardRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SchoolIformationDataTable : global::System.Data.TypedTableBase<SchoolIformationRow> {
+        public partial class PrintStudentCardDataTable : global::System.Data.TypedTableBase<PrintStudentCardRow> {
             
-            private global::System.Data.DataColumn columnSchoolName;
+            private global::System.Data.DataColumn columnSID;
+            
+            private global::System.Data.DataColumn columnSTUDENT_NAME;
+            
+            private global::System.Data.DataColumn columnS_CELL_NO;
+            
+            private global::System.Data.DataColumn columnStudent_ID;
+            
+            private global::System.Data.DataColumn columnClass;
+            
+            private global::System.Data.DataColumn columnSection;
+            
+            private global::System.Data.DataColumn columnIMAGE;
             
             private global::System.Data.DataColumn columnLOGO;
             
-            private global::System.Data.DataColumn columnFIRSTADDRESS;
-            
-            private global::System.Data.DataColumn columnSECONDADDRESS;
-            
-            private global::System.Data.DataColumn columnCONTACTA;
-            
-            private global::System.Data.DataColumn columnCONTACTB;
-            
-            private global::System.Data.DataColumn columnCONTACTC;
-            
-            private global::System.Data.DataColumn columnFIRSTEMAIL;
-            
-            private global::System.Data.DataColumn columnSECONDEMAIL;
-            
-            private global::System.Data.DataColumn columnWEBSITE;
+            private global::System.Data.DataColumn columnSchoolName;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SchoolIformationDataTable() {
-                this.TableName = "SchoolIformation";
+            public PrintStudentCardDataTable() {
+                this.TableName = "PrintStudentCard";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -310,7 +308,7 @@ namespace SmartSchoolManagementSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal SchoolIformationDataTable(global::System.Data.DataTable table) {
+            internal PrintStudentCardDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -327,16 +325,64 @@ namespace SmartSchoolManagementSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected SchoolIformationDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected PrintStudentCardDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SchoolNameColumn {
+            public global::System.Data.DataColumn SIDColumn {
                 get {
-                    return this.columnSchoolName;
+                    return this.columnSID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn STUDENT_NAMEColumn {
+                get {
+                    return this.columnSTUDENT_NAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn S_CELL_NOColumn {
+                get {
+                    return this.columnS_CELL_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Student_IDColumn {
+                get {
+                    return this.columnStudent_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ClassColumn {
+                get {
+                    return this.columnClass;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SectionColumn {
+                get {
+                    return this.columnSection;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn IMAGEColumn {
+                get {
+                    return this.columnIMAGE;
                 }
             }
             
@@ -350,65 +396,9 @@ namespace SmartSchoolManagementSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FIRSTADDRESSColumn {
+            public global::System.Data.DataColumn SchoolNameColumn {
                 get {
-                    return this.columnFIRSTADDRESS;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SECONDADDRESSColumn {
-                get {
-                    return this.columnSECONDADDRESS;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CONTACTAColumn {
-                get {
-                    return this.columnCONTACTA;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CONTACTBColumn {
-                get {
-                    return this.columnCONTACTB;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CONTACTCColumn {
-                get {
-                    return this.columnCONTACTC;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FIRSTEMAILColumn {
-                get {
-                    return this.columnFIRSTEMAIL;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SECONDEMAILColumn {
-                get {
-                    return this.columnSECONDEMAIL;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn WEBSITEColumn {
-                get {
-                    return this.columnWEBSITE;
+                    return this.columnSchoolName;
                 }
             }
             
@@ -423,54 +413,53 @@ namespace SmartSchoolManagementSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SchoolIformationRow this[int index] {
+            public PrintStudentCardRow this[int index] {
                 get {
-                    return ((SchoolIformationRow)(this.Rows[index]));
+                    return ((PrintStudentCardRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SchoolIformationRowChangeEventHandler SchoolIformationRowChanging;
+            public event PrintStudentCardRowChangeEventHandler PrintStudentCardRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SchoolIformationRowChangeEventHandler SchoolIformationRowChanged;
+            public event PrintStudentCardRowChangeEventHandler PrintStudentCardRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SchoolIformationRowChangeEventHandler SchoolIformationRowDeleting;
+            public event PrintStudentCardRowChangeEventHandler PrintStudentCardRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SchoolIformationRowChangeEventHandler SchoolIformationRowDeleted;
+            public event PrintStudentCardRowChangeEventHandler PrintStudentCardRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddSchoolIformationRow(SchoolIformationRow row) {
+            public void AddPrintStudentCardRow(PrintStudentCardRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SchoolIformationRow AddSchoolIformationRow(string SchoolName, string LOGO, string FIRSTADDRESS, string SECONDADDRESS, string CONTACTA, string CONTACTB, string CONTACTC, string FIRSTEMAIL, string SECONDEMAIL, string WEBSITE) {
-                SchoolIformationRow rowSchoolIformationRow = ((SchoolIformationRow)(this.NewRow()));
+            public PrintStudentCardRow AddPrintStudentCardRow(string SID, string STUDENT_NAME, string S_CELL_NO, string Student_ID, string Class, string Section, string IMAGE, string LOGO, string SchoolName) {
+                PrintStudentCardRow rowPrintStudentCardRow = ((PrintStudentCardRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        SchoolName,
+                        SID,
+                        STUDENT_NAME,
+                        S_CELL_NO,
+                        Student_ID,
+                        Class,
+                        Section,
+                        IMAGE,
                         LOGO,
-                        FIRSTADDRESS,
-                        SECONDADDRESS,
-                        CONTACTA,
-                        CONTACTB,
-                        CONTACTC,
-                        FIRSTEMAIL,
-                        SECONDEMAIL,
-                        WEBSITE};
-                rowSchoolIformationRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSchoolIformationRow);
-                return rowSchoolIformationRow;
+                        SchoolName};
+                rowPrintStudentCardRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPrintStudentCardRow);
+                return rowPrintStudentCardRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                SchoolIformationDataTable cln = ((SchoolIformationDataTable)(base.Clone()));
+                PrintStudentCardDataTable cln = ((PrintStudentCardDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -478,73 +467,70 @@ namespace SmartSchoolManagementSystem {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new SchoolIformationDataTable();
+                return new PrintStudentCardDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnSchoolName = base.Columns["SchoolName"];
+                this.columnSID = base.Columns["SID"];
+                this.columnSTUDENT_NAME = base.Columns["STUDENT_NAME"];
+                this.columnS_CELL_NO = base.Columns["S_CELL_NO"];
+                this.columnStudent_ID = base.Columns["Student_ID"];
+                this.columnClass = base.Columns["Class"];
+                this.columnSection = base.Columns["Section"];
+                this.columnIMAGE = base.Columns["IMAGE"];
                 this.columnLOGO = base.Columns["LOGO"];
-                this.columnFIRSTADDRESS = base.Columns["FIRSTADDRESS"];
-                this.columnSECONDADDRESS = base.Columns["SECONDADDRESS"];
-                this.columnCONTACTA = base.Columns["CONTACTA"];
-                this.columnCONTACTB = base.Columns["CONTACTB"];
-                this.columnCONTACTC = base.Columns["CONTACTC"];
-                this.columnFIRSTEMAIL = base.Columns["FIRSTEMAIL"];
-                this.columnSECONDEMAIL = base.Columns["SECONDEMAIL"];
-                this.columnWEBSITE = base.Columns["WEBSITE"];
+                this.columnSchoolName = base.Columns["SchoolName"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnSchoolName = new global::System.Data.DataColumn("SchoolName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSchoolName);
+                this.columnSID = new global::System.Data.DataColumn("SID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSID);
+                this.columnSTUDENT_NAME = new global::System.Data.DataColumn("STUDENT_NAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSTUDENT_NAME);
+                this.columnS_CELL_NO = new global::System.Data.DataColumn("S_CELL_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnS_CELL_NO);
+                this.columnStudent_ID = new global::System.Data.DataColumn("Student_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStudent_ID);
+                this.columnClass = new global::System.Data.DataColumn("Class", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnClass);
+                this.columnSection = new global::System.Data.DataColumn("Section", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSection);
+                this.columnIMAGE = new global::System.Data.DataColumn("IMAGE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIMAGE);
                 this.columnLOGO = new global::System.Data.DataColumn("LOGO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLOGO);
-                this.columnFIRSTADDRESS = new global::System.Data.DataColumn("FIRSTADDRESS", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFIRSTADDRESS);
-                this.columnSECONDADDRESS = new global::System.Data.DataColumn("SECONDADDRESS", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSECONDADDRESS);
-                this.columnCONTACTA = new global::System.Data.DataColumn("CONTACTA", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCONTACTA);
-                this.columnCONTACTB = new global::System.Data.DataColumn("CONTACTB", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCONTACTB);
-                this.columnCONTACTC = new global::System.Data.DataColumn("CONTACTC", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCONTACTC);
-                this.columnFIRSTEMAIL = new global::System.Data.DataColumn("FIRSTEMAIL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFIRSTEMAIL);
-                this.columnSECONDEMAIL = new global::System.Data.DataColumn("SECONDEMAIL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSECONDEMAIL);
-                this.columnWEBSITE = new global::System.Data.DataColumn("WEBSITE", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnWEBSITE);
+                this.columnSchoolName = new global::System.Data.DataColumn("SchoolName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSchoolName);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SchoolIformationRow NewSchoolIformationRow() {
-                return ((SchoolIformationRow)(this.NewRow()));
+            public PrintStudentCardRow NewPrintStudentCardRow() {
+                return ((PrintStudentCardRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new SchoolIformationRow(builder);
+                return new PrintStudentCardRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(SchoolIformationRow);
+                return typeof(PrintStudentCardRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.SchoolIformationRowChanged != null)) {
-                    this.SchoolIformationRowChanged(this, new SchoolIformationRowChangeEvent(((SchoolIformationRow)(e.Row)), e.Action));
+                if ((this.PrintStudentCardRowChanged != null)) {
+                    this.PrintStudentCardRowChanged(this, new PrintStudentCardRowChangeEvent(((PrintStudentCardRow)(e.Row)), e.Action));
                 }
             }
             
@@ -552,8 +538,8 @@ namespace SmartSchoolManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.SchoolIformationRowChanging != null)) {
-                    this.SchoolIformationRowChanging(this, new SchoolIformationRowChangeEvent(((SchoolIformationRow)(e.Row)), e.Action));
+                if ((this.PrintStudentCardRowChanging != null)) {
+                    this.PrintStudentCardRowChanging(this, new PrintStudentCardRowChangeEvent(((PrintStudentCardRow)(e.Row)), e.Action));
                 }
             }
             
@@ -561,8 +547,8 @@ namespace SmartSchoolManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.SchoolIformationRowDeleted != null)) {
-                    this.SchoolIformationRowDeleted(this, new SchoolIformationRowChangeEvent(((SchoolIformationRow)(e.Row)), e.Action));
+                if ((this.PrintStudentCardRowDeleted != null)) {
+                    this.PrintStudentCardRowDeleted(this, new PrintStudentCardRowChangeEvent(((PrintStudentCardRow)(e.Row)), e.Action));
                 }
             }
             
@@ -570,14 +556,14 @@ namespace SmartSchoolManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.SchoolIformationRowDeleting != null)) {
-                    this.SchoolIformationRowDeleting(this, new SchoolIformationRowChangeEvent(((SchoolIformationRow)(e.Row)), e.Action));
+                if ((this.PrintStudentCardRowDeleting != null)) {
+                    this.PrintStudentCardRowDeleting(this, new PrintStudentCardRowChangeEvent(((PrintStudentCardRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveSchoolIformationRow(SchoolIformationRow row) {
+            public void RemovePrintStudentCardRow(PrintStudentCardRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -586,7 +572,7 @@ namespace SmartSchoolManagementSystem {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                SchoolInformation ds = new SchoolInformation();
+                PRINTSTUDENTCARD ds = new PRINTSTUDENTCARD();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -604,7 +590,7 @@ namespace SmartSchoolManagementSystem {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "SchoolIformationDataTable";
+                attribute2.FixedValue = "PrintStudentCardDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -648,30 +634,126 @@ namespace SmartSchoolManagementSystem {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class SchoolIformationRow : global::System.Data.DataRow {
+        public partial class PrintStudentCardRow : global::System.Data.DataRow {
             
-            private SchoolIformationDataTable tableSchoolIformation;
+            private PrintStudentCardDataTable tablePrintStudentCard;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal SchoolIformationRow(global::System.Data.DataRowBuilder rb) : 
+            internal PrintStudentCardRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableSchoolIformation = ((SchoolIformationDataTable)(this.Table));
+                this.tablePrintStudentCard = ((PrintStudentCardDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string SchoolName {
+            public string SID {
                 get {
                     try {
-                        return ((string)(this[this.tableSchoolIformation.SchoolNameColumn]));
+                        return ((string)(this[this.tablePrintStudentCard.SIDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SchoolName\' in table \'SchoolIformation\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SID\' in table \'PrintStudentCard\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchoolIformation.SchoolNameColumn] = value;
+                    this[this.tablePrintStudentCard.SIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string STUDENT_NAME {
+                get {
+                    try {
+                        return ((string)(this[this.tablePrintStudentCard.STUDENT_NAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'STUDENT_NAME\' in table \'PrintStudentCard\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePrintStudentCard.STUDENT_NAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string S_CELL_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tablePrintStudentCard.S_CELL_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'S_CELL_NO\' in table \'PrintStudentCard\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePrintStudentCard.S_CELL_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Student_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tablePrintStudentCard.Student_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Student_ID\' in table \'PrintStudentCard\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePrintStudentCard.Student_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Class {
+                get {
+                    try {
+                        return ((string)(this[this.tablePrintStudentCard.ClassColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Class\' in table \'PrintStudentCard\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePrintStudentCard.ClassColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Section {
+                get {
+                    try {
+                        return ((string)(this[this.tablePrintStudentCard.SectionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Section\' in table \'PrintStudentCard\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePrintStudentCard.SectionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string IMAGE {
+                get {
+                    try {
+                        return ((string)(this[this.tablePrintStudentCard.IMAGEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'IMAGE\' in table \'PrintStudentCard\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePrintStudentCard.IMAGEColumn] = value;
                 }
             }
             
@@ -680,263 +762,139 @@ namespace SmartSchoolManagementSystem {
             public string LOGO {
                 get {
                     try {
-                        return ((string)(this[this.tableSchoolIformation.LOGOColumn]));
+                        return ((string)(this[this.tablePrintStudentCard.LOGOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'LOGO\' in table \'SchoolIformation\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'LOGO\' in table \'PrintStudentCard\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchoolIformation.LOGOColumn] = value;
+                    this[this.tablePrintStudentCard.LOGOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FIRSTADDRESS {
+            public string SchoolName {
                 get {
                     try {
-                        return ((string)(this[this.tableSchoolIformation.FIRSTADDRESSColumn]));
+                        return ((string)(this[this.tablePrintStudentCard.SchoolNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FIRSTADDRESS\' in table \'SchoolIformation\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SchoolName\' in table \'PrintStudentCard\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchoolIformation.FIRSTADDRESSColumn] = value;
+                    this[this.tablePrintStudentCard.SchoolNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string SECONDADDRESS {
-                get {
-                    try {
-                        return ((string)(this[this.tableSchoolIformation.SECONDADDRESSColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SECONDADDRESS\' in table \'SchoolIformation\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSchoolIformation.SECONDADDRESSColumn] = value;
-                }
+            public bool IsSIDNull() {
+                return this.IsNull(this.tablePrintStudentCard.SIDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CONTACTA {
-                get {
-                    try {
-                        return ((string)(this[this.tableSchoolIformation.CONTACTAColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CONTACTA\' in table \'SchoolIformation\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSchoolIformation.CONTACTAColumn] = value;
-                }
+            public void SetSIDNull() {
+                this[this.tablePrintStudentCard.SIDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CONTACTB {
-                get {
-                    try {
-                        return ((string)(this[this.tableSchoolIformation.CONTACTBColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CONTACTB\' in table \'SchoolIformation\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSchoolIformation.CONTACTBColumn] = value;
-                }
+            public bool IsSTUDENT_NAMENull() {
+                return this.IsNull(this.tablePrintStudentCard.STUDENT_NAMEColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CONTACTC {
-                get {
-                    try {
-                        return ((string)(this[this.tableSchoolIformation.CONTACTCColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CONTACTC\' in table \'SchoolIformation\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSchoolIformation.CONTACTCColumn] = value;
-                }
+            public void SetSTUDENT_NAMENull() {
+                this[this.tablePrintStudentCard.STUDENT_NAMEColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FIRSTEMAIL {
-                get {
-                    try {
-                        return ((string)(this[this.tableSchoolIformation.FIRSTEMAILColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FIRSTEMAIL\' in table \'SchoolIformation\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSchoolIformation.FIRSTEMAILColumn] = value;
-                }
+            public bool IsS_CELL_NONull() {
+                return this.IsNull(this.tablePrintStudentCard.S_CELL_NOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string SECONDEMAIL {
-                get {
-                    try {
-                        return ((string)(this[this.tableSchoolIformation.SECONDEMAILColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SECONDEMAIL\' in table \'SchoolIformation\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSchoolIformation.SECONDEMAILColumn] = value;
-                }
+            public void SetS_CELL_NONull() {
+                this[this.tablePrintStudentCard.S_CELL_NOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string WEBSITE {
-                get {
-                    try {
-                        return ((string)(this[this.tableSchoolIformation.WEBSITEColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'WEBSITE\' in table \'SchoolIformation\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSchoolIformation.WEBSITEColumn] = value;
-                }
+            public bool IsStudent_IDNull() {
+                return this.IsNull(this.tablePrintStudentCard.Student_IDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSchoolNameNull() {
-                return this.IsNull(this.tableSchoolIformation.SchoolNameColumn);
+            public void SetStudent_IDNull() {
+                this[this.tablePrintStudentCard.Student_IDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSchoolNameNull() {
-                this[this.tableSchoolIformation.SchoolNameColumn] = global::System.Convert.DBNull;
+            public bool IsClassNull() {
+                return this.IsNull(this.tablePrintStudentCard.ClassColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetClassNull() {
+                this[this.tablePrintStudentCard.ClassColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSectionNull() {
+                return this.IsNull(this.tablePrintStudentCard.SectionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSectionNull() {
+                this[this.tablePrintStudentCard.SectionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsIMAGENull() {
+                return this.IsNull(this.tablePrintStudentCard.IMAGEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetIMAGENull() {
+                this[this.tablePrintStudentCard.IMAGEColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsLOGONull() {
-                return this.IsNull(this.tableSchoolIformation.LOGOColumn);
+                return this.IsNull(this.tablePrintStudentCard.LOGOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetLOGONull() {
-                this[this.tableSchoolIformation.LOGOColumn] = global::System.Convert.DBNull;
+                this[this.tablePrintStudentCard.LOGOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFIRSTADDRESSNull() {
-                return this.IsNull(this.tableSchoolIformation.FIRSTADDRESSColumn);
+            public bool IsSchoolNameNull() {
+                return this.IsNull(this.tablePrintStudentCard.SchoolNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFIRSTADDRESSNull() {
-                this[this.tableSchoolIformation.FIRSTADDRESSColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSECONDADDRESSNull() {
-                return this.IsNull(this.tableSchoolIformation.SECONDADDRESSColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSECONDADDRESSNull() {
-                this[this.tableSchoolIformation.SECONDADDRESSColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCONTACTANull() {
-                return this.IsNull(this.tableSchoolIformation.CONTACTAColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCONTACTANull() {
-                this[this.tableSchoolIformation.CONTACTAColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCONTACTBNull() {
-                return this.IsNull(this.tableSchoolIformation.CONTACTBColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCONTACTBNull() {
-                this[this.tableSchoolIformation.CONTACTBColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCONTACTCNull() {
-                return this.IsNull(this.tableSchoolIformation.CONTACTCColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCONTACTCNull() {
-                this[this.tableSchoolIformation.CONTACTCColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFIRSTEMAILNull() {
-                return this.IsNull(this.tableSchoolIformation.FIRSTEMAILColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFIRSTEMAILNull() {
-                this[this.tableSchoolIformation.FIRSTEMAILColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSECONDEMAILNull() {
-                return this.IsNull(this.tableSchoolIformation.SECONDEMAILColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSECONDEMAILNull() {
-                this[this.tableSchoolIformation.SECONDEMAILColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsWEBSITENull() {
-                return this.IsNull(this.tableSchoolIformation.WEBSITEColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetWEBSITENull() {
-                this[this.tableSchoolIformation.WEBSITEColumn] = global::System.Convert.DBNull;
+            public void SetSchoolNameNull() {
+                this[this.tablePrintStudentCard.SchoolNameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -944,22 +902,22 @@ namespace SmartSchoolManagementSystem {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class SchoolIformationRowChangeEvent : global::System.EventArgs {
+        public class PrintStudentCardRowChangeEvent : global::System.EventArgs {
             
-            private SchoolIformationRow eventRow;
+            private PrintStudentCardRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SchoolIformationRowChangeEvent(SchoolIformationRow row, global::System.Data.DataRowAction action) {
+            public PrintStudentCardRowChangeEvent(PrintStudentCardRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SchoolIformationRow Row {
+            public PrintStudentCardRow Row {
                 get {
                     return this.eventRow;
                 }

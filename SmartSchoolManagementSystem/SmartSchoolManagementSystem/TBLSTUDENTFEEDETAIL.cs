@@ -34,5 +34,6 @@ namespace SmartSchoolManagementSystem
         public Nullable<System.DateTime> UPDATED_DATE { get; set; }
         public Nullable<int> SYSID { get; set; }
         public Nullable<decimal> ADMISSION_FEE { get; set; }
+        public string Session { get; set; }
     }
 }

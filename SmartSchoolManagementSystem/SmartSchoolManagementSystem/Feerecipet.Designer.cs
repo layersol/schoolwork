@@ -35,14 +35,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnclose = new System.Windows.Forms.Button();
             this.btnview = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
+            this.dgrecipt = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrecipt)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,12 +59,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.dgrecipt);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btnsearch);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtsearch);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(6, 59);
             this.panel2.Name = "panel2";
@@ -118,13 +121,14 @@
             this.btnsearch.Size = new System.Drawing.Size(51, 20);
             this.btnsearch.TabIndex = 2;
             this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
-            // textBox1
+            // txtsearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtsearch.Location = new System.Drawing.Point(91, 14);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(141, 20);
+            this.txtsearch.TabIndex = 1;
             // 
             // label2
             // 
@@ -190,6 +194,14 @@
             this.btnprint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnprint.UseVisualStyleBackColor = false;
             // 
+            // dgrecipt
+            // 
+            this.dgrecipt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgrecipt.Location = new System.Drawing.Point(9, 72);
+            this.dgrecipt.Name = "dgrecipt";
+            this.dgrecipt.Size = new System.Drawing.Size(321, 136);
+            this.dgrecipt.TabIndex = 7;
+            // 
             // FeeRecipet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,6 +215,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgrecipt)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -210,7 +223,7 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -221,5 +234,6 @@
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btnview;
         private System.Windows.Forms.Button btnprint;
+        private System.Windows.Forms.DataGridView dgrecipt;
     }
 }

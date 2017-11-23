@@ -1,6 +1,6 @@
 ﻿namespace SmartSchoolManagementSystem
 {
-    partial class Add_Student_Bio
+    partial class ViewSubject
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Add_Student_Bio
+            // ViewSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1089, 587);
-            this.Name = "Add_Student_Bio";
-            this.Text = "Add_Student_Bio";
+            this.ClientSize = new System.Drawing.Size(598, 256);
+            this.Name = "ViewSubject";
+            this.Text = "ViewSubject";
             this.ResumeLayout(false);
 
         }

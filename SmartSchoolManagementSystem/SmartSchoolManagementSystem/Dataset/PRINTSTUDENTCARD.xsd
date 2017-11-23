@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PRINTSTUDENTCARD" targetNamespace="http://tempuri.org/PRINTSTUDENTCARD.xsd" xmlns:mstns="http://tempuri.org/PRINTSTUDENTCARD.xsd" xmlns="http://tempuri.org/PRINTSTUDENTCARD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PRINTSTUDENTCARD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PRINTSTUDENTCARD" msprop:Generator_UserDSName="PRINTSTUDENTCARD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PrintStudentCard" msprop:Generator_TableClassName="PrintStudentCardDataTable" msprop:Generator_TableVarName="tablePrintStudentCard" msprop:Generator_RowChangedName="PrintStudentCardRowChanged" msprop:Generator_TablePropName="PrintStudentCard" msprop:Generator_RowDeletingName="PrintStudentCardRowDeleting" msprop:Generator_RowChangingName="PrintStudentCardRowChanging" msprop:Generator_RowEvHandlerName="PrintStudentCardRowChangeEventHandler" msprop:Generator_RowDeletedName="PrintStudentCardRowDeleted" msprop:Generator_RowClassName="PrintStudentCardRow" msprop:Generator_UserTableName="PrintStudentCard" msprop:Generator_RowEvArgName="PrintStudentCardRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SID" msprop:Generator_ColumnVarNameInTable="columnSID" msprop:Generator_ColumnPropNameInRow="SID" msprop:Generator_ColumnPropNameInTable="SIDColumn" msprop:Generator_UserColumnName="SID" type="xs:string" minOccurs="0" />
+              <xs:element name="STUDENT_NAME" msprop:Generator_ColumnVarNameInTable="columnSTUDENT_NAME" msprop:Generator_ColumnPropNameInRow="STUDENT_NAME" msprop:Generator_ColumnPropNameInTable="STUDENT_NAMEColumn" msprop:Generator_UserColumnName="STUDENT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="S_CELL_NO" msprop:Generator_ColumnVarNameInTable="columnS_CELL_NO" msprop:Generator_ColumnPropNameInRow="S_CELL_NO" msprop:Generator_ColumnPropNameInTable="S_CELL_NOColumn" msprop:Generator_UserColumnName="S_CELL_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="Student_ID" msprop:Generator_ColumnVarNameInTable="columnStudent_ID" msprop:Generator_ColumnPropNameInRow="Student_ID" msprop:Generator_ColumnPropNameInTable="Student_IDColumn" msprop:Generator_UserColumnName="Student_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Class" msprop:Generator_ColumnVarNameInTable="columnClass" msprop:Generator_ColumnPropNameInRow="Class" msprop:Generator_ColumnPropNameInTable="ClassColumn" msprop:Generator_UserColumnName="Class" type="xs:string" minOccurs="0" />
+              <xs:element name="Section" msprop:Generator_ColumnVarNameInTable="columnSection" msprop:Generator_ColumnPropNameInRow="Section" msprop:Generator_ColumnPropNameInTable="SectionColumn" msprop:Generator_UserColumnName="Section" type="xs:string" minOccurs="0" />
+              <xs:element name="IMAGE" msprop:Generator_ColumnVarNameInTable="columnIMAGE" msprop:Generator_ColumnPropNameInRow="IMAGE" msprop:Generator_ColumnPropNameInTable="IMAGEColumn" msprop:Generator_UserColumnName="IMAGE" type="xs:string" minOccurs="0" />
+              <xs:element name="LOGO" msprop:Generator_ColumnVarNameInTable="columnLOGO" msprop:Generator_ColumnPropNameInRow="LOGO" msprop:Generator_ColumnPropNameInTable="LOGOColumn" msprop:Generator_UserColumnName="LOGO" type="xs:string" minOccurs="0" />
+              <xs:element name="SchoolName" msprop:Generator_ColumnVarNameInTable="columnSchoolName" msprop:Generator_ColumnPropNameInRow="SchoolName" msprop:Generator_ColumnPropNameInTable="SchoolNameColumn" msprop:Generator_UserColumnName="SchoolName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
